@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<chapter id="pythonforyouandme-If-Else">
+	<title>If-else , the control flow</title>
+	<para>
+		While working on real life of problems we have to make decisions. Decisions like which camera to buy or which cricket bat is better. At the time of writing a computer program we do the same. We make the decisions using if-else statements, we change the flow of control in the program by using them.
+	</para>
+	<section id="pythonforyouandme-If-Else-if">
+		<title>If statement</title>
+		<para>
+			The syntax looks like
+		</para>
+<screen>
+<![CDATA[
+if expression:
+    do this
+]]>
+</screen>
+        <para>
+            If the value of <emphasis>expression</emphasis> is true (anything than zero), do the what is written below under indentation. Please remember to give proper identation, all the lines indentaed will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not.
+        </para>
+<screen>
+<![CDATA[
+#!/usr/bin/env python
+number = int(raw_input("Enter a number: "))
+if number < 100:
+    print "The number is less than 100"
+]]>
+</screen>
+        <para>
+            Then we run it
+        </para>
+<screen>
+<![CDATA[
+[kd@kdlappy book]$ ./number100.py
+Enter a number: 12
+The number is less than 100
+]]>
+</screen>
+</section>
+	
+	<section id="pythonforyouandme-If-Else-else">
+		<title>Else statement</title>
+		<para>
+			Now in the above example we want to print "Greater than" if the number is greater than 100. For that we have to use the <emphasis>else</emphasis> statement. This works when the <emphasis>if</emphasis>statestement is not fullfiled. 
+		</para>
+<screen>
+<![CDATA[
+#!/usr/bin/env python
+number = int(raw_input("Enter a number: "))
+if number < 100:
+    print "The number is less than 100"
+else:
+    print "The number is greater than 100"
+]]>
+</screen>	
+        <para>
+            The output
+        </para>
+<screen>
+<![CDATA[   
+[kd@kdlappy book]$ ./number100.py
+Enter a number: 345
+The number is greater than 100
+]]>
+</screen>
+        <para>
+            Another very basic example
+        </para>
+<screen>
+<![CDATA[
+>>> x = int(raw_input("Please enter an integer: "))
+>>> if x < 0:
+...      x = 0
+...      print 'Negative changed to zero'
+... elif x == 0:
+...      print 'Zero'
+... elif x == 1:
+...      print 'Single'
+... else:
+...      print 'More'
+]]>
+</screen>
+	</section>
+
+</chapter>
+

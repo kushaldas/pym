@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<chapter id="pythonforyouandme-Test">
+	<title>Test</title>
+	<para>
+		This is a test paragraph
+	</para>
+	<section id="pythonforyouandme-Test-Section_1_Test">
+		<title>Section 1 Test</title>
+		<para>
+			Test of a section
+		</para>
+	</section>
+	
+	<section id="pythonforyouandme-Test-Section_2_Test">
+		<title>Section 2 Test</title>
+		<para>
+			Test of a section
+		</para>
+	</section>
+
+</chapter>
+

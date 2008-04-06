@@ -1,0 +1,236 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<chapter id="pythonforyouandme-File">
+	<title>File handling</title>
+	<para>
+		A file is some information or data which stays in the computer storage devices. You already know about different kinds of file , like your music files, video files, text files. Python gives you easy ways to manipulate these files. Generally we divide files in two categories, text file and binary file. Text files are simple text where as the binary files contain binary data which is only readable by computer.
+	</para>
+	<section id="pythonforyouandme-File-opening">
+		<title>File opening</title>
+		<para>
+			To open a file we use <emphasis>open()</emphasis> function. It requires two arguments, first the file path or file name, second which mode it should open. Modes are like
+		</para>
+		<simplelist type='horiz'>
+		<member>"r" -> open read only, you can read the file but can not edit / delete anything inside</member>
+		<member>"w" -> open with write power, means if the file exists then delete all content and open it to write</member>
+		<member>"a" -> open in append mode</member>
+		</simplelist>
+		<para>
+			The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file
+		</para>
+<screen>
+<![CDATA[
+>>> f = open("love.txt")
+>>> f
+<open file 'love.txt', mode 'r' at 0xb7f2d968>
+]]>
+</screen>
+	</section>
+	
+	<section id="pythonforyouandme-File-reading">
+		<title>Reading a file</title>
+		<para>
+			To read the whole file at once use the <emphasis>read()</emphasis> method.
+		</para>
+<screen>
+<![CDATA[
+>>> f = open("sample.txt")
+>>> f.read()
+'I love Python\nPradeepto loves KDE\nSankarshan loves Openoffice\n'
+]]>
+</screen>
+		<para>
+			If you call read() again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
+		</para>
+<screen>
+<![CDATA[
+>>> f = open("sample.txt")
+>>> f.readline()
+'I love Python\n'
+>>> f.readline()
+'Pradeepto loves KDE\n'
+]]>
+</screen>
+		<para>
+			To read all the all the lines in a list we use <emphasis>readlines()</emphasis> method.
+		</para>
+<screen>
+<![CDATA[
+>>> f = open("sample.txt")
+>>> f.readlines()
+['I love Python\n', 'Pradeepto loves KDE\n', 'Sankarshan loves Openoffice\n']
+]]>
+</screen>
+		<para>
+			You can even loop through the lines in a file object.
+		</para>
+<screen>
+<![CDATA[
+>>> f = open("sample.txt")
+>>> for x in f:
+...     print x,
+...
+I love Python
+Pradeepto loves KDE
+Sankarshan loves Openoffice
+]]>
+</screen>
+		<para>
+			Let us write a program which will take the file name as the input from the user and show the content of the file in the console.
+		</para>
+<screen>
+<![CDATA[
+#!/usr/bin/env python
+name = raw_input("Enter the file name: ")
+f = open(name)
+print f.read()
+f.close()
+]]>
+</screen>
+		<para>
+			In the last line you can see that we closed the file object with the help of close() method.
+		</para>
+		<para>
+			The output
+		</para>
+<screen>
+<![CDATA[
+[kd@kdlappy book]$ ./showfile.py
+Enter the filename: sample.txt
+I love Python
+Pradeepto loves KDE
+Sankarshan loves Openoffice
+]]>
+</screen>
+	</section>
+	
+	<section id="pythonforyouandme-File-writing">
+		<title>Writing in a file</title>
+		<para>
+			Let us open a file then we will write some random text into it by using the write() method.
+		</para>
+<screen>
+<![CDATA[
+>>> f = open("list.txt", 'w')
+>>> f.write('powerpork\n')
+>>> f.write('indrag\n')
+>>> f.write('mishti\n')
+>>> f.write('sm|CPU')
+>>> f.close()
+]]>
+</screen>
+		<para>
+			Now read the file we just created
+		</para>
+<screen>
+<![CDATA[
+>>> f = open('ircnicks.txt')
+>>> s = f.read()
+>>> print s
+powerpork
+indrag
+mishti
+sm|CPU
+]]>
+</screen>
+	</section>
+	
+	<section id="pythonforyouandme-File-copyfile">
+		<title>copyfile.py</title>
+		<para>
+			In this example we will copy a given file to another file.
+		</para>
+<screen>
+<![CDATA[
+#!/usr/bin/env python
+import sys
+if len(sys.argv) < 3:
+    print "Wrong parameter"
+    print "./copyfile.py file1 file2"
+    sys.exit(1)
+f1 = open(sys.argv[1])
+s = f1.read()
+f1.close()
+f2 = open(sys.argv[2], 'w')
+f2.write(s)
+f2.close()
+]]>
+</screen>
+		<para>
+			You can see we used a new module here <emphasis>sys</emphasis>. <emphasis>sys.argv</emphasis> contains all command line parameters. Remember <emphasis>cp</emphasis> command in shell, after <emphasis>cp</emphasis> we type first the file to be copied and then the new file name.
+		</para>
+		<para>
+			The first value in <emphasis>sys.argv</emphasis> is the name of the command itself.
+		</para>
+<screen>
+<![CDATA[
+#!/usr/bin/env python
+import sys
+print "First value", sys.argv[0]
+print "All values"
+for i, x  in enumerate(sys.argv):
+    print i, x
+]]>
+</screen>
+		<para>
+			The output
+		</para>
+<screen>
+<![CDATA[
+[kd@kdlappy book]$ ./argvtest.py Hi there
+First value ./argvtest.py
+All values
+0 ./argvtest.py
+1 Hi
+2 there
+]]>
+</screen>
+		<para>
+			Here we used a new function <emphasis>enumerate(iterableobject)</emphasis>, which returns the index number and the value from the iterable object.
+		</para>
+	</section>
+	
+	<section id="pythonforyouandme-File-random">
+		<title>Random seeking in a file</title>
+		<para>
+			You can also randomly move around inside a file using <emphasis>seek()</emphasis> method. It takes two arguments , offset and whence. To know more about it let us read what python help tells us
+		</para>
+		<para>
+			seek(...)
+seek(offset[, whence]) -> None. Move to new file position.
+Argument offset is a byte count. Optional argument whence defaults to
+0 (offset from start of file, offset should be >= 0); other values are 1
+(move relative to current position, positive or negative), and 2 (move
+relative to end of file, usually negative, although many platforms allow
+seeking beyond the end of a file). If the file is opened in text mode,
+only offsets returned by tell() are legal. Use of other offsets causes
+undefined behavior.
+Note that not all file objects are speakable.
+		</para>
+		<para>
+			Let us see one example
+		</para>
+<screen>
+<![CDATA[
+>>> f = open('tempfile', 'w')
+>>> f.write('0123456789abcdef')
+>>> f.close()
+>>> f = open('tempfile')
+>>> f.tell()    #tell us the offset position
+0L
+>>> f.seek(5) # Goto 5th byte
+>>> f.tell()
+5L
+>>> f.read(1) #Read 1 byte
+'5'
+>>> f.seek(-3, 2) # goto 3rd byte from the end
+>>> f.read() #Read till the end of the file
+'def'
+]]>
+</screen>
+	</section>
+
+</chapter>
+

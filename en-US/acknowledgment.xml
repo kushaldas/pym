@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<chapter id="pythonforyouandme-Acknowledgment">
+	<title>Acknowledgment</title>
+	<para>
+		I would like to thank the following people who have helped me make it through this book. Specially #fedora-docs in irc.freenode.net.
+		Names are in alphabetic order:
+	</para>
+	<para>
+		<itemizedlist>
+    			<listitem><para>Jared Smith</para></listitem>
+    			<listitem><para>Paul W. Frields</para></listitem>
+    			<listitem><para>Pradeepto K Bhattacharya</para></listitem>
+    			<listitem><para>Sankarshan Mukhopadhyay</para></listitem>
+			<listitem><para>Sayamindu Dasgupta</para></listitem>
+			<listitem><para>Stephanie Whiting</para></listitem>
+		</itemizedlist>
+	I am missing some names in the above list, will add them soon
+	</para>
+	<para>
+		I also took help from the following sites
+	</para>
+	<para>
+		<itemizedlist>
+    			<listitem><para>http://docs.python.org</para></listitem>
+    			<listitem><para>http://en.wikipedia.org</para></listitem>
+		</itemizedlist>
+	</para>
+	<para>
+		Few books or sites I would recommend to read
+		<itemizedlist>
+			<listitem><para><ulink url="http://dgplug.org/intro/?q=byteofpython"><citetitle>Byte of Python</citetitle></ulink></para></listitem>
+			<listitem><para><ulink url="http://diveintopython.org"><citetitle>Dive into Python</citetitle></ulink></para></listitem>
+			<listitem><para><ulink url="http://docs.python.org/tut/tut.html "><citetitle>Python Tutorial</citetitle></ulink></para></listitem>
+		</itemizedlist>
+	</para>
+	
+	
+		
+	
+	
+
+</chapter>
+

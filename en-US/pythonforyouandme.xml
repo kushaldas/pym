@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<book>
+	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Preface.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="installation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="thebeginning.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="variablesanddatatypes.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="operatorsexpressions.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="ifelse.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="looping.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="datastructure.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="strings.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="functions.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="file.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="acknowledgment.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+</book>
+
