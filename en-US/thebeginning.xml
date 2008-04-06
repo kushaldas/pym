@@ -53,7 +53,7 @@ Hello World!
 	<section id="pythonforyouandme-The-Beginning-whin">
 		<title>Whitespaces and indentation</title>
 		<para>
-			In Python whitespace is an important thing. We divide different identifiers using spaces.Whitespace in the beginning of the line is known as indentation, but if you give wrong identation it will throw an error. Examples are given below:
+			In Python whitespace is an important thing. We divide different identifiers using spaces.Whitespace in the beginning of the line is known as indentation, but if you give wrong indentation it will throw an error. Examples are given below:
 		</para>
 <screen>
 <![CDATA[
@@ -68,6 +68,9 @@ Hello World!
             <title>Caution</title>
             <para>
                 There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation.
+            </para>
+            <para>
+            You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
             </para>
         </caution>
 	</section>
