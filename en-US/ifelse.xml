@@ -19,7 +19,7 @@ if expression:
 ]]>
 </screen>
         <para>
-            If the value of <emphasis>expression</emphasis> is true (anything than zero), do the what is written below under indentation. Please remember to give proper indentation, all the lines indented will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not.
+            If the value of <emphasis>expression</emphasis> is true (anything other than zero), do the what is written below under indentation. Please remember to give proper indentation, all the lines indented will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not.
         </para>
 <screen>
 <![CDATA[
