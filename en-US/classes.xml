@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<chapter id="pythonforyouandme-classes">
+	<title>Class</title>
+	<para>
+		What is a <emphasis>class</emphasis>? In our daily life, we come accross many objects which are similar kind or in words which are basically same. For example we can think about a car. There are different brands , color, look, style, parts, but basically they all are cars. All them of are made by different companies but with similar kind of components.
+	</para>
+	<para>
+		We can say all of them are different instances of the <emphasis>class</emphasis> car. They all belongs to the car class. Every instance is known as an <emphasis>object</emphasis> in computer world. A <emphasis>class</emphasis> can contain variables or methods to access those variables.In Python everything is an <emphasis>object</emphasis>. Even if you create an integer, that is an object of the <emphasis>Integer class</emphasis>. In C++ this is different.
+	</para>
+	<section id="pythonforyouandme-Classes-firstclass">
+		<title>Your first class</title>
+		<para>
+			Before writing your first class, you should know the syntax. We define a class in the following way..
+		</para>
+<screen>
+<![CDATA[
+class nameoftheclass:
+    statement1
+    statement2
+    statement3
+]]>
+</screen>
+		<para>
+			in the statements you can write any python statement, you can define functions (which we call methods of a class).
+		</para>
+<screen>
+<![CDATA[
+>>> class MyClass:
+...
+Display all 180 possibilities? (y or n)
+...     a = 90
+...     b = 88
+...
+>>> p = MyClass()
+>>> p
+<__main__.MyClass instance at 0xb7c8aa6c>
+]]>
+</screen>
+		<para>
+			In the above example you can see first we are declaring a class called MyClass, wrting some random statements inside that class. After the class defination, we are creating an <emphasis>object</emphasis> p of the <emphasis>class</emphasis> MyClass.If you do a dir on that...
+		</para>
+<screen>
+<![CDATA[
+>>> dir(p)
+['__doc__', '__module__', 'a', 'b']
+]]>
+</screen>
+		<para>
+			You can see the variables <emphasis>a</emphasis> and <emphasis>b</emphasis> inside it.
+		</para>
+	</section>
+	
+	<section id="pythonforyouandme-Test-Section_2_Test">
+		<title>Section 2 Test</title>
+		<para>
+			Test of a section
+		</para>
+	</section>
+
+</chapter>
+
