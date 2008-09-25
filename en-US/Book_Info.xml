@@ -5,7 +5,6 @@
 <bookinfo id="pythonforyouandme-Product_Name_and_Version">
 	<title>Python for you and me</title>
 	<subtitle>Python for you and me</subtitle>
-	<issuenum>0.1</issuenum>
 	<productnumber>0.2</productnumber>
         <edition>1</edition>
 	<pubsnumber>0</pubsnumber>
@@ -21,7 +20,7 @@
 		<year>&YEAR;</year>
 		<holder>&HOLDER;</holder>
 	</copyright>
-	<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="LegalNotice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </bookinfo>
 
