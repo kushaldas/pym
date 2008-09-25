@@ -5,12 +5,14 @@
 <chapter id="pythonforyouandme-Acknowledgment">
 	<title>Acknowledgment</title>
 	<para>
-		I would like to thank the following people who have helped me make it through this book. Specially #fedora-docs in irc.freenode.net.
+		I would like to thank the following people who have helped me make it through this book. Specially #fedora-docs in irc.freenode.net and also #fedora-art .
 		Names are in alphabetic order:
 	</para>
 	<para>
 		<itemizedlist>
     			<listitem><para>Jared Smith</para></listitem>
+    			<listitem><para>Marco Mornati</para></listitem>
+    			<listitem><para>Nicu Buculei</para></listitem>
     			<listitem><para>Paul W. Frields</para></listitem>
     			<listitem><para>Pradeepto K Bhattacharya</para></listitem>
     			<listitem><para>Sankarshan Mukhopadhyay</para></listitem>
