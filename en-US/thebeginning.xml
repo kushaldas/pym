@@ -8,17 +8,18 @@
 		So we are going to look at our first code. As python is an interpreted language , you can directly write the code into the python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal).
 	</para>
 <screen>
-[kd@kdlappy ~]$ <userinput>python</userinput>
+[kd@kdlappy ~]$ python
 Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)
 [GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
 Type "help", "copyright", "credits" or "license" for more information. 
 >>> 
+
 </screen>
 <para>
 In our first code we are going to print "Hello World!" , so do it as below,
 </para>
 <screen>
->>> <userinput>print "Hello World!"</userinput>
+>>> print "Hello World!"
 Hello World!
 </screen>
 
@@ -35,13 +36,13 @@ print "Hello World!"
                 To run the code first you have to make the file executable, in GNU/Linux you can do that by giving the command in a shell or terminal
                 </para>
 <screen>
-$ <userinput>chmod +x helloworld.py</userinput>
+$ chmod +x helloworld.py
 </screen>
                 <para>
                 Then
                 </para>
 <screen>
-$ <userinput>./helloworld.py </userinput>
+$ ./helloworld.py 
 Hello World!
 </screen>
                 <para>
