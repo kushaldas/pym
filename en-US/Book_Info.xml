@@ -6,7 +6,9 @@
 	<title>Python for you and me</title>
 	<subtitle>Python for you and me</subtitle>
 	<issuenum>0.1</issuenum>
-	<productnumber>0</productnumber>
+	<productnumber>0.2</productnumber>
+        <edition>1</edition>
+	<pubsnumber>0</pubsnumber>
 	<abstract><para>This book is for the python newbies</para>
 	</abstract>
 	<corpauthor><inlinemediaobject>
