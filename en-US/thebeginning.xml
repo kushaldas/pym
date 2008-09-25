@@ -64,15 +64,15 @@ Hello World!
           ^
           IndentationError: unexpected indent]]>
 </screen>
-        <caution>
-            <title>Caution</title>
+        <warning>
+            <title>Warning</title>
             <para>
                 There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation.
             </para>
             <para>
             You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
             </para>
-        </caution>
+        </warning>
 	</section>
 	
         <section id="pythonforyouandme-The-Beginning-comments">
