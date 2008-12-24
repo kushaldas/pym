@@ -12,7 +12,7 @@
 	</abstract>
 	<corpauthor><inlinemediaobject>
 			<imageobject>
-				<imagedata fileref="Common_Content/images/title_logo.svg" />
+				<imagedata fileref="./images/pym.svg" />
 			</imageobject>
 			<textobject><phrase>Logo</phrase></textobject>
 		</inlinemediaobject>
