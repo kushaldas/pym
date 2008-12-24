@@ -1,0 +1,235 @@
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: thebeginning.xml:6
+#, no-c-format
+msgid "The Beginning"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:7
+#, no-c-format
+msgid ""
+"So we are going to look at our first code. As python is an interpreted "
+"language , you can directly write the code into the python interpreter or "
+"write in a file and then run the file. First we are going to do that using "
+"the interpreter, to start type python in the command prompt (shell or "
+"terminal)."
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:10
+#, no-c-format
+msgid ""
+"[kd@kdlappy ~]$ python\n"
+"Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)\n"
+"[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
+"information. \n"
+">>>"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:11
+#, no-c-format
+msgid ""
+"In our first code we are going to print \"Hello World!\" , so do it as below,"
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:14
+#, no-c-format
+msgid ""
+">>> print \"Hello World!\"\n"
+"Hello World!"
+msgstr ""
+
+#. Tag: title
+#: thebeginning.xml:17
+#, no-c-format
+msgid "helloworld.py"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:18
+#, no-c-format
+msgid ""
+"Now as a serious programmer you may want to write the above code into a "
+"source file. We will create a helloworld.py. Use any text editor you like to "
+"create the file. I used vi, you can even use GUI based tools like Kate, "
+"gedit too."
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:21
+#, no-c-format
+msgid ""
+"#!/usr/bin/env python\n"
+"print \"Hello World!\""
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:22
+#, no-c-format
+msgid ""
+"To run the code first you have to make the file executable, in GNU/Linux you "
+"can do that by giving the command in a shell or terminal"
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:25
+#, no-c-format
+msgid "$ chmod +x helloworld.py"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:26
+#, no-c-format
+msgid "Then"
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:29
+#, no-c-format
+msgid ""
+"$ ./helloworld.py \n"
+"Hello World!"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:30
+#, no-c-format
+msgid ""
+"On the first line you can <emphasis>#!</emphasis> , we call it sha-bang. "
+"Using this we are telling that use python interpreter to run this code. In "
+"the next line we are printing a text message. In python we call all the line "
+"of texts as strings."
+msgstr ""
+
+#. Tag: title
+#: thebeginning.xml:37
+#, no-c-format
+msgid "Whitespaces and indentation"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:38
+#, no-c-format
+msgid ""
+"In Python whitespace is an important thing. We divide different identifiers "
+"using spaces.Whitespace in the beginning of the line is known as "
+"indentation, but if you give wrong indentation it will throw an error. "
+"Examples are given below:"
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:41
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> a = 12\n"
+">>>  a = 12\n"
+"  File \"<stdin>\", line 1\n"
+"      a = 12\n"
+"          ^\n"
+"          IndentationError: unexpected indent]]>"
+msgstr ""
+
+#. Tag: title
+#: thebeginning.xml:43
+#, no-c-format
+msgid "Warning"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:44
+#, no-c-format
+msgid ""
+"There is an extra space in the beginning of the second line which is causing "
+"the error, so always look for the proper indentation."
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:47
+#, no-c-format
+msgid ""
+"You can even get into this indentation errors if you mix up tabs and spaces. "
+"Like if you use spaces and only use spaces for indentation, don't use tabs "
+"in that case. For you it may look same, but the code will give you error if "
+"you try to run it."
+msgstr ""
+
+#. Tag: title
+#: thebeginning.xml:54
+#, no-c-format
+msgid "Comments"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:55
+#, no-c-format
+msgid ""
+"Comments are some piece of English text which explains what this code does, "
+"we write comments in the code so that is easier for others to understand. A "
+"comment line starts with <emphasis>#</emphasis> , everything after that is "
+"ignored as comment, that means they don't effect on the program."
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:58
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> #this is a comment\n"
+">>> #the next line will add two numbers\n"
+">>> a = 12 + 34\n"
+">>> print c #this is a comment too :)]]>"
+msgstr ""
+
+#. Tag: title
+#: thebeginning.xml:62
+#, no-c-format
+msgid "Modules"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:63
+#, no-c-format
+msgid ""
+"Modules are python files which contain different function definitions , "
+"variables which we can reuse, it should always end with a .py extension.. "
+"Python itself is having a vast module library with the default installation. "
+"We are going to use some of them. To use a module you have to import it "
+"first."
+msgstr ""
+
+#. Tag: screen
+#: thebeginning.xml:66
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> import math\n"
+">>> print math.e\n"
+"2.71828182846\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: thebeginning.xml:67
+#, no-c-format
+msgid "We are going to learn more about modules on the Modules chapter."
+msgstr ""

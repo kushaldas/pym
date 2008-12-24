@@ -1,0 +1,633 @@
+# Language ml-IN translations for Python_for_you_and_me package.
+# Automatically generated, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Python_for_you_and_me VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"PO-Revision-Date: 2008-12-24 15:13+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: operatorsexpressions.xml:6
+#, no-c-format
+msgid "Operators and expressions"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:7
+#, no-c-format
+msgid ""
+"In python most of the lines you will write will be expressions. Expressions "
+"are made of operators and operands. An expression is like <emphasis>2 + 3</"
+"emphasis> ."
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:11
+#, no-c-format
+msgid "Operators"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:12
+#, no-c-format
+msgid ""
+"Operators are the symbols which tells the python interpreter to do some "
+"mathematical or logical operation. Few basic examples of mathematical "
+"operators are given below:"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:15
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> 2 + 3\n"
+"5\n"
+">>> 23 - 3\n"
+"20\n"
+">>> 22.0 / 12\n"
+"1.8333333333333333\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:16
+#, no-c-format
+msgid ""
+"To get floating result you need to the division using any of operand as "
+"floating number. To do modulo operation use % operator"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:19
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> 14 % 3\n"
+"2\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:22
+#, no-c-format
+msgid "Example of integer arithmetic"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:23
+#, no-c-format
+msgid "The code"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:26
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"days = int(raw_input(\"Enter days: \"))\n"
+"months = days / 30\n"
+"days = days % 30\n"
+"print \"Months = %d Days = %d\" % (months, days)\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:27 operatorsexpressions.xml:82
+#: operatorsexpressions.xml:97 operatorsexpressions.xml:121
+#: operatorsexpressions.xml:144
+#, no-c-format
+msgid "The output"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:30
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./integer.py\n"
+"Enter days: 265\n"
+"Months = 8 Days = 25\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:31
+#, no-c-format
+msgid ""
+"In the first line I am taking the input of days, then getting the months and "
+"days and at last printing them. You can do it in a easy way"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:34
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"days = int(raw_input(\"Enter days: \"))\n"
+"print \"Months = %d Days = %d\" % (divmod(days, 30))\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:35
+#, no-c-format
+msgid ""
+"The divmod(num1, num2) function returns two values , first is the division "
+"of num1 and num2 and in second the modulo of num1 and num2."
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:40 operatorsexpressions.xml:44
+#, no-c-format
+msgid "Relational Operators"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:41
+#, no-c-format
+msgid "You can use the following operators as relational operators"
+msgstr ""
+
+#. Tag: segtitle
+#: operatorsexpressions.xml:46
+#, no-c-format
+msgid "Operator"
+msgstr ""
+
+#. Tag: segtitle
+#: operatorsexpressions.xml:47
+#, no-c-format
+msgid "Meaning"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:48
+#, no-c-format
+msgid "<![CDATA[<]]>"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:48
+#, no-c-format
+msgid "Is less than"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:49
+#, no-c-format
+msgid "<![CDATA[<=]]>"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:49
+#, no-c-format
+msgid "Is less than or equal to"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:50
+#, no-c-format
+msgid "<![CDATA[>]]>"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:50
+#, no-c-format
+msgid "Is greater than"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:51
+#, no-c-format
+msgid "<![CDATA[>=]]>"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:51
+#, no-c-format
+msgid "Is greater than or equal to"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:52
+#, no-c-format
+msgid "<![CDATA[==]]>"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:52
+#, no-c-format
+msgid "Is equal to"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:53
+#, no-c-format
+msgid "<![CDATA[!=]]>"
+msgstr ""
+
+#. Tag: seg
+#: operatorsexpressions.xml:53
+#, no-c-format
+msgid "Is not equal to"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:55
+#, no-c-format
+msgid "Some examples"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:58
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> 1 < 2\n"
+"True\n"
+">>> 3 > 34\n"
+"False\n"
+">>> 23 == 45\n"
+"False\n"
+">>> 34 != 323\n"
+"True\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:59
+#, no-c-format
+msgid "<emphasis>//</emphasis> operator gives the floor division result"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:62
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> 4.0 // 3\n"
+"1.0\n"
+">>> 4.0 / 3\n"
+"1.3333333333333333\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:65
+#, no-c-format
+msgid "Logical Operators"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:66
+#, no-c-format
+msgid ""
+"To do logical AND , OR we use <emphasis>and</emphasis> ,<emphasis> or</"
+"emphasis> keywords. <emphasis>x and y</emphasis> returns <emphasis>False</"
+"emphasis> if <emphasis>x</emphasis> is <emphasis>False</emphasis> else it "
+"returns evaluation of <emphasis>y</emphasis>. If <emphasis>x</emphasis> is "
+"<emphasis>True</emphasis>, it returns <emphasis>True</emphasis>."
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:69
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> 1 and 4\n"
+"4\n"
+">>> 1 or 4\n"
+"1\n"
+">>> -1 or 4\n"
+"-1\n"
+">>> 0 or 4\n"
+"4\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:73
+#, no-c-format
+msgid "Shorthand Operator"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:74
+#, no-c-format
+msgid ""
+"<emphasis>x op = expression</emphasis> is the syntax for shorthand "
+"operators. It will be evaluated like <emphasis>x = x op expression</"
+"emphasis> , Few examples are"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:77
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> a = 12\n"
+">>> a += 13\n"
+">>> a\n"
+"25\n"
+">>> a /= 3\n"
+">>> a\n"
+"8\n"
+">>> a += (26* 32)\n"
+">>> a\n"
+"840\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:78
+#, no-c-format
+msgid "shorthand.py example"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:81
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"N = 100\n"
+"a = 2\n"
+"while a < N:\n"
+"    print \"%d\" % a\n"
+"    a *= a\n"
+"]]>"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:85
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./shorthand.py\n"
+"2\n"
+"4\n"
+"16\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:88
+#, no-c-format
+msgid "Expressions"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:89
+#, no-c-format
+msgid ""
+"Generally while writing expressions we put spaces before and after every "
+"operator so that the code becomes clearer to read, like"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:92
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"a = 234 * (45 - 56.0 / 34)\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:93
+#, no-c-format
+msgid "One example code used to show expressions"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:96
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"a = 9\n"
+"b = 12\n"
+"c = 3\n"
+"x = a -b / 3 + c * 2 -1\n"
+"y = a -b / (3 + c) * (2 -1)\n"
+"z = a - (b / (3 +c) * 2) -1\n"
+"print \"X = \", x\n"
+"print \"Y = \", y\n"
+"print \"Z = \", z\n"
+"]]>"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:100
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./evaluationexp.py\n"
+"X =  10\n"
+"Y =  7\n"
+"Z =  4\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:101
+#, no-c-format
+msgid ""
+"At first <emphasis>x</emphasis> is being calculated. The steps are like this"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:104
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"9 - 12 / 3 + 3 * 2 -1\n"
+"9 - 4 + 3 * 2 - 1\n"
+"9 - 4 + 6 - 1\n"
+"5 + 6 -1\n"
+"11 - 1\n"
+"10\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:105
+#, no-c-format
+msgid ""
+"Now for <emphasis>y</emphasis> and <emphasis>z</emphasis> we have "
+"parentheses, so the expressions evaluated in different way. Do the "
+"calculation yourself to check them."
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:110
+#, no-c-format
+msgid "Type Conversions"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:111
+#, no-c-format
+msgid "We have to do the type conversions manually. Like"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:113
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"float(string) -> float value\n"
+"int(string) -> integer value\n"
+"str(integer) or str(float) -> string representation \n"
+">>> a = 8.126768\n"
+">>> str(a)\n"
+"'8.126768'\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:116
+#, no-c-format
+msgid "evaluateequ.py"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:117
+#, no-c-format
+msgid ""
+"This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, "
+"in our case x = 1 and n =10"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:120
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"sum = 0.0\n"
+"for i in range(1, 11):\n"
+"    sum += 1.0 / i\n"
+"    print \"%2d %6.4f\" % (i , sum)\n"
+"]]>"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:124
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./evaluateequ.py\n"
+" 1 1.0000\n"
+" 2 1.5000\n"
+" 3 1.8333\n"
+" 4 2.0833\n"
+" 5 2.2833\n"
+" 6 2.4500\n"
+" 7 2.5929\n"
+" 8 2.7179\n"
+" 9 2.8290\n"
+"10 2.9290\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:126
+#, no-c-format
+msgid ""
+"In the line <emphasis>sum += 1.0 / i</emphasis> what is actually happening "
+"is <emphasis>sum = sum + 1.0 / i</emphasis>."
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:131
+#, no-c-format
+msgid "quadraticequation.py"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:132
+#, no-c-format
+msgid "This is a program to evaluate the quadratic equation"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:135
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"import math\n"
+"a = int(raw_input(\"Enter value of a: \"))\n"
+"b = int(raw_input(\"Enter value of b: \"))\n"
+"c = int(raw_input(\"Enter value of c: \"))\n"
+"d = b * b - 4 * a * c\n"
+"if d < 0:\n"
+"    print \"ROOTS are imaginary\"\n"
+"else:\n"
+"    root1 = (-b + math.sqrt(d)) / (2.0 * a)\n"
+"    root2 = (-b - math.sqrt(d)) / (2.0 * a)\n"
+"print \"Root 1 = \", root1\n"
+"print \"Root 2 = \", root2\n"
+"]]>"
+msgstr ""
+
+#. Tag: title
+#: operatorsexpressions.xml:139
+#, no-c-format
+msgid "salesmansalary.py"
+msgstr ""
+
+#. Tag: para
+#: operatorsexpressions.xml:140
+#, no-c-format
+msgid ""
+"In this example we are going to calculate the salary of a camera salesman. "
+"His basic salary is 1500, for every camera he will sell he will get 200 and "
+"the commission on the month's sale is 2 %. The input will be number of "
+"cameras sold and total price of the cameras."
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:143
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"basic_salary = 1500\n"
+"bonus_rate = 200\n"
+"commision_rate = 0.02\n"
+"numberofcamera = int(raw_input(\"Enter the number of inputs sold: \"))\n"
+"price = float(raw_input(\"Enter the total prices: \"))\n"
+"bonus = (bonus_rate * numberofcamera)\n"
+"commision = (commision_rate * numberofcamera * price)\n"
+"\n"
+"print \"Bonus        = %6.2f\" % bonus\n"
+"print \"Commision    = %6.2f\" % commision\n"
+"print \"Gross salary = %6.2f\" % ( basic_salary + bonus + commision)\n"
+"]]>"
+msgstr ""
+
+#. Tag: screen
+#: operatorsexpressions.xml:147
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./salesmansalary.py\n"
+"Enter the number of inputs sold: 5\n"
+"Enter the total prices: 20450\n"
+"Bonus        = 1000.00\n"
+"Commision    = 2045.00\n"
+"Gross salary = 4545.00\n"
+"]]>"
+msgstr ""

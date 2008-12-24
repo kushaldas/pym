@@ -1,0 +1,135 @@
+# Language ml-IN translations for Python_for_you_and_me package.
+# Automatically generated, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Python_for_you_and_me VERSION\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"PO-Revision-Date: 2008-12-24 15:13+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#: classes.xml:6
+#, no-c-format
+msgid "Class"
+msgstr ""
+
+#. Tag: para
+#: classes.xml:7
+#, no-c-format
+msgid ""
+"What is a <emphasis>class</emphasis>? In our daily life, we come accross "
+"many objects which are similar kind or in words which are basically same. "
+"For example we can think about a car. There are different brands , color, "
+"look, style, parts, but basically they all are cars. All them of are made by "
+"different companies but with similar kind of components."
+msgstr ""
+
+#. Tag: para
+#: classes.xml:10
+#, no-c-format
+msgid ""
+"We can say all of them are different instances of the <emphasis>class</"
+"emphasis> car. They all belongs to the car class. Every instance is known as "
+"an <emphasis>object</emphasis> in computer world. A <emphasis>class</"
+"emphasis> can contain variables or methods to access those variables.In "
+"Python everything is an <emphasis>object</emphasis>. Even if you create an "
+"integer, that is an object of the <emphasis>Integer class</emphasis>. In C++ "
+"this is different."
+msgstr ""
+
+#. Tag: title
+#: classes.xml:14
+#, no-c-format
+msgid "Your first class"
+msgstr ""
+
+#. Tag: para
+#: classes.xml:15
+#, no-c-format
+msgid ""
+"Before writing your first class, you should know the syntax. We define a "
+"class in the following way.."
+msgstr ""
+
+#. Tag: screen
+#: classes.xml:18
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+"class nameoftheclass:\n"
+"    statement1\n"
+"    statement2\n"
+"    statement3\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: classes.xml:19
+#, no-c-format
+msgid ""
+"in the statements you can write any python statement, you can define "
+"functions (which we call methods of a class)."
+msgstr ""
+
+#. Tag: screen
+#: classes.xml:22
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> class MyClass:\n"
+"...\n"
+"Display all 180 possibilities? (y or n)\n"
+"...     a = 90\n"
+"...     b = 88\n"
+"...\n"
+">>> p = MyClass()\n"
+">>> p\n"
+"<__main__.MyClass instance at 0xb7c8aa6c>\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: classes.xml:23
+#, no-c-format
+msgid ""
+"In the above example you can see first we are declaring a class called "
+"MyClass, wrting some random statements inside that class. After the class "
+"defination, we are creating an <emphasis>object</emphasis> p of the "
+"<emphasis>class</emphasis> MyClass.If you do a dir on that..."
+msgstr ""
+
+#. Tag: screen
+#: classes.xml:26
+#, no-c-format
+msgid ""
+"<![CDATA[\n"
+">>> dir(p)\n"
+"['__doc__', '__module__', 'a', 'b']\n"
+"]]>"
+msgstr ""
+
+#. Tag: para
+#: classes.xml:27
+#, no-c-format
+msgid ""
+"You can see the variables <emphasis>a</emphasis> and <emphasis>b</emphasis> "
+"inside it."
+msgstr ""
+
+#. Tag: title
+#: classes.xml:33
+#, no-c-format
+msgid "Section 2 Test"
+msgstr ""
+
+#. Tag: para
+#: classes.xml:34
+#, no-c-format
+msgid "Test of a section"
+msgstr ""
