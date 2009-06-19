@@ -50,12 +50,11 @@
 Because
             </para>
             <para>
- - There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable
-   way of recovery, so the program could crash.
- - Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle
-   or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are
-   not useful or usable.
- - Open files always stand a chance of corruption and data loss.
+            <itemizedlist>
+        <listitem><para>There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable way of recovery, so the program could crash.</para></listitem>
+    <listitem><para>Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are not useful or usable.</para></listitem>
+<listitem><para>Open files always stand a chance of corruption and data loss.</para></listitem>
+            </itemizedlist>
             </para>
         </important>
         </section>
