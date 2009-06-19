@@ -29,6 +29,36 @@
 </screen>
 	</section>
 	
+	<section id="pythonforyouandme-File-closing">
+		<title>Closing a file</title>
+                <para>
+                After opening a file one should always close the opened file. We use method <emphasis>close()</emphasis> for this.
+                </para>
+<screen>
+<![CDATA[
+>>> f = open("love.txt")
+>>> f
+<open file 'love.txt', mode 'r' at 0xb7f2d968>
+>>> f.close()
+
+]]>
+</screen>
+        <important>
+            <title>Important</title>
+            <para>
+            Always make sure you *explicitly* close each open file, once its job is done and you have no reason to keep it open.
+Because
+            </para>
+            <para>
+ - There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable
+   way of recovery, so the program could crash.
+ - Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle
+   or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are
+   not useful or usable.
+ - Open files always stand a chance of corruption and data loss.
+            </para>
+        </important>
+        </section>
 	<section id="pythonforyouandme-File-reading">
 		<title>Reading a file</title>
 		<para>
