@@ -1,45 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: 2010-09-27T11:50:13\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
 "MIME-Version: 1.0\n"
-"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Tag: title
-#: Book_Info.xml:6
 #, no-c-format
-msgid "<title>Python for you and me</title>"
-msgstr ""
-
-#. Tag: subtitle
-#: Book_Info.xml:7
-#, no-c-format
-msgid "<subtitle>Python for you and me</subtitle>"
+msgid "Python for you and me"
 msgstr ""
 
 #. Tag: para
-#: Book_Info.xml:11
 #, no-c-format
 msgid "This book is for the python newbies"
 msgstr ""
 
-#. Tag: phrase
-#: Book_Info.xml:17
-#, no-c-format
-msgid "Logo"
-msgstr ""
-
-#. Tag: holder
-#: Book_Info.xml:21
-#, no-c-format
-msgid "&HOLDER;"
-msgstr ""

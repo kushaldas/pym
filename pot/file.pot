@@ -1,415 +1,409 @@
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: 2010-09-27T11:50:13\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
 "MIME-Version: 1.0\n"
-"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Tag: title
-#: file.xml:6
 #, no-c-format
 msgid "File handling"
 msgstr ""
 
 #. Tag: para
-#: file.xml:7
 #, no-c-format
-msgid ""
-"A file is some information or data which stays in the computer storage "
-"devices. You already know about different kinds of file , like your music "
-"files, video files, text files. Python gives you easy ways to manipulate "
-"these files. Generally we divide files in two categories, text file and "
-"binary file. Text files are simple text where as the binary files contain "
-"binary data which is only readable by computer."
+msgid "A file is some information or data which stays in the computer storage devices. You already know about different kinds of file , like your music files, video files, text files. Python gives you easy ways to manipulate these files. Generally we divide files in two categories, text file and binary file. Text files are simple text where as the binary files contain binary data which is only readable by computer."
 msgstr ""
 
 #. Tag: title
-#: file.xml:11
 #, no-c-format
 msgid "File opening"
 msgstr ""
 
 #. Tag: para
-#: file.xml:12
 #, no-c-format
-msgid ""
-"To open a file we use <emphasis>open()</emphasis> function. It requires two "
-"arguments, first the file path or file name, second which mode it should "
-"open. Modes are like"
+msgid "To open a file we use <emphasis>open()</emphasis> function. It requires two arguments, first the file path or file name, second which mode it should open. Modes are like"
 msgstr ""
 
 #. Tag: member
-#: file.xml:16
 #, no-c-format
-msgid ""
-"\"r\" -> open read only, you can read the file but can not edit / delete "
-"anything inside"
+msgid "&#34;r&#34; -&#62; open read only, you can read the file but can not edit / delete anything inside"
 msgstr ""
 
 #. Tag: member
-#: file.xml:17
 #, no-c-format
-msgid ""
-"\"w\" -> open with write power, means if the file exists then delete all "
-"content and open it to write"
+msgid "&#34;w&#34; -&#62; open with write power, means if the file exists then delete all content and open it to write"
 msgstr ""
 
 #. Tag: member
-#: file.xml:18
 #, no-c-format
-msgid "\"a\" -> open in append mode"
+msgid "&#34;a&#34; -&#62; open in append mode"
 msgstr ""
 
 #. Tag: para
-#: file.xml:20
 #, no-c-format
-msgid ""
-"The default mode is read only, ie if you do not provide any mode it will "
-"open the file as read only. Let us open a file"
+msgid "The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file"
 msgstr ""
 
 #. Tag: screen
-#: file.xml:23
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open(\"love.txt\")\n"
-">>> f\n"
-"<open file 'love.txt', mode 'r' at 0xb7f2d968>\n"
-"]]>"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;love.txt&#34;)\n"
+"&#62;&#62;&#62; f\n"
+"&#60;open file &#39;love.txt&#39;, mode &#39;r&#39; at 0xb7f2d968&#62;\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: title
-#: file.xml:27
+#, no-c-format
+msgid "Closing a file"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "After opening a file one should always close the opened file. We use method <emphasis>close()</emphasis> for this."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;love.txt&#34;)\n"
+"&#62;&#62;&#62; f\n"
+"&#60;open file &#39;love.txt&#39;, mode &#39;r&#39; at 0xb7f2d968&#62;\n"
+"&#62;&#62;&#62; f.close()\n"
+"\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Important"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Always make sure you *explicitly* close each open file, once its job is done and you have no reason to keep it open. Because"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable way of recovery, so the program could crash."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are not useful or usable."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Open files always stand a chance of corruption and data loss."
+msgstr ""
+
+#. Tag: title
 #, no-c-format
 msgid "Reading a file"
 msgstr ""
 
 #. Tag: para
-#: file.xml:28
 #, no-c-format
-msgid ""
-"To read the whole file at once use the <emphasis>read()</emphasis> method."
+msgid "To read the whole file at once use the <emphasis>read()</emphasis> method."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:31
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open(\"sample.txt\")\n"
-">>> f.read()\n"
-"'I love Python\\nPradeepto loves KDE\\nSankarshan loves Openoffice\\n'\n"
-"]]>"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;sample.txt&#34;)\n"
+"&#62;&#62;&#62; f.read()\n"
+"&#39;I love Python\n"
+"Pradeepto loves KDE\n"
+"Sankarshan loves Openoffice\n"
+"&#39;\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:32
 #, no-c-format
-msgid ""
-"If you call read() again it will return empty string as it already read the "
-"whole file. readline() can help you to read one line each time from the file."
+msgid "If you call <emphasis>read()</emphasis> again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:35
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open(\"sample.txt\")\n"
-">>> f.readline()\n"
-"'I love Python\\n'\n"
-">>> f.readline()\n"
-"'Pradeepto loves KDE\\n'\n"
-"]]>"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;sample.txt&#34;)\n"
+"&#62;&#62;&#62; f.readline()\n"
+"&#39;I love Python\n"
+"&#39;\n"
+"&#62;&#62;&#62; f.readline()\n"
+"&#39;Pradeepto loves KDE\n"
+"&#39;\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:36
 #, no-c-format
-msgid ""
-"To read all the all the lines in a list we use <emphasis>readlines()</"
-"emphasis> method."
+msgid "To read all the all the lines in a list we use <emphasis>readlines()</emphasis> method."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:39
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open(\"sample.txt\")\n"
-">>> f.readlines()\n"
-"['I love Python\\n', 'Pradeepto loves KDE\\n', 'Sankarshan loves Openoffice"
-"\\n']\n"
-"]]>"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;sample.txt&#34;)\n"
+"&#62;&#62;&#62; f.readlines()\n"
+"[&#39;I love Python\n"
+"&#39;, &#39;Pradeepto loves KDE\n"
+"&#39;, &#39;Sankarshan loves Openoffice\n"
+"&#39;]\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:40
 #, no-c-format
 msgid "You can even loop through the lines in a file object."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:43
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open(\"sample.txt\")\n"
-">>> for x in f:\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;sample.txt&#34;)\n"
+"&#62;&#62;&#62; for x in f:\n"
 "...     print x,\n"
 "...\n"
 "I love Python\n"
 "Pradeepto loves KDE\n"
 "Sankarshan loves Openoffice\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:44
 #, no-c-format
-msgid ""
-"Let us write a program which will take the file name as the input from the "
-"user and show the content of the file in the console."
+msgid "Let us write a program which will take the file name as the input from the user and show the content of the file in the console."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:47
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "#!/usr/bin/env python\n"
-"name = raw_input(\"Enter the file name: \")\n"
+"name = raw_input(&#34;Enter the file name: &#34;)\n"
 "f = open(name)\n"
 "print f.read()\n"
 "f.close()\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:48
 #, no-c-format
-msgid ""
-"In the last line you can see that we closed the file object with the help of "
-"close() method."
+msgid "In the last line you can see that we closed the file object with the help of close() method."
 msgstr ""
 
 #. Tag: para
-#: file.xml:51 file.xml:82
 #, no-c-format
 msgid "The output"
 msgstr ""
 
 #. Tag: screen
-#: file.xml:54
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "[kd@kdlappy book]$ ./showfile.py\n"
 "Enter the filename: sample.txt\n"
 "I love Python\n"
 "Pradeepto loves KDE\n"
 "Sankarshan loves Openoffice\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: title
-#: file.xml:58
 #, no-c-format
 msgid "Writing in a file"
 msgstr ""
 
 #. Tag: para
-#: file.xml:59
 #, no-c-format
-msgid ""
-"Let us open a file then we will write some random text into it by using the "
-"write() method."
+msgid "Let us open a file then we will write some random text into it by using the write() method."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:62
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open(\"ircnicks.txt\", 'w')\n"
-">>> f.write('powerpork\\n')\n"
-">>> f.write('indrag\\n')\n"
-">>> f.write('mishti\\n')\n"
-">>> f.write('sm|CPU')\n"
-">>> f.close()\n"
-"]]>"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#34;ircnicks.txt&#34;, &#39;w&#39;)\n"
+"&#62;&#62;&#62; f.write(&#39;powerpork\n"
+"&#39;)\n"
+"&#62;&#62;&#62; f.write(&#39;indrag\n"
+"&#39;)\n"
+"&#62;&#62;&#62; f.write(&#39;mishti\n"
+"&#39;)\n"
+"&#62;&#62;&#62; f.write(&#39;sm|CPU&#39;)\n"
+"&#62;&#62;&#62; f.close()\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:63
 #, no-c-format
 msgid "Now read the file we just created"
 msgstr ""
 
 #. Tag: screen
-#: file.xml:66
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open('ircnicks.txt')\n"
-">>> s = f.read()\n"
-">>> print s\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#39;ircnicks.txt&#39;)\n"
+"&#62;&#62;&#62; s = f.read()\n"
+"&#62;&#62;&#62; print s\n"
 "powerpork\n"
 "indrag\n"
 "mishti\n"
 "sm|CPU\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: title
-#: file.xml:70
 #, no-c-format
 msgid "copyfile.py"
 msgstr ""
 
 #. Tag: para
-#: file.xml:71
 #, no-c-format
 msgid "In this example we will copy a given file to another file."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:74
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "#!/usr/bin/env python\n"
 "import sys\n"
-"if len(sys.argv) < 3:\n"
-"    print \"Wrong parameter\"\n"
-"    print \"./copyfile.py file1 file2\"\n"
+"if len(sys.argv) &#60; 3:\n"
+"    print &#34;Wrong parameter&#34;\n"
+"    print &#34;./copyfile.py file1 file2&#34;\n"
 "    sys.exit(1)\n"
 "f1 = open(sys.argv[1])\n"
 "s = f1.read()\n"
 "f1.close()\n"
-"f2 = open(sys.argv[2], 'w')\n"
+"f2 = open(sys.argv[2], &#39;w&#39;)\n"
 "f2.write(s)\n"
 "f2.close()\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:75
 #, no-c-format
-msgid ""
-"You can see we used a new module here <emphasis>sys</emphasis>. "
-"<emphasis>sys.argv</emphasis> contains all command line parameters. Remember "
-"<emphasis>cp</emphasis> command in shell, after <emphasis>cp</emphasis> we "
-"type first the file to be copied and then the new file name."
+msgid "You can see we used a new module here <emphasis>sys</emphasis>. <emphasis>sys.argv</emphasis> contains all command line parameters. Remember <emphasis>cp</emphasis> command in shell, after <emphasis>cp</emphasis> we type first the file to be copied and then the new file name."
 msgstr ""
 
 #. Tag: para
-#: file.xml:78
 #, no-c-format
-msgid ""
-"The first value in <emphasis>sys.argv</emphasis> is the name of the command "
-"itself."
+msgid "The first value in <emphasis>sys.argv</emphasis> is the name of the command itself."
 msgstr ""
 
 #. Tag: screen
-#: file.xml:81
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "#!/usr/bin/env python\n"
 "import sys\n"
-"print \"First value\", sys.argv[0]\n"
-"print \"All values\"\n"
+"print &#34;First value&#34;, sys.argv[0]\n"
+"print &#34;All values&#34;\n"
 "for i, x  in enumerate(sys.argv):\n"
 "    print i, x\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: screen
-#: file.xml:85
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "[kd@kdlappy book]$ ./argvtest.py Hi there\n"
 "First value ./argvtest.py\n"
 "All values\n"
 "0 ./argvtest.py\n"
 "1 Hi\n"
 "2 there\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: file.xml:86
 #, no-c-format
-msgid ""
-"Here we used a new function <emphasis>enumerate(iterableobject)</emphasis>, "
-"which returns the index number and the value from the iterable object."
+msgid "Here we used a new function <emphasis>enumerate(iterableobject)</emphasis>, which returns the index number and the value from the iterable object."
 msgstr ""
 
 #. Tag: title
-#: file.xml:92
 #, no-c-format
 msgid "Random seeking in a file"
 msgstr ""
 
 #. Tag: para
-#: file.xml:93
 #, no-c-format
-msgid ""
-"You can also randomly move around inside a file using <emphasis>seek()</"
-"emphasis> method. It takes two arguments , offset and whence. To know more "
-"about it let us read what python help tells us"
+msgid "You can also randomly move around inside a file using <emphasis>seek()</emphasis> method. It takes two arguments , offset and whence. To know more about it let us read what python help tells us"
 msgstr ""
 
 #. Tag: para
-#: file.xml:96
 #, no-c-format
-msgid ""
-"seek(...) seek(offset[, whence]) -> None. Move to new file position. "
-"Argument offset is a byte count. Optional argument whence defaults to 0 "
-"(offset from start of file, offset should be >= 0); other values are 1 (move "
-"relative to current position, positive or negative), and 2 (move relative to "
-"end of file, usually negative, although many platforms allow seeking beyond "
-"the end of a file). If the file is opened in text mode, only offsets "
-"returned by tell() are legal. Use of other offsets causes undefined "
-"behavior. Note that not all file objects are speakable."
+msgid "seek(...) seek(offset[, whence]) -&#62; None. Move to new file position. Argument offset is a byte count. Optional argument whence defaults to 0 (offset from start of file, offset should be &#62;= 0); other values are 1 (move relative to current position, positive or negative), and 2 (move relative to end of file, usually negative, although many platforms allow seeking beyond the end of a file). If the file is opened in text mode, only offsets returned by tell() are legal. Use of other offsets causes undefined behavior. Note that not all file objects are speakable."
 msgstr ""
 
 #. Tag: para
-#: file.xml:108
 #, no-c-format
 msgid "Let us see one example"
 msgstr ""
 
 #. Tag: screen
-#: file.xml:111
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> f = open('tempfile', 'w')\n"
-">>> f.write('0123456789abcdef')\n"
-">>> f.close()\n"
-">>> f = open('tempfile')\n"
-">>> f.tell()    #tell us the offset position\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; f = open(&#39;tempfile&#39;, &#39;w&#39;)\n"
+"&#62;&#62;&#62; f.write(&#39;0123456789abcdef&#39;)\n"
+"&#62;&#62;&#62; f.close()\n"
+"&#62;&#62;&#62; f = open(&#39;tempfile&#39;)\n"
+"&#62;&#62;&#62; f.tell()    #tell us the offset position\n"
 "0L\n"
-">>> f.seek(5) # Goto 5th byte\n"
-">>> f.tell()\n"
+"&#62;&#62;&#62; f.seek(5) # Goto 5th byte\n"
+"&#62;&#62;&#62; f.tell()\n"
 "5L\n"
-">>> f.read(1) #Read 1 byte\n"
-"'5'\n"
-">>> f.seek(-3, 2) # goto 3rd byte from the end\n"
-">>> f.read() #Read till the end of the file\n"
-"'def'\n"
-"]]>"
+"&#62;&#62;&#62; f.read(1) #Read 1 byte\n"
+"&#39;5&#39;\n"
+"&#62;&#62;&#62; f.seek(-3, 2) # goto 3rd byte from the end\n"
+"&#62;&#62;&#62; f.read() #Read till the end of the file\n"
+"&#39;def&#39;\n"
+"\n"
+""
 msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Count spaces, tabs and new lines in a file"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Let us try to write an application which will count the spaces , tabs, and new lines in any given file."
+msgstr ""
+

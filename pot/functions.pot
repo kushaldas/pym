@@ -1,362 +1,293 @@
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: 2010-09-27T11:50:13\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
 "MIME-Version: 1.0\n"
-"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Tag: title
-#: functions.xml:6
 #, no-c-format
 msgid "Functions"
 msgstr ""
 
 #. Tag: para
-#: functions.xml:7
 #, no-c-format
-msgid ""
-"Reusing the same code is required many times within a same program. "
-"Functions help us to do so. We write the things we have to do repeatedly in "
-"a function then call it where ever required. We already saw build in "
-"functions like <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis>."
+msgid "Reusing the same code is required many times within a same program. Functions help us to do so. We write the things we have to do repeatedly in a function then call it where ever required. We already saw build in functions like <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis>."
 msgstr ""
 
 #. Tag: title
-#: functions.xml:11
 #, no-c-format
 msgid "Defining a function"
 msgstr ""
 
 #. Tag: para
-#: functions.xml:12
 #, no-c-format
-msgid ""
-"We use <emphasis>def</emphasis> keyword to define a function. general syntax "
-"is like"
+msgid "We use <emphasis>def</emphasis> keyword to define a function. general syntax is like"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:15
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "def functionname(params):\n"
 "    statement1\n"
 "    statement2\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:16
 #, no-c-format
-msgid ""
-"Let us write a function which will take two integers as input and then "
-"return the sum."
+msgid "Let us write a function which will take two integers as input and then return the sum."
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:19
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> def sum(a, b):\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; def sum(a, b):\n"
 "...     return a + b\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:20
 #, no-c-format
-msgid ""
-"In the second line with the <emphasis>return</emphasis> keyword, we are "
-"sending back the value of <emphasis>a + b</emphasis> to the caller. You must "
-"call it like"
+msgid "In the second line with the <emphasis>return</emphasis> keyword, we are sending back the value of <emphasis>a + b</emphasis> to the caller. You must call it like"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:23
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> res = sum(234234, 34453546464)\n"
-">>> res\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; res = sum(234234, 34453546464)\n"
+"&#62;&#62;&#62; res\n"
 "34453780698L\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:24
 #, no-c-format
-msgid ""
-"Remember the palindrome program we wrote in the last chapter. Let us write a "
-"function which will check if a given string is palindrome or not, then "
-"return <emphasis>True</emphasis> or <emphasis>False</emphasis>."
+msgid "Remember the palindrome program we wrote in the last chapter. Let us write a function which will check if a given string is palindrome or not, then return <emphasis>True</emphasis> or <emphasis>False</emphasis>."
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:27
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "#!/usr/bin/env python\n"
 "def palindrome(s):\n"
 "    z = s\n"
 "    z = [x for x in z]\n"
 "    z.reverse()\n"
-"    if s == \"\".join(z):\n"
+"    if s == &#34;&#34;.join(z):\n"
 "        return True\n"
 "    else:\n"
 "        return False\n"
-"s = raw_input(\"Enter a string: \")\n"
+"s = raw_input(&#34;Enter a string: &#34;)\n"
 "if palindrome(s):\n"
-"    print \"Yay a palindrome\"\n"
+"    print &#34;Yay a palindrome&#34;\n"
 "else:\n"
-"    print \"Oh no, not a palindrome\"\n"
-"]]>"
+"    print &#34;Oh no, not a palindrome&#34;\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:28
 #, no-c-format
 msgid "Now run the code :)"
 msgstr ""
 
 #. Tag: title
-#: functions.xml:34
 #, no-c-format
 msgid "Local and global variables"
 msgstr ""
 
 #. Tag: para
-#: functions.xml:35
 #, no-c-format
-msgid ""
-"To understand local and global variables we will go through two examples."
+msgid "To understand local and global variables we will go through two examples."
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:38
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "#!/usr/bin/env python\n"
 "def change(b):\n"
 "    a = 90\n"
 "    print a\n"
 "a = 9\n"
-"print \"Before the function call \", a\n"
-"print \"inside change function\",\n"
+"print &#34;Before the function call &#34;, a\n"
+"print &#34;inside change function&#34;,\n"
 "change(a)\n"
-"print \"After the function call \", a\n"
-"]]>"
+"print &#34;After the function call &#34;, a\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:39
 #, no-c-format
 msgid "The output"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:40
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "[kd@kdlappy book]$ ./local.py\n"
 "Before the function call  9\n"
 "inside change function 90\n"
 "After the function call  9\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:41
 #, no-c-format
-msgid ""
-"First we are assigning <emphasis>9</emphasis> to <emphasis>a</emphasis>, "
-"then calling change function, inside of that we are assigning <emphasis>90</"
-"emphasis> to <emphasis>a</emphasis> and printing <emphasis>a</emphasis>. "
-"After the function call we are again printing the value of <emphasis>a</"
-"emphasis>. When we are writing <emphasis>a = 90</emphasis> inside the "
-"function, it is actually creating a new variable called <emphasis>a</"
-"emphasis>, which is only available inside the function and will be destroyed "
-"after the function finished. So though the name is same for the variable "
-"<emphasis>a</emphasis> but they are different in and out side of the "
-"function."
+msgid "First we are assigning <emphasis>9</emphasis> to <emphasis>a</emphasis>, then calling change function, inside of that we are assigning <emphasis>90</emphasis> to <emphasis>a</emphasis> and printing <emphasis>a</emphasis>. After the function call we are again printing the value of <emphasis>a</emphasis>. When we are writing <emphasis>a = 90</emphasis> inside the function, it is actually creating a new variable called <emphasis>a</emphasis>, which is only available inside the function and will be destroyed after the function finished. So though the name is same for the variable <emphasis>a</emphasis> but they are different in and out side of the function."
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:44
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
+msgid "\n"
+"\n"
 "#!/usr/bin/env python\n"
 "def chvariable ange(b):\n"
 "    global a\n"
 "    a = 90\n"
 "    print a\n"
 "a = 9\n"
-"print \"Before the function call \", a\n"
-"print \"inside change function\",\n"
+"print &#34;Before the function call &#34;, a\n"
+"print &#34;inside change function&#34;,\n"
 "change(a)\n"
-"print \"After the function call \", a\n"
-"]]>"
+"print &#34;After the function call &#34;, a\n"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:45
 #, no-c-format
-msgid ""
-"Here by using global keyword we are telling that <emphasis>a</emphasis> is "
-"globally defined, so when we are changing a's value inside the function it "
-"is actually changing for the <emphasis>a</emphasis> outside of the function "
-"also."
+msgid "Here by using global keyword we are telling that <emphasis>a</emphasis> is globally defined, so when we are changing a&#39;s value inside the function it is actually changing for the <emphasis>a</emphasis> outside of the function also."
 msgstr ""
 
 #. Tag: title
-#: functions.xml:51
 #, no-c-format
 msgid "Default argument value"
 msgstr ""
 
 #. Tag: para
-#: functions.xml:52
 #, no-c-format
-msgid ""
-"In a function variables may have default argument values, that means if we "
-"don't give any value for that particular variable it will assigned "
-"automatically."
+msgid "In a function variables may have default argument values, that means if we don&#39;t give any value for that particular variable it will assigned automatically."
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:55
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> def test(a , b = -99):\n"
-"...     if a > b:\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; def test(a , b = -99):\n"
+"...     if a &#62; b:\n"
 "...         return True\n"
 "...     else:\n"
 "...         return False\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:56
 #, no-c-format
-msgid ""
-"In the above example we have written <emphasis>b = -99</emphasis> in the "
-"function parameter list. That means of no value for <emphasis>b</emphasis> "
-"is given then b's value is <emphasis>-99</emphasis>. This is a very simple "
-"example of default arguments. You can test the code by"
+msgid "In the above example we have written <emphasis>b = -99</emphasis> in the function parameter list. That means of no value for <emphasis>b</emphasis> is given then b&#39;s value is <emphasis>-99</emphasis>. This is a very simple example of default arguments. You can test the code by"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:59
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> test(12, 23)\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; test(12, 23)\n"
 "False\n"
-">>> test(12)\n"
+"&#62;&#62;&#62; test(12)\n"
 "True\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: title
-#: functions.xml:61
 #, no-c-format
 msgid "Important"
 msgstr ""
 
 #. Tag: para
-#: functions.xml:62
 #, no-c-format
-msgid ""
-"Remember that you can not have an argument without default argument if you "
-"already have one argument with default values before it. Like <emphasis>f(a, "
-"b=90, c)</emphasis> is illegal as <emphasis>b</emphasis> is having a default "
-"value but after that <emphasis>c</emphasis> is not having any default value."
+msgid "Remember that you can not have an argument without default argument if you already have one argument with default values before it. Like <emphasis>f(a, b=90, c)</emphasis> is illegal as <emphasis>b</emphasis> is having a default value but after that <emphasis>c</emphasis> is not having any default value."
 msgstr ""
 
 #. Tag: para
-#: functions.xml:66
 #, no-c-format
-msgid ""
-"Also remember that default value is evaluated only once, so if you have any "
-"mutable object like list it will make a difference. See the next example"
+msgid "Also remember that default value is evaluated only once, so if you have any mutable object like list it will make a difference. See the next example"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:69
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> def f(a, data=[]):\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; def f(a, data=[]):\n"
 "...     data.append(a)\n"
 "...     return data\n"
 "...\n"
-">>> print f(1)\n"
+"&#62;&#62;&#62; print f(1)\n"
 "[1]\n"
-">>> print f(2)\n"
+"&#62;&#62;&#62; print f(2)\n"
 "[1, 2]\n"
-">>> print f(3)\n"
+"&#62;&#62;&#62; print f(3)\n"
 "[1, 2, 3]\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: title
-#: functions.xml:73
 #, no-c-format
 msgid "Keyword arguments"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:74
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> def func(a, b=5, c=10):\n"
-"...     print 'a is', a, 'and b is', b, 'and c is', c\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; def func(a, b=5, c=10):\n"
+"...     print &#39;a is&#39;, a, &#39;and b is&#39;, b, &#39;and c is&#39;, c\n"
 "...\n"
-">>> func(12, 24)\n"
+"&#62;&#62;&#62; func(12, 24)\n"
 "a is 12 and b is 24 and c is 10\n"
-">>> func(12, c = 24)\n"
+"&#62;&#62;&#62; func(12, c = 24)\n"
 "a is 12 and b is 5 and c is 24\n"
-">>> func(b=12, c = 24, a = -1)\n"
+"&#62;&#62;&#62; func(b=12, c = 24, a = -1)\n"
 "a is -1 and b is 12 and c is 24\n"
-"]]>"
+"\n"
+""
 msgstr ""
 
 #. Tag: para
-#: functions.xml:75
 #, no-c-format
-msgid ""
-"In the above example you can see we are calling the function with variable "
-"names, like <emphasis>func(12, c = 24)</emphasis>, by that we are assigning "
-"<emphasis>24</emphasis> to <emphasis>c</emphasis> and <emphasis>b</emphasis> "
-"is getting its default value. Also remember that you can not have without "
-"keyword based argument after a keyword based argument. like"
+msgid "In the above example you can see we are calling the function with variable names, like <emphasis>func(12, c = 24)</emphasis>, by that we are assigning <emphasis>24</emphasis> to <emphasis>c</emphasis> and <emphasis>b</emphasis> is getting its default value. Also remember that you can not have without keyword based argument after a keyword based argument. like"
 msgstr ""
 
 #. Tag: screen
-#: functions.xml:78
 #, no-c-format
-msgid ""
-"<![CDATA[\n"
-">>> def func(a, b=13, v):\n"
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; def func(a, b=13, v):\n"
 "...     print a, b, v\n"
 "...\n"
-"  File \"<stdin>\", line 1\n"
+"  File &#34;&#60;stdin&#62;&#34;, line 1\n"
 "SyntaxError: non-default argument follows default argument\n"
-"]]>"
+"\n"
+""
 msgstr ""
+

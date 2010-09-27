@@ -1,126 +1,109 @@
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: 2010-09-27T11:50:13\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
 "MIME-Version: 1.0\n"
-"Content-Type: application/x-xml2pot; charset=UTF-8\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Tag: title
-#: acknowledgment.xml:6
 #, no-c-format
 msgid "Acknowledgment"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:7
 #, no-c-format
-msgid ""
-"I would like to thank the following people who have helped me make it "
-"through this book. Specially #fedora-docs in irc.freenode.net and also "
-"#fedora-art . Names are in alphabetic order:"
+msgid "I would like to thank the following people who have helped me make it through this book. Specially #fedora-docs in irc.freenode.net and also #fedora-art . Names are in alphabetic order:"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:13
 #, no-c-format
 msgid "Jared Smith"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:14
 #, no-c-format
 msgid "Marco Mornati"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:15
 #, no-c-format
 msgid "Nicu Buculei"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:16
 #, no-c-format
 msgid "Paul W. Frields"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:17
 #, no-c-format
 msgid "Pradeepto K Bhattacharya"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:18
 #, no-c-format
 msgid "Sankarshan Mukhopadhyay"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:19
 #, no-c-format
 msgid "Sayamindu Dasgupta"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:20
 #, no-c-format
 msgid "Stephanie Whiting"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:21
+#, no-c-format
+msgid "Prashad J. Pandit"
+msgstr ""
+
+#. Tag: para
 #, no-c-format
 msgid "I am missing some names in the above list, will add them soon"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:24
 #, no-c-format
 msgid "I also took help from the following sites"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:29
 #, no-c-format
 msgid "http://docs.python.org"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:30
 #, no-c-format
 msgid "http://en.wikipedia.org"
 msgstr ""
 
 #. Tag: para
-#: acknowledgment.xml:33
 #, no-c-format
 msgid "Few books or sites I would recommend to read"
 msgstr ""
 
-#. Tag: citetitle
-#: acknowledgment.xml:36
+#. Tag: para
 #, no-c-format
-msgid "Byte of Python"
+msgid "<ulink url=\"http://dgplug.org/intro/?q=byteofpython\"><citetitle>Byte of Python</citetitle></ulink>"
 msgstr ""
 
-#. Tag: citetitle
-#: acknowledgment.xml:37
+#. Tag: para
 #, no-c-format
-msgid "Dive into Python"
+msgid "<ulink url=\"http://diveintopython.org\"><citetitle>Dive into Python</citetitle></ulink>"
 msgstr ""
 
-#. Tag: citetitle
-#: acknowledgment.xml:38
+#. Tag: para
 #, no-c-format
-msgid "Python Tutorial"
+msgid "<ulink url=\"http://docs.python.org/tut/tut.html \"><citetitle>Python Tutorial</citetitle></ulink>"
 msgstr ""
+
