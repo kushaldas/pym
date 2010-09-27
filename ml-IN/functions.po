@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: 2008-12-24 15:13+0000\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2009-09-19 19:41+0530\n"
+"Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,31 +17,25 @@ msgstr ""
 #: functions.xml:6
 #, no-c-format
 msgid "Functions"
-msgstr ""
+msgstr "ഫങ്ഷനുകള്‍"
 
 #. Tag: para
 #: functions.xml:7
 #, no-c-format
-msgid ""
-"Reusing the same code is required many times within a same program. "
-"Functions help us to do so. We write the things we have to do repeatedly in "
-"a function then call it where ever required. We already saw build in "
-"functions like <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis>."
-msgstr ""
+msgid "Reusing the same code is required many times within a same program. Functions help us to do so. We write the things we have to do repeatedly in a function then call it where ever required. We already saw build in functions like <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis>."
+msgstr "ഒരു പ്രോഗ്രാമില്‍ ഒരേ കോഡുതന്നെ വീണ്ടുമുപയോഗിക്കേണ്ടി വരാം.  ഇങ്ങനെ ചെയ്യാന്‍ ഫങ്ഷനുകള്‍ നമ്മെ സഹായിക്കുന്നു. നമുക്ക് വീണ്ടും വീണ്ടും ഉപയോഗിക്കേണ്ട കാര്യങ്ങള്‍ ഒരു ഫങ്ഷനായി എഴുതുകയും അതിനെ ആവശ്യമുളള സ്ഥലത്തേക്ക് വിളിക്കുകയും ചെയ്യാം. <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis> എന്നിങ്ങനെയുള്ള മുന്‍ നിര്‍വചിക്കപ്പെട്ട ഫങ്ഷനുകള്‍  നാം പരിചയപ്പെട്ടുവല്ലോ."
 
 #. Tag: title
 #: functions.xml:11
 #, no-c-format
 msgid "Defining a function"
-msgstr ""
+msgstr "ഫങ്ഷന്‍ നിര്‍വചിക്കുന്ന വിധം"
 
 #. Tag: para
 #: functions.xml:12
 #, no-c-format
-msgid ""
-"We use <emphasis>def</emphasis> keyword to define a function. general syntax "
-"is like"
-msgstr ""
+msgid "We use <emphasis>def</emphasis> keyword to define a function. general syntax is like"
+msgstr "ഒരു ഫങ്ഷന്‍ നിര്‍വചിക്കുവാന്‍  നമ്മള്‍  <emphasis>def</emphasis> എന്ന കീവേഡാണുപയോഗിക്കുന്നത്. സാധാരണ ഉപയോഗിക്കുന്ന മാതൃക ഇങ്ങനെയാണ്."
 
 #. Tag: screen
 #: functions.xml:15
@@ -53,14 +47,17 @@ msgid ""
 "    statement2\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"def functionname(params):\n"
+"    statement1\n"
+"    statement2\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:16
 #, no-c-format
-msgid ""
-"Let us write a function which will take two integers as input and then "
-"return the sum."
-msgstr ""
+msgid "Let us write a function which will take two integers as input and then return the sum."
+msgstr "രണ്ട് ഇന്‍റിജറുകളെ ഇന്‍പുട്ടായി സ്വീകരിക്കുകയും അതിന്‍റെ തുകയെ തിരിച്ചുനല്കുകയും ചെയ്യുന്ന ഒരു ഫങ്ഷന്‍ നമുക്ക് ഇങ്ങനെ എഴുതാം."
 
 #. Tag: screen
 #: functions.xml:19
@@ -71,15 +68,16 @@ msgid ""
 "...     return a + b\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> def sum(a, b):\n"
+"...     return a + b\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:20
 #, no-c-format
-msgid ""
-"In the second line with the <emphasis>return</emphasis> keyword, we are "
-"sending back the value of <emphasis>a + b</emphasis> to the caller. You must "
-"call it like"
-msgstr ""
+msgid "In the second line with the <emphasis>return</emphasis> keyword, we are sending back the value of <emphasis>a + b</emphasis> to the caller. You must call it like"
+msgstr "രണ്ടാമത്തെ വരിയില്‍‌ കാണുന്ന <emphasis>return</emphasis>  എന്ന കീവേഡ് <emphasis>a + b</emphasis>  യുടെ മൂല്യം ഫങ്ഷന്‍  വിളിക്കുന്നിടത്തേക്ക് തിരിച്ച് നല്കുന്നതിനായി ഉപയോഗിക്കുന്നു. ഒരു ഫങ്ഷനെ പ്രോഗ്രാമില്‍ ഇങ്ങനെ വിളിക്കാം"
 
 #. Tag: screen
 #: functions.xml:23
@@ -91,15 +89,17 @@ msgid ""
 "34453780698L\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> res = sum(234234, 34453546464)\n"
+">>> res\n"
+"34453780698L\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:24
 #, no-c-format
-msgid ""
-"Remember the palindrome program we wrote in the last chapter. Let us write a "
-"function which will check if a given string is palindrome or not, then "
-"return <emphasis>True</emphasis> or <emphasis>False</emphasis>."
-msgstr ""
+msgid "Remember the palindrome program we wrote in the last chapter. Let us write a function which will check if a given string is palindrome or not, then return <emphasis>True</emphasis> or <emphasis>False</emphasis>."
+msgstr "കഴിഞ്ഞ പാഠത്തില്‍ നമ്മള്‍ palindrome പ്രോഗ്രാം എഴുതിയത് ഓര്‍മ്മിക്കുക. തന്നിരിക്കുന്ന സട്രിംഗ് palindrome ആണോ അല്ലയോ എന്ന് പരിശോധിച്ച്  <emphasis>True</emphasis> എന്നോ <emphasis>False</emphasis> എന്നോ മൂല്യം തരാന്‍ കഴിയുന്ന ഒരു ഫങ്ഷനാണ് നമ്മള്‍ ഇനി എഴുതാന്‍ പോവുന്നത്."
 
 #. Tag: screen
 #: functions.xml:27
@@ -122,25 +122,40 @@ msgid ""
 "    print \"Oh no, not a palindrome\"\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"def palindrome(s):\n"
+"    z = s\n"
+"    z = [x for x in z]\n"
+"    z.reverse()\n"
+"    if s == \"\".join(z):\n"
+"        return True\n"
+"    else:\n"
+"        return False\n"
+"s = raw_input(\"Enter a string: \")\n"
+"if palindrome(s):\n"
+"    print \"Yay a palindrome\"\n"
+"else:\n"
+"    print \"Oh no, not a palindrome\"\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:28
 #, no-c-format
 msgid "Now run the code :)"
-msgstr ""
+msgstr "കോഡ് റണ്‍ ചെയ്യിക്കുക :)"
 
 #. Tag: title
 #: functions.xml:34
 #, no-c-format
 msgid "Local and global variables"
-msgstr ""
+msgstr "ലോക്കല്‍  വാര്യബിളുകളും ഗ്ളോബല്‍ വാര്യബിളുകളും"
 
 #. Tag: para
 #: functions.xml:35
 #, no-c-format
-msgid ""
-"To understand local and global variables we will go through two examples."
-msgstr ""
+msgid "To understand local and global variables we will go through two examples."
+msgstr ".ലോക്കല്‍  വാര്യബിളുകളും ഗ്ളോബല്‍ വാര്യബിളുകളും മനസ്സിലാക്കുവാന്‍ വേണ്ടി നമുക്ക് രണ്ടുദാഹരണങ്ങള്‍ നോക്കാം"
 
 #. Tag: screen
 #: functions.xml:38
@@ -158,12 +173,23 @@ msgid ""
 "print \"After the function call \", a\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"def change(b):\n"
+"    a = 90\n"
+"    print a\n"
+"a = 9\n"
+"print \"Before the function call \", a\n"
+"print \"inside change function\",\n"
+"change(a)\n"
+"print \"After the function call \", a\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:39
 #, no-c-format
 msgid "The output"
-msgstr ""
+msgstr "ഔട്ട്പുട്ട്"
 
 #. Tag: screen
 #: functions.xml:40
@@ -176,22 +202,18 @@ msgid ""
 "After the function call  9\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./local.py\n"
+"Before the function call  9\n"
+"inside change function 90\n"
+"After the function call  9\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:41
 #, no-c-format
-msgid ""
-"First we are assigning <emphasis>9</emphasis> to <emphasis>a</emphasis>, "
-"then calling change function, inside of that we are assigning <emphasis>90</"
-"emphasis> to <emphasis>a</emphasis> and printing <emphasis>a</emphasis>. "
-"After the function call we are again printing the value of <emphasis>a</"
-"emphasis>. When we are writing <emphasis>a = 90</emphasis> inside the "
-"function, it is actually creating a new variable called <emphasis>a</"
-"emphasis>, which is only available inside the function and will be destroyed "
-"after the function finished. So though the name is same for the variable "
-"<emphasis>a</emphasis> but they are different in and out side of the "
-"function."
-msgstr ""
+msgid "First we are assigning <emphasis>9</emphasis> to <emphasis>a</emphasis>, then calling change function, inside of that we are assigning <emphasis>90</emphasis> to <emphasis>a</emphasis> and printing <emphasis>a</emphasis>. After the function call we are again printing the value of <emphasis>a</emphasis>. When we are writing <emphasis>a = 90</emphasis> inside the function, it is actually creating a new variable called <emphasis>a</emphasis>, which is only available inside the function and will be destroyed after the function finished. So though the name is same for the variable <emphasis>a</emphasis> but they are different in and out side of the function."
+msgstr "ആദ്യം നമ്മള്‍ <emphasis>9</emphasis> നെ<emphasis>a</emphasis> ലേക്ക് സൂക്ഷിക്കുന്നു, അതിനുശേഷം change ഫങ്ഷന്‍ വിളിക്കുന്നു,അതിന്‍റെയുളളില്‍ നിന്നുകൊണ്ട് <emphasis>90</emphasis>  നെ <emphasis>a</emphasis> ലേക്ക് സൂക്ഷിക്കുകയും   <emphasis>a</emphasis> യെ പ്രിന്‍റു ചെയ്യുകയും ചെയ്യുന്നു.ഫങ്ഷന്‍ വിളിച്ചതിനുശേഷം വീണ്ടും <emphasis>a</emphasis> യുടെ മൂല്യം നമ്മള്‍ പ്രിന്‍റുചെയ്യുന്നു. ഫങ്ഷനുള്ളില്‍ നമ്മള്‍ <emphasis>a = 90</emphasis> എന്നെഴുതുന്പോള്‍ത്തന്നെ <emphasis>a <emphasis>  എന്ന ഒരു വേര്യബിള്‍ നിര്‍മ്മിക്കപ്പെടുന്നു,ഇത് ഫങ്ഷനുളളില്‍ മാത്രം ലഭ്യമാവുകയും ഫങ്ഷന്‍  അവസാനിക്കുന്പോള്‍ നശിപ്പിക്കപ്പെടുകയും ചെയ്യുന്നു.ഒരേ പേരില്‍ തന്നെ  <emphasis>a</emphasis> രണ്ട് വേര്യബിളുകള്‍ ഉണ്ടാക്കപ്പെടുകയും അവ ഫങ്ഷനകത്തും പുറത്തും വ്യത്യസ്തമായി നിലനില്ക്കുകയും ചെയ്യുന്നു."
 
 #. Tag: screen
 #: functions.xml:44
@@ -210,31 +232,36 @@ msgid ""
 "print \"After the function call \", a\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"def chvariable ange(b):\n"
+"    global a\n"
+"    a = 90\n"
+"    print a\n"
+"a = 9\n"
+"print \"Before the function call \", a\n"
+"print \"inside change function\",\n"
+"change(a)\n"
+"print \"After the function call \", a\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:45
 #, no-c-format
-msgid ""
-"Here by using global keyword we are telling that <emphasis>a</emphasis> is "
-"globally defined, so when we are changing a's value inside the function it "
-"is actually changing for the <emphasis>a</emphasis> outside of the function "
-"also."
-msgstr ""
+msgid "Here by using global keyword we are telling that <emphasis>a</emphasis> is globally defined, so when we are changing a's value inside the function it is actually changing for the <emphasis>a</emphasis> outside of the function also."
+msgstr "ഗ്ളോബല്‍ കീവേഡായി ഉപയോഗിക്കുന്പോള്‍ \"<emphasis>a</emphasis>  യെ ഗ്ളോബലായി( പ്രോഗ്രാമിനുളളില്‍ എല്ലാ ഫങ്ഷനുകളിലും ഉപയോഗിക്കാവുന്ന രീതിയില്‍ ) രൂപപ്പെടുത്തിയതാണെന്ന് പറയാം,വിശദമാക്കിയാല്‍ a യുടെ മൂല്യം  ഒരു ഫങ്ഷന്‍റെയുളളില്‍ നിന്ന് മാററം വരുത്തിയാല്‍ അത് ഫങ്ഷന്‍റെ പുറത്തുളള   <emphasis>a</emphasis> യിലും ഒരേപോലെ മാററപ്പെടും"
 
 #. Tag: title
 #: functions.xml:51
 #, no-c-format
 msgid "Default argument value"
-msgstr ""
+msgstr "ഡീഫോള്‍ട്ട് ആര്‍ഗ്യുമെന്‍റ് മൂല്യം "
 
 #. Tag: para
 #: functions.xml:52
 #, no-c-format
-msgid ""
-"In a function variables may have default argument values, that means if we "
-"don't give any value for that particular variable it will assigned "
-"automatically."
-msgstr ""
+msgid "In a function variables may have default argument values, that means if we don't give any value for that particular variable it will assigned automatically."
+msgstr "ഫങ്ഷന്‍ വാര്യബിളുകള്‍ക്ക് ഡീഫോള്‍ട്ടായി ആര്‍ഗ്യുമെന്റ് മുല്യങ്ങള്‍ ഉണ്ടാകും,വിശദമാക്കിയാല്‍ നമ്മള്‍ ഒരു മൂല്യവും ഈ പ്രത്യേക വാര്യബിളിനു നല്കിയിട്ടില്ലെങ്കില്‍ അത് സ്വയംപ്രേരിതമായി ഡീഫോള്‍ട്ട് മൂല്യം സ്വീകരിക്കും"
 
 #. Tag: screen
 #: functions.xml:55
@@ -248,16 +275,19 @@ msgid ""
 "...         return False\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> def test(a , b = -99):\n"
+"...     if a > b:\n"
+"...         return True\n"
+"...     else:\n"
+"...         return False\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:56
 #, no-c-format
-msgid ""
-"In the above example we have written <emphasis>b = -99</emphasis> in the "
-"function parameter list. That means of no value for <emphasis>b</emphasis> "
-"is given then b's value is <emphasis>-99</emphasis>. This is a very simple "
-"example of default arguments. You can test the code by"
-msgstr ""
+msgid "In the above example we have written <emphasis>b = -99</emphasis> in the function parameter list. That means of no value for <emphasis>b</emphasis> is given then b's value is <emphasis>-99</emphasis>. This is a very simple example of default arguments. You can test the code by"
+msgstr "മുകളിലത്തെ ഉദാഹരണത്തില്‍ ഫങ്ഷന്‍ പരാമീററര്‍ ലിസ്ററില്‍ <emphasis>b = -99</emphasis> എന്ന് നമ്മള്‍ എഴുതിയിട്ടുണ്ട്.ഇതര്‍ത്ഥമാക്കുന്നത് <emphasis>b</emphasis> യ്ക്ക് ഒരു മൂല്യവും നല്കിയിട്ടില്ല എന്നും b  യുടെ മൂല്യം  <emphasis>-99</emphasis> ആകുന്നു എന്നുമാണ്.ഇത് ഡീഫാള്‍ ട്ട് ആര്‍ഗ്യുമെന്‍റിന്‍റെ ലളിതമായ ഒരുദാഹരണമാണ്.താഴെകൊടുത്തിരിക്കുന്ന വരികളുപയോഗിച്ച് നിങ്ങള്‍ക്കിത് പരീക്ഷിച്ച് നോക്കാവുന്നതാണ്"
 
 #. Tag: screen
 #: functions.xml:59
@@ -270,30 +300,30 @@ msgid ""
 "True\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> test(12, 23)\n"
+"False\n"
+">>> test(12)\n"
+"True\n"
+"]]>"
 
 #. Tag: title
 #: functions.xml:61
 #, no-c-format
 msgid "Important"
-msgstr ""
+msgstr "പ്രധാനപ്പെട്ടത്"
 
 #. Tag: para
 #: functions.xml:62
 #, no-c-format
-msgid ""
-"Remember that you can not have an argument without default argument if you "
-"already have one argument with default values before it. Like <emphasis>f(a, "
-"b=90, c)</emphasis> is illegal as <emphasis>b</emphasis> is having a default "
-"value but after that <emphasis>c</emphasis> is not having any default value."
-msgstr ""
+msgid "Remember that you can not have an argument without default argument if you already have one argument with default values before it. Like <emphasis>f(a, b=90, c)</emphasis> is illegal as <emphasis>b</emphasis> is having a default value but after that <emphasis>c</emphasis> is not having any default value."
+msgstr "ഡിഫാള്‍ട്ട് മൂല്യങ്ങള്‍ ഒരു ആര്‍ഗ്യുമെന്റ് നില നില്‍ക്കുമ്പോള്‍ ഡിഫാള്‍ട്ട് ആര്‍ഗ്യുമെന്റ് ഇല്ലാത്ത ഒരു ആര്‍ഗ്യുമെന്റ് ഉണ്ടാകാന്‍ സാധ്യമല്ല. <emphasis>f(a, b=90, c)</emphasis>  ഇത് അനുവദനീയമല്ല കാരണം <emphasis>b</emphasis> ഡീഫാള്‍ട്ട്മൂല്യം സൂക്ഷിക്കുന്നു പക്ഷെ <emphasis>c</emphasis> യ്ക്കു ശേഷം അതൊരു ഡീഫാള്‍ട്ട് മൂല്യവും സൂക്ഷിക്കുന്നില്ല."
 
 #. Tag: para
 #: functions.xml:66
 #, no-c-format
-msgid ""
-"Also remember that default value is evaluated only once, so if you have any "
-"mutable object like list it will make a difference. See the next example"
-msgstr ""
+msgid "Also remember that default value is evaluated only once, so if you have any mutable object like list it will make a difference. See the next example"
+msgstr "ഡീഫോള്‍ട്ട് മൂല്യം വിലയിരുത്തപ്പെടുന്നത് ഒരിക്കല്‍ മാത്രമാണെന്നതുകൂടി ഓര്‍മ്മിക്കുക,അതുകൊണ്ട് ലിസ്ററ് പോലെയുളള മാററം വരുത്താവുന്ന ഒബ്ജക്ററുകളില്‍ ഇത് വ്യത്യാസപ്പെടാം.അടുത്ത ഉദാഹരണം കാണുക"
 
 #. Tag: screen
 #: functions.xml:69
@@ -312,12 +342,24 @@ msgid ""
 "[1, 2, 3]\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> def f(a, data=[]):\n"
+"...     data.append(a)\n"
+"...     return data\n"
+"...\n"
+">>> print f(1)\n"
+"[1]\n"
+">>> print f(2)\n"
+"[1, 2]\n"
+">>> print f(3)\n"
+"[1, 2, 3]\n"
+"]]>"
 
 #. Tag: title
 #: functions.xml:73
 #, no-c-format
 msgid "Keyword arguments"
-msgstr ""
+msgstr "കീവേഡ് ആര്‍ഗ്യുമെന്‍റ്സ്"
 
 #. Tag: screen
 #: functions.xml:74
@@ -335,17 +377,23 @@ msgid ""
 "a is -1 and b is 12 and c is 24\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> def func(a, b=5, c=10):\n"
+"...     print 'a is', a, 'and b is', b, 'and c is', c\n"
+"...\n"
+">>> func(12, 24)\n"
+"a is 12 and b is 24 and c is 10\n"
+">>> func(12, c = 24)\n"
+"a is 12 and b is 5 and c is 24\n"
+">>> func(b=12, c = 24, a = -1)\n"
+"a is -1 and b is 12 and c is 24\n"
+"]]>"
 
 #. Tag: para
 #: functions.xml:75
 #, no-c-format
-msgid ""
-"In the above example you can see we are calling the function with variable "
-"names, like <emphasis>func(12, c = 24)</emphasis>, by that we are assigning "
-"<emphasis>24</emphasis> to <emphasis>c</emphasis> and <emphasis>b</emphasis> "
-"is getting its default value. Also remember that you can not have without "
-"keyword based argument after a keyword based argument. like"
-msgstr ""
+msgid "In the above example you can see we are calling the function with variable names, like <emphasis>func(12, c = 24)</emphasis>, by that we are assigning <emphasis>24</emphasis> to <emphasis>c</emphasis> and <emphasis>b</emphasis> is getting its default value. Also remember that you can not have without keyword based argument after a keyword based argument. like"
+msgstr "മുകളില്‍ കൊടുത്തിരിക്കുന്ന ഉദാഹരണത്തില്‍ വേര്യബിള്‍ പേരുകളുപയോഗിച്ച് ഫങ്ഷന്‍ വിളിക്കുന്നത് നിങ്ങള്‍ക്ക് കാണാന്‍ കഴിയും <emphasis>func(12, c = 24)</emphasis>,അതുപോലെ <emphasis>24</emphasis> നെ <emphasis>c</emphasis> ലേക്ക് സൂക്ഷിക്കുകയും <emphasis>b</emphasis> യ്ക്ക് അതിന്‍റെ ഡീഫോള്‍ട്ട് വാല്യു കിട്ടുകയും ചെയ്യുന്നു. ഒരു കീവേഡ്  അധിഷ്ടിത ആര്‍ഗ്യുമെന്‍റിനുശേഷം മറെറാരു കീവേഡ് അധിഷ്ടിത ആര്‍ഗ്യുമെന്‍റ് കിട്ടുകയില്ലെന്ന് ഓര്‍മ്മിക്കുക.ഇതുപോലെ"
 
 #. Tag: screen
 #: functions.xml:78
@@ -359,3 +407,11 @@ msgid ""
 "SyntaxError: non-default argument follows default argument\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> def func(a, b=13, v):\n"
+"...     print a, b, v\n"
+"...\n"
+"  File \"<stdin>\", line 1\n"
+"SyntaxError: non-default argument follows default argument\n"
+"]]>"
+

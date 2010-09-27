@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: 2008-12-24 15:13+0000\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2009-09-19 20:08+0530\n"
+"Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,31 +17,25 @@ msgstr ""
 #: operatorsexpressions.xml:6
 #, no-c-format
 msgid "Operators and expressions"
-msgstr ""
+msgstr "ഓപ്പറേറററുകളും എക്സപ്രഷനുകളും"
 
 #. Tag: para
 #: operatorsexpressions.xml:7
 #, no-c-format
-msgid ""
-"In python most of the lines you will write will be expressions. Expressions "
-"are made of operators and operands. An expression is like <emphasis>2 + 3</"
-"emphasis> ."
-msgstr ""
+msgid "In python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like <emphasis>2 + 3</emphasis> ."
+msgstr "പൈത്തണ്‍ പ്രോഗാമില്‍ നിങ്ങള്‍ എഴുതുന്ന വരികള്‍ ഭൂരിഭാഗവും എക്സ്പ്രഷനുകളായിരിക്കും.എക്സ്പ്രഷനുകള്‍ ഓപ്പറേറററുകളും ഓപ്പറാന്‍‍റുകളും കൊണ്ട് തയ്യാറാക്കിയതാണ്. ഒരു എക്സ്പ്രഷന്‍ ഇതുപോലെയാണ് <emphasis>2 + 3</emphasis> ."
 
 #. Tag: title
 #: operatorsexpressions.xml:11
 #, no-c-format
 msgid "Operators"
-msgstr ""
+msgstr "ഓപ്പറേറേറഴ്സ്"
 
 #. Tag: para
 #: operatorsexpressions.xml:12
 #, no-c-format
-msgid ""
-"Operators are the symbols which tells the python interpreter to do some "
-"mathematical or logical operation. Few basic examples of mathematical "
-"operators are given below:"
-msgstr ""
+msgid "Operators are the symbols which tells the python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:"
+msgstr "ഗണിതശാസ്ത്രപരമായതോ യുക്തിപരമായതോ ആയ എന്തെങ്കിലും പ്രവൃത്തി ചെയ്യുവാന്‍ പൈത്തണ്‍ ഇന്‍ര്‍ പ്രട്ടറിനോട് പറയുന്ന ചിഹ്നങ്ങളെ ഓപ്പറേററര്‍ എന്നു വിളിക്കുന്നു. ഗണിതശാസ്ത്രപരമായ പ്രക്രിയകള്‍ ചെയ്യുന്ന ചില ഉദാഹരണങ്ങള്‍ താഴെക്കൊടുത്തിരിക്കുന്നു. "
 
 #. Tag: screen
 #: operatorsexpressions.xml:15
@@ -56,14 +50,20 @@ msgid ""
 "1.8333333333333333\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> 2 + 3\n"
+"5\n"
+">>> 23 - 3\n"
+"20\n"
+">>> 22.0 / 12\n"
+"1.8333333333333333\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:16
 #, no-c-format
-msgid ""
-"To get floating result you need to the division using any of operand as "
-"floating number. To do modulo operation use % operator"
-msgstr ""
+msgid "To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator"
+msgstr "ഭാഗിക്കുന്പോള്‍ ഫ്ളോട്ടിംഗ് ഫലം കിട്ടുന്നതിനു ഓപ്പറാന്‍റുപയോഗിച്ച് ഫ്ളോട്ടിംഗ് സംഖ്യയെ വിഭജിക്കണം.മോഡുലോ ഓപ്പറേഷന്‍ ചെയ്യുന്നതിന് % ഓപ്പറേററര്‍ ഉപയോഗിക്കണം.'"
 
 #. Tag: screen
 #: operatorsexpressions.xml:19
@@ -74,18 +74,22 @@ msgid ""
 "2\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> 14 % 3\n"
+"2\n"
+"]]>"
 
 #. Tag: title
 #: operatorsexpressions.xml:22
 #, no-c-format
 msgid "Example of integer arithmetic"
-msgstr ""
+msgstr "സാംഖിക ഗണിത ഉദാഹരണങ്ങള്‍ "
 
 #. Tag: para
 #: operatorsexpressions.xml:23
 #, no-c-format
 msgid "The code"
-msgstr ""
+msgstr "പ്രോഗ്രാം കോഡ്"
 
 #. Tag: screen
 #: operatorsexpressions.xml:26
@@ -99,14 +103,23 @@ msgid ""
 "print \"Months = %d Days = %d\" % (months, days)\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"days = int(raw_input(\"Enter days: \"))\n"
+"months = days / 30\n"
+"days = days % 30\n"
+"print \"Months = %d Days = %d\" % (months, days)\n"
+"]]>"
 
 #. Tag: para
-#: operatorsexpressions.xml:27 operatorsexpressions.xml:82
-#: operatorsexpressions.xml:97 operatorsexpressions.xml:121
+#: operatorsexpressions.xml:27
+#: operatorsexpressions.xml:82
+#: operatorsexpressions.xml:97
+#: operatorsexpressions.xml:121
 #: operatorsexpressions.xml:144
 #, no-c-format
 msgid "The output"
-msgstr ""
+msgstr "ഔട്ട്പുട്ട്"
 
 #. Tag: screen
 #: operatorsexpressions.xml:30
@@ -118,14 +131,17 @@ msgid ""
 "Months = 8 Days = 25\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./integer.py\n"
+"Enter days: 265\n"
+"Months = 8 Days = 25\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:31
 #, no-c-format
-msgid ""
-"In the first line I am taking the input of days, then getting the months and "
-"days and at last printing them. You can do it in a easy way"
-msgstr ""
+msgid "In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way"
+msgstr "പ്രോഗ്രാമിന്റെ ഒന്നാമത്തെ വരിയില്‍ ദിവസത്തിന്റെ എണ്ണം ഇന്‍‍പുട്ടായി എടുക്കുന്നു,അതിനു ശേഷം മാസവും ദിവസവും കണ്ടുപിടിക്കുകയും പ്രിന്‍റ് ചെയ്യുകയും ചെയ്യുന്നു.ഇതേ പ്രോഗ്രാം തന്നെ കുറച്ചുകൂടി എളുപ്പത്തില്‍ ഇങ്ങനെ ചെയ്യാം"
 
 #. Tag: screen
 #: operatorsexpressions.xml:34
@@ -137,116 +153,120 @@ msgid ""
 "print \"Months = %d Days = %d\" % (divmod(days, 30))\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"days = int(raw_input(\"Enter days: \"))\n"
+"print \"Months = %d Days = %d\" % (divmod(days, 30))\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:35
 #, no-c-format
-msgid ""
-"The divmod(num1, num2) function returns two values , first is the division "
-"of num1 and num2 and in second the modulo of num1 and num2."
-msgstr ""
+msgid "The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2."
+msgstr "ഇതില്‍ divide(num1,num2)എന്ന ഫങ്ഷന്‍ രണ്ട് മൂല്യങ്ങള്‍ ഫലമായി നല്‍കുന്നു,ഒന്നാമത്തേത്num1 ഉം num2 വും ഹരിച്ചതും രണ്ടാമത്തേത് num1 ന്‍െറയും num2 വിന്‍റെയും മോഡുലോ ഫലവും ആയിരിക്കും"
 
 #. Tag: title
-#: operatorsexpressions.xml:40 operatorsexpressions.xml:44
+#: operatorsexpressions.xml:40
+#: operatorsexpressions.xml:44
 #, no-c-format
 msgid "Relational Operators"
-msgstr ""
+msgstr "റിലേഷണല്‍ ഓപ്പറേററര്‍ "
 
 #. Tag: para
 #: operatorsexpressions.xml:41
 #, no-c-format
 msgid "You can use the following operators as relational operators"
-msgstr ""
+msgstr "താഴെക്കൊടുത്തിരിക്കുന്ന ഓപ്പറേറററുകള്‍ റിലേഷണല്‍ ഓപ്പറേറ്ററുകളായി ഉപയോഗിക്കുന്നു"
 
 #. Tag: segtitle
 #: operatorsexpressions.xml:46
 #, no-c-format
 msgid "Operator"
-msgstr ""
+msgstr "ഓപ്പറേററര്‍ "
 
 #. Tag: segtitle
 #: operatorsexpressions.xml:47
 #, no-c-format
 msgid "Meaning"
-msgstr ""
+msgstr "അര്‍ത്ഥം"
 
 #. Tag: seg
 #: operatorsexpressions.xml:48
 #, no-c-format
 msgid "<![CDATA[<]]>"
-msgstr ""
+msgstr "<![CDATA[<]]>"
 
 #. Tag: seg
 #: operatorsexpressions.xml:48
 #, no-c-format
 msgid "Is less than"
-msgstr ""
+msgstr "നേക്കാള്‍ മൂല്യം കുറവാണ്"
 
 #. Tag: seg
 #: operatorsexpressions.xml:49
 #, no-c-format
 msgid "<![CDATA[<=]]>"
-msgstr ""
+msgstr "<![CDATA[<=]]>"
 
 #. Tag: seg
 #: operatorsexpressions.xml:49
 #, no-c-format
 msgid "Is less than or equal to"
-msgstr ""
+msgstr "നേക്കാള്‍ മൂല്യം കുറവോ തുല്യമോ ആണ്"
 
 #. Tag: seg
 #: operatorsexpressions.xml:50
 #, no-c-format
 msgid "<![CDATA[>]]>"
-msgstr ""
+msgstr "<![CDATA[>]]>"
 
 #. Tag: seg
 #: operatorsexpressions.xml:50
 #, no-c-format
 msgid "Is greater than"
-msgstr ""
+msgstr "നേക്കാള്‍ മൂല്യം കൂടുതലാണ്"
 
 #. Tag: seg
 #: operatorsexpressions.xml:51
 #, no-c-format
 msgid "<![CDATA[>=]]>"
-msgstr ""
+msgstr "<![CDATA[>=]]>"
 
 #. Tag: seg
 #: operatorsexpressions.xml:51
 #, no-c-format
 msgid "Is greater than or equal to"
-msgstr ""
+msgstr "നേക്കാള്‍ മൂല്യം കൂടുതലോ തുല്യമോ ആണ്"
 
 #. Tag: seg
 #: operatorsexpressions.xml:52
 #, no-c-format
 msgid "<![CDATA[==]]>"
-msgstr ""
+msgstr "<![CDATA[==]]>"
 
 #. Tag: seg
 #: operatorsexpressions.xml:52
 #, no-c-format
 msgid "Is equal to"
-msgstr ""
+msgstr "നോട് തുല്യമാണ്"
 
 #. Tag: seg
 #: operatorsexpressions.xml:53
 #, no-c-format
 msgid "<![CDATA[!=]]>"
-msgstr ""
+msgstr "<![CDATA[!=]]>"
 
 #. Tag: seg
 #: operatorsexpressions.xml:53
 #, no-c-format
 msgid "Is not equal to"
-msgstr ""
+msgstr "നോട് തുല്യമല്ല"
 
 #. Tag: para
 #: operatorsexpressions.xml:55
 #, no-c-format
 msgid "Some examples"
-msgstr ""
+msgstr "ചില ഉദാഹരങ്ങള്‍ "
 
 #. Tag: screen
 #: operatorsexpressions.xml:58
@@ -263,12 +283,22 @@ msgid ""
 "True\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> 1 < 2\n"
+"True\n"
+">>> 3 > 34\n"
+"False\n"
+">>> 23 == 45\n"
+"False\n"
+">>> 34 != 323\n"
+"True\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:59
 #, no-c-format
 msgid "<emphasis>//</emphasis> operator gives the floor division result"
-msgstr ""
+msgstr "<emphasis>//</emphasis> എന്നത് ഫ്ളോര്‍ ഡിവിഷനെ സൂചിപ്പിക്കുന്നു"
 
 #. Tag: screen
 #: operatorsexpressions.xml:62
@@ -281,23 +311,24 @@ msgid ""
 "1.3333333333333333\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> 4.0 // 3\n"
+"1.0\n"
+">>> 4.0 / 3\n"
+"1.3333333333333333\n"
+"]]>"
 
 #. Tag: title
 #: operatorsexpressions.xml:65
 #, no-c-format
 msgid "Logical Operators"
-msgstr ""
+msgstr "ലോജിക്കല്‍ ഓപ്പറേറററുകള്‍ "
 
 #. Tag: para
 #: operatorsexpressions.xml:66
 #, no-c-format
-msgid ""
-"To do logical AND , OR we use <emphasis>and</emphasis> ,<emphasis> or</"
-"emphasis> keywords. <emphasis>x and y</emphasis> returns <emphasis>False</"
-"emphasis> if <emphasis>x</emphasis> is <emphasis>False</emphasis> else it "
-"returns evaluation of <emphasis>y</emphasis>. If <emphasis>x</emphasis> is "
-"<emphasis>True</emphasis>, it returns <emphasis>True</emphasis>."
-msgstr ""
+msgid "To do logical AND , OR we use <emphasis>and</emphasis> ,<emphasis> or</emphasis> keywords. <emphasis>x and y</emphasis> returns <emphasis>False</emphasis> if <emphasis>x</emphasis> is <emphasis>False</emphasis> else it returns evaluation of <emphasis>y</emphasis>. If <emphasis>x</emphasis> is <emphasis>True</emphasis>, it returns <emphasis>True</emphasis>."
+msgstr "ലോജിക്കല്‍ AND,OR ഓപ്പറേഷനുകള്‍ ചെയ്യുവാന്‍ പൈത്തണില്‍ <emphasis>and</emphasis> ,<emphasis> or</emphasis> എന്നീ കീവേഡുകള്‍ ഉപയോഗിക്കുന്നു.<emphasis>x and y</emphasis>  എന്ന ലോജിക്കല്‍ ഓപ്പറേഷന്‍ <emphasis>x</emphasis> തെററാണെങ്കില്‍ <emphasis>False</emphasis> എന്ന് ഫലം നല്‍ കുന്നു,അല്ലെങ്കില്‍ <emphasis>y</emphasis> വിലയിരുത്തി ഫലം നല്‍ കുന്നു.  <emphasis>x</emphasis> സാധുവാണെങ്കില്‍ <emphasis>True</emphasis> എന്ന് ഫലം നല്‍കുന്നു. "
 
 #. Tag: screen
 #: operatorsexpressions.xml:69
@@ -314,21 +345,28 @@ msgid ""
 "4\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> 1 and 4\n"
+"4\n"
+">>> 1 or 4\n"
+"1\n"
+">>> -1 or 4\n"
+"-1\n"
+">>> 0 or 4\n"
+"4\n"
+"]]>"
 
 #. Tag: title
 #: operatorsexpressions.xml:73
 #, no-c-format
 msgid "Shorthand Operator"
-msgstr ""
+msgstr "ഷോര്‍ട്ട് ഹാന്‍റ് ഓപ്പറേററര്‍ "
 
 #. Tag: para
 #: operatorsexpressions.xml:74
 #, no-c-format
-msgid ""
-"<emphasis>x op = expression</emphasis> is the syntax for shorthand "
-"operators. It will be evaluated like <emphasis>x = x op expression</"
-"emphasis> , Few examples are"
-msgstr ""
+msgid "<emphasis>x op = expression</emphasis> is the syntax for shorthand operators. It will be evaluated like <emphasis>x = x op expression</emphasis> , Few examples are"
+msgstr "<emphasis>x op = expression</emphasis> എന്നത് ഷോര്‍ട്ട് ഹാന്‍റ് ഓപ്പറേഷന്‍ വാക്യക്രമം(syntax) ആണ്.ഇത് <emphasis>x = x op expression</emphasis> എന്ന് പൈത്തണ്‍ വിലയിരുത്തുന്നു.ചില ഉദാഹരണങ്ങള്‍ നോക്കുക"
 
 #. Tag: screen
 #: operatorsexpressions.xml:77
@@ -347,12 +385,24 @@ msgid ""
 "840\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> a = 12\n"
+">>> a += 13\n"
+">>> a\n"
+"25\n"
+">>> a /= 3\n"
+">>> a\n"
+"8\n"
+">>> a += (26* 32)\n"
+">>> a\n"
+"840\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:78
 #, no-c-format
 msgid "shorthand.py example"
-msgstr ""
+msgstr "shorthand.py ഉദാഹരണം"
 
 #. Tag: screen
 #: operatorsexpressions.xml:81
@@ -367,6 +417,14 @@ msgid ""
 "    a *= a\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"N = 100\n"
+"a = 2\n"
+"while a < N:\n"
+"    print \"%d\" % a\n"
+"    a *= a\n"
+"]]>"
 
 #. Tag: screen
 #: operatorsexpressions.xml:85
@@ -379,20 +437,24 @@ msgid ""
 "16\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./shorthand.py\n"
+"2\n"
+"4\n"
+"16\n"
+"]]>"
 
 #. Tag: title
 #: operatorsexpressions.xml:88
 #, no-c-format
 msgid "Expressions"
-msgstr ""
+msgstr "എക്സ്പ്രഷനുകള്‍ "
 
 #. Tag: para
 #: operatorsexpressions.xml:89
 #, no-c-format
-msgid ""
-"Generally while writing expressions we put spaces before and after every "
-"operator so that the code becomes clearer to read, like"
-msgstr ""
+msgid "Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like"
+msgstr "സാധാരണയായി എക്സ്പ്രഷനുകള്‍ എഴുതുന്പോള്‍ ഓരോ ഓപ്പറേറററിനു ശേഷവും ഒരു സ്പേസ് ഇടുന്നത് എക്സ്പ്രഷന്‍ കൃത്യമായി മനസിലാക്കുവാന്‍ സഹായക്കുന്നു.ഉദാഹരണമായി"
 
 #. Tag: screen
 #: operatorsexpressions.xml:92
@@ -402,12 +464,15 @@ msgid ""
 "a = 234 * (45 - 56.0 / 34)\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"a = 234 * (45 - 56.0 / 34)\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:93
 #, no-c-format
 msgid "One example code used to show expressions"
-msgstr ""
+msgstr "എക്സ്പ്രഷന്‍ ഉപയോഗിച്ചുളള ഒരു പ്രോഗ്രാം കോഡ് താഴെ കൊടുത്തിരിക്കുന്നു."
 
 #. Tag: screen
 #: operatorsexpressions.xml:96
@@ -426,6 +491,18 @@ msgid ""
 "print \"Z = \", z\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"a = 9\n"
+"b = 12\n"
+"c = 3\n"
+"x = a -b / 3 + c * 2 -1\n"
+"y = a -b / (3 + c) * (2 -1)\n"
+"z = a - (b / (3 +c) * 2) -1\n"
+"print \"X = \", x\n"
+"print \"Y = \", y\n"
+"print \"Z = \", z\n"
+"]]>"
 
 #. Tag: screen
 #: operatorsexpressions.xml:100
@@ -438,13 +515,18 @@ msgid ""
 "Z =  4\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./evaluationexp.py\n"
+"X =  10\n"
+"Y =  7\n"
+"Z =  4\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:101
 #, no-c-format
-msgid ""
-"At first <emphasis>x</emphasis> is being calculated. The steps are like this"
-msgstr ""
+msgid "At first <emphasis>x</emphasis> is being calculated. The steps are like this"
+msgstr "ആദ്യം <emphasis>x</emphasis> കാല്‍ക്കുലേററ് ചെയ്യുന്നു.ഈ പ്രോഗ്രാം ചെയ്യുന്ന ക്രിയകളുടെ ക്രമം താഴെക്കാണിക്കുന്നു."
 
 #. Tag: screen
 #: operatorsexpressions.xml:104
@@ -459,27 +541,32 @@ msgid ""
 "10\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"9 - 12 / 3 + 3 * 2 -1\n"
+"9 - 4 + 3 * 2 - 1\n"
+"9 - 4 + 6 - 1\n"
+"5 + 6 -1\n"
+"11 - 1\n"
+"10\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:105
 #, no-c-format
-msgid ""
-"Now for <emphasis>y</emphasis> and <emphasis>z</emphasis> we have "
-"parentheses, so the expressions evaluated in different way. Do the "
-"calculation yourself to check them."
-msgstr ""
+msgid "Now for <emphasis>y</emphasis> and <emphasis>z</emphasis> we have parentheses, so the expressions evaluated in different way. Do the calculation yourself to check them."
+msgstr "<emphasis>y</emphasis> ഉം <emphasis>z</emphasis> ഉം ബ്രാക്കററിനകത്താണ് കൊടുത്തിരിക്കുന്നത്,അതിനാല്‍ തന്നെ ഇത് പ്രത്യേകമായാണ് വിലയിരുത്തുന്നത്.പേപ്പറില്‍ കണക്കുകൂട്ടി പരിശോധിക്കുക."
 
 #. Tag: title
 #: operatorsexpressions.xml:110
 #, no-c-format
 msgid "Type Conversions"
-msgstr ""
+msgstr "ടൈപ്പ് പരിവര്‍ത്തനം"
 
 #. Tag: para
 #: operatorsexpressions.xml:111
 #, no-c-format
 msgid "We have to do the type conversions manually. Like"
-msgstr ""
+msgstr "പൈത്തണില്‍ ടൈപ്പ് പരിവര്‍ത്തനം മാന്യുലായി ചെയ്യണം.ഉദാഹരത്തിന്"
 
 #. Tag: screen
 #: operatorsexpressions.xml:113
@@ -494,20 +581,26 @@ msgid ""
 "'8.126768'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"float(string) -> float value\n"
+"int(string) -> integer value\n"
+"str(integer) or str(float) -> string representation \n"
+">>> a = 8.126768\n"
+">>> str(a)\n"
+"'8.126768'\n"
+"]]>"
 
 #. Tag: title
 #: operatorsexpressions.xml:116
 #, no-c-format
 msgid "evaluateequ.py"
-msgstr ""
+msgstr "evaluateequ.py"
 
 #. Tag: para
 #: operatorsexpressions.xml:117
 #, no-c-format
-msgid ""
-"This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, "
-"in our case x = 1 and n =10"
-msgstr ""
+msgid "This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10"
+msgstr "താഴെ കൊടുത്തിരിക്കുന്ന പ്രോഗ്രാം 1/x+1/(x+1)+1/(x+2)+ ... +1/n  എന്ന ക്രമത്തെ n വരെ വിലയിരുത്തുന്നു.ഇവിടെ  x = 1 ഉം n =10  ഉം ആണ്."
 
 #. Tag: screen
 #: operatorsexpressions.xml:120
@@ -521,6 +614,13 @@ msgid ""
 "    print \"%2d %6.4f\" % (i , sum)\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"sum = 0.0\n"
+"for i in range(1, 11):\n"
+"    sum += 1.0 / i\n"
+"    print \"%2d %6.4f\" % (i , sum)\n"
+"]]>"
 
 #. Tag: screen
 #: operatorsexpressions.xml:124
@@ -540,26 +640,37 @@ msgid ""
 "10 2.9290\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./evaluateequ.py\n"
+" 1 1.0000\n"
+" 2 1.5000\n"
+" 3 1.8333\n"
+" 4 2.0833\n"
+" 5 2.2833\n"
+" 6 2.4500\n"
+" 7 2.5929\n"
+" 8 2.7179\n"
+" 9 2.8290\n"
+"10 2.9290\n"
+"]]>"
 
 #. Tag: para
 #: operatorsexpressions.xml:126
 #, no-c-format
-msgid ""
-"In the line <emphasis>sum += 1.0 / i</emphasis> what is actually happening "
-"is <emphasis>sum = sum + 1.0 / i</emphasis>."
-msgstr ""
+msgid "In the line <emphasis>sum += 1.0 / i</emphasis> what is actually happening is <emphasis>sum = sum + 1.0 / i</emphasis>."
+msgstr "<emphasis>sum += 1.0 / i</emphasis> എന്നിടത്ത് യഥാര്‍ത്ഥത്തില്‍ <emphasis>sum = sum + 1.0 / i</emphasis>എന്ന ക്രിയയാണ്."
 
 #. Tag: title
 #: operatorsexpressions.xml:131
 #, no-c-format
 msgid "quadraticequation.py"
-msgstr ""
+msgstr "quadraticequation.py"
 
 #. Tag: para
 #: operatorsexpressions.xml:132
 #, no-c-format
 msgid "This is a program to evaluate the quadratic equation"
-msgstr ""
+msgstr "ക്വാര്‍ഡിയാക് സൂത്രവാക്യം വിലയിരുന്നതിനുളള ഒരു പ്രോഗ്രാം കാണുക"
 
 #. Tag: screen
 #: operatorsexpressions.xml:135
@@ -581,22 +692,33 @@ msgid ""
 "print \"Root 2 = \", root2\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"import math\n"
+"a = int(raw_input(\"Enter value of a: \"))\n"
+"b = int(raw_input(\"Enter value of b: \"))\n"
+"c = int(raw_input(\"Enter value of c: \"))\n"
+"d = b * b - 4 * a * c\n"
+"if d < 0:\n"
+"    print \"ROOTS are imaginary\"\n"
+"else:\n"
+"    root1 = (-b + math.sqrt(d)) / (2.0 * a)\n"
+"    root2 = (-b - math.sqrt(d)) / (2.0 * a)\n"
+"print \"Root 1 = \", root1\n"
+"print \"Root 2 = \", root2\n"
+"]]>"
 
 #. Tag: title
 #: operatorsexpressions.xml:139
 #, no-c-format
 msgid "salesmansalary.py"
-msgstr ""
+msgstr "salesmansalary.py"
 
 #. Tag: para
 #: operatorsexpressions.xml:140
 #, no-c-format
-msgid ""
-"In this example we are going to calculate the salary of a camera salesman. "
-"His basic salary is 1500, for every camera he will sell he will get 200 and "
-"the commission on the month's sale is 2 %. The input will be number of "
-"cameras sold and total price of the cameras."
-msgstr ""
+msgid "In this example we are going to calculate the salary of a camera salesman. His basic salary is 1500, for every camera he will sell he will get 200 and the commission on the month's sale is 2 %. The input will be number of cameras sold and total price of the cameras."
+msgstr "താഴെക്കൊടുത്തിരിക്കുന്ന ഉദാഹരണം ഒരു ക്യാമറാ സെയില്‍സ്മാന്റെ ശന്പളം കണക്കുകൂട്ടുന്നു.അദ്ദേഹത്തിന്‍െറ അടിസ്ഥാന ശന്പളം 1500 രൂ. ആണ്.അദ്ദേഹം ഓരോ ക്യാമറ വില്‍ ക്കുന്പോളും 200 രൂ.അധികം ലഭിക്കും.കൂടാതെ ഒരു മാസത്തെ മൊത്തം വില്പനയുടെ 2% കമ്മീഷനായും കിട്ടും.മൊത്തം വിററ ക്യാമറയുടെ എണ്ണവും മൊത്തം വിലയുമാണ്ഈ പ്രോഗ്രാമിന്റെ ഔട്ട്പുട്ട്."
 
 #. Tag: screen
 #: operatorsexpressions.xml:143
@@ -617,6 +739,20 @@ msgid ""
 "print \"Gross salary = %6.2f\" % ( basic_salary + bonus + commision)\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"basic_salary = 1500\n"
+"bonus_rate = 200\n"
+"commision_rate = 0.02\n"
+"numberofcamera = int(raw_input(\"Enter the number of inputs sold: \"))\n"
+"price = float(raw_input(\"Enter the total prices: \"))\n"
+"bonus = (bonus_rate * numberofcamera)\n"
+"commision = (commision_rate * numberofcamera * price)\n"
+"\n"
+"print \"Bonus        = %6.2f\" % bonus\n"
+"print \"Commision    = %6.2f\" % commision\n"
+"print \"Gross salary = %6.2f\" % ( basic_salary + bonus + commision)\n"
+"]]>"
 
 #. Tag: screen
 #: operatorsexpressions.xml:147
@@ -631,3 +767,12 @@ msgid ""
 "Gross salary = 4545.00\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./salesmansalary.py\n"
+"Enter the number of inputs sold: 5\n"
+"Enter the total prices: 20450\n"
+"Bonus        = 1000.00\n"
+"Commision    = 2045.00\n"
+"Gross salary = 4545.00\n"
+"]]>"
+

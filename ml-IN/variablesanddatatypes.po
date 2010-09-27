@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: 2008-12-24 15:13+0000\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2009-09-19 20:22+0530\n"
+"Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,29 +17,25 @@ msgstr ""
 #: variablesanddatatypes.xml:6
 #, no-c-format
 msgid "Variables and Datatypes"
-msgstr ""
+msgstr "വേര്യബിളുകളും ഡാറ്റാടൈപ്പുകളും"
 
 #. Tag: para
 #: variablesanddatatypes.xml:7
 #, no-c-format
-msgid ""
-"Every programming language is having own grammar rules just like the other "
-"languages we speak."
-msgstr ""
+msgid "Every programming language is having own grammar rules just like the other languages we speak."
+msgstr "നാം സംസാരിക്കുന്ന ഭാഷയ്ക്കെന്നപോലെ പ്രോഗ്രാമിംങ് ഭാഷയ്ക്കും വ്യാകരണവും നിയമങ്ങളുമുണ്ട്."
 
 #. Tag: title
 #: variablesanddatatypes.xml:11
 #, no-c-format
 msgid "Keywords and Identifiers"
-msgstr ""
+msgstr "കീ വേര്‍ഡുകളും  ഐഡന്‍റിഫയറുകളും"
 
 #. Tag: para
 #: variablesanddatatypes.xml:12
 #, no-c-format
-msgid ""
-"Python codes can be divided into identifiers. Identifiers (also referred to "
-"as names) are described by the following lexical definitions:"
-msgstr ""
+msgid "Python codes can be divided into identifiers. Identifiers (also referred to as names) are described by the following lexical definitions:"
+msgstr "നാം എഴുതുന്ന പൈത്തണ്‍ പ്രോഗ്രാം സോഴ്സ് കോഡിനെ ഐഡന്‍റിഫയറുകളായി വിഭജിക്കാം.ഐഡന്‍റിഫയറുകളെ(names അഥവാ നാമങ്ങള്‍)താഴെ കൊടുത്തിരിക്കുന്ന ലെക്സിക്കന്‍ നിര്‍വചനങ്ങള്‍ കൊണ്ട് വിവരിക്കാം:"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:15
@@ -53,16 +49,17 @@ msgid ""
 "digit ::= \"0\"...\"9\"\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"identifier ::= (letter|\"_\") (letter | digit | \"_\")* \n"
+"letter ::= lowercase | uppercase \n"
+"lowercase ::= \"a\"...\"z\" \n"
+"uppercase ::= \"A\"...\"Z\" \n"
 
 #. Tag: para
 #: variablesanddatatypes.xml:16
 #, no-c-format
-msgid ""
-"This means <emphasis>_abcd</emphasis> is a valid identifier where as "
-"<emphasis>1sd</emphasis> is not. The following identifiers are used as "
-"reserved words, or keywords of the language, and cannot be used as ordinary "
-"identifiers. They must be spelled exactly as written here:"
-msgstr ""
+msgid "This means <emphasis>_abcd</emphasis> is a valid identifier where as <emphasis>1sd</emphasis> is not. The following identifiers are used as reserved words, or keywords of the language, and cannot be used as ordinary identifiers. They must be spelled exactly as written here:"
+msgstr "ഇത് അര്‍ത്ഥമാക്കുന്നത് <emphasis>_abcd</emphasis> എന്നത് സാധുവായ  ഒരു ഐഡന്‍റിഫയറാണ്, എന്നാല്‍ <emphasis>1sd</emphasis> എന്നത് അങ്ങിനെയല്ല.താഴെകൊടിത്തിരിക്കുന്ന ഐഡന്‍റിഫയറുകളെ റിസര്‍വ്ഡ് വാക്കുകളായോകീ വേര്‍ഡുകളായോ പൈത്തണ്‍ കണക്കാക്കുന്നു. ഈ കീ വേര്‍ഡുകളെ  ഐഡന്‍റിഫയറായോ വേരിയബിളിന്റെ പേരായോ ഉപയോഗിക്കാന്‍ പാടില്ല.അവ താഴെ കൊടുത്തിരിക്കുന്നതുപോലെ തന്നെ ഉപയോഗിക്കേണ്ടതാണ്:"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:19
@@ -78,16 +75,17 @@ msgid ""
 "def       for      lambda    try\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"and       del      from      not   while \n"
+"as        elif     global    or    with \n"
+"assert    else     if        pass  yield \n"
+"break     except   import    print \n"
 
 #. Tag: para
 #: variablesanddatatypes.xml:20
 #, no-c-format
-msgid ""
-"In Python we don't specify what kind of data we are going to put in a "
-"variable. So you can directly write abc = 1 and abc will become an integer "
-"datatype. If you write abc = 1.0 abc will become of floating type. Here is a "
-"small program to add two given numbers"
-msgstr ""
+msgid "In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0 abc will become of floating type. Here is a small program to add two given numbers"
+msgstr "പൈത്തണില്‍  നാം ഒരു വേരിയബിളില്‍ സൂക്ഷിക്കാന്‍ ഉദ്ദേശിക്കുന്ന ഡാറ്റ(വിവരം/ മൂല്ല്യം)യുടെ സ്വഭാവം നിര്‍വചിക്കാറില്ല. അതുകൊണ്ട് തന്നെ abc = 1 എന്ന് നമുക്ക് ഒരു വേരിയബിള്‍ മൂല്യം നല്‍കാം അപ്പോള്‍ abc ഒരു സംഖ്യാ മൂല്യം ഉള്‍ക്കൊള്ളുന്ന വേരിയബിളാകും. ഇനി abc = 1.0 എന്ന് എഴുതിയാല്‍ abc ഒരു floating മൂല്യമുള്ള വേരിയബിളാകും. തന്നിരിക്കുന്ന രണ്ട് സംഖ്യകളെത്തമ്മില്‍ കൂട്ടുന്നതിനുള്ള ഒരു പ്രോഗ്രാം താഴെക്കൊടുത്തിരിക്കുന്നു."
 
 #. Tag: screen
 #: variablesanddatatypes.xml:23
@@ -100,16 +98,18 @@ msgid ""
 "36\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> a = 13 \n"
+">>> b = 23\n"
+">>> a + b \n"
+"36\n"
+"]]>"
 
 #. Tag: para
 #: variablesanddatatypes.xml:24
 #, no-c-format
-msgid ""
-"From the above example you can understand that to declare a variable in "
-"python , what you need is just to type the name and the value. Python can "
-"also manipulate strings They can be enclosed in single quotes or double "
-"quotes like"
-msgstr ""
+msgid "From the above example you can understand that to declare a variable in python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like"
+msgstr "പൈത്തണില്‍ ഒരു വേരിയബിള്‍ പ്രസ്താവിക്കാന്‍ പേരും അതിന്‍റെ മൂല്യവും നല്‍കുകയാണ് വേണ്ടതെന്ന് മുകളില്‍ നല്‍കിയിരിക്കുന്ന ഉദാഹരണത്തില്‍ നിന്നും താങ്കള്‍ക്ക് മനസിലായികാണുമല്ലോ.പൈത്തണ് സ്ട്രിങ് (string)മൂല്യത്തെയും പരിവര്‍ത്തനം (manipulation) ചെയ്യുവാന്‍ സാധിക്കും.സ്ട്രിങ് മൂല്യത്തെ സിംഗിള്‍  കോട്സിനകത്തോ ഡബിള്‍കോട്സിനകത്തോ ആയിരിക്കണം എഴുതേണ്ടത്."
 
 #. Tag: screen
 #: variablesanddatatypes.xml:27
@@ -124,24 +124,26 @@ msgid ""
 "'Hello World!'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> 'India'\n"
+"'India' \n"
+">>> 'India\\'s best' \n"
+"\"India's best\" \n"
+">>> \"Hello World!\" \n"
+"'Hello World!'\n"
+"]]>"
 
 #. Tag: title
 #: variablesanddatatypes.xml:31
 #, no-c-format
 msgid "Reading input from the Keyboard"
-msgstr ""
+msgstr "കീബോര്‍ഡില്‍ നിന്നും ഇന്‍പുട്ട് സ്വീകരിക്കുന്ന  വിധം"
 
 #. Tag: para
 #: variablesanddatatypes.xml:32
 #, no-c-format
-msgid ""
-"Generally the real life python codes do not need to read input from the "
-"keyboard. In python we use raw_input function to do input. "
-"<emphasis>raw_input(\"String to show\")</emphasis> , this will return a "
-"string as output. Let us write a program to read a number from the keyboard "
-"and check if it is less than 100 or not. Name of the program is testhundred."
-"py"
-msgstr ""
+msgid "Generally the real life python codes do not need to read input from the keyboard. In python we use raw_input function to do input. <emphasis>raw_input(\"String to show\")</emphasis> , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py"
+msgstr "സാധാരണ പൈത്തണ്‍ പ്രോഗ്രാമുകള്‍ കീബോര്‍ഡില്‍ നിന്നും ഇന്‍പുട്ട് സ്വീകരിക്കുന്നില്ല.raw_input function എന്ന ഫങ്ഷന്‍ ഉപയോഗിച്ച് നമുക്ക് കീബോര്‍ഡ് ഇന്‍പുട്ട് സ്വീകരിക്കാം.<emphasis>raw_input(\"String to show\")</emphasis>,ഒരു ,സ്ട്രിങ് ഔട്ട്പുട്ടായി നല്‍കും.കീബോര്‍ഡ് ഇന്‍പുട്ടായി ഒരു നന്പര്‍ സ്വീകരിക്കുയും അത് 100 ന് തുല്യമോ താഴെയോ ആണെന്ന് പരിശോധിക്കുന്നതിന് ഒരു പ്രോഗ്രം എഴുതാം.ഈ പ്രോഗ്രാമിനെ നമുക്ക് testhundred.py എന്ന് സൂചിപ്പിക്കാം."
 
 #. Tag: screen
 #: variablesanddatatypes.xml:35
@@ -156,13 +158,23 @@ msgid ""
 "    print \"Your number is greater than 100\" \n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python   \n"
+"number = int(raw_input(\"Enter an integer: \"))\n"
+"if number < 100:   \n"
+"    print \"Your number is smaller than 100\"   \n"
+"else:   \n"
+"    print \"Your number is greater than 100\" \n"
+"]]>"
 
 #. Tag: para
-#: variablesanddatatypes.xml:36 variablesanddatatypes.xml:44
-#: variablesanddatatypes.xml:60 variablesanddatatypes.xml:71
+#: variablesanddatatypes.xml:36
+#: variablesanddatatypes.xml:44
+#: variablesanddatatypes.xml:60
+#: variablesanddatatypes.xml:71
 #, no-c-format
 msgid "The output"
-msgstr ""
+msgstr "പ്രോഗ്രാമിന്‍റെ ഔട്ട്പുട്ട്"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:39
@@ -177,12 +189,20 @@ msgid ""
 "Your number is greater than 100\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./testhundred.py \n"
+"Enter an integer: 13 \n"
+"Your number is smaller than 100 \n"
+"[kd@kdlappy book]$ ./testhundred.py \n"
+"Enter an integer: 123 \n"
+"Your number is greater than 100\n"
+"]]>"
 
 #. Tag: para
 #: variablesanddatatypes.xml:40
 #, no-c-format
 msgid "In the next program we are going to calculate investments."
-msgstr ""
+msgstr "അടുത്തതായി നമുക്ക് നിക്ഷേപം കണക്കുകൂട്ടുന്നതിന് ഒരു പ്രോഗ്രാം തയ്യാറാക്കാം."
 
 #. Tag: screen
 #: variablesanddatatypes.xml:43
@@ -202,6 +222,19 @@ msgid ""
 "    year = year + 1 \n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python \n"
+"amount = float(raw_input(\"Enter amount: \")) \n"
+"inrate = float(raw_input(\"Enter Interest rate: \")) \n"
+"period = int(raw_input(\"Enter period: \")) \n"
+"value = 0 \n"
+"year = 1 \n"
+"while year <= period:\n"
+"    value = amount + (inrate * amount)\n"
+"    print \"Year %d Rs. %.2f\" %(year, value)\n"
+"    amount = value\n"
+"    year = year + 1 \n"
+"]]>"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:47
@@ -219,30 +252,41 @@ msgid ""
 "Year 5 Rs. 19254.15\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./investment.py\n"
+"Enter amount: 10000\n"
+"Enter Interest rate: 0.14\n"
+"Enter period: 5\n"
+"Year 1 Rs. 11400.00\n"
+"Year 2 Rs. 12996.00\n"
+"Year 3 Rs. 14815.44\n"
+"Year 4 Rs. 16889.60\n"
+"Year 5 Rs. 19254.15\n"
+"]]>"
 
 #. Tag: title
 #: variablesanddatatypes.xml:50
 #, no-c-format
 msgid "Some Examples"
-msgstr ""
+msgstr "ചില ഉദാഹരണങ്ങള്‍"
 
 #. Tag: para
 #: variablesanddatatypes.xml:51
 #, no-c-format
 msgid "Some examples of variables and datatypes:"
-msgstr ""
+msgstr "വേരിയബിളുകളും ഡാറ്റാടൈപ്പുകളും ഉപയോഗിക്കുന്നതു സംബന്ധിച്ച  ചില ഉദാഹരണങ്ങള്‍ താഴെ കൊടുക്കുന്നു."
 
 #. Tag: title
 #: variablesanddatatypes.xml:55
 #, no-c-format
 msgid "Average of N numbers"
-msgstr ""
+msgstr "N  സംഖ്യകളുടെ ശരാശരി"
 
 #. Tag: para
 #: variablesanddatatypes.xml:56
 #, no-c-format
 msgid "In the next program we will do an average of N numbers."
-msgstr ""
+msgstr "അടുത്ത പ്രോഗ്രാമില്‍ നമുക്ക് N സംഖ്യകളുടെ ശരാശരി കാണാം."
 
 #. Tag: screen
 #: variablesanddatatypes.xml:59
@@ -262,6 +306,19 @@ msgid ""
 "print \"Average = %f\" % average\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"N = 10\n"
+"sum = 0\n"
+"count = 0\n"
+"while count < N:\n"
+"    number = float(raw_input(\"\"))\n"
+"    sum = sum + number\n"
+"    count = count + 1\n"
+"average = float(sum)/N\n"
+"print \"N = %d , Sum = %f\" % (N, sum)\n"
+"print \"Average = %f\" % average\n"
+"]]>"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:63
@@ -283,20 +340,33 @@ msgid ""
 "Average = 3.880000\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./averagen.py\n"
+"1\n"
+"2.3\n"
+"4.67\n"
+"1.42\n"
+"7\n"
+"3.67\n"
+"4.08\n"
+"2.2\n"
+"4.25\n"
+"8.21\n"
+"N = 10 , Sum = 38.800000\n"
+"Average = 3.880000\n"
+"]]>"
 
 #. Tag: title
 #: variablesanddatatypes.xml:66
 #, no-c-format
 msgid "Temperature conversion"
-msgstr ""
+msgstr "താപനില പരിവര്‍‌ത്തനം"
 
 #. Tag: para
 #: variablesanddatatypes.xml:67
 #, no-c-format
-msgid ""
-"In this program we will convert the given temperature to Celsius from "
-"Fahrenheit by using the formula C=(F-32)/1.8"
-msgstr ""
+msgid "In this program we will convert the given temperature to Celsius from Fahrenheit by using the formula C=(F-32)/1.8"
+msgstr "ഈ പ്രോഗ്രാമില്‍ നമുക്ക് താപനിലയെ സെല്‍സ്യസില്‍ നിന്നും ഫാരന്‍ഹീറ്റിലേക്ക് പരിവര്‍ത്തനം  ചെയ്യാം. പരിവര്‍ത്തനം ചെയ്യുന്നതിനുള്ള സൂത്രവാക്യം C=(F-32)/1.8"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:70
@@ -307,12 +377,20 @@ msgid ""
 "fahrenhite = 0.0\n"
 "print \"Fahrenheit Celsius\"\n"
 "while fahrenheit <= 250:\n"
-"    celsius = ( fahrenheit - 32.0 ) / 1.8 #Here we calculate the fahrenhite "
-"value\n"
+"    celsius = ( fahrenheit - 32.0 ) / 1.8 #Here we calculate the fahrenhite value\n"
 "    print \"%5.1f %7.2f\" % (fahrenheit , celsius)\n"
 "    fahrenheit = fahrenheit + 25\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"fahrenhite = 0.0\n"
+"print \"Fahrenheit Celsius\"\n"
+"while fahrenheit <= 250:\n"
+"    celsius = ( fahrenheit - 32.0 ) / 1.8 #Here we calculate the fahrenhite value\n"
+"    print \"%5.1f %7.2f\" % (fahrenheit , celsius)\n"
+"    fahrenheit = fahrenheit + 25\n"
+"]]>"
 
 #. Tag: screen
 #: variablesanddatatypes.xml:74
@@ -334,18 +412,33 @@ msgid ""
 "250.0  121.11\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./temperature.py\n"
+"Fahrenheit Celsius\n"
+"  0.0  -17.78\n"
+" 25.0   -3.89\n"
+" 50.0   10.00\n"
+" 75.0   23.89\n"
+"100.0   37.78\n"
+"125.0   51.67\n"
+"150.0   65.56\n"
+"175.0   79.44\n"
+"200.0   93.33\n"
+"225.0  107.22\n"
+"250.0  121.11\n"
+"]]>"
 
 #. Tag: title
 #: variablesanddatatypes.xml:80
 #, no-c-format
 msgid "Multiple assignments in a single line"
-msgstr ""
+msgstr "ഒരേ സമയം ഒന്നലധികം വേരിയബിളിന് മൂല്യം നല്‍കല്‍"
 
 #. Tag: para
 #: variablesanddatatypes.xml:81
 #, no-c-format
 msgid "You can even assign values to multiple variables in a single line, like"
-msgstr ""
+msgstr "ഒരേ സമയം ഒരു നിരയില്‍ ഒന്നിലധികം വേരിയബിളുകള്‍ക്ക് മൂല്യം നല്‍കാന്‍ സാധിക്കും. "
 
 #. Tag: screen
 #: variablesanddatatypes.xml:84
@@ -359,12 +452,19 @@ msgid ""
 "54\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> a , b = 45, 54\n"
+">>> a\n"
+"45\n"
+">>> b\n"
+"54\n"
+"]]>"
 
 #. Tag: para
 #: variablesanddatatypes.xml:85
 #, no-c-format
 msgid "Using this swapping two numbers becomes very easy"
-msgstr ""
+msgstr "ഈ സങ്കേതം ഉപയോഗിച്ചുതന്നെ വേരിയബിള്‍ മൂല്യങ്ങളെ പരസ്പരം മാറ്റുവാനും സാധിക്കും."
 
 #. Tag: screen
 #: variablesanddatatypes.xml:88
@@ -378,3 +478,11 @@ msgid ""
 "45\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> a, b = b , a\n"
+">>> a\n"
+"54\n"
+">>> b\n"
+"45\n"
+"]]>"
+

@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: 2008-12-24 15:13+0000\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2009-09-19 20:14+0530\n"
+"Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,18 +17,13 @@ msgstr ""
 #: thebeginning.xml:6
 #, no-c-format
 msgid "The Beginning"
-msgstr ""
+msgstr "ഇനി തുടങ്ങാം"
 
 #. Tag: para
 #: thebeginning.xml:7
 #, no-c-format
-msgid ""
-"So we are going to look at our first code. As python is an interpreted "
-"language , you can directly write the code into the python interpreter or "
-"write in a file and then run the file. First we are going to do that using "
-"the interpreter, to start type python in the command prompt (shell or "
-"terminal)."
-msgstr ""
+msgid "So we are going to look at our first code. As python is an interpreted language , you can directly write the code into the python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal)."
+msgstr "ഇനി നമുക്ക് ആദ്യത്തെ കോഡ് നോക്കാം.പൈത്തണ്‍  ഒരു ഇന്‍റര്‍പ്രട്ടഡ് പ്രോഗ്രാമിംഗ് ഭാഷയാണ്,അതുകൊണ്ട് ഒന്നുകില്‍ പൈത്തണ്‍ ഇന്‍റര്‍പ്രട്ടറിലേക്ക് നേരിട്ടോ അല്ലെങ്കില്‍ ഒരു ഫയലിലേക്കോ പ്രോഗ്രാം എഴുതി റണ്‍ ചെയ്യിക്കാവുന്നതാണ്.ആദ്യം നമുക്ക് ഇന്‍റര്‍പ്രട്ടര്‍ ഉപയോഗിക്കുന്നതെങ്ങനെയെന്നു നോക്കാം,കമാന്‍റ് പ്രോംപ്ററില്‍ ‍(ഷെല്‍ അല്ലെങ്കില്‍ ടെര്‍മിനല്‍‍‌ ) python എന്നു ടൈപ്പ് ചെയ്താലാണ് ഇന്‍റര്‍പ്രട്ടര്‍ പ്രവര്‍ത്തിച്ചു തുടങ്ങുക. "
 
 #. Tag: screen
 #: thebeginning.xml:10
@@ -37,17 +32,20 @@ msgid ""
 "[kd@kdlappy ~]$ python\n"
 "Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)\n"
 "[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2\n"
-"Type \"help\", \"copyright\", \"credits\" or \"license\" for more "
-"information. \n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. \n"
 ">>>"
 msgstr ""
+"[Abhimaneu@666~]$python\n"
+"Python 2.5.1 (r251:54863,jun 23 2009,12:00:00)\n"
+"[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2\n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. \n"
+">>>"
 
 #. Tag: para
 #: thebeginning.xml:11
 #, no-c-format
-msgid ""
-"In our first code we are going to print \"Hello World!\" , so do it as below,"
-msgstr ""
+msgid "In our first code we are going to print \"Hello World!\" , so do it as below,"
+msgstr "ഇനി നമുക്ക് >>>എന്നു കാണുന്നയിടത്ത് പ്രോഗ്രാം എഴുതിത്തുടങ്ങാം.ആദ്യത്തെ പ്രോഗ്രാമായി \"Hello World!\" എങ്ങനെ പ്രിന്‍റ് ചെയ്യിക്കാമെന്നു നോക്കാം.താഴെ കാണുന്നതു പോലെ ടൈപ്പ് ചെയ്യുക."
 
 #. Tag: screen
 #: thebeginning.xml:14
@@ -56,22 +54,20 @@ msgid ""
 ">>> print \"Hello World!\"\n"
 "Hello World!"
 msgstr ""
+">>> print \"Hello World!\"\n"
+"Hello World!"
 
 #. Tag: title
 #: thebeginning.xml:17
 #, no-c-format
 msgid "helloworld.py"
-msgstr ""
+msgstr "helloworld.py"
 
 #. Tag: para
 #: thebeginning.xml:18
 #, no-c-format
-msgid ""
-"Now as a serious programmer you may want to write the above code into a "
-"source file. We will create a helloworld.py. Use any text editor you like to "
-"create the file. I used vi, you can even use GUI based tools like Kate, "
-"gedit too."
-msgstr ""
+msgid "Now as a serious programmer you may want to write the above code into a source file. We will create a helloworld.py. Use any text editor you like to create the file. I used vi, you can even use GUI based tools like Kate, gedit too."
+msgstr "നിങ്ങളൊരു സീരിയസ് പ്രോഗ്രാമറാണെങ്കില്‍ ഈ പ്രോഗ്രാം ഒരു ഫയലില്‍ എഴുതാവുന്നതാണ്.നമുക്ക് helloworld.py എന്നൊരു ഫയല്‍ തുറക്കാം.നിങ്ങള്‍ക്കിഷ്ടപ്പെട്ട ഏതെങ്കിലും ഒരു ടെക്സ്ററ് എഡിററര്‍ ഇതിനു വേണ്ടി ഉപയോഗിക്കാം.ഞാന്‍ ഉപയോഗിക്കുന്നത് വിം ആണ്,നിങ്ങള്‍ക്ക് കേററ്,ജിഡിററ് തുടങ്ങി ജിയുഐ അധിഷ്ഠിതമായ ഏതെങ്കിലും ടെക്സററ് എഡിററര്‍ ഉപയോഗിക്കാവുന്നതാണ്."
 
 #. Tag: screen
 #: thebeginning.xml:21
@@ -80,26 +76,26 @@ msgid ""
 "#!/usr/bin/env python\n"
 "print \"Hello World!\""
 msgstr ""
+"#!/usr/bin/env python\n"
+"print \"Hello World!\""
 
 #. Tag: para
 #: thebeginning.xml:22
 #, no-c-format
-msgid ""
-"To run the code first you have to make the file executable, in GNU/Linux you "
-"can do that by giving the command in a shell or terminal"
-msgstr ""
+msgid "To run the code first you have to make the file executable, in GNU/Linux you can do that by giving the command in a shell or terminal"
+msgstr "പ്രോഗ്രാം റണ്‍ ചെയ്യിക്കുന്നതിനായി ആദ്യം ഫയല്‍ എക്സിക്യൂട്ടബിള്‍ (പ്രവര്‍ത്തനക്ഷമം )ആക്കണം, ഗ്നു/ലിനക്സില്‍ ഇത് ഷെല്ലിലൊ ടെര്‍മിനലിലൊ താഴെ കൊടുത്തിരിക്കുന്ന കമാന്‍റ് നല്കി ചെയ്യാവുന്നതാണ്."
 
 #. Tag: screen
 #: thebeginning.xml:25
 #, no-c-format
 msgid "$ chmod +x helloworld.py"
-msgstr ""
+msgstr "$ chmod +x helloworld.py"
 
 #. Tag: para
 #: thebeginning.xml:26
 #, no-c-format
 msgid "Then"
-msgstr ""
+msgstr "അടുത്തത്"
 
 #. Tag: screen
 #: thebeginning.xml:29
@@ -108,32 +104,26 @@ msgid ""
 "$ ./helloworld.py \n"
 "Hello World!"
 msgstr ""
+"$ ./helloworld.py \n"
+"Hello World!"
 
 #. Tag: para
 #: thebeginning.xml:30
 #, no-c-format
-msgid ""
-"On the first line you can <emphasis>#!</emphasis> , we call it sha-bang. "
-"Using this we are telling that use python interpreter to run this code. In "
-"the next line we are printing a text message. In python we call all the line "
-"of texts as strings."
-msgstr ""
+msgid "On the first line you can <emphasis>#!</emphasis> , we call it sha-bang. Using this we are telling that use python interpreter to run this code. In the next line we are printing a text message. In python we call all the line of texts as strings."
+msgstr "പ്രോഗ്രാമിന്‍റെ ഒന്നാമത്തെ വരി ?! എന്നാണ് ആരംഭിക്കുന്നത്,ഇതിനെ ഷാ -ബാംഗ് എന്ന് വിളിക്കാം.ഈ പ്രോഗ്രാം പ്രവര്‍ത്തിപ്പിക്കുവാന്‍ പൈത്തണ്‍ ഇന്‍റര്‍പ്രട്ടര്‍ ഉപയോഗിക്കുക എന്നതാണ് ഈ വരിയുടെ അര്‍ത്ഥം ‍.രണ്ടാമത്തെ വരിയില്‍ നാം\"Hello World\" എന്ന സന്ദേശം പ്രിന്‍റ് ചെയ്യുന്നു.പൈത്തണില്‍ എല്ലാ ടെക്സ്ററ് വരികളെയും സ്ട്രിംഗ് എന്നു വിളിക്കുന്നു."
 
 #. Tag: title
 #: thebeginning.xml:37
 #, no-c-format
 msgid "Whitespaces and indentation"
-msgstr ""
+msgstr "ചിട്ടപ്പെടുത്തല്‍"
 
 #. Tag: para
 #: thebeginning.xml:38
 #, no-c-format
-msgid ""
-"In Python whitespace is an important thing. We divide different identifiers "
-"using spaces.Whitespace in the beginning of the line is known as "
-"indentation, but if you give wrong indentation it will throw an error. "
-"Examples are given below:"
-msgstr ""
+msgid "In Python whitespace is an important thing. We divide different identifiers using spaces.Whitespace in the beginning of the line is known as indentation, but if you give wrong indentation it will throw an error. Examples are given below:"
+msgstr "പൈത്തണില്‍ വൈററ്സ്പേസിനു(White space) വളരെയധികം പ്രാധാന്യമുണ്ട്.വിവിധ ഐഡന്‍റിഫയറുകളെവൈററ്സ്പേസുകൊണ്ടു നാം വേര്‍തിരിക്കുന്നു.ഒരു വരിയുടെ ആദ്യമുളള വൈററ് സ്പേസിനെ ഇന്‍ഡന്‍റേഷന്‍ എന്നു വിളിക്കുന്നു.തെററായ ശൈലിയില്‍ ഇന്‍ഡന്‍റേഷന്‍ നല്കിയാല്‍ പൈത്തണ്‍  (error) സന്ദേശം കാണിക്കും.താഴെക്കൊടുത്തിരിക്കുന്ന ഉദാഹരണം കാണുക."
 
 #. Tag: screen
 #: thebeginning.xml:41
@@ -147,46 +137,43 @@ msgid ""
 "          ^\n"
 "          IndentationError: unexpected indent]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> a = 12\n"
+">>>  a = 12\n"
+"  File \"<stdin>\", line 1\n"
+"      a = 12\n"
+"          ^\n"
+"          IndentationError: unexpected indent]]>"
 
 #. Tag: title
 #: thebeginning.xml:43
 #, no-c-format
 msgid "Warning"
-msgstr ""
+msgstr "മുന്നറിയിപ്പ്"
 
 #. Tag: para
 #: thebeginning.xml:44
 #, no-c-format
-msgid ""
-"There is an extra space in the beginning of the second line which is causing "
-"the error, so always look for the proper indentation."
-msgstr ""
+msgid "There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation."
+msgstr "രണ്ടാമത്തെ വരിയുടെ തുടക്കത്തില്‍ ഒരു അധിക വൈററ്സ്പേസ് ഉളളത് എറര്‍ ഉണ്ടാക്കുന്നു,അതുകൊണ്ട ശരിയായ ഇന്‍ഡന്‍റേഷന്‍ കൊടുക്കാന്‍ ശ്രദ്ധിക്കുക."
 
 #. Tag: para
 #: thebeginning.xml:47
 #, no-c-format
-msgid ""
-"You can even get into this indentation errors if you mix up tabs and spaces. "
-"Like if you use spaces and only use spaces for indentation, don't use tabs "
-"in that case. For you it may look same, but the code will give you error if "
-"you try to run it."
-msgstr ""
+msgid "You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it."
+msgstr "ടാബ് വൈററ്സ്പേസ് എന്നിവ ഇടകലര്‍ത്തി ഉപയോഗിച്ചാലും ഇന്‍ഡന്‍റേഷന്‍ എറര്‍ ഉണ്ടാകും. ഉദാഹരണത്തിനു താങ്കള്‍ ഇന്‍ഡന്‍റേഷന് വൈററ്സ്പേസാണ് ഉപയോഗിക്കുന്നതെങ്കില്‍ പ്രോഗ്രാമില്‍ എല്ലായിടത്തും ഇന്‍ഡന്‍റേഷന് സ്പേസ് മാത്രം ഉപയോഗിക്കുക ടാബ് മുതലായവ ഒഴിവാക്കുക.ഒരുപക്ഷേ താങ്കള്‍ക്കിത് ഒരേപോലെ തോന്നാം,പക്ഷേ പ്രോഗ്രാം റണ്‍ ചെയ്യുന്പോള്‍ എറര്‍ സന്ദേശം ലഭിക്കാം. "
 
 #. Tag: title
 #: thebeginning.xml:54
 #, no-c-format
 msgid "Comments"
-msgstr ""
+msgstr "കമന്‍റ്സ്"
 
 #. Tag: para
 #: thebeginning.xml:55
 #, no-c-format
-msgid ""
-"Comments are some piece of English text which explains what this code does, "
-"we write comments in the code so that is easier for others to understand. A "
-"comment line starts with <emphasis>#</emphasis> , everything after that is "
-"ignored as comment, that means they don't effect on the program."
-msgstr ""
+msgid "Comments are some piece of English text which explains what this code does, we write comments in the code so that is easier for others to understand. A comment line starts with <emphasis>#</emphasis> , everything after that is ignored as comment, that means they don't effect on the program."
+msgstr "സോഴ്സ്കോഡില്‍,സോഴ്സ്കോഡ് എന്താണ് ചെയ്യുന്നത് എന്ന് വിശദീകരിക്കുന്ന  പാഠഭാഗമാണ് കമന്‍റ്. സാധാരണയായി നാം പ്രോഗ്രാം എഴുതുന്പോള്‍ കമന്‍റുകൂടി ഉള്‍പ്പെടുത്തിയാല്‍ മററുളളവര്‍ക്ക് കൂടി പ്രോഗ്രാം മനസിലാക്കാന്‍ പററും.ഒരു കമന്‍റ് < ഓട് കൂടിയാണ് ആരംഭിക്കുന്നത്.<നു ശേഷം എഴുതുന്നത് എല്ലാം പൈത്തണ്‍ ഇന്‍റര്‍പ്രട്ടര്‍ കമന്‍റായി കണക്കാക്കും,അതായത് കമന്‍റുകള്‍ പ്രോഗ്രാമിനെ ബാധിക്കില്ല."
 
 #. Tag: screen
 #: thebeginning.xml:58
@@ -198,23 +185,23 @@ msgid ""
 ">>> a = 12 + 34\n"
 ">>> print c #this is a comment too :)]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> #this is a comment\n"
+">>> #the next line will add two numbers\n"
+">>> a = 12 + 34\n"
+">>> print c #this is a comment too :)]]>"
 
 #. Tag: title
 #: thebeginning.xml:62
 #, no-c-format
 msgid "Modules"
-msgstr ""
+msgstr "മൊഡ്യൂള്‍സ്"
 
 #. Tag: para
 #: thebeginning.xml:63
 #, no-c-format
-msgid ""
-"Modules are python files which contain different function definitions , "
-"variables which we can reuse, it should always end with a .py extension.. "
-"Python itself is having a vast module library with the default installation. "
-"We are going to use some of them. To use a module you have to import it "
-"first."
-msgstr ""
+msgid "Modules are python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension.. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first."
+msgstr "വീണ്ടും ഉപയോഗിക്കാവുന്ന നിരവധി വേരിയബിളുകള്‍ ,ഫങ്ഷന്‍ നിര്‍വചനങ്ങള്‍ ഉള്‍ക്കൊളളുന്ന പൈത്തണ്‍ ഫയലുകളാണ് മൊഡ്യൂളുകള്‍ . മൊഡ്യൂള്‍  ഫയലുകളുടെ എക്സ്ററന്‍ഷന്‍.py ആയിരിക്കണം.പൈത്തണ്‍ ഇന്‍സ്ററാള്‍ ചെയ്യപ്പെടുന്നത് തന്നെ ബൃഹത്തായ    മൊഡ്യൂള്‍ സഞ്ചയത്തോടുകൂടിയാണ്. നാം അവയില്‍ ചില  മൊഡ്യൂളുകള്‍ ഉപയോഗിക്കാന്‍ പോകുകയാണ്.ഒരു മൊഡ്യൂള്‍ ഉപയോഗിക്കുവാന്‍ ആദ്യം അത് ഇറക്കുമതി(import) ചെയ്യണം."
 
 #. Tag: screen
 #: thebeginning.xml:66
@@ -226,9 +213,15 @@ msgid ""
 "2.71828182846\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> import math\n"
+">>> print math.e\n"
+"2.71828182846\n"
+"]]>"
 
 #. Tag: para
 #: thebeginning.xml:67
 #, no-c-format
 msgid "We are going to learn more about modules on the Modules chapter."
-msgstr ""
+msgstr "മൊഡ്യൂള്‍സ് എന്ന അധ്യായത്തില്‍ മൊഡ്യൂളുകളെക്കുറിച്ച് നമുക്ക് കൂടുതല്‍ പഠിക്കാം."
+

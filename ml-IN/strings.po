@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-12-24 15:13+0000\n"
-"PO-Revision-Date: 2008-12-24 15:13+0000\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2009-09-19 20:12+0530\n"
+"Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,16 +17,13 @@ msgstr ""
 #: strings.xml:6
 #, no-c-format
 msgid "Strings"
-msgstr ""
+msgstr "സട്രിംഗ്സ്"
 
 #. Tag: para
 #: strings.xml:7
 #, no-c-format
-msgid ""
-"Strings are nothing but simple text. In python we declare strings in between "
-"\"\" or '' or ''' ''' or \"\"\" \"\"\". The examples below will help you to "
-"understand sting in a better way."
-msgstr ""
+msgid "Strings are nothing but simple text. In python we declare strings in between \"\" or '' or ''' ''' or \"\"\" \"\"\". The examples below will help you to understand sting in a better way."
+msgstr "ലളിതമായ ടെക്സ്ററുകളെയാണ് സട്രിംഗ്സ് എന്നു വിളിക്കുന്നത്.പൈത്തണില്‍  \"\" ന്‍റെയോ  ''  ന്‍റെയോ ''' ''' ന്‍റെയോ \"\"\" \"\"\" ഇടയില്‍ വരുന്ന ടെക്സ്ററുകളെയാണ് സ്ട്രിംഗുകളായി  കണക്കാക്കുന്നത്.താഴെകൊടുത്തിരിക്കുന്ന ഉദാഹരണങ്ങള്‍ സട്രിംഗുകളെ മനസ്സിലാക്കാന്‍ നിങ്ങളെ സഹായിക്കും\" "
 
 #. Tag: screen
 #: strings.xml:10
@@ -41,22 +38,40 @@ msgid ""
 "... splitted in two lines\"\n"
 ">>> s\n"
 "'Here is a line splitted in two lines'\n"
-">>> s = \"Here is a line \\n splitted in two lines\"\n"
+">>> s = \"Here is a line \\n"
+" splitted in two lines\"\n"
 ">>> s\n"
-"'Here is a line \\n splitted in two lines'\n"
+"'Here is a line \\n"
+" splitted in two lines'\n"
 ">>> print s\n"
 "Here is a line\n"
 " splitted in two lines         \n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"I am Indian\"\n"
+">>> s\n"
+"'I am Indian'\n"
+">>> s = 'I am Indian'\n"
+">>> s = \"Here is a line \\\n"
+"... splitted in two lines\"\n"
+">>> s\n"
+"'Here is a line splitted in two lines'\n"
+">>> s = \"Here is a line \\n"
+" splitted in two lines\"\n"
+">>> s\n"
+"'Here is a line \\n"
+" splitted in two lines'\n"
+">>> print s\n"
+"Here is a line\n"
+" splitted in two lines         \n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:11
 #, no-c-format
-msgid ""
-"Now if you want to multiline strings you have to use triple single/double "
-"quotes."
-msgstr ""
+msgid "Now if you want to multiline strings you have to use triple single/double quotes."
+msgstr "ഒന്നില്‍ കൂടുതല്‍ വരികളുളള സട്രിംഗുകളാണ് എഴുതേണ്ടതെങ്കില്‍ മൂന്നുവീതം ഒററ/ഇരട്ട ക്വോട്ടുകള്‍ ഉപയോഗിക്കുക"
 
 #. Tag: screen
 #: strings.xml:14
@@ -72,20 +87,27 @@ msgid ""
 "write many lines\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"\"\" This is a\n"
+"... multiline string, so you can\n"
+"... write many lines\"\"\"\n"
+">>> print s\n"
+" This is a\n"
+"multiline string, so you can\n"
+"write many lines\n"
+"]]>"
 
 #. Tag: title
 #: strings.xml:16
 #, no-c-format
 msgid "Different methods available for Strings"
-msgstr ""
+msgstr "സട്രിംഗുകള്‍ എഴുതാന്‍ ലഭ്യമായ വിവിധ രീതികള്‍ "
 
 #. Tag: para
 #: strings.xml:17
 #, no-c-format
-msgid ""
-"Every string object is having couple of buildin methods available, we "
-"already saw some of them like <emphasis>s.split(\" \")</emphasis>."
-msgstr ""
+msgid "Every string object is having couple of buildin methods available, we already saw some of them like <emphasis>s.split(\" \")</emphasis>."
+msgstr "എല്ലാ സട്രിംഗ് ഒബജക്ററുകള്‍ക്കും ഒന്നിലധികം ബില്‍ഡിന്‍ രീതികള്‍ ലഭ്യമാണ്,  <emphasis>s.split(\" \")</emphasis> പോലെയുളള ചിലത് നമ്മള്‍ കണ്ടുകഴിഞ്ഞു."
 
 #. Tag: screen
 #: strings.xml:20
@@ -97,15 +119,17 @@ msgid ""
 "'Kushal Das' \n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"kushal das\"\n"
+">>> s.title()\n"
+"'Kushal Das' \n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:21
 #, no-c-format
-msgid ""
-"<emphasis>title()</emphasis> method returns a titlecased version of the "
-"string, words start with uppercase characters, all remaining cased "
-"characters are lowercase."
-msgstr ""
+msgid "<emphasis>title()</emphasis> method returns a titlecased version of the string, words start with uppercase characters, all remaining cased characters are lowercase."
+msgstr "<emphasis>title()</emphasis> രീതി സട്രിംഗിന്‍റെ തലവാചക പതിപ്പ് തിരിച്ച് നല്കുന്നു,വാക്കുകളുടെ തുടക്കം വലിയക്ഷരത്തിലും ബാക്കിയുളളവ ചെറിയക്ഷരത്തിലുമാണ് കാണപ്പെടുക."
 
 #. Tag: screen
 #: strings.xml:24
@@ -119,14 +143,19 @@ msgid ""
 "'kushal das'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> z = s.upper()\n"
+">>> z\n"
+"'KUSHAL DAS'\n"
+">>> z.lower()\n"
+"'kushal das'\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:25
 #, no-c-format
-msgid ""
-"<emphasis>upper()</emphasis> returns a total uppercase version whereas "
-"<emphasis>lower()</emphasis> returns a lower case version of the string."
-msgstr ""
+msgid "<emphasis>upper()</emphasis> returns a total uppercase version whereas <emphasis>lower()</emphasis> returns a lower case version of the string."
+msgstr "<emphasis>upper()</emphasis> രീതി തിരിച്ച് നല്കുന്നത്പൂര്‍ണ്ണമായും വലിയക്ഷരത്തിലുള്ള പതിപ്പായിരിക്കും എന്നാല്‍  <emphasis>lower()</emphasis> തിരിച്ചുനല്കുന്നത് ചെറിയക്ഷരത്തിലുളള പതിപ്പായിരിക്കും."
 
 #. Tag: screen
 #: strings.xml:28
@@ -138,12 +167,17 @@ msgid ""
 "'i AM a PrOgRAmmER'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"I am A pRoGraMMer\"\n"
+">> s.swapcase()\n"
+"'i AM a PrOgRAmmER'\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:29
 #, no-c-format
 msgid "<emphasis>swapcase()</emphasis> returns the string with case swapped :)"
-msgstr ""
+msgstr "<emphasis>swapcase()</emphasis>  തിരിച്ചുനല്കുന്നത് കേസ് ഇടകലര്‍ന്നുളള സട്രിംഗുകളായിരിക്കും :)"
 
 #. Tag: screen
 #: strings.xml:32
@@ -158,15 +192,20 @@ msgid ""
 "True\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"jdwb 2323bjb\"\n"
+">>> s.isalnum()\n"
+"False\n"
+">>> s = \"jdwb2323bjb\"\n"
+">>> s.isalnum()\n"
+"True\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:33
 #, no-c-format
-msgid ""
-"Because of the space in the first line <emphasis>isalnum()</emphasis> "
-"returned <emphasis>False</emphasis> , it checks for all charecters are alpha "
-"numeric or not."
-msgstr ""
+msgid "Because of the space in the first line <emphasis>isalnum()</emphasis> returned <emphasis>False</emphasis> , it checks for all charecters are alpha numeric or not."
+msgstr "ഒന്നാമത്തെ വരിയിലെ സ്പെയ്സ് കാരണം <emphasis>isalnum()</emphasis> ഒരു <emphasis>False</emphasis> തിരിച്ച് നല്കുന്നത് കൊണ്ടാണ്,എല്ലാ അക്ഷരങ്ങളും ആല്‍ഫാന്യൂമറിക് ആണോ അല്ലയോ എന്നാണ്ഇത് പരിശോധിക്കുന്നത്"
 
 #. Tag: screen
 #: strings.xml:36
@@ -181,12 +220,20 @@ msgid ""
 "False\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"SankarshanSir\"\n"
+">>> s.isalpha()\n"
+"True\n"
+">>> s = \"Sankarshan Sir\"\n"
+">>> s.isalpha()\n"
+"False\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:37
 #, no-c-format
 msgid "<emphasis>isalpha()</emphasis> checkes for only alphabets."
-msgstr ""
+msgstr "ആല്‍ഫബെററാണോ എന്ന് മാത്രമാണ് <emphasis>isalpha()</emphasis> പരിശോധിക്കുന്നത്."
 
 #. Tag: screen
 #: strings.xml:40
@@ -207,15 +254,26 @@ msgid ""
 "True\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"1234\"\n"
+">>> s.isdigit() #To check if all the characters are digits or not\n"
+"True\n"
+">>> s = \"Fedora9 is coming\"\n"
+">>> s.islower() # To check if all chracters are lower case or not\n"
+"False\n"
+">>> s = \"Fedora9 Is Coming\" \n"
+">>> s.istitle() # To check if it is a title or not\n"
+"True\n"
+">>> s = \"INDIA\"\n"
+">>> s.isupper() # To check if characters are in upper case or not\n"
+"True\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:41
 #, no-c-format
-msgid ""
-"To split any string we have <emphasis>split()</emphasis>. It takes a string "
-"as an argument , depending on that it will split the main string and returns "
-"a list containing splitted strings."
-msgstr ""
+msgid "To split any string we have <emphasis>split()</emphasis>. It takes a string as an argument , depending on that it will split the main string and returns a list containing splitted strings."
+msgstr "<emphasis>split()</emphasis>  ഉപയോഗിച്ചാണ് സ്ട്രിംഗിനെ വിഭജിക്കുന്നത്.സ്ട്രിംഗിനെ ഒരാര്‍ഗ്യുമെന്‍റായാണിതെടുക്കുന്നത്,അതിനെ ആശ്രയിച്ചുതന്നെ പ്രധാനപ്പെട്ട സ്ട്രിംഗിനെ വിഭജിക്കുകയും വിഭജിക്കപ്പെട്ട  സ്ട്രിംഗുകളുടെ ഒരു ലിസ്ററ് തിരിച്ച് നല്കുകയും ചെയ്യുന്നു"
 
 #. Tag: screen
 #: strings.xml:44
@@ -230,14 +288,20 @@ msgid ""
 "['Nishant', 'is', 'waiting']\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"We all love Python\"\n"
+">>> s.split(\" \")\n"
+"['We', 'all', 'love', 'Python']\n"
+">>> x = \"Nishant:is:waiting\"\n"
+">>> x.split(':')\n"
+"['Nishant', 'is', 'waiting']\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:45
 #, no-c-format
-msgid ""
-"The opposite method for <emphasis>split()</emphasis> is <emphasis>join()</"
-"emphasis>. It takes a list contains strings as input and join them."
-msgstr ""
+msgid "The opposite method for <emphasis>split()</emphasis> is <emphasis>join()</emphasis>. It takes a list contains strings as input and join them."
+msgstr " <emphasis>split()</emphasis> ന് വിപരീതമായ രീതിയാണ് <emphasis>join()</emphasis>.ഇത് സട്രിംഗുകളുളള ഒരു ലിസ്ററ്  ഇന്‍പുട്ടായി എടുക്കുകയും അവയെ തമ്മില്‍ യോജിപ്പിക്കുകയും ചെയ്യുന്നു."
 
 #. Tag: screen
 #: strings.xml:48
@@ -248,49 +312,52 @@ msgid ""
 "'GNU/Linux-is-great'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> \"-\".join(\"GNU/Linux is great\".split(\" \"))\n"
+"'GNU/Linux-is-great'\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:49
 #, no-c-format
-msgid ""
-"In the above example first we are splitting the string \"GNU/Linux is great"
-"\" based on the white space, then joining them with \"-\"."
-msgstr ""
+msgid "In the above example first we are splitting the string \"GNU/Linux is great\" based on the white space, then joining them with \"-\"."
+msgstr "മുകളില്‍ കൊടുത്ത ഉദാഹരണത്തില്‍   \"GNU/Linux is great\" എന്ന സ്ട്രിംഗിനെ ആദ്യം നമ്മള്‍ വൈററ്സ്പേസ് അടിസ്ഥാനമാക്കി വിഭജിച്ചു,അതിനുശേഷം  \"-\" കൊണ്ട് യോജിപ്പിച്ചു."
 
 #. Tag: title
 #: strings.xml:55
 #, no-c-format
 msgid "String the strings"
-msgstr ""
+msgstr "സ്ട്രിംഗിനെ സ്ട്രിംഗ് ചെയ്യല്‍ "
 
 #. Tag: para
 #: strings.xml:56
 #, no-c-format
-msgid ""
-"Strings do have few methods to do striping. The simplest one is "
-"<emphasis>strip(chars)</emphasis>. If you provide the chars argument then it "
-"will strip any combination of them. By default it strips only whitespace or "
-"newline characters."
-msgstr ""
+msgid "Strings do have few methods to do striping. The simplest one is <emphasis>strip(chars)</emphasis>. If you provide the chars argument then it will strip any combination of them. By default it strips only whitespace or newline characters."
+msgstr "സ്ട്രിപ്പിംഗ് നടത്താന്‍ കുറച്ച് രീതികളുണ്ട്.ഏററവും ലളിതമായ ഒന്ന്  <emphasis>strip(chars)</emphasis> ആണ്.അക്ഷരങ്ങളുടെ ആര്‍ഗ്യുമെന്‍റ് നല്കുകയാണെങ്കില്‍ ഏത് സമ്മിശ്രണത്തിലും ഈ ഫങ്ഷന്‍ സ്ട്രിപ്പ് ചെയ്തുതരും.ഡീഫോള്‍ട്ടായി വൈററ്സ്പേസിനേയോ,പുതിയ വരിയിലെ അക്ഷരങ്ങളെയോ അടിസ്ഥാനമാക്കി മാത്രമേ ഇത് സ്ട്രിപ്പിംഗ് നടത്തുകയുളളൂ."
 
 #. Tag: screen
 #: strings.xml:59
 #, no-c-format
 msgid ""
 "<![CDATA[\n"
-">>> s = \"  abc\\n \"\n"
+">>> s = \"  abc\\n"
+" \"\n"
 ">>> s.strip()\n"
 "'abc'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"  abc\\n"
+" \"\n"
+">>> s.strip()\n"
+"'abc'\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:60
 #, no-c-format
-msgid ""
-"You can particularly strip from the left hand or right hand side also using "
-"<emphasis>lstrip(chars)</emphasis> or <emphasis>rstrip(chars)</emphasis>."
-msgstr ""
+msgid "You can particularly strip from the left hand or right hand side also using <emphasis>lstrip(chars)</emphasis> or <emphasis>rstrip(chars)</emphasis>."
+msgstr "ഇടതുഭാഗത്തു നിന്നോ അല്ലെങ്കില്‍ വലതുഭാഗത്തു നിന്നോ സ്ട്രിപ്പ്ചെയ്യുവാനായി <emphasis>lstrip(chars)</emphasis>  ഓ <emphasis>rstrip(chars)</emphasis> ഉപയോഗപക്കാവുന്നതാണ്."
 
 #. Tag: screen
 #: strings.xml:63
@@ -304,20 +371,25 @@ msgid ""
 "'www.foss'\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s = \"www.foss.in\"\n"
+">>> s.lstrip(\"cwsd.\")\n"
+"'foss.in'\n"
+">>> s.rstrip(\"cnwdi.\")\n"
+"'www.foss'\n"
+"]]>"
 
 #. Tag: title
 #: strings.xml:67
 #, no-c-format
 msgid "Finding text"
-msgstr ""
+msgstr "ടെക്സ്ററ് തിരയല്‍ "
 
 #. Tag: para
 #: strings.xml:68
 #, no-c-format
-msgid ""
-"Stings have some methods which will help you in finding text/substring in a "
-"string. Examples are given below:"
-msgstr ""
+msgid "Stings have some methods which will help you in finding text/substring in a string. Examples are given below:"
+msgstr "ഒരു സ്ട്രിംഗിലുളള ടെക്സ്ററിനെയോ,സബ്സ്ട്രിംഗിനെയോ തിരയാന്‍ ചില രീതികളുണ്ട്.ഉദാഹരണങ്ങള്‍ താഴെകൊടുത്തിരിക്കുന്നു."
 
 #. Tag: screen
 #: strings.xml:71
@@ -334,29 +406,34 @@ msgid ""
 "True\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+">>> s.find(\"for\")\n"
+"7\n"
+">>> s.find(\"fora\")\n"
+"-1\n"
+">>> s.startswith(\"fa\") #To check if the string startswith fa or not\n"
+"True\n"
+">>> s.endswith(\"reason\") #\n"
+"True\n"
+"]]>"
 
 #. Tag: para
 #: strings.xml:72
 #, no-c-format
-msgid ""
-"<emphasis>find()</emphasis> helps to find the first occurrence of the "
-"substring given, if not found it returns -1."
-msgstr ""
+msgid "<emphasis>find()</emphasis> helps to find the first occurrence of the substring given, if not found it returns -1."
+msgstr "തന്നിരിക്കുന്ന സബ്സട്രിംഗിന്‍റെ ആദ്യം എവിടെ വരുന്നു തിരയാന്‍ <emphasis>find()</emphasis> സഹായിക്കുന്നു,കണ്ടുകിട്ടിയില്ലെങ്കില്‍ -1 തിരിച്ചുനല്കുന്നു."
 
 #. Tag: title
 #: strings.xml:79
 #, no-c-format
 msgid "Palindrome checking"
-msgstr ""
+msgstr "Palindrome പരിശോധിക്കല്‍ "
 
 #. Tag: para
 #: strings.xml:80
 #, no-c-format
-msgid ""
-"Palindrome are the kind of strings which are same from left or right "
-"whichever way you read them. Example \"madam\". In this example we will take "
-"the word as input from the user and say if it is palindrome or not."
-msgstr ""
+msgid "Palindrome are the kind of strings which are same from left or right whichever way you read them. Example \"madam\". In this example we will take the word as input from the user and say if it is palindrome or not."
+msgstr "ഇടത്ത് നിന്നും വലത്ത് നിന്നും ഒരേപോലെ വായിക്കാന്‍ കഴിയുന്ന സ്ട്രിംഗുകളയാണ്  Palindrome എന്നു പറയുന്നത്.ഉദാഹരണം \"madam\".താഴെ കൊടുത്തിരിക്കുന്ന ഉദാഹരണത്തില്‍ യൂസറിന്‍റെ കൈയ്യില്‍ നിന്നും വാക്ക് ഇന്‍പുട്ടായി  സ്വീകരിച്ച് അത് Palindrome ആണോ അല്ലയോ എന്ന് പറയുകയാണ് ചെയ്യുന്നത്."
 
 #. Tag: screen
 #: strings.xml:83
@@ -373,12 +450,23 @@ msgid ""
 "    print \"The string is not a palindrome\"\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"s = raw_input(\"Please enter a string: \")\n"
+"z = [x for x in s]\n"
+"z.reverse()\n"
+"if s == \"\".join(z):\n"
+"    print \"The string is a palindrome\"\n"
+"else:\n"
+"    print \"The string is not a palindrome\"\n"
+"]]>"
 
 #. Tag: para
-#: strings.xml:84 strings.xml:95
+#: strings.xml:84
+#: strings.xml:95
 #, no-c-format
 msgid "The output"
-msgstr ""
+msgstr "ഔട്ട്പുട്ട്"
 
 #. Tag: screen
 #: strings.xml:87
@@ -393,18 +481,26 @@ msgid ""
 "The string is a palindrome\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./palindrome.py\n"
+"Please enter a string: madam1\n"
+"The string is not a palindrome\n"
+"[kd@kdlappy book]$ ./palindrome.py\n"
+"Please enter a string: madam\n"
+"The string is a palindrome\n"
+"]]>"
 
 #. Tag: title
 #: strings.xml:90
 #, no-c-format
 msgid "Number of words"
-msgstr ""
+msgstr "വാക്കുകളുടെ എണ്ണം"
 
 #. Tag: para
 #: strings.xml:91
 #, no-c-format
 msgid "In this example we will count the number of words in a given line"
-msgstr ""
+msgstr "ഈ ഉദാഹരണത്തില്‍ ഒരു വരിയിലെ വാക്കുകളുടെ എണ്ണമാണ് നമ്മള്‍ കണക്കാക്കുന്നത്"
 
 #. Tag: screen
 #: strings.xml:94
@@ -416,6 +512,11 @@ msgid ""
 "print \"The number of words in the line are %d\" % (len(s.split(\" \")))\n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"#!/usr/bin/env python\n"
+"s = raw_input(\"Enter a line: \")\n"
+"print \"The number of words in the line are %d\" % (len(s.split(\" \")))\n"
+"]]>"
 
 #. Tag: screen
 #: strings.xml:96
@@ -427,3 +528,9 @@ msgid ""
 "The number of words in the line are 5 \n"
 "]]>"
 msgstr ""
+"<![CDATA[\n"
+"[kd@kdlappy book]$ ./countwords.py\n"
+"Enter a line: Sayamindu is a great programmer\n"
+"The number of words in the line are 5 \n"
+"]]>"
+
