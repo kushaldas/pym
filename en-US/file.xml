@@ -71,7 +71,7 @@ Because
 ]]>
 </screen>
 		<para>
-			If you call read() again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
+			If you call <emphasis>read()</emphasis> again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
 		</para>
 <screen>
 <![CDATA[
@@ -260,6 +260,12 @@ Note that not all file objects are speakable.
 ]]>
 </screen>
 	</section>
+	<section id="pythonforyouandme-File-count">
+		<title>Count spaces, tabs and new lines in a file</title>
+                <para>
+                Let us try to write an application which will count the spaces , tabs, and new lines in any given file.
+                </para>
+        </section>
 
 </chapter>
 
