@@ -29,8 +29,6 @@ class nameoftheclass:
 <screen>
 <![CDATA[
 >>> class MyClass:
-...
-Display all 180 possibilities? (y or n)
 ...     a = 90
 ...     b = 88
 ...
@@ -192,12 +190,25 @@ class MyClass(Parentclass1, Parentclass2,...):
 ]]>
 </screen>
         </section>
-	<section id="pythonforyouandme-Classes-test">
-		<title>Section 2 Test</title>
-		<para>
-			Test of a section
-		</para>
-	</section>
+	<section id="pythonforyouandme-Classes-delete">
+		<title>Deleting an object</title>
+                <para>
+                As we already know how to create an object , now we are going to see how to delete an python object. We use <emphasis>del</emphasis> for this.
+                </para>
+<screen>
+<![CDATA[
+>>> s = "I love you"
+>>> del s
+>>> s
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 's' is not defined
+]]>
+</screen>
+                <para>
+                <emphasis>del</emphasis> actually decreases reference count by one. When the reference count of an object becomes zero the garbage collector will delete that object.
+                </para>
+        </section>
 
 </chapter>
 

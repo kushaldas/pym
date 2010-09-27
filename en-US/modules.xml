@@ -1,0 +1,173 @@
+<?xml version='1.0'?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<chapter id="pythonforyouandme-Modules">
+	<title>Modules</title>
+	<para>
+		In this chapter we are going to learn about Python modules.
+	</para>
+	<section id="pythonforyouandme-Modules-introduction">
+		<title>Introduction</title>
+		<para>
+			Still now when ever we wrote code in the python interpreter, after we came out of it, the code was lost. But in when one writes a larger program, people breaks their codes into different files and reuse then as required. In python we do this by <emphasis>modules</emphasis>. Modules are nothing files with Python definitions and statements. The module name is same as the file name without the .py extension.
+		</para>
+                <para>
+                You can find the name of the module by accessing the <emphasis>__name__</emphasis> variable. It is a global variable.
+                </para>
+                <para>
+                Now we are going to see how modules work. Create a file called greetings.py. Content of the file is given bellow.
+                </para>
+<screen>
+<![CDATA[
+#Bars module
+
+def starbar(num):
+    print '*' * num
+
+def hashbar(num):
+    print '#' * num
+
+def simplebar(num):
+    print '-' * num
+
+]]>
+</screen>
+            <para>
+            Now we are going to start the python interpreter and import our module.
+            </para>
+<screen>
+<![CDATA[
+>>> import bars
+>>>
+]]>
+</screen>
+            <para>
+            This will import the module bars. We have to use the module name to access functions inside the module.
+            </para>
+<screen>
+<![CDATA[
+>>> bars.hashbar(10)
+##########
+>>> bars.simplebar(10)
+----------
+>>> bars.starbar(10)
+**********
+]]>
+</screen>
+	</section>
+
+	<section id="pythonforyouandme-Modules-importing">
+		<title>Importing modules</title>
+		<para>
+			There are different ways to import modules. We already saw one way to do this. You can even import selected functions from modules. To do so:
+		</para>
+<screen>
+<![CDATA[
+>>> from bars import simplebar, starbar
+>>> simplebar(20)
+--------------------
+]]>
+</screen>
+            <para>
+                Or you can import all functions or variables from a module directly into the current namespace by using <emphasis>*</emphasis>
+            </para>
+<screen>
+<![CDATA[
+>>> from bars import *
+>>> hashbar(20)
+####################
+]]>
+</screen>
+	</section>
+	<section id="pythonforyouandme-Modules-default">
+	<title>Default modules</title>
+	<para>
+	Now your Python installation comes with different modules installed, you can use them as required and install new modules for any other special purposes. In the following few examples we are going to see many examples on the same.
+	</para>
+
+<screen>
+<![CDATA[
+>>> help()
+
+Welcome to Python 2.6!  This is the online help utility.
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the Internet at http://docs.python.org/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, or topics, type "modules",
+"keywords", or "topics".  Each module also comes with a one-line summary
+of what it does; to list the modules whose summaries contain a given word
+such as "spam", type "modules spam".
+
+help> modules
+
+]]>
+</screen>
+    <para>
+    The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
+    </para>
+    </section>
+    <section id="pythonforyouandme-Modules-os">
+	<title>Module os</title>
+	<para>
+	os module provides operating system dependent functionality. You can import it using the following import statement.
+	</para>
+<screen>
+<![CDATA[
+>>> import os
+
+]]>
+</screen>
+   <para>
+   <emphasis>getuid()</emphasis> function returns the current process's effective user's id.
+   </para> 
+<screen>
+<![CDATA[
+>>> os.getuid()
+500
+
+]]>
+</screen>
+    <para>
+    <emphasis>getpid()</emphasis> returns the current process's id. <emphasis>getppid()</emphasis> returns the parent process's id.
+    </para>
+<screen>
+<![CDATA[
+>>> os.getpid()
+16150
+>>> os.getppid()
+14847
+
+
+]]>
+</screen>
+    <para>
+    <emphasis>uname()</emphasis> returns different information identifying the operating system, in Linux it returns details you can get from the uname command. The returned object is a tuple, <emphasis>(sysname, nodename, release, version, machine)</emphasis>
+    </para>
+<screen>
+<![CDATA[
+>>> os.uname()
+('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')
+
+]]>
+</screen>
+    <para>
+    <emphasis>getcwd()</emphasis>returns the current working directory. <emphasis>chdir(path)</emphasis> changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to <emphasis>/tmp</emphasis> and then again checking the current directory.
+    </para>    
+<screen>
+<![CDATA[>>> os.getcwd()
+'/home/kdas'
+>>> os.chdir('/tmp')
+>>> os.getcwd()
+'/tmp'
+]]>
+</screen>
+	</section>
+    
+</chapter>
+
