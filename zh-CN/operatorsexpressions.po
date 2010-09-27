@@ -1,0 +1,550 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: python_for_you_and_me\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: \n"
+"Last-Translator: LiJiansheng <lijiangsheng1@gmail.com>\n"
+"Language-Team: lijiangsheng1@gmail.com <lijiangsheng1@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Operators and expressions"
+msgstr "运算符和表达式"
+
+#. Tag: para
+#, no-c-format
+msgid "In python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like <emphasis>2 + 3</emphasis> ."
+msgstr "在Python代码中你将用到大量的表达式。表达式由操作符和操作数组成。像<emphasis>2 + 3</emphasis>就是一个表达式。"
+
+#. Tag: title
+#, no-c-format
+msgid "Operators"
+msgstr "运算符"
+
+#. Tag: para
+#, no-c-format
+msgid "Operators are the symbols which tells the python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:"
+msgstr "运算符只是一种告诉python解释器去做一些数学或逻辑操作的符号。一些基本的数学操作符如下所示："
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; 2 + 3\n"
+"5\n"
+"&#62;&#62;&#62; 23 - 3\n"
+"20\n"
+"&#62;&#62;&#62; 22.0 / 12\n"
+"1.8333333333333333\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator"
+msgstr "想要得到浮点数的结果，你必须用浮点数作操作数来实现除法运算。求余的符号是 % "
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; 14 % 3\n"
+"2\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Example of integer arithmetic"
+msgstr "整型计算的实例"
+
+#. Tag: para
+#, no-c-format
+msgid "The code"
+msgstr "代码"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"days = int(raw_input(&#34;Enter days: &#34;))\n"
+"months = days / 30\n"
+"days = days % 30\n"
+"print &#34;Months = %d Days = %d&#34; % (months, days)\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The output"
+msgstr "输出"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"[kd@kdlappy book]$ ./integer.py\n"
+"Enter days: 265\n"
+"Months = 8 Days = 25\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way"
+msgstr "在头一行中我获得用户输入的天数，然后得到月份数和具体的天数并打印出来。你可以使用更容易的方法"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"days = int(raw_input(&#34;Enter days: &#34;))\n"
+"print &#34;Months = %d Days = %d&#34; % (divmod(days, 30))\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2."
+msgstr "divmod(num1, num2)函数返回两个值，第一个是num1和num2相除得到的值，第二个是num1和num2求余得到的值。"
+
+#. Tag: title
+#, no-c-format
+msgid "Relational Operators"
+msgstr "关系操作符"
+
+#. Tag: para
+#, no-c-format
+msgid "You can use the following operators as relational operators"
+msgstr "你可以使用下面的操作符来实现关系运算"
+
+#. Tag: segtitle
+#, no-c-format
+msgid "Operator"
+msgstr "数学运算符"
+
+#. Tag: segtitle
+#, no-c-format
+msgid "Meaning"
+msgstr "含义"
+
+#. Tag: seg
+#, no-c-format
+msgid "&#60;"
+msgstr ""
+
+#. Tag: seg
+#, no-c-format
+msgid "Is less than"
+msgstr "小于"
+
+#. Tag: seg
+#, no-c-format
+msgid "&#60;="
+msgstr ""
+
+#. Tag: seg
+#, no-c-format
+msgid "Is less than or equal to"
+msgstr "小于等于"
+
+#. Tag: seg
+#, no-c-format
+msgid "&#62;"
+msgstr ""
+
+#. Tag: seg
+#, no-c-format
+msgid "Is greater than"
+msgstr "大于"
+
+#. Tag: seg
+#, no-c-format
+msgid "&#62;="
+msgstr ""
+
+#. Tag: seg
+#, no-c-format
+msgid "Is greater than or equal to"
+msgstr "大于等于"
+
+#. Tag: seg
+#, no-c-format
+msgid "=="
+msgstr ""
+
+#. Tag: seg
+#, no-c-format
+msgid "Is equal to"
+msgstr "等于"
+
+#. Tag: seg
+#, no-c-format
+msgid "!="
+msgstr ""
+
+#. Tag: seg
+#, no-c-format
+msgid "Is not equal to"
+msgstr "不等于"
+
+#. Tag: para
+#, no-c-format
+msgid "Some examples"
+msgstr "一些实例"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; 1 &#60; 2\n"
+"True\n"
+"&#62;&#62;&#62; 3 &#62; 34\n"
+"False\n"
+"&#62;&#62;&#62; 23 == 45\n"
+"False\n"
+"&#62;&#62;&#62; 34 != 323\n"
+"True\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<emphasis>//</emphasis> operator gives the floor division result"
+msgstr "<emphasis>//</emphasis> 操作符会给出平除运算结果"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; 4.0 // 3\n"
+"1.0\n"
+"&#62;&#62;&#62; 4.0 / 3\n"
+"1.3333333333333333\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Logical Operators"
+msgstr "逻辑运算符"
+
+#. Tag: para
+#, no-c-format
+msgid "To do logical AND , OR we use <emphasis>and</emphasis> ,<emphasis> or</emphasis> keywords. <emphasis>x and y</emphasis> returns <emphasis>False</emphasis> if <emphasis>x</emphasis> is <emphasis>False</emphasis> else it returns evaluation of <emphasis>y</emphasis>. If <emphasis>x</emphasis> is <emphasis>True</emphasis>, it returns <emphasis>True</emphasis>."
+msgstr "作逻辑运算的“与”，“或”，我们用 <emphasis>and</emphasis> ,<emphasis> or</emphasis>关键字。 如果<emphasis>x</emphasis> 是<emphasis>False</emphasis> <emphasis>x and y</emphasis> 返回<emphasis>False</emphasis>否则返回<emphasis>y</emphasis>的值。如果<emphasis>x</emphasis> 是<emphasis>Ture</emphasis>,它返回真。"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; 1 and 4\n"
+"4\n"
+"&#62;&#62;&#62; 1 or 4\n"
+"1\n"
+"&#62;&#62;&#62; -1 or 4\n"
+"-1\n"
+"&#62;&#62;&#62; 0 or 4\n"
+"4\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Shorthand Operator"
+msgstr "简写运算符"
+
+#. Tag: para
+#, no-c-format
+msgid "<emphasis>x op = expression</emphasis> is the syntax for shorthand operators. It will be evaluated like <emphasis>x = x op expression</emphasis> , Few examples are"
+msgstr "<emphasis>x op = expression</emphasis>  为简写运算的语法形式。它将计算形如<emphasis>x = x op expression</emphasis> ，例如"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; a = 12\n"
+"&#62;&#62;&#62; a += 13\n"
+"&#62;&#62;&#62; a\n"
+"25\n"
+"&#62;&#62;&#62; a /= 3\n"
+"&#62;&#62;&#62; a\n"
+"8\n"
+"&#62;&#62;&#62; a += (26* 32)\n"
+"&#62;&#62;&#62; a\n"
+"840\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "shorthand.py example"
+msgstr "shorthand.py 实例"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"N = 100\n"
+"a = 2\n"
+"while a &#60; N:\n"
+"    print &#34;%d&#34; % a\n"
+"    a *= a\n"
+"\n"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"[kd@kdlappy book]$ ./shorthand.py\n"
+"2\n"
+"4\n"
+"16\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Expressions"
+msgstr "表达式"
+
+#. Tag: para
+#, no-c-format
+msgid "Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like"
+msgstr "我们一般写表达式的时候，在远算符的前后都加一个空格，这样使代码更可读。如"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"a = 234 * (45 - 56.0 / 34)\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "One example code used to show expressions"
+msgstr "一个用于演示表达式的例子"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"a = 9\n"
+"b = 12\n"
+"c = 3\n"
+"x = a -b / 3 + c * 2 -1\n"
+"y = a -b / (3 + c) * (2 -1)\n"
+"z = a - (b / (3 +c) * 2) -1\n"
+"print &#34;X = &#34;, x\n"
+"print &#34;Y = &#34;, y\n"
+"print &#34;Z = &#34;, z\n"
+"\n"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"[kd@kdlappy book]$ ./evaluationexp.py\n"
+"X =  10\n"
+"Y =  7\n"
+"Z =  4\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "At first <emphasis>x</emphasis> is being calculated. The steps are like this"
+msgstr "<emphasis>x</emphasis>作为第一个被计算。步骤如下所示"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"9 - 12 / 3 + 3 * 2 -1\n"
+"9 - 4 + 3 * 2 - 1\n"
+"9 - 4 + 6 - 1\n"
+"5 + 6 -1\n"
+"11 - 1\n"
+"10\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Now for <emphasis>y</emphasis> and <emphasis>z</emphasis> we have parentheses, so the expressions evaluated in different way. Do the calculation yourself to check them."
+msgstr "现在<emphasis>y</emphasis> 和 <emphasis>z</emphasis>均有括号，所以表达式计算会有不同的方式。请读者自行检验。"
+
+#. Tag: title
+#, no-c-format
+msgid "Type Conversions"
+msgstr "类型转换"
+
+#. Tag: para
+#, no-c-format
+msgid "We have to do the type conversions manually. Like"
+msgstr "我们可以手动的去作类型转换，如"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"float(string) -&#62; float value\n"
+"int(string) -&#62; integer value\n"
+"str(integer) or str(float) -&#62; string representation \n"
+"&#62;&#62;&#62; a = 8.126768\n"
+"&#62;&#62;&#62; str(a)\n"
+"&#39;8.126768&#39;\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "evaluateequ.py"
+msgstr "evaluateequ.py"
+
+#. Tag: para
+#, no-c-format
+msgid "This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10"
+msgstr "这个程序计算1/x+1/(x+1)+1/(x+2)+ ... +1/n  直到n.在此例中x = 1 , n =10"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"sum = 0.0\n"
+"for i in range(1, 11):\n"
+"    sum += 1.0 / i\n"
+"    print &#34;%2d %6.4f&#34; % (i , sum)\n"
+"\n"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"[kd@kdlappy book]$ ./evaluateequ.py\n"
+" 1 1.0000\n"
+" 2 1.5000\n"
+" 3 1.8333\n"
+" 4 2.0833\n"
+" 5 2.2833\n"
+" 6 2.4500\n"
+" 7 2.5929\n"
+" 8 2.7179\n"
+" 9 2.8290\n"
+"10 2.9290\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In the line <emphasis>sum += 1.0 / i</emphasis> what is actually happening is <emphasis>sum = sum + 1.0 / i</emphasis>."
+msgstr "<emphasis>sum += 1.0 / i</emphasis> 是和<emphasis>sum = sum + 1.0 / i</emphasis>表达的相同的意思。"
+
+#. Tag: title
+#, no-c-format
+msgid "quadraticequation.py"
+msgstr "quadraticequation.py"
+
+#. Tag: para
+#, no-c-format
+msgid "This is a program to evaluate the quadratic equation"
+msgstr "这是一个模拟二次方运算的程序"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"import math\n"
+"a = int(raw_input(&#34;Enter value of a: &#34;))\n"
+"b = int(raw_input(&#34;Enter value of b: &#34;))\n"
+"c = int(raw_input(&#34;Enter value of c: &#34;))\n"
+"d = b * b - 4 * a * c\n"
+"if d &#60; 0:\n"
+"    print &#34;ROOTS are imaginary&#34;\n"
+"else:\n"
+"    root1 = (-b + math.sqrt(d)) / (2.0 * a)\n"
+"    root2 = (-b - math.sqrt(d)) / (2.0 * a)\n"
+"print &#34;Root 1 = &#34;, root1\n"
+"print &#34;Root 2 = &#34;, root2\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "salesmansalary.py"
+msgstr "salesmansalary.py"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "In this example we are going to calculate the salary of a camera salesman. His basic salary is 1500, for every camera he will sell he will get 200 and the commission on the month&#39;s sale is 2 %. The input will be number of cameras sold and total price of the cameras."
+msgstr "在这个例子中我们将计算一位数码相机的销售人员的工资。他的基本工资是1500,每售出一台数码相机他可以得到200而且他的月任务是%2.输入表示的分别是售出的数码相机的台数和总的数码相机的价格。"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"basic_salary = 1500\n"
+"bonus_rate = 200\n"
+"commision_rate = 0.02\n"
+"numberofcamera = int(raw_input(&#34;Enter the number of inputs sold: &#34;))\n"
+"price = float(raw_input(&#34;Enter the total prices: &#34;))\n"
+"bonus = (bonus_rate * numberofcamera)\n"
+"commision = (commision_rate * numberofcamera * price)\n"
+"\n"
+"print &#34;Bonus        = %6.2f&#34; % bonus\n"
+"print &#34;Commision    = %6.2f&#34; % commision\n"
+"print &#34;Gross salary = %6.2f&#34; % ( basic_salary + bonus + commision)\n"
+"\n"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"[kd@kdlappy book]$ ./salesmansalary.py\n"
+"Enter the number of inputs sold: 5\n"
+"Enter the total prices: 20450\n"
+"Bonus        = 1000.00\n"
+"Commision    = 2045.00\n"
+"Gross salary = 4545.00\n"
+"\n"
+msgstr ""

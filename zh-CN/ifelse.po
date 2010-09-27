@@ -1,0 +1,140 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: python_for_you_and_me\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: \n"
+"Last-Translator: LiJiansheng <lijiangsheng1@gmail.com>\n"
+"Language-Team: lijiangsheng1@gmail.com <lijiangsheng1@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+
+#. Tag: title
+#, no-c-format
+msgid "If-else , the control flow"
+msgstr "if-else,控制流程的关键字"
+
+#. Tag: para
+#, no-c-format
+msgid "While working on real life of problems we have to make decisions. Decisions like which camera to buy or which cricket bat is better. At the time of writing a computer program we do the same. We make the decisions using if-else statements, we change the flow of control in the program by using them."
+msgstr "我们处理现实生活中的问题时会作出决定。决定买那种照相机或者怎么击打棒球较好。同样写计算机程序我们作一样的决定。我们用if-else声明来决定事情，我们用它们可以改变程序运行的流程。"
+
+#. Tag: title
+#, no-c-format
+msgid "If statement"
+msgstr "if 声明"
+
+#. Tag: para
+#, no-c-format
+msgid "The syntax looks like"
+msgstr "语法如下"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"if expression:\n"
+"    do this\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If the value of <emphasis>expression</emphasis> is true (anything other than zero), do the what is written below under indentation. Please remember to give proper indentation, all the lines indented will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not."
+msgstr "如果<emphasis>expression</emphasis>的值为真（不是零的任何数），程序将执行缩排后的内容。记住缩排，在表达式为真的情况下所有行都要被执行。一个简单的例子，接受用户输入一个并且检查它小于100还是不小于100。"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"number = int(raw_input(&#34;Enter a number: &#34;))\n"
+"if number &#60; 100:\n"
+"    print &#34;The number is less than 100&#34;\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Then we run it"
+msgstr "然后我们运行它"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"[kd@kdlappy book]$ ./number100.py\n"
+"Enter a number: 12\n"
+"The number is less than 100\n"
+"\n"
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Else statement"
+msgstr "Else声明"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "Now in the above example we want to print &#34;Greater than&#34; if the number is greater than 100. For that we have to use the <emphasis>else</emphasis> statement. This works when the <emphasis>if</emphasis>statement is not fulfilled."
+msgstr "现在我们需要在上面的例子中打印\"Greater than\"如果数字大于100的话。为此我们用到了 <emphasis>else</emphasis>声明。它将奏效于当<emphasis>if</emphasis>语句不能完全的控制的时候。"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"#!/usr/bin/env python\n"
+"number = int(raw_input(&#34;Enter a number: &#34;))\n"
+"if number &#60; 100:\n"
+"    print &#34;The number is less than 100&#34;\n"
+"else:\n"
+"    print &#34;The number is greater than 100&#34;\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The output"
+msgstr "输出"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"   \n"
+"[kd@kdlappy book]$ ./number100.py\n"
+"Enter a number: 345\n"
+"The number is greater than 100\n"
+"\n"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Another very basic example"
+msgstr "另外一个基本的实例"
+
+#. Tag: screen
+#, no-c-format
+msgid ""
+"\n"
+"\n"
+"&#62;&#62;&#62; x = int(raw_input(&#34;Please enter an integer: &#34;))\n"
+"&#62;&#62;&#62; if x &#60; 0:\n"
+"...      x = 0\n"
+"...      print &#39;Negative changed to zero&#39;\n"
+"... elif x == 0:\n"
+"...      print &#39;Zero&#39;\n"
+"... elif x == 1:\n"
+"...      print &#39;Single&#39;\n"
+"... else:\n"
+"...      print &#39;More&#39;\n"
+"\n"
+msgstr ""

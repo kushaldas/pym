@@ -1,0 +1,312 @@
+# 
+# AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
+"PO-Revision-Date: 2010-09-27T11:50:13\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: None\n"
+"MIME-Version: 1.0\n"
+"Content-Type: application/x-publican; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Tag: title
+#, no-c-format
+msgid "Class"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "What is a <emphasis>class</emphasis>? In our daily life, we come across many objects which are similar kind or in words which are basically same. For example we can think about a car. There are different brands , color, look, style, parts, but basically they all are cars. All them of are made by different companies but with similar kind of components."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "We can say all of them are different instances of the <emphasis>class</emphasis> car. They all belongs to the car class. Every instance is known as an <emphasis>object</emphasis> in computer world. A <emphasis>class</emphasis> can contain variables or methods to access those variables.In Python everything is an <emphasis>object</emphasis>. Even if you create an integer, that is an object of the <emphasis>Integer class</emphasis>. In C++ this is different."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Your first class"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Before writing your first class, you should know the syntax. We define a class in the following way.."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"class nameoftheclass:\n"
+"    statement1\n"
+"    statement2\n"
+"    statement3\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "in the statements you can write any python statement, you can define functions (which we call methods of a class)."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; class MyClass:\n"
+"...     a = 90\n"
+"...     b = 88\n"
+"...\n"
+"&#62;&#62;&#62; p = MyClass()\n"
+"&#62;&#62;&#62; p\n"
+"&#60;__main__.MyClass instance at 0xb7c8aa6c&#62;\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an <emphasis>object</emphasis> p of the <emphasis>class</emphasis> MyClass.If you do a dir on that..."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; dir(p)\n"
+"[&#39;__doc__&#39;, &#39;__module__&#39;, &#39;a&#39;, &#39;b&#39;]\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can see the variables <emphasis>a</emphasis> and <emphasis>b</emphasis> inside it."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "__init__ method"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; class Student:\n"
+"...   def __init__(self, name, branch, year):\n"
+"...     self.name = name\n"
+"...     self.branch = branch\n"
+"...     self.year = year\n"
+"...     print &#34;A student object is created&#34;\n"
+"...   def getName(self):\n"
+"...     return self.name\n"
+"...   def setName(self, name):\n"
+"...     self.name = name\n"
+"...\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "__init__ is called when ever an object of the class is constructed.That means when ever we will create a student object we will see the message &#34;Creating a new student&#34; in the prompt. You can see the first argument to the method is <emphasis>self</emphasis>. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it , but we have to get it explicitly in every method while writing the methods. Example shown below."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; std1 = Student()\n"
+"Traceback (most recent call last):\n"
+"  File &#34;&#60;stdin&#62;&#34;, line 1, in &#60;module&#62;\n"
+"TypeError: __init__() takes exactly 4 arguments (1 given)\n"
+"&#62;&#62;&#62; std1 = Student(&#39;Kushal&#39;,&#39;CSE&#39;,&#39;2005&#39;)\n"
+"A student object is created\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In this example at first we tried to create a Student object with passing any argument and python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that <emphasis>__init__ </emphasis> method was called as the constructor method."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Now we are going to call <emphasis>getName()</emphasis> and <emphasis>setName()</emphasis> methods."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; std1.getName()\n"
+"&#39;Kushal&#39;\n"
+"&#62;&#62;&#62; std1.setName()\n"
+"Traceback (most recent call last):\n"
+"  File &#34;&#60;stdin&#62;&#34;, line 1, in &#60;module&#62;\n"
+"TypeError: setName() takes exactly 2 arguments (1 given)\n"
+"&#62;&#62;&#62; std1.setName(&#39;Shreyank Gupta&#39;)\n"
+"&#62;&#62;&#62; std1.getName()\n"
+"&#39;Shreyank Gupta&#39;\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "First we called getName on the object we created, then tried to call setName without any arguments and we got an error. Next we again called setName with argument &#39;Shreyank Gupta&#39;. Now calling getName gives &#39;Shreyank Gupta&#39; as the output."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Inheritance"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In general we human beings always know about inheritance. In programming it is almost the same. When a class inherits another class it inherits all features(like variables and methods) of the parent class. This helps in reusing codes."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In the next example we first create a class called Person and create two sub-classes Student and Teacher. As both of the classes are inherited from Person class they will have all methods of Person and will have new methods and variables for their own purpose."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "student_teacher.py"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"#!/usr/bin/env python\n"
+"\n"
+"class Person:\n"
+"    def __init__(self,name):\n"
+"        self.name = name\n"
+"\n"
+"    def getDetails(self):\n"
+"        return self.name\n"
+"\n"
+"\n"
+"class Student(Person):\n"
+"    def __init__(self,name,branch,year):\n"
+"        Person.__init__(self,name)\n"
+"        self.branch = branch\n"
+"        self.year = year\n"
+"\n"
+"    def getDetails(self):\n"
+"        return (self.name, self.branch, self.year)\n"
+"\n"
+"\n"
+"class Teacher(Person):\n"
+"    def __init__(self,name,papers):\n"
+"        Person.__init__(self,name)\n"
+"        self.papers = papers\n"
+"\n"
+"    def getDetails(self):\n"
+"        return (self.name, self.papers)\n"
+"\n"
+"\n"
+"person1 = Person(&#39;Rahul&#39;)\n"
+"student1 = Student(&#39;Kushal&#39;,&#39;CSE&#39;,2005)\n"
+"teacher1 = Teacher(&#39;Prashad&#39;,[&#39;C&#39;,&#39;C++&#39;])\n"
+"\n"
+"print person1.getDetails()\n"
+"print student1.getDetails()\n"
+"print teacher1.getDetails()\n"
+"\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "The output:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"[kdas@kdas code]$ ./student_teacher.py\n"
+"Rahul\n"
+"(&#39;Kushal&#39;, &#39;CSE&#39;, 2005)\n"
+"(&#39;Prashad&#39;, [&#39;C&#39;, &#39;C++&#39;])\n"
+"\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In this example you can see how we called the __init__ method of the class Person in both Studentা and Teacher classes&#39; __init__ method. We also reimplemented <emphasis>getDetails()</emphasis> method of Person class in both Student and Teacher class. So, when we are calling <emphasis>getDetails()</emphasis> method on the teacher1 object it returns based on the object itself (which is of teacher class) and when we call <emphasis>getDetails()</emphasis> on the student1 or person1 object it returns based on <emphasis>getDetails()</emphasis> method implemented in it&#39;s own class."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Multiple Inheritance"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "One class can inherit more than one classes. It gets access to all methods and variables of the parent classes. The general syntax is:"
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"class MyClass(Parentclass1, Parentclass2,...):\n"
+"    def __init__(self):\n"
+"        Parentclass1.__init__(self)\n"
+"        Parentclass2.__init__(self)\n"
+"        ...\n"
+"        ...\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: title
+#, no-c-format
+msgid "Deleting an object"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "As we already know how to create an object , now we are going to see how to delete an python object. We use <emphasis>del</emphasis> for this."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"\n"
+"&#62;&#62;&#62; s = &#34;I love you&#34;\n"
+"&#62;&#62;&#62; del s\n"
+"&#62;&#62;&#62; s\n"
+"Traceback (most recent call last):\n"
+"  File &#34;&#60;stdin&#62;&#34;, line 1, in &#60;module&#62;\n"
+"NameError: name &#39;s&#39; is not defined\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "<emphasis>del</emphasis> actually decreases reference count by one. When the reference count of an object becomes zero the garbage collector will delete that object."
+msgstr ""
+
