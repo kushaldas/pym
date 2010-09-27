@@ -5,46 +5,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
 "PO-Revision-Date: 2009-09-19 19:43+0530\n"
 "Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Tag: title
-#: ifelse.xml:6
 #, no-c-format
 msgid "If-else , the control flow"
 msgstr "if-else കണ്ട്രോള്‍ ഫ്ളോ "
 
 #. Tag: para
-#: ifelse.xml:7
 #, no-c-format
 msgid "While working on real life of problems we have to make decisions. Decisions like which camera to buy or which cricket bat is better. At the time of writing a computer program we do the same. We make the decisions using if-else statements, we change the flow of control in the program by using them."
 msgstr "നിത്യ ജീവിത്തില്‍ നമുക്ക് പലതരത്തിലുളള തീരുമാനങ്ങള്‍ കൈകൊള്ളേണ്ടതുണ്ട്.ഏതാണ് നല്ല ക്യാമറ നല്ല ക്രിക്കറ്റ് ബാറ്റ് ഏന്നിങ്ങനെ. കമ്പ്യൂട്ടര്‍ പ്രോഗ്രാം എഴുതുമ്പോഴും നമുക്ക് ഇത്തരത്തിലുള്ള ചില കാര്യങ്ങള്‍ ആവശ്യമായി വരും. അതിനായി നമുക്ക് if-else പ്രസ്താവന ഉപയോഗിക്കാവുന്നതാണ്, ഇവ ഉപയോഗിച്ച് നമുക്ക് പ്രോഗ്രാമിന്റെ ഗതി നിയന്ത്രിക്കുവാന്‍ സാധിക്കും."
 
 #. Tag: title
-#: ifelse.xml:11
 #, no-c-format
 msgid "If statement"
 msgstr "if പ്രസ്താവന"
 
 #. Tag: para
-#: ifelse.xml:12
 #, no-c-format
 msgid "The syntax looks like"
 msgstr "if പ്രസ്താവനയുടെ വാക്യക്രമം ഇങ്ങനെയാണ്"
 
 #. Tag: screen
-#: ifelse.xml:15
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "if expression:\n"
 "    do this\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "if expression:\n"
@@ -52,21 +49,20 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: ifelse.xml:16
 #, no-c-format
 msgid "If the value of <emphasis>expression</emphasis> is true (anything other than zero), do the what is written below under indentation. Please remember to give proper indentation, all the lines indented will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not."
 msgstr "എക്സ്പ്രറഷന്‍റെ മൂല്യം സത്യമാകുകയാണെങ്കില്‍ ,കൃത്യമായ ഇന്‍ഡന്‍ഡേഷന്‍ നല്‍കാന്‍ ശ്രദ്ധിക്കുക.എക്സ്പ്രഷന്‍റെ സത്യമൂല്യം അനുസരിച്ച് ഇന്‍ഡന്‍റായി എഴുതിയിട്ടുള്ള വരികള്‍വിലയിരുത്തപ്പെടുന്നു.ഒരു ചെറിയ ഉദാഹരണം താഴെ കൊടുത്തിരിക്കുന്നു.ഇന്‍പുട്ടായി നല്‍കിയ സംഖ്യ 100 ല്‍ താഴെയാണോ അല്ലയൊ എന്നു പരിശോധിക്കുക."
 
 #. Tag: screen
-#: ifelse.xml:19
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "#!/usr/bin/env python\n"
-"number = int(raw_input(\"Enter a number: \"))\n"
-"if number < 100:\n"
-"    print \"The number is less than 100\"\n"
-"]]>"
+"number = int(raw_input(&#34;Enter a number: &#34;))\n"
+"if number &#60; 100:\n"
+"    print &#34;The number is less than 100&#34;\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "#!/usr/bin/env python\n"
@@ -76,20 +72,19 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: ifelse.xml:20
 #, no-c-format
 msgid "Then we run it"
 msgstr "ഔട്ട്പുട്ട്"
 
 #. Tag: screen
-#: ifelse.xml:23
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "[kd@kdlappy book]$ ./number100.py\n"
 "Enter a number: 12\n"
 "The number is less than 100\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "[kd@kdlappy book]$ ./number100.py\n"
@@ -98,29 +93,27 @@ msgstr ""
 "]]>"
 
 #. Tag: title
-#: ifelse.xml:27
 #, no-c-format
 msgid "Else statement"
 msgstr "Else പ്രസ്താവന"
 
 #. Tag: para
-#: ifelse.xml:28
-#, no-c-format
-msgid "Now in the above example we want to print \"Greater than\" if the number is greater than 100. For that we have to use the <emphasis>else</emphasis> statement. This works when the <emphasis>if</emphasis>statement is not fulfilled."
+#, fuzzy, no-c-format
+msgid "Now in the above example we want to print &#34;Greater than&#34; if the number is greater than 100. For that we have to use the <emphasis>else</emphasis> statement. This works when the <emphasis>if</emphasis>statement is not fulfilled."
 msgstr "ഇനി നമുക്ക് മുകളില്‍ കൊടുത്ത ഉദാഹരണത്തില്‍ ചെറിയ മാറ്റം വരുത്താം. സംഖ്യ 100 ല്‍ കൂടുതലാണെങ്കില്‍ \"\"Greater than'' എന്ന് അച്ചടിക്കത്തക്കവണ്ണം ഒരു പരിവര്‍ത്തനം.അതിനായി നമുക്ക് else പ്രസ്താവന ഉപയോഗിക്കാം.if പ്രസ്താവന സത്യമാകാത്ത സാഹചര്യത്തില്‍  else പ്രവര്‍ത്തിക്കുന്നു."
 
 #. Tag: screen
-#: ifelse.xml:31
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "#!/usr/bin/env python\n"
-"number = int(raw_input(\"Enter a number: \"))\n"
-"if number < 100:\n"
-"    print \"The number is less than 100\"\n"
+"number = int(raw_input(&#34;Enter a number: &#34;))\n"
+"if number &#60; 100:\n"
+"    print &#34;The number is less than 100&#34;\n"
 "else:\n"
-"    print \"The number is greater than 100\"\n"
-"]]>"
+"    print &#34;The number is greater than 100&#34;\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "#!/usr/bin/env python\n"
@@ -132,20 +125,19 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: ifelse.xml:32
 #, no-c-format
 msgid "The output"
 msgstr "ഔട്ട്പുട്ട്"
 
 #. Tag: screen
-#: ifelse.xml:35
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[   \n"
+"\n"
+"   \n"
 "[kd@kdlappy book]$ ./number100.py\n"
 "Enter a number: 345\n"
 "The number is greater than 100\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[   \n"
 "[kd@kdlappy book]$ ./number100.py\n"
@@ -154,27 +146,26 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: ifelse.xml:36
 #, no-c-format
 msgid "Another very basic example"
 msgstr "മറ്റൊരു ചെറിയ ഉദാഹരണം"
 
 #. Tag: screen
-#: ifelse.xml:39
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> x = int(raw_input(\"Please enter an integer: \"))\n"
-">>> if x < 0:\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; x = int(raw_input(&#34;Please enter an integer: &#34;))\n"
+"&#62;&#62;&#62; if x &#60; 0:\n"
 "...      x = 0\n"
-"...      print 'Negative changed to zero'\n"
+"...      print &#39;Negative changed to zero&#39;\n"
 "... elif x == 0:\n"
-"...      print 'Zero'\n"
+"...      print &#39;Zero&#39;\n"
 "... elif x == 1:\n"
-"...      print 'Single'\n"
+"...      print &#39;Single&#39;\n"
 "... else:\n"
-"...      print 'More'\n"
-"]]>"
+"...      print &#39;More&#39;\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> x = int(raw_input(\"Please enter an integer: \"))\n"
@@ -188,4 +179,3 @@ msgstr ""
 "... else:\n"
 "...      print 'More'\n"
 "]]>"
-

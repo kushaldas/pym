@@ -8,43 +8,41 @@ msgid ""
 msgstr ""
 "Project-Id-Version: datastructure\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
 "PO-Revision-Date: 2009-07-22 20:36+0530\n"
 "Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: Malayalam <ml-IN>\n"
+"Language: ml\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 
 #. Tag: title
-#: datastructure.xml:6
 #, no-c-format
 msgid "Data Structures"
 msgstr "ഡാറ്റാ ഘടന "
 
 #. Tag: para
-#: datastructure.xml:7
 #, no-c-format
 msgid "Python is having a few built-in data structure. If you are still wondering what is a data structure, then it is nothing a but a way to store data and the having particular methods to retrieve or manipulate it. We already saw lists before, now we will go in depth."
 msgstr "പൈത്തണില്‍ സഹജമായ കുറച്ച് ഡാറ്റ ഘടനകള്‍ ഉണ്ട്. ഡാറ്റാ ഘടന എന്താണെന്നോ? അത് മറ്റൊന്നുമല്ല, വിവരത്തെ ശേഖരിക്കുന്നതിനും, തിരിച്ചെടുക്കുന്നതിനും, പരിവര്‍ത്തനം ചെയ്യുന്നതിനും ഉള്ള ശൈലികള്‍ അഥവാ മെതേഡ് അണ്. നാം മുന്‍പുതന്നെ ലിസ്റ്റ് എന്താണെന്ന് പരിചയപ്പെട്ടു! നമുക്ക് ലിസ്റ്റിനെ കുറച്ച് കൂടി അടുത്ത് പരിചയപ്പെടാം."
 
 #. Tag: title
-#: datastructure.xml:12
 #, no-c-format
 msgid "Lists"
 msgstr "ലിസ്റ്റുകള്‍"
 
 #. Tag: screen
-#: datastructure.xml:13
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = [23, 45, 1, -3434, 43624356, 234]\n"
-">>> a.append(45)\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = [23, 45, 1, -3434, 43624356, 234]\n"
+"&#62;&#62;&#62; a.append(45)\n"
+"&#62;&#62;&#62; a\n"
 "[23, 45, 1, -3434, 43624356, 234, 45]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = [23, 45, 1, -3434, 43624356, 234]\n"
@@ -54,23 +52,22 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:14
 #, no-c-format
 msgid "At first we created a list <emphasis>a</emphasis>. Then to add <emphasis>45</emphasis> at the end of the list we call <emphasis>a.append(45)</emphasis> method. You can see that <emphasis>45</emphasis> added at the end of the list. Sometimes it may require to insert data at any place within the list, for that we have <emphasis>insert()</emphasis> method."
 msgstr "ആദ്യം നാം <emphasis>a</emphasis> എന്നൊരു ലിസ്റ്റ് ഉണ്ടാക്കി. അതിലേക്ക് <emphasis>45</emphasis> കൂട്ടിച്ചേര്‍ക്കാന്‍ <emphasis>a.append(45)</emphasis> എന്ന മെതേഡ് ഉപയോഗിച്ചു. ഇപ്പോള്‍ ലിസ്റ്റിന്റെ അവസാനം <emphasis>45</emphasis> കൂട്ടിച്ചേര്‍ക്കപ്പെട്ടതായി നിങ്ങള്‍ക്ക് കാണാം. ചിലപ്പോള്‍ നമുക്ക് ലിസ്റ്റിന്റെ ഏതെങ്കിലും ഒരുഭാഗത്ത് പൂതിയ ഡാറ്റ കൂട്ടിച്ചേര്‍ക്കേണ്ടതായി വരാം, അതിനായി നമുക്ക് <emphasis>insert()</emphasis>എന്ന മെതേഡ് ഉപയോഗിക്കാവുന്നതാണ്."
 
 #. Tag: screen
-#: datastructure.xml:17
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a.insert(0, 1) # 1 added at the 0th position of the list\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a.insert(0, 1) # 1 added at the 0th position of the list\n"
+"&#62;&#62;&#62; a\n"
 "[1, 23, 45, 1, -3434, 43624356, 234, 45]\n"
-">>> a.insert(0, 111)\n"
-">>> a\n"
+"&#62;&#62;&#62; a.insert(0, 111)\n"
+"&#62;&#62;&#62; a\n"
 "[111, 1, 23, 45, 1, -3434, 43624356, 234, 45]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a.insert(0, 1) # 1 ലിസ്റ്റിന്റെ 0 സ്ഥാനത്ത് കൂട്ടിച്ചേര്‍ത്തു\n"
@@ -82,40 +79,34 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:18
 #, no-c-format
 msgid "<emphasis>count(s)</emphasis> will return you number of times <emphasis>s</emphasis> is in the list. Here we are going to check how many times <emphasis>45</emphasis> is there in the list."
 msgstr "<emphasis>count(s)</emphasis> <emphasis>s</emphasis> എത്ര പ്രാവശ്യം ലിസ്റ്റില്‍ ആവര്‍ത്തിച്ചു എന്ന് പറഞ്ഞുതരുന്നു. ഇനി <emphasis>45</emphasis> എത്ര പ്രാവശ്യം ലിസ്റ്റില്‍ ആവര്‍ത്തിച്ചിരിക്കുന്നു എന്ന് നോക്കാം."
 
 #. Tag: screen
-#: datastructure.xml:21
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a.count(45)\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a.count(45)\n"
 "2\n"
-"]]>"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> a.count(45)\n"
-"2\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:22
 #, no-c-format
 msgid "If you want to any particular value from the list you have to use <emphasis>remove()</emphasis> method."
 msgstr "ഇനി താങ്കള്‍ക്ക് ലിസ്റ്റില്‍ നിന്നും ഏതെങ്കിലും മൂല്യം നീക്കം ചെയ്യണമെങ്കില്‍ <emphasis>remove()</emphasis> എന്ന മെതേഡ് ഉപയോഗിക്കാം."
 
 #. Tag: screen
-#: datastructure.xml:25
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a.remove(234)\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a.remove(234)\n"
+"&#62;&#62;&#62; a\n"
 "[111, 1, 23, 45, 1, -3434, 43624356, 45]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a.remove(234)\n"
@@ -124,20 +115,19 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:26
 #, no-c-format
 msgid "Now to reverse the whole list"
 msgstr "ഇനി ലിസ്റ്റിന്റെ ക്രമം തിരിച്ചാക്കുന്നതിന് reverse() എന്ന മെതേഡ് ഉപയോഗിക്കാം."
 
 #. Tag: screen
-#: datastructure.xml:29
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a.reverse()\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a.reverse()\n"
+"&#62;&#62;&#62; a\n"
 "[45, 43624356, -3434, 1, 45, 23, 1, 111]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a.reverse()\n"
@@ -146,28 +136,27 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:30
 #, no-c-format
 msgid "We can store anything in the list, so first we are going to add another list <emphasis>b </emphasis> in <emphasis>a </emphasis>, then we will learn how to add the values of <emphasis>b </emphasis> into <emphasis>a </emphasis>."
 msgstr "ഒരു ലിസ്റ്റിനുള്ളില്‍ നമുക്ക് പലതരത്തിലുള്ള വിവരങ്ങള്‍(ഡാറ്റ) ഉള്‍ക്കൊള്ളിക്കാം. നമുക്ക് <emphasis>a </emphasis>യിലേക്ക് <emphasis>b </emphasis> എന്ന ലിസ്റ്റ്  (അതിലെ എല്ലാമൂല്യങ്ങളെയും) കൂട്ടിച്ചേര്‍ക്കുന്നത് എങ്ങിനെയെന്ന് നോക്കാം. "
 
 #. Tag: screen
-#: datastructure.xml:33
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> b = [45, 56, 90]\n"
-">>> a.append(b)\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; b = [45, 56, 90]\n"
+"&#62;&#62;&#62; a.append(b)\n"
+"&#62;&#62;&#62; a\n"
 "[45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90]]\n"
-">>> a[-1]\n"
+"&#62;&#62;&#62; a[-1]\n"
 "[45, 56, 90]\n"
-">>> a.extend(b) #To add the values of b not the b itself\n"
-">>> a\n"
+"&#62;&#62;&#62; a.extend(b) #To add the values of b not the b itself\n"
+"&#62;&#62;&#62; a\n"
 "[45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90], 45, 56, 90]\n"
-">>> a[-1]\n"
+"&#62;&#62;&#62; a[-1]\n"
 "90\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> b = [45, 56, 90]\n"
@@ -184,20 +173,19 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:34
 #, no-c-format
 msgid "Above you can see how we used <emphasis>a.extend()</emphasis> method to extend the list. To sort any list we have <emphasis>sort()</emphasis> method."
 msgstr "മുകളില്‍ക്കൊടുത്തിരിക്കുന്ന ഉദാഹരണത്തിലൂടെ ലിസ്റ്റിനെ വലുതാക്കുന്നതിന് <emphasis>a.extend()</emphasis> എങ്ങിനെ ഉപയോഗിച്ചു എന്ന് നിങ്ങള്‍ക്ക് കാണാവുന്നതാണ്. ഒരു ലിസ്റ്റിനെ ക്രമത്തിലാക്കുന്നതിന്  അഥവാ ചിട്ടപ്പെടുത്തുന്നതിന് <emphasis>sort()</emphasis>  എന്ന മെതേഡ് ഉപയോഗിക്കാം."
 
 #. Tag: screen
-#: datastructure.xml:37
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a.sort()\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a.sort()\n"
+"&#62;&#62;&#62; a\n"
 "[-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356, [45, 56, 90]]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a.sort()\n"
@@ -206,20 +194,19 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:38
 #, no-c-format
 msgid "You can also delete element at any particular position of the list using the del keyword."
 msgstr "ഒരു ലിസ്റ്റിന്റെ പ്രത്യേകസ്ഥാനത്തിരിക്കുന്ന ഒരു മൂല്യത്തെ(എലമന്റ്) നീക്കം ചെയ്യുന്നതിന് del എന്ന കീ വേഡ് ഉപയോഗിക്കുന്നു."
 
 #. Tag: screen
-#: datastructure.xml:41
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> del a[-1]\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; del a[-1]\n"
+"&#62;&#62;&#62; a\n"
 "[-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> del a[-1]\n"
@@ -228,85 +215,64 @@ msgstr ""
 "]]>"
 
 #. Tag: title
-#: datastructure.xml:46
 #, no-c-format
 msgid "Using lists as stack and queue"
 msgstr "ലിസ്റ്റ് സ്റ്റാക്ക് ക്യൂ എന്നിവയുടെ പ്രയോഗം"
 
 #. Tag: para
-#: datastructure.xml:47
 #, no-c-format
 msgid "Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you entered the last marble. To achieve the same in code"
 msgstr "സ്റ്റാക്കിനെ LIFO ഘടന (അവസാനത്തേത് ആകത്ത് അദ്യത്തേത് പുറത്ത്)എന്ന് അറിയപ്പെടുന്നു. അതായത് ഡാറ്റ സ്റ്റാക്കിന്റെ അവസാനം പ്രവേശിക്കുകയും ആദ്യം അവസാനത്തെ ഡാറ്റ പുറത്തുവരികയും ചെയ്യുന്നു. സ്റ്റാക്ക് ഒരു വശം അടച്ച പൈപ്പില്‍ നിറച്ച ഗോട്ടികള്‍ പോലെയാണ്. അതില്‍ നിങ്ങള്‍ക്ക് ഗോട്ടികള്‍ എടുക്കണമെങ്കില്‍ അവസാനം ഇട്ട ഗോട്ടി ആദ്യം എടുക്കേണ്ടി വരും! ഇതേ കാര്യം പ്രോഗ്രാമിംഗ് ഭാഷയില്‍ കിട്ടുന്നതിന്"
 
 #. Tag: screen
-#: datastructure.xml:50
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a\n"
 "[1, 2, 3, 4, 5, 6]\n"
-">>> a.pop()\n"
+"&#62;&#62;&#62; a.pop()\n"
 "6\n"
-">>> a.pop()\n"
+"&#62;&#62;&#62; a.pop()\n"
 "5\n"
-">>> a.pop()\n"
+"&#62;&#62;&#62; a.pop()\n"
 "4\n"
-">>> a.pop()\n"
+"&#62;&#62;&#62; a.pop()\n"
 "3\n"
-">>> a\n"
+"&#62;&#62;&#62; a\n"
 "[1, 2]\n"
-">>> a.append(34)\n"
-">>> a\n"
+"&#62;&#62;&#62; a.append(34)\n"
+"&#62;&#62;&#62; a\n"
 "[1, 2, 34)\n"
-"]]>"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> a\n"
-"[1, 2, 3, 4, 5, 6]\n"
-">>> a.pop()\n"
-"6\n"
-">>> a.pop()\n"
-"5\n"
-">>> a.pop()\n"
-"4\n"
-">>> a.pop()\n"
-"3\n"
-">>> a\n"
-"[1, 2]\n"
-">>> a.append(34)\n"
-">>> a\n"
-"[1, 2, 34)\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:51
 #, no-c-format
 msgid "We learned a new method above <emphasis>pop()</emphasis>. <emphasis>pop(i)</emphasis> will take out the ith data from the list."
 msgstr "മുകളില്‍ക്കണ്ട ഉദാഹരണത്തില്‍ നാം <emphasis>pop()</emphasis> എന്ന ഒരു പുതിയ മെതേഡ് പരിചയപ്പെട്ടു. <emphasis>pop(i)</emphasis> i എന്ന സ്ഥാനത്തിരിക്കുന്ന മൂല്യത്തെ എടുത്ത് മാറ്റുന്നു."
 
 #. Tag: para
-#: datastructure.xml:54
 #, no-c-format
 msgid "In our daily life we have to encounter queues many times, like in ticket counters or in library or in the billing section of any supermarket. Queue is the data structure where you can append more data at the end and take out data from the beginning. That is why it is known as FIFO (First In First Out)."
 msgstr "ദൈനംദിന ജീവിതത്തില്‍ നാം പലയിടത്തും ക്യൂവില്‍ നില്‍ക്കേണ്ടി വരാറുണ്ട്, ടിക്കറ്റ് കൌണ്ടറില്‍, ലൈബ്രറിയില്‍, ബില്ലടയ്ക്കുവാന്‍, സൂപ്പര്‍മാര്‍ക്കറ്റില്‍ അങ്ങിനെ പലയിടത്തും.എന്നാല്‍ പൈത്തണ്‍ പ്രോഗ്രാമിംഗ് ഭാഷയില്‍ എന്താണ് ക്യു എന്ന് നോക്കാം. അവസാന ഭാഗത്ത് ഡാറ്റ കൂട്ടിച്ചേര്‍ക്കുവാനും തുടക്കം മുതലുള്ള ഡാറ്റ എടുത്ത് പ്രക്രിയയ്ക്ക് വിധേയമാക്കാനും കഴിയുന്ന ഡാറ്റാ ഘടനയാണ് ക്യൂ.അതിനാലാണ്  ഇതിനെ FIFO (First In First Out), ആദ്യത്തേത് അകത്ത് ആദ്യത്തേത് പുറത്ത് എന്ന് അറിയപ്പെടുന്നത്.."
 
 #. Tag: screen
-#: datastructure.xml:57
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = [1, 2, 3, 4, 5]\n"
-">>> a.append(1)\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = [1, 2, 3, 4, 5]\n"
+"&#62;&#62;&#62; a.append(1)\n"
+"&#62;&#62;&#62; a\n"
 "[1, 2, 3, 4, 5, 1]\n"
-">>> a.pop(0)\n"
+"&#62;&#62;&#62; a.pop(0)\n"
 "1\n"
-">>> a.pop(0)\n"
+"&#62;&#62;&#62; a.pop(0)\n"
 "2\n"
-">>> a\n"
+"&#62;&#62;&#62; a\n"
 "[3, 4, 5, 1]\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = [1, 2, 3, 4, 5]\n"
@@ -322,41 +288,38 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:58
 #, no-c-format
 msgid "To take out the first element of the list we are using <emphasis>a.pop(0)</emphasis>."
 msgstr "ആദ്യത്തെ എലമെന്റിനെ എടുക്കുന്നതിനായി നാം <emphasis>a.pop(0)</emphasis>. ഉപയോഗിക്കുന്നു."
 
 #. Tag: title
-#: datastructure.xml:64
 #, no-c-format
 msgid "List Comprehensions"
 msgstr "ലിസ്റ്റ് കോമ്പ്രിഹെന്‍ഷന്‍"
 
 #. Tag: para
-#: datastructure.xml:65
 #, no-c-format
 msgid "List comprehensions provide a concise way to create lists. Each list comprehension consists of an expression followed by a for clause, then zero or more for or if clauses. The result will be a list resulting from evaluating the expression in the context of the for and if clauses which follow it."
 msgstr "ലിസ്റ്റ് കോമ്പ്രിഹെന്‍ഷന്‍ ലിസ്റ്റ് നിര്‍മ്മിക്കുന്നതിനുള്ള സമഗ്രമായ ശൈലികളാണ്. ഓരോ ലിസ്റ്റ് കോമ്പ്രിഹെന്‍ഷനും for ക്ലോസിനെ പിന്‍തുര്‍ന്നുവരുന്ന എക്സ്പ്രഷനുകളും, അതിനെ പിന്‍തുടരുന്ന ഒന്നോ അതിലധികമോ if ക്ലോസുകളും ചേരുന്നതാണ്. for if ക്ലോസുകളെ വിലയിരുത്തിയതിന് ശേഷം ഒരു ലിസ്റ്റ് ഫലമായി(റിസള്‍ട്ട്) നല്‍കുന്നു."
 
 #. Tag: para
-#: datastructure.xml:68
 #, no-c-format
 msgid "For example if we want to make a list out of the square values of another list, then"
 msgstr "ഉദാഹരണമായി മറെറാരു ലിസ്ററിന്‍റെ വര്‍ഗമുലത്തില്‍ നിന്നും നമുക്കൊരു ലിസ്ററുണ്ടാക്കണമെങ്കില്‍ ,"
 
 #. Tag: screen
-#: datastructure.xml:71
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = [1, 2, 3]\n"
-">>> [x ** 2 for x in a]\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = [1, 2, 3]\n"
+"&#62;&#62;&#62; [x ** 2 for x in a]\n"
 "[1, 4, 9]\n"
-">>> z = [x + 1 for x in [x ** 2 for x in a]]\n"
-">>> z\n"
+"&#62;&#62;&#62; z = [x + 1 for x in [x ** 2 for x in a]]\n"
+"&#62;&#62;&#62; z\n"
 "[2, 5, 10]\n"
-"]]>"
+"\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = [1, 2, 3]\n"
@@ -368,38 +331,35 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:72
 #, no-c-format
 msgid "Above in the second case we used two list comprehensions in a same line."
 msgstr "രണ്ടാമത്തെ കേസിനു മുകളിലായി നമ്മള്‍ രണ്ട് ലിസ്ററ് കോംപ്രിഹെന്‍ഷനുകളെ ഒരേ ലൈനില്‍ ഉപയോഗിച്ചിരിക്കുന്നു."
 
 #. Tag: title
-#: datastructure.xml:78
 #, no-c-format
 msgid "Tuples"
 msgstr "ടുപ്പിള്‍സ്"
 
 #. Tag: para
-#: datastructure.xml:79
 #, no-c-format
 msgid "Tuples are data separated by comma."
 msgstr "കോമ ഉപയോഗിച്ച് വേര്‍തിരിക്കപ്പെട്ട വിവരങ്ങളെയാണ് ടുപ്പിള്‍സ് എന്നുപറയുന്നത്. "
 
 #. Tag: screen
-#: datastructure.xml:82
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'\n"
-">>> a\n"
-"('Fedora', 'Debian', 'Kubuntu', 'Pardus')\n"
-">>> a[1]\n"
-"'Debian'\n"
-">>> for x in a:\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = &#39;Fedora&#39;, &#39;Debian&#39;, &#39;Kubuntu&#39;, &#39;Pardus&#39;\n"
+"&#62;&#62;&#62; a\n"
+"(&#39;Fedora&#39;, &#39;Debian&#39;, &#39;Kubuntu&#39;, &#39;Pardus&#39;)\n"
+"&#62;&#62;&#62; a[1]\n"
+"&#39;Debian&#39;\n"
+"&#62;&#62;&#62; for x in a:\n"
 "...     print x,\n"
 "...\n"
 "Fedora Debian Kubuntu Pardus\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'\n"
@@ -414,52 +374,41 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:83
 #, no-c-format
 msgid "You can also unpack values of any tuple in to variables, like"
 msgstr "താഴെ കൊടുത്തിരിക്കുന്നതുപോലെ ഏതൊരു ടുപ്പിളിലെ മൂല്യങ്ങളെയും നിങ്ങള്‍ക്ക് വാര്യബിളുകളാക്കി മാററാവുന്നതാണ്. "
 
 #. Tag: screen
-#: datastructure.xml:86
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> divmod(15,2)\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; divmod(15,2)\n"
 "(7, 1)\n"
-">>> x, y = divmod(15,2)\n"
-">>> x\n"
+"&#62;&#62;&#62; x, y = divmod(15,2)\n"
+"&#62;&#62;&#62; x\n"
 "7\n"
-">>> y\n"
+"&#62;&#62;&#62; y\n"
 "1\n"
-"]]>"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> divmod(15,2)\n"
-"(7, 1)\n"
-">>> x, y = divmod(15,2)\n"
-">>> x\n"
-"7\n"
-">>> y\n"
-"1\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:87
 #, no-c-format
 msgid "Tuples are immutable, that means you can not del/add/edit any value inside the tuple. Here is another example"
 msgstr "ടുപ്പിളുകള്‍ മാറ്റം വരുത്താന്‍ കഴിയാത്തവയാണ് ,വിശദമായി പറഞ്ഞാല്‍ ടുപ്പിളുകള്‍ക്കുളളിലെ ഒരു മൂല്യത്തെയും ഇല്ലാതാക്കുവാനോ/കൂട്ടിച്ചേര്‍ക്കുവാനോ/തിരുത്തുവാനോ കഴിയില്ല.മറെറാരുദാഹരണം കൂടി കാണുക"
 
 #. Tag: screen
-#: datastructure.xml:90
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = (1, 2, 3, 4)\n"
-">>> del a[0]\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = (1, 2, 3, 4)\n"
+"&#62;&#62;&#62; del a[0]\n"
 "Traceback (most recent call last):\n"
-"  File \"<stdin>\", line 1, in <module>\n"
-"TypeError: 'tuple' object doesn't support item deletion\n"
-"]]>"
+"  File &#34;&#60;stdin&#62;&#34;, line 1, in &#60;module&#62;\n"
+"TypeError: &#39;tuple&#39; object doesn&#39;t support item deletion\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = (1, 2, 3, 4)\n"
@@ -470,61 +419,46 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:91
 #, no-c-format
 msgid "Above you can see python is giving error when we are trying to delete a value in the tuple."
 msgstr "ടുപ്പിളിനുളളിലെ ഒരു മൂല്യത്തെ ഇല്ലാതാക്കുവാന്‍ ശ്രമിക്കുന്പോള്‍ പൈത്തണ്‍ ഒരു എറര്‍ സന്ദേശം നല്കുന്നത് മുകളില്‍ കാണാം"
 
 #. Tag: para
-#: datastructure.xml:94
 #, no-c-format
 msgid "To create a tuple which contains only one value you have to type a trailing comma."
 msgstr "ഒററ മൂല്യമുളള ഒരു ടുപ്പിള്‍ ഉണ്ടാക്കുന്പോള്‍ പിന്തുടര്‍ന്നു വരുന്ന ഒരു കോമ കൂടി ടൈപ്പ് ചെയ്യുക."
 
 #. Tag: screen
-#: datastructure.xml:97
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = (123)\n"
-">>> a\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = (123)\n"
+"&#62;&#62;&#62; a\n"
 "123\n"
-">>> type(a)\n"
-"<type 'int'>\n"
-">>> a = (123, ) #Look at the trailing comma\n"
-">>> a\n"
+"&#62;&#62;&#62; type(a)\n"
+"&#60;type &#39;int&#39;&#62;\n"
+"&#62;&#62;&#62; a = (123, ) #Look at the trailing comma\n"
+"&#62;&#62;&#62; a\n"
 "(123,)\n"
-">>> type(a)\n"
-"<type 'tuple'>\n"
-"]]>"
+"&#62;&#62;&#62; type(a)\n"
+"&#60;type &#39;tuple&#39;&#62;\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> a = (123)\n"
-">>> a\n"
-"123\n"
-">>> type(a)\n"
-"<type 'int'>\n"
-">>> a = (123, ) #Look at the trailing comma\n"
-">>> a\n"
-"(123,)\n"
-">>> type(a)\n"
-"<type 'tuple'>\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:98
 #, no-c-format
 msgid "Using the buitin function <emphasis>type()</emphasis> you can know the data type of any variable. Remember the <emphasis>len()</emphasis> function we used to find the length of any sequence ?"
 msgstr "ഏത് വാര്യബിളിന്‍റയും ഡാററാടൈപ്പ് അറിയുന്നതിനായി ബില്‍ററിന്‍ ഫങ്ഷനായ <emphasis>type()</emphasis> ഉപയോഗിക്കുക. <emphasis>len()</emphasis> ഫങ്ഷന്‍ നമ്മളുപയോഗിക്കുന്നത് ഏത് സീക്വന്‍സിന്‍റയും വലുപ്പം കാണുന്നതിനാണെന്നത് ഓര്‍മ്മിക്കുക?"
 
 #. Tag: screen
-#: datastructure.xml:101
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> type(len)\n"
-"<type 'bulletin_function_or_method'>\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; type(len)\n"
+"&#60;type &#39;bulletin_function_or_method&#39;&#62;\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> type(len)\n"
@@ -532,57 +466,49 @@ msgstr ""
 "]]>"
 
 #. Tag: title
-#: datastructure.xml:105
 #, no-c-format
 msgid "Sets"
 msgstr "സെററുകള്‍"
 
 #. Tag: para
-#: datastructure.xml:106
 #, no-c-format
 msgid "Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets."
 msgstr "പകര്‍പ്പുകളില്ലാത്ത മറെറാരു തരം ഡാററാസ്ട്രക്ചറുകളെയാണ് സെററുകള്‍ എന്ന് പറയുന്നത്. ഗ​​ണിതശാസ്ത്രപരമായ സെററ്(ഗണം) ഓപ്പറേഷനുകളും സെററില്‍ നടത്താവുന്നതാണ്."
 
 #. Tag: screen
-#: datastructure.xml:109
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = set('abcthabcjwethddda')\n"
-">>> a\n"
-"set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = set(&#39;abcthabcjwethddda&#39;)\n"
+"&#62;&#62;&#62; a\n"
+"set([&#39;a&#39;, &#39;c&#39;, &#39;b&#39;, &#39;e&#39;, &#39;d&#39;, &#39;h&#39;, &#39;j&#39;, &#39;t&#39;, &#39;w&#39;])\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> a = set('abcthabcjwethddda')\n"
-">>> a\n"
-"set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:110
 #, no-c-format
 msgid "And some examples of the set operations"
 msgstr "സെററ് ഓപ്പറേഷനുകളുടെ കുറച്ചുദാഹരണങ്ങള്‍കൂടി കാണുക"
 
 #. Tag: screen
-#: datastructure.xml:113
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = set('abracadabra')\n"
-">>> b = set('alacazam')\n"
-">>> a                                  # unique letters in a\n"
-"set(['a', 'r', 'b', 'c', 'd'])\n"
-">>> a - b                              # letters in a but not in b\n"
-"set(['r', 'd', 'b'])\n"
-">>> a | b                              # letters in either a or b\n"
-"set(['a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'])\n"
-">>> a & b                              # letters in both a and b\n"
-"set(['a', 'c'])\n"
-">>> a ^ b                              # letters in a or b but not both\n"
-"set(['r', 'd', 'b', 'm', 'z', 'l'])\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = set(&#39;abracadabra&#39;)\n"
+"&#62;&#62;&#62; b = set(&#39;alacazam&#39;)\n"
+"&#62;&#62;&#62; a                                  # unique letters in a\n"
+"set([&#39;a&#39;, &#39;r&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;])\n"
+"&#62;&#62;&#62; a - b                              # letters in a but not in b\n"
+"set([&#39;r&#39;, &#39;d&#39;, &#39;b&#39;])\n"
+"&#62;&#62;&#62; a | b                              # letters in either a or b\n"
+"set([&#39;a&#39;, &#39;c&#39;, &#39;r&#39;, &#39;d&#39;, &#39;b&#39;, &#39;m&#39;, &#39;z&#39;, &#39;l&#39;])\n"
+"&#62;&#62;&#62; a &amp; b                              # letters in both a and b\n"
+"set([&#39;a&#39;, &#39;c&#39;])\n"
+"&#62;&#62;&#62; a ^ b                              # letters in a or b but not both\n"
+"set([&#39;r&#39;, &#39;d&#39;, &#39;b&#39;, &#39;m&#39;, &#39;z&#39;, &#39;l&#39;])\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = set('abracadabra')\n"
@@ -600,178 +526,135 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:114
 #, no-c-format
 msgid "To add or pop values from a set"
 msgstr "ഒരു സെററില്‍  മൂല്യങ്ങളെ കൂട്ടിച്ചേര്‍ക്കുകയോ എടുത്തുമാററുകയോ ചെയ്യുന്നത്"
 
 #. Tag: screen
-#: datastructure.xml:117
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a\n"
-"set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])\n"
-">>> a.add('p')\n"
-">>> a\n"
-"set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; a\n"
+"set([&#39;a&#39;, &#39;c&#39;, &#39;b&#39;, &#39;e&#39;, &#39;d&#39;, &#39;h&#39;, &#39;j&#39;, &#39;q&#39;, &#39;t&#39;, &#39;w&#39;])\n"
+"&#62;&#62;&#62; a.add(&#39;p&#39;)\n"
+"&#62;&#62;&#62; a\n"
+"set([&#39;a&#39;, &#39;c&#39;, &#39;b&#39;, &#39;e&#39;, &#39;d&#39;, &#39;h&#39;, &#39;j&#39;, &#39;q&#39;, &#39;p&#39;, &#39;t&#39;, &#39;w&#39;])\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> a\n"
-"set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])\n"
-">>> a.add('p')\n"
-">>> a\n"
-"set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])\n"
-"]]>"
 
 #. Tag: title
-#: datastructure.xml:121
 #, no-c-format
 msgid "Dictionaries"
 msgstr "ഡിക്ഷണറികള്‍"
 
 #. Tag: para
-#: datastructure.xml:122
 #, no-c-format
 msgid "Dictionaries are unordered set of <emphasis>key: value</emphasis> pairs where keys are unique. We declare dictionaries using {} braces. We use dictionaries to store data for any particular key and then retrieve them."
 msgstr "<emphasis>key: value</emphasis> ദ്വയങ്ങളുടെ ക്രമമല്ലാത്ത കൂട്ടത്തെയാണ് ഡിക്ഷ്ണറികള്‍ എന്ന് പറയുന്നത് ,ഇതില്‍ key കള്‍ സമാനതകളില്ലാത്തവയായിരിക്കും.{} ബ്രാക്കററുകള്‍ക്കുളളിലാണ് നമ്മള്‍ ഡിക്ഷ്ണറികളെ നിര്‍മ്മിച്ചെടുക്കുന്നത്.ഏതെങ്കിലും ഒരു key യില്‍ വിവരങ്ങള്‍ സൂക്ഷിക്കുവാനും അതിനെ സംബന്ധിച്ച വിവരങ്ങള്‍ എടുക്കുന്നതിനുമാണ് നമ്മള്‍ ഡിക്ഷ്ണറികള്‍ ഉപയോഗിക്കുന്നത്"
 
 #. Tag: screen
-#: datastructure.xml:125
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}\n"
-">>> data\n"
-"{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian'}\n"
-">>> data['kart_']\n"
-"'Debian'\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; data = {&#39;kushal&#39;:&#39;Fedora&#39;, &#39;kart_&#39;:&#39;Debian&#39;, &#39;Jace&#39;:&#39;Mac&#39;}\n"
+"&#62;&#62;&#62; data\n"
+"{&#39;kushal&#39;: &#39;Fedora&#39;, &#39;Jace&#39;: &#39;Mac&#39;, &#39;kart_&#39;: &#39;Debian&#39;}\n"
+"&#62;&#62;&#62; data[&#39;kart_&#39;]\n"
+"&#39;Debian&#39;\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}\n"
-">>> data\n"
-"{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian'}\n"
-">>> data['kart_']\n"
-"'Debian'\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:126
 #, no-c-format
 msgid "We can add more data to it by simply"
 msgstr "നമുക്ക് കൂടുതല്‍ വിവരങ്ങള്‍ വളരെ ലളിതമായി ഇതില്‍ കൂട്ടിച്ചേര്‍ക്കാന്‍ കഴിയും."
 
 #. Tag: screen
-#: datastructure.xml:129
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> data['parthan'] = 'Ubuntu'\n"
-">>> data\n"
-"{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; data[&#39;parthan&#39;] = &#39;Ubuntu&#39;\n"
+"&#62;&#62;&#62; data\n"
+"{&#39;kushal&#39;: &#39;Fedora&#39;, &#39;Jace&#39;: &#39;Mac&#39;, &#39;kart_&#39;: &#39;Debian&#39;, &#39;parthan&#39;: &#39;Ubuntu&#39;}\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> data['parthan'] = 'Ubuntu'\n"
-">>> data\n"
-"{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:130
 #, no-c-format
 msgid "To delete any particular <emphasis>key:value</emphasis> pair"
 msgstr "ഏതെങ്കിലും പ്രത്യേക  <emphasis>key:value</emphasis> ദ്വയങ്ങളെ ഇല്ലാതാക്കുവാന്‍"
 
 #. Tag: screen
-#: datastructure.xml:133
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> del data['kushal']\n"
-">>> data\n"
-"{'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; del data[&#39;kushal&#39;]\n"
+"&#62;&#62;&#62; data\n"
+"{&#39;Jace&#39;: &#39;Mac&#39;, &#39;kart_&#39;: &#39;Debian&#39;, &#39;parthan&#39;: &#39;Ubuntu&#39;\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> del data['kushal']\n"
-">>> data\n"
-"{'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:134
 #, no-c-format
 msgid "To check if any <emphasis>key</emphasis> is there in the dictionary or not you can use <emphasis>has_key()</emphasis> or in keyword."
 msgstr "ഏതെങ്കിലും <emphasis>key</emphasis> ഡിക്ഷ്ണറിയ്ക്കകത്ത് ഉണ്ടോ ഇല്ലയോ എന്ന് പരിശോധിക്കുന്നതിനായി <emphasis>has_key()</emphasis> എന്ന ഫങ്ഷനോ അല്ലെങ്കില്‍ കീവേഡോ ഉപയോഗിക്കാവുന്നതാണ്."
 
 #. Tag: screen
-#: datastructure.xml:137
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> data.has_key('Soumya')\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; data.has_key(&#39;Soumya&#39;)\n"
 "False\n"
-">>> 'Soumya' in data\n"
+"&#62;&#62;&#62; &#39;Soumya&#39; in data\n"
 "False\n"
-"]]>"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> data.has_key('Soumya')\n"
-"False\n"
-">>> 'Soumya' in data\n"
-"False\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:138
 #, no-c-format
 msgid "You must remember that no mutable object can be a <emphasis> key</emphasis>, that means you can not use a <emphasis>list</emphasis> as a <emphasis>key</emphasis>."
 msgstr "ഓര്‍മ്മിക്കുക  മാററം വരുത്താന്‍ കഴിയാത്ത ഒബ്ജക്ററാണ് <emphasis> key</emphasis>,വിശദമായിപ്പറഞ്ഞാല്‍  <emphasis>list</emphasis> നെ ഒരിക്കലും  <emphasis>key</emphasis> ആയി ഉപയോഗിക്കരുത്. "
 
 #. Tag: para
-#: datastructure.xml:141
 #, no-c-format
 msgid "<emphasis>dict()</emphasis> can create dictionaries from tuples of <emphasis>key,value</emphasis> pair."
 msgstr "<emphasis>key,value</emphasis> ദ്വയങ്ങളുടെ ടുപ്പിളുകളില്‍ നിന്ന്  <emphasis>dict()</emphasis> ഫങ്ഷന്‍ ഉപയോഗിച്ച് ഡിക്ഷ്ണറികള്‍ ഉണ്ടാക്കാം"
 
 #. Tag: screen
-#: datastructure.xml:144
 #, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))\n"
-"{'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}\n"
-"]]>"
+"\n"
+"\n"
+"&#62;&#62;&#62; dict(((&#39;Indian&#39;,&#39;Delhi&#39;),(&#39;Bangladesh&#39;,&#39;Dhaka&#39;)))\n"
+"{&#39;Indian&#39;: &#39;Delhi&#39;, &#39;Bangladesh&#39;: &#39;Dhaka&#39;}\n"
+"\n"
 msgstr ""
-"<![CDATA[\n"
-">>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))\n"
-"{'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}\n"
-"]]>"
 
 #. Tag: para
-#: datastructure.xml:145
 #, no-c-format
 msgid "If you want to loop through a dict use <emphasis>iteritems()</emphasis> method."
 msgstr "ഡിക്ഷ്ണറികളില്‍ ലൂപ്പിംഗ് നടത്തുവാന്‍ <emphasis>iteritems()</emphasis> ഫങ്ഷന്‍ ഉപയോഗിക്കാം"
 
 #. Tag: screen
-#: datastructure.xml:148
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> data\n"
-"{'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
-">>> for x, y in data.iteritems():\n"
-"...     print \"%s uses %s\" % (x, y)\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; data\n"
+"{&#39;Kushal&#39;: &#39;Fedora&#39;, &#39;Jace&#39;: &#39;Mac&#39;, &#39;kart_&#39;: &#39;Debian&#39;, &#39;parthan&#39;: &#39;Ubuntu&#39;}\n"
+"&#62;&#62;&#62; for x, y in data.iteritems():\n"
+"...     print &#34;%s uses %s&#34; % (x, y)\n"
 "...\n"
 "Kushal uses Fedora\n"
 "Jace uses Mac\n"
 "kart_ uses Debian\n"
 "parthan uses Ubuntu\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> data\n"
@@ -786,23 +669,22 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:149
 #, no-c-format
 msgid "If you want to loop through a list (or any sequence) and get iteration number at the same time you have to use <emphasis>enumerate()</emphasis>."
 msgstr "ലിസ്ററില്‍ (അല്ലെങ്കില്‍ ഏതെങ്കിലും സീക്വന്‍സില്‍ ) ലൂപ്പിംഗ് നടത്തുവാനും അതേസമയം തന്നെ ഇറററേഷന്‍ സംഖ്യ കിട്ടുവാനും  <emphasis>enumerate()</emphasis> ഫങ്ഷന്‍ ഉപയോഗിക്കുക."
 
 #. Tag: screen
-#: datastructure.xml:152
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> for i, j in enumerate(['a', 'b', 'c']):\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; for i, j in enumerate([&#39;a&#39;, &#39;b&#39;, &#39;c&#39;]):\n"
 "...     print i, j\n"
 "...\n"
 "0 a\n"
 "1 b\n"
 "2 c\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> for i, j in enumerate(['a', 'b', 'c']):\n"
@@ -814,24 +696,23 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:153
 #, no-c-format
 msgid "You may also need to iterate through two sequences same time, for that use <emphasis>zip()</emphasis> function."
 msgstr "ഒരേ സമയം തന്നെ രണ്ട് സീക്വന്‍സുകളില്‍ ഇറററേഷന്‍ നടത്തുന്നതിനായി  <emphasis>zip()</emphasis> ഉപയോഗിക്കുക."
 
 #. Tag: screen
-#: datastructure.xml:156
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
-">>> a = ['Pradeepto', 'Kushal']\n"
-">>> b = ['OpenSUSE', 'Fedora']\n"
-">>> for x, y in zip(a, b):\n"
-"...     print \"%s uses %s\" % (x, y)\n"
+"\n"
+"\n"
+"&#62;&#62;&#62; a = [&#39;Pradeepto&#39;, &#39;Kushal&#39;]\n"
+"&#62;&#62;&#62; b = [&#39;OpenSUSE&#39;, &#39;Fedora&#39;]\n"
+"&#62;&#62;&#62; for x, y in zip(a, b):\n"
+"...     print &#34;%s uses %s&#34; % (x, y)\n"
 "...\n"
 "Pradeepto uses OpenSUSE\n"
 "Kushal uses Fedora\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 ">>> a = ['Pradeepto', 'Kushal']\n"
@@ -844,40 +725,38 @@ msgstr ""
 "]]>"
 
 #. Tag: title
-#: datastructure.xml:160
 #, no-c-format
 msgid "students.py"
 msgstr "students.py"
 
 #. Tag: para
-#: datastructure.xml:161
-#, no-c-format
-msgid "In this example , you have to take number of students as input , then ask marks for three subjects as 'Physics', 'Maths', 'History', if the total number for any student is less 120 then print he failed, or else say passed."
+#, fuzzy, no-c-format
+msgid "In this example , you have to take number of students as input , then ask marks for three subjects as &#39;Physics&#39;, &#39;Maths&#39;, &#39;History&#39;, if the total number for any student is less 120 then print he failed, or else say passed."
 msgstr "ഈ ഉദാഹരണത്തില്‍ ,കുട്ടികളുടെ എണ്ണം ഇന്‍പുട്ടായി എടുക്കുക,അതിനുശേഷം 'Physics', 'Maths', 'History' എന്നീ മൂന്നു വിഷയങ്ങളുടെ മാര്‍ക്ക് ആവശ്യപ്പെടുക,ഏതെങ്കിലും കുട്ടിയുടെ മാര്‍ക്ക് 120 നു താഴെയാണെങ്കില്‍ failed എന്നും ,അല്ലെങ്കില്‍  passed എന്നും പ്രിന്‍റ് ചെയ്യിക്കുക."
 
 #. Tag: screen
-#: datastructure.xml:164
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "#!/usr/bin/env python\n"
-"n = int(raw_input(\"Enter the number of students:\"))\n"
+"n = int(raw_input(&#34;Enter the number of students:&#34;))\n"
 "data = {} # here we will store the data\n"
-"languages = ('Physics', 'Maths', 'History') #all languages\n"
+"languages = (&#39;Physics&#39;, &#39;Maths&#39;, &#39;History&#39;) #all languages\n"
 "for i in range(0, n): #for the n number of students\n"
-"    name = raw_input('Enter the name of the student %d: ' % (i + 1)) #Get the name of the student\n"
+"    name = raw_input(&#39;Enter the name of the student %d: &#39; % (i + 1)) #Get the name of the student\n"
 "    marks = []\n"
 "    for x in languages:\n"
-"        marks.append(int(raw_input('Enter marks of %s: ' % x))) #Get the marks for  languages\n"
+"        marks.append(int(raw_input(&#39;Enter marks of %s: &#39; % x))) #Get the marks for  languages\n"
 "    data[name] = marks\n"
 "for x, y in data.iteritems():\n"
 "    total =  sum(y)\n"
-"    print \"%s 's  total marks %d\" % (x, total)\n"
-"    if total < 120:\n"
-"        print \"%s failed :(\" % x\n"
+"    print &#34;%s &#39;s  total marks %d&#34; % (x, total)\n"
+"    if total &#60; 120:\n"
+"        print &#34;%s failed :(&#34; % x\n"
 "    else:\n"
-"        print \"%s passed :)\" % y\n"
-"]]>"
+"        print &#34;%s passed :)&#34; % y\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "#!/usr/bin/env python\n"
@@ -900,17 +779,15 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:165
-#: datastructure.xml:177
 #, no-c-format
 msgid "The output"
 msgstr "ഔട്ട്പുട്ട്"
 
 #. Tag: screen
-#: datastructure.xml:168
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "[kd@kdlappy book]$ ./students.py\n"
 "Enter the number of students:2\n"
 "Enter the name of the student 1: Babai\n"
@@ -921,11 +798,11 @@ msgid ""
 "Enter marks of Physics: 89\n"
 "Enter marks of Maths: 98\n"
 "Enter marks of History: 40\n"
-"Babai 's  total marks 97\n"
+"Babai &#39;s  total marks 97\n"
 "Babai failed :(\n"
-"Ria 's  total marks 227\n"
+"Ria &#39;s  total marks 227\n"
 "Ria passed :)\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "[kd@kdlappy book]$ ./students.py\n"
@@ -945,43 +822,41 @@ msgstr ""
 "]]>"
 
 #. Tag: title
-#: datastructure.xml:172
 #, no-c-format
 msgid "matrixmul.py"
 msgstr "matrixmul.py"
 
 #. Tag: para
-#: datastructure.xml:173
-#, no-c-format
-msgid "In this example we will multiply two matrix's. First we will take input the number of rows/columns in the matrix (here we assume we are using n x n matrix). Then values of the matrix's."
+#, fuzzy, no-c-format
+msgid "In this example we will multiply two matrix&#39;s. First we will take input the number of rows/columns in the matrix (here we assume we are using n x n matrix). Then values of the matrix&#39;s."
 msgstr "ഈ ഉദാഹരണത്തില്‍ നമ്മള്‍ രണ്ട് മെട്രിക്സുകള്‍ തമ്മില്‍ ഗുണിക്കുന്നു.ആദ്യം row കളുടെയും column ങ്ങളുടെയും എണ്ണവും(n x n മാതൃകയിലുളള മെട്രിക്സാണെടുത്തിട്ടുളളതെന്ന് കരുതുക) അതിനുശേഷം മെട്രിക്സുകളുടെ മൂല്യവും എടുക്കുക."
 
 #. Tag: screen
-#: datastructure.xml:176
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "#!/usr/bin/env python\n"
-"n = int(raw_input(\"Enter the value of n: \"))\n"
-"print \"Enter values for the Matrix A\"\n"
+"n = int(raw_input(&#34;Enter the value of n: &#34;))\n"
+"print &#34;Enter values for the Matrix A&#34;\n"
 "a = []\n"
 "for i in range(0, n):\n"
-"    a.append([int(x) for x in raw_input(\"\").split(\" \")])\n"
-"print \"Enter values for the Matrix B\"\n"
+"    a.append([int(x) for x in raw_input(&#34;&#34;).split(&#34; &#34;)])\n"
+"print &#34;Enter values for the Matrix B&#34;\n"
 "b = []\n"
 "for i in range(0, n):\n"
-"    b.append([int(x) for x in raw_input(\"\").split(\" \")])\n"
+"    b.append([int(x) for x in raw_input(&#34;&#34;).split(&#34; &#34;)])\n"
 "c = []\n"
 "for i in range(0, n):\n"
 "    c.append([a[i][j] * b[j][i] for j in range(0,n)])\n"
-"print \"After matrix multiplication\"\n"
-"print \"-\" * 10 * n\n"
+"print &#34;After matrix multiplication&#34;\n"
+"print &#34;-&#34; * 10 * n\n"
 "for x in c:\n"
 "    for y in x:\n"
-"        print \"%5d\" % y,\n"
-"    print \"\"\n"
-"print \"-\" * 10 * n\n"
-"]]>"
+"        print &#34;%5d&#34; % y,\n"
+"    print &#34;&#34;\n"
+"print &#34;-&#34; * 10 * n\n"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "#!/usr/bin/env python\n"
@@ -1007,10 +882,10 @@ msgstr ""
 "]]>"
 
 #. Tag: screen
-#: datastructure.xml:180
-#, no-c-format
+#, fuzzy, no-c-format
 msgid ""
-"<![CDATA[\n"
+"\n"
+"\n"
 "[kd@kdlappy book]$ ./matrixmul.py\n"
 "Enter the value of n: 3\n"
 "Enter values for the Matrix A\n"
@@ -1027,7 +902,7 @@ msgid ""
 "   32    25    12\n"
 "   49    32     9\n"
 "------------------------------\n"
-"]]>"
+"\n"
 msgstr ""
 "<![CDATA[\n"
 "[kd@kdlappy book]$ ./matrixmul.py\n"
@@ -1049,8 +924,201 @@ msgstr ""
 "]]>"
 
 #. Tag: para
-#: datastructure.xml:181
-#, no-c-format
-msgid "Here we have used list comprehensions couple of times. <emphasis>[int(x) for x in raw_input(\"\").split(\" \")]</emphasis> here first it takes the input as string by <emphasis>raw_input()</emphasis>, then split the result by \" \", then for each value create one int. We are also using <emphasis>[a[i][j] * b[j][i] for j in range(0,n)]</emphasis> to get the resultant row in a single line."
+#, fuzzy, no-c-format
+msgid "Here we have used list comprehensions couple of times. <emphasis>[int(x) for x in raw_input(&#34;&#34;).split(&#34; &#34;)]</emphasis> here first it takes the input as string by <emphasis>raw_input()</emphasis>, then split the result by &#34; &#34;, then for each value create one int. We are also using <emphasis>[a[i][j] * b[j][i] for j in range(0,n)]</emphasis> to get the resultant row in a single line."
 msgstr "ഇവിടെ നമ്മള്‍ ലിസ്ററ് കോംപ്രിഹെന്‍ഷനുകള്‍ ഒന്നില്‍കൂടുതല്‍ പ്രാവശ്യം ഉപയോഗിച്ചിരിക്കുന്നു. <emphasis>[int(x) for x in raw_input(\"\").split(\" \")]</emphasis> ഇവിടെആദ്യം ചെയ്യുന്നത് <emphasis>raw_input()</emphasis> ഉപയോഗിച്ച് ഇന്‍പുട്ടുകളെ സ്ട്രിംഗായി എടുക്കുകയാണ് അതിനുശേഷം അവയെ  \" \" ഉപയോഗിച്ച് വിഭജിക്കുന്നു പിന്നീട് ഓരോ മൂല്യത്തിനും ഒരു int ഉണ്ടാക്കുന്നു.ഫലമായിക്കിട്ടുന്ന row ഒരു വരിയില്‍ വരുന്നതിനായി <emphasis>[a[i][j] * b[j][i] for j in range(0,n)] എന്നും കൂടി ഉപയോഗിക്കുന്നു"
 
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> a.count(45)\n"
+#~ "2\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> a.count(45)\n"
+#~ "2\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> a\n"
+#~ "[1, 2, 3, 4, 5, 6]\n"
+#~ ">>> a.pop()\n"
+#~ "6\n"
+#~ ">>> a.pop()\n"
+#~ "5\n"
+#~ ">>> a.pop()\n"
+#~ "4\n"
+#~ ">>> a.pop()\n"
+#~ "3\n"
+#~ ">>> a\n"
+#~ "[1, 2]\n"
+#~ ">>> a.append(34)\n"
+#~ ">>> a\n"
+#~ "[1, 2, 34)\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> a\n"
+#~ "[1, 2, 3, 4, 5, 6]\n"
+#~ ">>> a.pop()\n"
+#~ "6\n"
+#~ ">>> a.pop()\n"
+#~ "5\n"
+#~ ">>> a.pop()\n"
+#~ "4\n"
+#~ ">>> a.pop()\n"
+#~ "3\n"
+#~ ">>> a\n"
+#~ "[1, 2]\n"
+#~ ">>> a.append(34)\n"
+#~ ">>> a\n"
+#~ "[1, 2, 34)\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> divmod(15,2)\n"
+#~ "(7, 1)\n"
+#~ ">>> x, y = divmod(15,2)\n"
+#~ ">>> x\n"
+#~ "7\n"
+#~ ">>> y\n"
+#~ "1\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> divmod(15,2)\n"
+#~ "(7, 1)\n"
+#~ ">>> x, y = divmod(15,2)\n"
+#~ ">>> x\n"
+#~ "7\n"
+#~ ">>> y\n"
+#~ "1\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> a = (123)\n"
+#~ ">>> a\n"
+#~ "123\n"
+#~ ">>> type(a)\n"
+#~ "<type 'int'>\n"
+#~ ">>> a = (123, ) #Look at the trailing comma\n"
+#~ ">>> a\n"
+#~ "(123,)\n"
+#~ ">>> type(a)\n"
+#~ "<type 'tuple'>\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> a = (123)\n"
+#~ ">>> a\n"
+#~ "123\n"
+#~ ">>> type(a)\n"
+#~ "<type 'int'>\n"
+#~ ">>> a = (123, ) #Look at the trailing comma\n"
+#~ ">>> a\n"
+#~ "(123,)\n"
+#~ ">>> type(a)\n"
+#~ "<type 'tuple'>\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> a = set('abcthabcjwethddda')\n"
+#~ ">>> a\n"
+#~ "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> a = set('abcthabcjwethddda')\n"
+#~ ">>> a\n"
+#~ "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> a\n"
+#~ "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])\n"
+#~ ">>> a.add('p')\n"
+#~ ">>> a\n"
+#~ "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> a\n"
+#~ "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])\n"
+#~ ">>> a.add('p')\n"
+#~ ">>> a\n"
+#~ "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}\n"
+#~ ">>> data\n"
+#~ "{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian'}\n"
+#~ ">>> data['kart_']\n"
+#~ "'Debian'\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}\n"
+#~ ">>> data\n"
+#~ "{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian'}\n"
+#~ ">>> data['kart_']\n"
+#~ "'Debian'\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> data['parthan'] = 'Ubuntu'\n"
+#~ ">>> data\n"
+#~ "{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> data['parthan'] = 'Ubuntu'\n"
+#~ ">>> data\n"
+#~ "{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> del data['kushal']\n"
+#~ ">>> data\n"
+#~ "{'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> del data['kushal']\n"
+#~ ">>> data\n"
+#~ "{'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> data.has_key('Soumya')\n"
+#~ "False\n"
+#~ ">>> 'Soumya' in data\n"
+#~ "False\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> data.has_key('Soumya')\n"
+#~ "False\n"
+#~ ">>> 'Soumya' in data\n"
+#~ "False\n"
+#~ "]]>"
+
+#~ msgid ""
+#~ "<![CDATA[\n"
+#~ ">>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))\n"
+#~ "{'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}\n"
+#~ "]]>"
+#~ msgstr ""
+#~ "<![CDATA[\n"
+#~ ">>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))\n"
+#~ "{'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}\n"
+#~ "]]>"

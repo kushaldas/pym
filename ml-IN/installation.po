@@ -5,71 +5,65 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python_for_you_and_me VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"POT-Creation-Date: 2010-09-27T11:50:13\n"
 "PO-Revision-Date: 2009-09-19 19:43+0530\n"
 "Last-Translator: JAGANADH G <jaganadhg@au-kbc.org>\n"
 "Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. Tag: title
-#: installation.xml:6
 #, no-c-format
 msgid "Installation"
 msgstr "ഇന്‍സ്റ്റലേഷന്‍ ‍"
 
 #. Tag: para
-#: installation.xml:7
 #, no-c-format
 msgid "In this chapter you will learn how to install python"
 msgstr "ഈ അദ്ധ്യായത്തില്‍ പൈത്തണ്‍ എങ്ങിനെ ഇന്‍സ്റ്റാള്‍ ചെയ്യാം എന്ന് പഠിക്കാം "
 
 #. Tag: title
-#: installation.xml:11
 #, no-c-format
 msgid "On Windows"
 msgstr "വിന്‍‌ഡോസില്‍"
 
 #. Tag: para
-#: installation.xml:12
 #, no-c-format
 msgid "You have to download the latest Windows(TM) installer from the python site http://python.org/ftp/python/2.5.2/python-2.5.2.msi . Install it just as any other Windows software."
 msgstr "പൈത്തന്‍റെ ഏററവും പുതിയ വിന്‍ഡോസ് പതിപ്പ് http://python.org/ftp/python/2.5.2/python-2.5.2.msi എന്ന സൈററില്‍ നിന്നും ഡൌണ്‍ലോഡ് ചെയ്യുക .മറേറതൊരു വിന്‍ഡോസ് സോഫ്ററ് വേര്‍ ഇന്‍സ്ററാള്‍ ചെയ്യുന്നതു പോലെ പൈത്തണ്‍ ഇന്‍സ്ററാള്‍ ചെയ്യുക."
 
 #. Tag: title
-#: installation.xml:18
 #, no-c-format
 msgid "On GNU/Linux"
 msgstr "ഗ്നു/ലിനക്സില്‍"
 
 #. Tag: para
-#: installation.xml:19
-#, no-c-format
-msgid "Generally all GNU/Linux distributions come with Python, so no need to worry about that :) If you don't have it then you can install it by either downloading from the python website or from your distribution's repository."
+#, fuzzy, no-c-format
+msgid "Generally all GNU/Linux distributions come with Python, so no need to worry about that :) If you don&#39;t have it then you can install it by either downloading from the python website or from your distribution&#39;s repository."
 msgstr "സാധാരണ എല്ലാ ഗ്നു/ലിനക്സ് പതിപ്പിലും പൈത്തണ്‍ ഉണ്ടാവാറുണ്ട്,അതുകൊണ്ട് ഇന്‍സ്ററാലേഷനെക്കുറിച്ച് വ്യാകുലപ്പെടേണ്ട.ഇനി അഥവാ ഇല്ല എങ്കില്‍ പൈത്തണ്‍ സൈററില്‍ നിന്നു ഡൌണ്‍ലോഡ് ചെയ്യുകയൊ അല്ലെങ്കില്‍ താങ്കളുടെ പതിപ്പിന്‍റെ ശേഖരത്തില്‍ നിന്ന് ഇന്‍സ്ററാള്‍ ചെയ്യുകയൊ ചെയ്യാവുന്നതാണ്."
 
 #. Tag: para
-#: installation.xml:23
 #, no-c-format
 msgid "For Fedora"
 msgstr "ഫെഡൊറയില്‍"
 
 #. Tag: screen
-#: installation.xml:27
-#, no-c-format
-msgid "#<userinput>yum install python</userinput>"
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"#<userinput>yum install python</userinput>\n"
 msgstr "#<userinput>yum install python</userinput>"
 
 #. Tag: para
-#: installation.xml:28
 #, no-c-format
 msgid "For Debian"
 msgstr "ഡെബിയനില്‍"
 
 #. Tag: screen
-#: installation.xml:32
-#, no-c-format
-msgid "#<userinput>apt-get install python</userinput>"
+#, fuzzy, no-c-format
+msgid ""
+"\n"
+"#<userinput>apt-get install python</userinput>\n"
 msgstr "#<userinput>apt-get install python</userinput>"
-
