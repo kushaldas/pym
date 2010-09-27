@@ -114,7 +114,7 @@ msgstr "ഫിബനോച്ചി ക്രമം "
 #. Tag: para
 #, no-c-format
 msgid "Let us try to solve <emphasis>Fibonacci</emphasis> series. In this series we get the next number by adding the previous two numbers. So the series looks like <emphasis>1,1,2,3,5,8,13 .......</emphasis>"
-msgstr "ഇനി നമുക്ക് <emphasis>ഫിബനോച്ചി</emphasis> ക്രമം പ്രോഗ്രാമിലൂടെ നിര്‍മ്മിക്കാം.  ഈ ക്രമത്തില്‍ നമുക്ക് അടുത്ത സംഖ്യ ലഭിക്കുവാന്‍ തൊട്ടുമുന്‍പുള്ള രണ്ട് സംഖ്യകള്‍ തമ്മില്‍ കൂട്ടണം. അപ്പോള്‍ ഈ ക്രമം <emphasis>1,1,2,3,5,8,13 ....... <emphasis>എന്നിങ്ങനെയാകും."
+msgstr "ഇനി നമുക്ക് <emphasis>ഫിബനോച്ചി</emphasis> ക്രമം പ്രോഗ്രാമിലൂടെ നിര്‍മ്മിക്കാം.  ഈ ക്രമത്തില്‍ നമുക്ക് അടുത്ത സംഖ്യ ലഭിക്കുവാന്‍ തൊട്ടുമുന്‍പുള്ള രണ്ട് സംഖ്യകള്‍ തമ്മില്‍ കൂട്ടണം. അപ്പോള്‍ ഈ ക്രമം <emphasis>1,1,2,3,5,8,13 ....... </emphasis>എന്നിങ്ങനെയാകും."
 
 #. Tag: screen
 #, fuzzy, no-c-format
