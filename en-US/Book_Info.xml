@@ -5,6 +5,7 @@
 <bookinfo id="pythonforyouandme-Product_Name_and_Version">
 	<title>Python for you and me</title>
 	<subtitle>Python for you and me</subtitle>
+	<productname>Python for you and me</productname>
 	<productnumber>0.2</productnumber>
         <edition>1</edition>
 	<pubsnumber>0</pubsnumber>
