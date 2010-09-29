@@ -1,0 +1,135 @@
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2008-12-24 15:13+0000\n"
+"PO-Revision-Date: 2010-09-29 09:41+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <translation@linux.org.ua>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.1\n"
+
+#. Tag: title
+#: acknowledgment.xml:6
+#, no-c-format
+msgid "Acknowledgment"
+msgstr "Подяки"
+
+#. Tag: para
+#: acknowledgment.xml:7
+#, no-c-format
+msgid ""
+"I would like to thank the following people who have helped me make it "
+"through this book. Specially #fedora-docs in irc.freenode.net and also "
+"#fedora-art . Names are in alphabetic order:"
+msgstr ""
+"Автори цього підручника хотіли б подякувати людям з наведеного нижче "
+"списку за допомогу у створенні цього підручника. Особливо хотілося б "
+"подякувати учасникам каналів #fedora-docs та #fedora-art на irc."
+"freenode.net. Імена наведено за абеткою:"
+
+#. Tag: para
+#: acknowledgment.xml:13
+#, no-c-format
+msgid "Jared Smith"
+msgstr "Jared Smith"
+
+#. Tag: para
+#: acknowledgment.xml:14
+#, no-c-format
+msgid "Marco Mornati"
+msgstr "Marco Mornati"
+
+#. Tag: para
+#: acknowledgment.xml:15
+#, no-c-format
+msgid "Nicu Buculei"
+msgstr "Nicu Buculei"
+
+#. Tag: para
+#: acknowledgment.xml:16
+#, no-c-format
+msgid "Paul W. Frields"
+msgstr "Paul W. Frields"
+
+#. Tag: para
+#: acknowledgment.xml:17
+#, no-c-format
+msgid "Pradeepto K Bhattacharya"
+msgstr "Pradeepto K Bhattacharya"
+
+#. Tag: para
+#: acknowledgment.xml:18
+#, no-c-format
+msgid "Sankarshan Mukhopadhyay"
+msgstr "Sankarshan Mukhopadhyay"
+
+#. Tag: para
+#: acknowledgment.xml:19
+#, no-c-format
+msgid "Sayamindu Dasgupta"
+msgstr "Sayamindu Dasgupta"
+
+#. Tag: para
+#: acknowledgment.xml:20
+#, no-c-format
+msgid "Stephanie Whiting"
+msgstr "Stephanie Whiting"
+
+#. Tag: para
+#: acknowledgment.xml:21
+#, no-c-format
+msgid "I am missing some names in the above list, will add them soon"
+msgstr ""
+"У цьому списку декого немає, автори обіцяють скоро додати їхні імена."
+
+#. Tag: para
+#: acknowledgment.xml:24
+#, no-c-format
+msgid "I also took help from the following sites"
+msgstr ""
+"Під час створення підручника було використано матеріали сайтів з "
+"наведеного нижче списку."
+
+#. Tag: para
+#: acknowledgment.xml:29
+#, no-c-format
+msgid "http://docs.python.org"
+msgstr "http://docs.python.org"
+
+#. Tag: para
+#: acknowledgment.xml:30
+#, no-c-format
+msgid "http://en.wikipedia.org"
+msgstr "http://en.wikipedia.org"
+
+#. Tag: para
+#: acknowledgment.xml:33
+#, no-c-format
+msgid "Few books or sites I would recommend to read"
+msgstr ""
+"Нижче наведено декілька книг і сайтів, з вмістом яких варто "
+"ознайомитися."
+
+#. Tag: citetitle
+#: acknowledgment.xml:36
+#, no-c-format
+msgid "Byte of Python"
+msgstr "Byte of Python"
+
+#. Tag: citetitle
+#: acknowledgment.xml:37
+#, no-c-format
+msgid "Dive into Python"
+msgstr "Dive into Python"
+
+#. Tag: citetitle
+#: acknowledgment.xml:38
+#, no-c-format
+msgid "Python Tutorial"
+msgstr "Підручник з Python"
+
