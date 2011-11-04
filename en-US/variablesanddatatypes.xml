@@ -134,9 +134,7 @@ Year 5 Rs. 19254.15
 		    <para>
 		    In the next program we will do an average of N numbers.
 		    </para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 N = 10
 sum = 0
 count = 0
@@ -148,7 +146,7 @@ average = float(sum)/N
 print "N = %d , Sum = %f" % (N, sum)
 print "Average = %f" % average
 ]]>
-</screen>
+</programlisting>
             <para>
                 The output
             </para>
