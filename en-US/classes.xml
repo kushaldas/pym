@@ -15,20 +15,16 @@
 		<para>
 			Before writing your first class, you should know the syntax. We define a class in the following way..
 		</para>
-<screen>
-<![CDATA[
-class nameoftheclass:
+<programlisting language="Python"><![CDATA[class nameoftheclass:
     statement1
     statement2
     statement3
 ]]>
-</screen>
+</programlisting>
 		<para>
 			in the statements you can write any python statement, you can define functions (which we call methods of a class).
 		</para>
-<screen>
-<![CDATA[
->>> class MyClass:
+<screen><![CDATA[>>> class MyClass:
 ...     a = 90
 ...     b = 88
 ...
@@ -40,9 +36,7 @@ class nameoftheclass:
 		<para>
 			In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an <emphasis>object</emphasis> p of the <emphasis>class</emphasis> MyClass.If you do a dir on that...
 		</para>
-<screen>
-<![CDATA[
->>> dir(p)
+<screen><![CDATA[>>> dir(p)
 ['__doc__', '__module__', 'a', 'b']
 ]]>
 </screen>
@@ -53,9 +47,7 @@ class nameoftheclass:
 	<section id="pythonforyouandme-Classes-initmethod">
 		<title>__init__ method</title>
                 <para>__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it</para>
-<screen>
-<![CDATA[
->>> class Student:
+<screen><![CDATA[>>> class Student:
 ...   def __init__(self, name, branch, year):
 ...     self.name = name
 ...     self.branch = branch
@@ -71,9 +63,7 @@ class nameoftheclass:
             <para>
             __init__ is called when ever an object of the class is constructed.That means when ever we will create a student object we will see the message "Creating a new student" in the prompt. You can see the first argument to the method is <emphasis>self</emphasis>. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it , but we have to get it explicitly in every method while writing the methods. Example shown below.
             </para>
-<screen>
-<![CDATA[
->>> std1 = Student()
+<screen><![CDATA[>>> std1 = Student()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: __init__() takes exactly 4 arguments (1 given)
@@ -87,9 +77,7 @@ A student object is created
             <para>
             Now we are going to call <emphasis>getName()</emphasis> and <emphasis>setName()</emphasis> methods.
             </para>
-<screen>
-<![CDATA[
->>> std1.getName()
+<screen><![CDATA[>>> std1.getName()
 'Kushal'
 >>> std1.setName()
 Traceback (most recent call last):
@@ -116,9 +104,7 @@ TypeError: setName() takes exactly 2 arguments (1 given)
 
 	<section id="pythonforyouandme-Classes-student-teacher">
 		<title>student_teacher.py</title>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 
 class Person:
     def __init__(self,name):
@@ -156,14 +142,12 @@ print student1.getDetails()
 print teacher1.getDetails()
 
 ]]>
-</screen>
+</programlisting>
             <para>
             The output:
             </para>
 
-<screen>
-<![CDATA[
-[kdas@kdas code]$ ./student_teacher.py
+<screen><![CDATA[[kdas@kdas code]$ ./student_teacher.py
 Rahul
 ('Kushal', 'CSE', 2005)
 ('Prashad', ['C', 'C++'])
@@ -179,25 +163,21 @@ Rahul
             <para>
             One class can inherit more than one classes. It gets access to all methods and variables of the parent classes. The general syntax is:
             </para>
-<screen>
-<![CDATA[
-class MyClass(Parentclass1, Parentclass2,...):
+<programlisting language="Python"><![CDATA[class MyClass(Parentclass1, Parentclass2,...):
     def __init__(self):
         Parentclass1.__init__(self)
         Parentclass2.__init__(self)
         ...
         ...
 ]]>
-</screen>
+</programlisting>
         </section>
 	<section id="pythonforyouandme-Classes-delete">
 		<title>Deleting an object</title>
                 <para>
                 As we already know how to create an object , now we are going to see how to delete an python object. We use <emphasis>del</emphasis> for this.
                 </para>
-<screen>
-<![CDATA[
->>> s = "I love you"
+<screen><![CDATA[>>> s = "I love you"
 >>> del s
 >>> s
 Traceback (most recent call last):
