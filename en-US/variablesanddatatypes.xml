@@ -133,6 +133,7 @@ Year 5 Rs. 19254.15
 		    <title>Average of N numbers</title>
 		    <para>
 		    In the next program we will do an average of N numbers.
+		<indexterm><primary>Loop</primary><secondary>Creating a loop in Python</secondary></indexterm>
 		    </para>
 <programlisting language="Python"><![CDATA[#!/usr/bin/env python
 N = 10
@@ -150,9 +151,7 @@ print "Average = %f" % average
             <para>
                 The output
             </para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./averagen.py
+<screen><![CDATA[[kd@kdlappy book]$ ./averagen.py
 1
 2.3
 4.67
