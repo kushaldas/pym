@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2010-09-27T11:50:13\n"
-"PO-Revision-Date: 2010-09-27T11:50:13\n"
+"POT-Creation-Date: 2011-11-05T11:20:40\n"
+"PO-Revision-Date: 2011-11-05T11:20:40\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -28,21 +28,21 @@ msgid "\n"
 "[kd@kdlappy ~]$ python\n"
 "Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)\n"
 "[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2\n"
-"Type &#34;help&#34;, &#34;copyright&#34;, &#34;credits&#34; or &#34;license&#34; for more information. \n"
-"&#62;&#62;&#62; \n"
+"Type \"help\", \"copyright\", \"credits\" or \"license\" for more information. \n"
+"&gt;&gt;&gt; \n"
 "\n"
 ""
 msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "In our first code we are going to print &#34;Hello World!&#34; , so do it as below,"
+msgid "In our first code we are going to print \"Hello World!\" , so do it as below,"
 msgstr ""
 
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"&#62;&#62;&#62; print &#34;Hello World!&#34;\n"
+"&gt;&gt;&gt; print \"Hello World!\"\n"
 "Hello World!\n"
 ""
 msgstr ""
@@ -61,7 +61,7 @@ msgstr ""
 #, no-c-format
 msgid "\n"
 "#!/usr/bin/env python\n"
-"print &#34;Hello World!&#34;\n"
+"print \"Hello World!\"\n"
 ""
 msgstr ""
 
@@ -109,9 +109,9 @@ msgstr ""
 #, no-c-format
 msgid "\n"
 "\n"
-"&#62;&#62;&#62; a = 12\n"
-"&#62;&#62;&#62;  a = 12\n"
-"  File &#34;&#60;stdin&#62;&#34;, line 1\n"
+"&gt;&gt;&gt; a = 12\n"
+"&gt;&gt;&gt;  a = 12\n"
+"  File \"&lt;stdin&gt;\", line 1\n"
 "      a = 12\n"
 "          ^\n"
 "          IndentationError: unexpected indent\n"
@@ -130,7 +130,7 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don&#39;t use tabs in that case. For you it may look same, but the code will give you error if you try to run it."
+msgid "You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it."
 msgstr ""
 
 #. Tag: title
@@ -140,17 +140,17 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "Comments are some piece of English text which explains what this code does, we write comments in the code so that is easier for others to understand. A comment line starts with <emphasis>#</emphasis> , everything after that is ignored as comment, that means they don&#39;t effect on the program."
+msgid "Comments are some piece of English text which explains what this code does, we write comments in the code so that is easier for others to understand. A comment line starts with <emphasis>#</emphasis> , everything after that is ignored as comment, that means they don't effect on the program."
 msgstr ""
 
 #. Tag: screen
 #, no-c-format
 msgid "\n"
 "\n"
-"&#62;&#62;&#62; #this is a comment\n"
-"&#62;&#62;&#62; #the next line will add two numbers\n"
-"&#62;&#62;&#62; a = 12 + 34\n"
-"&#62;&#62;&#62; print c #this is a comment too :)\n"
+"&gt;&gt;&gt; #this is a comment\n"
+"&gt;&gt;&gt; #the next line will add two numbers\n"
+"&gt;&gt;&gt; a = 12 + 34\n"
+"&gt;&gt;&gt; print c #this is a comment too :)\n"
 ""
 msgstr ""
 
@@ -168,8 +168,8 @@ msgstr ""
 #, no-c-format
 msgid "\n"
 "\n"
-"&#62;&#62;&#62; import math\n"
-"&#62;&#62;&#62; print math.e\n"
+"&gt;&gt;&gt; import math\n"
+"&gt;&gt;&gt; print math.e\n"
 "2.71828182846\n"
 "\n"
 ""
