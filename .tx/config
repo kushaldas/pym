@@ -12,3 +12,87 @@ ru = ru-RU, si:si-LK, sk:sk-SK, sl:sl-SI, sq:sq-AL, sr:sr-RS,
 sr at latin = sr-Latn-RS, sv:sv-SE, ta:ta-IN, te:te-IN, tr:tr-TR,
 uk = uk-UA, ur:ur-PK, vi:vi-VN, zh_CN:zh-CN, zh_HK:zh-HK, zh_TW:zh-TW
 
+[pym.pot/acknowledgment]
+file_filter = <lang>/pot/acknowledgment.po
+source_file = pot/pot/acknowledgment.pot
+source_lang = en
+[pym.pot/Appendix]
+file_filter = <lang>/pot/Appendix.po
+source_file = pot/pot/Appendix.pot
+source_lang = en
+[pym.pot/Author_Group]
+file_filter = <lang>/pot/Author_Group.po
+source_file = pot/pot/Author_Group.pot
+source_lang = en
+[pym.pot/Book_Info]
+file_filter = <lang>/pot/Book_Info.po
+source_file = pot/pot/Book_Info.pot
+source_lang = en
+[pym.pot/Chapter]
+file_filter = <lang>/pot/Chapter.po
+source_file = pot/pot/Chapter.pot
+source_lang = en
+[pym.pot/classes]
+file_filter = <lang>/pot/classes.po
+source_file = pot/pot/classes.pot
+source_lang = en
+[pym.pot/datastructure]
+file_filter = <lang>/pot/datastructure.po
+source_file = pot/pot/datastructure.pot
+source_lang = en
+[pym.pot/file]
+file_filter = <lang>/pot/file.po
+source_file = pot/pot/file.pot
+source_lang = en
+[pym.pot/functions]
+file_filter = <lang>/pot/functions.po
+source_file = pot/pot/functions.pot
+source_lang = en
+[pym.pot/ifelse]
+file_filter = <lang>/pot/ifelse.po
+source_file = pot/pot/ifelse.pot
+source_lang = en
+[pym.pot/installation]
+file_filter = <lang>/pot/installation.po
+source_file = pot/pot/installation.pot
+source_lang = en
+[pym.pot/LegalNotice]
+file_filter = <lang>/pot/LegalNotice.po
+source_file = pot/pot/LegalNotice.pot
+source_lang = en
+[pym.pot/looping]
+file_filter = <lang>/pot/looping.po
+source_file = pot/pot/looping.pot
+source_lang = en
+[pym.pot/modules]
+file_filter = <lang>/pot/modules.po
+source_file = pot/pot/modules.pot
+source_lang = en
+[pym.pot/operatorsexpressions]
+file_filter = <lang>/pot/operatorsexpressions.po
+source_file = pot/pot/operatorsexpressions.pot
+source_lang = en
+[pym.pot/Preface]
+file_filter = <lang>/pot/Preface.po
+source_file = pot/pot/Preface.pot
+source_lang = en
+[pym.pot/Python_for_you_and_me]
+file_filter = <lang>/pot/Python_for_you_and_me.po
+source_file = pot/pot/Python_for_you_and_me.pot
+source_lang = en
+[pym.pot/Revision_History]
+file_filter = <lang>/pot/Revision_History.po
+source_file = pot/pot/Revision_History.pot
+source_lang = en
+[pym.pot/strings]
+file_filter = <lang>/pot/strings.po
+source_file = pot/pot/strings.pot
+source_lang = en
+[pym.pot/thebeginning]
+file_filter = <lang>/pot/thebeginning.po
+source_file = pot/pot/thebeginning.pot
+source_lang = en
+[pym.pot/variablesanddatatypes]
+file_filter = <lang>/pot/variablesanddatatypes.po
+source_file = pot/pot/variablesanddatatypes.pot
+source_lang = en
