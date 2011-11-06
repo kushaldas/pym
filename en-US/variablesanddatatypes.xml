@@ -12,9 +12,7 @@
 		<para>
 			Python codes can be divided into identifiers. Identifiers (also referred to as names) are described by the following lexical definitions:
 		</para>
-<screen>
-<![CDATA[
-identifier ::= (letter|"_") (letter | digit | "_")* 
+<screen><![CDATA[identifier ::= (letter|"_") (letter | digit | "_")* 
 letter ::= lowercase | uppercase 
 lowercase ::= "a"..."z" 
 uppercase ::= "A"..."Z" 
@@ -24,9 +22,7 @@ digit ::= "0"..."9"
                 <para>
                     This means <emphasis>_abcd</emphasis> is a valid identifier where as <emphasis>1sd</emphasis> is not. The following identifiers are used as reserved words, or keywords of the language, and cannot be used as ordinary identifiers. They must be spelled exactly as written here:
                 </para>
-<screen>
-<![CDATA[
-and       del      from      not   while 
+<screen><![CDATA[and       del      from      not   while 
 as        elif     global    or    with 
 assert    else     if        pass  yield 
 break     except   import    print 
@@ -38,9 +34,7 @@ def       for      lambda    try
                 <para>
                     In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0 abc will become of floating type. Here is a small program to add two given numbers
                 </para>
-<screen>
-<![CDATA[
->>> a = 13 
+<screen><![CDATA[>>> a = 13 
 >>> b = 23
 >>> a + b 
 36
@@ -49,9 +43,7 @@ def       for      lambda    try
                 <para>
                     From the above example you can understand that to declare a variable in python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like
                 </para>
-<screen>
-<![CDATA[
->>> 'India'
+<screen><![CDATA[>>> 'India'
 'India' 
 >>> 'India\'s best' 
 "India's best" 
@@ -66,22 +58,18 @@ def       for      lambda    try
 		<para>
 			Generally the real life python codes do not need to read input from the keyboard. In python we use raw_input function to do input. <emphasis>raw_input("String to show")</emphasis> , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python   
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python   
 number = int(raw_input("Enter an integer: "))
 if number < 100:   
     print "Your number is smaller than 100"   
 else:   
     print "Your number is greater than 100" 
 ]]>
-</screen>
+</programlisting>
 		<para>
 			The output
 		</para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./testhundred.py 
+<screen><![CDATA[[kd@kdlappy book]$ ./testhundred.py 
 Enter an integer: 13 
 Your number is smaller than 100 
 [kd@kdlappy book]$ ./testhundred.py 
@@ -92,9 +80,7 @@ Your number is greater than 100
         <para>
             In the next program we are going to calculate investments.
         </para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python 
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python 
 amount = float(raw_input("Enter amount: ")) 
 inrate = float(raw_input("Enter Interest rate: ")) 
 period = int(raw_input("Enter period: ")) 
@@ -106,13 +92,11 @@ while year <= period:
     amount = value
     year = year + 1 
 ]]>
-</screen>
+</programlisting>
         <para>
                 The output
         </para> 
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./investment.py
+<screen><![CDATA[[kd@kdlappy book]$ ./investment.py
 Enter amount: 10000
 Enter Interest rate: 0.14
 Enter period: 5
@@ -165,16 +149,14 @@ print "Average = %f" % average
 N = 10 , Sum = 38.800000
 Average = 3.880000
 ]]>
-</screen>                 
+</screen>
 	    </section>
 	    <section id="pythonforyouandme-Variables-Datatypes-temparatue">
 		    <title>Temperature conversion</title>
 		    <para>
 			    In this program we will convert the given temperature to Celsius from Fahrenheit by using the formula C=(F-32)/1.8
 		    </para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 fahrenhite = 0.0
 print "Fahrenheit Celsius"
 while fahrenheit <= 250:
@@ -182,13 +164,11 @@ while fahrenheit <= 250:
     print "%5.1f %7.2f" % (fahrenheit , celsius)
     fahrenheit = fahrenheit + 25
 ]]>
-</screen>
+</programlisting>
             <para>
             The output
             </para> 
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./temperature.py
+<screen><![CDATA[[kd@kdlappy book]$ ./temperature.py
 Fahrenheit Celsius
   0.0  -17.78
  25.0   -3.89
@@ -202,7 +182,7 @@ Fahrenheit Celsius
 225.0  107.22
 250.0  121.11
 ]]>
-</screen>           
+</screen>
     	</section>
 	</section>
 
@@ -212,9 +192,7 @@ Fahrenheit Celsius
 		<para>
 			You can even assign values to multiple variables in a single line, like
 		</para>
-<screen>
-<![CDATA[
->>> a , b = 45, 54
+<screen><![CDATA[>>> a , b = 45, 54
 >>> a
 45
 >>> b
@@ -224,15 +202,13 @@ Fahrenheit Celsius
     <para>
         Using this swapping two numbers becomes very easy
     </para>
-<screen>
-<![CDATA[
->>> a, b = b , a
+<screen><![CDATA[>>> a, b = b , a
 >>> a
 54
 >>> b
 45
 ]]>
-</screen>    
+</screen>
 	</section>
 
 </chapter>
