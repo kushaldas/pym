@@ -1,98 +1,88 @@
 [main]
 host = https://www.transifex.net
-lang_map = aln:aln-AL, ar:ar-SA, as:as-IN, bal:bal-PK, bg:bg-BG,
-bn:bn-BD, bn_IN:bn-IN, bs:bs-BA, ca:ca-ES, cs:cs-CZ, da:da-DK,
-de_CH:de-CH, de:de-DE, el:el-GR, en_GB:en-GB, es:es-ES, et:et-EE,
-fa:fa-IR, fi:fi-FI, fr:fr-FR, gu:gu-IN, he:he-IL, hi:hi-IN,
-hr:hr-HR, hu:hu-HU, id:id-ID, is:is-IS, it:it-IT, ja:ja-JP,
-kn:kn-IN, ko:ko-KR, lt:lt-LT, lv:lv-LV, mai:mai-IN, ml:ml-IN,
-mr:mr-IN, ms:ms-MY, nb:nb-NO, nds:nds-DE, nl:nl-NL, nn:nn-NO,
-or:or-IN, pa:pa-IN, pl:pl-PL, pt_BR:pt-BR, pt:pt-PT, ro:ro-RO,
-ru:ru-RU, si:si-LK, sk:sk-SK, sl:sl-SI, sq:sq-AL, sr:sr-RS,
-sr@latin:sr-Latn-RS, sv:sv-SE, ta:ta-IN, te:te-IN, tr:tr-TR,
-uk:uk-UA, ur:ur-PK, vi:vi-VN, zh_CN:zh-CN, zh_HK:zh-HK, zh_TW:zh-TW
+lang_map = aln:aln-AL, ar:ar-SA, as:as-IN, bal:bal-PK, bg:bg-BG, bn:bn-BD, bn_IN:bn-IN, bs:bs-BA, ca:ca-ES, cs:cs-CZ, da:da-DK, de_CH:de-CH, de:de-DE, el:el-GR, en_GB:en-GB, es:es-ES, et:et-EE, fa:fa-IR, fi:fi-FI, fr:fr-FR, gu:gu-IN, he:he-IL, hi:hi-IN, hr:hr-HR, hu:hu-HU, id:id-ID, is:is-IS, it:it-IT, ja:ja-JP, kn:kn-IN, ko:ko-KR, lt:lt-LT, lv:lv-LV, mai:mai-IN, ml:ml-IN, mr:mr-IN, ms:ms-MY, nb:nb-NO, nds:nds-DE, nl:nl-NL, nn:nn-NO, or:or-IN, pa:pa-IN, pl:pl-PL, pt_BR:pt-BR, pt:pt-PT, ro:ro-RO, ru:ru-RU, si:si-LK, sk:sk-SK, sl:sl-SI, sq:sq-AL, sr:sr-RS, sr@latin:sr-Latn-RS, sv:sv-SE, ta:ta-IN, te:te-IN, tr:tr-TR, uk:uk-UA, ur:ur-PK, vi:vi-VN, zh_CN:zh-CN, zh_HK:zh-HK, zh_TW:zh-TW
 
-[pym.pot/acknowledgment]
-file_filter = <lang>/pot/acknowledgment.po
-source_file = pot/pot/acknowledgment.pot
+[pym.acknowledgment]
+file_filter = <lang>/acknowledgment.po
+source_file = pot/acknowledgment.pot
 source_lang = en
-[pym.pot/Appendix]
-file_filter = <lang>/pot/Appendix.po
-source_file = pot/pot/Appendix.pot
+[pym.Appendix]
+file_filter = <lang>/Appendix.po
+source_file = pot/Appendix.pot
 source_lang = en
-[pym.pot/Author_Group]
-file_filter = <lang>/pot/Author_Group.po
-source_file = pot/pot/Author_Group.pot
+[pym.Author_Group]
+file_filter = <lang>/Author_Group.po
+source_file = pot/Author_Group.pot
 source_lang = en
-[pym.pot/Book_Info]
-file_filter = <lang>/pot/Book_Info.po
-source_file = pot/pot/Book_Info.pot
+[pym.Book_Info]
+file_filter = <lang>/Book_Info.po
+source_file = pot/Book_Info.pot
 source_lang = en
-[pym.pot/Chapter]
-file_filter = <lang>/pot/Chapter.po
-source_file = pot/pot/Chapter.pot
+[pym.Chapter]
+file_filter = <lang>/Chapter.po
+source_file = pot/Chapter.pot
 source_lang = en
-[pym.pot/classes]
-file_filter = <lang>/pot/classes.po
-source_file = pot/pot/classes.pot
+[pym.classes]
+file_filter = <lang>/classes.po
+source_file = pot/classes.pot
 source_lang = en
-[pym.pot/datastructure]
-file_filter = <lang>/pot/datastructure.po
-source_file = pot/pot/datastructure.pot
+[pym.datastructure]
+file_filter = <lang>/datastructure.po
+source_file = pot/datastructure.pot
 source_lang = en
-[pym.pot/file]
-file_filter = <lang>/pot/file.po
-source_file = pot/pot/file.pot
+[pym.file]
+file_filter = <lang>/file.po
+source_file = pot/file.pot
 source_lang = en
-[pym.pot/functions]
-file_filter = <lang>/pot/functions.po
-source_file = pot/pot/functions.pot
+[pym.functions]
+file_filter = <lang>/functions.po
+source_file = pot/functions.pot
 source_lang = en
-[pym.pot/ifelse]
-file_filter = <lang>/pot/ifelse.po
-source_file = pot/pot/ifelse.pot
+[pym.ifelse]
+file_filter = <lang>/ifelse.po
+source_file = pot/ifelse.pot
 source_lang = en
-[pym.pot/installation]
-file_filter = <lang>/pot/installation.po
-source_file = pot/pot/installation.pot
+[pym.installation]
+file_filter = <lang>/installation.po
+source_file = pot/installation.pot
 source_lang = en
-[pym.pot/LegalNotice]
-file_filter = <lang>/pot/LegalNotice.po
-source_file = pot/pot/LegalNotice.pot
+[pym.LegalNotice]
+file_filter = <lang>/LegalNotice.po
+source_file = pot/LegalNotice.pot
 source_lang = en
-[pym.pot/looping]
-file_filter = <lang>/pot/looping.po
-source_file = pot/pot/looping.pot
+[pym.looping]
+file_filter = <lang>/looping.po
+source_file = pot/looping.pot
 source_lang = en
-[pym.pot/modules]
-file_filter = <lang>/pot/modules.po
-source_file = pot/pot/modules.pot
+[pym.modules]
+file_filter = <lang>/modules.po
+source_file = pot/modules.pot
 source_lang = en
-[pym.pot/operatorsexpressions]
-file_filter = <lang>/pot/operatorsexpressions.po
-source_file = pot/pot/operatorsexpressions.pot
+[pym.operatorsexpressions]
+file_filter = <lang>/operatorsexpressions.po
+source_file = pot/operatorsexpressions.pot
 source_lang = en
-[pym.pot/Preface]
-file_filter = <lang>/pot/Preface.po
-source_file = pot/pot/Preface.pot
+[pym.Preface]
+file_filter = <lang>/Preface.po
+source_file = pot/Preface.pot
 source_lang = en
-[pym.pot/Python_for_you_and_me]
-file_filter = <lang>/pot/Python_for_you_and_me.po
-source_file = pot/pot/Python_for_you_and_me.pot
+[pym.Python_for_you_and_me]
+file_filter = <lang>/Python_for_you_and_me.po
+source_file = pot/Python_for_you_and_me.pot
 source_lang = en
-[pym.pot/Revision_History]
-file_filter = <lang>/pot/Revision_History.po
-source_file = pot/pot/Revision_History.pot
+[pym.Revision_History]
+file_filter = <lang>/Revision_History.po
+source_file = pot/Revision_History.pot
 source_lang = en
-[pym.pot/strings]
-file_filter = <lang>/pot/strings.po
-source_file = pot/pot/strings.pot
+[pym.strings]
+file_filter = <lang>/strings.po
+source_file = pot/strings.pot
 source_lang = en
-[pym.pot/thebeginning]
-file_filter = <lang>/pot/thebeginning.po
-source_file = pot/pot/thebeginning.pot
+[pym.thebeginning]
+file_filter = <lang>/thebeginning.po
+source_file = pot/thebeginning.pot
 source_lang = en
-[pym.pot/variablesanddatatypes]
-file_filter = <lang>/pot/variablesanddatatypes.po
-source_file = pot/pot/variablesanddatatypes.pot
+[pym.variablesanddatatypes]
+file_filter = <lang>/variablesanddatatypes.po
+source_file = pot/variablesanddatatypes.pot
 source_lang = en
