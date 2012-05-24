@@ -285,11 +285,9 @@ set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])
 ]]>
 </screen>
         <para>
-            To check if any <emphasis>key</emphasis> is there in the dictionary or not you can use <emphasis>has_key()</emphasis> or in keyword.
+            To check if any <emphasis>key</emphasis> is there in the dictionary or not you can use <emphasis>in</emphasis> keyword.
         </para>
-<screen><![CDATA[>>> data.has_key('Soumya')
-False
->>> 'Soumya' in data
+<screen><![CDATA[>>> 'Soumya' in data
 False
 ]]>
 </screen>
@@ -375,14 +373,14 @@ Enter the name of the student 1: Babai
 Enter marks of Physics: 12
 Enter marks of Maths: 45
 Enter marks of History: 40
-Enter the name of the student 2: Ria
-Enter marks of Physics: 89
+Enter the name of the student 2: Tesla
+Enter marks of Physics: 99
 Enter marks of Maths: 98
-Enter marks of History: 40
+Enter marks of History: 99
 Babai 's  total marks 97
 Babai failed :(
-Ria 's  total marks 227
-Ria passed :)
+Tesla 's  total marks 296
+Tesla passed :)
 ]]>
 </screen>
 	</section>
