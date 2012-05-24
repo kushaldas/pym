@@ -10,9 +10,7 @@
 	
 	<section id="pythonforyouandme-DataStructure-lists">
 		<title>Lists</title>
-<screen>
-<![CDATA[
->>> a = [23, 45, 1, -3434, 43624356, 234]
+<screen><![CDATA[>>> a = [23, 45, 1, -3434, 43624356, 234]
 >>> a.append(45)
 >>> a
 [23, 45, 1, -3434, 43624356, 234, 45]
@@ -21,9 +19,7 @@
 		<para>
 			At first we created a list <emphasis>a</emphasis>. Then to add <emphasis>45</emphasis> at the end of the list we call <emphasis>a.append(45)</emphasis> method. You can see that <emphasis>45</emphasis> added at the end of the list. Sometimes it may require to insert data at any place within the list, for that we have <emphasis>insert()</emphasis> method.
 		</para>
-<screen>
-<![CDATA[
->>> a.insert(0, 1) # 1 added at the 0th position of the list
+<screen><![CDATA[>>> a.insert(0, 1) # 1 added at the 0th position of the list
 >>> a
 [1, 23, 45, 1, -3434, 43624356, 234, 45]
 >>> a.insert(0, 111)
@@ -34,18 +30,14 @@
         <para>
             <emphasis>count(s)</emphasis> will return you number of times <emphasis>s</emphasis> is in the list. Here we are going to check how many times <emphasis>45</emphasis> is there in the list.
         </para>
-<screen>
-<![CDATA[
->>> a.count(45)
+<screen><![CDATA[>>> a.count(45)
 2
 ]]>
 </screen>
         <para>
             If you want to any particular value from the list you have to use <emphasis>remove()</emphasis> method.
         </para>
-<screen>
-<![CDATA[
->>> a.remove(234)
+<screen><![CDATA[>>> a.remove(234)
 >>> a
 [111, 1, 23, 45, 1, -3434, 43624356, 45]
 ]]>
@@ -53,9 +45,7 @@
         <para>
             Now to reverse the whole list 
         </para>
-<screen>
-<![CDATA[
->>> a.reverse()
+<screen><![CDATA[>>> a.reverse()
 >>> a
 [45, 43624356, -3434, 1, 45, 23, 1, 111]
 ]]>
@@ -63,9 +53,7 @@
         <para>
             We can store anything in the list, so first we are going to add another list  <emphasis>b </emphasis> in  <emphasis>a </emphasis>, then we will learn how to add the values of  <emphasis>b </emphasis> into  <emphasis>a </emphasis>.
         </para>
-<screen>
-<![CDATA[
->>> b = [45, 56, 90]
+<screen><![CDATA[>>> b = [45, 56, 90]
 >>> a.append(b)
 >>> a
 [45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90]]
@@ -81,34 +69,28 @@
         <para>
             Above you can see how we used <emphasis>a.extend()</emphasis> method to extend the list. To sort any list we have <emphasis>sort()</emphasis> method.
         </para>
-<screen>
-<![CDATA[
->>> a.sort()
+<screen><![CDATA[>>> a.sort()
 >>> a
 [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356, [45, 56, 90]]
 ]]>
-</screen>    
+</screen>
         <para>
             You can also delete element at any particular position of the list using the del keyword.
         </para>
-<screen>
-<![CDATA[
->>> del a[-1]
+<screen><![CDATA[>>> del a[-1]
 >>> a
 [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
 ]]>
 </screen>
-        
+
 	</section>
-	
+
 	<section id="pythonforyouandme-DataStructure-stackqueue">
 		<title>Using lists as stack and queue</title>
 		<para>
 			Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you entered the last marble. To achieve the same in code
 		</para>
-<screen>
-<![CDATA[
->>> a
+<screen><![CDATA[>>> a
 [1, 2, 3, 4, 5, 6]
 >>> a.pop()
 6
@@ -124,16 +106,14 @@
 >>> a
 [1, 2, 34)
 ]]>
-</screen>		
+</screen>
         <para>
             We learned a new method above <emphasis>pop()</emphasis>. <emphasis>pop(i)</emphasis> will take out the ith data from the list.
         </para>
         <para>
             In our daily life we have to encounter queues many times, like in ticket counters or in library or in the billing section of any supermarket. Queue is the data structure where you can append more data at the end and take out data from the beginning. That is why it is known as FIFO (First In First Out).
         </para>
-<screen>
-<![CDATA[
->>> a = [1, 2, 3, 4, 5]
+<screen><![CDATA[>>> a = [1, 2, 3, 4, 5]
 >>> a.append(1)
 >>> a
 [1, 2, 3, 4, 5, 1]
@@ -147,7 +127,7 @@
 </screen>
         <para>
             To take out the first element of the list we are using <emphasis>a.pop(0)</emphasis>.
-        </para>     
+        </para>
 	</section>
 
 	<section id="pythonforyouandme-DataStructure-listcomprehensions">
@@ -158,9 +138,7 @@
 		<para>
 		    For example if we want to make a list out of the square values of another list, then
 		</para>
-<screen>
-<![CDATA[
->>> a = [1, 2, 3]
+<screen><![CDATA[>>> a = [1, 2, 3]
 >>> [x ** 2 for x in a]
 [1, 4, 9]
 >>> z = [x + 1 for x in [x ** 2 for x in a]]
@@ -179,9 +157,7 @@
 		<para>
 			Tuples are data separated by comma.
 		</para>
-<screen>
-<![CDATA[
->>> a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'
+<screen><![CDATA[>>> a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'
 >>> a
 ('Fedora', 'Debian', 'Kubuntu', 'Pardus')
 >>> a[1]
@@ -195,9 +171,7 @@ Fedora Debian Kubuntu Pardus
         <para>
             You can also unpack values of any tuple in to variables, like
         </para>
-<screen>
-<![CDATA[
->>> divmod(15,2)
+<screen><![CDATA[>>> divmod(15,2)
 (7, 1)
 >>> x, y = divmod(15,2)
 >>> x
@@ -209,9 +183,7 @@ Fedora Debian Kubuntu Pardus
         <para>
             Tuples are immutable, that means you can not del/add/edit any value inside the tuple. Here is another example
         </para>
-<screen>
-<![CDATA[
->>> a = (1, 2, 3, 4)
+<screen><![CDATA[>>> a = (1, 2, 3, 4)
 >>> del a[0]
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
@@ -219,14 +191,12 @@ TypeError: 'tuple' object doesn't support item deletion
 ]]>
 </screen>
         <para>
-            Above you can see python is giving error when we are trying to delete a value in the tuple. 
-        </para>  
+            Above you can see python is giving error when we are trying to delete a value in the tuple.
+        </para>
         <para>
             To create a tuple which contains only one value you have to type a trailing comma.
         </para>
-<screen>
-<![CDATA[
->>> a = (123)
+<screen><![CDATA[>>> a = (123)
 >>> a
 123
 >>> type(a)
@@ -237,13 +207,11 @@ TypeError: 'tuple' object doesn't support item deletion
 >>> type(a)
 <type 'tuple'>
 ]]>
-</screen>    
+</screen>
         <para>
             Using the buitin function <emphasis>type()</emphasis> you can know the data type of any variable. Remember the <emphasis>len()</emphasis> function we used to find the length of any sequence ?
         </para>
-<screen>
-<![CDATA[
->>> type(len)
+<screen><![CDATA[>>> type(len)
 <type 'bulletin_function_or_method'>
 ]]>
 </screen>
@@ -252,21 +220,17 @@ TypeError: 'tuple' object doesn't support item deletion
 	<section id="pythonforyouandme-DataStructure-sets">
 		<title>Sets</title>
 		<para>
-			Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets. 
+			Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets.
 		</para>
-<screen>
-<![CDATA[
->>> a = set('abcthabcjwethddda')
+<screen><![CDATA[>>> a = set('abcthabcjwethddda')
 >>> a
 set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])
 ]]>
-</screen>		
+</screen>
         <para>
             And some examples of the set operations
         </para>
-<screen>
-<![CDATA[
->>> a = set('abracadabra')
+<screen><![CDATA[>>> a = set('abracadabra')
 >>> b = set('alacazam')
 >>> a                                  # unique letters in a
 set(['a', 'r', 'b', 'c', 'd'])
@@ -279,19 +243,17 @@ set(['a', 'c'])
 >>> a ^ b                              # letters in a or b but not both
 set(['r', 'd', 'b', 'm', 'z', 'l'])
 ]]>
-</screen>        
+</screen>
         <para>
             To add or pop values from a set
         </para>
-<screen>
-<![CDATA[
->>> a
+<screen><![CDATA[>>> a
 set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])
 >>> a.add('p')
 >>> a
 set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])
 ]]>
-</screen>        
+</screen>
 	</section>
 
 	<section id="pythonforyouandme-DataStructure-dictionaries">
@@ -299,41 +261,33 @@ set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])
 		<para>
 			Dictionaries are unordered set of <emphasis>key: value</emphasis> pairs where keys are unique. We declare dictionaries using {} braces. We use dictionaries to store data for any particular key and then retrieve them.
 		</para>
-<screen>
-<![CDATA[
->>> data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}
+<screen><![CDATA[>>> data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}
 >>> data
 {'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian'}
 >>> data['kart_']
 'Debian'
 ]]>
-</screen>	
+</screen>
         <para>
-            We can add more data to it by simply 
+            We can add more data to it by simply
         </para>
-<screen>
-<![CDATA[
->>> data['parthan'] = 'Ubuntu'
+<screen><![CDATA[>>> data['parthan'] = 'Ubuntu'
 >>> data
 {'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
 ]]>
-</screen>        	
+</screen>
         <para>
                 To delete any particular <emphasis>key:value</emphasis> pair
         </para>
-<screen>
-<![CDATA[
->>> del data['kushal']
+<screen><![CDATA[>>> del data['kushal']
 >>> data
 {'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'
 ]]>
-</screen>        
+</screen>
         <para>
             To check if any <emphasis>key</emphasis> is there in the dictionary or not you can use <emphasis>has_key()</emphasis> or in keyword.
         </para>
-<screen>
-<![CDATA[
->>> data.has_key('Soumya')
+<screen><![CDATA[>>> data.has_key('Soumya')
 False
 >>> 'Soumya' in data
 False
@@ -345,18 +299,14 @@ False
         <para>
             <emphasis>dict()</emphasis> can create dictionaries from tuples of <emphasis>key,value</emphasis> pair.
         </para>
-<screen>
-<![CDATA[
->>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))
+<screen><![CDATA[>>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))
 {'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}
 ]]>
 </screen>
         <para>
             If you want to loop through a dict use <emphasis>iteritems()</emphasis> method.
-        </para>        
-<screen>
-<![CDATA[
->>> data
+        </para>
+<screen><![CDATA[>>> data
 {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
 >>> for x, y in data.iteritems():
 ...     print "%s uses %s" % (x, y)
@@ -370,22 +320,18 @@ parthan uses Ubuntu
         <para>
             If you want to loop through a list (or any sequence) and get iteration number at the same time you have to use <emphasis>enumerate()</emphasis>.
         </para>
-<screen>
-<![CDATA[
->>> for i, j in enumerate(['a', 'b', 'c']):
+<screen><![CDATA[>>> for i, j in enumerate(['a', 'b', 'c']):
 ...     print i, j
 ...
 0 a
 1 b
 2 c
 ]]>
-</screen>        
+</screen>
         <para>
             You may also need to iterate through two sequences same time, for that use <emphasis>zip()</emphasis> function.
-        </para>    
-<screen>
-<![CDATA[
->>> a = ['Pradeepto', 'Kushal']
+        </para>
+<screen><![CDATA[>>> a = ['Pradeepto', 'Kushal']
 >>> b = ['OpenSUSE', 'Fedora']
 >>> for x, y in zip(a, b):
 ...     print "%s uses %s" % (x, y)
@@ -393,7 +339,7 @@ parthan uses Ubuntu
 Pradeepto uses OpenSUSE
 Kushal uses Fedora
 ]]>
-</screen>        
+</screen>
 	</section>
 
     <section id="pythonforyouandme-DataStructure-studentspy">
@@ -401,9 +347,7 @@ Kushal uses Fedora
 		<para>
 			In this example , you have to take number of students as input , then ask marks for three subjects as 'Physics', 'Maths', 'History', if the total number for any student is less 120 then print he failed, or else say passed.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+ <programlisting language="Python"><![CDATA[#!/usr/bin/env python
 n = int(raw_input("Enter the number of students:"))
 data = {} # here we will store the data
 languages = ('Physics', 'Maths', 'History') #all languages
@@ -421,13 +365,11 @@ for x, y in data.iteritems():
     else:
         print "%s passed :)" % y
 ]]>
-</screen>		
+</programlisting>
         <para>
             The output
         </para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./students.py
+<screen><![CDATA[[kd@kdlappy book]$ ./students.py
 Enter the number of students:2
 Enter the name of the student 1: Babai
 Enter marks of Physics: 12
@@ -442,17 +384,15 @@ Babai failed :(
 Ria 's  total marks 227
 Ria passed :)
 ]]>
-</screen>        
-	</section>	
-	
+</screen>
+	</section>
+
 	<section id="pythonforyouandme-DataStructure-matrixmulpy">
 		<title>matrixmul.py</title>
 		<para>
 			In this example we will multiply two matrix's. First we will take input the number of rows/columns in the matrix (here we assume we are using n x n matrix). Then values of the matrix's.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+ <programlisting language="Python"><![CDATA[#!/usr/bin/env python
 n = int(raw_input("Enter the value of n: "))
 print "Enter values for the Matrix A"
 a = []
@@ -473,13 +413,11 @@ for x in c:
     print ""
 print "-" * 10 * n
 ]]>
-</screen>		
+</programlisting>
 	    <para>
 	    The output
 	    </para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./matrixmul.py
+<screen><![CDATA[[kd@kdlappy book]$ ./matrixmul.py
 Enter the value of n: 3
 Enter values for the Matrix A
 1 2 3
@@ -496,7 +434,7 @@ After matrix multiplication
    49    32     9
 ------------------------------
 ]]>
-</screen>	    
+</screen>
 	    <para>
 	        Here we have used list comprehensions couple of times. <emphasis>[int(x) for x in raw_input("").split(" ")]</emphasis> here first it takes the input as string by <emphasis>raw_input()</emphasis>, then split the result by " ", then for each value create one int. We are also using <emphasis>[a[i][j] * b[j][i] for j in range(0,n)]</emphasis> to get the resultant row in a single line.
 	    </para>

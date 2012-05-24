@@ -5,45 +5,34 @@
 <chapter id="pythonforyouandme-Functions">
 	<title>Functions</title>
 	<para>
-		Reusing the same code is required many times within a same program. Functions help us to do so. We write the things we have to do repeatedly in a function then call it where ever required. We already saw build in functions like <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis>. 
+		Reusing the same code is required many times within a same program. Functions help us to do so. We write the things we have to do repeatedly in a function then call it where ever required. We already saw build in functions like <emphasis>len()</emphasis>, <emphasis>divmod()</emphasis>.
 	</para>
 	<section id="pythonforyouandme-Functions-defining">
 		<title>Defining a function</title>
 		<para>
 			We use <emphasis>def</emphasis> keyword to define a function. general syntax is like
 		</para>
-<screen>
-<![CDATA[
-def functionname(params):
+<screen><![CDATA[def functionname(params):
     statement1
-    statement2
-]]>
+    statement2]]>
 </screen>
 		<para>
 			Let us write a function which will take two integers as input and then return the sum.
 		</para>
-<screen>
-<![CDATA[
->>> def sum(a, b):
-...     return a + b
-]]>
+<screen><![CDATA[>>> def sum(a, b):
+...     return a + b]]>
 </screen>
 		<para>
 			In the second line with the <emphasis>return</emphasis> keyword, we are sending back the value of <emphasis>a + b</emphasis> to the caller. You must call it like
 		</para>
-<screen>
-<![CDATA[
->>> res = sum(234234, 34453546464)
+<screen><![CDATA[>>> res = sum(234234, 34453546464)
 >>> res
-34453780698L
-]]>
+34453780698L]]>
 </screen>
 		<para>
 			Remember the palindrome program we wrote in the last chapter. Let us write a function which will check if a given string is palindrome or not, then return <emphasis>True</emphasis> or <emphasis>False</emphasis>.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 def palindrome(s):
     z = s
     z = [x for x in z]
@@ -56,21 +45,19 @@ s = raw_input("Enter a string: ")
 if palindrome(s):
     print "Yay a palindrome"
 else:
-    print "Oh no, not a palindrome"
-]]>
-</screen>
+    print "Oh no, not a palindrome"]]>
+</programlisting>
 		<para>
 			Now run the code :)
 		</para>
 	</section>
-	
+
 	<section id="pythonforyouandme-Functions-localglobal">
 		<title>Local and global variables</title>
 		<para>
 			To understand local and global variables we will go through two examples.
 		</para>
-<screen>
-<![CDATA[
+<programlisting language="Python"><![CDATA[
 #!/usr/bin/env python
 def change(b):
     a = 90
@@ -79,24 +66,18 @@ a = 9
 print "Before the function call ", a
 print "inside change function",
 change(a)
-print "After the function call ", a
-]]>
-</screen>
+print "After the function call ", a]]>
+</programlisting>
 		<para>The output</para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./local.py
+<screen><![CDATA[[kd@kdlappy book]$ ./local.py
 Before the function call  9
 inside change function 90
-After the function call  9
-]]>
+After the function call  9]]>
 </screen>
 		<para>
 			First we are assigning <emphasis>9</emphasis> to <emphasis>a</emphasis>, then calling change function, inside of that we are assigning <emphasis>90</emphasis> to <emphasis>a</emphasis> and printing <emphasis>a</emphasis>. After the function call we are again printing the value of <emphasis>a</emphasis>. When we are writing <emphasis>a = 90</emphasis> inside the function, it is actually creating a new variable called <emphasis>a</emphasis>, which is only available inside the function and will be destroyed after the function finished. So though the name is same for the variable <emphasis>a</emphasis> but they are different in and out side of the function.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 def chvariable ange(b):
     global a
     a = 90
@@ -105,22 +86,19 @@ a = 9
 print "Before the function call ", a
 print "inside change function",
 change(a)
-print "After the function call ", a
-]]>
-</screen>
+print "After the function call ", a]]>
+</programlisting>
 		<para>
 			Here by using global keyword we are telling that <emphasis>a</emphasis> is globally defined, so when we are changing a's value inside the function it is actually changing for the <emphasis>a</emphasis> outside of the function also.
 		</para>
 	</section>
-	
+
 	<section id="pythonforyouandme-Functions-default">
 		<title>Default argument value</title>
 		<para>
-			In a function variables may have default argument values, that means if we don't give any value for that particular variable it will assigned automatically. 
+			In a function variables may have default argument values, that means if we don't give any value for that particular variable it will assigned automatically.
 		</para>
-<screen>
-<![CDATA[
->>> def test(a , b = -99):
+<screen><![CDATA[>>> def test(a , b = -99):
 ...     if a > b:
 ...         return True
 ...     else:
@@ -130,13 +108,10 @@ print "After the function call ", a
 		<para>
 			In the above example we have written <emphasis>b = -99</emphasis> in the function parameter list. That means of no value for <emphasis>b</emphasis> is given then b's value is <emphasis>-99</emphasis>. This is a very simple example of default arguments. You can test the code by
 		</para>
-<screen>
-<![CDATA[
->>> test(12, 23)
+<screen><![CDATA[>>> test(12, 23)
 False
 >>> test(12)
-True
-]]>
+True]]>
 </screen>
 	<important>
 		<title>Important</title>
@@ -147,9 +122,7 @@ True
 	<para>
 		Also remember that default value is evaluated only once, so if you have any mutable object like list it will make a difference. See the next example
 	</para>
-<screen>
-<![CDATA[
->>> def f(a, data=[]):
+<screen><![CDATA[>>> def f(a, data=[]):
 ...     data.append(a)
 ...     return data
 ...
@@ -158,16 +131,13 @@ True
 >>> print f(2)
 [1, 2]
 >>> print f(3)
-[1, 2, 3]
-]]>
+[1, 2, 3]]]>
 </screen>
 	</section>
-	
+
 	<section id="pythonforyouandme-Functions-keyword">
 		<title>Keyword arguments</title>
-<screen>
-<![CDATA[
->>> def func(a, b=5, c=10):
+<screen><![CDATA[>>> def func(a, b=5, c=10):
 ...     print 'a is', a, 'and b is', b, 'and c is', c
 ...
 >>> func(12, 24)
@@ -175,20 +145,16 @@ a is 12 and b is 24 and c is 10
 >>> func(12, c = 24)
 a is 12 and b is 5 and c is 24
 >>> func(b=12, c = 24, a = -1)
-a is -1 and b is 12 and c is 24
-]]>
+a is -1 and b is 12 and c is 24]]>
 </screen>
 		<para>
 			In the above example you can see we are calling the function with variable names, like <emphasis>func(12, c = 24)</emphasis>, by that we are assigning <emphasis>24</emphasis> to <emphasis>c</emphasis> and <emphasis>b</emphasis> is getting its default value. Also remember that you can not have without keyword based argument after a keyword based argument. like
 		</para>
-<screen>
-<![CDATA[
->>> def func(a, b=13, v):
+<screen><![CDATA[>>> def func(a, b=13, v):
 ...     print a, b, v
 ...
   File "<stdin>", line 1
-SyntaxError: non-default argument follows default argument
-]]>
+SyntaxError: non-default argument follows default argument]]>
 </screen>
 	</section>
 

@@ -161,7 +161,7 @@ help> modules
     </para>    
 <screen>
 <![CDATA[>>> os.getcwd()
-'/home/kdas'
+'/home/kushal'
 >>> os.chdir('/tmp')
 >>> os.getcwd()
 '/tmp'

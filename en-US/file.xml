@@ -20,28 +20,21 @@
 		<para>
 			The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file
 		</para>
-<screen>
-<![CDATA[
->>> f = open("love.txt")
+<screen><![CDATA[>>> f = open("love.txt")
 >>> f
-<open file 'love.txt', mode 'r' at 0xb7f2d968>
-]]>
+<open file 'love.txt', mode 'r' at 0xb7f2d968>]]>
 </screen>
 	</section>
-	
+
 	<section id="pythonforyouandme-File-closing">
 		<title>Closing a file</title>
                 <para>
                 After opening a file one should always close the opened file. We use method <emphasis>close()</emphasis> for this.
                 </para>
-<screen>
-<![CDATA[
->>> f = open("love.txt")
+<screen><![CDATA[>>> f = open("love.txt")
 >>> f
 <open file 'love.txt', mode 'r' at 0xb7f2d968>
->>> f.close()
-
-]]>
+>>> f.close()]]>
 </screen>
         <important>
             <title>Important</title>
@@ -63,117 +56,91 @@ Because
 		<para>
 			To read the whole file at once use the <emphasis>read()</emphasis> method.
 		</para>
-<screen>
-<![CDATA[
->>> f = open("sample.txt")
+<screen><![CDATA[>>> f = open("sample.txt")
 >>> f.read()
-'I love Python\nPradeepto loves KDE\nSankarshan loves Openoffice\n'
-]]>
+'I love Python\nPradeepto loves KDE\nSankarshan loves Openoffice\n']]>
 </screen>
 		<para>
 			If you call <emphasis>read()</emphasis> again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
 		</para>
-<screen>
-<![CDATA[
->>> f = open("sample.txt")
+<screen><![CDATA[>>> f = open("sample.txt")
 >>> f.readline()
 'I love Python\n'
 >>> f.readline()
-'Pradeepto loves KDE\n'
-]]>
+'Pradeepto loves KDE\n']]>
 </screen>
 		<para>
 			To read all the all the lines in a list we use <emphasis>readlines()</emphasis> method.
 		</para>
-<screen>
-<![CDATA[
->>> f = open("sample.txt")
+<screen><![CDATA[>>> f = open("sample.txt")
 >>> f.readlines()
-['I love Python\n', 'Pradeepto loves KDE\n', 'Sankarshan loves Openoffice\n']
-]]>
+['I love Python\n', 'Pradeepto loves KDE\n', 'Sankarshan loves Openoffice\n']]]>
 </screen>
 		<para>
 			You can even loop through the lines in a file object.
 		</para>
-<screen>
-<![CDATA[
->>> f = open("sample.txt")
+<screen><![CDATA[>>> f = open("sample.txt")
 >>> for x in f:
 ...     print x,
 ...
 I love Python
 Pradeepto loves KDE
-Sankarshan loves Openoffice
-]]>
+Sankarshan loves Openoffice]]>
 </screen>
 		<para>
 			Let us write a program which will take the file name as the input from the user and show the content of the file in the console.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 name = raw_input("Enter the file name: ")
 f = open(name)
 print f.read()
-f.close()
-]]>
-</screen>
+f.close()]]>
+</programlisting>
 		<para>
 			In the last line you can see that we closed the file object with the help of close() method.
 		</para>
 		<para>
 			The output
 		</para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./showfile.py
+<screen><![CDATA[[kd@kdlappy book]$ ./showfile.py
 Enter the filename: sample.txt
 I love Python
 Pradeepto loves KDE
-Sankarshan loves Openoffice
-]]>
+Sankarshan loves Openoffice]]>
 </screen>
 	</section>
-	
+
 	<section id="pythonforyouandme-File-writing">
 		<title>Writing in a file</title>
 		<para>
 			Let us open a file then we will write some random text into it by using the write() method.
 		</para>
-<screen>
-<![CDATA[
->>> f = open("ircnicks.txt", 'w')
+<screen><![CDATA[>>> f = open("ircnicks.txt", 'w')
 >>> f.write('powerpork\n')
 >>> f.write('indrag\n')
 >>> f.write('mishti\n')
 >>> f.write('sm|CPU')
->>> f.close()
-]]>
+>>> f.close()]]>
 </screen>
 		<para>
 			Now read the file we just created
 		</para>
-<screen>
-<![CDATA[
->>> f = open('ircnicks.txt')
+<screen><![CDATA[>>> f = open('ircnicks.txt')
 >>> s = f.read()
 >>> print s
 powerpork
 indrag
 mishti
-sm|CPU
-]]>
+sm|CPU]]>
 </screen>
 	</section>
-	
+
 	<section id="pythonforyouandme-File-copyfile">
 		<title>copyfile.py</title>
 		<para>
 			In this example we will copy a given file to another file.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 import sys
 if len(sys.argv) < 3:
     print "Wrong parameter"
@@ -184,43 +151,36 @@ s = f1.read()
 f1.close()
 f2 = open(sys.argv[2], 'w')
 f2.write(s)
-f2.close()
-]]>
-</screen>
+f2.close()]]>
+</programlisting>
 		<para>
 			You can see we used a new module here <emphasis>sys</emphasis>. <emphasis>sys.argv</emphasis> contains all command line parameters. Remember <emphasis>cp</emphasis> command in shell, after <emphasis>cp</emphasis> we type first the file to be copied and then the new file name.
 		</para>
 		<para>
 			The first value in <emphasis>sys.argv</emphasis> is the name of the command itself.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"><![CDATA[#!/usr/bin/env python
 import sys
 print "First value", sys.argv[0]
 print "All values"
 for i, x  in enumerate(sys.argv):
-    print i, x
-]]>
-</screen>
+    print i, x]]>
+</programlisting>
 		<para>
 			The output
 		</para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./argvtest.py Hi there
+<screen><![CDATA[[kd@kdlappy book]$ ./argvtest.py Hi there
 First value ./argvtest.py
 All values
 0 ./argvtest.py
 1 Hi
-2 there
-]]>
+2 there]]>
 </screen>
 		<para>
 			Here we used a new function <emphasis>enumerate(iterableobject)</emphasis>, which returns the index number and the value from the iterable object.
 		</para>
 	</section>
-	
+
 	<section id="pythonforyouandme-File-random">
 		<title>Random seeking in a file</title>
 		<para>
@@ -241,9 +201,7 @@ Note that not all file objects are speakable.
 		<para>
 			Let us see one example
 		</para>
-<screen>
-<![CDATA[
->>> f = open('tempfile', 'w')
+<screen><![CDATA[>>> f = open('tempfile', 'w')
 >>> f.write('0123456789abcdef')
 >>> f.close()
 >>> f = open('tempfile')
@@ -256,8 +214,7 @@ Note that not all file objects are speakable.
 '5'
 >>> f.seek(-3, 2) # goto 3rd byte from the end
 >>> f.read() #Read till the end of the file
-'def'
-]]>
+'def']]>
 </screen>
 	</section>
 	<section id="pythonforyouandme-File-count">
