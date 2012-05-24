@@ -16,7 +16,7 @@
                 You can find the name of the module by accessing the <emphasis>__name__</emphasis> variable. It is a global variable.
                 </para>
                 <para>
-                Now we are going to see how modules work. Create a file called greetings.py. Content of the file is given bellow.
+                Now we are going to see how modules work. Create a file called bars.py. Content of the file is given bellow.
                 </para>
 <screen>
 <![CDATA[
