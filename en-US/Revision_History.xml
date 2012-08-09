@@ -3,8 +3,22 @@
 ]>
 
 <revhistory>
+		<revision>
+		<revnumber>0.2-1</revnumber>
+		<date></date>
+		<author>
+			<firstname>Kushal</firstname>
+			<surname>Das</surname>
+			<email>kushal@fedoraproject.org</email>
+		</author>
+		<revdescription>
+			<simplelist>
+				<member>Work in progress</member>
+			</simplelist>
+		</revdescription>
+	</revision>
 	<revision>
-		<revnumber>0.1</revnumber>
+		<revnumber>0.1-1</revnumber>
 		<date></date>
 		<author>
 			<firstname>Kushal</firstname>
