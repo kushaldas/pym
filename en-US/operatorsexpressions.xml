@@ -12,60 +12,55 @@
 		<para>
 			Operators are the symbols which tells the python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:
 		</para>
-<screen>
-<![CDATA[
->>> 2 + 3
+<programlisting language="Python">        
+<![CDATA[>>> 2 + 3
 5
 >>> 23 - 3
 20
 >>> 22.0 / 12
 1.8333333333333333
 ]]>
-</screen>
+</programlisting>
         <para>
             To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator
         </para>
-<screen>
-<![CDATA[
->>> 14 % 3
+<programlisting language="Python"> 
+<![CDATA[>>> 14 % 3
 2
 ]]>
-</screen>  
+</programlisting>  
 	</section>
 	<section id="pythonforyouandme-Operators-Expressions-integer-operations">
 		<title>Example of integer arithmetic</title>
 		<para>
 			The code
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 days = int(raw_input("Enter days: "))
 months = days / 30
 days = days % 30
 print "Months = %d Days = %d" % (months, days)
 ]]>
-</screen>
+</programlisting>
         <para>
             The output
         </para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./integer.py
+<programlisting language="Python"> 
+<![CDATA[$ ./integer.py
 Enter days: 265
 Months = 8 Days = 25
 ]]>
-</screen> 
+</programlisting> 
         <para>
             In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way
         </para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 days = int(raw_input("Enter days: "))
 print "Months = %d Days = %d" % (divmod(days, 30))
 ]]>
-</screen> 
+</programlisting> 
         <para>
             The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2.
         </para>
@@ -89,9 +84,8 @@ print "Months = %d Days = %d" % (divmod(days, 30))
     		<para>
     		    Some examples
     		</para>
-<screen>
-<![CDATA[
->>> 1 < 2
+<programlisting language="Python"> 
+<![CDATA[>>> 1 < 2
 True
 >>> 3 > 34
 False
@@ -100,27 +94,25 @@ False
 >>> 34 != 323
 True
 ]]>
-</screen>    		
+</programlisting>    		
     	<para>
     	    <emphasis>//</emphasis> operator gives the floor division result
     	</para>
-<screen>
-<![CDATA[
->>> 4.0 // 3
+<programlisting language="Python"> 
+<![CDATA[>>> 4.0 // 3
 1.0
 >>> 4.0 / 3
 1.3333333333333333
 ]]>
-</screen>    	
-    	</section>
+</programlisting>    	
+    </section>
 	<section id="pythonforyouandme-Operators-Expressions-logical-operators">
 		<title>Logical Operators</title>
 		<para>
 			To do logical AND , OR we use <emphasis>and</emphasis> ,<emphasis> or</emphasis> keywords. <emphasis>x and y</emphasis> returns <emphasis>False</emphasis> if <emphasis>x</emphasis> is <emphasis>False</emphasis> else it returns evaluation of <emphasis>y</emphasis>. If <emphasis>x</emphasis> is <emphasis>True</emphasis>, it returns <emphasis>True</emphasis>.
 		</para>
-<screen>
-<![CDATA[
->>> 1 and 4
+<programlisting language="Python"> 
+<![CDATA[>>> 1 and 4
 4
 >>> 1 or 4
 1
@@ -129,7 +121,7 @@ True
 >>> 0 or 4
 4
 ]]>
-</screen>
+</programlisting>
     </section>
 
 	<section id="pythonforyouandme-Operators-Expressions-shorthand-operator">
@@ -137,9 +129,8 @@ True
 		<para>
 			<emphasis>x op = expression</emphasis> is the syntax for shorthand operators. It will be evaluated like <emphasis>x = x op expression</emphasis> , Few examples are 
 		</para>
-<screen>
-<![CDATA[
->>> a = 12
+<programlisting language="Python"> 
+<![CDATA[>>> a = 12
 >>> a += 13
 >>> a
 25
@@ -150,48 +141,44 @@ True
 >>> a
 840
 ]]>
-</screen>
+</programlisting>
         <para>
             shorthand.py example
         </para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 N = 100
 a = 2
 while a < N:
     print "%d" % a
     a *= a
 ]]>
-</screen>
+</programlisting>
         <para>
             The output
         </para>
- <screen>
-<![CDATA[
-[kd@kdlappy book]$ ./shorthand.py
+ <programlisting language="Python"> 
+<![CDATA[$ ./shorthand.py
 2
 4
 16
 ]]>
-</screen>     
+</programlisting>     
 	</section>
 	<section id="pythonforyouandme-Operators-Expressions-expressions">
 		<title>Expressions</title>
 		<para>
 			Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like
 		</para>
-<screen>
-<![CDATA[
-a = 234 * (45 - 56.0 / 34)
+<programlisting language="Python"> 
+<![CDATA[a = 234 * (45 - 56.0 / 34)
 ]]>
-</screen>
+</programlisting>
         <para>
             One example code used to show expressions
         </para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 a = 9
 b = 12
 c = 3
@@ -202,31 +189,29 @@ print "X = ", x
 print "Y = ", y
 print "Z = ", z
 ]]>
-</screen>
+</programlisting>
         <para>
             The output
         </para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./evaluationexp.py
+<programlisting language="Python"> 
+<![CDATA[$ ./evaluationexp.py
 X =  10
 Y =  7
 Z =  4
 ]]>
-</screen>
+</programlisting>
         <para>
             At first <emphasis>x</emphasis> is being calculated. The steps are like this
         </para>
-<screen>
-<![CDATA[
-9 - 12 / 3 + 3 * 2 -1
+<programlisting language="Python"> 
+<![CDATA[9 - 12 / 3 + 3 * 2 -1
 9 - 4 + 3 * 2 - 1
 9 - 4 + 6 - 1
 5 + 6 -1
 11 - 1
 10
 ]]>
-</screen>
+</programlisting>
         <para>
             Now for <emphasis>y</emphasis> and <emphasis>z</emphasis> we have parentheses, so the expressions evaluated in different way. Do the calculation yourself to check them.
         </para>
@@ -235,37 +220,34 @@ Z =  4
 		<title>Type Conversions</title>
 		<para>
 			We have to do the type conversions manually. Like </para>
-<screen>
-<![CDATA[
-float(string) -> float value
+<programlisting language="Python"> 
+<![CDATA[float(string) -> float value
 int(string) -> integer value
 str(integer) or str(float) -> string representation 
 >>> a = 8.126768
 >>> str(a)
 '8.126768'
 ]]>
-</screen>
+</programlisting>
 	</section>
 		<section id="pythonforyouandme-Operators-Expressions-evaluateequpy">
 		<title>evaluateequ.py</title>
 		<para>
 			This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 sum = 0.0
 for i in range(1, 11):
     sum += 1.0 / i
     print "%2d %6.4f" % (i , sum)
 ]]>
-</screen>
+</programlisting>
 		<para>
 			The output
 		</para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./evaluateequ.py
+<programlisting language="Python"> 
+<![CDATA[$ ./evaluateequ.py
  1 1.0000
  2 1.5000
  3 1.8333
@@ -277,7 +259,7 @@ for i in range(1, 11):
  9 2.8290
 10 2.9290
 ]]>
-</screen>
+</programlisting>
 
         <para>
             In the line <emphasis>sum += 1.0 / i</emphasis> what is actually happening is <emphasis>sum = sum + 1.0 / i</emphasis>.
@@ -288,9 +270,8 @@ for i in range(1, 11):
 		<para>
 			This is a program to evaluate the quadratic equation
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 import math
 a = int(raw_input("Enter value of a: "))
 b = int(raw_input("Enter value of b: "))
@@ -304,7 +285,7 @@ else:
 print "Root 1 = ", root1
 print "Root 2 = ", root2
 ]]>
-</screen>
+</programlisting>
     </section>
 
     <section id="pythonforyouandme-Operators-Expressions-salesmansalarypy">
@@ -312,9 +293,8 @@ print "Root 2 = ", root2
 		<para>
 			In this example we are going to calculate the salary of a camera salesman. His basic salary is 1500, for every camera he will sell he will get 200 and the commission on the month's sale is 2 %. The input will be number of cameras sold and total price of the cameras.
 		</para>
-<screen>
-<![CDATA[
-#!/usr/bin/env python
+<programlisting language="Python"> 
+<![CDATA[#!/usr/bin/env python
 basic_salary = 1500
 bonus_rate = 200
 commision_rate = 0.02
@@ -327,20 +307,19 @@ print "Bonus        = %6.2f" % bonus
 print "Commision    = %6.2f" % commision
 print "Gross salary = %6.2f" % ( basic_salary + bonus + commision)
 ]]>
-</screen>
+</programlisting>
         <para>
             The output
         </para>
-<screen>
-<![CDATA[
-[kd@kdlappy book]$ ./salesmansalary.py
+<programlisting language="Python"> 
+<![CDATA[$ ./salesmansalary.py
 Enter the number of inputs sold: 5
 Enter the total prices: 20450
 Bonus        = 1000.00
 Commision    = 2045.00
 Gross salary = 4545.00
 ]]>
-</screen>
+</programlisting>
     </section>
 
 </chapter>

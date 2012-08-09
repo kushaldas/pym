@@ -74,20 +74,48 @@ Hello World!
             You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
             </para>
         </warning>
+    	<para>
+    		So we can have few basic rules ready for spaces and indentation. 
+
+    		<itemizedlist>
+    			<listitem><para>Use 4 spaces for indentation.</para></listitem>
+    			<listitem><para>Never mix tab and spaces.</para></listitem>
+    			<listitem><para>One blank line between functions.</para></listitem>  
+    			<listitem><para>Two blank lines between classes.</para></listitem>
+    			
+    		</itemizedlist>
+
+    		There are more places where you should be following same type of rules of whitespace, they are like
+
+    		<itemizedlist>
+    			<listitem><para>Add a space after "," in dicts, lists, typles, and argument lists and after ":" in dicts.</para></listitem>
+    			<listitem><para>Spaces around assignments and comparisons (except in argument list)</para></listitem>
+    			<listitem><para>No spaces just inside parentheses.</para></listitem>  
+    		</itemizedlist>
+
+    	</para>
+    	
 	</section>
 	
-        <section id="pythonforyouandme-The-Beginning-comments">
-		<title>Comments</title>
-		<para>
-			Comments are some piece of English text which explains what this code does, we write comments in the code so that is easier for others to  understand. A comment line starts with <emphasis>#</emphasis> , everything after that is ignored as comment, that means they don't effect on the program.
-		</para>
-<screen>
-<![CDATA[
->>> #this is a comment
+<section id="pythonforyouandme-The-Beginning-comments">
+	<title>Comments</title>
+	<para>
+		Comments are some piece of English text which explains what this code does, we write comments in the code so that is easier for others to  understand. A comment line starts with <emphasis>#</emphasis> , everything after that is ignored as comment, that means they don't effect on the program.
+	</para>
+	<screen>
+<![CDATA[>>> #this is a comment
 >>> #the next line will add two numbers
 >>> a = 12 + 34
 >>> print c #this is a comment too :)]]>
-</screen>
+	</screen>
+    <para>
+        Comments are mainly for the people will <emphasis>develop</emphasis> or <emphasis>maintain</emphasis> the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You can also use some standard comments like 
+        <programlisting language="Python" role="PYTHON">
+#FIXME -- fix these code later
+#TODO -- in future you have to do this
+        </programlisting>        
+    </para>
+    
 
 	</section>
         <section id="pythonforyouandme-The-Beginning-modules">
@@ -95,16 +123,14 @@ Hello World!
 		<para>
 			Modules are python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension.. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first.
 		</para>
-<screen>
-<![CDATA[
+<programlisting language="Python" role="PYTHON">
 >>> import math
 >>> print math.e
 2.71828182846
-]]>
-</screen>
-                <para>
-                    We are going to learn more about modules on the Modules chapter.
-                </para>
+</programlisting>
+        <para>
+            We are going to learn more about modules on the Modules chapter.
+        </para>
 	</section>
 
 </chapter>

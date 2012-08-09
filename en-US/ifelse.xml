@@ -12,9 +12,9 @@
 		<para>
 			The syntax looks like
 		</para>
-<screen><![CDATA[if expression:
+<programlisting language="Python"><![CDATA[if expression:
     do this]]>
-</screen>
+</programlisting>
         <para>
             If the value of <emphasis>expression</emphasis> is true (anything other than zero), do the what is written below under indentation. Please remember to give proper indentation, all the lines indented will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not.
         </para>
@@ -26,10 +26,10 @@ if number < 100:
         <para>
             Then we run it
         </para>
-<screen><![CDATA[[kd@kdlappy book]$ ./number100.py
+<programlisting language="Python"><![CDATA[$ ./number100.py
 Enter a number: 12
 The number is less than 100]]>
-</screen>
+</programlisting>
 </section>
 
 	<section id="pythonforyouandme-If-Else-else">
@@ -47,14 +47,14 @@ else:
         <para>
             The output
         </para>
-<screen><![CDATA[[kd@kdlappy book]$ ./number100.py
+<programlisting language="Python"><![CDATA[$ ./number100.py
 Enter a number: 345
 The number is greater than 100]]>
-</screen>
+</programlisting>
         <para>
             Another very basic example
         </para>
-<screen><![CDATA[>>> x = int(raw_input("Please enter an integer: "))
+<programlisting language="Python"><![CDATA[>>> x = int(raw_input("Please enter an integer: "))
 >>> if x < 0:
 ...      x = 0
 ...      print 'Negative changed to zero'
@@ -64,8 +64,28 @@ The number is greater than 100]]>
 ...      print 'Single'
 ... else:
 ...      print 'More']]>
-</screen>
-	</section>
+</programlisting>
+
+    </section>
+    <section id="pythonforyouandme-If-Else-truthtesting">
+        <title>Truth value testing</title>
+        <para>
+            The elegant way to test Truth values is like
+            <programlisting language="Python" role="PYTHON">
+if x:
+    pass
+            </programlisting>        
+        </para> 
+        <warning>
+            <title>Don't do this</title>
+            <para>
+<programlisting language="Python" role="PYTHON">
+if x == True:
+    pass
+</programlisting>        
+            </para>
+        </warning>         
+    </section>
 
 </chapter>
 

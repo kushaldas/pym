@@ -8,8 +8,7 @@
 		Strings are nothing but simple text. In python we declare strings in between "" or '' or ''' ''' or """ """. The examples below will help you to understand sting in a better way.
 	</para>
 <screen>
-<![CDATA[
->>> s = "I am Indian"
+<![CDATA[>>> s = "I am Indian"
 >>> s
 'I am Indian'
 >>> s = 'I am Indian'
@@ -29,8 +28,7 @@ Here is a line
 		Now if you want to multiline strings you have to use triple single/double quotes.
 	</para>
 <screen>
-<![CDATA[
->>> s = """ This is a
+<![CDATA[>>> s = """ This is a
 ... multiline string, so you can
 ... write many lines"""
 >>> print s
@@ -45,8 +43,7 @@ write many lines
 			Every string object is having couple of buildin methods available, we already saw some of them like <emphasis>s.split(" ")</emphasis>.
 		</para>
 <screen>
-<![CDATA[
->>> s = "kushal das"
+<![CDATA[>>> s = "kushal das"
 >>> s.title()
 'Kushal Das' 
 ]]>
@@ -55,8 +52,7 @@ write many lines
 			<emphasis>title()</emphasis> method returns a titlecased version of the string, words start with uppercase characters, all remaining cased characters are lowercase.
 		</para>
 <screen>
-<![CDATA[
->>> z = s.upper()
+<![CDATA[>>> z = s.upper()
 >>> z
 'KUSHAL DAS'
 >>> z.lower()
@@ -67,8 +63,7 @@ write many lines
 			<emphasis>upper()</emphasis> returns a total uppercase version whereas <emphasis>lower()</emphasis> returns a lower case version of the string.
 		</para>
 <screen>
-<![CDATA[
->>> s = "I am A pRoGraMMer"
+<![CDATA[>>> s = "I am A pRoGraMMer"
 >> s.swapcase()
 'i AM a PrOgRAmmER'
 ]]>
@@ -77,8 +72,7 @@ write many lines
 			<emphasis>swapcase()</emphasis> returns the string with case swapped :)
 		</para>
 <screen>
-<![CDATA[
->>> s = "jdwb 2323bjb"
+<![CDATA[>>> s = "jdwb 2323bjb"
 >>> s.isalnum()
 False
 >>> s = "jdwb2323bjb"
@@ -90,8 +84,7 @@ True
 	Because of the space in the first line <emphasis>isalnum()</emphasis> returned <emphasis>False</emphasis> , it checks for all charecters are alpha numeric or not.
 	</para>
 <screen>
-<![CDATA[
->>> s = "SankarshanSir"
+<![CDATA[>>> s = "SankarshanSir"
 >>> s.isalpha()
 True
 >>> s = "Sankarshan Sir"
@@ -103,8 +96,7 @@ False
 	<emphasis>isalpha()</emphasis> checkes for only alphabets.
 	</para>
 <screen>
-<![CDATA[
->>> s = "1234"
+<![CDATA[>>> s = "1234"
 >>> s.isdigit() #To check if all the characters are digits or not
 True
 >>> s = "Fedora9 is coming"
@@ -122,8 +114,7 @@ True
 		To split any string we have <emphasis>split()</emphasis>. It takes a string as an argument , depending on that it will split the main string and returns a list containing splitted strings.
 	</para>
 <screen>
-<![CDATA[
->>> s = "We all love Python"
+<![CDATA[>>> s = "We all love Python"
 >>> s.split(" ")
 ['We', 'all', 'love', 'Python']
 >>> x = "Nishant:is:waiting"
@@ -135,8 +126,7 @@ True
 		The opposite method for <emphasis>split()</emphasis> is <emphasis>join()</emphasis>. It takes a list contains strings as input and join them.
 	</para>
 <screen>
-<![CDATA[
->>> "-".join("GNU/Linux is great".split(" "))
+<![CDATA[>>> "-".join("GNU/Linux is great".split(" "))
 'GNU/Linux-is-great'
 ]]>
 </screen>
@@ -146,13 +136,12 @@ True
 	</section>
 	
 	<section id="pythonforyouandme-Strings-strip">
-		<title>String the strings</title>
+		<title>Strip the strings</title>
 		<para>
 			Strings do have few methods to do striping. The simplest one is <emphasis>strip(chars)</emphasis>. If you provide the chars argument then it will strip any combination of them. By default it strips only whitespace or newline characters.
 		</para>
 <screen>
-<![CDATA[
->>> s = "  abc\n "
+<![CDATA[>>> s = "  abc\n "
 >>> s.strip()
 'abc'
 ]]>
@@ -161,8 +150,7 @@ True
 			You can particularly strip from the left hand or right hand side also using <emphasis>lstrip(chars)</emphasis> or <emphasis>rstrip(chars)</emphasis>.
 		</para>
 <screen>
-<![CDATA[
->>> s = "www.foss.in"
+<![CDATA[>>> s = "www.foss.in"
 >>> s.lstrip("cwsd.")
 'foss.in'
 >>> s.rstrip("cnwdi.")
@@ -177,8 +165,7 @@ True
 			Stings have some methods which will help you in finding text/substring in a string. Examples are given below:
 		</para>
 <screen>
-<![CDATA[
->>> s.find("for")
+<![CDATA[>>> s.find("for")
 7
 >>> s.find("fora")
 -1
@@ -200,8 +187,7 @@ True
 			Palindrome are the kind of strings which are same from left or right whichever way you read them. Example "madam". In this example we will take the word as input from the user and say if it is palindrome or not.
 		</para>
 <screen>
-<![CDATA[
-#!/usr/bin/env python
+<![CDATA[#!/usr/bin/env python
 s = raw_input("Please enter a string: ")
 z = [x for x in s]
 z.reverse()
@@ -215,8 +201,7 @@ else:
 			The output
 		</para>
 <screen>
-<![CDATA[
-[kd@kdlappy book]$ ./palindrome.py
+<![CDATA[[kd@kdlappy book]$ ./palindrome.py
 Please enter a string: madam1
 The string is not a palindrome
 [kd@kdlappy book]$ ./palindrome.py
@@ -231,16 +216,14 @@ The string is a palindrome
 			In this example we will count the number of words in a given line
 		</para>
 <screen>
-<![CDATA[
-#!/usr/bin/env python
+<![CDATA[#!/usr/bin/env python
 s = raw_input("Enter a line: ")
 print "The number of words in the line are %d" % (len(s.split(" ")))
 ]]>
 </screen>
 		<para>The output</para>
 <screen>
-<![CDATA[
-[kd@kdlappy book]$ ./countwords.py
+<![CDATA[[kd@kdlappy book]$ ./countwords.py
 Enter a line: Sayamindu is a great programmer
 The number of words in the line are 5 
 ]]>
