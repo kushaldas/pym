@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -17,13 +17,13 @@ msgstr ""
 msgid "Python for you and me"
 msgstr ""
 
+#. Tag: subtitle
+#, no-c-format
+msgid "A book to learn Python in a quick way"
+msgstr ""
+
 #. Tag: para
 #, no-c-format
 msgid "This book is for the python newbies"
-msgstr ""
-
-#. Tag: phrase
-#, no-c-format
-msgid "Logo"
 msgstr ""
 

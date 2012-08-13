@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -52,14 +52,11 @@ msgstr ""
 msgid "The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"love.txt\")\n"
+msgid "&gt;&gt;&gt; f = open(\"love.txt\")\n"
 "&gt;&gt;&gt; f\n"
 "&lt;open file 'love.txt', mode 'r' at 0xb7f2d968&gt;\n"
-"\n"
 ""
 msgstr ""
 
@@ -73,16 +70,12 @@ msgstr ""
 msgid "After opening a file one should always close the opened file. We use method <emphasis>close()</emphasis> for this."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"love.txt\")\n"
+msgid "&gt;&gt;&gt; f = open(\"love.txt\")\n"
 "&gt;&gt;&gt; f\n"
 "&lt;open file 'love.txt', mode 'r' at 0xb7f2d968&gt;\n"
 "&gt;&gt;&gt; f.close()\n"
-"\n"
-"\n"
 ""
 msgstr ""
 
@@ -121,17 +114,14 @@ msgstr ""
 msgid "To read the whole file at once use the <emphasis>read()</emphasis> method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"sample.txt\")\n"
+msgid "&gt;&gt;&gt; f = open(\"sample.txt\")\n"
 "&gt;&gt;&gt; f.read()\n"
 "'I love Python\n"
 "Pradeepto loves KDE\n"
 "Sankarshan loves Openoffice\n"
 "'\n"
-"\n"
 ""
 msgstr ""
 
@@ -140,18 +130,15 @@ msgstr ""
 msgid "If you call <emphasis>read()</emphasis> again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"sample.txt\")\n"
+msgid "&gt;&gt;&gt; f = open(\"sample.txt\")\n"
 "&gt;&gt;&gt; f.readline()\n"
 "'I love Python\n"
 "'\n"
 "&gt;&gt;&gt; f.readline()\n"
 "'Pradeepto loves KDE\n"
 "'\n"
-"\n"
 ""
 msgstr ""
 
@@ -160,17 +147,14 @@ msgstr ""
 msgid "To read all the all the lines in a list we use <emphasis>readlines()</emphasis> method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"sample.txt\")\n"
+msgid "&gt;&gt;&gt; f = open(\"sample.txt\")\n"
 "&gt;&gt;&gt; f.readlines()\n"
 "['I love Python\n"
 "', 'Pradeepto loves KDE\n"
 "', 'Sankarshan loves Openoffice\n"
 "']\n"
-"\n"
 ""
 msgstr ""
 
@@ -179,18 +163,15 @@ msgstr ""
 msgid "You can even loop through the lines in a file object."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"sample.txt\")\n"
+msgid "&gt;&gt;&gt; f = open(\"sample.txt\")\n"
 "&gt;&gt;&gt; for x in f:\n"
 "...     print x,\n"
 "...\n"
 "I love Python\n"
 "Pradeepto loves KDE\n"
 "Sankarshan loves Openoffice\n"
-"\n"
 ""
 msgstr ""
 
@@ -199,16 +180,13 @@ msgstr ""
 msgid "Let us write a program which will take the file name as the input from the user and show the content of the file in the console."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "name = raw_input(\"Enter the file name: \")\n"
 "f = open(name)\n"
 "print f.read()\n"
 "f.close()\n"
-"\n"
 ""
 msgstr ""
 
@@ -224,14 +202,11 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./showfile.py\n"
+msgid "$ ./showfile.py\n"
 "Enter the filename: sample.txt\n"
 "I love Python\n"
 "Pradeepto loves KDE\n"
 "Sankarshan loves Openoffice\n"
-"\n"
 ""
 msgstr ""
 
@@ -245,20 +220,17 @@ msgstr ""
 msgid "Let us open a file then we will write some random text into it by using the write() method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open(\"ircnicks.txt\", 'w')\n"
+msgid "&gt;&gt;&gt; f = open(\"ircnicks.txt\", 'w')\n"
 "&gt;&gt;&gt; f.write('powerpork\n"
 "')\n"
 "&gt;&gt;&gt; f.write('indrag\n"
 "')\n"
 "&gt;&gt;&gt; f.write('mishti\n"
 "')\n"
-"&gt;&gt;&gt; f.write('sm|CPU')\n"
+"&gt;&gt;&gt; f.write('sankarshan')\n"
 "&gt;&gt;&gt; f.close()\n"
-"\n"
 ""
 msgstr ""
 
@@ -267,18 +239,15 @@ msgstr ""
 msgid "Now read the file we just created"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open('ircnicks.txt')\n"
+msgid "&gt;&gt;&gt; f = open('ircnicks.txt')\n"
 "&gt;&gt;&gt; s = f.read()\n"
 "&gt;&gt;&gt; print s\n"
 "powerpork\n"
 "indrag\n"
 "mishti\n"
-"sm|CPU\n"
-"\n"
+"sankarshan\n"
 ""
 msgstr ""
 
@@ -289,14 +258,12 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "In this example we will copy a given file to another file."
+msgid "In this example we will copy a given text file to another file."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "import sys\n"
 "if len(sys.argv) &lt; 3:\n"
 "    print \"Wrong parameter\"\n"
@@ -308,8 +275,12 @@ msgid "\n"
 "f2 = open(sys.argv[2], 'w')\n"
 "f2.write(s)\n"
 "f2.close()\n"
-"\n"
 ""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "This way of reading file is not always a good idea, a file can be very large to read and fit in the memory. It is always better to read a known size of the file and wirte that to the new file."
 msgstr ""
 
 #. Tag: para
@@ -322,31 +293,25 @@ msgstr ""
 msgid "The first value in <emphasis>sys.argv</emphasis> is the name of the command itself."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "import sys\n"
 "print \"First value\", sys.argv[0]\n"
 "print \"All values\"\n"
 "for i, x  in enumerate(sys.argv):\n"
 "    print i, x\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./argvtest.py Hi there\n"
+msgid "$ ./argvtest.py Hi there\n"
 "First value ./argvtest.py\n"
 "All values\n"
 "0 ./argvtest.py\n"
 "1 Hi\n"
 "2 there\n"
-"\n"
 ""
 msgstr ""
 
@@ -375,14 +340,12 @@ msgstr ""
 msgid "Let us see one example"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; f = open('tempfile', 'w')\n"
+msgid "&gt;&gt;&gt; f = open('/tmp/tempfile', 'w')\n"
 "&gt;&gt;&gt; f.write('0123456789abcdef')\n"
 "&gt;&gt;&gt; f.close()\n"
-"&gt;&gt;&gt; f = open('tempfile')\n"
+"&gt;&gt;&gt; f = open('/tmp/tempfile')\n"
 "&gt;&gt;&gt; f.tell()    #tell us the offset position\n"
 "0L\n"
 "&gt;&gt;&gt; f.seek(5) # Goto 5th byte\n"
@@ -393,7 +356,6 @@ msgid "\n"
 "&gt;&gt;&gt; f.seek(-3, 2) # goto 3rd byte from the end\n"
 "&gt;&gt;&gt; f.read() #Read till the end of the file\n"
 "'def'\n"
-"\n"
 ""
 msgstr ""
 
@@ -404,6 +366,67 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "Let us try to write an application which will count the spaces , tabs, and new lines in any given file."
+msgid "Let us try to write an application which will count the spaces , tabs, and lines in any given file."
+msgstr ""
+
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
+"#!/usr/bin/env python\n"
+"\n"
+"import os\n"
+"import sys\n"
+"\n"
+"\n"
+"def parse_file(path):\n"
+"    \"\"\"\n"
+"    Parses the text file in the given path and returns space, tab &amp; new line\n"
+"    details.\n"
+"\n"
+"    :arg path: Path of the text file to parse\n"
+"\n"
+"    :return: A tuple with count of spacaes, tabs and lines. \n"
+"    \"\"\"\n"
+"    fd = open(path)\n"
+"    i = 0\n"
+"    spaces = 0\n"
+"    tabs = 0\n"
+"    for i,line in enumerate(fd):\n"
+"        spaces += line.count(' ')\n"
+"        tabs += line.count('\\t')\n"
+"    #Now close the open file\n"
+"    fd.close()\n"
+"\n"
+"    #Return the result as a tuple\n"
+"    return spaces, tabs, i + 1\n"
+"\n"
+"def main(path):\n"
+"    \"\"\"\n"
+"    Function which prints counts of spaces, tabs and lines in a file.\n"
+"\n"
+"    :arg path: Path of the text file to parse\n"
+"    :return: True if the file exits or False.\n"
+"    \"\"\"\n"
+"    if os.path.exists(path):\n"
+"        spaces, tabs, lines = parse_file(path)\n"
+"        print \"Spaces %d. tabs %d. lines %d\" % (spaces, tabs, lines)\n"
+"        return True\n"
+"    else:\n"
+"        return False\n"
+"\n"
+"\n"
+"if __name__ == '__main__':\n"
+"    if len(sys.argv) &gt; 1:\n"
+"        main(sys.argv[1])\n"
+"    else:\n"
+"        sys.exit(-1)\n"
+"    sys.exit(0)\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "You can see that we have two functions in the program , <emphasis>main</emphasis> and <emphasis>parse_file</emphasis> where the second one actually parses the file and returns the result and we print the result in <emphasis>main</emphasis> function. By splitting up the code in smaller units (functions) helps us to organize the codebase and also it will be easier to write test cases for the functions."
 msgstr ""
 

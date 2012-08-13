@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -27,11 +27,9 @@ msgstr ""
 msgid "Lists"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = [23, 45, 1, -3434, 43624356, 234]\n"
+msgid "&gt;&gt;&gt; a = [23, 45, 1, -3434, 43624356, 234]\n"
 "&gt;&gt;&gt; a.append(45)\n"
 "&gt;&gt;&gt; a\n"
 "[23, 45, 1, -3434, 43624356, 234, 45]\n"
@@ -44,11 +42,9 @@ msgstr ""
 msgid "At first we created a list <emphasis>a</emphasis>. Then to add <emphasis>45</emphasis> at the end of the list we call <emphasis>a.append(45)</emphasis> method. You can see that <emphasis>45</emphasis> added at the end of the list. Sometimes it may require to insert data at any place within the list, for that we have <emphasis>insert()</emphasis> method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a.insert(0, 1) # 1 added at the 0th position of the list\n"
+msgid "&gt;&gt;&gt; a.insert(0, 1) # 1 added at the 0th position of the list\n"
 "&gt;&gt;&gt; a\n"
 "[1, 23, 45, 1, -3434, 43624356, 234, 45]\n"
 "&gt;&gt;&gt; a.insert(0, 111)\n"
@@ -63,11 +59,9 @@ msgstr ""
 msgid "<emphasis>count(s)</emphasis> will return you number of times <emphasis>s</emphasis> is in the list. Here we are going to check how many times <emphasis>45</emphasis> is there in the list."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a.count(45)\n"
+msgid "&gt;&gt;&gt; a.count(45)\n"
 "2\n"
 "\n"
 ""
@@ -78,11 +72,9 @@ msgstr ""
 msgid "If you want to any particular value from the list you have to use <emphasis>remove()</emphasis> method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a.remove(234)\n"
+msgid "&gt;&gt;&gt; a.remove(234)\n"
 "&gt;&gt;&gt; a\n"
 "[111, 1, 23, 45, 1, -3434, 43624356, 45]\n"
 "\n"
@@ -94,11 +86,9 @@ msgstr ""
 msgid "Now to reverse the whole list"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a.reverse()\n"
+msgid "&gt;&gt;&gt; a.reverse()\n"
 "&gt;&gt;&gt; a\n"
 "[45, 43624356, -3434, 1, 45, 23, 1, 111]\n"
 "\n"
@@ -110,11 +100,9 @@ msgstr ""
 msgid "We can store anything in the list, so first we are going to add another list <emphasis>b </emphasis> in <emphasis>a </emphasis>, then we will learn how to add the values of <emphasis>b </emphasis> into <emphasis>a </emphasis>."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; b = [45, 56, 90]\n"
+msgid "&gt;&gt;&gt; b = [45, 56, 90]\n"
 "&gt;&gt;&gt; a.append(b)\n"
 "&gt;&gt;&gt; a\n"
 "[45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90]]\n"
@@ -134,11 +122,9 @@ msgstr ""
 msgid "Above you can see how we used <emphasis>a.extend()</emphasis> method to extend the list. To sort any list we have <emphasis>sort()</emphasis> method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a.sort()\n"
+msgid "&gt;&gt;&gt; a.sort()\n"
 "&gt;&gt;&gt; a\n"
 "[-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356, [45, 56, 90]]\n"
 "\n"
@@ -150,11 +136,9 @@ msgstr ""
 msgid "You can also delete element at any particular position of the list using the del keyword."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; del a[-1]\n"
+msgid "&gt;&gt;&gt; del a[-1]\n"
 "&gt;&gt;&gt; a\n"
 "[-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]\n"
 "\n"
@@ -171,11 +155,9 @@ msgstr ""
 msgid "Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you entered the last marble. To achieve the same in code"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a\n"
+msgid "&gt;&gt;&gt; a\n"
 "[1, 2, 3, 4, 5, 6]\n"
 "&gt;&gt;&gt; a.pop()\n"
 "6\n"
@@ -204,11 +186,9 @@ msgstr ""
 msgid "In our daily life we have to encounter queues many times, like in ticket counters or in library or in the billing section of any supermarket. Queue is the data structure where you can append more data at the end and take out data from the beginning. That is why it is known as FIFO (First In First Out)."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = [1, 2, 3, 4, 5]\n"
+msgid "&gt;&gt;&gt; a = [1, 2, 3, 4, 5]\n"
 "&gt;&gt;&gt; a.append(1)\n"
 "&gt;&gt;&gt; a\n"
 "[1, 2, 3, 4, 5, 1]\n"
@@ -242,11 +222,9 @@ msgstr ""
 msgid "For example if we want to make a list out of the square values of another list, then"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = [1, 2, 3]\n"
+msgid "&gt;&gt;&gt; a = [1, 2, 3]\n"
 "&gt;&gt;&gt; [x ** 2 for x in a]\n"
 "[1, 4, 9]\n"
 "&gt;&gt;&gt; z = [x + 1 for x in [x ** 2 for x in a]]\n"
@@ -272,11 +250,9 @@ msgstr ""
 msgid "Tuples are data separated by comma."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'\n"
+msgid "&gt;&gt;&gt; a = 'Fedora', 'Debian', 'Kubuntu', 'Pardus'\n"
 "&gt;&gt;&gt; a\n"
 "('Fedora', 'Debian', 'Kubuntu', 'Pardus')\n"
 "&gt;&gt;&gt; a[1]\n"
@@ -294,11 +270,9 @@ msgstr ""
 msgid "You can also unpack values of any tuple in to variables, like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; divmod(15,2)\n"
+msgid "&gt;&gt;&gt; divmod(15,2)\n"
 "(7, 1)\n"
 "&gt;&gt;&gt; x, y = divmod(15,2)\n"
 "&gt;&gt;&gt; x\n"
@@ -314,11 +288,9 @@ msgstr ""
 msgid "Tuples are immutable, that means you can not del/add/edit any value inside the tuple. Here is another example"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = (1, 2, 3, 4)\n"
+msgid "&gt;&gt;&gt; a = (1, 2, 3, 4)\n"
 "&gt;&gt;&gt; del a[0]\n"
 "Traceback (most recent call last):\n"
 "  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n"
@@ -337,11 +309,9 @@ msgstr ""
 msgid "To create a tuple which contains only one value you have to type a trailing comma."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = (123)\n"
+msgid "&gt;&gt;&gt; a = (123)\n"
 "&gt;&gt;&gt; a\n"
 "123\n"
 "&gt;&gt;&gt; type(a)\n"
@@ -360,11 +330,9 @@ msgstr ""
 msgid "Using the buitin function <emphasis>type()</emphasis> you can know the data type of any variable. Remember the <emphasis>len()</emphasis> function we used to find the length of any sequence ?"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; type(len)\n"
+msgid "&gt;&gt;&gt; type(len)\n"
 "&lt;type 'bulletin_function_or_method'&gt;\n"
 "\n"
 ""
@@ -380,11 +348,9 @@ msgstr ""
 msgid "Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = set('abcthabcjwethddda')\n"
+msgid "&gt;&gt;&gt; a = set('abcthabcjwethddda')\n"
 "&gt;&gt;&gt; a\n"
 "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])\n"
 "\n"
@@ -396,11 +362,9 @@ msgstr ""
 msgid "And some examples of the set operations"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = set('abracadabra')\n"
+msgid "&gt;&gt;&gt; a = set('abracadabra')\n"
 "&gt;&gt;&gt; b = set('alacazam')\n"
 "&gt;&gt;&gt; a                                  # unique letters in a\n"
 "set(['a', 'r', 'b', 'c', 'd'])\n"
@@ -421,11 +385,9 @@ msgstr ""
 msgid "To add or pop values from a set"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a\n"
+msgid "&gt;&gt;&gt; a\n"
 "set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])\n"
 "&gt;&gt;&gt; a.add('p')\n"
 "&gt;&gt;&gt; a\n"
@@ -444,11 +406,9 @@ msgstr ""
 msgid "Dictionaries are unordered set of <emphasis>key: value</emphasis> pairs where keys are unique. We declare dictionaries using {} braces. We use dictionaries to store data for any particular key and then retrieve them."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}\n"
+msgid "&gt;&gt;&gt; data = {'kushal':'Fedora', 'kart_':'Debian', 'Jace':'Mac'}\n"
 "&gt;&gt;&gt; data\n"
 "{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian'}\n"
 "&gt;&gt;&gt; data['kart_']\n"
@@ -462,11 +422,9 @@ msgstr ""
 msgid "We can add more data to it by simply"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; data['parthan'] = 'Ubuntu'\n"
+msgid "&gt;&gt;&gt; data['parthan'] = 'Ubuntu'\n"
 "&gt;&gt;&gt; data\n"
 "{'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
 "\n"
@@ -478,11 +436,9 @@ msgstr ""
 msgid "To delete any particular <emphasis>key:value</emphasis> pair"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; del data['kushal']\n"
+msgid "&gt;&gt;&gt; del data['kushal']\n"
 "&gt;&gt;&gt; data\n"
 "{'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'\n"
 "\n"
@@ -491,16 +447,12 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "To check if any <emphasis>key</emphasis> is there in the dictionary or not you can use <emphasis>has_key()</emphasis> or in keyword."
+msgid "To check if any <emphasis>key</emphasis> is there in the dictionary or not you can use <emphasis>in</emphasis> keyword."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; data.has_key('Soumya')\n"
-"False\n"
-"&gt;&gt;&gt; 'Soumya' in data\n"
+msgid "&gt;&gt;&gt; 'Soumya' in data\n"
 "False\n"
 "\n"
 ""
@@ -516,11 +468,9 @@ msgstr ""
 msgid "<emphasis>dict()</emphasis> can create dictionaries from tuples of <emphasis>key,value</emphasis> pair."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; dict((('Indian','Delhi'),('Bangladesh','Dhaka')))\n"
+msgid "&gt;&gt;&gt; dict((('Indian','Delhi'),('Bangladesh','Dhaka')))\n"
 "{'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}\n"
 "\n"
 ""
@@ -531,11 +481,9 @@ msgstr ""
 msgid "If you want to loop through a dict use <emphasis>iteritems()</emphasis> method."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; data\n"
+msgid "&gt;&gt;&gt; data\n"
 "{'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}\n"
 "&gt;&gt;&gt; for x, y in data.iteritems():\n"
 "...     print \"%s uses %s\" % (x, y)\n"
@@ -550,14 +498,52 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
+msgid "Many times it happens that we want to add more data to a value in a dictionary and if the key does not exists then we add some default value. You can do this efficiently using <emphasis>dict.setdefault(key, default)</emphasis>."
+msgstr ""
+
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
+"&gt;&gt;&gt; data = {}\n"
+"&gt;&gt;&gt; data.setdefault('names', []).append('Ruby')\n"
+"&gt;&gt;&gt; data\n"
+"{'names': ['Ruby']}\n"
+"&gt;&gt;&gt; data.setdefault('names', []).append('Python')\n"
+"&gt;&gt;&gt; data\n"
+"{'names': ['Ruby', 'Python']}\n"
+"&gt;&gt;&gt; data.setdefault('names', []).append('C')\n"
+"&gt;&gt;&gt; data\n"
+"{'names': ['Ruby', 'Python', 'C']}\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "When we try to get value for a key which does not exists we get <emphasis>KeyError</emphasis>. We can use <emphasis>dict.get(key, default)</emphasis> to get a default value when they key does not exists before."
+msgstr ""
+
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
+"&gt;&gt;&gt; data['foo']\n"
+"Traceback (most recent call last):\n"
+"  File \"&lt;stdin&gt;\", line 1, in &lt;module&gt;\n"
+"KeyError: 'foo'\n"
+"&gt;&gt;&gt; data.get('foo', 0)\n"
+"0\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
 msgid "If you want to loop through a list (or any sequence) and get iteration number at the same time you have to use <emphasis>enumerate()</emphasis>."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; for i, j in enumerate(['a', 'b', 'c']):\n"
+msgid "&gt;&gt;&gt; for i, j in enumerate(['a', 'b', 'c']):\n"
 "...     print i, j\n"
 "...\n"
 "0 a\n"
@@ -572,11 +558,9 @@ msgstr ""
 msgid "You may also need to iterate through two sequences same time, for that use <emphasis>zip()</emphasis> function."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = ['Pradeepto', 'Kushal']\n"
+msgid "&gt;&gt;&gt; a = ['Pradeepto', 'Kushal']\n"
 "&gt;&gt;&gt; b = ['OpenSUSE', 'Fedora']\n"
 "&gt;&gt;&gt; for x, y in zip(a, b):\n"
 "...     print \"%s uses %s\" % (x, y)\n"
@@ -597,11 +581,9 @@ msgstr ""
 msgid "In this example , you have to take number of students as input , then ask marks for three subjects as 'Physics', 'Maths', 'History', if the total number for any student is less 120 then print he failed, or else say passed."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "n = int(raw_input(\"Enter the number of students:\"))\n"
 "data = {} # here we will store the data\n"
 "languages = ('Physics', 'Maths', 'History') #all languages\n"
@@ -627,24 +609,22 @@ msgstr ""
 msgid "The output"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./students.py\n"
+msgid "[kd@kdlappy book]$ ./students.py\n"
 "Enter the number of students:2\n"
 "Enter the name of the student 1: Babai\n"
 "Enter marks of Physics: 12\n"
 "Enter marks of Maths: 45\n"
 "Enter marks of History: 40\n"
-"Enter the name of the student 2: Ria\n"
-"Enter marks of Physics: 89\n"
+"Enter the name of the student 2: Tesla\n"
+"Enter marks of Physics: 99\n"
 "Enter marks of Maths: 98\n"
-"Enter marks of History: 40\n"
+"Enter marks of History: 99\n"
 "Babai 's  total marks 97\n"
 "Babai failed :(\n"
-"Ria 's  total marks 227\n"
-"Ria passed :)\n"
+"Tesla 's  total marks 296\n"
+"Tesla passed :)\n"
 "\n"
 ""
 msgstr ""
@@ -659,11 +639,9 @@ msgstr ""
 msgid "In this example we will multiply two matrix's. First we will take input the number of rows/columns in the matrix (here we assume we are using n x n matrix). Then values of the matrix's."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "n = int(raw_input(\"Enter the value of n: \"))\n"
 "print \"Enter values for the Matrix A\"\n"
 "a = []\n"
@@ -687,11 +665,9 @@ msgid "\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./matrixmul.py\n"
+msgid "[kd@kdlappy book]$ ./matrixmul.py\n"
 "Enter the value of n: 3\n"
 "Enter values for the Matrix A\n"
 "1 2 3\n"

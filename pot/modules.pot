@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -39,22 +39,45 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "Now we are going to see how modules work. Create a file called greetings.py. Content of the file is given bellow."
+msgid "Now we are going to see how modules work. Create a file called bars.py. Content of the file is given bellow."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
+"\"\"\"\n"
+"Bars Module\n"
+"============\n"
 "\n"
-"#Bars module\n"
+"This is an example module with provide different ways to print bars.\n"
+"\n"
+"\"\"\"\n"
 "\n"
 "def starbar(num):\n"
+"    \"\"\"\n"
+"    Prints a bar with *\n"
+"\n"
+"    :arg num: Length of the bar\n"
+"\n"
+"    \"\"\"\n"
 "    print '*' * num\n"
 "\n"
 "def hashbar(num):\n"
+"    \"\"\"\n"
+"    Prints a bar with #\n"
+"\n"
+"    :arg num: Length of the bar\n"
+"\n"
+"    \"\"\"\n"
 "    print '#' * num\n"
 "\n"
 "def simplebar(num):\n"
+"    \"\"\"\n"
+"    Prints a bar with -\n"
+"\n"
+"    :arg num: Length of the bar\n"
+"    \n"
+"    \"\"\"\n"
 "    print '-' * num\n"
 "\n"
 "\n"
@@ -66,10 +89,9 @@ msgstr ""
 msgid "Now we are going to start the python interpreter and import our module."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; import bars\n"
 "&gt;&gt;&gt;\n"
 "\n"
@@ -81,10 +103,9 @@ msgstr ""
 msgid "This will import the module bars. We have to use the module name to access functions inside the module."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; bars.hashbar(10)\n"
 "##########\n"
 "&gt;&gt;&gt; bars.simplebar(10)\n"
@@ -105,29 +126,12 @@ msgstr ""
 msgid "There are different ways to import modules. We already saw one way to do this. You can even import selected functions from modules. To do so:"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; from bars import simplebar, starbar\n"
 "&gt;&gt;&gt; simplebar(20)\n"
 "--------------------\n"
-"\n"
-""
-msgstr ""
-
-#. Tag: para
-#, no-c-format
-msgid "Or you can import all functions or variables from a module directly into the current namespace by using <emphasis>*</emphasis>"
-msgstr ""
-
-#. Tag: screen
-#, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; from bars import *\n"
-"&gt;&gt;&gt; hashbar(20)\n"
-"####################\n"
 "\n"
 ""
 msgstr ""
@@ -142,10 +146,9 @@ msgstr ""
 msgid "Now your Python installation comes with different modules installed, you can use them as required and install new modules for any other special purposes. In the following few examples we are going to see many examples on the same."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; help()\n"
 "\n"
 "Welcome to Python 2.6!  This is the online help utility.\n"
@@ -175,6 +178,33 @@ msgstr ""
 
 #. Tag: title
 #, no-c-format
+msgid "Submodules"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "We can many submodules inside a module. A directory with a <emphasis>__init__.py</emphasis> can also be used a module and all <emphasis>.py</emphasis> files inside it become submodules."
+msgstr ""
+
+#. Tag: screen
+#, no-c-format
+msgid "\n"
+"$ tree mymodule\n"
+"mymodule\n"
+"|-- bars.py\n"
+"|-- __init__.py\n"
+"`-- utils.py\n"
+"\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "In this example <emphasis>mymodule</emphasis> is the module name and <emphasis>bars</emphasis> and <emphasis>utils</emphasis> are two submodules in it."
+msgstr ""
+
+#. Tag: title
+#, no-c-format
 msgid "Module os"
 msgstr ""
 
@@ -183,10 +213,9 @@ msgstr ""
 msgid "os module provides operating system dependent functionality. You can import it using the following import statement."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; import os\n"
 "\n"
 "\n"
@@ -198,7 +227,7 @@ msgstr ""
 msgid "<emphasis>getuid()</emphasis> function returns the current process's effective user's id."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
 "\n"
@@ -214,7 +243,7 @@ msgstr ""
 msgid "<emphasis>getpid()</emphasis> returns the current process's id. <emphasis>getppid()</emphasis> returns the parent process's id."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
 "\n"
@@ -233,7 +262,7 @@ msgstr ""
 msgid "<emphasis>uname()</emphasis> returns different information identifying the operating system, in Linux it returns details you can get from the uname command. The returned object is a tuple, <emphasis>(sysname, nodename, release, version, machine)</emphasis>"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
 "\n"
@@ -249,11 +278,11 @@ msgstr ""
 msgid "<emphasis>getcwd()</emphasis>returns the current working directory. <emphasis>chdir(path)</emphasis> changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to <emphasis>/tmp</emphasis> and then again checking the current directory."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
 "&gt;&gt;&gt; os.getcwd()\n"
-"'/home/kdas'\n"
+"'/home/kushal'\n"
 "&gt;&gt;&gt; os.chdir('/tmp')\n"
 "&gt;&gt;&gt; os.getcwd()\n"
 "'/tmp'\n"

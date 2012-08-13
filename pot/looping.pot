@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -32,14 +32,11 @@ msgstr ""
 msgid "The syntax for <emphasis>while</emphasis> statement is like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"while condition:\n"
+msgid "while condition:\n"
 "    statement1\n"
 "    statement2\n"
-"\n"
 ""
 msgstr ""
 
@@ -48,11 +45,9 @@ msgstr ""
 msgid "The code we want to reuse must be indented properly under the while statement. They will be executed if the <emphasis>condition</emphasis> is true. Again like in <emphasis>if-else</emphasis> statement any non zero value is true. Let us write a simple code to print numbers 0 to 10"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; n = 0\n"
+msgid "&gt;&gt;&gt; n = 0\n"
 "&gt;&gt;&gt; while n &lt; 11:\n"
 "...     print n\n"
 "...     n += 1\n"
@@ -68,7 +63,6 @@ msgid "\n"
 "8\n"
 "9\n"
 "10\n"
-"\n"
 ""
 msgstr ""
 
@@ -87,16 +81,13 @@ msgstr ""
 msgid "Let us try to solve <emphasis>Fibonacci</emphasis> series. In this series we get the next number by adding the previous two numbers. So the series looks like <emphasis>1,1,2,3,5,8,13 .......</emphasis>"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "a, b = 0, 1\n"
 "while b &lt; 100:\n"
 "    print b\n"
 "    a, b = b, a + b\n"
-"\n"
 ""
 msgstr ""
 
@@ -105,11 +96,10 @@ msgstr ""
 msgid "The output"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./fibonacci1.py\n"
+"$ ./fibonacci1.py\n"
 "1\n"
 "1\n"
 "2\n"
@@ -121,7 +111,6 @@ msgid "\n"
 "34\n"
 "55\n"
 "89\n"
-"\n"
 ""
 msgstr ""
 
@@ -135,26 +124,21 @@ msgstr ""
 msgid "If you put a trailing comma in the <emphasis>print</emphasis> statement , then it will print in the same line"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "#!/usr/bin/env python\n"
 "a, b = 0, 1\n"
 "while b &lt; 100:\n"
 "    print b,\n"
 "    a, b = b, a + b\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./fibonacci2.py\n"
+msgid "$ ./fibonacci2.py\n"
 "1 1 2 3 5 8 13 21 34 55 89\n"
-"\n"
 ""
 msgstr ""
 
@@ -168,11 +152,9 @@ msgstr ""
 msgid "Let us write a program to evaluate the power series. The series looks like e**x =1+x+x**2/2! +x**3/3! +....+ x**n/n! where 0 &lt; x &lt; 1"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "x = float(raw_input(\"Enter the value of x: \"))\n"
 "n = term = num = 1\n"
 "sum = 1.0\n"
@@ -183,24 +165,20 @@ msgid "\n"
 "    if term &lt; 0.0001:\n"
 "        break\n"
 "print \"No of Times= %d and Sum= %f\" % (n, sum)\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"kd@kdlappy book]$ ./powerseries.py\n"
+msgid "$ ./powerseries.py\n"
 "Enter the value of x: 0\n"
 "No of Times= 2 and Sum= 1.000000\n"
-"[kd@kdlappy book]$ ./powerseries.py\n"
+"$ ./powerseries.py\n"
 "Enter the value of x: 0.1\n"
 "No of Times= 5 and Sum= 1.105171\n"
-"[kd@kdlappy book]$ ./powerseries.py\n"
+"$ ./powerseries.py\n"
 "Enter the value of x: 0.5\n"
-"No of Times= 7 and Sum= 1.648720\n"
-""
+"No of Times= 7 and Sum= 1.648720"
 msgstr ""
 
 #. Tag: para
@@ -208,13 +186,10 @@ msgstr ""
 msgid "In this program we introduced a new keyword called <emphasis>break</emphasis>. What break does is stop the innermost loop. In this example we are using <emphasis>break</emphasis> under the <emphasis>if</emphasis> statement"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"if term &lt; 0.0001:\n"
+msgid "if term &lt; 0.0001:\n"
 "        break\n"
-"\n"
 ""
 msgstr ""
 
@@ -233,11 +208,9 @@ msgstr ""
 msgid "In this example we are going to print the multiplication table up to 10."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "i = 1\n"
 "print \"-\" * 50\n"
 "while i &lt; 11:\n"
@@ -248,15 +221,12 @@ msgid "\n"
 "    print \"\"\n"
 "    i += 1\n"
 "print \"-\" * 50\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./multiplication.py\n"
+msgid "$ ./multiplication.py\n"
 "--------------------------------------------------\n"
 "   1    2    3    4    5    6    7    8    9   10\n"
 "   2    4    6    8   10   12   14   16   18   20\n"
@@ -269,7 +239,6 @@ msgid "\n"
 "   9   18   27   36   45   54   63   72   81   90\n"
 "  10   20   30   40   50   60   70   80   90  100\n"
 "--------------------------------------------------\n"
-"\n"
 ""
 msgstr ""
 
@@ -278,12 +247,9 @@ msgstr ""
 msgid "Here we used one while loop inside another loop, this is known as nested looping. You can also see one interesting statement here"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"print \"-\" * 50\n"
-"\n"
+msgid "print \"-\" * 50\n"
 ""
 msgstr ""
 
@@ -292,11 +258,9 @@ msgstr ""
 msgid "In a <emphasis>print</emphasis> statement if we multiply the string with an integer <emphasis>n</emphasis> , the string will be printed <emphasis>n</emphasis>many times. Some examples"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; print \"*\" * 10\n"
+msgid "&gt;&gt;&gt; print \"*\" * 10\n"
 "**********\n"
 "&gt;&gt;&gt; print \"#\" * 20\n"
 "####################\n"
@@ -304,7 +268,6 @@ msgid "\n"
 "----------------------------------------\n"
 "&gt;&gt;&gt; print \"-\" * 40\n"
 "----------------------------------------\n"
-"\n"
 ""
 msgstr ""
 
@@ -323,33 +286,27 @@ msgstr ""
 msgid "Design 1"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "row = int(raw_input(\"Enter the number of rows: \"))\n"
 "n = row\n"
 "while n &gt;= 0:\n"
 "    x =  \"*\" * n\n"
 "    print x\n"
 "    n -= 1\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./design1.py\n"
+msgid "$ ./design1.py\n"
 "Enter the number of rows: 5\n"
 "*****\n"
 "****\n"
 "***\n"
 "**\n"
 "*\n"
-"\n"
 ""
 msgstr ""
 
@@ -358,32 +315,26 @@ msgstr ""
 msgid "Design 2"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "n = int(raw_input(\"Enter the number of rows: \"))\n"
 "i = 1\n"
 "while i &lt;= n:\n"
 "    print \"*\" * i\n"
 "    i += 1\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./design2.py\n"
+msgid "$ ./design2.py\n"
 "Enter the number of rows: 5\n"
 "*\n"
 "**\n"
 "***\n"
 "****\n"
 "*****\n"
-"\n"
 ""
 msgstr ""
 
@@ -392,11 +343,9 @@ msgstr ""
 msgid "Design 3"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "row = int(raw_input(\"Enter the number of rows: \"))\n"
 "n = row\n"
 "while n &gt;= 0:\n"
@@ -404,22 +353,18 @@ msgid "\n"
 "    y = \" \" * (row - n)\n"
 "    print y + x\n"
 "    n -= 1\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./design3.py\n"
+msgid "$ ./design3.py\n"
 "Enter the number of rows: 5\n"
 "*****\n"
 " ****\n"
 "  ***\n"
 "   **\n"
 "    *\n"
-"\n"
 ""
 msgstr ""
 
@@ -433,14 +378,11 @@ msgstr ""
 msgid "We are going to learn a data structure called list before we go ahead to learn more on looping. Lists an be written as a list of comma-separated values (items) between square brackets."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = [ 1 , 342, 2233423, 'India', 'Fedora']\n"
+msgid "&gt;&gt;&gt; a = [ 1 , 342, 2233423, 'India', 'Fedora']\n"
 "&gt;&gt;&gt; a\n"
 "[1, 342, 2233423, 'India', 'Fedora']\n"
-"\n"
 ""
 msgstr ""
 
@@ -449,15 +391,12 @@ msgstr ""
 msgid "Lists can keep any other data inside it. It works as a sequence too, that means"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a[0]\n"
+msgid "&gt;&gt;&gt; a[0]\n"
 "1\n"
 "&gt;&gt;&gt; a[4]\n"
 "'Fedora'\n"
-"\n"
 ""
 msgstr ""
 
@@ -466,11 +405,9 @@ msgstr ""
 msgid "You can even slice it into different pieces, examples are given below"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a[4]\n"
+msgid "&gt;&gt;&gt; a[4]\n"
 "'Fedora'\n"
 "&gt;&gt;&gt; a[-1]\n"
 "'Fedora'\n"
@@ -483,8 +420,7 @@ msgid "\n"
 "&gt;&gt;&gt; a[:-2]\n"
 "[1, 342, 2233423]\n"
 "&gt;&gt;&gt; a[0::2]\n"
-"[1, 2233423, 'Fedora']\n"
-""
+"[1, 2233423, 'Fedora']"
 msgstr ""
 
 #. Tag: para
@@ -497,16 +433,13 @@ msgstr ""
 msgid "To check if any value exists within the list or not you can do"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = ['Fedora', 'is', 'cool']\n"
+msgid "&gt;&gt;&gt; a = ['Fedora', 'is', 'cool']\n"
 "&gt;&gt;&gt; 'cool' in a\n"
 "True\n"
 "&gt;&gt;&gt; 'Linux' in a\n"
 "False\n"
-"\n"
 ""
 msgstr ""
 
@@ -515,14 +448,26 @@ msgstr ""
 msgid "That means we can use the above statement as <emphasis>if</emphasis> clause expression. The built-in function <emphasis>len()</emphasis> can tell the length of a list."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
+#, no-c-format
+msgid "&gt;&gt;&gt; len(a)\n"
+"3\n"
+""
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "If you want to test if the list is empty or not, do it like this"
+msgstr ""
+
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
-"&gt;&gt;&gt; len(a)\n"
-"3\n"
-"\n"
-""
+"if list_name: #This means the list is not empty\n"
+"    pass\n"
+"else: #This means the list is empty\n"
+"    pass\n"
+"        "
 msgstr ""
 
 #. Tag: title
@@ -535,16 +480,13 @@ msgstr ""
 msgid "There is another to loop by using <emphasis>for</emphasis> statement. In python the <emphasis>for</emphasis> statement is different from the way it works in <emphasis>C</emphasis>. Here for statement iterates over the items of any sequence (a list or a string). Example given below"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a = ['Fedora', 'is', 'powerfull']\n"
+msgid "&gt;&gt;&gt; a = ['Fedora', 'is', 'powerfull']\n"
 "&gt;&gt;&gt; for x in a:\n"
 "...     print x,\n"
 "...\n"
 "Fedora is powerfull\n"
-"\n"
 ""
 msgstr ""
 
@@ -553,10 +495,9 @@ msgstr ""
 msgid "We can also do things like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"&gt;&gt;&gt; a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
+msgid "&gt;&gt;&gt; a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n"
 "&gt;&gt;&gt; for x in a[::2]:\n"
 "...     print x\n"
 "...\n"
@@ -578,11 +519,9 @@ msgstr ""
 msgid "range() is a buitin function. From the help document"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"range(...)\n"
+msgid "range(...)\n"
 "    range([start,] stop[, step]) -&gt; list of integers\n"
 "    Return a list containing an arithmetic progression of integers.\n"
 "    range(i, j) returns [i, i+1, i+2, ..., j-1]; start (!) defaults to 0.\n"
@@ -598,11 +537,9 @@ msgstr ""
 msgid "Now if you want to see this help message on your system type <emphasis>help(range)</emphasis> in the python interpreter. <emphasis>help(s)</emphasis> will return help message on the object <emphasis>s</emphasis>. Examples of <emphasis>range</emphasis> function"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; range(1,5)\n"
+msgid "&gt;&gt;&gt; range(1,5)\n"
 "[1, 2, 3, 4]\n"
 "&gt;&gt;&gt; range(1,15,3)\n"
 "[1, 4, 7, 10, 13]\n"
@@ -622,11 +559,9 @@ msgstr ""
 msgid "Just like <emphasis>break</emphasis> we have another statement, <emphasis>continue</emphasis>, which skips the execution of the code after itself and goes back to the start of the loop. That means it will help you to skip a part of the loop. In the below example we will ask the user to input an integer, if the input is negative then we will ask again, if positive then we will square the number. To get out of the infinite loop user must input 0."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "while True:\n"
 "    n = int(raw_input(\"Please enter an Integer: \"))\n"
 "    if n &lt; 0:\n"
@@ -635,14 +570,12 @@ msgid "\n"
 "        break\n"
 "    print \"Square is \", n ** 2\n"
 "print \"Goodbye\"\n"
-"\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"[kd@kdlappy book]$ ./continue.py\n"
+msgid "$ ./continue.py\n"
 "Please enter an Integer: 34\n"
 "Square is 1156\n"
 "Please enter an Integer: 4\n"
@@ -663,11 +596,9 @@ msgstr ""
 msgid "We can have an optional <emphasis>else</emphasis> statement after any loop. It will be executed after the loop unless a <emphasis>break</emphasis> statement stopped the loop."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; for i in range(0,5):\n"
+msgid "&gt;&gt;&gt; for i in range(0,5):\n"
 "...     print i\n"
 "... else:\n"
 "...     print \"Bye bye\"\n"
@@ -678,7 +609,6 @@ msgid "\n"
 "3\n"
 "4\n"
 "Bye bye\n"
-"\n"
 ""
 msgstr ""
 
@@ -697,11 +627,9 @@ msgstr ""
 msgid "This is a very simple game of sticks. There are 21 sticks, first the user picks number of sticks between 1-4, then the computer picks sticks(1-4). Who ever will pick the last stick will loose. Can you find out the case when the user will win ?"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "\n"
 "sticks = 21\n"
 "\n"
@@ -721,8 +649,6 @@ msgid "\n"
 "\n"
 "\"\n"
 "    sticks -= 5\n"
-"\n"
-"\n"
 ""
 msgstr ""
 

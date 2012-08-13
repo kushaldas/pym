@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -32,10 +32,9 @@ msgstr ""
 msgid "Operators are the symbols which tells the python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid "        \n"
 "&gt;&gt;&gt; 2 + 3\n"
 "5\n"
 "&gt;&gt;&gt; 23 - 3\n"
@@ -51,10 +50,9 @@ msgstr ""
 msgid "To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "&gt;&gt;&gt; 14 % 3\n"
 "2\n"
 "\n"
@@ -71,10 +69,9 @@ msgstr ""
 msgid "The code"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "days = int(raw_input(\"Enter days: \"))\n"
 "months = days / 30\n"
@@ -89,11 +86,10 @@ msgstr ""
 msgid "The output"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./integer.py\n"
+msgid " \n"
+"$ ./integer.py\n"
 "Enter days: 265\n"
 "Months = 8 Days = 25\n"
 "\n"
@@ -105,10 +101,9 @@ msgstr ""
 msgid "In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "days = int(raw_input(\"Enter days: \"))\n"
 "print \"Months = %d Days = %d\" % (divmod(days, 30))\n"
@@ -206,10 +201,9 @@ msgstr ""
 msgid "Some examples"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "&gt;&gt;&gt; 1 &lt; 2\n"
 "True\n"
 "&gt;&gt;&gt; 3 &gt; 34\n"
@@ -227,10 +221,9 @@ msgstr ""
 msgid "<emphasis>//</emphasis> operator gives the floor division result"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "&gt;&gt;&gt; 4.0 // 3\n"
 "1.0\n"
 "&gt;&gt;&gt; 4.0 / 3\n"
@@ -249,10 +242,9 @@ msgstr ""
 msgid "To do logical AND , OR we use <emphasis>and</emphasis> ,<emphasis> or</emphasis> keywords. <emphasis>x and y</emphasis> returns <emphasis>False</emphasis> if <emphasis>x</emphasis> is <emphasis>False</emphasis> else it returns evaluation of <emphasis>y</emphasis>. If <emphasis>x</emphasis> is <emphasis>True</emphasis>, it returns <emphasis>True</emphasis>."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "&gt;&gt;&gt; 1 and 4\n"
 "4\n"
 "&gt;&gt;&gt; 1 or 4\n"
@@ -275,10 +267,9 @@ msgstr ""
 msgid "<emphasis>x op = expression</emphasis> is the syntax for shorthand operators. It will be evaluated like <emphasis>x = x op expression</emphasis> , Few examples are"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "&gt;&gt;&gt; a = 12\n"
 "&gt;&gt;&gt; a += 13\n"
 "&gt;&gt;&gt; a\n"
@@ -298,10 +289,9 @@ msgstr ""
 msgid "shorthand.py example"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "N = 100\n"
 "a = 2\n"
@@ -312,11 +302,10 @@ msgid "\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./shorthand.py\n"
+msgid " \n"
+"$ ./shorthand.py\n"
 "2\n"
 "4\n"
 "16\n"
@@ -334,10 +323,9 @@ msgstr ""
 msgid "Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "a = 234 * (45 - 56.0 / 34)\n"
 "\n"
 ""
@@ -348,10 +336,9 @@ msgstr ""
 msgid "One example code used to show expressions"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "a = 9\n"
 "b = 12\n"
@@ -366,11 +353,10 @@ msgid "\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./evaluationexp.py\n"
+msgid " \n"
+"$ ./evaluationexp.py\n"
 "X =  10\n"
 "Y =  7\n"
 "Z =  4\n"
@@ -383,10 +369,9 @@ msgstr ""
 msgid "At first <emphasis>x</emphasis> is being calculated. The steps are like this"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "9 - 12 / 3 + 3 * 2 -1\n"
 "9 - 4 + 3 * 2 - 1\n"
 "9 - 4 + 6 - 1\n"
@@ -412,10 +397,9 @@ msgstr ""
 msgid "We have to do the type conversions manually. Like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "float(string) -&gt; float value\n"
 "int(string) -&gt; integer value\n"
 "str(integer) or str(float) -&gt; string representation \n"
@@ -436,10 +420,9 @@ msgstr ""
 msgid "This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "sum = 0.0\n"
 "for i in range(1, 11):\n"
@@ -449,11 +432,10 @@ msgid "\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./evaluateequ.py\n"
+msgid " \n"
+"$ ./evaluateequ.py\n"
 " 1 1.0000\n"
 " 2 1.5000\n"
 " 3 1.8333\n"
@@ -483,10 +465,9 @@ msgstr ""
 msgid "This is a program to evaluate the quadratic equation"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "import math\n"
 "a = int(raw_input(\"Enter value of a: \"))\n"
@@ -514,10 +495,9 @@ msgstr ""
 msgid "In this example we are going to calculate the salary of a camera salesman. His basic salary is 1500, for every camera he will sell he will get 200 and the commission on the month's sale is 2 %. The input will be number of cameras sold and total price of the cameras."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
+msgid " \n"
 "#!/usr/bin/env python\n"
 "basic_salary = 1500\n"
 "bonus_rate = 200\n"
@@ -534,11 +514,10 @@ msgid "\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./salesmansalary.py\n"
+msgid " \n"
+"$ ./salesmansalary.py\n"
 "Enter the number of inputs sold: 5\n"
 "Enter the total prices: 20450\n"
 "Bonus        = 1000.00\n"

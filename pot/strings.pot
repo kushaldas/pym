@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -25,7 +25,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"I am Indian\"\n"
 "&gt;&gt;&gt; s\n"
 "'I am Indian'\n"
@@ -54,7 +53,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"\"\" This is a\n"
 "... multiline string, so you can\n"
 "... write many lines\"\"\"\n"
@@ -79,7 +77,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"kushal das\"\n"
 "&gt;&gt;&gt; s.title()\n"
 "'Kushal Das' \n"
@@ -95,7 +92,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; z = s.upper()\n"
 "&gt;&gt;&gt; z\n"
 "'KUSHAL DAS'\n"
@@ -113,7 +109,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"I am A pRoGraMMer\"\n"
 "&gt;&gt; s.swapcase()\n"
 "'i AM a PrOgRAmmER'\n"
@@ -129,7 +124,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"jdwb 2323bjb\"\n"
 "&gt;&gt;&gt; s.isalnum()\n"
 "False\n"
@@ -148,7 +142,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"SankarshanSir\"\n"
 "&gt;&gt;&gt; s.isalpha()\n"
 "True\n"
@@ -167,7 +160,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"1234\"\n"
 "&gt;&gt;&gt; s.isdigit() #To check if all the characters are digits or not\n"
 "True\n"
@@ -192,7 +184,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"We all love Python\"\n"
 "&gt;&gt;&gt; s.split(\" \")\n"
 "['We', 'all', 'love', 'Python']\n"
@@ -211,7 +202,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; \"-\".join(\"GNU/Linux is great\".split(\" \"))\n"
 "'GNU/Linux-is-great'\n"
 "\n"
@@ -225,7 +215,7 @@ msgstr ""
 
 #. Tag: title
 #, no-c-format
-msgid "String the strings"
+msgid "Strip the strings"
 msgstr ""
 
 #. Tag: para
@@ -236,7 +226,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"  abc\n"
 " \"\n"
 "&gt;&gt;&gt; s.strip()\n"
@@ -253,7 +242,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s = \"www.foss.in\"\n"
 "&gt;&gt;&gt; s.lstrip(\"cwsd.\")\n"
 "'foss.in'\n"
@@ -276,7 +264,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; s.find(\"for\")\n"
 "7\n"
 "&gt;&gt;&gt; s.find(\"fora\")\n"
@@ -307,7 +294,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "#!/usr/bin/env python\n"
 "s = raw_input(\"Please enter a string: \")\n"
 "z = [x for x in s]\n"
@@ -328,7 +314,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "[kd@kdlappy book]$ ./palindrome.py\n"
 "Please enter a string: madam1\n"
 "The string is not a palindrome\n"
@@ -352,7 +337,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "#!/usr/bin/env python\n"
 "s = raw_input(\"Enter a line: \")\n"
 "print \"The number of words in the line are %d\" % (len(s.split(\" \")))\n"
@@ -363,7 +347,6 @@ msgstr ""
 #. Tag: screen
 #, no-c-format
 msgid "\n"
-"\n"
 "[kd@kdlappy book]$ ./countwords.py\n"
 "Enter a line: Sayamindu is a great programmer\n"
 "The number of words in the line are 5 \n"

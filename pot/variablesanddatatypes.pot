@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0\n"
-"POT-Creation-Date: 2011-11-05T11:20:40\n"
-"PO-Revision-Date: 2011-11-05T11:20:40\n"
+"POT-Creation-Date: 2012-08-13T13:28:38\n"
+"PO-Revision-Date: 2012-08-13T13:28:38\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: None\n"
 "MIME-Version: 1.0\n"
@@ -32,17 +32,16 @@ msgstr ""
 msgid "Python codes can be divided into identifiers. Identifiers (also referred to as names) are described by the following lexical definitions:"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "identifier ::= (letter|\"_\") (letter | digit | \"_\")* \n"
 "letter ::= lowercase | uppercase \n"
 "lowercase ::= \"a\"...\"z\" \n"
 "uppercase ::= \"A\"...\"Z\" \n"
 "digit ::= \"0\"...\"9\"\n"
 "\n"
-""
+"		"
 msgstr ""
 
 #. Tag: para
@@ -50,10 +49,9 @@ msgstr ""
 msgid "This means <emphasis>_abcd</emphasis> is a valid identifier where as <emphasis>1sd</emphasis> is not. The following identifiers are used as reserved words, or keywords of the language, and cannot be used as ordinary identifiers. They must be spelled exactly as written here:"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "and       del      from      not   while \n"
 "as        elif     global    or    with \n"
 "assert    else     if        pass  yield \n"
@@ -62,7 +60,7 @@ msgid "\n"
 "continue  finally  is        return \n"
 "def       for      lambda    try\n"
 "\n"
-""
+"		"
 msgstr ""
 
 #. Tag: para
@@ -70,16 +68,15 @@ msgstr ""
 msgid "In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0 abc will become of floating type. Here is a small program to add two given numbers"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; a = 13 \n"
 "&gt;&gt;&gt; b = 23\n"
 "&gt;&gt;&gt; a + b \n"
 "36\n"
 "\n"
-""
+"		"
 msgstr ""
 
 #. Tag: para
@@ -87,10 +84,9 @@ msgstr ""
 msgid "From the above example you can understand that to declare a variable in python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "&gt;&gt;&gt; 'India'\n"
 "'India' \n"
 "&gt;&gt;&gt; 'India\\'s best' \n"
@@ -98,7 +94,7 @@ msgid "\n"
 "&gt;&gt;&gt; \"Hello World!\" \n"
 "'Hello World!'\n"
 "\n"
-""
+"		"
 msgstr ""
 
 #. Tag: title
@@ -111,10 +107,9 @@ msgstr ""
 msgid "Generally the real life python codes do not need to read input from the keyboard. In python we use raw_input function to do input. <emphasis>raw_input(\"String to show\")</emphasis> , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
 "#!/usr/bin/env python   \n"
 "number = int(raw_input(\"Enter an integer: \"))\n"
 "if number &lt; 100:   \n"
@@ -130,14 +125,13 @@ msgstr ""
 msgid "The output"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
 msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./testhundred.py \n"
+"$ ./testhundred.py \n"
 "Enter an integer: 13 \n"
 "Your number is smaller than 100 \n"
-"[kd@kdlappy book]$ ./testhundred.py \n"
+"$ ./testhundred.py \n"
 "Enter an integer: 123 \n"
 "Your number is greater than 100\n"
 "\n"
@@ -149,11 +143,9 @@ msgstr ""
 msgid "In the next program we are going to calculate investments."
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python \n"
+msgid "#!/usr/bin/env python \n"
 "amount = float(raw_input(\"Enter amount: \")) \n"
 "inrate = float(raw_input(\"Enter Interest rate: \")) \n"
 "period = int(raw_input(\"Enter period: \")) \n"
@@ -168,11 +160,9 @@ msgid "\n"
 ""
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./investment.py\n"
+msgid "$ ./investment.py\n"
 "Enter amount: 10000\n"
 "Enter Interest rate: 0.14\n"
 "Enter period: 5\n"
@@ -202,7 +192,7 @@ msgstr ""
 
 #. Tag: para
 #, no-c-format
-msgid "In the next program we will do an average of N numbers."
+msgid "In the next program we will do an average of N numbers. <indexterm><primary>Loop</primary><secondary>Creating a loop in Python</secondary></indexterm>"
 msgstr ""
 
 #. Tag: programlisting
@@ -224,7 +214,7 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "[kd@kdlappy book]$ ./averagen.py\n"
+msgid "$ ./averagen.py\n"
 "1\n"
 "2.3\n"
 "4.67\n"
@@ -251,11 +241,9 @@ msgstr ""
 msgid "In this program we will convert the given temperature to Celsius from Fahrenheit by using the formula C=(F-32)/1.8"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"#!/usr/bin/env python\n"
+msgid "#!/usr/bin/env python\n"
 "fahrenhite = 0.0\n"
 "print \"Fahrenheit Celsius\"\n"
 "while fahrenheit &lt;= 250:\n"
@@ -268,9 +256,7 @@ msgstr ""
 
 #. Tag: screen
 #, no-c-format
-msgid "\n"
-"\n"
-"[kd@kdlappy book]$ ./temperature.py\n"
+msgid "[kd@kdlappy book]$ ./temperature.py\n"
 "Fahrenheit Celsius\n"
 "  0.0  -17.78\n"
 " 25.0   -3.89\n"
@@ -297,17 +283,15 @@ msgstr ""
 msgid "You can even assign values to multiple variables in a single line, like"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a , b = 45, 54\n"
+msgid "&gt;&gt;&gt; a , b = 45, 54\n"
 "&gt;&gt;&gt; a\n"
 "45\n"
 "&gt;&gt;&gt; b\n"
 "54\n"
 "\n"
-""
+"		"
 msgstr ""
 
 #. Tag: para
@@ -315,16 +299,39 @@ msgstr ""
 msgid "Using this swapping two numbers becomes very easy"
 msgstr ""
 
-#. Tag: screen
+#. Tag: programlisting
 #, no-c-format
-msgid "\n"
-"\n"
-"&gt;&gt;&gt; a, b = b , a\n"
+msgid "&gt;&gt;&gt; a, b = b , a\n"
 "&gt;&gt;&gt; a\n"
 "54\n"
 "&gt;&gt;&gt; b\n"
 "45\n"
 "\n"
-""
+"		"
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "To understand how this works, you will have to learn about a data type called <emphasis>tuple</emphasis>. We use <emphasis>comma</emphasis> to create tuple. In the right hand side we create the tuple (we call this as tuple packing) and in the left hand side we do tuple unpacking into a new tuple."
+msgstr ""
+
+#. Tag: para
+#, no-c-format
+msgid "Below we have another example of tuple unpacking."
+msgstr ""
+
+#. Tag: programlisting
+#, no-c-format
+msgid "\n"
+"&gt;&gt;&gt; data = (\"Kushal Das\", \"India\", \"Python\")\n"
+"&gt;&gt;&gt; name, country, language = data\n"
+"&gt;&gt;&gt; name\n"
+"'Kushal Das'\n"
+"&gt;&gt;&gt; country\n"
+"'India'\n"
+"&gt;&gt;&gt; language\n"
+"'Python'\n"
+"\n"
+"        "
 msgstr ""
 
