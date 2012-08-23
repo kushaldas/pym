@@ -10,7 +10,7 @@
 	<section id="pythonforyouandme-Installation-Section_1_Windows">
 		<title>On Windows</title>
 		<para>
-			You have to download the latest Windows(TM) installer from the python site http://python.org/ftp/python/2.5.2/python-2.5.2.msi . Install it just as any other Windows software.
+			You have to download the latest Windows(TM) installer from the python site http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi . Install it just as any other Windows software.
 		</para>
 	</section>
 	
@@ -25,14 +25,14 @@
 
                 </para>
 <screen>
-#<userinput>yum install python</userinput>
+<prompt>[user@host]$ </prompt><userinput>sudo yum install python</userinput>
 </screen>
                 <para>
                         For Debian
 
                 </para>
 <screen>
-#<userinput>apt-get install python</userinput>
+<prompt>[user@host]$ </prompt><userinput>sudo apt-get install python</userinput>
 </screen>
 
 
