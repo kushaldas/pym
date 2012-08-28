@@ -17,8 +17,9 @@
 	<xi:include href="file.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="classes.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="modules.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="collections.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="virtualenv.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="acknowledgment.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<xi:include href="Appendix.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	<index/>
 </book>
-

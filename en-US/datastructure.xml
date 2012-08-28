@@ -318,7 +318,7 @@ parthan uses Ubuntu
         <para>
             Many times it happens that we want to add more data to a value in a dictionary and if the key does not exists then we add some default value. You can do this efficiently using <emphasis>dict.setdefault(key, default)</emphasis>.
 <programlisting language="Python">
->>> data = {}
+<![CDATA[>>> data = {}
 >>> data.setdefault('names', []).append('Ruby')
 >>> data
 {'names': ['Ruby']}
@@ -328,18 +328,20 @@ parthan uses Ubuntu
 >>> data.setdefault('names', []).append('C')
 >>> data
 {'names': ['Ruby', 'Python', 'C']}
+]]>
 </programlisting>        
         </para>
         <para>
             When we try to get value for a key which does not exists we get <emphasis>KeyError</emphasis>. We can use <emphasis>dict.get(key, default)</emphasis> to get a default value when they key does not exists before.
         </para>
-<programlisting language="Python" role="PYTHON">
->>> data['foo']
+<programlisting language="Python">
+<![CDATA[>>> data['foo']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'foo'
 >>> data.get('foo', 0)
 0
+]]>
 </programlisting>        
         <para>
             If you want to loop through a list (or any sequence) and get iteration number at the same time you have to use <emphasis>enumerate()</emphasis>.

@@ -18,43 +18,64 @@
                 <para>
                 Now we are going to see how modules work. Create a file called bars.py. Content of the file is given bellow.
                 </para>
-<screen>
-<![CDATA[
-#Bars module
+<programlisting language="Python">
+<![CDATA["""
+Bars Module
+============
+
+This is an example module with provide different ways to print bars.
+
+"""
 
 def starbar(num):
+    """
+    Prints a bar with *
+
+    :arg num: Length of the bar
+
+    """
     print '*' * num
 
 def hashbar(num):
+    """
+    Prints a bar with #
+
+    :arg num: Length of the bar
+
+    """
     print '#' * num
 
 def simplebar(num):
+    """
+    Prints a bar with -
+
+    :arg num: Length of the bar
+    
+    """
     print '-' * num
 
 ]]>
-</screen>
+</programlisting>
             <para>
             Now we are going to start the python interpreter and import our module.
             </para>
-<screen>
-<![CDATA[
->>> import bars
+<programlisting language="Python">
+<![CDATA[>>> import bars
 >>>
 ]]>
-</screen>
+</programlisting>
             <para>
             This will import the module bars. We have to use the module name to access functions inside the module.
             </para>
-<screen>
-<![CDATA[
->>> bars.hashbar(10)
+<programlisting language="Python">
+<![CDATA[>>> bars.hashbar(10)
 ##########
 >>> bars.simplebar(10)
 ----------
 >>> bars.starbar(10)
 **********
 ]]>
-</screen>
+</programlisting>
 	</section>
 
 	<section id="pythonforyouandme-Modules-importing">
@@ -62,23 +83,12 @@ def simplebar(num):
 		<para>
 			There are different ways to import modules. We already saw one way to do this. You can even import selected functions from modules. To do so:
 		</para>
-<screen>
-<![CDATA[
->>> from bars import simplebar, starbar
+<programlisting language="Python">
+<![CDATA[>>> from bars import simplebar, starbar
 >>> simplebar(20)
 --------------------
 ]]>
-</screen>
-            <para>
-                Or you can import all functions or variables from a module directly into the current namespace by using <emphasis>*</emphasis>
-            </para>
-<screen>
-<![CDATA[
->>> from bars import *
->>> hashbar(20)
-####################
-]]>
-</screen>
+</programlisting>
 	</section>
 	<section id="pythonforyouandme-Modules-default">
 	<title>Default modules</title>
@@ -86,9 +96,8 @@ def simplebar(num):
 	Now your Python installation comes with different modules installed, you can use them as required and install new modules for any other special purposes. In the following few examples we are going to see many examples on the same.
 	</para>
 
-<screen>
-<![CDATA[
->>> help()
+<programlisting language="Python">
+<![CDATA[>>> help()
 
 Welcome to Python 2.6!  This is the online help utility.
 
@@ -107,9 +116,26 @@ such as "spam", type "modules spam".
 help> modules
 
 ]]>
-</screen>
+</programlisting>
     <para>
     The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
+    </para>
+    </section>
+    <section id="pythonforyouandme-Modules-submodules">
+        <title>Submodules</title>
+        <para>
+            We can many submodules inside a module. A directory with a <emphasis>__init__.py</emphasis> can also be used a module and all <emphasis>.py</emphasis> files inside it become submodules.
+        </para> 
+<screen>
+<![CDATA[$ tree mymodule
+mymodule
+|-- bars.py
+|-- __init__.py
+`-- utils.py
+]]>
+</screen>
+    <para>
+        In this example <emphasis>mymodule</emphasis> is the module name and <emphasis>bars</emphasis> and <emphasis>utils</emphasis> are two submodules in it.
     </para>
     </section>
     <section id="pythonforyouandme-Modules-os">
@@ -117,26 +143,25 @@ help> modules
 	<para>
 	os module provides operating system dependent functionality. You can import it using the following import statement.
 	</para>
-<screen>
-<![CDATA[
->>> import os
+<programlisting language="Python">
+<![CDATA[>>> import os
 
 ]]>
-</screen>
+</programlisting>
    <para>
    <emphasis>getuid()</emphasis> function returns the current process's effective user's id.
    </para> 
-<screen>
+<programlisting language="Python">
 <![CDATA[
 >>> os.getuid()
 500
 
 ]]>
-</screen>
+</programlisting>
     <para>
     <emphasis>getpid()</emphasis> returns the current process's id. <emphasis>getppid()</emphasis> returns the parent process's id.
     </para>
-<screen>
+<programlisting language="Python">
 <![CDATA[
 >>> os.getpid()
 16150
@@ -145,28 +170,28 @@ help> modules
 
 
 ]]>
-</screen>
+</programlisting>
     <para>
     <emphasis>uname()</emphasis> returns different information identifying the operating system, in Linux it returns details you can get from the uname command. The returned object is a tuple, <emphasis>(sysname, nodename, release, version, machine)</emphasis>
     </para>
-<screen>
+<programlisting language="Python">
 <![CDATA[
 >>> os.uname()
 ('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')
 
 ]]>
-</screen>
+</programlisting>
     <para>
     <emphasis>getcwd()</emphasis>returns the current working directory. <emphasis>chdir(path)</emphasis> changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to <emphasis>/tmp</emphasis> and then again checking the current directory.
     </para>    
-<screen>
+<programlisting language="Python">
 <![CDATA[>>> os.getcwd()
 '/home/kushal'
 >>> os.chdir('/tmp')
 >>> os.getcwd()
 '/tmp'
 ]]>
-</screen>
+</programlisting>
 	</section>
     
 </chapter>

@@ -13,13 +13,12 @@ Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)
 [GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
 Type "help", "copyright", "credits" or "license" for more information. 
 >>> 
-
 </screen>
 <para>
 In our first code we are going to print "Hello World!" , so do it as below,
 </para>
 <screen>
->>> print "Hello World!"
+<prompt>>>> </prompt><userinput>print "Hello World!"</userinput>
 Hello World!
 </screen>
 
@@ -28,21 +27,23 @@ Hello World!
 		<para>
 			Now as a serious programmer you may want to write the above code into a source file. We will create a helloworld.py. Use any text editor you like to create the file. I used vi, you can even use GUI based tools like Kate, gedit too.
 		</para>
-<screen>
-#!/usr/bin/env python
+<programlisting language="Python">
+<![CDATA[#!/usr/bin/env python
 print "Hello World!"
-</screen>
+]]>
+</programlisting>        
+
                 <para>
                 To run the code first you have to make the file executable, in GNU/Linux you can do that by giving the command in a shell or terminal
                 </para>
 <screen>
-$ chmod +x helloworld.py
+<prompt>$ </prompt><userinput>chmod +x helloworld.py</userinput>
 </screen>
                 <para>
                 Then
                 </para>
 <screen>
-$ ./helloworld.py 
+<prompt>$ </prompt><userinput>./helloworld.py</userinput>
 Hello World!
 </screen>
                 <para>

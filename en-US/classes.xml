@@ -24,7 +24,7 @@
 		<para>
 			in the statements you can write any python statement, you can define functions (which we call methods of a class).
 		</para>
-<screen><![CDATA[>>> class MyClass:
+<programlisting language="Python"><![CDATA[>>> class MyClass:
 ...     a = 90
 ...     b = 88
 ...
@@ -32,14 +32,14 @@
 >>> p
 <__main__.MyClass instance at 0xb7c8aa6c>
 ]]>
-</screen>
+</programlisting>
 		<para>
 			In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an <emphasis>object</emphasis> p of the <emphasis>class</emphasis> MyClass.If you do a dir on that...
 		</para>
-<screen><![CDATA[>>> dir(p)
+<programlisting language="Python"><![CDATA[>>> dir(p)
 ['__doc__', '__module__', 'a', 'b']
 ]]>
-</screen>
+</programlisting>
 		<para>
 			You can see the variables <emphasis>a</emphasis> and <emphasis>b</emphasis> inside it.
 		</para>
@@ -47,47 +47,64 @@
 	<section id="pythonforyouandme-Classes-initmethod">
 		<title>__init__ method</title>
                 <para>__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it</para>
-<screen><![CDATA[>>> class Student:
-...   def __init__(self, name, branch, year):
-...     self.name = name
-...     self.branch = branch
-...     self.year = year
-...     print "A student object is created"
-...   def getName(self):
-...     return self.name
-...   def setName(self, name):
-...     self.name = name
-...
+<programlisting language="Python"><![CDATA[class Student(object):
+    """
+    Returns a ```Student``` object with the given name, branch and year. 
+    
+    """
+    def __init__(self, name, branch, year):
+            self.name = name
+            self.branch = branch
+            self.year = year
+            print "A student object is created"
+
+    def set_name(self, name):
+        """
+        Sets the name of the student.
+
+        :arg name: new name ofthe student.
+        
+        """
+        self.name = name
+
+    def get_name(self):
+        """
+        Returns the name of the student.
+        
+        :return: a string contain the student's name
+
+        """
+        return self.name
 ]]>
-</screen>
+</programlisting>
             <para>
             __init__ is called when ever an object of the class is constructed.That means when ever we will create a student object we will see the message "Creating a new student" in the prompt. You can see the first argument to the method is <emphasis>self</emphasis>. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it , but we have to get it explicitly in every method while writing the methods. Example shown below.
             </para>
-<screen><![CDATA[>>> std1 = Student()
+<programlisting language="Python"><![CDATA[>>> std1 = Student()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 TypeError: __init__() takes exactly 4 arguments (1 given)
 >>> std1 = Student('Kushal','CSE','2005')
 A student object is created
 ]]>
-</screen>
+</programlisting>
             <para>
             In this example at first we tried to create a Student object with passing any argument and python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that <emphasis>__init__ </emphasis> method was called as the constructor method.
             </para>
             <para>
             Now we are going to call <emphasis>getName()</emphasis> and <emphasis>setName()</emphasis> methods.
             </para>
-<screen><![CDATA[>>> std1.getName()
+<programlisting language="Python"><![CDATA[>>> std1.get_name()
 'Kushal'
->>> std1.setName()
+>>> std1.set_name()
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-TypeError: setName() takes exactly 2 arguments (1 given)
->>> std1.setName('Shreyank Gupta')
->>> std1.getName()
+TypeError: set_name() takes exactly 2 arguments (1 given)
+>>> std1.set_name('Shreyank Gupta')
+>>> std1.get_name()
 'Shreyank Gupta'
 ]]>
-</screen>
+</programlisting>
         <para>
         First we called getName on the object we created, then tried to call setName without any arguments and we got an error. Next we again called setName with argument 'Shreyank Gupta'. Now calling getName gives 'Shreyank Gupta' as the output.
         </para>
@@ -106,40 +123,54 @@ TypeError: setName() takes exactly 2 arguments (1 given)
 		<title>student_teacher.py</title>
 <programlisting language="Python"><![CDATA[#!/usr/bin/env python
 
-class Person:
+class Person(object):
+    """
+    Returns a ```Person``` object with given name.
+
+    """
     def __init__(self,name):
         self.name = name
 
-    def getDetails(self):
+    def get_details(self):
+        "Returns a string containing name of the person"
         return self.name
 
 
 class Student(Person):
+    """
+    Returns a ```Student``` object, takes 3 arguments, name, branch, year.
+    
+    """
     def __init__(self,name,branch,year):
         Person.__init__(self,name)
         self.branch = branch
         self.year = year
 
-    def getDetails(self):
-        return (self.name, self.branch, self.year)
+    def get_details(self):
+        "Returns a string containing student's details."
+        return "%s studies %s and is in %s year." % (self.name, self.branch, self.year)
 
 
 class Teacher(Person):
-    def __init__(self,name,papers):
-        Person.__init__(self,name)
+    """
+    Returns a ```Teacher``` object, takes a list of strings (list of papers) as
+    argument.
+    """    
+    def __init__(self, name, papers):
+        Person.__init__(self, name)
         self.papers = papers
 
-    def getDetails(self):
-        return (self.name, self.papers)
+    def get_details(self):
+        return "%s teaches %s" % (self.name, ','.join(self.papers))
 
 
-person1 = Person('Rahul')
-student1 = Student('Kushal','CSE',2005)
-teacher1 = Teacher('Prashad',['C','C++'])
+person1 = Person('Sachin')
+student1 = Student('Kushal', 'CSE', 2005)
+teacher1 = Teacher('Prashad', ['C', 'C++'])
 
-print person1.getDetails()
-print student1.getDetails()
-print teacher1.getDetails()
+print person1.get_details()
+print student1.get_details()
+print teacher1.get_details()
 
 ]]>
 </programlisting>
@@ -147,15 +178,15 @@ print teacher1.getDetails()
             The output:
             </para>
 
-<screen><![CDATA[[kdas@kdas code]$ ./student_teacher.py
-Rahul
-('Kushal', 'CSE', 2005)
-('Prashad', ['C', 'C++'])
+<screen><![CDATA[$ ./student_teacher.py 
+Sachin
+Kushal studies CSE and is in 2005 year.
+Prashad teaches C,C++
 
 ]]>
 </screen>
             <para>
-            In this example you can see how we called the __init__ method of the class Person in both Studentা and Teacher classes' __init__ method. We also reimplemented <emphasis>getDetails()</emphasis> method of Person class in both Student and Teacher class. So, when we are calling <emphasis>getDetails()</emphasis> method on the teacher1 object it returns based on the object itself (which is of teacher class) and when we call <emphasis>getDetails()</emphasis> on the student1 or person1 object it returns based on <emphasis>getDetails()</emphasis> method implemented in it's own class.
+            In this example you can see how we called the __init__ method of the class Person in both Student and Teacher classes' __init__ method. We also reimplemented <emphasis>get_details()</emphasis> method of Person class in both Student and Teacher class. So, when we are calling <emphasis>get_details()</emphasis> method on the teacher1 object it returns based on the object itself (which is of teacher class) and when we call <emphasis>get_details()</emphasis> on the student1 or person1 object it returns based on <emphasis>get_details()</emphasis> method implemented in it's own class.
             </para>
 </section>
 	<section id="pythonforyouandme-Classes-multiple-inheritance">
@@ -177,14 +208,14 @@ Rahul
                 <para>
                 As we already know how to create an object , now we are going to see how to delete an python object. We use <emphasis>del</emphasis> for this.
                 </para>
-<screen><![CDATA[>>> s = "I love you"
+<programlisting language="Python"><![CDATA[>>> s = "I love you"
 >>> del s
 >>> s
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 's' is not defined
 ]]>
-</screen>
+</programlisting>
                 <para>
                 <emphasis>del</emphasis> actually decreases reference count by one. When the reference count of an object becomes zero the garbage collector will delete that object.
                 </para>

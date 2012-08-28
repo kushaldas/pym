@@ -20,10 +20,10 @@
 		<para>
 			The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file
 		</para>
-<screen><![CDATA[>>> f = open("love.txt")
+<programlisting language="Python"><![CDATA[>>> f = open("love.txt")
 >>> f
 <open file 'love.txt', mode 'r' at 0xb7f2d968>]]>
-</screen>
+</programlisting>
 	</section>
 
 	<section id="pythonforyouandme-File-closing">
@@ -31,11 +31,11 @@
                 <para>
                 After opening a file one should always close the opened file. We use method <emphasis>close()</emphasis> for this.
                 </para>
-<screen><![CDATA[>>> f = open("love.txt")
+<programlisting language="Python"><![CDATA[>>> f = open("love.txt")
 >>> f
 <open file 'love.txt', mode 'r' at 0xb7f2d968>
 >>> f.close()]]>
-</screen>
+</programlisting>
         <important>
             <title>Important</title>
             <para>
@@ -56,37 +56,37 @@ Because
 		<para>
 			To read the whole file at once use the <emphasis>read()</emphasis> method.
 		</para>
-<screen><![CDATA[>>> f = open("sample.txt")
+<programlisting language="Python"><![CDATA[>>> f = open("sample.txt")
 >>> f.read()
 'I love Python\nPradeepto loves KDE\nSankarshan loves Openoffice\n']]>
-</screen>
+</programlisting>
 		<para>
 			If you call <emphasis>read()</emphasis> again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
 		</para>
-<screen><![CDATA[>>> f = open("sample.txt")
+<programlisting language="Python"><![CDATA[>>> f = open("sample.txt")
 >>> f.readline()
 'I love Python\n'
 >>> f.readline()
 'Pradeepto loves KDE\n']]>
-</screen>
+</programlisting>
 		<para>
 			To read all the all the lines in a list we use <emphasis>readlines()</emphasis> method.
 		</para>
-<screen><![CDATA[>>> f = open("sample.txt")
+<programlisting language="Python"><![CDATA[>>> f = open("sample.txt")
 >>> f.readlines()
 ['I love Python\n', 'Pradeepto loves KDE\n', 'Sankarshan loves Openoffice\n']]]>
-</screen>
+</programlisting>
 		<para>
 			You can even loop through the lines in a file object.
 		</para>
-<screen><![CDATA[>>> f = open("sample.txt")
+<programlisting language="Python"><![CDATA[>>> f = open("sample.txt")
 >>> for x in f:
 ...     print x,
 ...
 I love Python
 Pradeepto loves KDE
 Sankarshan loves Openoffice]]>
-</screen>
+</programlisting>
 		<para>
 			Let us write a program which will take the file name as the input from the user and show the content of the file in the console.
 		</para>
@@ -102,7 +102,7 @@ f.close()]]>
 		<para>
 			The output
 		</para>
-<screen><![CDATA[[kd@kdlappy book]$ ./showfile.py
+<screen><![CDATA[$ ./showfile.py
 Enter the filename: sample.txt
 I love Python
 Pradeepto loves KDE
@@ -115,30 +115,30 @@ Sankarshan loves Openoffice]]>
 		<para>
 			Let us open a file then we will write some random text into it by using the write() method.
 		</para>
-<screen><![CDATA[>>> f = open("ircnicks.txt", 'w')
+<programlisting language="Python"><![CDATA[>>> f = open("ircnicks.txt", 'w')
 >>> f.write('powerpork\n')
 >>> f.write('indrag\n')
 >>> f.write('mishti\n')
->>> f.write('sm|CPU')
+>>> f.write('sankarshan')
 >>> f.close()]]>
-</screen>
+</programlisting>
 		<para>
 			Now read the file we just created
 		</para>
-<screen><![CDATA[>>> f = open('ircnicks.txt')
+<programlisting language="Python"><![CDATA[>>> f = open('ircnicks.txt')
 >>> s = f.read()
 >>> print s
 powerpork
 indrag
 mishti
-sm|CPU]]>
-</screen>
+sankarshan]]>
+</programlisting>
 	</section>
 
 	<section id="pythonforyouandme-File-copyfile">
 		<title>copyfile.py</title>
 		<para>
-			In this example we will copy a given file to another file.
+			In this example we will copy a given text file to another file.
 		</para>
 <programlisting language="Python"><![CDATA[#!/usr/bin/env python
 import sys
@@ -153,6 +153,11 @@ f2 = open(sys.argv[2], 'w')
 f2.write(s)
 f2.close()]]>
 </programlisting>
+		<note>
+			<para>
+				This way of reading file is not always a good idea, a file can be very large to read and fit in the memory. It is always better to read a known size of the file and wirte that to the new file.
+			</para>
+		</note>	
 		<para>
 			You can see we used a new module here <emphasis>sys</emphasis>. <emphasis>sys.argv</emphasis> contains all command line parameters. Remember <emphasis>cp</emphasis> command in shell, after <emphasis>cp</emphasis> we type first the file to be copied and then the new file name.
 		</para>
@@ -169,13 +174,13 @@ for i, x  in enumerate(sys.argv):
 		<para>
 			The output
 		</para>
-<screen><![CDATA[[kd@kdlappy book]$ ./argvtest.py Hi there
+<programlisting language="Python"><![CDATA[$ ./argvtest.py Hi there
 First value ./argvtest.py
 All values
 0 ./argvtest.py
 1 Hi
 2 there]]>
-</screen>
+</programlisting>
 		<para>
 			Here we used a new function <emphasis>enumerate(iterableobject)</emphasis>, which returns the index number and the value from the iterable object.
 		</para>
@@ -201,10 +206,10 @@ Note that not all file objects are speakable.
 		<para>
 			Let us see one example
 		</para>
-<screen><![CDATA[>>> f = open('tempfile', 'w')
+<programlisting language="Python"><![CDATA[>>> f = open('/tmp/tempfile', 'w')
 >>> f.write('0123456789abcdef')
 >>> f.close()
->>> f = open('tempfile')
+>>> f = open('/tmp/tempfile')
 >>> f.tell()    #tell us the offset position
 0L
 >>> f.seek(5) # Goto 5th byte
@@ -215,13 +220,68 @@ Note that not all file objects are speakable.
 >>> f.seek(-3, 2) # goto 3rd byte from the end
 >>> f.read() #Read till the end of the file
 'def']]>
-</screen>
+</programlisting>
 	</section>
 	<section id="pythonforyouandme-File-count">
 		<title>Count spaces, tabs and new lines in a file</title>
                 <para>
-                Let us try to write an application which will count the spaces , tabs, and new lines in any given file.
+                Let us try to write an application which will count the spaces , tabs, and  lines in any given file.
                 </para>
+<programlisting language="Python">
+<![CDATA[#!/usr/bin/env python
+
+import os
+import sys
+
+
+def parse_file(path):
+    """
+    Parses the text file in the given path and returns space, tab & new line
+    details.
+
+    :arg path: Path of the text file to parse
+
+    :return: A tuple with count of spacaes, tabs and lines. 
+    """
+    fd = open(path)
+    i = 0
+    spaces = 0
+    tabs = 0
+    for i,line in enumerate(fd):
+        spaces += line.count(' ')
+        tabs += line.count('\t')
+    #Now close the open file
+    fd.close()
+
+    #Return the result as a tuple
+    return spaces, tabs, i + 1
+
+def main(path):
+    """
+    Function which prints counts of spaces, tabs and lines in a file.
+
+    :arg path: Path of the text file to parse
+    :return: True if the file exits or False.
+    """
+    if os.path.exists(path):
+        spaces, tabs, lines = parse_file(path)
+        print "Spaces %d. tabs %d. lines %d" % (spaces, tabs, lines)
+        return True
+    else:
+        return False
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        main(sys.argv[1])
+    else:
+        sys.exit(-1)
+    sys.exit(0)
+]]>
+</programlisting>
+        <para>
+            You can see that we have two functions in the program , <emphasis>main</emphasis> and <emphasis>parse_file</emphasis> where the second one actually parses the file and returns the result and we print the result in <emphasis>main</emphasis> function. By splitting up the code in smaller units (functions) helps us to organize the codebase and also it will be easier to write test cases for the functions.
+        </para>
         </section>
 
 </chapter>
