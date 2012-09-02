@@ -4,10 +4,10 @@
 
 <bookinfo id="pythonforyouandme-Product_Name_and_Version">
 	<title>Python for you and me</title>
-	<subtitle>A book to learn Python in a quick way</subtitle>
+	<subtitle>A book to learn Python in a quick way (work in progress)</subtitle>
 	<productname>Python for you and me</productname>
 	<productnumber>0.2</productnumber>
-        <edition>1</edition>
+        <edition>2</edition>
 	<pubsnumber>0</pubsnumber>
 	<abstract><para>This book is for the python newbies</para>
 	</abstract>
