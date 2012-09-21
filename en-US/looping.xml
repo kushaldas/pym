@@ -101,7 +101,7 @@ n = term = num = 1
 sum = 1.0
 while n <= 100:
     term *= x / n
-    sum += terrm
+    sum += term
     n += 1
     if term < 0.0001:
         break
