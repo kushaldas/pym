@@ -5,10 +5,9 @@
 <chapter id="pythonforyouandme-classes">
 	<title>Class</title>
 	<para>
-		What is a <emphasis>class</emphasis>? In our daily life, we come across many objects which are similar kind or in words which are basically same. For example we can think about a car. There are different brands , color, look, style, parts, but basically they all are cars. All them of are made by different companies but with similar kind of components.
 	</para>
 	<para>
-		We can say all of them are different instances of the <emphasis>class</emphasis> car. They all belongs to the car class. Every instance is known as an <emphasis>object</emphasis> in computer world. A <emphasis>class</emphasis> can contain variables or methods to access those variables.In Python everything is an <emphasis>object</emphasis>. Even if you create an integer, that is an object of the <emphasis>Integer class</emphasis>. In C++ this is different.
+
 	</para>
 	<section id="pythonforyouandme-Classes-firstclass">
 		<title>Your first class</title>

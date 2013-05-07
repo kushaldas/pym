@@ -36,7 +36,7 @@ Installing setuptools............done.
 Installing pip...............done.
 </screen>
         <para>
-            Now we can go inside virt1 directory and then enable virt1 environment.
+            Now we can virt1 environment.
         </para>
 <screen>
 <prompt>[user@host]$ </prompt><userinput>source virt1/bin/activate</userinput>
@@ -81,7 +81,7 @@ wsgiref         - 0.1.2        - active development (/usr/lib64/python2.7)
 yolk            - 0.4.3        - active
 </screen>
         <para>
-            Now we will create another virtual environment <emphasis>virt2</emphasis> where we will install same redis module but an old version 2.4
+            Now we will create another virtual environment <emphasis>virt2</emphasis> where we will install same redis module but an old 2.4 version.
         </para>
 <screen>
 <prompt>[user@host]$ </prompt><userinput>virtualenv virt2</userinput>

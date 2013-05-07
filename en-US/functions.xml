@@ -133,6 +133,20 @@ True]]>
 >>> print f(3)
 [1, 2, 3]]]>
 </programlisting>
+	<para>
+	    To avoid this you can write more idiomatic Python, like the following
+	</para>
+	<programlisting language="Python"><![CDATA[>>> def f(a, data=None):
+    if data is None:
+        data = []
+    data.append(a)
+    return data
+
+>>> print f(1)
+[1]
+>>> print f(2)
+[2]]]>
+	</programlisting>
 	</section>
 
 	<section id="pythonforyouandme-Functions-keyword">
@@ -159,6 +173,7 @@ SyntaxError: non-default argument follows default argument]]>
 	</section>
 	<section id="pythonforyouandme-Functions-doctstrings">
 		<title>Docstrings</title>
+		<indexterm><primary>Docstrings</primary><secondary>Docstrings in Python</secondary></indexterm>
 		<para>
 			In Python we use docstrings to explain how to use the code, it will be useful in interactive mode and to create auto-documentation. Below we see an example of the docstring for a function called <emphasis>longest_side</emphasis>.
 		</para> 

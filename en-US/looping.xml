@@ -243,6 +243,7 @@ Enter the number of rows: 5
 
 	<section id="pythonforyouandme-Looping-lists">
 		<title>Lists</title>
+        <indexterm><primary>List</primary><secondary>List datastructure</secondary></indexterm>
 		<para>
 			We are going to learn a data structure called list before we go ahead to learn more on looping. Lists an be written as a list of comma-separated values (items) between square brackets.
 		</para>

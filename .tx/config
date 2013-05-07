@@ -1,6 +1,7 @@
 [main]
-host = https://www.transifex.net
+host = https://www.transifex.com
 lang_map = aln:aln-AL, ar:ar-SA, as:as-IN, bal:bal-PK, bg:bg-BG, bn:bn-BD, bn_IN:bn-IN, bs:bs-BA, ca:ca-ES, cs:cs-CZ, da:da-DK, de_CH:de-CH, de:de-DE, el:el-GR, en_GB:en-GB, es:es-ES, et:et-EE, fa:fa-IR, fi:fi-FI, fr:fr-FR, gu:gu-IN, he:he-IL, hi:hi-IN, hr:hr-HR, hu:hu-HU, id:id-ID, is:is-IS, it:it-IT, ja:ja-JP, kn:kn-IN, ko:ko-KR, lt:lt-LT, lv:lv-LV, mai:mai-IN, ml:ml-IN, mr:mr-IN, ms:ms-MY, nb:nb-NO, nds:nds-DE, nl:nl-NL, nn:nn-NO, or:or-IN, pa:pa-IN, pl:pl-PL, pt_BR:pt-BR, pt:pt-PT, ro:ro-RO, ru:ru-RU, si:si-LK, sk:sk-SK, sl:sl-SI, sq:sq-AL, sr:sr-RS, sr@latin:sr-Latn-RS, sv:sv-SE, ta:ta-IN, te:te-IN, tr:tr-TR, uk:uk-UA, ur:ur-PK, vi:vi-VN, zh_CN:zh-CN, zh_HK:zh-HK, zh_TW:zh-TW
+type = PO
 
 [pym.acknowledgment]
 file_filter = <lang>/acknowledgment.po

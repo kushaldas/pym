@@ -9,7 +9,8 @@
 	</para>
 	<section id="pythonforyouandme-Modules-introduction">
 		<title>Introduction</title>
-		<para>
+		<indexterm><primary>Module</primary><secondary>Python modules</secondary></indexterm>
+        <para>
 			Still now when ever we wrote code in the python interpreter, after we came out of it, the code was lost. But in when one writes a larger program, people breaks their codes into different files and reuse then as required. In python we do this by <emphasis>modules</emphasis>. Modules are nothing files with Python definitions and statements. The module name is same as the file name without the .py extension.
 		</para>
                 <para>
@@ -120,6 +121,11 @@ help> modules
     <para>
     The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
     </para>
+    <para>
+        You can also use <emphasis>help()</emphasis> function in the interpeter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
+    </para>
+    <programlisting language="Python"><![CDATA[>>> help(str)]]>
+    </programlisting>         
     </section>
     <section id="pythonforyouandme-Modules-submodules">
         <title>Submodules</title>
@@ -135,8 +141,10 @@ mymodule
 ]]>
 </screen>
     <para>
-        In this example <emphasis>mymodule</emphasis> is the module name and <emphasis>bars</emphasis> and <emphasis>utils</emphasis> are two submodules in it.
+        In this example <emphasis>mymodule</emphasis> is the module name and <emphasis>bars</emphasis> and <emphasis>utils</emphasis> are two submodules in it. You can create an empty <emphasis>__init__.py</emphasis> using touch command.
     </para>
+    <programlisting language="Python"><![CDATA[$ touch mymodule/__init__.py]]>
+    </programlisting>         
     </section>
     <section id="pythonforyouandme-Modules-os">
 	<title>Module os</title>
@@ -144,42 +152,30 @@ mymodule
 	os module provides operating system dependent functionality. You can import it using the following import statement.
 	</para>
 <programlisting language="Python">
-<![CDATA[>>> import os
-
-]]>
+<![CDATA[>>> import os]]>
 </programlisting>
    <para>
    <emphasis>getuid()</emphasis> function returns the current process's effective user's id.
    </para> 
 <programlisting language="Python">
-<![CDATA[
->>> os.getuid()
-500
-
-]]>
+<![CDATA[>>> os.getuid()
+500]]>
 </programlisting>
     <para>
     <emphasis>getpid()</emphasis> returns the current process's id. <emphasis>getppid()</emphasis> returns the parent process's id.
     </para>
 <programlisting language="Python">
-<![CDATA[
->>> os.getpid()
+<![CDATA[>>> os.getpid()
 16150
 >>> os.getppid()
-14847
-
-
-]]>
+14847]]>
 </programlisting>
     <para>
-    <emphasis>uname()</emphasis> returns different information identifying the operating system, in Linux it returns details you can get from the uname command. The returned object is a tuple, <emphasis>(sysname, nodename, release, version, machine)</emphasis>
+    <emphasis>uname()</emphasis> returns different information identifying the operating system, in Linux it returns details you can get from the <emphasis>uname</emphasis> command. The returned object is a tuple, <emphasis>(sysname, nodename, release, version, machine)</emphasis>
     </para>
 <programlisting language="Python">
-<![CDATA[
->>> os.uname()
-('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')
-
-]]>
+<![CDATA[>>> os.uname()
+('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')]]>
 </programlisting>
     <para>
     <emphasis>getcwd()</emphasis>returns the current working directory. <emphasis>chdir(path)</emphasis> changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to <emphasis>/tmp</emphasis> and then again checking the current directory.
@@ -189,10 +185,31 @@ mymodule
 '/home/kushal'
 >>> os.chdir('/tmp')
 >>> os.getcwd()
-'/tmp'
-]]>
+'/tmp']]>
 </programlisting>
+
+    <para>
+        So let us use another function provided by the os module and create our own function to list all files and directories in any given directory. 
+    </para>
+<programlisting language="Python">
+<![CDATA[def view_dir(path='.'):
+    """
+    This function prints all files and directories in the given directory.
+
+    :args path: Path to the directory, default is current directory
+    """
+    names = os.listdir(path)
+    names.sort()
+    for name in names:
+        print name,]]>
+</programlisting>
+<programlisting language="Python">
+<![CDATA[>>> view_dir('/')
+.readahead bin boot dev etc home junk lib lib64 lost+found media mnt opt proc root run sbin srv sys tmp usr var]]>
+</programlisting>
+
+
 	</section>
-    
+
 </chapter>
 
