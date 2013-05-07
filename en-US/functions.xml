@@ -34,18 +34,14 @@
 		</para>
 <programlisting language="Python"><![CDATA[#!/usr/bin/env python
 def palindrome(s):
-    z = s
-    z = [x for x in z]
-    z.reverse()
-    if s == "".join(z):
-        return True
-    else:
-        return False
-s = raw_input("Enter a string: ")
-if palindrome(s):
-    print "Yay a palindrome"
-else:
-    print "Oh no, not a palindrome"]]>
+    return s == s[::-1]
+
+if __name__ = '__main__':
+	s = raw_input("Enter a string: ")
+	if palindrome(s):
+	    print "Yay a palindrome"
+	else:
+    	print "Oh no, not a palindrome"]]>
 </programlisting>
 		<para>
 			Now run the code :)
@@ -78,7 +74,7 @@ After the function call  9]]>
 			First we are assigning <emphasis>9</emphasis> to <emphasis>a</emphasis>, then calling change function, inside of that we are assigning <emphasis>90</emphasis> to <emphasis>a</emphasis> and printing <emphasis>a</emphasis>. After the function call we are again printing the value of <emphasis>a</emphasis>. When we are writing <emphasis>a = 90</emphasis> inside the function, it is actually creating a new variable called <emphasis>a</emphasis>, which is only available inside the function and will be destroyed after the function finished. So though the name is same for the variable <emphasis>a</emphasis> but they are different in and out side of the function.
 		</para>
 <programlisting language="Python"><![CDATA[#!/usr/bin/env python
-def chvariable ange(b):
+def change(b):
     global a
     a = 90
     print a
