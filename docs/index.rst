@@ -19,6 +19,7 @@ Contents:
    operatorsexpressions
    ifelse
    looping
+   datastructure
 
 
 
