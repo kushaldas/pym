@@ -21,6 +21,7 @@ Contents:
    looping
    datastructure
    strings
+   functions
 
 
 
