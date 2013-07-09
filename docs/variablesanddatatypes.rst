@@ -115,7 +115,6 @@ Average of N numbers
 --------------------
 
 In the next program we will do an average of N numbers.
-LoopCreating a loop in Python
 
 ::
 
