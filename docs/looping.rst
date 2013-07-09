@@ -410,7 +410,7 @@ We can have an optional *else* statement after any loop. It will be executed aft
 
 ::
 
-    >>> for i in range(0,5):
+    >>> for i in range(0, 5):
     ...     print i
     ... else:
     ...     print "Bye bye"
