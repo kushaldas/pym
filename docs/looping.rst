@@ -366,9 +366,9 @@ Now if you want to see this help message on your system type *help(range)* in th
 
 ::
 
-    >>> range(1,5)
+    >>> range(1, 5)
     [1, 2, 3, 4]
-    >>> range(1,15,3)
+    >>> range(1, 15, 3)
     [1, 4, 7, 10, 13]
     >>> range(10)
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
