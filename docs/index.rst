@@ -25,6 +25,7 @@ Contents:
    file
    classes
    igd
+   virtualenv
 
 
 
