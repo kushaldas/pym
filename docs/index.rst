@@ -23,6 +23,8 @@ Contents:
    strings
    functions
    file
+   classes
+   igd
 
 
 
