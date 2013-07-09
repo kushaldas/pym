@@ -260,7 +260,7 @@ Lists
 =====
 List datastructure
 
-We are going to learn a data structure called list before we go ahead to learn more on looping. Lists an be written as a list of comma-separated values (items) between square brackets.
+We are going to learn a data structure called list before we go ahead to learn more on looping. Lists can be written as a list of comma-separated values (items) between square brackets.
 
 ::
 
