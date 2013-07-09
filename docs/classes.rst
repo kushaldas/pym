@@ -1,0 +1,194 @@
+
+
+=====
+Class
+=====
+
+Your first class
+================
+
+Before writing your first class, you should know the syntax. We define a class in the following way..
+
+::
+
+    class nameoftheclass(parent_class):
+        statement1
+        statement2
+        statement3
+
+in the statements you can write any python statement, you can define functions (which we call methods of a class).
+
+::
+
+    >>> class MyClass(object):
+    ...     a = 90
+    ...     b = 88
+    ...
+    >>> p = MyClass()
+    >>> p
+    <__main__.MyClass instance at 0xb7c8aa6c>
+
+In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an *object* p of the *class* MyClass.If you do a dir on that...
+
+::
+
+    >>> dir(p)
+    ['__doc__', '__module__', 'a', 'b']
+
+You can see the variables *a* and *b* inside it.
+
+__init__ method
+===============
+
+__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it
+::
+
+    class Student(object):
+        """
+        Returns a ```Student``` object with the given name, branch and year. 
+        
+        """
+        def __init__(self, name, branch, year):
+                self.name = name
+                self.branch = branch
+                self.year = year
+                print "A student object is created"
+
+        def print_details(self):
+            """
+            Prints the details of the student.
+            """
+            print "Name:", self.name
+            print "Branch:", self.branch
+            print "Year:", self.year
+
+
+
+__init__ is called when ever an object of the class is constructed.That means when ever we will create a student object we will see the message "Creating a new student" in the prompt. You can see the first argument to the method is *self*. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it , but we have to get it explicitly in every method while writing the methods. Example shown below.
+
+::
+
+    >>> std1 = Student()
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    TypeError: __init__() takes exactly 4 arguments (1 given)
+    >>> std1 = Student('Kushal','CSE','2005')
+    A student object is created
+
+In this example at first we tried to create a Student object with passing any argument and python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that *__init__* method was called as the constructor method.
+
+Now we are going to call *print_details()* method.
+
+::
+
+    >>> std1.print_details()
+    Name: Kushal
+    Branch: CSE
+    Year: 2005
+
+
+
+Inheritance
+===========
+
+In general we human beings always know about inheritance. In programming it is almost the same. When a class inherits another class it inherits all features(like variables and methods) of the parent class. This helps in reusing codes.
+
+In the next example we first create a class called Person and create two sub-classes Student and Teacher. As both of the classes are inherited from Person class they will have all methods of Person and will have new methods and variables for their own purpose.
+
+student_teacher.py
+==================
+::
+
+    #!/usr/bin/env python
+
+    class Person(object):
+        """
+        Returns a ```Person``` object with given name.
+
+        """
+        def __init__(self,name):
+            self.name = name
+
+        def get_details(self):
+            "Returns a string containing name of the person"
+            return self.name
+
+
+    class Student(Person):
+        """
+        Returns a ```Student``` object, takes 3 arguments, name, branch, year.
+        
+        """
+        def __init__(self,name,branch,year):
+            Person.__init__(self,name)
+            self.branch = branch
+            self.year = year
+
+        def get_details(self):
+            "Returns a string containing student's details."
+            return "%s studies %s and is in %s year." % (self.name, self.branch, self.year)
+
+
+    class Teacher(Person):
+        """
+        Returns a ```Teacher``` object, takes a list of strings (list of papers) as
+        argument.
+        """    
+        def __init__(self, name, papers):
+            Person.__init__(self, name)
+            self.papers = papers
+
+        def get_details(self):
+            return "%s teaches %s" % (self.name, ','.join(self.papers))
+
+
+    person1 = Person('Sachin')
+    student1 = Student('Kushal', 'CSE', 2005)
+    teacher1 = Teacher('Prashad', ['C', 'C++'])
+
+    print person1.get_details()
+    print student1.get_details()
+    print teacher1.get_details()
+
+The output:
+
+::
+
+    $ ./student_teacher.py
+    Sachin
+    Kushal studies CSE and is in 2005 year.
+    Prashad teaches C,C++
+
+In this example you can see how we called the __init__ method of the class Person in both Student and Teacher classes' __init__ method. We also reimplemented *get_details()* method of Person class in both Student and Teacher class. So, when we are calling *get_details()* method on the teacher1 object it returns based on the object itself (which is of teacher class) and when we call *get_details()* on the student1 or person1 object it returns based on *get_details()* method implemented in it's own class.
+
+Multiple Inheritance
+====================
+
+One class can inherit more than one classes. It gets access to all methods and variables of the parent classes. The general syntax is:
+
+::
+
+    class MyClass(Parentclass1, Parentclass2,...):
+        def __init__(self):
+            Parentclass1.__init__(self)
+            Parentclass2.__init__(self)
+            ...
+            ...
+
+Deleting an object
+==================
+
+As we already know how to create an object , now we are going to see how to delete an python object. We use *del* for this.
+
+::
+
+    >>> s = "I love you"
+    >>> del s
+    >>> s
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    NameError: name 's' is not defined
+
+*del* actually decreases reference count by one. When the reference count of an object becomes zero the garbage collector will delete that object.
+
+
