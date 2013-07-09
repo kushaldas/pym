@@ -176,8 +176,8 @@ In a *print* statement if we multiply the string with an integer *n* , the strin
 
 ::
 
-    >>> print "\*" * 10
-    \**********
+    >>> print "*" * 10
+    **********
     >>> print "#" * 20
     ####################
     >>> print "--" * 20
@@ -206,10 +206,10 @@ The output
 
     $ ./design1.py
     Enter the number of rows: 5
-    \*****
-    \****
-    \***
-    \**
+    *****
+    ****
+    ***
+    **
     *
 
 Design 2
@@ -228,10 +228,10 @@ The output
     $ ./design2.py
     Enter the number of rows: 5
     *
-    \**
-    \***
-    \****
-    \*****
+    **
+    ***
+    ****
+    *****
 
 Design 3
 ::
@@ -250,10 +250,10 @@ The output
 
     $ ./design3.py
     Enter the number of rows: 5
-    \*****
-    \****
-    \***
-    \**
+    *****
+    ****
+    ***
+    **
     *
 
 Lists
@@ -312,6 +312,7 @@ That means we can use the above statement as *if* clause expression. The built-i
     3
 
 .. note:: If you want to test if the list is empty or not, do it like this
+   
    ::
        
         if list_name: #This means the list is not empty
@@ -445,7 +446,7 @@ This is a very simple game of sticks. There are 21 sticks, first the user picks 
         if sticks_taken >=5 or sticks_taken <=0:
             print "Wrong choice"
             continue
-        print "Computer took: " , (5 - sticks_taken) , "\n\n"
+        print "Computer took: " , (5 - sticks_taken) , "n\n"
         sticks -= 5
 
 
