@@ -20,6 +20,7 @@ Contents:
    ifelse
    looping
    datastructure
+   strings
 
 
 
