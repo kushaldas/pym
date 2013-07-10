@@ -107,4 +107,6 @@ Now we will create another virtual environment *virt2* where we will install sam
 
 As you can see yolk says that in this envrionment we have redis 2.4 installed. This way you can have many different environments for your all development needs.
 
+.. note:: Always remember to create virtualenvs while developing new applications. This will help you to keep the system modules clean.
+
 
