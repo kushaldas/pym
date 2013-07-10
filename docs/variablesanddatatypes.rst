@@ -88,7 +88,7 @@ In the next program we are going to calculate investments.
     year = 1
     while year <= period:
         value = amount + (inrate * amount)
-        print "Year %d Rs. %.2f" %(year, value)
+        print "Year %d Rs. %.2f" % (year, value)
         amount = value
         year = year + 1
 
