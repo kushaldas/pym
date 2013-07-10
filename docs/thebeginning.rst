@@ -8,9 +8,9 @@ So we are going to look at our first code. As python is an interpreted language 
 
 ::
 
-    \[kd@kdlappy ~]$ python
+    $ python
     Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)
-    \[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
+    [GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
