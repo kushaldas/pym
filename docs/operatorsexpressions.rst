@@ -134,7 +134,7 @@ Shorthand Operator
     >>> a /= 3
     >>> a
     8
-    >>> a += (26* 32)
+    >>> a += (26 * 32)
     >>> a
     840
 
@@ -147,7 +147,7 @@ shorthand.py example
     a = 2
     while a < N:
         print "%d" % a
-        a \*= a
+        a *= a
 
 The output
 
@@ -175,9 +175,9 @@ One example code used to show expressions
     a = 9
     b = 12
     c = 3
-    x = a -b / 3 + c * 2 -1
-    y = a -b / (3 + c) * (2 -1)
-    z = a - (b / (3 +c) * 2) -1
+    x = a - b / 3 + c * 2 - 1
+    y = a - b / (3 + c) * (2 - 1)
+    z = a - (b / (3 + c) * 2) - 1
     print "X = ", x
     print "Y = ", y
     print "Z = ", z
@@ -198,7 +198,7 @@ At first *x* is being calculated. The steps are like this
     9 - 12 / 3 + 3 * 2 -1
     9 - 4 + 3 * 2 - 1
     9 - 4 + 6 - 1
-    5 + 6 -1
+    5 + 6 - 1
     11 - 1
     10
 
@@ -286,7 +286,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
     commision = (commision_rate * numberofcamera * price)
     print "Bonus        = %6.2f" % bonus
     print "Commision    = %6.2f" % commision
-    print "Gross salary = %6.2f" % ( basic_salary + bonus + commision)
+    print "Gross salary = %6.2f" % (basic_salary + bonus + commision)
 
 The output
 
