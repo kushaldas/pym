@@ -197,7 +197,7 @@ To create a tuple which contains only one value you have to type a trailing comm
     >>> type(a)
     <type 'tuple'>
 
-Using the buitin function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
+Using the built in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
 
 ::
 
@@ -396,7 +396,7 @@ The output
 matrixmul.py
 ============
 
-In this example we will multiply two matrix's. First we will take input the number of rows/columns in the matrix (here we assume we are using n x n matrix). Then values of the matrix's.
+In this example we will multiply two matrices. First we will take input the number of rows/columns in the matrix (here we assume we are using n x n matrix). Then values of the matrices.
 
 ::
 
@@ -437,9 +437,9 @@ The output
     3 2 1
     After matrix multiplication
     ------------------------------
-    9    12     9
-    32    25    12
-    49    32     9
+        9    12     9 
+       32    25    12 
+       49    32     9 
     ------------------------------
 
 Here we have used list comprehensions couple of times. *[int(x) for x in raw_input("").split(" ")]* here first it takes the input as string by *raw_input()*, then split the result by " ", then for each value create one int. We are also using *[a[i][j] * b[j][i] for j in range(0,n)]* to get the resultant row in a single line.
