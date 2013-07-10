@@ -202,7 +202,7 @@ Using the buitin function *type()* you can know the data type of any variable. R
 ::
 
     >>> type(len)
-    <type 'bulletin_function_or_method'>
+    <type 'builtin_function_or_method'>
 
 Sets
 ====
