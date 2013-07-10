@@ -145,6 +145,8 @@ To avoid this you can write more idiomatic Python, like the following
     >>> print f(2)
     [2]
 
+.. note:: To understand more read `this link <http://docs.python.org/2/tutorial/controlflow.html#default-argument-values>`_.
+
 Keyword arguments
 =================
 ::
