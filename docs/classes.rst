@@ -96,7 +96,7 @@ In general we human beings always know about inheritance. In programming it is a
 In the next example we first create a class called Person and create two sub-classes Student and Teacher. As both of the classes are inherited from Person class they will have all methods of Person and will have new methods and variables for their own purpose.
 
 student_teacher.py
-==================
+-------------------
 ::
 
     #!/usr/bin/env python
@@ -192,3 +192,75 @@ As we already know how to create an object , now we are going to see how to dele
 *del* actually decreases reference count by one. When the reference count of an object becomes zero the garbage collector will delete that object.
 
 
+Getters and setters in Python
+==============================
+
+One simple answer, don't. If you are coming from other languages (read Java), you will be tempted
+to use getters or setters in all your classes. Please don't. Just use the attributes directly.
+The following shows a direct example.
+::
+
+    >>> class Student(object):
+    ...     def __init__(self, name):
+    ...         self.name = name
+    ... 
+    >>> std = Student("Kushal Das")
+    >>> print std.name
+    Kushal Das
+    >>> std.name = "Python"
+    >>> print std.name
+    Python
+
+Properties
+===========
+
+If you more fine tuned control over data attribute access, then you can use properties.
+In the following example of a bank account, we will make sure that no one can set the
+money value to negative and also a property called *inr* will give us the INR values of 
+the dollars in the account.
+::
+
+    #!/usr/bin/env python
+
+    class Account(object):
+        """The Account class,
+        The amount is in dollars.
+        """
+        def __init__(self, rate):
+            self.__amt = 0
+            self.rate = rate
+
+        @property
+        def amount(self):
+            "The amount of money in the account"
+            return self.__amt
+
+        @property
+        def inr(self):
+            "Gives the money in INR value."
+            return self.__amt * self.rate
+
+        @amount.setter
+        def amount(self, value):
+            if value < 0:
+                print "Sorry, no negative amount in the account."
+                return
+            self.__amt = value
+
+    if __name__ == '__main__':
+        acc = Account(61) # Based on today's value of INR :(
+        acc.amount = 20
+        print "Dollar amount:", acc.amount
+        print "In INR:", acc.inr
+        acc.amount = -100
+        print "Dollar amount:", acc.amount
+
+
+Output:
+::
+
+    $ python property.py
+    Dollar amount: 20
+    In INR: 1220
+    Sorry, no negative amount in the account.
+    Dollar amount: 20
