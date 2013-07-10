@@ -214,7 +214,7 @@ The following shows a direct example.
 Properties
 ===========
 
-If you more fine tuned control over data attribute access, then you can use properties.
+If you want more fine tuned control over data attribute access, then you can use properties.
 In the following example of a bank account, we will make sure that no one can set the
 money value to negative and also a property called *inr* will give us the INR values of 
 the dollars in the account.
