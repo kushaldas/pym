@@ -160,7 +160,7 @@ In this program we will convert the given temperature to Celsius from Fahrenheit
     fahrenhite = 0.0
     print "Fahrenheit Celsius"
     while fahrenheit <= 250:
-        celsius = ( fahrenheit - 32.0 ) / 1.8 #Here we calculate the fahrenhite value
+        celsius = ( fahrenheit - 32.0 ) / 1.8 # Here we calculate the Fahrenheit value
         print "%5.1f %7.2f" % (fahrenheit , celsius)
         fahrenheit = fahrenheit + 25
 
