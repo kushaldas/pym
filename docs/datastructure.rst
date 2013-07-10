@@ -372,7 +372,7 @@ In this example , you have to take number of students as input , then ask marks 
         if total < 120:
             print "%s failed :(" % x
         else:
-            print "%s passed :)" % y
+            print "%s passed :)" % x
 
 The output
 
