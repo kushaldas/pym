@@ -240,10 +240,10 @@ Design 3
     row = int(raw_input("Enter the number of rows: "))
     n = row
     while n >= 0:
-        x =  "*" * n
+        x = "*" * n
         y = " " * (row - n)
         print y + x
-    n -= 1
+        n -= 1
 
 The output
 ::
@@ -251,10 +251,10 @@ The output
     $ ./design3.py
     Enter the number of rows: 5
     *****
-    ****
-    ***
-    **
-    *
+     ****
+      ***
+       **
+        *
 
 Lists
 =====
