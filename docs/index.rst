@@ -26,6 +26,7 @@ Contents:
    classes
    igd
    virtualenv
+   projectstructure
 
 
 
