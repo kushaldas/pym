@@ -10,14 +10,14 @@ So we are going to look at our first code. As python is an interpreted language 
 
     $ python
     Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)
-    [GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
+    q[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
 In our first code we are going to print "Hello World!" , so do it as below,
 ::
 
-    >>>print "Hello World!"
+    >>> print "Hello World!"
     Hello World!
 
 helloworld.py
@@ -89,17 +89,18 @@ Comments are some piece of English text which explains what this code does, we w
 
 ::
 
-    >>> #this is a comment
-    >>> #the next line will add two numbers
+    >>> # This is a comment
+    >>> # The next line will add two numbers
     >>> a = 12 + 34
     >>> print c #this is a comment too :)
 
-Comments are mainly for the people will *develop* or *maintain* the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You can also use some standard comments like
+Comments are mainly for the people will *develop* or *maintain* the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You should alwats give a space after # and then start writing
+the comment. You can also use some standard comments like
 
 ::
 
-    #FIXME -- fix these code later
-    #TODO -- in future you have to do this
+    # FIXME -- fix these code later
+    # TODO -- in future you have to do this
 
 Modules
 =======
