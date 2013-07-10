@@ -9,7 +9,7 @@ Reusing the same code is required many times within a same program. Functions he
 Defining a function
 ===================
 
-We use *def* keyword to define a function. general syntax is like
+We use *def* keyword to define a function. General syntax is like
 
 ::
 
@@ -39,7 +39,7 @@ Remember the palindrome program we wrote in the last chapter. Let us write a fun
     #!/usr/bin/env python
     def palindrome(s):
         return s == s[::-1]
-    if __name__ = '__main__':
+    if __name__ == '__main__':
         s = raw_input("Enter a string: ")
         if palindrome(s):
             print "Yay a palindrome"
@@ -63,7 +63,7 @@ To understand local and global variables we will go through two examples.
     print "Before the function call ", a
     print "inside change function",
     change(a)
-    print "After the function call ", a]
+    print "After the function call ", a
 
 The output
 ::
@@ -136,10 +136,10 @@ To avoid this you can write more idiomatic Python, like the following
 ::
 
     >>> def f(a, data=None):
-    if data is None:
-    data = []
-    data.append(a)
-    return data
+    ...     if data is None:
+    ...         data = []
+    ...         data.append(a)
+    ...         return data
     >>> print f(1)
     [1]
     >>> print f(2)
@@ -173,7 +173,7 @@ In the above example you can see we are calling the function with variable names
 
 Docstrings
 ==========
-DocstringsDocstrings in Python
+Docstrings in Python
 
 In Python we use docstrings to explain how to use the code, it will be useful in interactive mode and to create auto-documentation. Below we see an example of the docstring for a function called *longest_side*.
 
