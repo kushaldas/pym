@@ -15,13 +15,13 @@ Strings are nothing but simple text. In python we declare strings in between "" 
     >>> s = "Here is a line \
     ... splitted in two lines"
     >>> s
-    'Here is a line splitted in two lines'
-    >>> s = "Here is a line \n splitted in two lines"
+    'Here is a line split in two lines'
+    >>> s = "Here is a line \n split in two lines"
     >>> s
-    'Here is a line \n splitted in two lines'
+    'Here is a line \n split in two lines'
     >>> print s
     Here is a line
-    splitted in two lines
+    split in two lines
 
 Now if you want to multiline strings you have to use triple single/double quotes.
 
@@ -172,10 +172,10 @@ Palindrome are the kind of strings which are same from left or right whichever w
     #!/usr/bin/env python
     s = raw_input("Please enter a string: ")
     z = s[::-1]
-    if s == z
+    if s == z:
         print "The string is a palindrome"
     else:
-        print "The string is not a palindrome"]
+        print "The string is not a palindrome"
 
 The output
 
