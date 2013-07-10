@@ -172,7 +172,7 @@ Here we used one while loop inside another loop, this is known as nested looping
 
     print "-" * 50
 
-In a *print* statement if we multiply the string with an integer *n* , the string will be printed *n*many times. Some examples
+In a *print* statement if we multiply the string with an integer *n* , the string will be printed *n* many times. Some examples
 
 ::
 
