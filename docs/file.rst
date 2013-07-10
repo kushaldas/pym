@@ -39,7 +39,7 @@ After opening a file one should always close the opened file. We use method *clo
 
 .. important:: Important
    ---------
-   Always make sure you \*explicitly* close each open file, once its job is done and you have no reason to keep it open.
+   Always make sure you *explicitly* close each open file, once its job is done and you have no reason to keep it open.
    Because
    - There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable way of recovery, so the program could crash.
    - Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are not useful or usable.
@@ -54,7 +54,7 @@ To read the whole file at once use the *read()* method.
 
     >>> f = open("sample.txt")
     >>> f.read()
-    'I love Python\\nPradeepto loves KDE\\nSankarshan loves Openoffice\\n'
+    'I love Python\nPradeepto loves KDE\nSankarshan loves Openoffice\n'
 
 If you call *read()* again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
 
@@ -62,9 +62,9 @@ If you call *read()* again it will return empty string as it already read the wh
 
     >>> f = open("sample.txt")
     >>> f.readline()
-    'I love Python\\n'
+    'I love Python\n'
     >>> f.readline()
-    'Pradeepto loves KDE\\n'
+    'Pradeepto loves KDE\n'
 
 To read all the all the lines in a list we use *readlines()* method.
 
@@ -72,7 +72,7 @@ To read all the all the lines in a list we use *readlines()* method.
 
     >>> f = open("sample.txt")
     >>> f.readlines()
-    \['I love Python\\n', 'Pradeepto loves KDE\\n', 'Sankarshan loves Openoffice\\n']
+    ['I love Python\n', 'Pradeepto loves KDE\n', 'Sankarshan loves Openoffice\n']
 
 You can even loop through the lines in a file object.
 
@@ -116,9 +116,9 @@ Let us open a file then we will write some random text into it by using the writ
 ::
 
     >>> f = open("ircnicks.txt", 'w')
-    >>> f.write('powerpork\\n')
-    >>> f.write('indrag\\n')
-    >>> f.write('mishti\\n')
+    >>> f.write('powerpork\n')
+    >>> f.write('indrag\n')
+    >>> f.write('mishti\n')
     >>> f.write('sankarshan')
     >>> f.close()
 
