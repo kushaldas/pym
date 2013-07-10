@@ -46,7 +46,7 @@ From the above example you can understand that to declare a variable in python ,
 
     >>> 'India'
     'India'
-    >>> 'India\\'s best'
+    >>> 'India\'s best'
     "India's best"
     >>> "Hello World!"
     'Hello World!'

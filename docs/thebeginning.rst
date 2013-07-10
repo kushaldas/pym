@@ -76,7 +76,7 @@ So we can have few basic rules ready for spaces and indentation.
 
 There are more places where you should be following same type of rules of whitespace, they are like
 
-- Add a space after "," in dicts, lists, typles, and argument lists and after ":" in dicts.
+- Add a space after "," in dicts, lists, tuples, and argument lists and after ":" in dicts.
 
 - Spaces around assignments and comparisons (except in argument list)
 
