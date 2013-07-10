@@ -33,7 +33,7 @@ At first we created a list *a*. Then to add *45* at the end of the list we call 
     >>> a.count(45)
     2
 
-If you want to any particular value from the list you have to use *remove()* method.
+If you want to remove any particular value from the list you have to use *remove()* method.
 
 ::
 
