@@ -24,6 +24,7 @@ Contents:
    functions
    file
    classes
+   modules
    igd
    virtualenv
    projectstructure
