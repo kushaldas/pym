@@ -102,7 +102,7 @@ Stacks are often known as LIFO (Last In First Out) structure. It means the data 
     [1, 2]
     >>> a.append(34)
     >>> a
-    [1, 2, 34)
+    [1, 2, 34]
 
 We learned a new method above *pop()*. *pop(i)* will take out the ith data from the list.
 
