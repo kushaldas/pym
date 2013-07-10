@@ -66,16 +66,21 @@ You can use the following operators as relational operators
 Relational Operators
 --------------------
 
-========    ===========================
-Operator    Meaning
-========    ===========================
-    \<       Is less than
-    <=       Is less than or equal to
-    >        Is greater than
-    >=       Is greater than or equal to
-    \=\=     Is equal to
-    !=       Is not equal to
-========    ============================
++----------+-----------------------------+
+| Operator | Meaning                     |
++----------+-----------------------------+
+| \<       | Is less than                |
++----------+-----------------------------+
+| <=       | Is less than or equal to    |
++----------+-----------------------------+
+| >        | Is greater than             |
++----------+-----------------------------+
+| >=       | Is greater than or equal to |
++----------+-----------------------------+
+| \=\=     | Is equal to                 |
++----------+-----------------------------+
+| !=       | Is not equal to             |
++----------+-----------------------------+
 
 Some examples
 
