@@ -443,7 +443,7 @@ This is a very simple game of sticks. There are 21 sticks, first the user picks 
         if sticks == 1:
             print "You took the last stick, you loose"
             break
-        if sticks_taken >=5 or sticks_taken <=0:
+        if sticks_taken >= 5 or sticks_taken <= 0:
             print "Wrong choice"
             continue
         print "Computer took: " , (5 - sticks_taken) , "n\n"
