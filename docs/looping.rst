@@ -264,7 +264,7 @@ We are going to learn a data structure called list before we go ahead to learn m
 
 ::
 
-    >>> a = [ 1 , 342, 2233423, 'India', 'Fedora']
+    >>> a = [ 1, 342, 2233423, 'India', 'Fedora']
     >>> a
     [1, 342, 2233423, 'India', 'Fedora']
 
