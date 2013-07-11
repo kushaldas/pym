@@ -173,7 +173,7 @@ receive an email with a link, go to that linka and confirm your registration.
  .pypirc file
  -------------
 
- You account details genrally stay inside a file called `.pypirc` under your home directory. 
+ You account details genrally stay inside a file called *.pypirc* under your home directory. 
  The content of the file will look like
  ::
 
@@ -188,7 +188,7 @@ receive an email with a link, go to that linka and confirm your registration.
 
 Replace <username> and <password> with your newly created account details.
 
-.. note:: Remember to change the name of the project to something else to test following instructions. 
+.. note:: Remember to change the name of the project to something else in the `setup.py`to test following instructions. 
 
 Registering your project
 -------------------------
