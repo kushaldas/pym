@@ -4,7 +4,7 @@
 File handling
 =============
 
-A file is some information or data which stays in the computer storage devices. You already know about different kinds of file , like your music files, video files, text files. Python gives you easy ways to manipulate these files. Generally we divide files in two categories, text file and binary file. Text files are simple text where as the binary files contain binary data which is only readable by computer.
+A file is some information or data which stays in the computer storage devices. You already know about different kinds of file, like your music files, video files, text files. Python gives you easy ways to manipulate these files. Generally we divide files in two categories, text file and binary file. Text files are simple text where as the binary files contain binary data which is only readable by computer.
 
 File opening
 ============
@@ -17,7 +17,7 @@ To open a file we use *open()* function. It requires two arguments, first the fi
 
 + "a" -> open in append mode
 
-The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file
+The default mode is read only, i.e. if you do not provide any mode it will open the file as read only. Let us open a file
 
 ::
 
@@ -41,8 +41,11 @@ After opening a file one should always close the opened file. We use method *clo
    ---------
    Always make sure you *explicitly* close each open file, once its job is done and you have no reason to keep it open.
    Because
+
    - There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable way of recovery, so the program could crash.
+
    - Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are not useful or usable.
+
    - Open files always stand a chance of corruption and data loss.
 
 Reading a file
@@ -79,14 +82,14 @@ You can even loop through the lines in a file object.
 ::
 
     >>> fobj = open("sample.txt")
-    >>> for x in f:
+    >>> for x in fobj:
     ...     print x,
     ...
     I love Python
     Pradeepto loves KDE
     Sankarshan loves Openoffice
 
-Let us write a program which will take the file name as the input from the user and show the content of the file in the console.
+Let us write a program (showfile.py) which will take the file name as the input from the user and show the content of the file in the console.
 
 ::
 
@@ -145,7 +148,7 @@ In this example we will copy a given text file to another file.
     import sys
     if len(sys.argv) < 3:
         print "Wrong parameter"
-        print "./copyfile.py file1 file2"
+        print "Syntax: ./copyfile.py [file1] [file2]"
         sys.exit(1)
     f1 = open(sys.argv[1])
     s = f1.read()
@@ -185,11 +188,11 @@ Here we used a new function *enumerate(iterableobject)*, which returns the index
 Random seeking in a file
 ========================
 
-You can also randomly move around inside a file using *seek()* method. It takes two arguments , offset and whence. To know more about it let us read what python help tells us
+You can also randomly move around inside a file using *seek()* method. It takes two arguments, offset and whence. To know more about it let us read what python help tells us
 
-seek(...)
-seek(offset[, whence]) -> None. Move to new file position.
-Argument offset is a byte count. Optional argument whence defaults to
+fileObject.seek(offset[, whence]) -> None. Move to new file position.
+
+Argument *offset* is a byte count. Optional argument *whence* defaults to
 0 (offset from start of file, offset should be >= 0); other values are 1
 (move relative to current position, positive or negative), and 2 (move
 relative to end of file, usually negative, although many platforms allow
@@ -206,21 +209,21 @@ Let us see one example
     >>> fobj.write('0123456789abcdef')
     >>> fobj.close()
     >>> fobj = open('/tmp/tempfile')
-    >>> fobj.tell()    #tell us the offset position
+    >>> fobj.tell()    #Tell us the offset position
     0L
-    >>> fobj.seek(5) # Goto 5th byte
+    >>> fobj.seek(5) # Set pointer next to 5th byte
     >>> fobj.tell()
     5L
     >>> fobj.read(1) #Read 1 byte
     '5'
-    >>> fobj.seek(-3, 2) # goto 3rd byte from the end
+    >>> fobj.seek(-3, 2) # Goto 3rd byte from the end
     >>> fobj.read() #Read till the end of the file
     'def'
 
 Count spaces, tabs and new lines in a file
 ==========================================
 
-Let us try to write an application which will count the spaces , tabs, and  lines in any given file.
+Let us try to write an application which will count the spaces, tabs and lines in any given file.
 
 ::
 
@@ -264,14 +267,16 @@ Let us try to write an application which will count the spaces , tabs, and  line
             print "Spaces %d. tabs %d. lines %d" % (spaces, tabs, lines)
             return True
         else:
+            print "File not found"
             return False
 
 
     if __name__ == '__main__':
-        if len(sys.argv) > 1:
+        if len(sys.argv) == 2:
             main(sys.argv[1])
         else:
-            sys.exit(-1)
+            print "Wrong parameter"
+            print "Syntax: ./spaces_lines_tabs.py [path]"
         sys.exit(0)
 
 You can see that we have two functions in the program , *main* and *parse_file* where the second one actually parses the file and returns the result and we print the result in *main* function. By splitting up the code in smaller units (functions) helps us to organize the codebase and also it will be easier to write test cases for the functions.
