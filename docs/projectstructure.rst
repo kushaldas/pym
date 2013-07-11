@@ -161,3 +161,93 @@ Python Package Index (PyPI)
 Do you remember the *pip* command we are using still now? Ever thought from where those packages
 are coming from? The answer is `PyPI <http://pypi.python.org/pypi>`_. It is a 
 repository of software for the Python programming language.
+
+For our example, we will use the test server of PyPI which is `https://testpypi.python.org/pypi <https://testpypi.python.org/pypi>`_
+
+Creating account
+-----------------
+
+First reqister yourself in `this link <https://testpypi.python.org/pypi?%3Aaction=register_form>`_. You will 
+receive an email with a link, go to that linka and confirm your registration.
+
+ .pypirc file
+ -------------
+
+ You account details genrally stay inside a file called `.pypirc` under your home directory. 
+ The content of the file will look like
+ ::
+
+    [distutils]
+    index-servers =
+        pypi
+
+    [pypi]
+    repository: https://testpypi.python.org/pypi
+    username: <username>
+    password: <password>
+
+Replace <username> and <password> with your newly created account details.
+
+.. note:: Remember to change the name of the project to something else to test following instructions. 
+
+Registering your project
+-------------------------
+
+Next we will register our project to the PyPI service. This is done using the `register` command. We will
+also use `-r` to point it to the test server.
+::
+
+    $ python setup.py register -r https://testpypi.python.org/pypi
+    running register
+    running egg_info
+    writing factorial.egg-info/PKG-INFO
+    writing top-level names to factorial.egg-info/top_level.txt
+    writing dependency_links to factorial.egg-info/dependency_links.txt
+    reading manifest file 'factorial.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'factorial.egg-info/SOURCES.txt'
+    running check
+    Registering factorial to https://testpypi.python.org/pypi
+    Server response (200): OK
+
+Uploading your project
+-----------------------
+
+Now finally we can upload our project to the PyPI server using `upload` command.
+Remember that this command needs to be invoked immediately after you build the source/binary
+distribution files.
+::
+
+    $ python setup.py sdist upload -r https://testpypi.python.org/pypi
+    running sdist
+    running egg_info
+    writing factorial.egg-info/PKG-INFO
+    writing top-level names to factorial.egg-info/top_level.txt
+    writing dependency_links to factorial.egg-info/dependency_links.txt
+    reading manifest file 'factorial.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    writing manifest file 'factorial.egg-info/SOURCES.txt'
+    running check
+    creating factorial-0.1
+    creating factorial-0.1/factorial.egg-info
+    creating factorial-0.1/myfact
+    making hard links in factorial-0.1...
+    hard linking MANIFEST.in -> factorial-0.1
+    hard linking README.rst -> factorial-0.1
+    hard linking setup.py -> factorial-0.1
+    hard linking factorial.egg-info/PKG-INFO -> factorial-0.1/factorial.egg-info
+    hard linking factorial.egg-info/SOURCES.txt -> factorial-0.1/factorial.egg-info
+    hard linking factorial.egg-info/dependency_links.txt -> factorial-0.1/factorial.egg-info
+    hard linking factorial.egg-info/top_level.txt -> factorial-0.1/factorial.egg-info
+    hard linking myfact/__init__.py -> factorial-0.1/myfact
+    hard linking myfact/fact.py -> factorial-0.1/myfact
+    Writing factorial-0.1/setup.cfg
+    Creating tar archive
+    removing 'factorial-0.1' (and everything under it)
+    running upload
+    Submitting dist/factorial-0.1.tar.gz to https://testpypi.python.org/pypi
+    Server response (200): OK
+
+Now if you visit the `site <https://testpypi.python.org/pypi/factorial/>`_, you will find
+your project is ready to be used by others.
+
