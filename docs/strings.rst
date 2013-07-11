@@ -150,7 +150,8 @@ Finding text
 Stings have some methods which will help you in finding text/substring in a string. Examples are given below:
 
 ::
-
+    
+    >>> s = "faulty for a reason"
     >>> s.find("for")
     7
     >>> s.find("fora")
