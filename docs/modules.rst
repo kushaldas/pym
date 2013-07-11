@@ -73,6 +73,42 @@ There are different ways to import modules. We already saw one way to do this. Y
     >>> simplebar(20)
     --------------------
 
+.. note:: Never do *from module import \** Read `this link <http://docs.python.org/2/faq/programming.html#what-are-the-best-practices-for-using-import-in-a-module>`_ for more information.
+
+Submodules
+==========
+
+We can many submodules inside a module. A directory with a *__init__.py* can also be used a module and all *.py* files inside it become submodules.
+
+::
+
+    $ tree mymodule
+    mymodule
+    |-- bars.py
+    |-- __init__.py
+    `-- utils.py
+
+In this example *mymodule* is the module name and *bars* and *utils* are two submodules in it. You can create an empty *__init__.py* using touch command.
+
+::
+
+    $ touch mymodule/__init__.py
+
+
+__all__ in __init__.py
+=======================
+
+If `__init__.py` file contains a list called `__all__` then, only the values listed there will only
+be imported when some will call `from module import *`. So if in the mymodule's `__init__.py`
+file contains the following
+::
+
+    from bars import simplebar
+    __all__ = [simplebar, ]
+
+Then if someone does `from mymodule import *` only `simplebar` will be available for them.
+
+
 Default modules
 ===============
 
@@ -101,24 +137,10 @@ You can also use *help()* function in the interpeter to find documentation about
 
     >>> help(str)
 
-Submodules
-==========
 
-We can many submodules inside a module. A directory with a *__init__.py* can also be used a module and all *.py* files inside it become submodules.
 
-::
 
-    $ tree mymodule
-    mymodule
-    |-- bars.py
-    |-- __init__.py
-    `-- utils.py
 
-In this example *mymodule* is the module name and *bars* and *utils* are two submodules in it. You can create an empty *__init__.py* using touch command.
-
-::
-
-    $ touch mymodule/__init__.py
 
 Module os
 =========
