@@ -158,6 +158,6 @@ To install from the source use the following command.
 Python Package Index (PyPI)
 ============================
 
-Do you remember the *pip* command we are using still now? Ever though from where those packages
+Do you remember the *pip* command we are using still now? Ever thought from where those packages
 are coming from? The answer is `PyPI <http://pypi.python.org/pypi>`_. It is a 
 repository of software for the Python programming language.
