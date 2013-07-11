@@ -201,3 +201,41 @@ In Python we use docstrings to explain how to use the code, it will be useful in
 We will learn more on docstrings in reStructuredText chapter.
 
 
+Higher-order function
+======================
+
+Higher-order function or a functor is a function which does at least one of the 
+following step inside:
+
+    - Takes one or more functions as argument.
+    - Returns another function as output.
+
+In Python any function can act as higher order function.
+::
+
+    >>> def high(func, value):
+    ...     return func(value)
+    ...
+    >>> lst = high(dir, int)
+    >>> print lst[-3:]
+    ['imag', 'numerator', 'real']
+    >>> print lst
+
+.. note:: To know more read `this link <http://docs.python.org/2/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
+
+map function
+=============
+
+`map` is a very useful higher order function in Python. It takes one function and an iterator
+as input and then applies the function on each value of the iterator and returns a list of results.
+
+Example::
+
+    >>> lst = [1, 2, 3, 4, 5]
+    >>> def square(num):
+    ...     "Returns the square of a given number."
+    ...     return num * num
+    ... 
+    >>> print map(square, lst)
+    [1, 4, 9, 16, 25]
+
