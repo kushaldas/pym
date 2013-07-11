@@ -21,8 +21,8 @@ The default mode is read only, ie if you do not provide any mode it will open th
 
 ::
 
-    >>> f = open("love.txt")
-    >>> f
+    >>> fobj = open("love.txt")
+    >>> fobj
     <open file 'love.txt', mode 'r' at 0xb7f2d968>
 
 Closing a file
@@ -32,10 +32,10 @@ After opening a file one should always close the opened file. We use method *clo
 
 ::
 
-    >>> f = open("love.txt")
-    >>> f
+    >>> fobj = open("love.txt")
+    >>> fobj
     <open file 'love.txt', mode 'r' at 0xb7f2d968>
-    >>> f.close()
+    >>> fobj.close()
 
 .. important:: Important
    ---------
@@ -52,33 +52,33 @@ To read the whole file at once use the *read()* method.
 
 ::
 
-    >>> f = open("sample.txt")
-    >>> f.read()
+    >>> fobj = open("sample.txt")
+    >>> fobj.read()
     'I love Python\nPradeepto loves KDE\nSankarshan loves Openoffice\n'
 
 If you call *read()* again it will return empty string as it already read the whole file. readline() can help you to read one line each time from the file.
 
 ::
 
-    >>> f = open("sample.txt")
-    >>> f.readline()
+    >>> fobj = open("sample.txt")
+    >>> fobj.readline()
     'I love Python\n'
-    >>> f.readline()
+    >>> fobj.readline()
     'Pradeepto loves KDE\n'
 
 To read all the all the lines in a list we use *readlines()* method.
 
 ::
 
-    >>> f = open("sample.txt")
-    >>> f.readlines()
+    >>> fobj = open("sample.txt")
+    >>> fobj.readlines()
     ['I love Python\n', 'Pradeepto loves KDE\n', 'Sankarshan loves Openoffice\n']
 
 You can even loop through the lines in a file object.
 
 ::
 
-    >>> f = open("sample.txt")
+    >>> fobj = open("sample.txt")
     >>> for x in f:
     ...     print x,
     ...
@@ -92,9 +92,9 @@ Let us write a program which will take the file name as the input from the user 
 
     #!/usr/bin/env python
     name = raw_input("Enter the file name: ")
-    f = open(name)
-    print f.read()
-    f.close()
+    fobj = open(name)
+    print fobj.read()
+    fobj.close()
 
 In the last line you can see that we closed the file object with the help of close() method.
 
@@ -115,19 +115,19 @@ Let us open a file then we will write some random text into it by using the writ
 
 ::
 
-    >>> f = open("ircnicks.txt", 'w')
-    >>> f.write('powerpork\n')
-    >>> f.write('indrag\n')
-    >>> f.write('mishti\n')
-    >>> f.write('sankarshan')
-    >>> f.close()
+    >>> fobj = open("ircnicks.txt", 'w')
+    >>> fobj.write('powerpork\n')
+    >>> fobj.write('indrag\n')
+    >>> fobj.write('mishti\n')
+    >>> fobj.write('sankarshan')
+    >>> fobj.close()
 
 Now read the file we just created
 
 ::
 
-    >>> f = open('ircnicks.txt')
-    >>> s = f.read()
+    >>> fobj = open('ircnicks.txt')
+    >>> s = fobj.read()
     >>> print s
     powerpork
     indrag
@@ -202,19 +202,19 @@ Let us see one example
 
 ::
 
-    >>> f = open('/tmp/tempfile', 'w')
-    >>> f.write('0123456789abcdef')
-    >>> f.close()
-    >>> f = open('/tmp/tempfile')
-    >>> f.tell()    #tell us the offset position
+    >>> fobj = open('/tmp/tempfile', 'w')
+    >>> fobj.write('0123456789abcdef')
+    >>> fobj.close()
+    >>> fobj = open('/tmp/tempfile')
+    >>> fobj.tell()    #tell us the offset position
     0L
-    >>> f.seek(5) # Goto 5th byte
-    >>> f.tell()
+    >>> fobj.seek(5) # Goto 5th byte
+    >>> fobj.tell()
     5L
-    >>> f.read(1) #Read 1 byte
+    >>> fobj.read(1) #Read 1 byte
     '5'
-    >>> f.seek(-3, 2) # goto 3rd byte from the end
-    >>> f.read() #Read till the end of the file
+    >>> fobj.seek(-3, 2) # goto 3rd byte from the end
+    >>> fobj.read() #Read till the end of the file
     'def'
 
 Count spaces, tabs and new lines in a file
