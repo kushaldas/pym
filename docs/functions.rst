@@ -63,7 +63,7 @@ To understand local and global variables we will go through two examples.
     print "Before the function call ", a
     print "inside change function",
     change(a)
-    print "After the function call ", a]
+    print "After the function call ", a
 
 The output
 ::
