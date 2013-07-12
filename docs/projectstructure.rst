@@ -173,7 +173,7 @@ receive an email with a link, go to that linka and confirm your registration.
  .pypirc file
  -------------
 
- You account details genrally stay inside a file called *.pypirc* under your home directory. 
+ Your account details genrally stay inside a file called *.pypirc* under your home directory.
  The content of the file will look like
  ::
 
