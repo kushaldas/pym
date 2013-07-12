@@ -78,7 +78,7 @@ There are different ways to import modules. We already saw one way to do this. Y
 Submodules
 ==========
 
-We can many submodules inside a module. A directory with a *__init__.py* can also be used a module and all *.py* files inside it become submodules.
+We can have many submodules inside a module. A directory with a *__init__.py* can also be used as a module and all *.py* files inside it become submodules.
 
 ::
 
@@ -98,16 +98,17 @@ In this example *mymodule* is the module name and *bars* and *utils* are two sub
 __all__ in __init__.py
 =======================
 
-If `__init__.py` file contains a list called `__all__` then, only the values listed there will only
-be imported when some will call `from module import *`. So if in the mymodule's `__init__.py`
+If `__init__.py` file contains a list called `__all__`, then only the values listed there will
+be imported when we call `from module import *`. So if the mymodule's `__init__.py`
 file contains the following
 ::
 
     from bars import simplebar
     __all__ = [simplebar, ]
 
-Then if someone does `from mymodule import *` only `simplebar` will be available for them.
+Then by doing `from mymodule import *` only `simplebar` will be available.
 
+.. note:: The use of the *,* in the example minimizes the damage done by *from mymodule import \**
 
 Default modules
 ===============
