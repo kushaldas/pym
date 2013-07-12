@@ -23,6 +23,7 @@ Contents:
    strings
    functions
    file
+   exceptions
    classes
    modules
    igd
