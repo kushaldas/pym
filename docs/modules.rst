@@ -10,7 +10,7 @@ Introduction
 ============
 
 
-Up until now whenever we wrote code in the python interpreter, and after we got out of it, the code was lost. But when one writes a larger program, people break their code into different files and reuse them as required. In python we do this by *modules*. Modules are nothing but files with Python definitions and statements. The module name is same as the file name without the .py extension.
+Up until now, all the code we wrote in the python interpreter was lost when we exited the interpreter. But when people write large programs they tend to break their code into multiple different files for ease of use, debugging and readability. In python we use *modules* to achieve such goals. Modules are nothing but files with python definitions and statements. The module name, to import, has the same name of the python file without the .py extension. 
 
 You can find the name of the module by accessing the *__name__* variable. It is a global variable.
 
