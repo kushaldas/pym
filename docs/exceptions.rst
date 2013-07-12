@@ -122,3 +122,25 @@ We can catch these exceptions like any other normal exceptions.
     ... 
     ValueError in our code.
 
+Using finally for cleanup
+==========================
+
+If we want to have some statements which must be executed under all circumstances,
+we can use `finally` clause, it will be always executed before finishing `try`
+statements.
+::
+
+    >>> try:
+    ...     fobj = open("hello.txt", "w")
+    ...     res = 12 / 0
+    ... except ZeroDivisionError:
+    ...     print "We have an error in divition"
+    ... finally:
+    ...     fobj.close()
+    ...     print "Closing the file object."
+    ... 
+    We have an error in divition
+    Closing the file object.
+
+In this example we are making sure that the file object we open, must get closed
+in the `finally` clause.
