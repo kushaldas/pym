@@ -10,7 +10,7 @@ Introduction
 ============
 
 
-Still now when ever we wrote code in the python interpreter, after we came out of it, the code was lost. But in when one writes a larger program, people breaks their codes into different files and reuse then as required. In python we do this by *modules*. Modules are nothing files with Python definitions and statements. The module name is same as the file name without the .py extension.
+Still now when ever we wrote code in the python interpreter, after we came out of it, the code was lost. But in when one writes a larger program, people breaks their codes into different files and reuse them as required. In python we do this by *modules*. Modules are nothing files with Python definitions and statements. The module name is same as the file name without the .py extension.
 
 You can find the name of the module by accessing the *__name__* variable. It is a global variable.
 
