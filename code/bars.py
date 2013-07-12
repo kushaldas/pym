@@ -2,7 +2,7 @@
 Bars Module
 ============
 
-This is an example module with provide different ways to print bars.
+This is an example module which provides different ways to print bars.
 
 """
 
