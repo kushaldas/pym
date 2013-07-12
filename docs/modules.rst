@@ -10,7 +10,7 @@ Introduction
 ============
 
 
-Up until now whenever we wrote code in the python interpreter, and after we got out of it, the code was lost. But when one writes a larger program, people break their code into different files and reuse them as required. In python we do this by *modules*. Modules are nothing but files with Python definitions and statements. The module name is same as the file name without the .py extension.
+Up until now, all the code we wrote in the python interpreter was lost when we exited the interpreter. But when people write large programs they tend to break their code into multiple different files for ease of use, debugging and readability. In python we use *modules* to achieve such goals. Modules are nothing but files with python definitions and statements. The module name, to import, has the same name of the python file without the .py extension. 
 
 You can find the name of the module by accessing the *__name__* variable. It is a global variable.
 
@@ -78,7 +78,7 @@ There are different ways to import modules. We already saw one way to do this. Y
 Submodules
 ==========
 
-We can many submodules inside a module. A directory with a *__init__.py* can also be used a module and all *.py* files inside it become submodules.
+We can have many submodules inside a module. A directory with a *__init__.py* can also be used as a module and all *.py* files inside it become submodules.
 
 ::
 
@@ -98,16 +98,17 @@ In this example *mymodule* is the module name and *bars* and *utils* are two sub
 __all__ in __init__.py
 =======================
 
-If `__init__.py` file contains a list called `__all__` then, only the values listed there will only
-be imported when some will call `from module import *`. So if in the mymodule's `__init__.py`
+If `__init__.py` file contains a list called `__all__`, then only the values listed there will
+be imported when we call `from module import *`. So if the mymodule's `__init__.py`
 file contains the following
 ::
 
     from bars import simplebar
     __all__ = [simplebar, ]
 
-Then if someone does `from mymodule import *` only `simplebar` will be available for them.
+Then by doing `from mymodule import *` only `simplebar` will be available.
 
+.. note:: The use of the *,* in the example minimizes the damage done by *from mymodule import \**
 
 Default modules
 ===============
