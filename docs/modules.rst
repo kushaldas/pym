@@ -73,7 +73,7 @@ There are different ways to import modules. We already saw one way to do this. Y
     >>> simplebar(20)
     --------------------
 
-.. note:: Never do *from module import \** Read `this link <http://docs.python.org/2/faq/programming.html#what-are-the-best-practices-for-using-import-in-a-module>`_ for more information.
+.. warning:: Never do *from module import \** Read `this link <http://docs.python.org/2/faq/programming.html#what-are-the-best-practices-for-using-import-in-a-module>`_ for more information.
 
 Submodules
 ==========
