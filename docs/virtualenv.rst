@@ -9,7 +9,7 @@ Virtual Python Environment builder or virtualenv is a tool which will help you t
 Installation
 ============
 
-You can install virtualenv ewither from distro provided package or through pip.
+You can install virtualenv either from distro provided package or through pip.
 
 ::
 
@@ -31,19 +31,19 @@ The following commands will the create an env called virt1.
 ::
 
     $ cd virtual
-    $ virtualenv virt1 
+    $ virtualenv virt1
     New python executable in virt1/bin/python
     Installing setuptools............done.
     Installing pip...............done.
 
-Now we can virt1 environment.
+Now we can activate virt1 environment.
 
 ::
 
     $ source virt1/bin/activate
     (virt1)[user@host]$
 
-The firt part of the prompt is now name of the virtual environment, it will help you to understand which environment you are in when you will have many environments.
+The first part of the prompt is now name of the virtual environment, it will help you to understand which environment you are in when you will have many environments.
 
 To deactivate the environment use *deactivate* command.
 
