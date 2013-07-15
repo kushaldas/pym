@@ -129,13 +129,13 @@ in a for loop.
     ...
     5 6 7 8 9 10
 
-Inside the while loop when it reaches to the \*yield* statement, the value of low is returned
-and the generator state is suspended. During the second \*next* call the generator resumed where
-it freeze-ed before and then the value of \*low* is increased by one. It continues with the
-while loop and comes to the \*yield* statement again.
+Inside the while loop when it reaches to the *yield* statement, the value of low is returned
+and the generator state is suspended. During the second *next* call the generator resumed where
+it freeze-ed before and then the value of *low* is increased by one. It continues with the
+while loop and comes to the *yield* statement again.
 
 When you call an generator function it returns a \*generator* object. If you call \*dir*
-on this object you will find that it contains \*__iter__* and \*next* methods among the
+on this object you will find that it contains *__iter__* and \*next* methods among the
 other methods.
 
 ::
@@ -169,7 +169,7 @@ We can have generators which produces infinite values. The following is a one su
     ...
     4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
 
-If we go back to the example of \*my_generator* we will find one feature of generators.
+If we go back to the example of *my_generator* we will find one feature of generators.
 They are not re-usable.
 
 ::
@@ -248,7 +248,7 @@ We can have chaining of generators or generator expressions. In the following
 example we will read the file \*/var/log/cron* and will find if any particular
 job (in the example we are searching for anacron) is running successfully or not.
 
-We can do the same using a shell command \*tail -f /var/log/cron \|grep anacron*
+We can do the same using a shell command *tail -f /var/log/cron |grep anacron*
 
 ::
 
@@ -257,13 +257,13 @@ We can do the same using a shell command \*tail -f /var/log/cron \|grep anacron*
     >>> job = ( line for line in all if line.find(jobtext) != -1)
     >>> text = next(job)
     >>> text
-    "May  6 12:17:15 dhcp193-104 anacron[23052]: Job \`cron.daily' terminated\\n"
+    "May  6 12:17:15 dhcp193-104 anacron[23052]: Job `cron.daily' terminated\n"
     >>> text = next(job)
     >>> text
-    'May  6 12:17:15 dhcp193-104 anacron[23052]: Normal exit (1 job run)\\n'
+    'May  6 12:17:15 dhcp193-104 anacron[23052]: Normal exit (1 job run)\n'
     >>> text = next(job)
     >>> text
-    'May  6 13:01:01 dhcp193-104 run-parts(/etc/cron.hourly)[25907]: starting 0anacron\\n'
+    'May  6 13:01:01 dhcp193-104 run-parts(/etc/cron.hourly)[25907]: starting 0anacron\n'
 
 You can write a for loop to the lines.
 
@@ -307,9 +307,9 @@ and after the execution of a function.
 ::
 
     >>> def my_decorator(func):
-    ...     def wrapper(\*args, \**kwargs):
+    ...     def wrapper(*args, **kwargs):
     ...         print "Before call"
-    ...         result = func(\*args, \**kwargs)
+    ...         result = func(*args, **kwargs)
     ...         print "After call"
     ...         return result
     ...     return wrapper
