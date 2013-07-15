@@ -279,7 +279,7 @@ a simple closure for adding numbers.
 
     >>> def add_number(num):
     ...     def adder(number):
-    ...         'adder is a clouser'
+    ...         'adder is a closure'
     ...         return num + number
     ...     return adder
     ...
@@ -299,7 +299,7 @@ Decorators
 Decorators in Python
 
 Decorator is way to dynamically add some new behavior to some objects. We achieve
-the same in Python by using clousers.
+the same in Python by using closures.
 
 In the example we will create a simple example which will print some statement before
 and after the execution of a function.
