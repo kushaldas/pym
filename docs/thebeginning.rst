@@ -105,7 +105,7 @@ the comment. You can also use some standard comments like
 Modules
 =======
 
-Modules are python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension.. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first.
+Modules are python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first.
 
 ::
 
@@ -113,6 +113,6 @@ Modules are python files which contain different function definitions , variable
     >>> print math.e
     2.71828182846
 
-We are going to learn more about modules on the Modules chapter.
+We are going to learn more about modules in the Modules chapter.
 
 
