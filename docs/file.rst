@@ -38,7 +38,7 @@ After opening a file one should always close the opened file. We use method *clo
     >>> fobj.close()
 
 .. important:: Important
-   ---------
+
    Always make sure you *explicitly* close each open file, once its job is done and you have no reason to keep it open.
    Because
    - There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable way of recovery, so the program could crash.
@@ -66,7 +66,7 @@ If you call *read()* again it will return empty string as it already read the wh
     >>> fobj.readline()
     'Pradeepto loves KDE\n'
 
-To read all the all the lines in a list we use *readlines()* method.
+To read all the lines in a list we use *readlines()* method.
 
 ::
 
@@ -220,7 +220,7 @@ Let us see one example
 Count spaces, tabs and new lines in a file
 ==========================================
 
-Let us try to write an application which will count the spaces , tabs, and  lines in any given file.
+Let us try to write an application which will count the spaces, tabs, and lines in any given file.
 
 ::
 

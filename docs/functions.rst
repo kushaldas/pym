@@ -113,7 +113,7 @@ In the above example we have written *b = -99* in the function parameter list. T
     True
 
 .. important:: Important
-   ---------
+
    Remember that you can not have an argument without default argument if you already have one argument with default values before it. Like *f(a, b=90, c)* is illegal as *b* is having a default value but after that *c* is not having any default value.
 
 Also remember that default value is evaluated only once, so if you have any mutable object like list it will make a difference. See the next example
