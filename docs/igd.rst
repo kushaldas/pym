@@ -267,13 +267,13 @@ We can do the same using a shell command \*tail -f /var/log/cron \|grep anacron*
 
 You can write a for loop to the lines.
 
-Clousers
+Closures
 ========
-Clousers in Python
+Closures in Python
 
-Clousers are nothing function which got returned by another function. We use
-clousers to remove code duplications. In the following example we create
-a simple clouser for adding numbers.
+Closures are nothing but functions that are returned by another function. We use
+closures to remove code duplication. In the following example we create
+a simple closure for adding numbers.
 
 ::
 
@@ -292,7 +292,7 @@ a simple clouser for adding numbers.
     >>> a_5(3)
     8
 
-*adder* is a clouser which adds a given number to a pre-defined one.
+*adder* is a closure which adds a given number to a pre-defined one.
 
 Decorators
 ==========
