@@ -26,6 +26,7 @@ Contents:
    exceptions
    classes
    modules
+   pep8
    igd
    virtualenv
    projectstructure
