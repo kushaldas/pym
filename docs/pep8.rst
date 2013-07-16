@@ -26,7 +26,7 @@ spectrum of Python code.  As PEP 20 says, "Readability counts".
 
 A style guide is about consistency.  Consistency with this style guide
 is important.  Consistency within a project is more important.
-Consistency within one module or function is most important.
+Consistency within one module or function is the most important.
 
 But most importantly: know when to be inconsistent -- sometimes the
 style guide just doesn't apply.  When in doubt, use your best
@@ -708,7 +708,7 @@ With this in mind, here are the Pythonic guidelines:
 - If your public attribute name collides with a reserved keyword,
   append a single trailing underscore to your attribute name.  This is
   preferable to an abbreviation or corrupted spelling.  (However,
-  notwithstanding this rule, 'cls' is the preferred spelling for any
+  not withstanding this rule, 'cls' is the preferred spelling for any
   variable or argument which is known to be a class, especially the
   first argument to a class method.)
 
