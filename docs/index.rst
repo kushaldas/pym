@@ -29,6 +29,7 @@ Contents:
    pep8
    igd
    virtualenv
+   testing
    projectstructure
 
 
