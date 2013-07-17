@@ -276,4 +276,29 @@ Let us try to write an application which will count the spaces, tabs, and lines 
 
 You can see that we have two functions in the program , *main* and *parse_file* where the second one actually parses the file and returns the result and we print the result in *main* function. By splitting up the code in smaller units (functions) helps us to organize the codebase and also it will be easier to write test cases for the functions.
 
+Using the with statement
+=========================
+
+In real life scenarios we should try to use `with` statement. It will take care of closing the file for you.
+::
+
+    >>> with open('setup.py') as fobj:
+    ...     for line in fobj:
+    ...         print line,
+    ... 
+    #!/usr/bin/env python
+    """Factorial project"""
+    from setuptools import find_packages, setup
+
+    setup(name = 'factorial',
+        version = '0.1',
+        description = "Factorial module.",
+        long_description = "A test module for our book.",
+        platforms = ["Linux"],
+        author="Kushal Das",
+        author_email="kushaldas@gmail.com",
+        url="http://pymbook.readthedocs.org/en/latest/",
+        license = "http://www.gnu.org/copyleft/gpl.html",
+        packages=find_packages()
+        )
 
