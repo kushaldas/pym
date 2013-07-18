@@ -7,6 +7,8 @@ Class
 Your first class
 ================
 
+.. index:: Class
+
 Before writing your first class, you should know the syntax. We define a class in the following way..
 
 ::
@@ -28,6 +30,8 @@ in the statements you can write any python statement, you can define functions (
     >>> p
     <__main__.MyClass instance at 0xb7c8aa6c>
 
+.. index:: dir
+
 In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an *object* p of the *class* MyClass.If you do a dir on that...
 
 ::
@@ -36,6 +40,8 @@ In the above example you can see first we are declaring a class called MyClass, 
     ['__doc__', '__module__', 'a', 'b']
 
 You can see the variables *a* and *b* inside it.
+
+.. index:: __init__
 
 __init__ method
 ===============
@@ -86,7 +92,7 @@ Now we are going to call *print_details()* method.
     Branch: CSE
     Year: 2005
 
-
+.. index:: Inheritance
 
 Inheritance
 ===========
@@ -210,6 +216,8 @@ The following shows a direct example.
     >>> std.name = "Python"
     >>> print std.name
     Python
+
+.. index:: Property
 
 Properties
 ===========
