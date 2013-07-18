@@ -6,6 +6,8 @@ Data Structures
 
 Python is having a few built-in data structure. If you are still wondering what is a data structure, then it is nothing a but a way to store data and the having particular methods to retrieve or manipulate it. We already saw lists before, now we will go in depth.
 
+.. index:: List
+
 Lists
 =====
 ::
@@ -26,6 +28,8 @@ At first we created a list *a*. Then to add *45* at the end of the list we call 
     >>> a
     [111, 1, 23, 45, 1, -3434, 43624356, 234, 45]
 
+.. index:: count
+
 *count(s)* will return you number of times *s* is in the list. Here we are going to check how many times *45* is there in the list.
 
 ::
@@ -35,6 +39,8 @@ At first we created a list *a*. Then to add *45* at the end of the list we call 
 
 If you want to remove any particular value from the list you have to use *remove()* method.
 
+.. index:: remove
+
 ::
 
     >>> a.remove(234)
@@ -43,6 +49,8 @@ If you want to remove any particular value from the list you have to use *remove
 
 Now to reverse the whole list
 
+.. index:: reverse
+
 ::
 
     >>> a.reverse()
@@ -50,6 +58,8 @@ Now to reverse the whole list
     [45, 43624356, -3434, 1, 45, 23, 1, 111]
 
 We can store anything in the list, so first we are going to add another list  *b* in  *a*, then we will learn how to add the values of  *b* into  *a*.
+
+.. index:: extend, append
 
 ::
 
@@ -64,6 +74,8 @@ We can store anything in the list, so first we are going to add another list  *b
     [45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90], 45, 56, 90]
     >>> a[-1]
     90
+
+.. index:: sort
 
 Above you can see how we used *a.extend()* method to extend the list. To sort any list we have *sort()* method.
 
@@ -123,6 +135,8 @@ In our daily life we have to encounter queues many times, like in ticket counter
 
 To take out the first element of the list we are using *a.pop(0)*.
 
+.. index:: List comprehension
+
 List Comprehensions
 ===================
 
@@ -140,6 +154,8 @@ For example if we want to make a list out of the square values of another list, 
     [2, 5, 10]
 
 Above in the second case we used two list comprehensions in a same line.
+
+.. index:: Tuple
 
 Tuples
 ======
@@ -204,6 +220,8 @@ Using the built in function *type()* you can know the data type of any variable.
     >>> type(len)
     <type 'builtin_function_or_method'>
 
+.. index:: Set
+
 Sets
 ====
 
@@ -241,6 +259,8 @@ To add or pop values from a set
     >>> a.add('p')
     >>> a
     set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])
+
+.. index:: Dictionary
 
 Dictionaries
 ============
@@ -287,6 +307,8 @@ You must remember that no mutable object can be a *key*, that means you can not 
     >>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))
     {'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}
 
+.. index:: iteritems
+
 If you want to loop through a dict use *iteritems()* method.
 
 ::
@@ -325,6 +347,8 @@ When we try to get value for a key which does not exists we get *KeyError*. We c
     KeyError: 'foo'
     >>> data.get('foo', 0)
     0
+
+.. index:: enumerate
 
 If you want to loop through a list (or any sequence) and get iteration number at the same time you have to use *enumerate()*.
 
