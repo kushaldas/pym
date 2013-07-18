@@ -12,6 +12,9 @@ In this chapter we will learn about a module called *Collections*. In this modul
 
 This is how you can import the module, now we will see the available classes which you can use.
 
+
+.. index:: Counter
+
 Counter
 =======
 
@@ -46,6 +49,8 @@ Counter objects has an method called *elements* which returns an iterator over e
     >>> Counter('abracadabra').most_common(3)
     [('a', 5), ('r', 2), ('b', 2)]
 
+.. index:: defaultdict
+
 defaultdict
 ===========
 
@@ -65,6 +70,8 @@ defaultdict example
     [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 
 In the example you can see even if the key is not there in the defaultdict object, it automatically creates an empty list. *list.append* then helps to append the value to the list.
+
+.. index:: namedtuple
 
 namedtuple
 ==========
