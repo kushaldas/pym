@@ -27,9 +27,9 @@ Counter example
     >>> from collections import Counter
     >>> import re
     >>> path = '/usr/share/doc/python-2.7.3/LICENSE'
-    >>> words = re.findall('\\w+', open(path).read().lower())
+    >>> words = re.findall('\w+', open(path).read().lower())
     >>> Counter(words).most_common(10)
-    \[('2', 97), ('the', 80), ('or', 78), ('1', 76), ('of', 61), ('to', 50), ('and', 47), ('python', 46), ('psf', 44), ('in', 38)]
+    [('2', 97), ('the', 80), ('or', 78), ('1', 76), ('of', 61), ('to', 50), ('and', 47), ('python', 46), ('psf', 44), ('in', 38)]
 
 Counter objects has an method called *elements* which returns an iterator over elements repeating each as many times as its count. Elements are returned in arbitrary order.
 
@@ -37,14 +37,14 @@ Counter objects has an method called *elements* which returns an iterator over e
 
     >>> c = Counter(a=4, b=2, c=0, d=-2)
     >>> list(c.elements())
-    \['a', 'a', 'a', 'a', 'b', 'b']
+    ['a', 'a', 'a', 'a', 'b', 'b']
 
 *most_common* is a method which returns most common elements abd their counts from the most common to the least.
 
 ::
 
     >>> Counter('abracadabra').most_common(3)
-    \[('a', 5), ('r', 2), ('b', 2)]
+    [('a', 5), ('r', 2), ('b', 2)]
 
 defaultdict
 ===========
@@ -56,13 +56,13 @@ defaultdict example
 
 ::
 
-    >>> s = \[('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+    >>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
     >>> d = defaultdict(list)
     >>> for k, v in s:
     ...     d[k].append(v)
     ...
     >>> d.items()
-    \[('blue', \[2, 4]), ('red', \[1]), ('yellow', \[1, 3])]
+    [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
 
 In the example you can see even if the key is not there in the defaultdict object, it automatically creates an empty list. *list.append* then helps to append the value to the list.
 
@@ -77,15 +77,15 @@ Named tuple
 ::
 
     >>> from collections import namedtuple
-    >>> Point = namedtuple('Point', \['x', 'y'])  #Defining the namedtuple
-    >>> p = Point(10, y=20)  #Creating an object
+    >>> Point = namedtuple('Point', ['x', 'y'])  # Defining the namedtuple
+    >>> p = Point(10, y=20)  # Creating an object
     >>> p
     Point(x=10, y=20)
     >>> p.x + p.y
     30
-    >>> p[0] + p[1]  #Accessing the values in normal way
+    >>> p[0] + p[1]  # Accessing the values in normal way
     30
-    >>> x, y = p      #Unpacking the tuple
+    >>> x, y = p     # Unpacking the tuple
     >>> x
     10
     >>> y

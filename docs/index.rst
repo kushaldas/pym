@@ -26,6 +26,7 @@ Contents:
    exceptions
    classes
    modules
+   collections
    pep8
    igd
    virtualenv
