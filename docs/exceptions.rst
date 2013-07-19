@@ -1,3 +1,4 @@
+.. index:: Exception
 
 ======================
 Exceptions
@@ -25,6 +26,8 @@ not defined.
 
 The last line contains the details of the error message, the rest of the lines
 shows the details of how it happened (or what caused that exception).
+
+.. index:: TypeError
 
 TypeError
 ==========
@@ -121,6 +124,8 @@ We can catch these exceptions like any other normal exceptions.
     ...     print "ValueError in our code."
     ... 
     ValueError in our code.
+
+.. index:: finally
 
 Using finally for cleanup
 ==========================
