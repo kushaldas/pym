@@ -103,7 +103,9 @@ Put the following code in this file::
  vim templates/index.html
 
 
-Put the following code in this file::
+Put the following code in this file
+
+.. code-block:: html
 
  <!DOCTYPE html>
  <html lang='en'>
@@ -158,7 +160,7 @@ For this we will update ``hello_flask.py``.
 
 * Create the following template ``hello.html``
 
-::
+.. code-block:: html
 
   <!DOCTYPE html>
   <html lang='en'>
@@ -212,7 +214,7 @@ use it.
 
 * Create the template ``master.html``
 
-::
+.. code-block:: html
 
   <!DOCTYPE html>
   <html lang='en'>
@@ -232,7 +234,7 @@ use it.
 
 * Adjust the template ``index.html``
 
-::
+.. code-block:: html
 
   {% extends "master.html" %}
 
