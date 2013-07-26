@@ -32,6 +32,7 @@ Contents:
    virtualenv
    testing
    projectstructure
+   flask
 
 
 
