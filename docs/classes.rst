@@ -9,7 +9,7 @@ Your first class
 
 .. index:: Class
 
-Before writing your first class, you should know the syntax. We define a class in the following way..
+Before writing your first class, you should know the syntax. We define a class in the following way.
 
 ::
 
@@ -18,7 +18,7 @@ Before writing your first class, you should know the syntax. We define a class i
         statement2
         statement3
 
-in the statements you can write any python statement, you can define functions (which we call methods of a class).
+In the statements you can write any python statement, you can define functions (which we call methods of a class).
 
 ::
 
@@ -32,21 +32,21 @@ in the statements you can write any python statement, you can define functions (
 
 .. index:: dir
 
-In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an *object* p of the *class* MyClass.If you do a dir on that...
+In the above example you can see first we are declaring a class called MyClass, writing some random statements inside that class. After the class definition, we are creating an *object* p of the *class* MyClass. If you do a dir on that
 
 ::
 
     >>> dir(p)
     ['__doc__', '__module__', 'a', 'b']
 
-You can see the variables *a* and *b* inside it.
+you can see the variables *a* and *b* inside it.
 
 .. index:: __init__
 
 __init__ method
 ===============
 
-__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it
+__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it.
 ::
 
     class Student(object):
@@ -70,7 +70,7 @@ __init__ is a special method in python classes, it is the constructor method for
 
 
 
-__init__ is called when ever an object of the class is constructed.That means when ever we will create a student object we will see the message "Creating a new student" in the prompt. You can see the first argument to the method is *self*. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it , but we have to get it explicitly in every method while writing the methods. Example shown below.
+__init__ is called when ever an object of the class is constructed. That means when ever we will create a student object we will see the message "A student object is created" in the prompt. You can see the first argument to the method is *self*. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it, but we have to get it explicitly in every method while writing the methods. Example shown below.
 
 ::
 
@@ -81,7 +81,7 @@ __init__ is called when ever an object of the class is constructed.That means wh
     >>> std1 = Student('Kushal','CSE','2005')
     A student object is created
 
-In this example at first we tried to create a Student object with passing any argument and python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that *__init__* method was called as the constructor method.
+In this example at first we tried to create a Student object without passing any argument and python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that *__init__* method was called as the constructor method.
 
 Now we are going to call *print_details()* method.
 
@@ -97,7 +97,7 @@ Now we are going to call *print_details()* method.
 Inheritance
 ===========
 
-In general we human beings always know about inheritance. In programming it is almost the same. When a class inherits another class it inherits all features(like variables and methods) of the parent class. This helps in reusing codes.
+In general we human beings always know about inheritance. In programming it is almost the same. When a class inherits another class it inherits all features (like variables and methods) of the parent class. This helps in reusing codes.
 
 In the next example we first create a class called Person and create two sub-classes Student and Teacher. As both of the classes are inherited from Person class they will have all methods of Person and will have new methods and variables for their own purpose.
 
@@ -112,7 +112,7 @@ student_teacher.py
         Returns a ```Person``` object with given name.
 
         """
-        def __init__(self,name):
+        def __init__(self, name):
             self.name = name
 
         def get_details(self):
@@ -125,8 +125,8 @@ student_teacher.py
         Returns a ```Student``` object, takes 3 arguments, name, branch, year.
         
         """
-        def __init__(self,name,branch,year):
-            Person.__init__(self,name)
+        def __init__(self, name, branch, year):
+            Person.__init__(self, name)
             self.branch = branch
             self.year = year
 
@@ -184,7 +184,7 @@ One class can inherit more than one classes. It gets access to all methods and v
 Deleting an object
 ==================
 
-As we already know how to create an object , now we are going to see how to delete an python object. We use *del* for this.
+As we already know how to create an object, now we are going to see how to delete an python object. We use *del* for this.
 
 ::
 
