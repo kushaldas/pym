@@ -88,7 +88,7 @@ The following examples showcase these scenarios.
     KeyboardInterrupt
 
 As the first input I provided a proper float value and it printed it back, next
-I entered a value with a comma, so the `except` clause executed and it the print 
+I entered a value with a comma, so the `except` clause executed and the print 
 statement executed.
 
 In the third time I pressed *Ctrl+c* which caused a `KeyboardInterrput`, which is
@@ -139,12 +139,12 @@ statements.
     ...     fobj = open("hello.txt", "w")
     ...     res = 12 / 0
     ... except ZeroDivisionError:
-    ...     print "We have an error in divition"
+    ...     print "We have an error in division"
     ... finally:
     ...     fobj.close()
     ...     print "Closing the file object."
     ... 
-    We have an error in divition
+    We have an error in division
     Closing the file object.
 
 In this example we are making sure that the file object we open, must get closed
