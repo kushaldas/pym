@@ -203,7 +203,7 @@ This is your first use of the template, we set up a variable ``name`` in
 ``hello_flask.py`` (see the return line of the function ``hello``). This
 variable is then displayed in the page itself using the syntax ``{{name}}``.
 
-Additionnal work
+Additional work
 ----------------
 
 Make use of the templates
