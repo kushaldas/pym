@@ -94,7 +94,7 @@ Comments are some piece of English text which explains what this code does, we w
     >>> a = 12 + 34
     >>> print c #this is a comment too :)
 
-Comments are mainly for the people will *develop* or *maintain* the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You should alwats give a space after # and then start writing
+Comments are mainly for the people who would *develop* or *maintain* the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You should always give a space after # and then start writing
 the comment. You can also use some standard comments like
 
 ::
