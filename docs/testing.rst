@@ -1,4 +1,3 @@
-
 ========================
 Simple testing in Python
 ========================
@@ -222,7 +221,7 @@ Here we have only one function *mount_details()* doing the parsing and printing 
 
 After refactoring
 =================
-Now we refactored the code and have one new function *parse_mount* which we can test easily.
+Now we refactored the code and have one new function *parse_mounts* which we can test easily.
 ::
 
     import os
