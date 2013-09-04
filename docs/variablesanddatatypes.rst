@@ -157,7 +157,7 @@ In this program we will convert the given temperature to Celsius from Fahrenheit
 ::
 
     #!/usr/bin/env python
-    fahrenhite = 0.0
+    fahrenheit = 0.0
     print "Fahrenheit Celsius"
     while fahrenheit <= 250:
         celsius = ( fahrenheit - 32.0 ) / 1.8 # Here we calculate the Celsius value
