@@ -21,7 +21,7 @@ sets of one or more computer program modules together with associated control da
 
 unittest module
 ===============
-In python we have ``unittest`` module to help us.
+In Python we have ``unittest`` module to help us.
 
 Factorial code
 ===============

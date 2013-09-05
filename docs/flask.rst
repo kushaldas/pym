@@ -20,7 +20,7 @@ In the case of Flask, its dependencies are:
 * `Werkzeug <http://werkzeug.pocoo.org/>`_ a WSGI utility library
 * `jinja2 <http://jinja.pocoo.org/>`_ which is its template engine
 
-.. note:: WSGI is basically a protocol defined so that python application can
+.. note:: WSGI is basically a protocol defined so that Python application can
    communicate with a web-server and thus be used as web-application outside of
    CGI.
 

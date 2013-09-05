@@ -196,7 +196,7 @@ Tuples are immutable, that means you can not del/add/edit any value inside the t
     File "<stdin>", line 1, in <module>
     TypeError: 'tuple' object doesn't support item deletion
 
-Above you can see python is giving error when we are trying to delete a value in the tuple.
+Above you can see Python is giving error when we are trying to delete a value in the tuple.
 
 To create a tuple which contains only one value you have to type a trailing comma.
 

@@ -4,12 +4,12 @@
 Operators and expressions
 =========================
 
-In python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like *2 + 3* .
+In Python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like *2 + 3* .
 
 Operators
 =========
 
-Operators are the symbols which tells the python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:
+Operators are the symbols which tells the Python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:
 
 ::
 

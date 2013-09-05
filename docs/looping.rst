@@ -323,7 +323,7 @@ That means we can use the above statement as *if* clause expression. The built-i
 For loop
 ========
 
-There is another to loop by using *for* statement. In python the *for* statement is different from the way it works in *C*. Here for statement iterates over the items of any sequence (a list or a string). Example given below
+There is another to loop by using *for* statement. In Python the *for* statement is different from the way it works in *C*. Here for statement iterates over the items of any sequence (a list or a string). Example given below
 
 ::
 
@@ -362,7 +362,7 @@ range() is a buitin function. From the help document
     For example, range(4) returns [0, 1, 2, 3].  The end point is omitted!
     These are exactly the valid indices for a list of 4 elements.
 
-Now if you want to see this help message on your system type *help(range)* in the python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function
+Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function
 
 ::
 

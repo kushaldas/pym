@@ -4,7 +4,7 @@
 The Beginning
 =============
 
-So we are going to look at our first code. As python is an interpreted language , you can directly write the code into the python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal).
+So we are going to look at our first code. As Python is an interpreted language , you can directly write the code into the Python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal).
 
 ::
 
@@ -43,7 +43,7 @@ Then
     $ ./helloworld.py
     Hello World!
 
-On the first line you can *#!* , we call it sha-bang. Using this we are telling that use python interpreter to run this code. In the next line we are printing a text message. In python we call all the line of texts as strings.
+On the first line you can *#!* , we call it sha-bang. Using this we are telling that use Python interpreter to run this code. In the next line we are printing a text message. In Python we call all the line of texts as strings.
 
 Whitespaces and indentation
 ===========================
@@ -105,7 +105,7 @@ the comment. You can also use some standard comments like
 Modules
 =======
 
-Modules are python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first.
+Modules are Python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first.
 
 ::
 

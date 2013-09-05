@@ -173,7 +173,6 @@ In the above example you can see we are calling the function with variable names
 
 Docstrings
 ==========
-Docstrings in Python
 
 In Python we use docstrings to explain how to use the code, it will be useful in interactive mode and to create auto-documentation. Below we see an example of the docstring for a function called *longest_side*.
 

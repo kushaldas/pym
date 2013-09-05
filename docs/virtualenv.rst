@@ -4,7 +4,7 @@
 Virtualenv
 ==========
 
-Virtual Python Environment builder or virtualenv is a tool which will help you to install different versions of python modules in a local directory using which you can develop and test your code without requiring to install everything systemwide.
+Virtual Python Environment builder or virtualenv is a tool which will help you to install different versions of Python modules in a local directory using which you can develop and test your code without requiring to install everything systemwide.
 
 Installation
 ============
@@ -52,7 +52,7 @@ To deactivate the environment use *deactivate* command.
     (virt1)$ deactivate
     $
 
-So, now we will install a python module called redis.
+So, now we will install a Python module called redis.
 
 ::
 

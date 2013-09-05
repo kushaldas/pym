@@ -40,7 +40,7 @@ In Python we don't specify what kind of data we are going to put in a variable. 
     >>> a + b
     36
 
-From the above example you can understand that to declare a variable in python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like
+From the above example you can understand that to declare a variable in Python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like
 
 ::
 
@@ -54,7 +54,7 @@ From the above example you can understand that to declare a variable in python ,
 Reading input from the Keyboard
 ===============================
 
-Generally the real life python codes do not need to read input from the keyboard. In python we use raw_input function to do input. *raw_input("String to show")* , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py
+Generally the real life Python codes do not need to read input from the keyboard. In Python we use raw_input function to do input. *raw_input("String to show")* , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py
 
 .. code-block:: python
 

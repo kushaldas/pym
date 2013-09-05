@@ -18,7 +18,7 @@ Before writing your first class, you should know the syntax. We define a class i
         statement2
         statement3
 
-In the statements you can write any python statement, you can define functions (which we call methods of a class).
+In the statements you can write any Python statement, you can define functions (which we call methods of a class).
 
 ::
 
@@ -46,7 +46,7 @@ you can see the variables *a* and *b* inside it.
 __init__ method
 ===============
 
-__init__ is a special method in python classes, it is the constructor method for a class. In the following example you can see how to use it.
+__init__ is a special method in Python classes, it is the constructor method for a class. In the following example you can see how to use it.
 ::
 
     class Student(object):
@@ -81,7 +81,7 @@ __init__ is called when ever an object of the class is constructed. That means w
     >>> std1 = Student('Kushal','CSE','2005')
     A student object is created
 
-In this example at first we tried to create a Student object without passing any argument and python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that *__init__* method was called as the constructor method.
+In this example at first we tried to create a Student object without passing any argument and Python interpreter complained that it takes exactly 4 arguments but received only one (self). Then we created an object with proper argument values and from the message printed, one can easily understand that *__init__* method was called as the constructor method.
 
 Now we are going to call *print_details()* method.
 
@@ -184,7 +184,7 @@ One class can inherit more than one classes. It gets access to all methods and v
 Deleting an object
 ==================
 
-As we already know how to create an object, now we are going to see how to delete an python object. We use *del* for this.
+As we already know how to create an object, now we are going to see how to delete an Python object. We use *del* for this.
 
 ::
 

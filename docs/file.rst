@@ -185,7 +185,7 @@ Here we used a new function *enumerate(iterableobject)*, which returns the index
 Random seeking in a file
 ========================
 
-You can also randomly move around inside a file using *seek()* method. It takes two arguments , offset and whence. To know more about it let us read what python help tells us
+You can also randomly move around inside a file using *seek()* method. It takes two arguments , offset and whence. To know more about it let us read what Python help tells us
 
 seek(...)
 seek(offset[, whence]) -> None. Move to new file position.

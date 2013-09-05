@@ -8,7 +8,6 @@ In this chapter we will learn about iterators, generators and decorators.
 
 Iterators
 =========
-IteratorsPython Iterators
 
 Python iterator objects required to support two methods while following the iterator
 protocol.
@@ -269,7 +268,6 @@ You can write a for loop to the lines.
 
 Closures
 ========
-Closures in Python
 
 Closures are nothing but functions that are returned by another function. We use
 closures to remove code duplication. In the following example we create
@@ -296,7 +294,6 @@ a simple closure for adding numbers.
 
 Decorators
 ==========
-Decorators in Python
 
 Decorator is way to dynamically add some new behavior to some objects. We achieve
 the same in Python by using closures.

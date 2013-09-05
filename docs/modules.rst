@@ -10,7 +10,7 @@ Introduction
 ============
 
 
-Up until now, all the code we wrote in the python interpreter was lost when we exited the interpreter. But when people write large programs they tend to break their code into multiple different files for ease of use, debugging and readability. In python we use *modules* to achieve such goals. Modules are nothing but files with python definitions and statements. The module name, to import, has the same name of the python file without the .py extension. 
+Up until now, all the code we wrote in the Python interpreter was lost when we exited the interpreter. But when people write large programs they tend to break their code into multiple different files for ease of use, debugging and readability. In Python we use *modules* to achieve such goals. Modules are nothing but files with Python definitions and statements. The module name, to import, has the same name of the Python file without the .py extension. 
 
 You can find the name of the module by accessing the *__name__* variable. It is a global variable.
 
@@ -44,7 +44,7 @@ Now we are going to see how modules work. Create a file called bars.py. Content 
         """
         print '-' * num
 
-Now we are going to start the python interpreter and import our module.
+Now we are going to start the Python interpreter and import our module.
 
 ::
 
