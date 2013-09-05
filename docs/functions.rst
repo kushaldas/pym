@@ -1,5 +1,4 @@
 
-
 =========
 Functions
 =========
@@ -97,7 +96,7 @@ In a function variables may have default argument values, that means if we don't
 
 ::
 
-    >>> def test(a , b = -99):
+    >>> def test(a , b=-99):
     ...     if a > b:
     ...         return True
     ...     else:
