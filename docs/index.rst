@@ -6,7 +6,7 @@
 Welcome to Python for you and me
 ==================================
 
-This is a simple book to learn Python programming language.
+This is a simple book to learn Python programming language, it is for the programmers who are new to Python.
 
 Contents:
 
