@@ -1,10 +1,9 @@
 
-
 =======
 Strings
 =======
 
-Strings are nothing but simple text. In python we declare strings in between "" or '' or ''' ''' or """ """. The examples below will help you to understand sting in a better way.
+Strings are nothing but simple text. In python we declare strings in between "" or '' or ''' ''' or """ """. The examples below will help you to understand string in a better way.
 
 ::
 
