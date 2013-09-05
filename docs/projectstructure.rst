@@ -167,7 +167,7 @@ For our example, we will use the test server of PyPI which is `https://testpypi.
 Creating account
 -----------------
 
-First reqister yourself in `this link <https://testpypi.python.org/pypi?%3Aaction=register_form>`_. You will 
+First register yourself in `this link <https://testpypi.python.org/pypi?%3Aaction=register_form>`_. You will 
 receive an email with a link, go to that link and confirm your registration.
 
  .pypirc file
