@@ -5,7 +5,7 @@
 <chapter id="pythonforyouandme-The-Beginning">
 	<title>The Beginning</title>
 	<para>
-		So we are going to look at our first code. As python is an interpreted language , you can directly write the code into the python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal).
+		So we are going to look at our first code. As python is an interpreted language, you can directly write the code into the python interpreter or write in a file and then run the file. First we are going to do that using the interpreter. To begin, type python in the command prompt (shell or terminal).
 	</para>
 <screen>
 [kd@kdlappy ~]$ python
@@ -15,7 +15,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 </screen>
 <para>
-In our first code we are going to print "Hello World!" , so do it as below,
+In our first code we are going to print "Hello World!":
 </para>
 <screen>
 <prompt>>>> </prompt><userinput>print "Hello World!"</userinput>
@@ -25,7 +25,7 @@ Hello World!
 	<section id="pythonforyouandme-The-Beginning-Section_1_helloworldpy">
 		<title>helloworld.py</title>
 		<para>
-			Now as a serious programmer you may want to write the above code into a source file. We will create a helloworld.py. Use any text editor you like to create the file. I used vi, you can even use GUI based tools like Kate, gedit too.
+			Now as a serious programmer, you may want to write the above code into a source file. We will create a helloworld.py. Use any text editor you like to create the file; I used vi, but any editor, even GUI based tools like Kate or gedit, can be used.
 		</para>
 <programlisting language="Python">
 <![CDATA[#!/usr/bin/env python
@@ -34,20 +34,20 @@ print "Hello World!"
 </programlisting>        
 
                 <para>
-                To run the code first you have to make the file executable, in GNU/Linux you can do that by giving the command in a shell or terminal
+                To run the code, you must first make the file executable. In GNU/Linux you can do that by giving the following command in a shell or terminal:
                 </para>
 <screen>
 <prompt>$ </prompt><userinput>chmod +x helloworld.py</userinput>
 </screen>
                 <para>
-                Then
+                You can now run the file:
                 </para>
 <screen>
 <prompt>$ </prompt><userinput>./helloworld.py</userinput>
 Hello World!
 </screen>
                 <para>
-                On the first line you can <emphasis>#!</emphasis> , we call it sha-bang. Using this we are telling that use python interpreter to run this code. In the next line we are printing a text message. In python we call all the line of texts as strings.
+                You can begin the first line with <emphasis>#!</emphasis>, called a sha-bang. This tells the system to use the python interpreter to run this code. In the next line, we are printing a message. In python, we call the whole line of text a string.
                 </para>
 
 	</section>
@@ -55,7 +55,7 @@ Hello World!
 	<section id="pythonforyouandme-The-Beginning-whin">
 		<title>Whitespaces and indentation</title>
 		<para>
-			In Python whitespace is an important thing. We divide different identifiers using spaces.Whitespace in the beginning of the line is known as indentation, but if you give wrong indentation it will throw an error. Examples are given below:
+			In Python, whitespace is important. We separate different identifiers with spaces. Whitespace in the beginning of the line is known as indentation, but if you indentat improperly, it will throw an error. Examples are given below:
 		</para>
 <screen>
 <![CDATA[
@@ -69,10 +69,10 @@ Hello World!
         <warning>
             <title>Warning</title>
             <para>
-                There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation.
+                There is an extra space in the beginning of the second line which is causing the error, so always look for proper indentation.
             </para>
             <para>
-            You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
+            You can even cause indentation errors by mixing up tabs and spaces. For example, if you use spaces and only spaces for indentation, don't use tabs. The code may look the same, but the python will give you an error if you try to run it.
             </para>
         </warning>
     	<para>
@@ -86,10 +86,11 @@ Hello World!
     			
     		</itemizedlist>
 
-    		There are more places where you should be following same type of rules of whitespace, they are like
+    		There are other places where you should follow common whitespace rules:
 
     		<itemizedlist>
-    			<listitem><para>Add a space after "," in dicts, lists, typles, and argument lists and after ":" in dicts.</para></listitem>
+    			<listitem><para>Add a space after "," in dicts, lists, tuples, and argument lists.</para></listitem>
+    			<listitem><para>Add a space after ":" in dicts.</para></listitem>
     			<listitem><para>Spaces around assignments and comparisons (except in argument list)</para></listitem>
     			<listitem><para>No spaces just inside parentheses.</para></listitem>  
     		</itemizedlist>
@@ -101,7 +102,7 @@ Hello World!
 <section id="pythonforyouandme-The-Beginning-comments">
 	<title>Comments</title>
 	<para>
-		Comments are some piece of English text which explains what this code does, we write comments in the code so that is easier for others to  understand. A comment line starts with <emphasis>#</emphasis> , everything after that is ignored as comment, that means they don't effect on the program.
+        Comments are bits of English text explaining what nearby code does. We write comments in the code so others can more easily understand it later. A comment line starts with <emphasis>#</emphasis>. Nothing after the <emphasis>#</emphasis> character is executed, so comments have no effect on the execution of the program.
 	</para>
 	<screen>
 <![CDATA[>>> #this is a comment
@@ -110,7 +111,7 @@ Hello World!
 >>> print c #this is a comment too :)]]>
 	</screen>
     <para>
-        Comments are mainly for the people will <emphasis>develop</emphasis> or <emphasis>maintain</emphasis> the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You can also use some standard comments like 
+        Comments are mainly for the people who will <emphasis>develop</emphasis> or <emphasis>maintain</emphasis> the codebase, so if you have some complex code somewhere in your program, you should add enough comments so that others can understand the code later by reading the comments. You can also use standard comments:
         <programlisting language="Python" role="PYTHON">
 #FIXME -- fix these code later
 #TODO -- in future you have to do this
@@ -122,7 +123,7 @@ Hello World!
         <section id="pythonforyouandme-The-Beginning-modules">
 		<title>Modules</title>
 		<para>
-			Modules are python files which contain different function definitions , variables which we can reuse, it should always end with a .py extension.. Python itself is having a vast module library with the default installation. We are going to use some of them. To use a module you have to import it first.
+			Modules are python files which contain functions, classes, and variables which we can reuse later. Modules always end with a .py extension. Python itself has a vast module library included with the default installation. We will use some of these default modules. To use a module you have to import it first:
 		</para>
 <programlisting language="Python" role="PYTHON">
 >>> import math
@@ -130,7 +131,7 @@ Hello World!
 2.71828182846
 </programlisting>
         <para>
-            We are going to learn more about modules on the Modules chapter.
+            We will learn more about modules in the Modules chapter.
         </para>
 	</section>
 
