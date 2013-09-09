@@ -65,7 +65,7 @@ So, now we will install a Python module called redis.
     Successfully installed redis
     Cleaning up...
 
-With the same way we can install a project called yolk, which tells us which of the modules is installed.
+With the same way we can install a project called yolk, which tells us which of the modules are installed.
 
 ::
 
