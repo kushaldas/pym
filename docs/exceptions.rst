@@ -91,13 +91,13 @@ As the first input I provided a proper float value and it printed it back, next
 I entered a value with a comma, so the `except` clause executed and the print 
 statement executed.
 
-In the third time I pressed *Ctrl+c* which caused a `KeyboardInterrput`, which is
+In the third time I pressed *Ctrl+c* which caused a `KeyboardInterrupt`, which is
 not handled in the `except` block so the execution stopped with that exception.
 
 An empty `except` statement can catch any exception. Read the following example::
 
     >>> try:
-    ...     raw_input() # Press Ctrl+c for a KeyboardInterrput
+    ...     raw_input() # Press Ctrl+c for a KeyboardInterrupt
     ... except:
     ...     print "Unknown Exception"
     ... 
