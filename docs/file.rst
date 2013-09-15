@@ -154,7 +154,7 @@ In this example we will copy a given text file to another file.
     f2.write(s)
     f2.close()
 
-.. note:: This way of reading file is not always a good idea, a file can be very large to read and fit in the memory. It is always better to read a known size of the file and wirte that to the new file.
+.. note:: This way of reading file is not always a good idea, a file can be very large to read and fit in the memory. It is always better to read a known size of the file and write that to the new file.
 
 You can see we used a new module here *sys*. *sys.argv* contains all command line parameters. Remember *cp* command in shell, after *cp* we type first the file to be copied and then the new file name.
 
