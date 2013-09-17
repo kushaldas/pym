@@ -34,7 +34,7 @@ Counter example
     >>> Counter(words).most_common(10)
     [('2', 97), ('the', 80), ('or', 78), ('1', 76), ('of', 61), ('to', 50), ('and', 47), ('python', 46), ('psf', 44), ('in', 38)]
 
-Counter objects has an method called *elements* which returns an iterator over elements repeating each as many times as its count. Elements are returned in arbitrary order.
+Counter objects has a method called *elements* which returns an iterator over elements repeating each as many times as its count. Elements are returned in arbitrary order.
 
 ::
 
