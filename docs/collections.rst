@@ -4,7 +4,7 @@
 Collections module
 ==================
 
-In this chapter we will learn about a module called *Collections*. In this module we some nice data structures which will help you to solve various real life problems.
+In this chapter we will learn about a module called *Collections*. This module implements some nice data structures which will help you to solve various real life problems.
 
 ::
 
@@ -34,7 +34,7 @@ Counter example
     >>> Counter(words).most_common(10)
     [('2', 97), ('the', 80), ('or', 78), ('1', 76), ('of', 61), ('to', 50), ('and', 47), ('python', 46), ('psf', 44), ('in', 38)]
 
-Counter objects has an method called *elements* which returns an iterator over elements repeating each as many times as its count. Elements are returned in arbitrary order.
+Counter objects has a method called *elements* which returns an iterator over elements repeating each as many times as its count. Elements are returned in arbitrary order.
 
 ::
 
@@ -42,7 +42,7 @@ Counter objects has an method called *elements* which returns an iterator over e
     >>> list(c.elements())
     ['a', 'a', 'a', 'a', 'b', 'b']
 
-*most_common* is a method which returns most common elements abd their counts from the most common to the least.
+*most_common* is a method which returns most common elements and their counts from the most common to the least.
 
 ::
 
