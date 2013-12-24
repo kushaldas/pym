@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+from __future__ import (absolute_import, division, print_function, unicode_literals)
+
 n = int(raw_input("Enter the number of students:"))
 data = {} # here we will store the data
 languages = ('Physics', 'Maths', 'History') #all languages
@@ -11,11 +13,11 @@ for i in range(0, n): #for the n number of students
 
 for x, y in data.iteritems():
     total =  sum(y)
-    print "%s 's  total marks %d" % (x, total)
+    print( "%s 's  total marks %d" % (x, total))
     if total < 120:
-        print "%s failed :(" % x
+        print( "%s failed :(" % x)
     else:
-        print "%s passed :)" % y
+        print ("%s passed :)" % y)
 
     
 

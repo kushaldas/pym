@@ -1,9 +1,9 @@
 #!/usr/bin/env python
+from __future__ import (absolute_import, division, print_function, unicode_literals)
 
 class Person(object):
     """
     Returns a ```Person``` object with given name.
-
     """
     def __init__(self,name):
         self.name = name
@@ -16,7 +16,6 @@ class Person(object):
 class Student(Person):
     """
     Returns a ```Student``` object, takes 3 arguments, name, branch, year.
-    
     """
     def __init__(self,name,branch,year):
         Person.__init__(self,name)
@@ -45,7 +44,7 @@ person1 = Person('Rahul')
 student1 = Student('Kushal', 'CSE', 2005)
 teacher1 = Teacher('Prashad', ['C', 'C++'])
 
-print person1.get_details()
-print student1.get_details()
-print teacher1.get_details()
+print( person1.get_details())
+print( student1.get_details())
+print( teacher1.get_details())
 
