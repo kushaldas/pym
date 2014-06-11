@@ -4,7 +4,8 @@
 Installation
 ============
 
-In this chapter you will learn how to install Python
+In this chapter you will learn how to install Python3, the latest of the language.
+
 
 On Windows
 ==========
