@@ -170,7 +170,7 @@ Tuples are data separated by comma.
     >>> a[1]
     'Debian'
     >>> for x in a:
-    ...     print x,
+    ...     print(x, end=' ')
     ...
     Fedora Debian Kubuntu Pardus
 
@@ -316,7 +316,7 @@ If you want to loop through a dict use *iteritems()* method.
     >>> data
     {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
     >>> for x, y in data.iteritems():
-    ...     print "%s uses %s" % (x, y)
+    ...     print("%s uses %s" % (x, y))
     ...
     Kushal uses Fedora
     Jace uses Mac
@@ -355,7 +355,7 @@ If you want to loop through a list (or any sequence) and get iteration number at
 ::
 
     >>> for i, j in enumerate(['a', 'b', 'c']):
-    ...     print i, j
+    ...     print(i, j)
     ...
     0 a
     1 b
@@ -368,7 +368,7 @@ You may also need to iterate through two sequences same time, for that use *zip(
     >>> a = ['Pradeepto', 'Kushal']
     >>> b = ['OpenSUSE', 'Fedora']
     >>> for x, y in zip(a, b):
-    ...     print "%s uses %s" % (x, y)
+    ...     print("%s uses %s" % (x, y))
     ...
     Pradeepto uses OpenSUSE
     Kushal uses Fedora
@@ -392,11 +392,11 @@ In this example , you have to take number of students as input , then ask marks 
         data[name] = marks
     for x, y in data.iteritems():
         total =  sum(y)
-        print "%s 's  total marks %d" % (x, total)
+        print("%s 's  total marks %d" % (x, total))
         if total < 120:
-            print "%s failed :(" % x
+            print("%s failed :(" % x)
         else:
-            print "%s passed :)" % x
+            print("%s passed :)" % x)
 
 The output
 
@@ -426,24 +426,24 @@ In this example we will multiply two matrices. First we will take input the numb
 
     #!/usr/bin/env python
     n = int(raw_input("Enter the value of n: "))
-    print "Enter values for the Matrix A"
+    print("Enter values for the Matrix A")
     a = []
     for i in range(0, n):
         a.append([int(x) for x in raw_input("").split(" ")])
-    print "Enter values for the Matrix B"
+    print("Enter values for the Matrix B")
     b = []
     for i in range(0, n):
         b.append([int(x) for x in raw_input("").split(" ")])
     c = []
     for i in range(0, n):
         c.append([a[i][j] * b[j][i] for j in range(0,n)])
-    print "After matrix multiplication"
-    print "-" * 10 * n
+    print("After matrix multiplication")
+    print("-" * 10 * n)
     for x in c:
         for y in x:
-            print "%5d" % y,
-        print ""
-    print "-" * 10 * n
+            print("%5d" % y, end=' ')
+        print("")
+    print("-" * 10 * n)
 
 The output
 
