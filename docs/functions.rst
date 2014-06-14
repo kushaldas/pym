@@ -35,15 +35,15 @@ Remember the palindrome program we wrote in the last chapter. Let us write a fun
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     def palindrome(s):
         return s == s[::-1]
     if __name__ == '__main__':
-        s = raw_input("Enter a string: ")
+        s = input("Enter a string: ")
         if palindrome(s):
-            print "Yay a palindrome"
+            print("Yay a palindrome")
         else:
-            print "Oh no, not a palindrome"
+            print("Oh no, not a palindrome")
 
 Now run the code :)
 
@@ -54,15 +54,15 @@ To understand local and global variables we will go through two examples.
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     def change(b):
         a = 90
-        print a
+        print(a)
     a = 9
-    print "Before the function call ", a
-    print "inside change function",
+    print("Before the function call ", a)
+    print("inside change function", end=' ')
     change(a)
-    print "After the function call ", a
+    print("After the function call ", a)
 
 The output
 ::
@@ -76,16 +76,16 @@ First we are assigning *9* to *a*, then calling change function, inside of that 
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     def change(b):
         global a
         a = 90
-        print a
+        print(a)
     a = 9
-    print "Before the function call ", a
-    print "inside change function",
+    print("Before the function call ", a)
+    print("inside change function", end=' ')
     change(a)
-    print "After the function call ", a
+    print("After the function call ", a)
 
 Here by using global keyword we are telling that *a* is globally defined, so when we are changing a's value inside the function it is actually changing for the *a* outside of the function also.
 
@@ -137,8 +137,8 @@ To avoid this you can write more idiomatic Python, like the following
     >>> def f(a, data=None):
     ...     if data is None:
     ...         data = []
-    ...         data.append(a)
-    ...         return data
+    ...     data.append(a)
+    ...     return data
     ...
     >>> print f(1)
     [1]
@@ -152,7 +152,7 @@ Keyword arguments
 ::
 
     >>> def func(a, b=5, c=10):
-    ...     print 'a is', a, 'and b is', b, 'and c is', c
+    ...     print('a is', a, 'and b is', b, 'and c is', c)
     ...
     >>> func(12, 24)
     a is 12 and b is 24 and c is 10
@@ -166,7 +166,7 @@ In the above example you can see we are calling the function with variable names
 ::
 
     >>> def func(a, b=13, v):
-    ...     print a, b, v
+    ...     print(a, b, v)
     ...
     File "<stdin>", line 1
     SyntaxError: non-default argument follows default argument
@@ -179,7 +179,7 @@ In Python we use docstrings to explain how to use the code, it will be useful in
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     import math
 
     def longest_side(a, b):
@@ -194,7 +194,7 @@ In Python we use docstrings to explain how to use the code, it will be useful in
         return math.sqrt(a*a + b*b)
 
     if __name__ == '__main__':
-        print longest_side(4, 5)
+        print(longest_side(4, 5))
 
 We will learn more on docstrings in reStructuredText chapter.
 
@@ -215,9 +215,9 @@ In Python any function can act as higher order function.
     ...     return func(value)
     ...
     >>> lst = high(dir, int)
-    >>> print lst[-3:]
+    >>> print(lst[-3:])
     ['imag', 'numerator', 'real']
-    >>> print lst
+    >>> print(lst)
 
 .. note:: To know more read `this link <http://docs.python.org/2/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
 
@@ -234,6 +234,6 @@ Example::
     ...     "Returns the square of a given number."
     ...     return num * num
     ... 
-    >>> print map(square, lst)
+    >>> print(map(square, lst))
     [1, 4, 9, 16, 25]
 
