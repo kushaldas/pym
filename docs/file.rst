@@ -80,7 +80,7 @@ You can even loop through the lines in a file object.
 
     >>> fobj = open("sample.txt")
     >>> for x in f:
-    ...     print(x, end=' ')
+    ...     print x,
     ...
     I love Python
     Pradeepto loves KDE
@@ -90,10 +90,10 @@ Let us write a program which will take the file name as the input from the user 
 
 ::
 
-    #!/usr/bin/env python3
-    name = input("Enter the file name: ")
+    #!/usr/bin/env python
+    name = raw_input("Enter the file name: ")
     fobj = open(name)
-    print(fobj.read())
+    print fobj.read()
     fobj.close()
 
 In the last line you can see that we closed the file object with the help of close() method.
@@ -141,11 +141,11 @@ In this example we will copy a given text file to another file.
 
 ::
 
-    #!/usr/bin/env python3
+    #!/usr/bin/env python
     import sys
     if len(sys.argv) < 3:
-        print("Wrong parameter")
-        print("./copyfile.py file1 file2")
+        print "Wrong parameter"
+        print "./copyfile.py file1 file2"
         sys.exit(1)
     f1 = open(sys.argv[1])
     s = f1.read()
@@ -162,12 +162,12 @@ The first value in *sys.argv* is the name of the command itself.
 
 ::
 
-    #!/usr/bin/env python3
+    #!/usr/bin/env python
     import sys
-    print("First value", sys.argv[0])
-    print("All values")
+    print "First value", sys.argv[0]
+    print "All values"
     for i, x  in enumerate(sys.argv):
-        print(i, x)
+        print i, x
 
 The output
 
@@ -224,7 +224,7 @@ Let us try to write an application which will count the spaces, tabs, and lines 
 
 ::
 
-    #!/usr/bin/env python3
+    #!/usr/bin/env python
 
     import os
     import sys
@@ -261,7 +261,7 @@ Let us try to write an application which will count the spaces, tabs, and lines 
         """
         if os.path.exists(path):
             spaces, tabs, lines = parse_file(path)
-            print("Spaces %d. tabs %d. lines %d" % (spaces, tabs, lines))
+            print "Spaces %d. tabs %d. lines %d" % (spaces, tabs, lines)
             return True
         else:
             return False

@@ -4,30 +4,28 @@
 Installation
 ============
 
-In this chapter you will learn how to install Python3, the latest of the language.
-
+In this chapter you will learn how to install Python
 
 On Windows
 ==========
 
-You have to download the latest Windows(TM) installer from the Python site, `x86_64 <https://www.python.org/ftp/python/3.4.1/python-3.4.1.amd64.msi>`_ and
-`i686 <https://www.python.org/ftp/python/3.4.1/python-3.4.1.msi>`_. Install it just as any other Windows software.
+You have to download the latest Windows(TM) installer from the Python site http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi . Install it just as any other Windows software.
 
 On GNU/Linux
 ============
 
-You will have to install the latest Python from the distribution's repository.
+Generally all GNU/Linux distributions come with Python, so no need to worry about that :) If you don't have it then you can install it by either downloading from the Python website or from your distribution's repository.
 
 For Fedora
 
 ::
 
-    [user@host]$ sudo yum install python3
+    [user@host]$ sudo yum install python
 
 For Debian
 
 ::
 
-    [user@host]$ sudo apt-get install python3
+    [user@host]$ sudo apt-get install python
 
 
