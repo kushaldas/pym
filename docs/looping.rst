@@ -79,9 +79,9 @@ In your print function call if you pass another argument called end and pass a s
     #!/usr/bin/env python3
     a, b = 0, 1
     while b < 100:
-        print(b,)
+        print(b, end=' ')
         a, b = b, a + b
-
+    print()
 The output
 
 ::
@@ -323,13 +323,13 @@ That means we can use the above statement as *if* clause expression. The built-i
 For loop
 ========
 
-There is another to loop by using *for* statement. In Python the *for* statement is different from the way it works in *C*. Here for statement iterates over the items of any sequence (a list or a string). Example given below
+There is another way to loop by using *for* statement. In Python the *for* statement is different from the way it works in *C*. Here for statement iterates over the items of any sequence (a list or a string). Example given below
 
 ::
 
     >>> a = ['Fedora', 'is', 'powerfull']
     >>> for x in a:
-    ...     print x,
+    ...     print (x, end=' ')
     ...
     Fedora is powerfull
 
@@ -362,16 +362,32 @@ class range(object)
  |  Methods defined here:
 
 
-Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function
+Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. *range()* has two stes of parameters, range(stop) and range(start, stop[,step]). Examples of *range* function.
+
+.. note:: range() function is a bit different in Python 3.x. In Python 2.x range() produces a list. So, In Python 3.x range works perfectly in loops(for loop) but if we want to get a list we need to use *list(range(start, stop[,step]))*.
 
 ::
 
     >>> range(1, 5)
+    range(1, 5)
+    >>> list(range(1, 5))
     [1, 2, 3, 4]
-    >>> range(1, 15, 3)
+    >>> list(range(1, 15, 3))
     [1, 4, 7, 10, 13]
-    >>> range(10)
+    >>> list(range(10))
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+range in loops
+
+::
+
+    >>> for i in range(3):
+    ...  print(i)
+    ... 
+    0
+    1
+    2
+
 
 Continue statement
 ==================
