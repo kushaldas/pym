@@ -4,14 +4,14 @@
 The Beginning
 =============
 
-So we are going to look at our first code. As Python is an interpreted language , you can directly write the code into the Python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal). I am using the latest Python built from the source code, so the version number can be different. 
+So we are going to look at our first code. As Python is an interpreted language , you can directly write the code into the Python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal). I am using the latest Python built from the source code, so the version number can be different.
 
 ::
 
-    Python 3.5.0a0 (default:d6ac4b6020b9+, Jun  9 2014, 12:15:05) 
+    Python 3.5.0a0 (default:d6ac4b6020b9+, Jun  9 2014, 12:15:05)
     [GCC 4.8.2 20131212 (Red Hat 4.8.2-7)] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    >>> 
+    >>>
 
 
 In our first code we are going to print "Hello World!" , so do it as below,
@@ -92,7 +92,7 @@ Comments are some piece of English text which explains what this code does, we w
     >>> # This is a comment
     >>> # The next line will add two numbers
     >>> a = 12 + 34
-    >>> print c #this is a comment too :)
+    >>> print(c) #this is a comment too :)
 
 Comments are mainly for the people who would *develop* or *maintain* the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You should always give a space after # and then start writing
 the comment. You can also use some standard comments like
@@ -110,9 +110,7 @@ Modules are Python files which contain different function definitions , variable
 ::
 
     >>> import math
-    >>> print math.e
+    >>> print(math.e)
     2.71828182846
 
 We are going to learn more about modules in the Modules chapter.
-
-
