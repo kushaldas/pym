@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-x = float(raw_input("Enter the value of x: "))
+#!/usr/bin/env python3
+x = float(input("Enter the value of x: "))
 n = term = num = 1
 sum = 1.0
 while n <= 100:
@@ -8,6 +8,6 @@ while n <= 100:
     n += 1
     if term < 0.0001:
         break
-print "No of Times= %d and Sum= %f" % (n, sum)
+print ("No of Times= %d and Sum= %f" % (n, sum))
 
 

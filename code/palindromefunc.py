@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 def palindrome(s):
     z = s
@@ -9,8 +9,8 @@ def palindrome(s):
     else:
         return False
 
-s = raw_input("Enter a string: ")
+s = input("Enter a string: ")
 if palindrome(s):
-    print "Yay a palindrome"
+    print ("Yay a palindrome")
 else:
-    print "Oh no, not a palindrome"
+    print ("Oh no, not a palindrome")
