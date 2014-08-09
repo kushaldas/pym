@@ -282,3 +282,10 @@ To learn more about requests module, go to their `wonderful documentation <http:
 
 You can actually modify the above program to become more user friendly. For example, you can check if that given
 filename already exists in the current directory or not. Use :py:mod:`os.path` module for the name.
+
+
+Command line arguments
+======================
+
+Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too .. important:: your application. Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
+
