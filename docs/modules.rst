@@ -151,7 +151,7 @@ You can also use *help()* function in the interpeter to find documentation about
 Module os
 =========
 
-os module provides operating system dependent functionality. You can import it using the following import statement.
+:py:mod:`os` module provides operating system dependent functionality. You can import it using the following import statement.
 
 ::
 
@@ -278,4 +278,7 @@ Here we used something new, when the module name is *__main__*, then only
 ask for a user input and then download the given URL. This also prevents 
 the same when some other Python code imports this file as a Python module.
 
-To learn more about requests module, go to their `wonderful documentation <http://docs.python-requests.org>`_. 
+To learn more about requests module, go to their `wonderful documentation <http://docs.python-requests.org>`_.
+
+You can actually modify the above program to become more user friendly. For example, you can check if that given
+filename already exists in the current directory or not. Use :py:mod:`os.path` module for the name.
