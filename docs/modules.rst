@@ -24,25 +24,25 @@ Now we are going to see how modules work. Create a file called bars.py. Content 
     This is an example module with provide different ways to print bars.
     """
     def starbar(num):
-        """
-        Prints a bar with *
+        """Prints a bar with *
+
         :arg num: Length of the bar
         """
-        print '*' * num
+        print('*' * num)
 
     def hashbar(num):
-        """
-        Prints a bar with #
+        """Prints a bar with #
+
         :arg num: Length of the bar
         """
-        print '#' * num
+        print('#' * num)
     
     def simplebar(num):
-        """
-        Prints a bar with -
+        """Prints a bar with -
+        
         :arg num: Length of the bar
         """
-        print '-' * num
+        print('-' * num)
 
 Now we are going to start the Python interpreter and import our module.
 
@@ -118,16 +118,21 @@ Now your Python installation comes with different modules installed, you can use
 ::
 
     >>> help()
-    Welcome to Python 2.6!  This is the online help utility.
+
+    Welcome to Python 3.5's help utility!
+
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at http://docs.python.org/tutorial/.
+    the tutorial on the Internet at http://docs.python.org/3.5/tutorial/.
+
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
     return to the interpreter, just type "quit".
-    To get a list of available modules, keywords, or topics, type "modules",
-    "keywords", or "topics".  Each module also comes with a one-line summary
-    of what it does; to list the modules whose summaries contain a given word
-    such as "spam", type "modules spam".
+
+    To get a list of available modules, keywords, symbols, or topics, type
+    "modules", "keywords", "symbols", or "topics".  Each module also comes
+    with a one-line summary of what it does; to list the modules whose name
+    or summary contain a given string such as "spam", type "modules spam".
+
     help> modules
 
 The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
@@ -197,7 +202,7 @@ So let us use another function provided by the os module and create our own func
         names = os.listdir(path)
         names.sort()
         for name in names:
-            print name,
+            print(name, end =' ')
 
 Using the *view_dir* example.
 
