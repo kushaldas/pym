@@ -98,17 +98,19 @@ In this example *mymodule* is the module name and *bars* and *utils* are two sub
 __all__ in __init__.py
 =======================
 
-If `__init__.py` file contains a list called `__all__`, then only the values listed there will
-be imported when we call `from module import *`. So if the mymodule's `__init__.py`
+If `__init__.py` file contains a list called `__all__`, then only the names listed there will
+be public. So if the mymodule's `__init__.py`
 file contains the following
 ::
 
-    from bars import simplebar
-    __all__ = [simplebar, ]
+    from mymodule.bars import simplebar
+    __all__ = [bars, simplebar]
 
-Then by doing `from mymodule import *` only `simplebar` will be available.
 
-.. note:: The use of the *,* in the example minimizes the damage done by *from mymodule import \**
+Then from mymodule only `simplebar` will be available.
+
+.. note:: *from mymodule import \** will only work for module level objects, trying to use it to import functions or classes
+    will cause syntax error.
 
 Default modules
 ===============
@@ -288,4 +290,8 @@ Command line arguments
 ======================
 
 Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too .. important:: your application. Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
+
+
+TAB completion in your Python interpreter
+==========================================
 
