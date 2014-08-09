@@ -302,3 +302,20 @@ In real life scenarios we should try to use `with` statement. It will take care 
         packages=find_packages()
         )
 
+
+
+Let us write some real code
+===========================
+
+Do you know how many CPU(s) are there in your processor? or what is the model name?
+Let us write some code which can help us to know these things. 
+
+If you are in Linux, then you can actually view the output of the *lscpu* command first. 
+You can actually find the information in a file located at */proc/cpuinfo*.
+
+Now try to write code which will open the file in read only mode and then read the file
+line by line and find out the number of CPU(s).
+
+.. note:: Always remember to read files line by line than reading them as a whole. Sometimes you may have to read files which are way bigger than your available RAM. 
+
+After you do this, try to write your own lscpu command in Python :)
