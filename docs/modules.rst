@@ -213,3 +213,67 @@ Using the *view_dir* example.
     proc root run sbin srv sys tmp usr var
 
 
+There are many other very useful functions available in the OS module, you can read about them `here <https://docs.python.org/3/library/os.html>`_
+
+Requests Module
+================
+
+requests is a Python module which changed the way people used to write code for many many projects. It helps
+you to do HTTP GET or POST calls in a very simple but elegant way. This is a third party module, that means
+you have to install it from your OS distribution packages, it does not come default.
+
+::
+
+    # yum install python3-requests
+
+
+The above command will install Python3 version of the requests module in your system.
+
+
+Getting a simple web pages
+------------------------------
+
+You can use the *get* method to fetch any website.
+
+::
+
+    >>> import requests
+    >>> req = requests.get('http://google.com')
+    >>> req.status_code
+    200
+
+The *text* attribute holds the HTML returned by the server.
+
+Using this knowledge, let us write a command which can download a given file (URL) from Internet.
+
+
+.. code:: python 
+
+    #!/usr/bin/env python3
+    import os
+    import os.path
+    import requests
+
+    def download(url):
+        '''Download the given url and saves it to the current directory.
+
+        :arg url: URL of the file to be downloaded.
+        '''
+        req = requests.get(url)
+        # First let us check non existing files.
+        if req.status_code == 404:
+            print('No such file found at %s' % url)
+            return
+        filename = url.split('/')[-1]
+        with open(filename, 'wb') as fobj:
+            fobj.write(req.content)
+        print("Download over.")
+
+    if __name__ == '__main__':
+        url = input('Enter a URL:')
+        download(url)
+
+
+Here we used something new, when the module name is *__main__*, then only
+ask for a user input and then download the given URL. This also prevents 
+the same when some other Python code imports this file as a Python module.
