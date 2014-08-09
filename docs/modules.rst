@@ -295,3 +295,34 @@ Do you remember your *ls* command, you can pass different kind of options as com
 TAB completion in your Python interpreter
 ==========================================
 
+First create a file as *~/.pythonrc* and include the following in that file
+
+::
+
+    import rlcompleter, readline
+    readline.parse_and_bind('tab: complete')
+
+
+    history_file = os.path.expanduser('~/.python_history')
+    readline.read_history_file(history_file)
+
+    import atexit
+    atexit.register(readline.write_history_file, history_file)
+
+
+Next, just export PYTHONSTARTUP variable pointing to this file from your *~/.bashrc* file.
+
+::
+
+    export PYTHONSTARTUP=~/.pythonrc
+
+
+Now from future whenever you open a bash shell, you will have TAB completion and history of code entered in your
+Python interpreter.
+
+To use it in the current shell, source the bashrc file.
+
+::
+
+    $ source ~/.bashrc
+
