@@ -277,3 +277,5 @@ Using this knowledge, let us write a command which can download a given file (UR
 Here we used something new, when the module name is *__main__*, then only
 ask for a user input and then download the given URL. This also prevents 
 the same when some other Python code imports this file as a Python module.
+
+To learn more about requests module, go to their `wonderful documentation <http://docs.python-requests.org>`_. 
