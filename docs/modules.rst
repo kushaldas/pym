@@ -104,7 +104,7 @@ file contains the following
 ::
 
     from mymodule.bars import simplebar
-    __all__ = [bars, simplebar]
+    __all__ = [simplebar, ]
 
 
 Then from mymodule only `simplebar` will be available.
