@@ -8,14 +8,14 @@ What we should test ?
 =====================
 
 If possible everything in our codebase, each and every function. But it depends as a choice
-of the developers. You can skip it if it is not practical to write a robust test. As Nick Coghlan 
+of the developers. You can skip it if it is not practical to write a robust test. As Nick Coghlan
 said in a guest session -- *... with a solid test suite, you can make big changes, confident that the externally visible behavior will remain the same*
 
 Unit testing
 =============
 
 A method by which individual units of source code. `Wikipedia <http://en.wikipedia.org/wiki/Unit_testing>`_ says
-*In computer programming, unit testing is a method by which individual units of source code, 
+*In computer programming, unit testing is a method by which individual units of source code,
 sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine if they are fit for use.*
 
 
@@ -53,7 +53,7 @@ In this example we will write a file `factorial.py`.
 
     def main(n):
         res = fact(n)
-        print res
+        print(res)
 
     if __name__ == '__main__':
         if len(sys.argv) > 1:
@@ -102,7 +102,7 @@ Running  the test:
 
 ::
 
-   $ python factorial_test.py 
+   $ python factorial_test.py
    .
    ----------------------------------------------------------------------
    Ran 1 test in 0.000s
@@ -208,11 +208,11 @@ Here we have only one function *mount_details()* doing the parsing and printing 
             for line in fd:
                 line = line.strip()
                 words = line.split()
-                print '%s on %s type %s' % (words[0],words[1],words[2]), 
+                print()'%s on %s type %s' % (words[0],words[1],words[2]), end=' ')
                 if len(words) > 5:
-                    print '(%s)' % ' '.join(words[3:-2])
+                    print('(%s)' % ' '.join(words[3:-2]))
                 else:
-                    print ''
+                    print('')
 
 
     if __name__ == '__main__':
@@ -250,9 +250,9 @@ Now we refactored the code and have one new function *parse_mounts* which we can
         result = parse_mounts()
         for line in result:
             if len(line) == 4:
-                print '%s on %s type %s %s' % line
+                print('%s on %s type %s %s' % line)
             else:
-                print '%s on %s type %s' % line
+                print('%s on %s type %s' % line)
 
 
     if __name__ == '__main__':
@@ -307,7 +307,7 @@ Test coverage
 Test coverage is a simple way to find untested parts of a codebase. It does not
 tell you how good your tests are.
 
-In Python we already have a nice coverage tool to help us. You can install it in Fedora 
+In Python we already have a nice coverage tool to help us. You can install it in Fedora
 
 ::
 
@@ -329,8 +329,6 @@ Coverage Example
     Name        Stmts   Miss  Cover   Missing
     -----------------------------------------
     mounttab2      21      7    67%   16, 24-29, 33
-    mounttest      14      0   100%   
+    mounttest      14      0   100%
     -----------------------------------------
-    TOTAL          35      7    80%   
-
-
+    TOTAL          35      7    80%
