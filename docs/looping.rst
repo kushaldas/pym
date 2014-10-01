@@ -350,7 +350,7 @@ We can also do things like
 range() function
 ================
 
-range() is a buitin function. From the help document
+range() is a built-in function. From the help document
 
 ::
 
