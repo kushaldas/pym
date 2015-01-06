@@ -435,8 +435,19 @@ In this example we will multiply two matrices. First we will take input the numb
     for i in range(0, n):
         b.append([int(x) for x in raw_input("").split(" ")])
     c = []
-    for i in range(0, n):
-        c.append([a[i][j] * b[j][i] for j in range(0,n)])
+
+
+    temp = []                              #to store output rowise
+    val = 0                                #to store intermediate sum
+    for i in range(0, n):                  #iterate through rows of A
+        for j in range(0, n):              #iterate through columns of B
+            for k in range(0,n):           #iterate through rows of B
+                val += a[i][k] * b[k][j]
+            temp.append(val)
+            val = 0
+        c.append(temp)
+        temp = []                          #Re-initialise temp to store values of next row
+
     print "After matrix multiplication"
     print "-" * 10 * n
     for x in c:
@@ -461,9 +472,9 @@ The output
     3 2 1
     After matrix multiplication
     ------------------------------
-        9    12     9 
-       32    25    12 
-       49    32     9 
+       30    24    18 
+       84    69    54 
+      138   114    90 
     ------------------------------
 
 Here we have used list comprehensions couple of times. *[int(x) for x in raw_input("").split(" ")]* here first it takes the input as string by *raw_input()*, then split the result by " ", then for each value create one int. We are also using *[a[i][j] * b[j][i] for j in range(0,n)]* to get the resultant row in a single line.
