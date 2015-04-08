@@ -154,6 +154,7 @@ To install from the source use the following command.
 
     $ python setup.py install
 
+.. note:: To learn more, read from `packaging.python.org <https://packaging.python.org/en/latest/distributing.html>`_.
 
 Python Package Index (PyPI)
 ============================
