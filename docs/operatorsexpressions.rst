@@ -224,7 +224,7 @@ This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in ou
 
 .. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     sum = 0.0
     for i in range(1, 11):
         sum += 1.0 / i
