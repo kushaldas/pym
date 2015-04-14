@@ -190,6 +190,9 @@ correct keyword for each parameter.
     Hello Kushal
 
 
+.. note:: To learn more please read `PEP-3102 <https://www.python.org/dev/peps/pep-3102/>`_.
+
+
 Docstrings
 ==========
 
