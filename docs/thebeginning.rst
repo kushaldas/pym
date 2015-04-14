@@ -4,20 +4,20 @@
 The Beginning
 =============
 
-So we are going to look at our first code. As Python is an interpreted language , you can directly write the code into the Python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal).
+So we are going to look at our first code. As Python is an interpreted language , you can directly write the code into the Python interpreter or write in a file and then run the file. First we are going to do that using the interpreter, to start type python in the command prompt (shell or terminal). I am using the latest Python built from the source code, so the version number can be different.
 
 ::
 
-    $ python
-    Python 2.5.1 (r251:54863, Oct 30 2007, 13:54:11)
-    q[GCC 4.1.2 20070925 (Red Hat 4.1.2-33)] on linux2
+    Python 3.5.0a0 (default:d6ac4b6020b9+, Jun  9 2014, 12:15:05)
+    [GCC 4.8.2 20131212 (Red Hat 4.8.2-7)] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
+
 
 In our first code we are going to print "Hello World!" , so do it as below,
 ::
 
-    >>> print "Hello World!"
+    >>> print("Hello World!")
     Hello World!
 
 helloworld.py
@@ -27,8 +27,8 @@ Now as a serious programmer you may want to write the above code into a source f
 
 ::
 
-    #!/usr/bin/env python
-    print "Hello World!"
+    #!/usr/bin/env python3
+    print("Hello World!")
 
 To run the code first you have to make the file executable, in GNU/Linux you can do that by giving the command in a shell or terminal
 
@@ -60,7 +60,6 @@ In Python whitespace is an important thing. We divide different identifiers usin
     IndentationError: unexpected indent
 
 .. warning:: Warning
-   -------
    There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation.
    You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
 
@@ -92,7 +91,7 @@ Comments are some piece of English text which explains what this code does, we w
     >>> # This is a comment
     >>> # The next line will add two numbers
     >>> a = 12 + 34
-    >>> print c #this is a comment too :)
+    >>> print(c) #this is a comment too :)
 
 Comments are mainly for the people who would *develop* or *maintain* the codebase, so it means if you have some complex code somewhere you should write enough comments inside so that anyone else can understand the code by reading the comments. You should always give a space after # and then start writing
 the comment. You can also use some standard comments like
@@ -110,9 +109,7 @@ Modules are Python files which contain different function definitions , variable
 ::
 
     >>> import math
-    >>> print math.e
+    >>> print(math.e)
     2.71828182846
 
 We are going to learn more about modules in the Modules chapter.
-
-

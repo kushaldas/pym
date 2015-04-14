@@ -104,6 +104,8 @@ understand *description* and *long_description*. *platforms* is a list of the pl
 this module can work on. *find_packages* is a special function which can find
 all modules under your source directory.
 
+.. note:: To learn more you can read the `packaging docs <https://packaging.python.org/en/latest/distributing.html>`_.
+
 
 Usage of setup.py
 ==================
@@ -154,6 +156,7 @@ To install from the source use the following command.
 
     $ python setup.py install
 
+.. note:: To learn more, read from `packaging.python.org <https://packaging.python.org/en/latest/distributing.html>`_.
 
 Python Package Index (PyPI)
 ============================

@@ -8,8 +8,8 @@ Welcome to Python for you and me
 
 This is a simple book to learn Python programming language, it is for the programmers who are new to Python.
 
-The Python 3.x version of the same book can be found `here <http://pymbook.readthedocs.org/en/py3/>`_.
 
+The Python 2.x version of the same book can be found `here <http://pymbook.readthedocs.org/en/py2/>`_.
 
 Contents:
 
