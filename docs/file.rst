@@ -80,7 +80,7 @@ You can even loop through the lines in a file object.
 
     >>> fobj = open("sample.txt")
     >>> for x in fobj:
-    ...     print x,
+    ...     print(x, end='')
     ...
     I love Python
     Pradeepto loves KDE
