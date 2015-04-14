@@ -316,6 +316,6 @@ You can actually find the information in a file located at */proc/cpuinfo*.
 Now try to write code which will open the file in read only mode and then read the file
 line by line and find out the number of CPU(s).
 
-.. note:: Always remember to read files line by line than reading them as a whole. Sometimes you may have to read files which are way bigger than your available RAM. 
+.. tip:: Always remember to read files line by line than reading them as a whole. Sometimes you may have to read files which are way bigger than your available RAM. 
 
 After you do this, try to write your own lscpu command in Python :)

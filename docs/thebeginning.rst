@@ -60,7 +60,6 @@ In Python whitespace is an important thing. We divide different identifiers usin
     IndentationError: unexpected indent
 
 .. warning:: Warning
-   -------
    There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation.
    You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
 
