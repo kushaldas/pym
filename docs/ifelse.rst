@@ -1,22 +1,22 @@
 
 
-==========================
-If-else , the control flow
-==========================
+=========================
+If-else, the control flow
+=========================
 
-While working on real life of problems we have to make decisions. Decisions like which camera to buy or which cricket bat is better. At the time of writing a computer program we do the same. We make the decisions using if-else statements, we change the flow of control in the program by using them.
+While working on real life problems, we have to make decisions. Decisions like which camera to buy or which cricket bat is better. When writing a computer program, we do the same. We make the decisions using if-else statements and we change the flow of control in the program by using them.
 
 If statement
 ============
 
-The syntax looks like
+The syntax looks like the following
 
 ::
 
     if expression:
         do this
 
-If the value of *expression* is true (anything other than zero), do the what is written below under indentation. Please remember to give proper indentation, all the lines indented will be evaluated on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not.
+If the value of *expression* is true (anything other than zero), do what is written below under indentation. Please remember to use the proper indentation. All the lines indented will be evaluated depending on the True value of the expression. One simple example is to take some number as input and check if the number is less than 100 or not.
 
 ::
 
@@ -36,7 +36,7 @@ Then we run it
 Else statement
 ==============
 
-Now in the above example we want to print "Greater than" if the number is greater than 100. For that we have to use the *else* statement. This works when the *if*statement is not fulfilled.
+Now, in the above example, we want to print "Greater than" if the number is greater than 100. For that, we have to use the *else* statement. This works when the *if* statement is not fulfilled.
 
 ::
 
@@ -62,18 +62,18 @@ Another very basic example
     >>> x = int(input("Please enter an integer: "))
     >>> if x < 0:
     ...      x = 0
-    ...      print('Negative changed to zero')
+    ...      print("Negative changed to zero")
     ... elif x == 0:
-    ...      print('Zero')
+    ...      print("Zero")
     ... elif x == 1:
-    ...      print('Single')
+    ...      print("Single")
     ... else:
-    ...      print('More')
+    ...      print("More")
 
 Truth value testing
 ===================
 
-The elegant way to test Truth values is like
+The elegant way to test *Truth* values is like
 
 ::
 

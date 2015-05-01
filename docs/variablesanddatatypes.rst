@@ -4,7 +4,7 @@
 Variables and Datatypes
 =======================
 
-Every programming language is having own grammar rules just like the other languages we speak.
+Every programming language has its own *grammatical* rules just like the other languages we speak.
 
 Keywords and Identifiers
 ========================
@@ -21,7 +21,7 @@ The following identifiers are used as reserved words, or keywords of the languag
     assert     else       import     pass
     break      except     in         raise
 
-In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0 abc will become of floating type. Here is a small program to add two given numbers
+In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0, abc will become of floating type. Here is a small program to add two given numbers
 
 ::
 
@@ -30,7 +30,7 @@ In Python we don't specify what kind of data we are going to put in a variable. 
     >>> a + b
     36
 
-From the above example you can understand that to declare a variable in Python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like
+From the above example, you can understand that, to declare a variable in Python, what you need is just to type the name and the value. Python can also manipulate strings. They can be enclosed in either single quotes or double quotes like
 
 ::
 
@@ -44,7 +44,7 @@ From the above example you can understand that to declare a variable in Python ,
 Reading input from the Keyboard
 ===============================
 
-Generally the real life Python codes do not need to read input from the keyboard. In Python we use input function to do input. *input("String to show")* , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py
+Generally, real life Python codes do not need to read input from the keyboard. In Python, we use input function to do input. *input("String to show")*, this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. The name of the program is testhundred.py
 
 .. code-block:: python
 
@@ -99,7 +99,7 @@ The output
 Some Examples
 =============
 
-Some examples of variables and datatypes:
+Here are some examples of variables and datatypes:
 
 Average of N numbers
 --------------------
@@ -179,23 +179,23 @@ You can even assign values to multiple variables in a single line, like
 
 ::
 
-    >>> a , b = 45, 54
+    >>> a, b = 45, 54
     >>> a
     45
     >>> b
     54
 
-Using this swapping two numbers becomes very easy
+Using the above example, swapping two numbers becomes very easy
 
 ::
 
-    >>> a, b = b , a
+    >>> a, b = b, a
     >>> a
     54
     >>> b
     45
 
-To understand how this works, you will have to learn about a data type called *tuple*. We use *comma* to create tuple. In the right hand side we create the tuple (we call this as tuple packing) and in the left hand side we do tuple unpacking into a new tuple.
+To understand how this works, you will have to learn about a data type called *tuple*. We use *comma* to create tuple. On the right hand side we create the tuple (we call this tuple packing) and on the left hand side we do tuple unpacking into a new tuple.
 
 Below we have another example of tuple unpacking.
 

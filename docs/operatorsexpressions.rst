@@ -1,15 +1,15 @@
 
 
 =========================
-Operators and expressions
+Operators and Expressions
 =========================
 
-In Python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like *2 + 3* .
+In Python, most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is similar to *2 + 3*.
 
 Operators
 =========
 
-Operators are the symbols which tells the Python interpreter to do some mathematical or logical operation. Few basic examples of mathematical operators are given below:
+Operators are the symbols that tell the Python interpreter to do some mathematical or logical operation. A few basic examples of mathematical operators are given below:
 
 ::
 
@@ -20,14 +20,14 @@ Operators are the symbols which tells the Python interpreter to do some mathemat
     >>> 22.0 / 12
     1.8333333333333333
 
-To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator
+To get floating result, you need to do the division using any of the operands as floating number. To do a modulo operation use the % operator like shown below:
 
 ::
 
     >>> 14 % 3
     2
 
-Example of integer arithmetic
+Example of Integer Arithmetic
 =============================
 
 The code
@@ -35,7 +35,7 @@ The code
 ::
 
     #!/usr/bin/env python3
-    days = int(nput("Enter days: "))
+    days = int(input("Enter days: "))
     months = days / 30
     days = days % 30
     print("Months = %d Days = %d" % (months, days))
@@ -48,7 +48,7 @@ The output
     Enter days: 265
     Months = 8 Days = 25
 
-In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way
+In the first line, we are taking the input of days then getting the months and days and at finally printing them. You can do it in a easy way
 
 ::
 
@@ -56,7 +56,7 @@ In the first line I am taking the input of days, then getting the months and day
     days = int(input("Enter days: "))
     print("Months = %d Days = %d" % (divmod(days, 30)))
 
-The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2.
+The divmod(num1, num2) function returns two values. The first is the division of *num1* and *num2* and the second is the modulo of *num1* and *num2*.
 
 Relational Operators
 ====================
@@ -95,7 +95,7 @@ Some examples
     >>> 34 != 323
     True
 
-*//* operator gives the floor division result
+The *//* operator gives the floor division result
 
 ::
 
@@ -107,7 +107,7 @@ Some examples
 Logical Operators
 =================
 
-To do logical AND , OR we use *and* ,*or* keywords. *x and y* returns *False* if *x* is *False* else it returns evaluation of *y*. If *x* is *True*, it returns *True*.
+To do logical AND and OR, we use *and* and *or* keywords respectively. The expression *x and y* returns *False* if *x* is *False* otherwise it returns the evaluation of *y*. If *x* is *True*, it returns *True*.
 
 ::
 
@@ -123,7 +123,7 @@ To do logical AND , OR we use *and* ,*or* keywords. *x and y* returns *False* if
 Shorthand Operator
 ==================
 
-*x op = expression* is the syntax for shorthand operators. It will be evaluated like *x = x op expression* , Few examples are
+*x op= expression* is the syntax for shorthand operators. It will be evaluated as *x = x op expression*. A few examples are
 
 ::
 
@@ -161,7 +161,7 @@ The output
 Expressions
 ===========
 
-Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like
+Generally, while writing expressions, we put spaces before and after every operator so that the code becomes clearer to read, like
 
 ::
 
@@ -171,16 +171,16 @@ One example code used to show expressions
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     a = 9
     b = 12
     c = 3
     x = a - b / 3 + c * 2 - 1
     y = a - b / (3 + c) * (2 - 1)
     z = a - (b / (3 + c) * 2) - 1
-    print "X = ", x
-    print "Y = ", y
-    print "Z = ", z
+    print("X = %d" % x)
+    print("Y = %d" % y)
+    print("Z = %d" % z)
 
 The output
 
@@ -191,7 +191,7 @@ The output
     Y =  7
     Z =  4
 
-At first *x* is being calculated. The steps are like this
+At first, *x* is being calculated. The steps are like the following
 
 ::
 
@@ -202,12 +202,12 @@ At first *x* is being calculated. The steps are like this
     11 - 1
     10
 
-Now for *y* and *z* we have parentheses, so the expressions evaluated in different way. Do the calculation yourself to check them.
+Now for *y* and *z* we have parentheses so the expressions evaluated in different ways. Do the calculation yourself to check them.
 
 Type Conversions
 ================
 
-We have to do the type conversions manually. Like
+We have to do the type conversions manually as follows
 ::
 
     float(string) -> float value
@@ -220,7 +220,7 @@ We have to do the type conversions manually. Like
 evaluateequ.py
 ==============
 
-This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10
+This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series up to n. In our case x = 1 and n = 10
 
 .. code-block:: python
 
@@ -255,7 +255,7 @@ This is a program to evaluate the quadratic equation
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     import math
     a = int(input("Enter value of a: "))
     b = int(input("Enter value of b: "))
@@ -266,17 +266,17 @@ This is a program to evaluate the quadratic equation
     else:
         root1 = (-b + math.sqrt(d)) / (2.0 * a)
         root2 = (-b - math.sqrt(d)) / (2.0 * a)
-        print("Root 1 = ", root1)
-        print("Root 2 = ", root2)
+        print("Root 1 = %f" % root1)
+        print("Root 2 = %f" % root2)
 
 salesmansalary.py
 =================
 
-In this example we are going to calculate the salary of a camera salesman. His basic salary is 1500, for every camera he will sell he will get 200 and the commission on the month's sale is 2 %. The input will be number of cameras sold and total price of the cameras.
+In this example, we are going to calculate the salary of a camera salesman. His basic salary is 1500. For every camera he sells, he gets 200. The commission on the month's sale is 2%. The input will be the number of cameras sold and the total price of the cameras.
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     basic_salary = 1500
     bonus_rate = 200
     commision_rate = 0.02
@@ -286,7 +286,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
     commision = (commision_rate * numberofcamera * price)
     print("Bonus        = %6.2f" % bonus)
     print("Commision    = %6.2f" % commision)
-    print("Gross salary = %6.2f") % (basic_salary + bonus + commision)
+    print("Gross salary = %6.2f" % (basic_salary + bonus + commision))
 
 The output
 
