@@ -34,11 +34,11 @@ The code
 
 ::
 
-    #!/usr/bin/env python
-    days = int(raw_input("Enter days: "))
+    #!/usr/bin/env python3
+    days = int(nput("Enter days: "))
     months = days / 30
     days = days % 30
-    print "Months = %d Days = %d" % (months, days)
+    print("Months = %d Days = %d" % (months, days))
 
 The output
 
@@ -52,9 +52,9 @@ In the first line I am taking the input of days, then getting the months and day
 
 ::
 
-    #!/usr/bin/env python
-    days = int(raw_input("Enter days: "))
-    print "Months = %d Days = %d" % (divmod(days, 30))
+    #!/usr/bin/env python3
+    days = int(input("Enter days: "))
+    print("Months = %d Days = %d" % (divmod(days, 30)))
 
 The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2.
 
@@ -142,11 +142,11 @@ shorthand.py example
 
 .. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     N = 100
     a = 2
     while a < N:
-        print "%d" % a
+        print("%d" % a)
         a *= a
 
 The output
@@ -255,14 +255,14 @@ This is a program to evaluate the quadratic equation
 
 ::
 
-    #!/usr/bin/env python3
+    #!/usr/bin/env python
     import math
     a = int(input("Enter value of a: "))
     b = int(input("Enter value of b: "))
     c = int(input("Enter value of c: "))
     d = b * b - 4 * a * c
     if d < 0:
-        print("ROOTS are imaginary")
+        print "ROOTS are imaginary"
     else:
         root1 = (-b + math.sqrt(d)) / (2.0 * a)
         root2 = (-b - math.sqrt(d)) / (2.0 * a)
@@ -276,7 +276,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
 
 ::
 
-    #!/usr/bin/env python3
+    #!/usr/bin/env python
     basic_salary = 1500
     bonus_rate = 200
     commision_rate = 0.02
@@ -286,7 +286,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
     commision = (commision_rate * numberofcamera * price)
     print("Bonus        = %6.2f" % bonus)
     print("Commision    = %6.2f" % commision)
-    print("Gross salary = %6.2f" % (basic_salary + bonus + commision))
+    print("Gross salary = %6.2f") % (basic_salary + bonus + commision)
 
 The output
 

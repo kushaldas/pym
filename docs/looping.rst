@@ -23,7 +23,7 @@ The code we want to reuse must be indented properly under the while statement. T
 
     >>> n = 0
     >>> while n < 11:
-    ...     print n
+    ...     print(n)
     ...     n += 1
     ...
     0
@@ -47,10 +47,10 @@ Let us try to solve *Fibonacci* series. In this series we get the next number by
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     a, b = 0, 1
     while b < 100:
-        print b
+        print(b)
         a, b = b, a + b
 
 The output
@@ -72,14 +72,14 @@ The output
 
 In the first line of the code we are initializing *a* and *b*, then looping while b's value is less than 100. Inside the loop first we are printing the value of *b* and then in the next line putting the value of *b* to *a* and *a + b* to *b* in the same line.
 
-If you put a trailing comma in the *print* statement , then it will print in the same line
+In your print function call if you pass another argument called end and pass a space string, it will print in the same line with space delimiter. The default value for end is '\n'.
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     a, b = 0, 1
     while b < 100:
-        print b,
+        print(b,)
         a, b = b, a + b
 
 The output
@@ -96,7 +96,7 @@ Let us write a program to evaluate the power series. The series looks like e**x 
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     x = float(raw_input("Enter the value of x: "))
     n = term = num = 1
     sum = 1.0
@@ -106,7 +106,7 @@ Let us write a program to evaluate the power series. The series looks like e**x 
         n += 1
         if term < 0.0001:
             break
-    print "No of Times= %d and Sum= %f" % (n, sum)
+    print("No of Times= %d and Sum= %f" % (n, sum))
 
 The output
 ::
@@ -139,7 +139,7 @@ In this example we are going to print the multiplication table up to 10.
 
     #!/usr/bin/env python3
     i = 1
-    print("-" * 50),
+    print("-" * 50)
     while i < 11:
         n = 1
         while n <= 10:
@@ -181,7 +181,7 @@ In a *print* statement if we multiply the string with an integer *n* , the strin
     >>> print("#" * 20)
     ####################
     >>> print("--" * 20)
-    ---------------------------------------
+    ----------------------------------------
     >>> print("-" * 40)
     ----------------------------------------
 
@@ -194,7 +194,7 @@ Design 1
 ::
 
     #!/usr/bin/env python3
-    row = int(raw_input("Enter the number of rows: "))
+    row = int(input("Enter the number of rows: "))
     n = row
     while n >= 0:
         x =  "*" * n
@@ -215,8 +215,8 @@ The output
 Design 2
 ::
 
-    #!/usr/bin/env python
-    n = int(raw_input("Enter the number of rows: "))
+    #!/usr/bin/env python3
+    n = int(input("Enter the number of rows: "))
     i = 1
     while i <= n:
         print("*" * i)
@@ -237,7 +237,7 @@ Design 3
 ::
 
     #!/usr/bin/env python
-    row = int(raw_input("Enter the number of rows: "))
+    row = int(input("Enter the number of rows: "))
     n = row
     while n >= 0:
         x = "*" * n
@@ -258,7 +258,7 @@ The output
 
 Lists
 =====
-List datastructure
+
 
 We are going to learn a data structure called list before we go ahead to learn more on looping. Lists can be written as a list of comma-separated values (items) between square brackets.
 
@@ -329,7 +329,7 @@ There is another to loop by using *for* statement. In Python the *for* statement
 
     >>> a = ['Fedora', 'is', 'powerfull']
     >>> for x in a:
-    ...     print(x, end=" ")
+    ...     print x,
     ...
     Fedora is powerfull
 
@@ -340,7 +340,6 @@ We can also do things like
     >>> a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     >>> for x in a[::2]:
     ...     print(x)
-    ...
     1
     3
     5
@@ -350,17 +349,18 @@ We can also do things like
 range() function
 ================
 
-range() is a buitin function. From the help document
+range() is a buitin class. From the help document
 
 ::
 
-    range(...)
-    range([start,] stop[, step]) -> list of integers
-    Return a list containing an arithmetic progression of integers.
-    range(i, j) returns [i, i+1, i+2, ..., j-1]; start (!) defaults to 0.
-    When step is given, it specifies the increment (or decrement).
-    For example, range(4) returns [0, 1, 2, 3].  The end point is omitted!
-    These are exactly the valid indices for a list of 4 elements.
+class range(object)
+ |  range(stop) -> range object
+ |  range(start, stop[, step]) -> range object
+ |  
+ |  Return a virtual sequence of numbers from start to stop by step.
+ |  
+ |  Methods defined here:
+
 
 Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function
 
@@ -446,7 +446,7 @@ This is a very simple game of sticks. There are 21 sticks, first the user picks 
         if sticks_taken >= 5 or sticks_taken <= 0:
             print("Wrong choice")
             continue
-        print("Computer took: " , (5 - sticks_taken) , "n\n")
+        print("Computer took: " , (5 - sticks_taken) , "\n")
         sticks -= 5
 
 

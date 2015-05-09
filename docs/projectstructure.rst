@@ -173,8 +173,8 @@ Creating account
 First register yourself in `this link <https://testpypi.python.org/pypi?%3Aaction=register_form>`_. You will
 receive an email with a link, go to that link and confirm your registration.
 
-.pypirc file
--------------
+ .pypirc file
+ -------------
 
  Your account details genrally stay inside a file called *.pypirc* under your home directory.
  The content of the file will look like

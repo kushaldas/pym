@@ -173,9 +173,9 @@ Palindrome are the kind of strings which are same from left or right whichever w
     s = raw_input("Please enter a string: ")
     z = s[::-1]
     if s == z:
-        print "The string is a palindrome"
+        print("The string is a palindrome")
     else:
-        print "The string is not a palindrome"
+        print("The string is not a palindrome")
 
 The output
 
@@ -196,8 +196,8 @@ In this example we will count the number of words in a given line
 ::
 
     #!/usr/bin/env python
-    s = raw_input("Enter a line: ")
-    print "The number of words in the line are %d" % (len(s.split(" ")))
+    s = input("Enter a line: ")
+    print("The number of words in the line are %d" % (len(s.split(" "))))
 
 The output
 ::
