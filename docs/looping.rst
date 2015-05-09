@@ -137,17 +137,17 @@ In this example we are going to print the multiplication table up to 10.
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     i = 1
-    print "-" * 50
+    print("-" * 50),
     while i < 11:
         n = 1
         while n <= 10:
-            print "%4d" % (i * n),
+            print("%4d" % (i * n), end=' ')
             n += 1
-        print ""
+        print()
         i += 1
-    print "-" * 50
+    print("-" * 50)
 
 The output
 ::
@@ -170,19 +170,19 @@ Here we used one while loop inside another loop, this is known as nested looping
 
 ::
 
-    print "-" * 50
+    print("-" * 50)
 
 In a *print* statement if we multiply the string with an integer *n* , the string will be printed *n* many times. Some examples
 
 ::
 
-    >>> print "*" * 10
+    >>> print("*" * 10)
     **********
-    >>> print "#" * 20
+    >>> print("#" * 20)
     ####################
-    >>> print "--" * 20
-    ----------------------------------------
-    >>> print "-" * 40
+    >>> print("--" * 20)
+    ---------------------------------------
+    >>> print("-" * 40)
     ----------------------------------------
 
 Some printing * examples
@@ -193,12 +193,12 @@ Here are some examples which you can find very often in college lab reports
 Design 1
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     row = int(raw_input("Enter the number of rows: "))
     n = row
     while n >= 0:
         x =  "*" * n
-        print x
+        print(x)
         n -= 1
 
 The output
@@ -219,7 +219,7 @@ Design 2
     n = int(raw_input("Enter the number of rows: "))
     i = 1
     while i <= n:
-        print "*" * i
+        print("*" * i)
         i += 1
 
 The output
@@ -242,7 +242,7 @@ Design 3
     while n >= 0:
         x = "*" * n
         y = " " * (row - n)
-        print y + x
+        print(y + x)
         n -= 1
 
 The output
@@ -329,7 +329,7 @@ There is another to loop by using *for* statement. In Python the *for* statement
 
     >>> a = ['Fedora', 'is', 'powerfull']
     >>> for x in a:
-    ...     print x,
+    ...     print(x, end=" ")
     ...
     Fedora is powerfull
 
@@ -339,7 +339,7 @@ We can also do things like
 
     >>> a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     >>> for x in a[::2]:
-    ...     print x
+    ...     print(x)
     ...
     1
     3
@@ -380,15 +380,15 @@ Just like *break* we have another statement, *continue*, which skips the executi
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     while True:
-        n = int(raw_input("Please enter an Integer: "))
+        n = int(input("Please enter an Integer: "))
         if n < 0:
             continue #this will take the execution back to the starting of the loop
         elif n == 0:
             break
-        print "Square is ", n ** 2
-    print "Goodbye"
+        print("Square is ", n ** 2)
+    print("Goodbye")
 
 The output
 
@@ -411,9 +411,9 @@ We can have an optional *else* statement after any loop. It will be executed aft
 ::
 
     >>> for i in range(0, 5):
-    ...     print i
+    ...     print(i)
     ... else:
-    ...     print "Bye bye"
+    ...     print("Bye bye")
     ...
     0
     1
@@ -431,22 +431,22 @@ This is a very simple game of sticks. There are 21 sticks, first the user picks 
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     sticks = 21
 
-    print "There are 21 sticks, you can take 1-4 number of sticks at a time."
-    print "Whoever will take the last stick will loose"
+    print("There are 21 sticks, you can take 1-4 number of sticks at a time.")
+    print("Whoever will take the last stick will loose")
 
     while True:
-        print "Sticks left: " , sticks
-        sticks_taken = int(raw_input("Take sticks(1-4):"))
+        print("Sticks left: " , sticks)
+        sticks_taken = int(input("Take sticks(1-4):"))
         if sticks == 1:
-            print "You took the last stick, you loose"
+            print("You took the last stick, you loose")
             break
         if sticks_taken >= 5 or sticks_taken <= 0:
-            print "Wrong choice"
+            print("Wrong choice")
             continue
-        print "Computer took: " , (5 - sticks_taken) , "n\n"
+        print("Computer took: " , (5 - sticks_taken) , "n\n")
         sticks -= 5
 
 
