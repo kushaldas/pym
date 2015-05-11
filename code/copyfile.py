@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+from __future__ import (absolute_import, division, print_function, unicode_literals)
 import sys
+
 if len(sys.argv) < 3:
-    print "Wrong parameter"
-    print "./copyfile.py file1 file2"
+    print( "Wrong parameter")
+    print( "./copyfile.py file1 file2")
     sys.exit(1)
 f1 = open(sys.argv[1])
 s = f1.read()

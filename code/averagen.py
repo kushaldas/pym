@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+from __future__ import (absolute_import, division, print_function, unicode_literals)
+
 N = 10
 sum = 0
 count = 0
@@ -7,5 +9,5 @@ while count < N:
     sum = sum + number
     count = count + 1
 average = float(sum)/N
-print "N = %d , Sum = %f" % (N, sum)
-print "Average = %f" % average
+print ("N = %d , Sum = %f" % (N, sum))
+print ("Average = %f" % average)
