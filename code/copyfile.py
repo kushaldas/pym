@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 if len(sys.argv) < 3:
-    print "Wrong parameter"
-    print "./copyfile.py file1 file2"
+    print ("Wrong parameter")
+    print ("./copyfile.py file1 file2")
     sys.exit(1)
 f1 = open(sys.argv[1])
 s = f1.read()

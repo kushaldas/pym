@@ -1,0 +1,4 @@
+#Compiled python bytecode files
+*.pyc
+#Temporary backup files
+*.py~

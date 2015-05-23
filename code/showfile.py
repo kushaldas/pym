@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-name = raw_input("Enter the filename: ")
+#!/usr/bin/env python3
+name = input("Enter the filename: ")
 f = open(name)
-print f.read()
+print (f.read())
 f.close()

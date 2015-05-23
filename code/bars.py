@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Bars Module
 ============
@@ -13,7 +14,7 @@ def starbar(num):
     :arg num: Length of the bar
 
     """
-    print '*' * num
+    print ('*' * num)
 
 def hashbar(num):
     """
@@ -22,7 +23,7 @@ def hashbar(num):
     :arg num: Length of the bar
 
     """
-    print '#' * num
+    print ('#' * num)
 
 def simplebar(num):
     """
@@ -31,4 +32,4 @@ def simplebar(num):
     :arg num: Length of the bar
     
     """
-    print '-' * num
+    print ('-' * num)
