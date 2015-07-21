@@ -123,11 +123,11 @@ Also remember that default value is evaluated only once, so if you have any muta
     ...     data.append(a)
     ...     return data
     ...
-    >>> print f(1)
+    >>> print(f(1))
     [1]
-    >>> print f(2)
+    >>> print(f(2))
     [1, 2]
-    >>> print f(3)
+    >>> print(f(3))
     [1, 2, 3]
 
 To avoid this you can write more idiomatic Python, like the following
@@ -140,9 +140,9 @@ To avoid this you can write more idiomatic Python, like the following
     ...     data.append(a)
     ...     return data
     ...
-    >>> print f(1)
+    >>> print(f(1))
     [1]
-    >>> print f(2)
+    >>> print(f(2))
     [2]
 
 .. note:: To understand more read `this link <http://docs.python.org/2/tutorial/controlflow.html#default-argument-values>`_.
@@ -181,12 +181,12 @@ correct keyword for each parameter.
 
     >>> def hello(*, name='User'):
     ...     print("Hello %s" % name)
-    ... 
+    ...
     >>> hello('Kushal')
     Traceback (most recent call last):
       File "<stdin>", line 1, in <module>
     TypeError: hello() takes 0 positional arguments but 1 was given
-    >>> hello(name='Kushal') 
+    >>> hello(name='Kushal')
     Hello Kushal
 
 
@@ -224,7 +224,7 @@ We will learn more on docstrings in reStructuredText chapter.
 Higher-order function
 ======================
 
-Higher-order function or a functor is a function which does at least one of the 
+Higher-order function or a functor is a function which does at least one of the
 following step inside:
 
     - Takes one or more functions as argument.
@@ -255,7 +255,7 @@ Example::
     >>> def square(num):
     ...     "Returns the square of a given number."
     ...     return num * num
-    ... 
+    ...
     >>> print(map(square, lst))
     [1, 4, 9, 16, 25]
 
