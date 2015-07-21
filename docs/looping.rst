@@ -327,11 +327,13 @@ There is another to loop by using *for* statement. In Python the *for* statement
 
 ::
 
-    >>> a = ['Fedora', 'is', 'powerfull']
+    >>> a = ['Fedora', 'is', 'powerful']
     >>> for x in a:
-    ...     print x,
+    ...     print(x,)
     ...
-    Fedora is powerfull
+    Fedora
+    is
+    powerful
 
 We can also do things like
 
