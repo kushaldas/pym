@@ -35,7 +35,7 @@ The code
 ::
 
     #!/usr/bin/env python3
-    days = int(nput("Enter days: "))
+    days = int(input("Enter days: "))
     months = days / 30
     days = days % 30
     print("Months = %d Days = %d" % (months, days))
@@ -171,16 +171,16 @@ One example code used to show expressions
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     a = 9
     b = 12
     c = 3
     x = a - b / 3 + c * 2 - 1
     y = a - b / (3 + c) * (2 - 1)
     z = a - (b / (3 + c) * 2) - 1
-    print "X = ", x
-    print "Y = ", y
-    print "Z = ", z
+    print ("X = ", x)
+    print ("Y = ", y)
+    print ("Z = ", z)
 
 The output
 
@@ -262,7 +262,7 @@ This is a program to evaluate the quadratic equation
     c = int(input("Enter value of c: "))
     d = b * b - 4 * a * c
     if d < 0:
-        print "ROOTS are imaginary"
+        print("ROOTS are imaginary")
     else:
         root1 = (-b + math.sqrt(d)) / (2.0 * a)
         root2 = (-b - math.sqrt(d)) / (2.0 * a)
@@ -286,7 +286,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
     commision = (commision_rate * numberofcamera * price)
     print("Bonus        = %6.2f" % bonus)
     print("Commision    = %6.2f" % commision)
-    print("Gross salary = %6.2f") % (basic_salary + bonus + commision)
+    print("Gross salary = %6.2f" % (basic_salary + bonus + commision))
 
 The output
 
