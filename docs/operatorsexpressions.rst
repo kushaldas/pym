@@ -133,10 +133,10 @@ Shorthand Operator
     25
     >>> a /= 3
     >>> a
-    8
+    8.333333333333334
     >>> a += (26 * 32)
     >>> a
-    840
+    840.3333333333334
 
 shorthand.py example
 
