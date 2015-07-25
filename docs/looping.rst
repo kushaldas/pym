@@ -79,7 +79,7 @@ In your print function call if you pass another argument called end and pass a s
     #!/usr/bin/env python3
     a, b = 0, 1
     while b < 100:
-        print(b,)
+        print(b, end=' ')
         a, b = b, a + b
 
 The output
