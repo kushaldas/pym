@@ -309,13 +309,13 @@ You must remember that no mutable object can be a *key*, that means you can not 
 
 .. index:: iteritems
 
-If you want to loop through a dict use *iteritems()* method.
+If you want to loop through a dict use *iter(dict-name.items())* method.
 
 ::
 
     >>> data
     {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
-    >>> for x, y in data.iteritems():
+    >>> for x, y in iter(data.items()):
     ...     print("%s uses %s" % (x, y))
     ...
     Kushal uses Fedora
@@ -390,9 +390,9 @@ In this example , you have to take number of students as input , then ask marks 
         for x in languages:
             marks.append(int(input('Enter marks of %s: ' % x))) #Get the marks for  languages
         data[name] = marks
-    for x, y in data.iteritems():
+    for x, y in iter(data.items()):
         total =  sum(y)
-        print("%s 's  total marks %d" % (x, total))
+        print("%s \'s  total marks %d" % (x, total))
         if total < 120:
             print("%s failed :(" % x)
         else:
