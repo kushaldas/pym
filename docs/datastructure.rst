@@ -4,7 +4,7 @@
 Data Structures
 ===============
 
-Python is having a few built-in data structure. If you are still wondering what is a data structure, then it is nothing a but a way to store data and the having particular methods to retrieve or manipulate it. We already saw lists before, now we will go in depth.
+Python has a few built-in data structures. If you are wondering what a data structure is, it is nothing but a way to store data and having particular methods to retrieve or manipulate it. We already encountered lists before, now we will go in some depth.
 
 .. index:: List
 
@@ -17,7 +17,7 @@ Lists
     >>> a
     [23, 45, 1, -3434, 43624356, 234, 45]
 
-At first we created a list *a*. Then to add *45* at the end of the list we call *a.append(45)* method. You can see that *45* added at the end of the list. Sometimes it may require to insert data at any place within the list, for that we have *insert()* method.
+At first we created a list *a*. Then to add *45* at the end of the list we call *a.append(45)* method. You can see that *45* is added at the end of the list. Sometimes it is required to insert data at any place within the list, for that we have *insert()* method.
 
 ::
 
@@ -96,7 +96,7 @@ You can also delete element at any particular position of the list using the del
 Using lists as stack and queue
 ==============================
 
-Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you entered the last marble. To achieve the same in code
+Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you inserted the last marble. To achieve the same in code
 
 ::
 
