@@ -44,7 +44,7 @@ update it in one place.
 Using a template engine will save you a lot of time when creating your
 application but also when updating and maintaining it.
 
-An "Hello world" application in flask
+A "Hello world" application in flask
 -------------------------------------
 
 We are going to perform a very basic application with flask.
