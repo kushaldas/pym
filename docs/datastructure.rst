@@ -259,6 +259,17 @@ To add or pop values from a set
     >>> a.add('p')
     >>> a
     set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])
+    
+To sort the elements of a set
+
+::
+
+    >>> s = set('passionate')
+    >>> s
+    {'n', 'i', 't', 'o', 's', 'e', 'p', 'a'}
+    >>> l = sorted(s)
+    >>> l
+    ['a', 'e', 'i', 'n', 'o', 'p', 's', 't']# returned a sorted list of the elements in set
 
 .. index:: Dictionary
 
