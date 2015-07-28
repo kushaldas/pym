@@ -402,7 +402,7 @@ The output
 
 ::
 
-    [kd@kdlappy book]$ ./students.py
+    $ ./students.py
     Enter the number of students:2
     Enter the name of the student 1: Babai
     Enter marks of Physics: 12
@@ -449,7 +449,7 @@ The output
 
 ::
 
-    [kd@kdlappy book]$ ./matrixmul.py
+    $ ./matrixmul.py
     Enter the value of n: 3
     Enter values for the Matrix A
     1 2 3
