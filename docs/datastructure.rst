@@ -196,9 +196,9 @@ Tuples are immutable, that means you can not del/add/edit any value inside the t
     File "<stdin>", line 1, in <module>
     TypeError: 'tuple' object doesn't support item deletion
 
-Above you can see Python is giving error when we are trying to delete a value in the tuple.
+As you can see above, Python gives error when we try to delete a value in the tuple.
 
-To create a tuple which contains only one value you have to type a trailing comma.
+To create a tuple which contains only one value, type a trailing comma.
 
 ::
 
@@ -206,26 +206,26 @@ To create a tuple which contains only one value you have to type a trailing comm
     >>> a
     123
     >>> type(a)
-    <type 'int'>
+    <class 'int'>
     >>> a = (123, ) #Look at the trailing comma
     >>> a
     (123,)
     >>> type(a)
-    <type 'tuple'>
+    <class 'tuple'>
 
-Using the built in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
+Using the built-in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
 
 ::
 
     >>> type(len)
-    <type 'builtin_function_or_method'>
+    <class 'builtin_function_or_method'>
 
 .. index:: Set
 
 Sets
 ====
 
-Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets.
+Sets are another type of data structure with no duplicate items. We can apply mathematical set operations on sets.
 
 ::
 
