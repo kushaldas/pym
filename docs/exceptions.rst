@@ -99,7 +99,7 @@ An empty `except` statement can catch any exception. Read the following example:
     >>> try:
     ...     input() # Press Ctrl+c for a KeyboardInterrupt
     ... except:
-    ...     print "Unknown Exception"
+    ...     print("Unknown Exception")
     ...
     Unknown Exception
 

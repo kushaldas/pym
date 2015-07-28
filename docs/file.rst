@@ -128,7 +128,7 @@ Now read the file we just created
 
     >>> fobj = open('ircnicks.txt')
     >>> s = fobj.read()
-    >>> print s
+    >>> print(s)
     powerpork
     indrag
     mishti
@@ -237,7 +237,7 @@ Let us try to write an application which will count the spaces, tabs, and lines 
 
         :arg path: Path of the text file to parse
 
-        :return: A tuple with count of spacaes, tabs and lines. 
+        :return: A tuple with count of spacaes, tabs and lines.
         """
         fd = open(path)
         i = 0
@@ -285,7 +285,7 @@ In real life scenarios we should try to use `with` statement. It will take care 
     >>> with open('setup.py') as fobj:
     ...     for line in fobj:
     ...         print line,
-    ... 
+    ...
     #!/usr/bin/env python
     """Factorial project"""
     from setuptools import find_packages, setup
@@ -308,14 +308,14 @@ Let us write some real code
 ===========================
 
 Do you know how many CPU(s) are there in your processor? or what is the model name?
-Let us write some code which can help us to know these things. 
+Let us write some code which can help us to know these things.
 
-If you are in Linux, then you can actually view the output of the *lscpu* command first. 
+If you are in Linux, then you can actually view the output of the *lscpu* command first.
 You can actually find the information in a file located at */proc/cpuinfo*.
 
 Now try to write code which will open the file in read only mode and then read the file
 line by line and find out the number of CPU(s).
 
-.. tip:: Always remember to read files line by line than reading them as a whole. Sometimes you may have to read files which are way bigger than your available RAM. 
+.. tip:: Always remember to read files line by line than reading them as a whole. Sometimes you may have to read files which are way bigger than your available RAM.
 
 After you do this, try to write your own lscpu command in Python :)

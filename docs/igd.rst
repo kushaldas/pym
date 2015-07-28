@@ -219,7 +219,7 @@ Generator expressionsGenerator expressions
 In this section we will learn about generator expressions which is a  high
 performance, memory efficient generalization of list comprehensions and generators.
 
-For example we will try to sum the squares of all numbers from 1 to 99.
+For example we will try to sum the squares of all numbers from 1 to 9.
 
 ::
 
