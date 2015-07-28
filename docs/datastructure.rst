@@ -4,7 +4,7 @@
 Data Structures
 ===============
 
-Python is having a few built-in data structure. If you are still wondering what is a data structure, then it is nothing a but a way to store data and the having particular methods to retrieve or manipulate it. We already saw lists before, now we will go in depth.
+Python has a few built-in data structures. If you are wondering what a data structure is, it is nothing but a way to store data and having particular methods to retrieve or manipulate it. We already encountered lists before, now we will go in some depth.
 
 .. index:: List
 
@@ -17,7 +17,7 @@ Lists
     >>> a
     [23, 45, 1, -3434, 43624356, 234, 45]
 
-At first we created a list *a*. Then to add *45* at the end of the list we call *a.append(45)* method. You can see that *45* added at the end of the list. Sometimes it may require to insert data at any place within the list, for that we have *insert()* method.
+At first we created a list *a*. Then to add *45* at the end of the list we call *a.append(45)* method. You can see that *45* is added at the end of the list. Sometimes it is required to insert data at any place within the list, for that we have *insert()* method.
 
 ::
 
@@ -96,7 +96,7 @@ You can also delete element at any particular position of the list using the del
 Using lists as stack and queue
 ==============================
 
-Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you entered the last marble. To achieve the same in code
+Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you inserted the last marble. To achieve the same in code
 
 ::
 
@@ -196,9 +196,9 @@ Tuples are immutable, that means you can not del/add/edit any value inside the t
     File "<stdin>", line 1, in <module>
     TypeError: 'tuple' object doesn't support item deletion
 
-Above you can see Python is giving error when we are trying to delete a value in the tuple.
+As you can see above, Python gives error when we try to delete a value in the tuple.
 
-To create a tuple which contains only one value you have to type a trailing comma.
+To create a tuple which contains only one value, type a trailing comma.
 
 ::
 
@@ -206,26 +206,26 @@ To create a tuple which contains only one value you have to type a trailing comm
     >>> a
     123
     >>> type(a)
-    <type 'int'>
+    <class 'int'>
     >>> a = (123, ) #Look at the trailing comma
     >>> a
     (123,)
     >>> type(a)
-    <type 'tuple'>
+    <class 'tuple'>
 
-Using the built in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
+Using the built-in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
 
 ::
 
     >>> type(len)
-    <type 'builtin_function_or_method'>
+    <class 'builtin_function_or_method'>
 
 .. index:: Set
 
 Sets
 ====
 
-Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets.
+Sets are another type of data structure with no duplicate items. We can apply mathematical set operations on sets.
 
 ::
 
