@@ -158,7 +158,7 @@ The output
 
 ::
 
-    [kd@kdlappy book]$ ./temperature.py
+    $ ./temperature.py
     Fahrenheit Celsius
     0.0  -17.78
     25.0   -3.89
