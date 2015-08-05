@@ -77,21 +77,23 @@ We can store anything in the list, so first we are going to add another list  *b
 
 .. index:: sort
 
-Above you can see how we used *a.extend()* method to extend the list. To sort any list we have *sort()* method.
+Above you can see how we used *a.extend()* method to extend the list. To sort any list we have *sort()* method. The *sort()* method will only work if elements in the list are comparable. We will remove the list b from the list and then sort. 
 
 ::
-
+    >>> a.remove(b)
+    >>> a
+    [45, 43624356, -3434, 1, 45, 23, 1, 111, 45, 56, 90]
     >>> a.sort()
     >>> a
-    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356, [45, 56, 90]]
+    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
 
-You can also delete element at any particular position of the list using the del keyword.
+You can also delete an element at any particular position of the list using the del keyword.
 
 ::
 
     >>> del a[-1]
     >>> a
-    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
+    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111]
 
 Using lists as stack and queue
 ==============================
