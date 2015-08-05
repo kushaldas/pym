@@ -157,7 +157,7 @@ Stings have some methods which will help you in finding text/substring in a stri
     -1
     >>> s.startswith("fa") #To check if the string startswith fa or not
     True
-    >>> s.endswith("reason") #
+    >>> s.endswith("reason") #To check if the string endswith reason or not
     True
 
 *find()* helps to find the first occurrence of the substring given, if not found it returns -1.
