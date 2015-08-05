@@ -256,6 +256,6 @@ Example::
     ...     "Returns the square of a given number."
     ...     return num * num
     ...
-    >>> print(map(square, lst))
+    >>> print(list(map(square, lst)))
     [1, 4, 9, 16, 25]
 
