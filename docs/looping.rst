@@ -72,7 +72,7 @@ The output
 
 In the first line of the code we are initializing *a* and *b*, then looping while b's value is less than 100. Inside the loop first we are printing the value of *b* and then in the next line putting the value of *b* to *a* and *a + b* to *b* in the same line.
 
-In your print function call if you pass another argument called end and pass a space string, it will print in the same line with space delimiter. The default value for end is '\n'.
+In your print function call if you pass another argument called end and pass a space string, it will print in the same line with space delimiter. The default value for end is '\\n'.
 
 ::
 
@@ -315,9 +315,9 @@ That means we can use the above statement as *if* clause expression. The built-i
 
    ::
 
-        if list_name: #This means the list is not empty
+        if list_name: # This means the list is not empty
             pass
-        else: #This means the list is empty
+        else: # This means the list is empty
             pass
 
 For loop
@@ -368,11 +368,11 @@ Now if you want to see this help message on your system type *help(range)* in th
 
 ::
 
-    >>> range(1, 5)
+    >>> list(range(1, 5))
     [1, 2, 3, 4]
-    >>> range(1, 15, 3)
+    >>> list(range(1, 15, 3))
     [1, 4, 7, 10, 13]
-    >>> range(10)
+    >>> list(range(10))
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 Continue statement
@@ -386,7 +386,7 @@ Just like *break* we have another statement, *continue*, which skips the executi
     while True:
         n = int(input("Please enter an Integer: "))
         if n < 0:
-            continue #this will take the execution back to the starting of the loop
+            continue # this will take the execution back to the starting of the loop
         elif n == 0:
             break
         print("Square is ", n ** 2)
