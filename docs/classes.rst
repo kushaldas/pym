@@ -214,7 +214,7 @@ The following shows a direct example.
     >>> print(std.name)
     Kushal Das
     >>> std.name = "Python"
-    >>> print std.name
+    >>> print(std.name)
     Python
 
 .. index:: Property
@@ -251,7 +251,7 @@ the dollars in the account.
         @amount.setter
         def amount(self, value):
             if value < 0:
-                print "Sorry, no negative amount in the account."
+                print("Sorry, no negative amount in the account.")
                 return
             self.__amt = value
 
