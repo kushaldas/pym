@@ -60,14 +60,14 @@ defaultdict example
 -------------------
 
 ::
-
+    >>> from collections import defaultdict
     >>> s = [('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
     >>> d = defaultdict(list)
     >>> for k, v in s:
     ...     d[k].append(v)
     ...
     >>> d.items()
-    [('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])]
+    dict_items([('blue', [2, 4]), ('red', [1]), ('yellow', [1, 3])])
 
 In the example you can see even if the key is not there in the defaultdict object, it automatically creates an empty list. *list.append* then helps to append the value to the list.
 
