@@ -83,7 +83,7 @@ Now we will create another virtual environment *virt2* where we will install the
 ::
 
     $ virtualenv virt2
-    New python executable in virt1/bin/python
+    New python executable in virt2/bin/python
     Installing setuptools............done.
     Installing pip...............done.
     $ source virt2/bin/activate
