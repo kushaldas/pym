@@ -9,18 +9,18 @@ you with tools, libraries and technologies that allow you to build a web
 application. This web application can be some web pages, a blog, a wiki or go as
 big as a web-based calendar application or a commercial website.
 
-Flask is part of the categories of the micro-framework. Micro-framework are
-normally framework with little to no dependencies to external libraries. This
-has pros and cons. Pros would be that the framework is light, there are little
-dependency to update and watch for security bugs, cons is that some time you
-will have to do more work by yourself or increase yourself the list of
-dependencies by adding plugins.
+Flask is part of the category of micro-framework. Micro-frameworks are
+normally frameworks with little to no dependencies on external libraries. This
+has pros and cons. Pros would be that the framework is light, there are few
+dependencies to update and watch for security bugs; cons are that sometimes you
+will have to do more work by yourself or manually increase the list of
+dependencies for your project by adding plugins.
 In the case of Flask, its dependencies are:
 
 * `Werkzeug <http://werkzeug.pocoo.org/>`_ a WSGI utility library
 * `jinja2 <http://jinja.pocoo.org/>`_ which is its template engine
 
-.. note:: WSGI is basically a protocol defined so that Python application can
+.. note:: WSGI is basically a protocol defined so that a Python application can
    communicate with a web-server and thus be used as web-application outside of
    CGI.
 
@@ -28,21 +28,20 @@ What are template engines?
 --------------------------
 
 Have you ever built a website? Did you face the problem that to keep the style
-of the website consistent, you have had to write multiple times the same text?
+of the website consistent, you have had to write the same text multiple times?
 Did you ever tried to change the style of such website?
 
-If your website contains only few pages, changing its style will take you some
+If your website contains only a few pages, changing its style will take you some
 time but is doable. However, if you have a lot of pages (for example the list of
-items you sell in your store), this task become overwhelming.
+items you sell in your store), this task becomes overwhelming.
 
 Using templates you are able to set a basic layout for your pages and mention
-which element will change.
-This way to can define your header and keept it consistent over all the pages of
-your website, and if you need to change your header, you will only have to
-update it in one place.
+which element will change.  This way you can define your header and keep it 
+consistent over all the pages of your website, and if you need to change your 
+header, you will only have to update it in one place.
 
-Using a template engine will save you a lot of time when creating your
-application but also when updating and maintaining it.
+Using a template engine will save you a lot of time both when creating your
+application and also when updating and maintaining it.
 
 A "Hello world" application in flask
 -------------------------------------
@@ -154,7 +153,7 @@ For this we will update ``hello_flask.py``.
 
   @APP.route('/hello/<name>/')
   def hello(name):
-      """ Displays the page greats who ever comes to visit it.
+      """ Displays a page that greets whomever comes to visit it.
       """
       return flask.render_template('hello.html', name=name)
 
@@ -254,21 +253,23 @@ second block we define what we want to have in the body of the page.
 
 * As an exercise, transform the other template ``hello.html`` to use the
   ``master.html`` template as well.
+  
+  
 
 * Add link to the front page from the hello page
 
-Flask uses a specific syntax to create links from a page to another. This is
+Flask uses a specific syntax to create links from a page to another. This in
 fact generates the link dynamically according to the decorator set to the
 function linked to. In addition it takes care of where the application is
 deployed.
 
 For example, if you website is deployed at: ``/myapp/`` flask will automatically
-happend ``/myapp/`` to all links without the need for you to specify it.
+append ``/myapp/`` to all links without the need for you to specify it.
 
 To create a link in a template, flask relies on the function ``url_for()``. This
-function takes as first argument the function you want to call (link to). The
-following arguments are the arguments of function itself (for example the
-argument ``name`` of the function ``hello``.
+function takes as its first argument the function you want to call (link to). The
+following arguments are the arguments of the function itself (for example the
+argument ``name`` of the function ``hello``).
 
 Adjust the template ``hello.html`` to add a link to the front page
 
