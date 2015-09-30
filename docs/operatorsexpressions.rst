@@ -255,7 +255,7 @@ This is a program to evaluate the quadratic equation
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     import math
     a = int(input("Enter value of a: "))
     b = int(input("Enter value of b: "))
@@ -276,7 +276,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     basic_salary = 1500
     bonus_rate = 200
     commision_rate = 0.02

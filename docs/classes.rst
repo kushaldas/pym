@@ -105,7 +105,7 @@ student_teacher.py
 -------------------
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
 
     class Person(object):
         """
@@ -228,7 +228,7 @@ money value to negative and also a property called *inr* will give us the INR va
 the dollars in the account.
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
 
     class Account(object):
         """The Account class,

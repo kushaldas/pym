@@ -70,7 +70,7 @@ In the next program we are going to calculate investments.
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     amount = float(input("Enter amount: "))
     inrate = float(input("Enter Interest rate: "))
     period = int(input("Enter period: "))
@@ -108,7 +108,7 @@ In the next program we will do an average of N numbers.
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     N = 10
     sum = 0
     count = 0

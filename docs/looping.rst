@@ -236,7 +236,7 @@ The output
 Design 3
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     row = int(input("Enter the number of rows: "))
     n = row
     while n >= 0:

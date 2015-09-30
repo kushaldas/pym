@@ -169,7 +169,7 @@ Palindrome are the kind of strings which are same from left or right whichever w
 
 .. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     s = input("Please enter a string: ")
     z = s[::-1]
     if s == z:
@@ -195,7 +195,7 @@ In this example we will count the number of words in a given line
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     s = input("Enter a line: ")
     print("The number of words in the line are %d" % (len(s.split(" "))))
 
