@@ -79,12 +79,12 @@ You can even loop through the lines in a file object.
 ::
 
     >>> fobj = open("sample.txt")
-    >>> for x in f:
+    >>> for x in fobj:
     ...     print(x, end=' ')
     ...
     I love Python
-    Pradeepto loves KDE
-    Sankarshan loves Openoffice
+     Pradeepto loves KDE
+     Sankarshan loves Openoffice
 
 Let us write a program which will take the file name as the input from the user and show the content of the file in the console.
 
