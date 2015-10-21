@@ -20,10 +20,10 @@ If the value of *expression* is true (anything other than zero), do the what is 
 
 ::
 
-    #!/usr/bin/env python
-    number = int(raw_input("Enter a number: "))
+    #!/usr/bin/env python3
+    number = int(input("Enter a number: "))
     if number < 100:
-        print "The number is less than 100"
+        print("The number is less than 100")
 
 Then we run it
 
@@ -40,12 +40,12 @@ Now in the above example we want to print "Greater than" if the number is greate
 
 ::
 
-    #!/usr/bin/env python
-    number = int(raw_input("Enter a number: "))
+    #!/usr/bin/env python3
+    number = int(input("Enter a number: "))
     if number < 100:
-        print "The number is less than 100"
+        print("The number is less than 100")
     else:
-        print "The number is greater than 100"
+        print("The number is greater than 100")
 
 The output
 
@@ -59,16 +59,16 @@ Another very basic example
 
 ::
 
-    >>> x = int(raw_input("Please enter an integer: "))
+    >>> x = int(input("Please enter an integer: "))
     >>> if x < 0:
     ...      x = 0
-    ...      print 'Negative changed to zero'
+    ...      print('Negative changed to zero')
     ... elif x == 0:
-    ...      print 'Zero'
+    ...      print('Zero')
     ... elif x == 1:
-    ...      print 'Single'
+    ...      print('Single')
     ... else:
-    ...      print 'More'
+    ...      print('More')
 
 Truth value testing
 ===================

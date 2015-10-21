@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Python for you and me'
-copyright = u'2008-2013, Kushal Das'
+copyright = u'2008-2015, Kushal Das'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -258,7 +258,7 @@ texinfo_documents = [
 epub_title = u'Python for you and me'
 epub_author = u'Kushal Das'
 epub_publisher = u'Kushal Das'
-epub_copyright = u'2008-2013, Kushal Das'
+epub_copyright = u'2008-2014, Kushal Das'
 
 # The language of the text. It defaults to the language option
 # or en if the language is not set.
@@ -296,7 +296,7 @@ epub_copyright = u'2008-2013, Kushal Das'
 
 
 # Example configuration for intersphinx: refer to the Python standard library.
-intersphinx_mapping = {'http://docs.python.org/': None}
+intersphinx_mapping = {'python': ('http://docs.python.org/3', None)}
 latex_preamble = """
 \usepackage{upquote}
 """

@@ -4,7 +4,7 @@
 Data Structures
 ===============
 
-Python is having a few built-in data structure. If you are still wondering what is a data structure, then it is nothing a but a way to store data and the having particular methods to retrieve or manipulate it. We already saw lists before, now we will go in depth.
+Python has a few built-in data structures. If you are wondering what a data structure is, it is nothing but a way to store data and having particular methods to retrieve or manipulate it. We already encountered lists before; now we will go in some depth.
 
 .. index:: List
 
@@ -17,7 +17,7 @@ Lists
     >>> a
     [23, 45, 1, -3434, 43624356, 234, 45]
 
-At first we created a list *a*. Then to add *45* at the end of the list we call *a.append(45)* method. You can see that *45* added at the end of the list. Sometimes it may require to insert data at any place within the list, for that we have *insert()* method.
+At first we created a list *a*. Then to add *45* at the end of the list we call the *a.append(45)* method. You can see that *45* is added at the end of the list. Sometimes it is necessary to insert data at any place within the list, for that we have *insert()* method.
 
 ::
 
@@ -30,14 +30,14 @@ At first we created a list *a*. Then to add *45* at the end of the list we call 
 
 .. index:: count
 
-*count(s)* will return you number of times *s* is in the list. Here we are going to check how many times *45* is there in the list.
+*count(s)* will return you the number of times *s* is in the list. Here we are going to check how many times *45* is there in the list.
 
 ::
 
     >>> a.count(45)
     2
 
-If you want to remove any particular value from the list you have to use *remove()* method.
+If you want to remove any particular value from the list you have to use the *remove()* method.
 
 .. index:: remove
 
@@ -57,7 +57,7 @@ Now to reverse the whole list
     >>> a
     [45, 43624356, -3434, 1, 45, 23, 1, 111]
 
-We can store anything in the list, so first we are going to add another list  *b* in  *a*, then we will learn how to add the values of  *b* into  *a*.
+We can store anything in the list, so first we are going to add another list  *b* in  *a*; then we will learn how to add the values of  *b* into  *a*.
 
 .. index:: extend, append
 
@@ -77,29 +77,32 @@ We can store anything in the list, so first we are going to add another list  *b
 
 .. index:: sort
 
-Above you can see how we used *a.extend()* method to extend the list. To sort any list we have *sort()* method.
+Above you can see how we used the *a.extend()* method to extend the list. To sort any list we have *sort()* method. The *sort()* method will only work if elements in the list are comparable. We will remove the list b from the list and then sort. 
 
 ::
-
+    >>> a.remove(b)
+    >>> a
+    [45, 43624356, -3434, 1, 45, 23, 1, 111, 45, 56, 90]
     >>> a.sort()
     >>> a
-    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356, [45, 56, 90]]
+    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
 
-You can also delete element at any particular position of the list using the del keyword.
+You can also delete an element at any particular position of the list using the del keyword.
 
 ::
 
     >>> del a[-1]
     >>> a
-    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
+    [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111]
 
 Using lists as stack and queue
 ==============================
 
-Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end , and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you entered the last marble. To achieve the same in code
+Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end, and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you inserted the last marble. To achieve the same in code
 
 ::
 
+    >>> a = [1, 2, 3, 4, 5, 6]
     >>> a
     [1, 2, 3, 4, 5, 6]
     >>> a.pop()
@@ -118,7 +121,7 @@ Stacks are often known as LIFO (Last In First Out) structure. It means the data 
 
 We learned a new method above *pop()*. *pop(i)* will take out the ith data from the list.
 
-In our daily life we have to encounter queues many times, like in ticket counters or in library or in the billing section of any supermarket. Queue is the data structure where you can append more data at the end and take out data from the beginning. That is why it is known as FIFO (First In First Out).
+In our daily life we have to encounter queues many times, like at ticket counters or in the library or in the billing section of any supermarket. Queue is the data structure where you can append more data at the end and take out data from the beginning. That is why it is known as FIFO (First In First Out).
 
 ::
 
@@ -160,7 +163,7 @@ Above in the second case we used two list comprehensions in a same line.
 Tuples
 ======
 
-Tuples are data separated by comma.
+Tuples are data separated by commas.
 
 ::
 
@@ -170,11 +173,11 @@ Tuples are data separated by comma.
     >>> a[1]
     'Debian'
     >>> for x in a:
-    ...     print x,
+    ...     print(x, end=' ')
     ...
     Fedora Debian Kubuntu Pardus
 
-You can also unpack values of any tuple in to variables, like
+You can also unpack values of any tuple into variables, like
 
 ::
 
@@ -186,7 +189,7 @@ You can also unpack values of any tuple in to variables, like
     >>> y
     1
 
-Tuples are immutable, that means you can not del/add/edit any value inside the tuple. Here is another example
+Tuples are immutable, meaning that you can not del/add/edit any value inside the tuple. Here is another example
 
 ::
 
@@ -196,9 +199,9 @@ Tuples are immutable, that means you can not del/add/edit any value inside the t
     File "<stdin>", line 1, in <module>
     TypeError: 'tuple' object doesn't support item deletion
 
-Above you can see Python is giving error when we are trying to delete a value in the tuple.
+As you can see above, Python gives an error when we try to delete a value in the tuple.
 
-To create a tuple which contains only one value you have to type a trailing comma.
+To create a tuple which contains only one value, type a trailing comma.
 
 ::
 
@@ -206,32 +209,32 @@ To create a tuple which contains only one value you have to type a trailing comm
     >>> a
     123
     >>> type(a)
-    <type 'int'>
+    <class 'int'>
     >>> a = (123, ) #Look at the trailing comma
     >>> a
     (123,)
     >>> type(a)
-    <type 'tuple'>
+    <class 'tuple'>
 
-Using the built in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence ?
+Using the built-in function *type()* you can know the data type of any variable. Remember the *len()* function we used to find the length of any sequence?
 
 ::
 
     >>> type(len)
-    <type 'builtin_function_or_method'>
+    <class 'builtin_function_or_method'>
 
 .. index:: Set
 
 Sets
 ====
 
-Sets are another type of data structure with no duplicate items. We can also mathematical set operations on sets.
+Sets are another type of data structure with no duplicate items. We can apply mathematical set operations on sets.
 
 ::
 
     >>> a = set('abcthabcjwethddda')
     >>> a
-    set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'])
+    {'a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'}
 
 And some examples of the set operations
 
@@ -240,25 +243,25 @@ And some examples of the set operations
     >>> a = set('abracadabra')
     >>> b = set('alacazam')
     >>> a                                  # unique letters in a
-    set(['a', 'r', 'b', 'c', 'd'])
+    {'a', 'r', 'b', 'c', 'd'}
     >>> a - b                              # letters in a but not in b
-    set(['r', 'd', 'b'])
+    {'r', 'd', 'b'}
     >>> a | b                              # letters in either a or b
-    set(['a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'])
+    {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
     >>> a & b                              # letters in both a and b
-    set(['a', 'c'])
+    {'a', 'c'}
     >>> a ^ b                              # letters in a or b but not both
-    set(['r', 'd', 'b', 'm', 'z', 'l'])
+    {'r', 'd', 'b', 'm', 'z', 'l'}
 
 To add or pop values from a set
 
 ::
 
     >>> a
-    set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'])
+    {'a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 't', 'w'}
     >>> a.add('p')
     >>> a
-    set(['a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'])
+    {'a', 'c', 'b', 'e', 'd', 'h', 'j', 'q', 'p', 't', 'w'}
 
 .. index:: Dictionary
 
@@ -307,16 +310,16 @@ You must remember that no mutable object can be a *key*, that means you can not 
     >>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))
     {'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}
 
-.. index:: iteritems
+.. index:: items
 
-If you want to loop through a dict use *iteritems()* method.
+If you want to loop through a dict use *items()* method.
 
 ::
 
     >>> data
     {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
-    >>> for x, y in data.iteritems():
-    ...     print "%s uses %s" % (x, y)
+    >>> for x, y in data.items():
+    ...     print("%s uses %s" % (x, y))
     ...
     Kushal uses Fedora
     Jace uses Mac
@@ -355,7 +358,7 @@ If you want to loop through a list (or any sequence) and get iteration number at
 ::
 
     >>> for i, j in enumerate(['a', 'b', 'c']):
-    ...     print i, j
+    ...     print(i, j)
     ...
     0 a
     1 b
@@ -368,7 +371,7 @@ You may also need to iterate through two sequences same time, for that use *zip(
     >>> a = ['Pradeepto', 'Kushal']
     >>> b = ['OpenSUSE', 'Fedora']
     >>> for x, y in zip(a, b):
-    ...     print "%s uses %s" % (x, y)
+    ...     print("%s uses %s" % (x, y))
     ...
     Pradeepto uses OpenSUSE
     Kushal uses Fedora
@@ -380,29 +383,29 @@ In this example , you have to take number of students as input , then ask marks 
 
 ::
 
-    #!/usr/bin/env python
-    n = int(raw_input("Enter the number of students:"))
+    #!/usr/bin/env python3
+    n = int(input("Enter the number of students:"))
     data = {} # here we will store the data
     languages = ('Physics', 'Maths', 'History') #all languages
     for i in range(0, n): #for the n number of students
-        name = raw_input('Enter the name of the student %d: ' % (i + 1)) #Get the name of the student
+        name = input('Enter the name of the student %d: ' % (i + 1)) #Get the name of the student
         marks = []
         for x in languages:
-            marks.append(int(raw_input('Enter marks of %s: ' % x))) #Get the marks for  languages
+            marks.append(int(input('Enter marks of %s: ' % x))) #Get the marks for  languages
         data[name] = marks
-    for x, y in data.iteritems():
+    for x, y in data.items():
         total =  sum(y)
-        print "%s 's  total marks %d" % (x, total)
+        print("%s 's  total marks %d" % (x, total))
         if total < 120:
-            print "%s failed :(" % x
+            print("%s failed :(" % x)
         else:
-            print "%s passed :)" % x
+            print("%s passed :)" % x)
 
 The output
 
 ::
 
-    [kd@kdlappy book]$ ./students.py
+    $ ./students.py
     Enter the number of students:2
     Enter the name of the student 1: Babai
     Enter marks of Physics: 12
@@ -425,31 +428,31 @@ In this example we will multiply two matrices. First we will take input the numb
 ::
 
     #!/usr/bin/env python
-    n = int(raw_input("Enter the value of n: "))
-    print "Enter values for the Matrix A"
+    n = int(input("Enter the value of n: "))
+    print("Enter values for the Matrix A")
     a = []
     for i in range(0, n):
-        a.append([int(x) for x in raw_input("").split(" ")])
-    print "Enter values for the Matrix B"
+        a.append([int(x) for x in input("").split(" ")])
+    print("Enter values for the Matrix B")
     b = []
     for i in range(0, n):
-        b.append([int(x) for x in raw_input("").split(" ")])
+        b.append([int(x) for x in input("").split(" ")])
     c = []
     for i in range(0, n):
-        c.append([a[i][j] * b[j][i] for j in range(0,n)])
-    print "After matrix multiplication"
-    print "-" * 10 * n
+        c.append([a[i][j] * b[j][i] for j in range(0, n)])
+    print("After matrix multiplication")
+    print("-" * 10 * n)
     for x in c:
         for y in x:
-            print "%5d" % y,
-        print ""
-    print "-" * 10 * n
+            print("%5d" % y, end=' ')
+        print("")
+    print("-" * 10 * n)
 
 The output
 
 ::
 
-    [kd@kdlappy book]$ ./matrixmul.py
+    $ ./matrixmul.py
     Enter the value of n: 3
     Enter values for the Matrix A
     1 2 3
@@ -461,11 +464,11 @@ The output
     3 2 1
     After matrix multiplication
     ------------------------------
-        9    12     9 
-       32    25    12 
-       49    32     9 
+        9    12     9
+       32    25    12
+       49    32     9
     ------------------------------
 
-Here we have used list comprehensions couple of times. *[int(x) for x in raw_input("").split(" ")]* here first it takes the input as string by *raw_input()*, then split the result by " ", then for each value create one int. We are also using *[a[i][j] * b[j][i] for j in range(0,n)]* to get the resultant row in a single line.
+Here we have used list comprehensions couple of times. *[int(x) for x in input("").split(" ")]* here first it takes the input as string by *input()*, then split the result by " ", then for each value create one int. We are also using *[a[i][j] * b[j][i] for j in range(0,n)]* to get the resultant row in a single line.
 
 

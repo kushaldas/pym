@@ -24,25 +24,25 @@ Now we are going to see how modules work. Create a file called bars.py. Content 
     This is an example module with provide different ways to print bars.
     """
     def starbar(num):
-        """
-        Prints a bar with *
+        """Prints a bar with *
+
         :arg num: Length of the bar
         """
-        print '*' * num
+        print('*' * num)
 
     def hashbar(num):
-        """
-        Prints a bar with #
+        """Prints a bar with #
+
         :arg num: Length of the bar
         """
-        print '#' * num
+        print('#' * num)
     
     def simplebar(num):
-        """
-        Prints a bar with -
+        """Prints a bar with -
+        
         :arg num: Length of the bar
         """
-        print '-' * num
+        print('-' * num)
 
 Now we are going to start the Python interpreter and import our module.
 
@@ -98,17 +98,19 @@ In this example *mymodule* is the module name and *bars* and *utils* are two sub
 __all__ in __init__.py
 =======================
 
-If `__init__.py` file contains a list called `__all__`, then only the values listed there will
-be imported when we call `from module import *`. So if the mymodule's `__init__.py`
+If `__init__.py` file contains a list called `__all__`, then only the names listed there will
+be public. So if the mymodule's `__init__.py`
 file contains the following
 ::
 
-    from bars import simplebar
+    from mymodule.bars import simplebar
     __all__ = [simplebar, ]
 
-Then by doing `from mymodule import *` only `simplebar` will be available.
 
-.. note:: The use of the *,* in the example minimizes the damage done by *from mymodule import \**
+Then from mymodule only `simplebar` will be available.
+
+.. note:: *from mymodule import \** will only work for module level objects, trying to use it to import functions or classes
+    will cause syntax error.
 
 Default modules
 ===============
@@ -118,16 +120,21 @@ Now your Python installation comes with different modules installed, you can use
 ::
 
     >>> help()
-    Welcome to Python 2.6!  This is the online help utility.
+
+    Welcome to Python 3.5's help utility!
+
     If this is your first time using Python, you should definitely check out
-    the tutorial on the Internet at http://docs.python.org/tutorial/.
+    the tutorial on the Internet at http://docs.python.org/3.5/tutorial/.
+
     Enter the name of any module, keyword, or topic to get help on writing
     Python programs and using Python modules.  To quit this help utility and
     return to the interpreter, just type "quit".
-    To get a list of available modules, keywords, or topics, type "modules",
-    "keywords", or "topics".  Each module also comes with a one-line summary
-    of what it does; to list the modules whose summaries contain a given word
-    such as "spam", type "modules spam".
+
+    To get a list of available modules, keywords, symbols, or topics, type
+    "modules", "keywords", "symbols", or "topics".  Each module also comes
+    with a one-line summary of what it does; to list the modules whose name
+    or summary contain a given string such as "spam", type "modules spam".
+
     help> modules
 
 The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
@@ -146,7 +153,7 @@ You can also use *help()* function in the interpeter to find documentation about
 Module os
 =========
 
-os module provides operating system dependent functionality. You can import it using the following import statement.
+:py:mod:`os` module provides operating system dependent functionality. You can import it using the following import statement.
 
 ::
 
@@ -197,7 +204,7 @@ So let us use another function provided by the os module and create our own func
         names = os.listdir(path)
         names.sort()
         for name in names:
-            print name,
+            print(name, end =' ')
 
 Using the *view_dir* example.
 
@@ -207,4 +214,115 @@ Using the *view_dir* example.
     .readahead bin boot dev etc home junk lib lib64 lost+found media mnt opt 
     proc root run sbin srv sys tmp usr var
 
+
+There are many other very useful functions available in the OS module, you can read about them `here <https://docs.python.org/3/library/os.html>`_
+
+Requests Module
+================
+
+requests is a Python module which changed the way people used to write code for many many projects. It helps
+you to do HTTP GET or POST calls in a very simple but elegant way. This is a third party module, that means
+you have to install it from your OS distribution packages, it does not come default.
+
+::
+
+    # yum install python3-requests
+
+
+The above command will install Python3 version of the requests module in your system.
+
+
+Getting a simple web pages
+------------------------------
+
+You can use the *get* method to fetch any website.
+
+::
+
+    >>> import requests
+    >>> req = requests.get('http://google.com')
+    >>> req.status_code
+    200
+
+The *text* attribute holds the HTML returned by the server.
+
+Using this knowledge, let us write a command which can download a given file (URL) from Internet.
+
+
+.. code:: python 
+
+    #!/usr/bin/env python3
+    import os
+    import os.path
+    import requests
+
+    def download(url):
+        '''Download the given url and saves it to the current directory.
+
+        :arg url: URL of the file to be downloaded.
+        '''
+        req = requests.get(url)
+        # First let us check non existing files.
+        if req.status_code == 404:
+            print('No such file found at %s' % url)
+            return
+        filename = url.split('/')[-1]
+        with open(filename, 'wb') as fobj:
+            fobj.write(req.content)
+        print("Download over.")
+
+    if __name__ == '__main__':
+        url = input('Enter a URL:')
+        download(url)
+
+
+Here we used something new, when the module name is *__main__*, then only
+ask for a user input and then download the given URL. This also prevents 
+the same when some other Python code imports this file as a Python module.
+
+To learn more about requests module, go to their `wonderful documentation <http://docs.python-requests.org>`_.
+
+You can actually modify the above program to become more user friendly. For example, you can check if that given
+filename already exists in the current directory or not. Use :py:mod:`os.path` module for the name.
+
+
+Command line arguments
+======================
+
+Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too .. important:: your application. Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
+
+
+TAB completion in your Python interpreter
+==========================================
+
+First create a file as *~/.pythonrc* and include the following in that file
+
+::
+
+    import rlcompleter, readline
+    readline.parse_and_bind('tab: complete')
+
+
+    history_file = os.path.expanduser('~/.python_history')
+    readline.read_history_file(history_file)
+
+    import atexit
+    atexit.register(readline.write_history_file, history_file)
+
+
+Next, just export PYTHONSTARTUP variable pointing to this file from your *~/.bashrc* file.
+
+::
+
+    export PYTHONSTARTUP=~/.pythonrc
+
+
+Now from future whenever you open a bash shell, you will have TAB completion and history of code entered in your
+Python interpreter.
+
+To use it in the current shell, source the bashrc file.
+
+::
+
+    $ source ~/.bashrc
 

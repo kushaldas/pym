@@ -15,7 +15,7 @@ protocol.
 *__iter__* returns the iterator object itself. This is used in *for*
 and *in* statements.
 
-*next* method returns the next value from the iterator. If there is no more items
+*__next__* method returns the next value from the iterator. If there is no more items
 to return then it should raise *StopIteration* exception.
 
 ::
@@ -29,7 +29,7 @@ to return then it should raise *StopIteration* exception.
             'Returns itself as an iterator object'
             return self
 
-        def next(self):
+        def __next__(self):
             'Returns the next value till current is lower than high'
             if self.current > self.high:
                 raise StopIteration
@@ -43,7 +43,7 @@ Now we can use this iterator in our code.
 
     >>> c = Counter(5,10)
     >>> for i in c:
-    ...   print i,
+    ...   print(i, end=' ')
     ...
     5 6 7 8 9 10
 
@@ -76,8 +76,8 @@ behind the scenes.
     >>> iterator = iter(c)
     >>> while True:
     ...     try:
-    ...         x = iterator.next()
-    ...         print x,
+    ...         x = iterator.__next__()
+    ...         print(x, end=' ')
     ...     except StopIteration as e:
     ...         break
     ...
@@ -92,7 +92,7 @@ is an easier way to create iterators using a keyword *yield* from a function.
 ::
 
     >>> def my_generator():
-    ...     print "Inside my generator"
+    ...     print("Inside my generator")
     ...     yield 'a'
     ...     yield 'b'
     ...     yield 'c'
@@ -106,7 +106,7 @@ in a for loop just like we use any other iterators.
 ::
 
     >>> for char in my_generator():
-    ...     print char
+    ...     print(char)
     ...
     Inside my generator
     a
@@ -118,13 +118,13 @@ in a for loop.
 
 ::
 
-    >>> def counter_generator(low, high):
-    ...     while low <= high:
-    ...         yield low
-    ...         low += 1
-    ...
+    def counter_generator(low, high):
+        while low <= high:
+           yield low
+           low += 1
+
     >>> for i in counter_generator(5,10):
-    ...     print i,
+    ...     print(i, end=' ')
     ...
     5 6 7 8 9 10
 
@@ -134,16 +134,18 @@ it freeze-ed before and then the value of *low* is increased by one. It continue
 while loop and comes to the *yield* statement again.
 
 When you call an generator function it returns a \*generator* object. If you call \*dir*
-on this object you will find that it contains *__iter__* and \*next* methods among the
+on this object you will find that it contains *__iter__* and \*__next__* methods among the
 other methods.
 
 ::
 
     >>> c = counter_generator(5,10)
     >>> dir(c)
-    ['__class__', '__delattr__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__',
-     '__name__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__',
-      '__subclasshook__', 'close', 'gi_code', 'gi_frame', 'gi_running', 'next', 'send', 'throw']
+    ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__',
+ '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__',
+ '__le__', '__lt__', '__name__', '__ne__', '__new__', '__next__', '__reduce__',
+ '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+ 'close', 'gi_code', 'gi_frame', 'gi_running', 'send', 'throw']
 
 We mostly use generators for laze evaluations. This way generators become a good approach
 to work with lots of data. If you don't want to load all the data in the memory, you can use
@@ -162,7 +164,7 @@ We can have generators which produces infinite values. The following is a one su
     ...         start += 1
     ...
     >>> for num in infinite_generator(4):
-    ...     print num,
+    ...     print(num, end=' ')
     ...     if num > 20:
     ...         break
     ...
@@ -175,14 +177,14 @@ They are not re-usable.
 
     >>> g = my_generator()
     >>> for c in g:
-    ...     print c
+    ...     print(c)
     ...
     Inside my generator
     a
     b
     c
     >>> for c in g:
-    ...     print c
+    ...     print(c)
     ...
 
 One way to create a reusable generator is Object based generators which does not hold any state. Any class with a *__iter__* method which yields data can be used as a object generator.
@@ -202,11 +204,11 @@ In the following example we will recreate out counter generator.
     ...
     >>> gobj = Counter(5, 10)
     >>> for num in gobj:
-    ...     print num,
+    ...     print(num, end=' ')
     ...
     5 6 7 8 9 10
     >>> for num in gobj:
-    ...     print num,
+    ...     print(num, end=' ')
     ...
     5 6 7 8 9 10
 
@@ -217,7 +219,7 @@ Generator expressionsGenerator expressions
 In this section we will learn about generator expressions which is a  high
 performance, memory efficient generalization of list comprehensions and generators.
 
-For example we will try to sum the squares of all numbers from 1 to 99.
+For example we will try to sum the squares of all numbers from 1 to 9.
 
 ::
 
@@ -305,9 +307,9 @@ and after the execution of a function.
 
     >>> def my_decorator(func):
     ...     def wrapper(*args, **kwargs):
-    ...         print "Before call"
+    ...         print("Before call")
     ...         result = func(*args, **kwargs)
-    ...         print "After call"
+    ...         print("After call")
     ...         return result
     ...     return wrapper
     ...
@@ -320,5 +322,3 @@ and after the execution of a function.
     Before call
     After call
     4
-
-

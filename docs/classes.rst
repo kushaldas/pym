@@ -51,22 +51,22 @@ __init__ is a special method in Python classes, it is the constructor method for
 
     class Student(object):
         """
-        Returns a ```Student``` object with the given name, branch and year. 
-        
+        Returns a ```Student``` object with the given name, branch and year.
+
         """
         def __init__(self, name, branch, year):
                 self.name = name
                 self.branch = branch
                 self.year = year
-                print "A student object is created"
+                print("A student object is created.")
 
         def print_details(self):
             """
             Prints the details of the student.
             """
-            print "Name:", self.name
-            print "Branch:", self.branch
-            print "Year:", self.year
+            print("Name:", self.name)
+            print("Branch:", self.branch)
+            print("Year:", self.year)
 
 
 
@@ -123,7 +123,7 @@ student_teacher.py
     class Student(Person):
         """
         Returns a ```Student``` object, takes 3 arguments, name, branch, year.
-        
+
         """
         def __init__(self, name, branch, year):
             Person.__init__(self, name)
@@ -139,7 +139,7 @@ student_teacher.py
         """
         Returns a ```Teacher``` object, takes a list of strings (list of papers) as
         argument.
-        """    
+        """
         def __init__(self, name, papers):
             Person.__init__(self, name)
             self.papers = papers
@@ -152,9 +152,9 @@ student_teacher.py
     student1 = Student('Kushal', 'CSE', 2005)
     teacher1 = Teacher('Prashad', ['C', 'C++'])
 
-    print person1.get_details()
-    print student1.get_details()
-    print teacher1.get_details()
+    print(person1.get_details())
+    print(student1.get_details())
+    print(teacher1.get_details())
 
 The output:
 
@@ -209,12 +209,12 @@ The following shows a direct example.
     >>> class Student(object):
     ...     def __init__(self, name):
     ...         self.name = name
-    ... 
+    ...
     >>> std = Student("Kushal Das")
-    >>> print std.name
+    >>> print(std.name)
     Kushal Das
     >>> std.name = "Python"
-    >>> print std.name
+    >>> print(std.name)
     Python
 
 .. index:: Property
@@ -224,7 +224,7 @@ Properties
 
 If you want more fine tuned control over data attribute access, then you can use properties.
 In the following example of a bank account, we will make sure that no one can set the
-money value to negative and also a property called *inr* will give us the INR values of 
+money value to negative and also a property called *inr* will give us the INR values of
 the dollars in the account.
 ::
 
@@ -251,17 +251,17 @@ the dollars in the account.
         @amount.setter
         def amount(self, value):
             if value < 0:
-                print "Sorry, no negative amount in the account."
+                print("Sorry, no negative amount in the account.")
                 return
             self.__amt = value
 
     if __name__ == '__main__':
-        acc = Account(61) # Based on today's value of INR :(
+        acc = Account(rate=61) # Based on today's value of INR :(
         acc.amount = 20
-        print "Dollar amount:", acc.amount
-        print "In INR:", acc.inr
+        print("Dollar amount:", acc.amount)
+        print("In INR:", acc.inr)
         acc.amount = -100
-        print "Dollar amount:", acc.amount
+        print("Dollar amount:", acc.amount)
 
 
 Output:

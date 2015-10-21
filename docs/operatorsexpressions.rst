@@ -34,11 +34,11 @@ The code
 
 ::
 
-    #!/usr/bin/env python
-    days = int(raw_input("Enter days: "))
+    #!/usr/bin/env python3
+    days = int(input("Enter days: "))
     months = days / 30
     days = days % 30
-    print "Months = %d Days = %d" % (months, days)
+    print("Months = %d Days = %d" % (months, days))
 
 The output
 
@@ -52,9 +52,9 @@ In the first line I am taking the input of days, then getting the months and day
 
 ::
 
-    #!/usr/bin/env python
-    days = int(raw_input("Enter days: "))
-    print "Months = %d Days = %d" % (divmod(days, 30))
+    #!/usr/bin/env python3
+    days = int(input("Enter days: "))
+    print("Months = %d Days = %d" % (divmod(days, 30)))
 
 The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2.
 
@@ -133,20 +133,20 @@ Shorthand Operator
     25
     >>> a /= 3
     >>> a
-    8
+    8.333333333333334
     >>> a += (26 * 32)
     >>> a
-    840
+    840.3333333333334
 
 shorthand.py example
 
 .. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     N = 100
     a = 2
     while a < N:
-        print "%d" % a
+        print("%d" % a)
         a *= a
 
 The output
@@ -171,16 +171,16 @@ One example code used to show expressions
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     a = 9
     b = 12
     c = 3
     x = a - b / 3 + c * 2 - 1
     y = a - b / (3 + c) * (2 - 1)
     z = a - (b / (3 + c) * 2) - 1
-    print "X = ", x
-    print "Y = ", y
-    print "Z = ", z
+    print("X = ", x)
+    print("Y = ", y)
+    print("Z = ", z)
 
 The output
 
@@ -222,13 +222,13 @@ evaluateequ.py
 
 This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10
 
-.. code-block:: python 
+.. code-block:: python
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     sum = 0.0
     for i in range(1, 11):
         sum += 1.0 / i
-    print "%2d %6.4f" % (i , sum)
+        print("%2d %6.4f" % (i , sum))
 
 The output
 
@@ -257,17 +257,17 @@ This is a program to evaluate the quadratic equation
 
     #!/usr/bin/env python
     import math
-    a = int(raw_input("Enter value of a: "))
-    b = int(raw_input("Enter value of b: "))
-    c = int(raw_input("Enter value of c: "))
+    a = int(input("Enter value of a: "))
+    b = int(input("Enter value of b: "))
+    c = int(input("Enter value of c: "))
     d = b * b - 4 * a * c
     if d < 0:
-        print "ROOTS are imaginary"
+        print("ROOTS are imaginary")
     else:
         root1 = (-b + math.sqrt(d)) / (2.0 * a)
         root2 = (-b - math.sqrt(d)) / (2.0 * a)
-        print "Root 1 = ", root1
-        print "Root 2 = ", root2
+        print("Root 1 = ", root1)
+        print("Root 2 = ", root2)
 
 salesmansalary.py
 =================
@@ -280,13 +280,13 @@ In this example we are going to calculate the salary of a camera salesman. His b
     basic_salary = 1500
     bonus_rate = 200
     commision_rate = 0.02
-    numberofcamera = int(raw_input("Enter the number of inputs sold: "))
-    price = float(raw_input("Enter the total prices: "))
+    numberofcamera = int(input("Enter the number of inputs sold: "))
+    price = float(input("Enter the total prices: "))
     bonus = (bonus_rate * numberofcamera)
     commision = (commision_rate * numberofcamera * price)
-    print "Bonus        = %6.2f" % bonus
-    print "Commision    = %6.2f" % commision
-    print "Gross salary = %6.2f" % (basic_salary + bonus + commision)
+    print("Bonus        = %6.2f" % bonus)
+    print("Commision    = %6.2f" % commision)
+    print("Gross salary = %6.2f") % (basic_salary + bonus + commision)
 
 The output
 
@@ -298,5 +298,3 @@ The output
     Bonus        = 1000.00
     Commision    = 2045.00
     Gross salary = 4545.00
-
-
