@@ -92,7 +92,7 @@ Here by using global keyword we are telling that *a* is globally defined, so whe
 Default argument value
 ======================
 
-In a function variables may have default argument values, that means if we don't give any value for that particular variable it will assigned automatically.
+In a function variables may have default argument values, that means if we don't give any value for that particular variable it will be assigned automatically.
 
 ::
 
@@ -102,7 +102,7 @@ In a function variables may have default argument values, that means if we don't
     ...     else:
     ...         return False
 
-In the above example we have written *b = -99* in the function parameter list. That means of no value for *b* is given then b's value is *-99*. This is a very simple example of default arguments. You can test the code by
+In the above example we have written *b = -99* in the function parameter list. That means if no value for *b* is given then b's value is *-99*. This is a very simple example of default arguments. You can test the code by
 
 ::
 
