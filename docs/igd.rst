@@ -9,7 +9,7 @@ In this chapter we will learn about iterators, generators and decorators.
 Iterators
 =========
 
-Python iterator objects required to support two methods while following the iterator
+Python iterator objects are required to support two methods while following the iterator
 protocol.
 
 *__iter__* returns the iterator object itself. This is used in *for*
@@ -214,7 +214,6 @@ In the following example we will recreate out counter generator.
 
 Generator expressions
 =====================
-Generator expressionsGenerator expressions
 
 In this section we will learn about generator expressions which is a  high
 performance, memory efficient generalization of list comprehensions and generators.
