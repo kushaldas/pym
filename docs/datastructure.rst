@@ -427,7 +427,7 @@ In this example we will multiply two matrices. First we will take input the numb
 
 ::
 
-    #!/usr/bin/env python
+    #!/usr/bin/env python3
     n = int(input("Enter the value of n: "))
     print("Enter values for the Matrix A")
     a = []
