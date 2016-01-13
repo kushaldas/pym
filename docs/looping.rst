@@ -40,6 +40,8 @@ The code we want to reuse must be indented properly under the while statement. T
 
 In the first line we are setting *n = 0*, then in the while statement the condition is *n < 11*, that means what ever line indented below that will execute until n becomes same or greater than 11. Inside the loop we are just printing the value of n and then increasing it by one.
 
+How is this code going to help us in any real life? Think about the situation where you have to turn on 10 light bulbs one by one. May be you can run a loop from 1 to 10 and for each value on n, turn on the nth bulb.
+
 Fibonacci Series
 ================
 
