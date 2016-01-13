@@ -56,10 +56,7 @@ Now we will create another virtual environment *virt2* where we will install the
 
 ::
 
-    $ virtualenv virt2
-    New python executable in virt1/bin/python
-    Installing setuptools............done.
-    Installing pip...............done.
+    $ pyvenv virt2
     $ source virt2/bin/activate
     (virt2)$
     (virt2)$ pip install redis==2.4
