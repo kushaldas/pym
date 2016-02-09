@@ -79,7 +79,7 @@ You can even loop through the lines in a file object.
 ::
 
     >>> fobj = open("sample.txt")
-    >>> for x in f:
+    >>> for x in fobj:
     ...     print(x, end=' ')
     ...
     I love Python
@@ -249,7 +249,7 @@ In real life scenarios we should try to use `with` statement. It will take care 
 
     >>> with open('setup.py') as fobj:
     ...     for line in fobj:
-    ...         print line,
+    ...         print (line),
     ...
     #!/usr/bin/env python
     """Factorial project"""
