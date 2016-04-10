@@ -4,12 +4,12 @@
 Variables and Datatypes
 =======================
 
-Every programming language is having own grammar rules just like the other languages we speak.
+Every programming language has its own grammar rules just like the languages we speak.
 
 Keywords and Identifiers
 ========================
 
-The following identifiers are used as reserved words, or keywords of the language, and cannot be used as ordinary identifiers. They must be spelled exactly as written here:
+The following identifiers are used as reserved words, or keywords of the language, and cannot be used as ordinary identifiers. They must be typed exactly as written here:
 
 ::
 
