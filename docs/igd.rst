@@ -31,11 +31,12 @@ to return then it should raise *StopIteration* exception.
 
         def __next__(self):
             'Returns the next value till current is lower than high'
-            if self.current > self.high:
-                raise StopIteration
-            else:
+            if self.current <= self.high:
+                i = self.current
                 self.current += 1
-                return self.current - 1
+                return i
+            else:
+                raise StopIteration
 
 Now we can use this iterator in our code.
 
