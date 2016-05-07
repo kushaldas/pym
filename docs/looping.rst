@@ -266,17 +266,31 @@ We are going to learn a data structure called list before we go ahead to learn m
 
 ::
 
-    >>> a = [ 1, 342, 2233423, 'India', 'Fedora']
+    >>> a = [ 1, 342, 223, 'India', 'Fedora']
     >>> a
-    [1, 342, 2233423, 'India', 'Fedora']
+    [1, 342, 223, 'India', 'Fedora']
 
-Lists can keep any other data inside it. It works as a sequence too, that means
+You can imagine the above as a list of boxes, each box contains the value mentioned. We can also access value of
+each box by using the index number (mentioned in red numbers). You can understand that the index starts with 0.
+
+.. image:: img/list_first.png
+
+Now we can access the values of each box by using the index number.
+
 ::
 
     >>> a[0]
     1
     >>> a[4]
     'Fedora'
+
+If we use a negative number as index, that means we are counting from the end of the list. Like
+
+::
+
+    >>> a[-1]
+    'Fedora'
+
 
 You can even slice it into different pieces, examples are given below
 ::
@@ -288,13 +302,13 @@ You can even slice it into different pieces, examples are given below
     >>> a[-2]
     'India'
     >>> a[0:-1]
-    [1, 342, 2233423, 'India']
+    [1, 342, 223, 'India']
     >>> a[2:-2]
-    [2233423]
+    [223]
     >>> a[:-2]
-    [1, 342, 2233423]
+    [1, 342, 223]
     >>> a[0::2]
-    [1, 2233423, 'Fedora']
+    [1, 223, 'Fedora']
 
 In the last example we used two :(s) , the last value inside the third brackets indicates step. *s[i:j:k]* means slice of *s* from *i* to *j* with step *k*.
 
