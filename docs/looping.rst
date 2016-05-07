@@ -345,7 +345,7 @@ There is another to loop by using *for* statement. In Python the *for* statement
 
     >>> a = ['Fedora', 'is', 'powerful']
     >>> for x in a:
-    ...     print(x,)
+    ...     print(x)
     ...
     Fedora
     is
@@ -421,8 +421,8 @@ The output
     Please enter an Integer: 0
     Goodbye
 
-Else loop
-=========
+Else statement in a loop
+========================
 
 We can have an optional *else* statement after any loop. It will be executed after the loop unless a *break* statement stopped the loop.
 
