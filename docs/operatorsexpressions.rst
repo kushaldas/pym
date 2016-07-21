@@ -286,7 +286,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
     commision = (commision_rate * numberofcamera * price)
     print("Bonus        = %6.2f" % bonus)
     print("Commision    = %6.2f" % commision)
-    print("Gross salary = %6.2f") % (basic_salary + bonus + commision)
+    print("Gross salary = %6.2f" % (basic_salary + bonus + commision))
 
 The output
 
