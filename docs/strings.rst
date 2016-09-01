@@ -146,7 +146,7 @@ You can particularly strip from the left hand or right hand side also using *lst
 Finding text
 ============
 
-Stings have some methods which will help you in finding text/substring in a string. Examples are given below:
+Strings have some methods which will help you in finding text/substring in a string. Examples are given below:
 
 ::
 
