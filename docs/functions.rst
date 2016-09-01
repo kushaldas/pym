@@ -89,6 +89,14 @@ First we are assigning *9* to *a*, then calling change function, inside of that 
 
 Here by using global keyword we are telling that *a* is globally defined, so when we are changing a's value inside the function it is actually changing for the *a* outside of the function also.
 
+The output
+::
+
+    $ ./local.py
+    Before the function call  9
+    inside change function 90
+    After the function call  90
+
 Default argument value
 ======================
 
