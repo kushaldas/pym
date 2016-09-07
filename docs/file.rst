@@ -79,7 +79,7 @@ You can even loop through the lines in a file object.
 ::
 
     >>> fobj = open("sample.txt")
-    >>> for x in f:
+    >>> for x in fobj:
     ...     print(x, end=' ')
     ...
     I love Python
