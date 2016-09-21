@@ -95,7 +95,7 @@ or installing the software.
         platforms = ["Linux"],
         author="Kushal Das",
         author_email="kushaldas@gmail.com",
-        url="http://pymbook.readthedocs.org/en/latest/",
+        url="https://pymbook.readthedocs.io/en/latest/",
         license = "MIT",
         packages=find_packages()
         )
