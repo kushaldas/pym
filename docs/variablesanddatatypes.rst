@@ -118,7 +118,7 @@ In the next program we will do an average of N numbers.
         count = count + 1
     average = float(sum)/N
     print("N = %d , Sum = %f" % (N, sum))
-    print("Average = %f") % average
+    print("Average = %f" % average)
 
 
 The output
