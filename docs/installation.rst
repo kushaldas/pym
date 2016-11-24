@@ -18,11 +18,23 @@ On GNU/Linux
 
 Install the latest Python from the distribution's repository.
 
-For Fedora
+For Fedora 23 and above.
+
+::
+
+    [user@host]$ sudo dnf install python3
+
+For Fedora 22 and bellow.
 
 ::
 
     [user@host]$ sudo yum install python3
+
+From epel7 (RHEL7, CentOS7, SL7).
+
+::
+
+    [user@host]$ sudo yum install python34
 
 For Debian
 
