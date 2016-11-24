@@ -129,7 +129,7 @@ In real life scenarios we should try to use `with` statement. It will take care 
         platforms = ["Linux"],
         author="Kushal Das",
         author_email="kushaldas@gmail.com",
-        url="http://pymbook.readthedocs.org/en/latest/",
+        url="https://pymbook.readthedocs.io/en/latest/",
         license = "http://www.gnu.org/copyleft/gpl.html",
         packages=find_packages()
         )
