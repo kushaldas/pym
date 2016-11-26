@@ -25,7 +25,7 @@ If the value of *expression* is true (anything other than zero), do the what is 
     if number < 100:
         print("The number is less than 100")
 
-Then we run it
+Then we execute the file.
 
 ::
 
