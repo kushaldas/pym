@@ -9,7 +9,7 @@ Virtual Python Environment or venv is a Python environment which will help you t
 Installation
 ============
 
-In Python3 now there is a command called *pyvenv* which can be used to create virtual environments.
+In Python3 we can use the  *venv* module to create virtual environments.
 
 Usage
 =====
@@ -21,7 +21,7 @@ The following commands will create an env called virt1.
 ::
 
     $ cd virtual
-    $ pyvenv virt1
+    $ python3 -m venv virt1
     $
 
 Now we can activate the virt1 environment.
@@ -56,7 +56,7 @@ Now we will create another virtual environment *virt2* where we will install the
 
 ::
 
-    $ pyvenv virt2
+    $ python3 -m venv virt2
     $ source virt2/bin/activate
     (virt2)$
     (virt2)$ pip install redis==2.4
