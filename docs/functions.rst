@@ -3,7 +3,7 @@
 Functions
 =========
 
-Reusing the same code is required many times within a same program. Functions help us to do so. We write the things we have to do repeatedly in a function then call it where ever required. We already saw build in functions like *len()*, *divmod()*.
+Reusing the same code is required many times within a same program. Functions help us to do so. We write the things we have to do repeatedly in a function then call it where ever required. We already saw built-in functions like *len()*, *divmod()*.
 
 Defining a function
 ===================
