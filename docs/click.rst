@@ -1,4 +1,4 @@
-Buinging command line applications with Click
+Building command line applications with Click
 ==============================================
 
 
