@@ -292,7 +292,7 @@ To delete any particular *key:value* pair
 
     >>> del data['kushal']
     >>> data
-    {'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'
+    {'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
 
 To check if any *key* is there in the dictionary or not you can use *in* keyword.
 
