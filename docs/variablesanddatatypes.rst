@@ -211,3 +211,28 @@ Below we have another example of tuple unpacking.
     'Python'
 
 
+Formatting strings
+===================
+
+In Python 3, there are a few different ways to format a string. We use these
+methods to format a text dynamically. I will go though a few examples below.
+
+.format method
+---------------
+
+This is my preferable way to format strings. Example below:
+
+::
+
+    >>> name = "Kushal"
+    >>> org = "dgplug"
+    >>> number_of_years = 10
+    >>> msg = "{0} is part of all {1} years of {2} summer training".format(name, number_of_years, org)
+    >>> print(msg)
+    Kushal is part of all 10 years of dgplug summer training
+
+From Python 3.6 we can also do like below::
+
+    >>> msg = f"{name} is part of all {number_of_years} years of {org} summer training"
+    >>> print(msg)
+    Kushal is part of all 10 years of dgplug summer training
