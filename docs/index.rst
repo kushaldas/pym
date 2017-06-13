@@ -32,6 +32,7 @@ Contents:
    pep8
    igd
    virtualenv
+   typehinting
    testing
    projectstructure
    click
