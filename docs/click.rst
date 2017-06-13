@@ -268,7 +268,8 @@ The output looks like below:
 
 To learn the full usage of password prompts, read `this section <http://click.pocoo.org/5/options/#password-prompts>`_.
 
-### Must have arguments
+Must have arguments
+--------------------
 
 You can also add arguments to your tool. These are must haves, and if no
 default value is provided, they are assumed to be strings. In the below
