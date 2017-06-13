@@ -16,15 +16,17 @@ Note that the code samples that follow use the latest Python built from the sour
     >>>
 
 Using the Python interpreter
-=============
+==============================
+
 In our first code we are going to print "Hello World!" using the interpreter. To generate the output, type the following:
+
 ::
 
     >>> print("Hello World!")
     Hello World!
 
 Using a source file
-=============
+=====================
 
 As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like Kate or gedit. Enter the following text:
 
