@@ -8,7 +8,7 @@ Welcome to Python for you and me
 
 This is a simple book to learn Python programming language, it is for the programmers who are new to Python.
 
-The Python 2.x version of the same book can be found `here <https://pymbook.readthedocs.io/en/latest/>`_.
+The Python 2.x version of the same book can be found `here <https://pymbook.readthedocs.io/en/py2/>`_.
 
 Contents:
 
@@ -34,4 +34,5 @@ Contents:
    virtualenv
    testing
    projectstructure
+   click
    flask
