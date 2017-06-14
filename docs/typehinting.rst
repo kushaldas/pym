@@ -116,7 +116,7 @@ We wil working on the following example code. This does not do much useful thing
         print("Passed: {0}. The toral score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
 
 
-You may find some errors in the code, but in case of a large codebase we can not detet the similar issues unless we see the runtime errors.
+You may find some errors in the code, but in case of a large codebase we can not detect the similar issues unless we see the runtime errors.
 
 Using mypy
 -----------
