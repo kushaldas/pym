@@ -4,9 +4,17 @@
 The Beginning
 =============
 
-Let's look at our first code, hello world. Because Python is an interpreted language, you can write the code into the Python interpreter directly or you can write the code in a file and then run the file. In this topic, we will first write the code using the interpreter, after starting Python in the command prompt (shell or terminal). 
+Let's look at our first code, hello world. Because Python is an interpreted
+language, you can write the code into the Python interpreter directly or you
+can write the code in a file and then run the file. In this topic, we will
+first write the code using the interpreter, after starting Python in the
+command prompt (shell or terminal). In case you are new to Linux command line,
++then you can read learn about various command from [this
+book](https://lym.readthedocs.io/en/latest/).
 
-Note that the code samples that follow use the latest Python built from the source code, so the version number can be different.
+
+Note that the code samples that follow use the latest Python built from the
+source code, so the version number can be different.
 
 ::
 
