@@ -10,6 +10,8 @@ This is a simple book to learn Python programming language, it is for the progra
 
 The Python 2.x version of the same book can be found `here <https://pymbook.readthedocs.io/en/py2/>`_.
 
+If you are new to command line in Linux, you can read `lym <https://lym.readthedocs.io/>`_.
+
 Contents:
 
 .. toctree::
