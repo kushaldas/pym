@@ -9,8 +9,8 @@ language, you can write the code into the Python interpreter directly or you
 can write the code in a file and then run the file. In this topic, we will
 first write the code using the interpreter, after starting Python in the
 command prompt (shell or terminal). In case you are new to Linux command line,
-+then you can read learn about various command from [this
-book](https://lym.readthedocs.io/en/latest/).
++then you can read learn about various command from `this
+book <https://lym.readthedocs.io/en/latest/>`_
 
 
 Note that the code samples that follow use the latest Python built from the
