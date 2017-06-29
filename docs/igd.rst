@@ -253,8 +253,8 @@ We can do the same using a shell command *tail -f /var/log/cron |grep anacron*
 ::
 
     >>> jobtext = 'anacron'
-    >>> all = (line for line in open('/var/log/cron', 'r') )
-    >>> job = ( line for line in all if line.find(jobtext) != -1)
+    >>> all_lines = (line for line in open('/var/log/cron', 'r') )
+    >>> job = ( line for line in all_lines if line.find(jobtext) != -1)
     >>> text = next(job)
     >>> text
     "May  6 12:17:15 dhcp193-104 anacron[23052]: Job `cron.daily' terminated\n"
