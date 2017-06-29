@@ -37,7 +37,7 @@ items you sell in your store), this task become overwhelming.
 
 Using templates you are able to set a basic layout for your pages and mention
 which element will change.
-This way to can define your header and keept it consistent over all the pages of
+This way you can define your header once and keep it consistent over all the pages of
 your website, and if you need to change your header, you will only have to
 update it in one place.
 
