@@ -244,7 +244,7 @@ The syntax of generator expression says that always needs to be directly inside 
     >>> g
     <generator object <genexpr> at 0x7fc559516b90>
 
-You can also check how much memory a generator expression is using by comparing it with an list comprehension.In the following example.
+You can also check how much memory a generator expression is using by comparing it with a list comprehension.In the following example.
 
 ::
 
