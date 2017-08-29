@@ -14,7 +14,7 @@ exception generally shows some error message.
 NameError
 ==========
 
-When one starts writing code, this will be one of the most command exception
+When one starts writing code, this will be one of the most common exception
 he/she will find. This happens when someone tries to access a variable which is
 not defined.
 ::
