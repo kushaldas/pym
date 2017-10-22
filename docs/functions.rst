@@ -213,13 +213,13 @@ In Python we use docstrings to explain how to use the code, it will be useful in
     import math
 
     def longest_side(a, b):
-        """
-        Function to find the length of the longest side of a right triangle.
+        """Function to find the length of the longest side of a right triangle.
 
         :arg a: Side a of the triangle
         :arg b: Side b of the triangle
 
         :return: Length of the longest side c as float
+        
         """
         return math.sqrt(a*a + b*b)
 
