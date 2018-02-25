@@ -154,7 +154,7 @@ For this we will update ``hello_flask.py``.
 
   @APP.route('/hello/<name>/')
   def hello(name):
-      """ Displays the page greats who ever comes to visit it.
+      """ Displays the page. Greets whoever comes to visit it.
       """
       return flask.render_template('hello.html', name=name)
 
