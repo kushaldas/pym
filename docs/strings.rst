@@ -34,6 +34,27 @@ Now if you want to multiline strings you have to use triple single/double quotes
     multiline string, so you can
     write many lines
 
+
+We can have two string literals side by side, and it will behave like a single string. For example
+
+::
+
+    >>> s = "Hello " "World"
+    >>> print(s)
+    Hello World
+
+This will help you to spilt a long string into smaller chunks in function calls.
+
+
+You can find length of any string using the `len` function call.
+
+::
+
+    >>> s = "Python"
+    >>> len(s)
+    6
+
+
 Different methods available for Strings
 =======================================
 
@@ -206,4 +227,21 @@ The output
     Enter a line: Sayamindu is a great programmer
     The number of words in the line are 5
 
+
+Iterating over all characters of a string
+==========================================
+
+You can iterate over a string using simple `for` loop.
+
+::
+
+    >>> for ch in "Python":
+    ...     print(ch)
+    ... 
+    P
+    y
+    t
+    h
+    o
+    n
 
