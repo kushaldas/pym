@@ -21,7 +21,7 @@ Install the latest Python from the distribution's repository.
 For Fedora 23 and above Python3 is in the system by default.
 
 
-For Fedora 22 and bellow.
+For Fedora 22 and below.
 
 ::
 
