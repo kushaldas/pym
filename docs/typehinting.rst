@@ -56,23 +56,32 @@ We can install mypy inside of a virtual environment.
 
 ::
 
-        $ python3 -m venv env
-        $ source env/bin/activate
-        (env) $ pip install mypy
-        Collecting mypy
-        Downloading mypy-0.511-py3-none-any.whl (1.0MB)
-            100% |################################| 1.0MB 965kB/s
-        Collecting typed-ast<1.1.0,>=1.0.3 (from mypy)
-        Downloading typed_ast-1.0.3-cp36-cp36m-macosx_10_11_x86_64.whl (214kB)
-            100% |################################| 215kB 682kB/s
-        Installing collected packages: typed-ast, mypy
-        Successfully installed mypy-0.511 typed-ast-1.0.3
+    $ pipenv install mypy
+    Installing mypy…
+    Looking in indexes: https://pypi.python.org/simple
+    Collecting mypy
+    Downloading https://files.pythonhosted.org/packages/e2/3f/e20e2544b35e862fbed4e26a89e3d857007c5bd32abc019ef21c02aecd98/mypy-0.600-py3-none-any.whl (1.3MB)
+    Collecting typed-ast<1.2.0,>=1.1.0 (from mypy)
+    Downloading https://files.pythonhosted.org/packages/5b/4e/79e873aa89b8038ca6474c00afe96f9468973b604e7f737cb82697a680c0/typed_ast-1.1.0-cp35-cp35m-manylinux1_x86_64.whl (724kB)
+    Installing collected packages: typed-ast, mypy
+    Successfully installed mypy-0.600 typed-ast-1.1.0
+
+    Adding mypy to Pipfile's [packages]…
+    Pipfile.lock (627f99) out of date, updating to (67e074)…
+    Locking [dev-packages] dependencies…
+    Locking [packages] dependencies…
+    Updated Pipfile.lock (67e074)!
+    Installing dependencies from Pipfile.lock (67e074)…
+    🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 7/7 — 00:00:01
+    To activate this project's virtualenv, run the following:
+    $ pipenv shell
 
 
 Our example code
 -----------------
 
-We wil working on the following example code. This does not do much useful things, but we can use this to learn about type annotations and mypy.
+We wil working on the following example code. This does not do much useful
+things, but we can use this to learn about type annotations and mypy.
 
 ::
 
@@ -116,7 +125,8 @@ We wil working on the following example code. This does not do much useful thing
         print("Passed: {0}. The toral score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
 
 
-You may find some errors in the code, but in case of a large codebase we can not detect the similar issues unless we see the runtime errors.
+You may find some errors in the code, but in case of a large codebase we can
+not detect the similar issues unless we see the runtime errors.
 
 Using mypy
 -----------
@@ -137,7 +147,7 @@ code length, I am only showing the changed code below.
 
     class Student:
 
-    def __init__(self, name: str, batch: int, branch: str, roll: int) -> None: 
+    def __init__(self, name: str, batch: int, branch: str, roll: int) -> None:
         self.name = name
         self.batch = batch
         self.branch = branch
@@ -152,7 +162,7 @@ code length, I am only showing the changed code below.
     students2.py:11: error: Need type annotation for variable
     students2.py:31: error: Argument 4 to "Student" has incompatible type "str"; expected "int"
 
-You can see mypy is complaing about variable which does not have type
+You can see mypy is complaining about variable which does not have type
 annotations, and also found that in line 31, as argument 4 we are passing
 *str*, where as we were supposed to send in an Integer for the rull number.
 Let us fix these.
@@ -163,7 +173,7 @@ Let us fix these.
 
     class Student:
 
-        def __init__(self, name: str, batch: int, branch: str, roll: int) -> None: 
+        def __init__(self, name: str, batch: int, branch: str, roll: int) -> None:
             self.name = name
             self.batch = batch
             self.branch = branch
@@ -262,7 +272,7 @@ More examples of type annotations
     print_all([1,2,3])
     print_all({"name": "kushal", "class": 5})
     # alltypes.py:23: error: Argument 1 to "print_all" has incompatible type Dict[str, object]; expected Sequence[Any]
-    # But running the code will give us no error with wrong output 
+    # But running the code will give us no error with wrong output
 
     def add_ten(number: Optional[int] = None) -> int:
         if number:
@@ -273,4 +283,10 @@ More examples of type annotations
     print(add_ten())
     print(add_ten(12))
 
-You can learn more about types from `PEP 484 <https://www.python.org/dev/peps/pep-0484/>`_.
+You can learn more about types from `PEP 484
+<https://www.python.org/dev/peps/pep-0484/>`_. The `typing module
+<https://docs.python.org/3/library/typing.html>`_ has detailed explanation and
+more examples about how to add type annotations in your codebase.
+
+You can also view `the talk <https://www.youtube.com/watch?v=pMgmKJyWKn8>`_
+from Carl Meyer to learn about type checking in Python.
