@@ -233,3 +233,6 @@ install them marked as *dev-packages*. In the following example I am installing
 
 You can watch `this talk <https://www.youtube.com/watch?v=GBQAKldqgZs>`_ by
 Kenneth from PyCon 2018 to know more about *Pipenv*.
+
+Through out the rest of the book, we will use **pipenv** to create and manage
+virtualenvs for any code.
