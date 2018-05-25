@@ -45,7 +45,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Python for you and me'
-copyright = u'2008-2017, Kushal Das'
+copyright = u'2008-2018, Kushal Das'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
