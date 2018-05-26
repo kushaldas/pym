@@ -225,14 +225,36 @@ This is my preferable way to format strings. Example below:
 ::
 
     >>> name = "Kushal"
-    >>> org = "dgplug"
-    >>> number_of_years = 10
-    >>> msg = "{0} is part of all {1} years of {2} summer training".format(name, number_of_years, org)
+    >>> language = "Python"
+    >>> msg = "{0} loves {1}.".format(name, language)
     >>> print(msg)
-    Kushal is part of all 10 years of dgplug summer training
+    Kushal loves Python.
 
-From Python 3.6 we can also do like below::
+In Python 3.6, we have a new way to do string formatting. `PEP 498
+<https://www.python.org/dev/peps/pep-0498/>`_ introduces the concept called
+**f-strings**.
 
-    >>> msg = f"{name} is part of all {number_of_years} years of {org} summer training"
+Here is the same example using *f-strings*::
+
+    >>> name = "Kushal"
+    >>> language = "Python"
+    >>> msg = f"{name} loves {language}."
     >>> print(msg)
-    Kushal is part of all 10 years of dgplug summer training
+    Kushal loves Python.
+
+F-strings provide a simple and readable way to embed Python expressions in a
+string. Here are a few more examples.
+
+::
+
+    >>> answer = 42
+    >>> print(f"The answer is {answer}")
+    The answer is 42
+    >>> import datetime
+    >>> d = datetime.date(2004, 9, 8)
+    >>> f"{d} was a {d:%A}, we started the mailing list back then."
+    '2004-09-08 was a Wednesday, we started the mailing list back then.'
+
+If you want to know more about how this feature came into Python, watch this
+`talk <https://www.youtube.com/watch?v=M4w4wKveVo4>`_ from `Mariatta Wijaya
+<https://twitter.com/mariatta>`_.
