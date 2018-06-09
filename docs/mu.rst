@@ -1,5 +1,5 @@
 ================
-Using an editor
+Using mu editor
 ================
 
 Using a proper editor to write code can help a lot while programming or while
@@ -22,7 +22,7 @@ the following command as your normal user.
 
 
 Using mu
----------
+=========
 
 You can open the editor from the command line, type **mu** in the terminal.
 
@@ -38,7 +38,7 @@ Select Python 3 at the starting screen. Now, your mu editor is ready.
 
 
 Executing code
---------------
+===============
 
 You will have to write any code you want to execute, and then save it with a
 proper filename (ends with .py). Then click on the **Run** button to execute
