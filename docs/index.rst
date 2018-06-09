@@ -19,6 +19,7 @@ Contents:
 
    installation
    thebeginning
+   mu
    variablesanddatatypes
    operatorsexpressions
    ifelse
