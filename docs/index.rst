@@ -32,6 +32,7 @@ Contents:
    classes
    modules
    collections
+   editors
    pep8
    igd
    virtualenv
