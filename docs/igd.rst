@@ -244,6 +244,22 @@ The syntax of generator expression says that always needs to be directly inside 
     >>> g
     <generator object <genexpr> at 0x7fc559516b90>
 
+You can also check how much memory a generator expression is using by comparing it with a list comprehension.In the following example.
+
+::
+
+	>>> from sys import getsizeof
+	>>> my_comp = [x*5 for x in range(1000)]
+	>>> print(getsizeof(my_comp))
+	4516
+	>>> my_gen = (x*5 for x in range(1000))
+	>>> print(getsizeof(my_gen))
+	48
+
+In the above example my_comp is a list comprehension and my_gen is a generator expression.We can use the  getsizeof() built-in function from the sys module to compare the memory efficiency of a generator expression.
+
+
+
 We can have chaining of generators or generator expressions. In the following
 example we will read the file \*/var/log/cron* and will find if any particular
 job (in the example we are searching for anacron) is running successfully or not.
