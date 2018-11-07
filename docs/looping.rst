@@ -367,7 +367,7 @@ We can also do things like
 range() function
 ================
 
-range() is a buitin class. From the help document
+range() is a builtin class. From the help document
 
 ::
 
