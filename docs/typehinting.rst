@@ -80,8 +80,8 @@ We can install mypy inside of a virtual environment.
 Our example code
 -----------------
 
-We wil working on the following example code. This does not do much useful
-things, but we can use this to learn about type annotations and mypy.
+We will be working on the following example code. This isn't much useful,
+but we can use this to learn about type annotations and mypy.
 
 ::
 
