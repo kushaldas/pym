@@ -5,7 +5,7 @@ Building command line applications with Click
 I recommend `click <http://click.pocoo.org/>`_
 module to build command line applications. Like any other project from `Armin
 Ronacher <http://lucumr.pocoo.org/about/>`_, it has great documentation. In this
-post, I am going to write a beginners tutorial, you should the read the
+post, I am going to write a beginners tutorial, you should read the
 documentation for any more details and examples.
 
 
