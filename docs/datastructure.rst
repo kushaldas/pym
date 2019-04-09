@@ -392,7 +392,7 @@ Sorted() parameters are also applicable for sort() in list objects. BUT *sort()*
 Sorting Sets and Tuples are pretty straight-forward!
 
 ::
-    
+
     >>> l = [4, 1, 3, 2]
     >>> s = {4, 1, 3, 2}
     >>> t = (4, 1, 3, 2)
@@ -404,6 +404,7 @@ Sorting Sets and Tuples are pretty straight-forward!
     [1, 2, 3, 4]
 
 Lets see how dictionary can be used:
+
 ::
 
     >>> d ={
@@ -439,7 +440,7 @@ That was pretty simple. Using *key* can be very crucial. It serves as a key for 
     >>> sorted(l, key=len)
     ['a', 'ab', 'abc', 'abcd']
 
-Here the len() us operated on each String objects. Thus any function can be used, even user defined ones, which takes one parameter and returns a value. Example:
+Here the len() us operated on each String objects. Thus any function can be used, even user defined ones, which takes one parameter and returns a value. Here's an example:
 
 ::
 
