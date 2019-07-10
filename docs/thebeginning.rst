@@ -8,9 +8,9 @@ Let's look at our first code, hello world. Because Python is an interpreted
 language, you can write the code into the Python interpreter directly or you
 can write the code in a file and then run the file. In this topic, we will
 first write the code using the interpreter, after starting Python in the
-command prompt (shell or terminal). In case you are new to Linux command line,
-+then you can read learn about various command from `this
-book <https://lym.readthedocs.io/en/latest/>`_
+command prompt (shell or terminal). If you are new to Linux command line,
+you can read about Linux commands in `this
+book <https://lym.readthedocs.io/en/latest/>`.
 
 
 Note that the code samples that follow use the latest Python built from the
@@ -36,20 +36,24 @@ In our first code we are going to print "Hello World!" using the interpreter. To
 Using a source file
 =====================
 
-As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like Kate or gedit. Enter the following text:
+As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>` or `gedit <https://wiki.gnome.org/Apps/Gedit>`. 
+
+Open a shell or terinal and perform these steps. 
+
+1. Enter the following text:
 
 ::
 
     #!/usr/bin/env python3
     print("Hello World!")
 
-To run the code first you have to make the file executable. In GNU/Linux you can do this by typing the following command in a shell or terminal:
+2. Type the following command to make the file executable:
 
 ::
 
     $ chmod +x helloworld.py
 
-Now you can type the filename and it will run:
+3. Run the code by typing the filename.
 
 ::
 
