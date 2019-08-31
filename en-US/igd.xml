@@ -145,7 +145,7 @@ c]]>
         while loop and comes to the *yield* statement again.
     </para>
     <para>
-        When you call an generator function it returns a *generator* object. If you call *dir*
+        When you call a generator function, it returns a *generator* object. If you call *dir*
         on this object you will find that it contains *__iter__* and *next* methods among the 
         other methods.
     </para>
