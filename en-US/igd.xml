@@ -167,7 +167,7 @@ c]]>
     </para>
 
     <para>
-        We can have generators which produces infinite values. The following is a one such example.
+        We can have generators which produce infinite values. The following is one such example.
     </para>
 <programlisting language="Python">
 <![CDATA[>>> def infinite_generator(start=0):
@@ -202,7 +202,7 @@ c
 </programlisting>        
     
     <para>
-        One way to create a reusable generator is Object based generators which does not hold any state. Any class with a *__iter__* method which yields data can be used as a object generator.
+        One way to create a reusable generator is Object based generators which does not hold any state. Any class with a *__iter__* method which yields data can be used as an object generator.
         In the following example we will recreate out counter generator.
     </para>
 <programlisting language="Python">
