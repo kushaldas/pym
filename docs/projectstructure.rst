@@ -71,7 +71,8 @@ using *sdist* command.
     include *.py
     include README.rst
 
-If you want to exclude some file, you can use *exclude* statements in this file.
+If you want to exclude some file, you can use *exclude* statements in this
+file.
 
 LICENSE file
 =============
@@ -153,6 +154,7 @@ function which can find all modules under your source directory.
 
 .. note:: To learn more you can read the `packaging docs <https://packaging.python.org/en/latest/distributing.html>`_.
 
+You can also add related `classifiers <https://pypi.org/classifiers/>`_ to the setup.py file.
 
 Usage of setup.py
 ==================
