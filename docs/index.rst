@@ -25,6 +25,7 @@ Contents:
    ifelse
    hardwaresimulation
    looping
+   loopingonhardware
    datastructure
    strings
    functions
