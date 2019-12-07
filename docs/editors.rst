@@ -61,3 +61,16 @@ Feel free to go through the `VS Code documentation
 <https://code.visualstudio.com/docs/getstarted/tips-and-tricks>`_ to learn more about the editor.
 
 We will add a few more things in this chapter later.
+
+Install the Device Simulator Express extension
+-----------------------------------------------
+
+.. figure:: img/installing_devicesimulator.gif
+
+
+Follow `this page <https://marketplace.visualstudio.com/items?itemName=ms-python.devicesimulatorexpress&ssr=false#overview>`_ to install the simulator, if you are on Linux, remember to
+remove the Windows dependency from the requirements.txt file as shown in the
+GIF file below.
+
+.. figure:: img/how_to_get_device_simulator.gif
+
