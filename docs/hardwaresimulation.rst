@@ -96,3 +96,34 @@ Yellow light solution
     while True:
         # start your code here
         cpx.pixels.fill(YELLOW)
+
+
+Learning about time.sleep
+--------------------------
+
+
+The `time` module has an important function, *sleep*, which takes the amount
+of time the code will sleep (means it will do nothing), and then, the next
+instruction will execute. We can use this to keep the light on or offf for
+certain amount of time. Take the following example, where we are keeping the
+NeoPixels on for 1 second and then, turning them off (RGB value (0,0,0)) for
+0.5 seconds.
+
+::
+
+    # import CPX library
+    from adafruit_circuitplayground.express import cpx
+    import time
+
+    WHITE = (255, 255, 255)
+    OFF = (0, 0, 0)
+
+    while True:
+        # start your code here
+        cpx.pixels.fill(WHITE)
+        time.sleep(1)
+        cpx.pixels.fill(OFF)
+        time.sleep(0.5)
+
+
+.. figure:: img/onoff.gif
