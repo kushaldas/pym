@@ -195,7 +195,10 @@ Using this swapping two numbers becomes very easy
     >>> b
     45
 
-To understand how this works, you will have to learn about a data type called *tuple*. We use *comma* to create tuple. In the right hand side we create the tuple (we call this as tuple packing) and in the left hand side we do tuple unpacking into a new tuple.
+To understand how this works, you will have to learn about a data type called
+*tuple*. We use *comma* to create tuple. In the right hand side we create the
+tuple (we call this as tuple packing) and in the left hand side we do tuple
+unpacking into a new tuple.
 
 Below we have another example of tuple unpacking.
 
@@ -209,6 +212,21 @@ Below we have another example of tuple unpacking.
     'India'
     >>> language
     'Python'
+
+Tuples can not be modified. You will have to create another new tuple if you
+want have any changes. Many times, we create variables written in CAPS to mark
+values which will not be changed when the program is running (constants). For
+example, if we think about colours as tuples of RGB values, then we can define
+them as:
+
+::
+
+    >>> RED = (255, 0, 0)
+    >>> GREEN = (0, 255, 0)
+    >>> BLUE = (0, 0, 255)
+    >>> print(RED)
+    (255, 0, 0)
+
 
 
 Formatting strings
