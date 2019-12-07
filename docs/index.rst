@@ -23,6 +23,7 @@ Contents:
    variablesanddatatypes
    operatorsexpressions
    ifelse
+   hardwaresimulation
    looping
    datastructure
    strings
