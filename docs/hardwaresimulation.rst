@@ -127,3 +127,39 @@ NeoPixels on for 1 second and then, turning them off (RGB value (0,0,0)) for
 
 
 .. figure:: img/onoff.gif
+
+
+RGB problem
+-------------
+
+
+Can you modify the code in a such a way that it shows Red, and then Green and
+then Blue on all NeoPixels? It will look like the following image.
+
+.. figure:: img/rgb.gif
+
+
+.. rst-class:: html-toggle
+
+RGB solution
+--------------
+
+::
+
+    # import CPX library
+    from adafruit_circuitplayground.express import cpx
+    import time
+
+    RED = (255, 0, 0)
+    GREEN = (0, 255, 0)
+    BLUE = (0, 0, 255)
+
+
+    while True:
+        cpx.pixels.fill(RED)
+        time.sleep(1)
+        cpx.pixels.fill(GREEN)
+        time.sleep(1)
+        cpx.pixels.fill(BLUE)
+        time.sleep(1)
+
