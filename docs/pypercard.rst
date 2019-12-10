@@ -69,7 +69,8 @@ color we mentioned (Yellow).
 Two Cards and a button
 -----------------------
 
-::
+.. code-block:: python
+    :linenos:
 
     from pypercard import Card, CardApp
 
@@ -91,4 +92,72 @@ of the next card to show. In this case, we are showing the card named *bye*
 
 .. figure:: img/twocard_pyper.gif
 
+
+Taking simple text input
+-------------------------
+
+
+In this example, we will learn how to take simple text input.
+
+.. code-block:: python
+    :linenos:
+
+
+    from pypercard import Card, CardApp, Inputs
+
+
+    def store_name(data_store, form_value):
+        """
+        Stores the user input in the data_store dictionary
+        """
+        if form_value:
+            data_store["name"] = form_value
+            return "showname"
+        else:
+            return "error"
+
+
+    card = Card(
+        "start",
+        text="Enter your name",
+        text_color="yellow",
+        form=Inputs.TEXTBOX,
+        buttons=[{"label": "Next", "target": store_name}],
+    )
+
+    card2 = Card("showname", text="May the force be with you {name}.", text_color="white")
+
+    errorcard = Card(
+        "error",
+        text="You forgot to enter a name",
+        text_color="RED",
+        buttons=[{"label": "Start again", "target": "start"}],
+    )
+    app = CardApp(stack=[card, card2, errorcard])
+    app.run()
+
+At line 1, we are importing **Inputs**, which has various graphical objects
+to take user input.
+
+In line 19, you can see that we passed a new keyword argument to the ``card``
+object called *form* and saying that it is a ``Inputs.TEXTBOX``. Another big
+change is that as a target of the button, we are passing a function called
+``store_name``. This can be any function which takes two arguments, first one
+is called ``data_store``, a dictionary passed from the application itself, and
+then ``form_value`` is the actual user input via the card. Here, we are
+checking if there is a proper user input, then we are storing the value in the
+dictionary with the key **name** and returning the next card name
+**showname**, otherwise we are showing the **error** card from the stack.
+
+In line 23, we are creating the **showname** card, where you can see we can
+directly use any keyname of ``data_store``.
+
+.. figure:: img/textinput_pyper.gif
+
+Check name problem
+-------------------
+
+Here is a small problem for you, change the code such a way, so that if the
+name starts with **Python**, then the next screen will tell us the version of
+Python we are running.
 
