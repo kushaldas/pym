@@ -57,6 +57,13 @@ So, now we will install a Python module called redis.
     Installing collected packages: redis
     Successfully installed redis-2.10.5
 
+.. rst-class:: floater
+
+.. seealso::
+
+    Read `this blog post <https://snarky.ca/why-you-should-use-python-m-pip/>`_ from Brett Cannon to understand why you should use
+    `python3 -m pip` to install packages.
+
 
 Now we will create another virtual environment *virt2* where we will
 install the same redis module but an old 2.4 version of it.
@@ -77,6 +84,7 @@ install the same redis module but an old 2.4 version of it.
 
 This way you can have many different environments for all of your development
 needs.
+
 
 .. note:: Always remember to create virtualenvs while developing new applications. This will help you keep the system modules clean.
 
