@@ -53,7 +53,7 @@ below so that becomes easier others. To learn more, read this
 
     $ python3 -m venv env
     $ source env/bin/activate
-    $ pip install --editable .
+    $ python3 -m pip install --editable .
     Obtaining file:///home/kdas/code/practice/yoclick
     Collecting Click (from myhello==0.1)
     Using cached click-6.7-py2.py3-none-any.whl
