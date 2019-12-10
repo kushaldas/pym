@@ -162,3 +162,52 @@ name starts with **Python**, then the next screen will tell us the version of
 Python we are running.
 
 .. figure:: img/checkname_pyper.gif
+
+.. rst-class:: html-toggle
+
+Check name solution
+--------------------
+
+.. code-block:: python
+    :linenos:
+
+    from pypercard import Card, CardApp, Inputs
+    import sys
+
+
+    def store_name(data_store, form_value):
+        """
+        Stores the user input in the data_store dictionary
+        """
+        if form_value:
+            if form_value.startswith("Python"):
+                data_store["msg"] = sys.version.replace("\n", "")
+            else:
+                data_store["msg"] = "May the force be with you {0}.".format(form_value)
+            return "showname"
+        else:
+            return "error"
+
+
+    card = Card(
+        "start",
+        text="Enter your name",
+        text_color="yellow",
+        form=Inputs.TEXTBOX,
+        buttons=[{"label": "Next", "target": store_name}],
+    )
+    card2 = Card(
+        "showname",
+        text="{msg}",
+        text_color="white",
+        buttons=[{"label": "Start again", "target": "start"}],
+    )
+
+    errorcard = Card(
+        "error",
+        text="You forgot to enter a name",
+        text_color="RED",
+        buttons=[{"label": "Start again", "target": "start"}],
+    )
+    app = CardApp(stack=[card, card2, errorcard])
+    app.run()
