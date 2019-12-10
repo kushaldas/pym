@@ -50,7 +50,7 @@ So, now we will install a Python module called redis.
 
 ::
 
-    (virt1)$ pip install redis
+    (virt1)$ python3 -m pip install redis
     Collecting redis
       Downloading redis-2.10.5-py2.py3-none-any.whl (60kB)
         100% |████████████████████████████████| 61kB 607kB/s 
@@ -66,7 +66,7 @@ install the same redis module but an old 2.4 version of it.
     $ python3 -m venv virt2
     $ source virt2/bin/activate
     (virt2)$
-    (virt2)$ pip install redis==2.4
+    (virt2)$ python3 -m pip install redis==2.4
     Downloading/unpacking redis
     Downloading redis-2.4.0.tar.gz
     Running setup.py egg_info for package redis
