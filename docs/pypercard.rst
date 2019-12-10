@@ -161,3 +161,4 @@ Here is a small problem for you, change the code such a way, so that if the
 name starts with **Python**, then the next screen will tell us the version of
 Python we are running.
 
+.. figure:: img/checkname_pyper.gif
