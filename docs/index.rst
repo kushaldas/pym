@@ -42,4 +42,5 @@ Contents:
    testing
    projectstructure
    click
+   pypercard
    flask
