@@ -60,7 +60,9 @@ VS Code, and start editing.
 Feel free to go through the `VS Code documentation
 <https://code.visualstudio.com/docs/getstarted/tips-and-tricks>`_ to learn more about the editor.
 
-We will add a few more things in this chapter later.
+.. important::
+
+    Learn about various shortcuts from `this gist <https://gist.github.com/bradtraversy/b28a0a361880141af928ada800a671d9>`_.
 
 Install the Device Simulator Express extension
 -----------------------------------------------
