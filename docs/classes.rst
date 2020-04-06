@@ -70,8 +70,15 @@ __init__ is a special method in Python classes, it is the constructor method for
 
 
 
-__init__ is called when ever an object of the class is constructed. That means when ever we will create a student object we will see the message "A student object is created" in the prompt. You can see the first argument to the method is *self*. It is a special variable which points to the current object (like `this` in C++). The object is passed implicitly to every method available in it, but we have to get it explicitly in every method while writing the methods. Example shown below.
-Remember to declare all the possible attributes in the *__init__* method itself. Even if you are not using them right away, you can always assign them as *None*.
+__init__ is called when ever an object of the class is constructed. That means
+when ever we will create a student object we will see the message "A student
+object is created" in the prompt. You can see the first argument to the method
+is *self*. It is a special variable which points to the current object (like
+`this` in C++). The object is passed implicitly to every method available in
+it, but we have to get it explicitly in every method while writing the
+methods. Example shown below. Remember to declare all the possible attributes
+in the *__init__* method itself. Even if you are not using them right away,
+you can always assign them as *None*.
 
 ::
 
@@ -92,6 +99,11 @@ Now we are going to call *print_details()* method.
     Name: Kushal
     Branch: CSE
     Year: 2005
+
+
+.. note:: *__init__* is pronounced as dunder init, all functions with double underscore in the front and end
+         is pronounced in this way. Example: dunder str or dunder repr.
+
 
 .. index:: Inheritance
 
