@@ -326,6 +326,9 @@ If you want to loop through a dict use *items()* method.
     kart_ uses Debian
     parthan uses Ubuntu
 
+For Python 3.7 dictionaries maintain the insertion order of the items. While looping over *items()* method,
+you will get the key/value combination based on the insertion order of those items.
+
 Many times it happens that we want to add more data to a value in a dictionary and if the key does not exists then we add some default value. You can do this efficiently using *dict.setdefault(key, default)*.
 ::
 
