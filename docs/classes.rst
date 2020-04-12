@@ -285,3 +285,39 @@ Output:
     In INR: 1220
     Sorry, no negative amount in the account.
     Dollar amount: 20
+
+
+Special dunder methods in classes
+==================================
+
+Below we will see some special dunder methods (the methods which has `__`
+before and after the name, example: `__init__`, we call it *dunder init*).
+
+__len__ method
+---------------
+
+Dunder len is a method used by the *len* function to know the length of any
+iterator or similar objects. It should return an Integer. *len* function
+verifies if the returned value is Integer or not.
+
+::
+
+    class Foo:
+        "Example class for __len__"
+        def __init__(self, length=5):
+            self.length = 5
+
+        def __len__(self):
+            return self.length
+
+
+    f = Foo()
+    length = len(f)
+    print(f"Length of the f object is {length}")
+
+The output:
+
+::
+
+    $ python3 code/lenexample.py 
+    Length of the f object is 5
