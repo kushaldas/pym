@@ -125,3 +125,29 @@ Modules are Python files that contain different function definitions or variable
     2.71828182846
 
 We will learn more about modules in the Modules chapter.
+
+
+Evaluation your code from a Python file in the interpreter
+==========================================================
+
+Many times we want to see how the code is working, and values of different
+variables inside of the code. We can do this interactively by copy-pasting the
+related code in the interpreter, but there is a better solution. We can use
+*-i* flag to the *python* interpreter and then interprets the given code, and
+provide the interpreter shell.
+
+We will have the following code in a file name *theidemo.py*.
+
+::
+
+    a = 10
+    name = "kushal"
+    c = 44
+    a = 20
+
+
+Now let us see how the *-i* flag can be used.
+
+.. image:: img/theidemo.gif
+
+
