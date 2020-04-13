@@ -13,15 +13,16 @@ command prompt (shell or terminal). In case you are new to Linux command line,
 book <https://lym.readthedocs.io/en/latest/>`_
 
 
-Note that the code samples that follow use the latest Python built from the
-source code, so the version number can be different.
+The following is from Fedora 32 machine.
 
 ::
 
-    Python 3.5.0a0 (default:d6ac4b6020b9+, Jun  9 2014, 12:15:05)
-    [GCC 4.8.2 20131212 (Red Hat 4.8.2-7)] on linux
+
+    Python 3.8.2rc1 (default, Feb 12 2020, 00:00:00) 
+    [GCC 10.0.1 20200130 (Red Hat 10.0.1-0.7)] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    >>>
+    >>> 
+
 
 Using the Python interpreter
 ==============================
