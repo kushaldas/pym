@@ -367,6 +367,20 @@ If you want to loop through a list (or any sequence) and get iteration number at
     1 b
     2 c
 
+If you want to start the sequence from a different number, you can can do that using *start* value in the enumerate
+function.
+
+::
+
+    >>> for i, j in enumerate(['a', 'b', 'c'], start=1):
+    ...   print(i, j)
+    ...
+    1 a
+    2 b
+    3 c
+
+
+
 You may also need to iterate through two sequences same time, for that use *zip()* function.
 
 ::
