@@ -139,7 +139,8 @@ In real life scenarios we should try to use `with` statement. It will take care 
 Writing in a file
 =================
 
-Let us open a file then we will write some random text into it by using the write() method.
+Let us open a file then we will write some random text into it by using the *write()* method.
+We can also pass the file object to the print function call, so that it writes in the file.
 
 ::
 
@@ -148,6 +149,7 @@ Let us open a file then we will write some random text into it by using the writ
     >>> fobj.write('indrag\n')
     >>> fobj.write('mishti\n')
     >>> fobj.write('sankarshan')
+    >>> print("This is the last line.", file=fobj)
     >>> fobj.close()
 
 Now read the file we just created
@@ -161,6 +163,7 @@ Now read the file we just created
     indrag
     mishti
     sankarshan
+    This is the last line.
 
 copyfile.py
 ===========
