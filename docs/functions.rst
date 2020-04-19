@@ -274,7 +274,7 @@ In Python any function can act as higher order function.
     ['imag', 'numerator', 'real']
     >>> print(lst)
 
-.. note:: To know more read `this link <http://docs.python.org/2/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
+.. note:: To know more read `this link <http://docs.python.org/3/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
 
 map function
 =============
