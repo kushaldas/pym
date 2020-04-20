@@ -436,3 +436,19 @@ The output
     Babai failed :(
     Tesla 's  total marks 296
     Tesla passed :)
+
+
+Remember that in Python, variables are just names pointing to the value. In the following example,
+both `x` and `y` points to same value, means when `x` changes, `y` also changes.
+
+::
+
+    >>> x = [1, 2, 3]
+    >>> y = x
+    >>> x.append(20)
+    >>> print(x)
+    [1, 2, 3, 20]
+    >>> print(y)
+    [1, 2, 3, 20]
+
+If you want a full copy of the data assigned to a new variable, call `obj.copy()` method.
