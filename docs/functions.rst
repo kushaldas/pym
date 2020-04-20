@@ -296,6 +296,23 @@ Example::
 In Python2, `map` was a function and used to return list.
 
 
+Parameters and arguments
+=========================
+
+`Parameters` are names defined in a function definition, and `arguments` are the
+actual values passed that function call.
+
+::
+
+    def hello(name, age):
+        return f"Hello {name}, you are {age} years old"
+
+    hello("kushal", 90)
+
+In the above example, `name` and `age` are the parameters of the `hello`, and `kushal` and `90` are
+the arguments passed to the function.
+
+
 HOWTO Write a function
 ========================
 
