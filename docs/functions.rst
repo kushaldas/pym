@@ -224,6 +224,29 @@ parameter.
 .. note:: To learn more please read `PEP-3102 <https://www.python.org/dev/peps/pep-3102/>`_.
 
 
+Positional only argument
+=========================
+
+From Python3.8, we can also mark any function to have only positional arguments. Write
+`/` at the end of all positional arguments in the function definition to have this feature.
+
+
+::
+
+    >>> def add(a, b, /):
+    ...   return a + b
+    ... 
+    >>> add(2, 3)
+    5
+    >>> add(a=2, b=3)
+    Traceback (most recent call last):
+    File "<stdin>", line 1, in <module>
+    TypeError: add() got some positional-only arguments passed as keyword arguments: 'a, b'
+
+
+You can see that when we tried to call the `add` with keyword arguments, it raised a `TypeError`.
+
+
 Docstrings
 ==========
 
