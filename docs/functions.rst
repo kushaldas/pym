@@ -276,12 +276,12 @@ In Python any function can act as higher order function.
 
 .. note:: To know more read `this link <http://docs.python.org/3/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
 
-map function
-=============
+map 
+====
 
-`map` is a very useful higher order function in Python. It takes one function
+`map` is a very useful class in python. It takes one function
 and an iterator as input and then applies the function on each value of the
-iterator and returns a list of results.
+iterator and returns an iterator.
 
 Example::
 
@@ -292,6 +292,8 @@ Example::
     ...
     >>> print(list(map(square, lst)))
     [1, 4, 9, 16, 25]
+
+In Python2, `map` was a function and used to return list.
 
 
 HOWTO Write a function
