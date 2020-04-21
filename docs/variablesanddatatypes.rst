@@ -235,18 +235,6 @@ Formatting strings
 In Python 3, there are a few different ways to format a string. We use these
 methods to format a text dynamically. I will go though a few examples below.
 
-.format method
----------------
-
-This is my preferable way to format strings. Example below:
-
-::
-
-    >>> name = "Kushal"
-    >>> language = "Python"
-    >>> msg = "{0} loves {1}.".format(name, language)
-    >>> print(msg)
-    Kushal loves Python.
 
 In Python 3.6, we have a new way to do string formatting. `PEP 498
 <https://www.python.org/dev/peps/pep-0498/>`_ introduces the concept called
@@ -276,3 +264,28 @@ string. Here are a few more examples.
 If you want to know more about how this feature came into Python, watch this
 `talk <https://www.youtube.com/watch?v=M4w4wKveVo4>`_ from `Mariatta Wijaya
 <https://twitter.com/mariatta>`_.
+
+
+In Python3.8 we can use the following style to help printing values along with the variable name.
+
+::
+
+    >>> a = 1
+    >>> b = 2
+    >>> print(f"{a=} and {b=}")
+    a=1 and b=2
+
+
+
+.format method
+---------------
+
+In older versions of Python, we can use `format` method.
+
+::
+
+    >>> name = "Kushal"
+    >>> language = "Python"
+    >>> msg = "{0} loves {1}.".format(name, language)
+    >>> print(msg)
+    Kushal loves Python.
