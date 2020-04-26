@@ -6,6 +6,9 @@ This is an example module which provides different ways to print bars.
 
 """
 
+ANSWER = 42
+
+
 def starbar(num):
     """
     Prints a bar with *
@@ -13,7 +16,8 @@ def starbar(num):
     :arg num: Length of the bar
 
     """
-    print '*' * num
+    print("*" * num)
+
 
 def hashbar(num):
     """
@@ -22,7 +26,8 @@ def hashbar(num):
     :arg num: Length of the bar
 
     """
-    print '#' * num
+    print("#" * num)
+
 
 def simplebar(num):
     """
@@ -31,4 +36,7 @@ def simplebar(num):
     :arg num: Length of the bar
     
     """
-    print '-' * num
+    print("-" * num)
+
+
+print(ANSWER)

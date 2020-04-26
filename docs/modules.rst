@@ -10,9 +10,15 @@ Introduction
 ============
 
 
-Up until now, all the code we wrote in the Python interpreter was lost when we exited the interpreter. But when people write large programs they tend to break their code into multiple different files for ease of use, debugging and readability. In Python we use *modules* to achieve such goals. Modules are nothing but files with Python definitions and statements. The module name, to import, has the same name of the Python file without the .py extension. 
+Up until now, all the code we wrote in the Python interpreter was lost when we
+exited the interpreter. But when people write large programs they tend to
+break their code into multiple different files for ease of use, debugging and
+readability. In Python we use *modules* to achieve such goals. Modules are
+nothing but files with Python definitions and statements. The name of the file should be valid
+Python name (think about any variable name) and in lowercase.
 
-You can find the name of the module by accessing the *__name__* variable. It is a global variable.
+You can find the name of the module by accessing the *__name__* variable. It
+is a global variable.
 
 Now we are going to see how modules work. Create a file called bars.py. Content of the file is given bellow.
 
@@ -23,26 +29,37 @@ Now we are going to see how modules work. Create a file called bars.py. Content 
     ============
     This is an example module with provide different ways to print bars.
     """
+
+
     def starbar(num):
-        """Prints a bar with *
+        """
+        Prints a bar with *
 
         :arg num: Length of the bar
+
         """
-        print('*' * num)
+        print("*" * num)
+
 
     def hashbar(num):
-        """Prints a bar with #
+        """
+        Prints a bar with #
 
         :arg num: Length of the bar
+
         """
-        print('#' * num)
-    
+        print("#" * num)
+
+
     def simplebar(num):
-        """Prints a bar with -
-        
-        :arg num: Length of the bar
         """
-        print('-' * num)
+        Prints a bar with -
+
+        :arg num: Length of the bar
+        
+        """
+        print("-" * num)
+
 
 Now we are going to start the Python interpreter and import our module.
 
@@ -73,10 +90,91 @@ There are different ways to import modules. We already saw one way to do this. Y
     >>> simplebar(20)
     --------------------
 
-.. warning:: Never do *from module import \** Read `this link <http://docs.python.org/2/faq/programming.html#what-are-the-best-practices-for-using-import-in-a-module>`_ for more information.
+.. warning:: It is suggested to avoid *from module import \** for importing from the modules.
 
-Submodules
-==========
+
+Remember that when we import and module, the Python interpreter executes the
+whole file, and then imports it as a module. This is true even when we import
+a single function from the module. Look at the following updated `bars.py` example.
+
+
+::
+
+    """
+    Bars Module
+    ============
+
+    This is an example module which provides different ways to print bars.
+
+    """
+
+    ANSWER = 42
+
+
+    def starbar(num):
+        """
+        Prints a bar with *
+
+        :arg num: Length of the bar
+
+        """
+        print("*" * num)
+
+
+    def hashbar(num):
+        """
+        Prints a bar with #
+
+        :arg num: Length of the bar
+
+        """
+        print("#" * num)
+
+
+    def simplebar(num):
+        """
+        Prints a bar with -
+
+        :arg num: Length of the bar
+        
+        """
+        print("-" * num)
+
+
+    print(ANSWER)
+
+
+Now if we try to import only the `simplebar` function from the `bars` module, it will still print the value
+`ANSWER`.
+
+::
+
+    >>> from bars import simplebar
+    42
+
+After the modules get imported for the first time, they are stored (as cache) inside of `sys.modules` dictionary using
+the module name as key. If you try to import it again, Python checks if it is there in the `sys.modules` and returns
+the module from there. All imported modules are of type `module`.
+
+::
+
+    >>> sys.modules["bars"]
+    <module 'bars' from '/home/kdas/code/pym/code/bars.py'>
+    >>> dir(bars)
+    ['ANSWER', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'hashbar', 'simplebar', 'starbar']
+    >>> type(bars)
+    <class 'module'>
+    >>> bars.__name__ 
+    'bars'
+    >>> bars.__file__
+    '/home/kdas/code/pym/code/bars.py'
+    >>> bars.__cached__
+    '/home/kdas/code/pym/code/__pycache__/bars.cpython-37.pyc'
+
+
+
+Packages and submodules
+========================
 
 We can have many submodules inside a module. A directory with a *__init__.py* can also be used as a module and all *.py* files inside it become submodules.
 
@@ -99,11 +197,12 @@ __all__ in __init__.py
 =======================
 
 If `__init__.py` file contains a list called `__all__`, then only the names listed there will
-be public. So if the mymodule's `__init__.py`
+be public. If the mymodule's `__init__.py`
 file contains the following
+
 ::
 
-    from mymodule.bars import simplebar
+    from .bars import simplebar
     __all__ = [simplebar, ]
 
 
@@ -111,6 +210,16 @@ Then from mymodule only `simplebar` will be available.
 
 .. note:: *from mymodule import \** will only work for module level objects, trying to use it to import functions or classes
     will cause syntax error.
+
+You have also noticed that we used a new style while importing the *simplebar*
+function from inside of the *mymodule* package. Using this `.` notation is
+known as `explicit import`.
+
+- `from . import foo ` # imports ./foo.py
+- `from .bars import foo ` # imports foo from ./bars.py
+- `from .. import foo` # imports ../foo.py
+- `from ..life import foo` # imports ../life/foo.py
+
 
 Default modules
 ===============
@@ -144,9 +253,6 @@ You can also use *help()* function in the interpeter to find documentation about
 ::
 
     >>> help(str)
-
-
-
 
 
 
@@ -226,7 +332,7 @@ you have to install it from your OS distribution packages, it does not come defa
 
 ::
 
-    # yum install python3-requests
+    # dnf install python3-requests
 
 
 The above command will install Python3 version of the requests module in your system.
