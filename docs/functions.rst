@@ -43,14 +43,19 @@ function which will check if a given string is palindrome or not, then return
 ::
 
     #!/usr/bin/env python3
+
+
     def palindrome(s):
         return s == s[::-1]
-    if __name__ == '__main__':
+
+
+    if __name__ == "__main__":
         s = input("Enter a string: ")
         if palindrome(s):
             print("Yay a palindrome")
         else:
             print("Oh no, not a palindrome")
+
 
 Now run the code :)
 
@@ -61,22 +66,26 @@ To understand local and global variables we will go through two examples.
 
 ::
 
-    #!/usr/bin/env python3
-    def change(b):
+    #!/usr/bin/env python
+
+
+    def change(a):
         a = 90
-        print(a)
+        print(f"Inside of the change function {a}")
+
+
     a = 9
-    print("Before the function call ", a)
-    print("inside change function", end=' ')
+    print(f"Before the function call {a}")
     change(a)
-    print("After the function call ", a)
+    print(f"After the function call {a}")
+
 
 The output
 ::
 
     $ ./local.py
     Before the function call  9
-    inside change function 90
+    Inside of the change function 90
     After the function call  9
 
 First we are assigning *9* to *a*, then calling change function, inside of that

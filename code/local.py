@@ -1,10 +1,12 @@
 #!/usr/bin/env python
+
+
 def change(a):
     a = 90
-    print a
+    print(f"Inside of the change function {a}")
+
 
 a = 9
-print "Before the function call ", a
-print "inside change function",
+print(f"Before the function call {a}")
 change(a)
-print "After the function call ", a
+print(f"After the function call {a}")
