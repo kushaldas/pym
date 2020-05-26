@@ -115,15 +115,15 @@ Now we are going to call *print_details()* method.
          is pronounced in this way. Example: dunder str or dunder repr.
 
 
-Unique class level attribute
+Unique class level variables
 =============================
 
 All the values stored in the instance via `self.` are data inside of an
 instance. Each instance of the class can have different values for given
 attribute (anything we access via . is also known as attribute). But, when we
-define an attribute in the class level, that is same accross all objects. In
+define an variable in the class level, that is same accross all objects. In
 the following example, we define a class called `Point`, and we also have a
-special class level attribute called `style` in it. After we create 2 objects
+special class level variable called `style` in it. After we create 2 objects
 of type `Point`, we can see that both has the same `class` attribute `style`
 and changing in the class level also changes in the all objects.
 
@@ -154,7 +154,35 @@ Output::
     Object <__main__.Point object at 0x10de0bb50> has style value= work
 
 
+__repr__ method
+=================
 
+`__repr__` is a special method used by the `print` function to show the
+representation of an object. We can use the same to make our `Point` object
+look better as print output.
+
+::
+
+
+    class Point:
+        style="fun"
+
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+        def __repr__(self):
+            return f"<Point x={self.x} y={self.y}>"
+
+    p1 = Point(10, 10)
+    p2 = Point(100, 100)
+    for p in [p1, p2]:
+        print(f"Object {p}")
+
+The output::
+
+        Object <Point x=10 y=10>
+        Object <Point x=100 y=100>
 
 
 
@@ -246,6 +274,54 @@ One class can inherit more than one classes. It gets access to all methods and v
             Parentclass2.__init__(self)
             ...
             ...
+
+Encapsulation in Python
+========================
+
+Encapsulation is a way to provide details on how a data can be accessed. In
+Python we have encapsulation as a programming style, which is different than
+many other programming languages. For example, we use a leading `_` before any
+variable name to tell that it is private. This way if the developer wants, they
+can have a different variable with similar name in the child class.
+
+
+::
+
+    class Person():
+        """
+        Returns a ```Person``` object with given name.
+
+        """
+        def __init__(self, name):
+            self._name = name
+
+    def get_details(self):
+        "Returns a string containing name of the person"
+        return self._name
+
+
+    class Child(Person):
+        def __init__(self, name):
+            super().__init__(name)
+
+        def tell(self):
+            print(f"The name is {self._name}")
+
+    c = Child("kushal")
+    c.tell()
+
+The output::
+
+    The name is kushal
+
+You can see that we can still access the `_name` attribute. But, we are letting
+the developer know that `_name` is a private attribute. If you want to make
+sure that the attribute can not be accessed directly in the child class, you
+can use `__` in front of the attribute name. It uses something called `name
+mangling <https://docs.python.org/3/tutorial/classes.html#private-variables>_`.
+
+
+
 
 Deleting an object
 ==================
