@@ -158,6 +158,40 @@ For example if we want to make a list out of the square values of another list, 
 
 Above in the second case we used two list comprehensions in a same line.
 
+
+A few special functions related to lists
+=========================================
+
+`sum` takes a list as argument and sums all the values inside of it.
+
+::
+
+    >>> numbers = [1, 2, 3, 4, 5]
+    >>> sum(numbers)
+    15
+
+`min` and `max` tells us about the minimum and maximum value from a list.
+
+::
+
+    >>> min(numbers)
+    1
+    >>> max(numbers)
+    5
+
+There are two other functions related to boolean value checking. `any` and `all`. `any` tells us if any of the value in the list if `True`.
+`all` tells us if all the values in the list are `True` or not.
+
+::
+
+    >>> numbers = [1, 2, 3, 4, 5, 0]
+    >>> any(numbers)
+    True
+    >>> all(numbers)
+    False
+
+Here `all` returned `False` because we have 0 in the list.
+
 .. index:: Tuple
 
 Tuples
