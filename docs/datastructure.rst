@@ -471,9 +471,12 @@ The output
     Tesla 's  total marks 296
     Tesla passed :)
 
+Assignment problems
+===================
 
-Remember that in Python, variables are just names pointing to the value. In the following example,
-both `x` and `y` points to same value, means when `x` changes, `y` also changes.
+Remember that in Python, variables are just names pointing to the value. In the
+following example, both `x` and `y` points to same value, means when `x`
+changes, `y` also changes.
 
 ::
 
@@ -486,3 +489,22 @@ both `x` and `y` points to same value, means when `x` changes, `y` also changes.
     [1, 2, 3, 20]
 
 If you want a full copy of the data assigned to a new variable, call `obj.copy()` method.
+
+This also happens when you pass them into functions. For example, in the below
+function, we are passing a list, and appending new numbers into it.  This also
+changes the variable outside of the function.
+
+::
+
+    numbers = [1, 2, 4]
+
+    def modify(numbers):
+        numbers.append(42)
+    
+    modify(numbers)
+    print(numbers)
+    [1, 2, 4, 42]
+
+
+
+
