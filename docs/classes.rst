@@ -4,6 +4,16 @@
 Class
 =====
 
+Classes and objects are pat of programming idea also known as `Object-oriented
+programming <https://en.wikipedia.org/wiki/Object-oriented_programming>`_. Here
+the data, and functions working on the data stays together (we call those
+functions as methods in the objects). `Simula
+<https://en.wikipedia.org/wiki/Object-oriented_programming#History>`_ is the
+first language which featured these ideas. `Java` and `C++` are two most known
+object oriented programming languages in the schools.
+
+
+
 Your first class
 ================
 
@@ -103,6 +113,49 @@ Now we are going to call *print_details()* method.
 
 .. note:: *__init__* is pronounced as dunder init, all functions with double underscore in the front and end
          is pronounced in this way. Example: dunder str or dunder repr.
+
+
+Unique class level attribute
+=============================
+
+All the values stored in the instance via `self.` are data inside of an
+instance. Each instance of the class can have different values for given
+attribute (anything we access via . is also known as attribute). But, when we
+define an attribute in the class level, that is same accross all objects. In
+the following example, we define a class called `Point`, and we also have a
+special class level attribute called `style` in it. After we create 2 objects
+of type `Point`, we can see that both has the same `class` attribute `style`
+and changing in the class level also changes in the all objects.
+
+
+::
+
+    class Point:
+        style="fun"
+
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+    p1 = Point(10, 10)
+    p2 = Point(100, 100)
+    for p in [p1, p2]:
+        print(f"Object {p} has style value= {p.style}")
+
+    Point.style = "work"
+    for p in [p1, p2]:
+        print(f"Object {p} has style value= {p.style}")
+
+Output::
+
+    Object <__main__.Point object at 0x10de37210> has style value= fun
+    Object <__main__.Point object at 0x10de0bb50> has style value= fun
+    Object <__main__.Point object at 0x10de37210> has style value= work
+    Object <__main__.Point object at 0x10de0bb50> has style value= work
+
+
+
+
 
 
 .. index:: Inheritance
