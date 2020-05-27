@@ -522,3 +522,49 @@ example, we are using our `Point` class again.
     <Point x=2 y=3>
 
 
+Creating a new context manager
+===============================
+
+Do you remember the `with` statement from the `files` chapter? Where we used a
+context manager to make sure that the file is closed after we are done? The
+same style is used in many places where we can the resources to be cleaned
+after the work, sometimes we want to call some extra functions when we are
+done. We can write our own context manager in our classs using `__enter__` and
+`__exit__` methods.
+
+For example, we will create a new class called `TimeLog` which in turn will
+create a file called `tmpdata.txt` in the current directory and logs the time
+this context manager is created and when it is done.
+
+::
+
+    import time
+
+    class TimeLog:
+
+        def __init__(self):
+            self.fobj = None
+
+        def __enter__(self):
+            self.fobj = open("tmpdata.txt", "w")
+            self.fobj.write(f"Entering at {time.time()}\n")
+
+        def __exit__(self, ty, value, tb):
+            self.fobj.write(f"Done at {time.time()}\n")
+            self.fobj.close()
+            self.fobj = None
+
+
+    with TimeLog() as tl:
+        a = [1, 2, 3]
+        print(a)
+
+Output in the `tmpdata.txt` file.
+
+::
+
+    Entering at 1590551277.323565
+    Done at 1590551277.3238761
+
+Later in the book we will learn even simpler method to create context managers.
+
