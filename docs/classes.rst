@@ -4,6 +4,16 @@
 Class
 =====
 
+Classes and objects are pat of programming idea also known as `Object-oriented
+programming <https://en.wikipedia.org/wiki/Object-oriented_programming>`_. Here
+the data, and functions working on the data stays together (we call those
+functions as methods in the objects). `Simula
+<https://en.wikipedia.org/wiki/Object-oriented_programming#History>`_ is the
+first language which featured these ideas. `Java` and `C++` are two most known
+object oriented programming languages in the schools.
+
+
+
 Your first class
 ================
 
@@ -105,14 +115,90 @@ Now we are going to call *print_details()* method.
          is pronounced in this way. Example: dunder str or dunder repr.
 
 
+Unique class level variables
+=============================
+
+All the values stored in the instance via `self.` are data inside of an
+instance. Each instance of the class can have different values for given
+attribute (anything we access via . is also known as attribute). But, when we
+define an variable in the class level, that is same accross all objects. In
+the following example, we define a class called `Point`, and we also have a
+special class level variable called `style` in it. After we create 2 objects
+of type `Point`, we can see that both has the same `class` attribute `style`
+and changing in the class level also changes in the all objects.
+
+
+::
+
+    class Point:
+        style="fun"
+
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+    p1 = Point(10, 10)
+    p2 = Point(100, 100)
+    for p in [p1, p2]:
+        print(f"Object {p} has style value= {p.style}")
+
+    Point.style = "work"
+    for p in [p1, p2]:
+        print(f"Object {p} has style value= {p.style}")
+
+Output::
+
+    Object <__main__.Point object at 0x10de37210> has style value= fun
+    Object <__main__.Point object at 0x10de0bb50> has style value= fun
+    Object <__main__.Point object at 0x10de37210> has style value= work
+    Object <__main__.Point object at 0x10de0bb50> has style value= work
+
+
+__repr__ method
+=================
+
+`__repr__` is a special method used by the `print` function to show the
+representation of an object. We can use the same to make our `Point` object
+look better as print output.
+
+::
+
+
+    class Point:
+        style="fun"
+
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+        def __repr__(self):
+            return f"<Point x={self.x} y={self.y}>"
+
+    p1 = Point(10, 10)
+    p2 = Point(100, 100)
+    for p in [p1, p2]:
+        print(f"Object {p}")
+
+The output::
+
+        Object <Point x=10 y=10>
+        Object <Point x=100 y=100>
+
+
+
 .. index:: Inheritance
 
 Inheritance
 ===========
 
-In general we human beings always know about inheritance. In programming it is almost the same. When a class inherits another class it inherits all features (like variables and methods) of the parent class. This helps in reusing codes.
+In general we human beings always know about inheritance. In programming it is
+almost the same. When a class inherits another class it inherits all features
+(like variables and methods) of the parent class. This helps in reusing codes.
 
-In the next example we first create a class called Person and create two sub-classes Student and Teacher. As both of the classes are inherited from Person class they will have all methods of Person and will have new methods and variables for their own purpose.
+In the next example we first create a class called Person and create two
+sub-classes Student and Teacher. As both of the classes are inherited from
+Person class they will have all methods of Person and will have new methods and
+variables for their own purpose.
 
 student_teacher.py
 -------------------
@@ -139,7 +225,7 @@ student_teacher.py
 
         """
         def __init__(self, name, branch, year):
-            Person.__init__(self, name)
+            super().__init__(name)
             self.branch = branch
             self.year = year
 
@@ -154,7 +240,7 @@ student_teacher.py
         argument.
         """
         def __init__(self, name, papers):
-            Person.__init__(self, name)
+            super().__init__(name)
             self.papers = papers
 
         def get_details(self):
@@ -178,7 +264,22 @@ The output:
     Kushal studies CSE and is in 2005 year.
     Prashad teaches C,C++
 
-In this example you can see how we called the __init__ method of the class Person in both Student and Teacher classes' __init__ method. We also reimplemented *get_details()* method of Person class in both Student and Teacher class. So, when we are calling *get_details()* method on the teacher1 object it returns based on the object itself (which is of teacher class) and when we call *get_details()* on the student1 or person1 object it returns based on *get_details()* method implemented in it's own class.
+In this example you can see how we called the __init__ method of the parent
+class using the `super()` in both Student and Teacher classes' __init__ method.
+We also reimplemented *get_details()* method of Person class in both Student
+and Teacher class. So, when we are calling *get_details()* method on the
+teacher1 object it returns based on the object itself (which is of teacher
+class) and when we call *get_details()* on the student1 or person1 object it
+returns based on *get_details()* method implemented in it's own class.
+
+
+When a class inherites another class, the child class is also known as the
+instance of the parent class. Here is an example based on the above class.
+
+```Python
+isinstance(student1, Person)
+True
+```
 
 Multiple Inheritance
 ====================
@@ -193,6 +294,54 @@ One class can inherit more than one classes. It gets access to all methods and v
             Parentclass2.__init__(self)
             ...
             ...
+
+Encapsulation in Python
+========================
+
+Encapsulation is a way to provide details on how a data can be accessed. In
+Python we have encapsulation as a programming style, which is different than
+many other programming languages. For example, we use a leading `_` before any
+variable name to tell that it is private. This way if the developer wants, they
+can have a different variable with similar name in the child class.
+
+
+::
+
+    class Person():
+        """
+        Returns a ```Person``` object with given name.
+
+        """
+        def __init__(self, name):
+            self._name = name
+
+    def get_details(self):
+        "Returns a string containing name of the person"
+        return self._name
+
+
+    class Child(Person):
+        def __init__(self, name):
+            super().__init__(name)
+
+        def tell(self):
+            print(f"The name is {self._name}")
+
+    c = Child("kushal")
+    c.tell()
+
+The output::
+
+    The name is kushal
+
+You can see that we can still access the `_name` attribute. But, we are letting
+the developer know that `_name` is a private attribute. If you want to make
+sure that the attribute can not be accessed directly in the child class, you
+can use `__` in front of the attribute name. It uses something called `name
+mangling <https://docs.python.org/3/tutorial/classes.html#private-variables>_`.
+
+
+
 
 Deleting an object
 ==================
@@ -321,3 +470,101 @@ The output:
 
     $ python3 code/lenexample.py 
     Length of the f object is 5
+
+__contains__ method
+--------------------
+
+This method helps us to use `in` with out objects. For example, if we want to
+match `"kushal" in studnet1` to be `True`, we implement `__contains__` method
+in our class.
+
+
+::
+
+    class Student(Person):
+        """
+        Returns a ```Student``` object, takes 3 arguments, name, branch, year.
+
+        """
+        def __init__(self, name, branch, year):
+            super().__init__(name)
+            self.branch = branch
+            self.year = year
+
+        def get_details(self):
+            "Returns a string containing student's details."
+            return "%s studies %s and is in %s year." % (self.name, self.branch, self.year)
+
+        def __contains__(self, name):
+            return self._name == name
+
+
+    student1 = Student("kushal", "cse", 2005)
+
+    print("kushal" in student1)
+    print("sachin" in student1)
+
+
+__new__ method
+----------------
+
+`__new__` is a special method. When we create an instance of the class,
+internally this method gets called first, and then `__init__` gets called on
+the returned object. It takes the class as the first argument. In the following
+example, we are using our `Point` class again.
+
+::
+
+    p = Point.__new__(Point, 2, 3)
+    p.__init__(2, 3)
+    print(p)
+
+    <Point x=2 y=3>
+
+
+Creating a new context manager
+===============================
+
+Do you remember the `with` statement from the `files` chapter? Where we used a
+context manager to make sure that the file is closed after we are done? The
+same style is used in many places where we can the resources to be cleaned
+after the work, sometimes we want to call some extra functions when we are
+done. We can write our own context manager in our classs using `__enter__` and
+`__exit__` methods.
+
+For example, we will create a new class called `TimeLog` which in turn will
+create a file called `tmpdata.txt` in the current directory and logs the time
+this context manager is created and when it is done.
+
+::
+
+    import time
+
+    class TimeLog:
+
+        def __init__(self):
+            self.fobj = None
+
+        def __enter__(self):
+            self.fobj = open("tmpdata.txt", "w")
+            self.fobj.write(f"Entering at {time.time()}\n")
+
+        def __exit__(self, ty, value, tb):
+            self.fobj.write(f"Done at {time.time()}\n")
+            self.fobj.close()
+            self.fobj = None
+
+
+    with TimeLog() as tl:
+        a = [1, 2, 3]
+        print(a)
+
+Output in the `tmpdata.txt` file.
+
+::
+
+    Entering at 1590551277.323565
+    Done at 1590551277.3238761
+
+Later in the book we will learn even simpler method to create context managers.
+

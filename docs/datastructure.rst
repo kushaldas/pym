@@ -158,6 +158,40 @@ For example if we want to make a list out of the square values of another list, 
 
 Above in the second case we used two list comprehensions in a same line.
 
+
+A few special functions related to lists
+=========================================
+
+`sum` takes a list as argument and sums all the values inside of it.
+
+::
+
+    >>> numbers = [1, 2, 3, 4, 5]
+    >>> sum(numbers)
+    15
+
+`min` and `max` tells us about the minimum and maximum value from a list.
+
+::
+
+    >>> min(numbers)
+    1
+    >>> max(numbers)
+    5
+
+There are two other functions related to boolean value checking. `any` and `all`. `any` tells us if any of the value in the list if `True`.
+`all` tells us if all the values in the list are `True` or not.
+
+::
+
+    >>> numbers = [1, 2, 3, 4, 5, 0]
+    >>> any(numbers)
+    True
+    >>> all(numbers)
+    False
+
+Here `all` returned `False` because we have 0 in the list.
+
 .. index:: Tuple
 
 Tuples
@@ -437,9 +471,12 @@ The output
     Tesla 's  total marks 296
     Tesla passed :)
 
+Assignment problems
+===================
 
-Remember that in Python, variables are just names pointing to the value. In the following example,
-both `x` and `y` points to same value, means when `x` changes, `y` also changes.
+Remember that in Python, variables are just names pointing to the value. In the
+following example, both `x` and `y` points to same value, means when `x`
+changes, `y` also changes.
 
 ::
 
@@ -452,3 +489,22 @@ both `x` and `y` points to same value, means when `x` changes, `y` also changes.
     [1, 2, 3, 20]
 
 If you want a full copy of the data assigned to a new variable, call `obj.copy()` method.
+
+This also happens when you pass them into functions. For example, in the below
+function, we are passing a list, and appending new numbers into it.  This also
+changes the variable outside of the function.
+
+::
+
+    numbers = [1, 2, 4]
+
+    def modify(numbers):
+        numbers.append(42)
+    
+    modify(numbers)
+    print(numbers)
+    [1, 2, 4, 42]
+
+
+
+

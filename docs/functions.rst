@@ -351,3 +351,36 @@ HOWTO Write a function
 Watch `this talk <https://www.youtube.com/watch?v=rrBJVMyD-Gs>`_ by Jack
 Diederich at PyCon US 2018 to learn more about how to write clean Python
 functions and many other tips.
+
+
+*args and **kwargs in function definition 
+=========================================
+
+There are times when we don't know the number of arguments before hand. There
+can be any number of positional or keyword arguments passed to the function.
+This is where we use `*args` and `**kwargs` in the function.
+
+
+::
+
+    def unknown(*args, **kwargs):
+        print(f"We received {len(args)} positional arguments. And they are:")
+        for arg in args:
+            print(arg, end= " ")
+        print("")
+        print(f"We received {len(kwargs)} keyword arguments. And they are:")
+        for k, v in kwargs.items():
+            print(f"key={k} and value={v}")
+        
+        
+    unknown(30, 90, "kushal", lang="python", editor="vim")
+
+    We received 3 positional arguments. And they are:
+    30 90 kushal 
+    We received 2 keyword arguments. And they are:
+    key=lang and value=python
+    key=editor and value=vim
+
+This is really helpful when you are writing code which will take another
+function as input, and you don't know about parameters of that function before
+hand.  We will see more examples later in this book.
