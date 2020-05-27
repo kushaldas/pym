@@ -191,9 +191,14 @@ The output::
 Inheritance
 ===========
 
-In general we human beings always know about inheritance. In programming it is almost the same. When a class inherits another class it inherits all features (like variables and methods) of the parent class. This helps in reusing codes.
+In general we human beings always know about inheritance. In programming it is
+almost the same. When a class inherits another class it inherits all features
+(like variables and methods) of the parent class. This helps in reusing codes.
 
-In the next example we first create a class called Person and create two sub-classes Student and Teacher. As both of the classes are inherited from Person class they will have all methods of Person and will have new methods and variables for their own purpose.
+In the next example we first create a class called Person and create two
+sub-classes Student and Teacher. As both of the classes are inherited from
+Person class they will have all methods of Person and will have new methods and
+variables for their own purpose.
 
 student_teacher.py
 -------------------
@@ -220,7 +225,7 @@ student_teacher.py
 
         """
         def __init__(self, name, branch, year):
-            Person.__init__(self, name)
+            super().__init__(name)
             self.branch = branch
             self.year = year
 
@@ -235,7 +240,7 @@ student_teacher.py
         argument.
         """
         def __init__(self, name, papers):
-            Person.__init__(self, name)
+            super().__init__(name)
             self.papers = papers
 
         def get_details(self):
@@ -259,7 +264,22 @@ The output:
     Kushal studies CSE and is in 2005 year.
     Prashad teaches C,C++
 
-In this example you can see how we called the __init__ method of the class Person in both Student and Teacher classes' __init__ method. We also reimplemented *get_details()* method of Person class in both Student and Teacher class. So, when we are calling *get_details()* method on the teacher1 object it returns based on the object itself (which is of teacher class) and when we call *get_details()* on the student1 or person1 object it returns based on *get_details()* method implemented in it's own class.
+In this example you can see how we called the __init__ method of the parent
+class using the `super()` in both Student and Teacher classes' __init__ method.
+We also reimplemented *get_details()* method of Person class in both Student
+and Teacher class. So, when we are calling *get_details()* method on the
+teacher1 object it returns based on the object itself (which is of teacher
+class) and when we call *get_details()* on the student1 or person1 object it
+returns based on *get_details()* method implemented in it's own class.
+
+
+When a class inherites another class, the child class is also known as the
+instance of the parent class. Here is an example based on the above class.
+
+```Python
+isinstance(student1, Person)
+True
+```
 
 Multiple Inheritance
 ====================
@@ -450,3 +470,39 @@ The output:
 
     $ python3 code/lenexample.py 
     Length of the f object is 5
+
+__contains__ method
+--------------------
+
+This method helps us to use `in` with out objects. For example, if we want to
+match `"kushal" in studnet1` to be `True`, we implement `__contains__` method
+in our class.
+
+
+::
+
+    class Student(Person):
+        """
+        Returns a ```Student``` object, takes 3 arguments, name, branch, year.
+
+        """
+        def __init__(self, name, branch, year):
+            super().__init__(name)
+            self.branch = branch
+            self.year = year
+
+        def get_details(self):
+            "Returns a string containing student's details."
+            return "%s studies %s and is in %s year." % (self.name, self.branch, self.year)
+
+        def __contains__(self, name):
+            return self._name == name
+
+
+    student1 = Student("kushal", "cse", 2005)
+
+    print("kushal" in student1)
+    print("sachin" in student1)
+
+
+
