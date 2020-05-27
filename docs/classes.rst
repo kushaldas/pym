@@ -505,4 +505,20 @@ in our class.
     print("sachin" in student1)
 
 
+__new__ method
+----------------
+
+`__new__` is a special method. When we create an instance of the class,
+internally this method gets called first, and then `__init__` gets called on
+the returned object. It takes the class as the first argument. In the following
+example, we are using our `Point` class again.
+
+::
+
+    p = Point.__new__(Point, 2, 3)
+    p.__init__(2, 3)
+    print(p)
+
+    <Point x=2 y=3>
+
 
