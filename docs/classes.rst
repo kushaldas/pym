@@ -645,10 +645,11 @@ which is used to set a value to any attribute.
 
 ::
 
+
     class User:
 
         def __init__(self, name, uid, gid, home, sudo):
-            self._internal = {"name": name, "uid": uid, "gids": [gid,], "home": home, "sudo": sudo}
+            self.__dict__["_internal"] = {"name": name, "uid": uid, "gids": [gid,], "home": home, "sudo": sudo}
 
         def can_sudo(self):
             return self._internal["sudo"]
@@ -659,7 +660,8 @@ which is used to set a value to any attribute.
 
         def __setattr__(self, attr, value):
             print(f"Setting attribute {attr} to {value}")
-            super().__setattr__(attr, value)
+            self._internal[attr] = value
+
 
     u = User("kdas", 1000, 1000, "/home/kdas", True)
 
@@ -668,7 +670,6 @@ When we try to access any attribute of the object `u`, we can see the following.
 ::
 
     ❯ python3 -i deepinsideobjects.py
-    Setting attribute _internal to {'name': 'kdas', 'uid': 1000, 'gids': [1000], 'home': '/home/kdas', 'sudo': True}
     >>> u.name
     Accessing attr: name
     'kdas'
