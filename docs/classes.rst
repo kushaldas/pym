@@ -568,3 +568,116 @@ Output in the `tmpdata.txt` file.
 
 Later in the book we will learn even simpler method to create context managers.
 
+Deep down inside
+=================
+
+If we look inside of our class definitions, we will a dictionary at the center.
+Let us look at it in details in the following example.
+
+::
+
+    class User:
+        def __init__(self, name, uid, gid, home, sudo):
+            self.name = name
+            self.uid = uid
+            self.gids = [gid,]
+            self.home = home
+            self.sudo = sudo
+
+        def can_sudo(self):
+            return self.sudo
+    
+    u = User("kdas", 1000, 1000, "/home/kdas", True)
+    pprint(u.__dict__)
+
+    {'gids': [1000],
+     'home': '/home/kdas',
+     'name': 'kdas',
+     'sudo': True,
+     'uid': 1000}
+
+All the attrbutes we defined via `self` in the `__init__` method, are stored in
+the `__dict__` dictionary inside of each instance. When we try access any of
+these attributes, Python first look at this dictionary of the object, and then
+also in the `__dict__` of the class itself.
+
+::
+
+    >>> pprint(User.__dict__)
+    mappingproxy({'__dict__': <attribute '__dict__' of 'User' objects>,
+                  '__doc__': None,
+                  '__init__': <function User.__init__ at 0x7fa8c6f1bd40>,
+                  '__module__': '__main__',
+                  '__weakref__': <attribute '__weakref__' of 'User' objects>,
+                  'can_sudo': <function User.can_sudo at 0x7fa8c6f3e3b0>})
+
+When we try to access any attribute via the `.` operator, python first checks
+`__getattribute__` method to look at the `__dict__`, if it can not find it,
+then it tries to call `__getattr__` method on the object.
+
+::
+
+    class Magic:
+        def __init__(self):
+            self.name = "magic"
+
+        def __getattr__(self, attr):
+            return attr.upper()
+
+Now, if we try to use this `Magic` class, we can access any random attribute even if they don't exist.
+
+::
+
+    ❯ python3 -i deepinsideobjects.py
+    >>> m = Magic()
+    >>> m.name
+    'magic'
+    >>> m.what_is_this_magic
+    'WHAT_IS_THIS_MAGIC'
+    >>> m.this
+    'THIS'
+    >>> m.hello
+    'HELLO'
+
+Using the same `__getattr__` method, we can access the data stored inside
+another object of our class, we can also impletement `__setattr__` method,
+which is used to set value to any attribute.
+
+::
+
+    class User:
+
+        def __init__(self, name, uid, gid, home, sudo):
+            self._internal = {"name": name, "uid": uid, "gids": [gid,], "home": home, "sudo": sudo}
+
+        def can_sudo(self):
+            return self._internal["sudo"]
+
+        def __getattr__(self, attr):
+            print(f"Accessing attr: {attr}")
+            return self._internal[attr]
+
+        def __setattr__(self, attr, value):
+            print(f"Setting attribute {attr} to {value}")
+            super().__setattr__(attr, value)
+
+    u = User("kdas", 1000, 1000, "/home/kdas", True)
+
+When we try to access any attribute of the object `u`, we can see the following.
+
+::
+
+    ❯ python3 -i deepinsideobjects.py
+    Setting attribute _internal to {'name': 'kdas', 'uid': 1000, 'gids': [1000], 'home': '/home/kdas', 'sudo': True}
+    >>> u.name
+    Accessing attr: name
+    'kdas'
+    >>> u.uid
+    Accessing attr: uid
+    1000
+    >>> u.can_sudo()
+    True
+
+There is also `__delattr__` method to delete any attribute of an instance. Feel
+free to add it to the class above and see how it behaves.
+
