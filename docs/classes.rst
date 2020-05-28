@@ -527,13 +527,13 @@ Creating a new context manager
 
 Do you remember the `with` statement from the `files` chapter? Where we used a
 context manager to make sure that the file is closed after we are done? The
-same style is used in many places where we can the resources to be cleaned
-after the work, sometimes we want to call some extra functions when we are
+same style is used in many places where we want the resources to be cleaned up
+after the work is done; sometimes we want to call some extra functions when we are
 done. We can write our own context manager in our classs using `__enter__` and
 `__exit__` methods.
 
 For example, we will create a new class called `TimeLog` which in turn will
-create a file called `tmpdata.txt` in the current directory and logs the time
+create a file called `tmpdata.txt` in the current directory to log the time
 this context manager is created and when it is done.
 
 ::
@@ -566,7 +566,7 @@ Output in the `tmpdata.txt` file.
     Entering at 1590551277.323565
     Done at 1590551277.3238761
 
-Later in the book we will learn even simpler method to create context managers.
+Later in the book we will learn even simpler methods to create context managers.
 
 Deep down inside
 =================
