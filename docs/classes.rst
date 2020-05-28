@@ -571,7 +571,7 @@ Later in the book we will learn even simpler method to create context managers.
 Deep down inside
 =================
 
-If we look inside of our class definitions, we will a dictionary at the center.
+If we look inside of our class definitions, we will find a dictionary at the center.
 Let us look at it in details in the following example.
 
 ::
@@ -596,9 +596,9 @@ Let us look at it in details in the following example.
      'sudo': True,
      'uid': 1000}
 
-All the attrbutes we defined via `self` in the `__init__` method, are stored in
+All the attributes we defined via `self` in the `__init__` method, are stored in
 the `__dict__` dictionary inside of each instance. When we try access any of
-these attributes, Python first look at this dictionary of the object, and then
+these attributes, Python first looks at this dictionary of the object, and then
 also in the `__dict__` of the class itself.
 
 ::
@@ -611,9 +611,9 @@ also in the `__dict__` of the class itself.
                   '__weakref__': <attribute '__weakref__' of 'User' objects>,
                   'can_sudo': <function User.can_sudo at 0x7fa8c6f3e3b0>})
 
-When we try to access any attribute via the `.` operator, python first checks
-`__getattribute__` method to look at the `__dict__`, if it can not find it,
-then it tries to call `__getattr__` method on the object.
+When we try to access any attribute via the `.` operator, Python first checks the
+`__getattribute__` method to look at the `__dict__`. If the key can not be found,
+it tries to call the `__getattr__` method on the object.
 
 ::
 
@@ -639,9 +639,9 @@ Now, if we try to use this `Magic` class, we can access any random attribute eve
     >>> m.hello
     'HELLO'
 
-Using the same `__getattr__` method, we can access the data stored inside
-another object of our class, we can also impletement `__setattr__` method,
-which is used to set value to any attribute.
+Using the same approach we took, to access the data stored inside
+another object of our class, we can also implement the `__setattr__` method,
+which is used to set a value to any attribute.
 
 ::
 
