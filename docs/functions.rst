@@ -306,6 +306,49 @@ In Python any function can act as higher order function.
     ['imag', 'numerator', 'real']
     >>> print(lst)
 
+
+Let us look at another example. We will create a function, which in turn
+returns another function to add 5 to the given argument.
+
+::
+
+    def givemefive():
+        def add5(x):
+            return x + 5
+        return add5
+
+    >>> myadder = givemefive()
+    >>> print(myadder(10))
+    15
+    >>> print(type(myadder))
+    <class 'function'>
+
+Here when we call `givemefive`, it is actually returning the function `add5`,
+and storing into `myadder`. Finally when we call the `myadder`, it adds 5 to
+the given argument, and returns it. We also printed the `type` of `myadder`
+
+::
+
+    def givemeadder(num):
+        def internal(x):
+            return num + x
+        return internal
+
+    >>> add10 = givemeadder(10)
+    >>> print(add10(20))
+    30
+
+In this example the `internal` function is using the `x` variable from the
+outer scope. This is also known as `closure` where the function is using the
+environment enclosed. If we need a new function which will add 100 to the given
+number, we can do it easily like this.
+
+::
+
+    add_big = givemeadder(100)
+    >>> print(add_big(1))
+    101
+
 .. note:: To know more read `this link <http://docs.python.org/3/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
 
 map 
@@ -345,14 +388,6 @@ In the above example, `name` and `age` are the parameters of the `hello`, and `k
 the arguments passed to the function.
 
 
-HOWTO Write a function
-========================
-
-Watch `this talk <https://www.youtube.com/watch?v=rrBJVMyD-Gs>`_ by Jack
-Diederich at PyCon US 2018 to learn more about how to write clean Python
-functions and many other tips.
-
-
 *args and **kwargs in function definition 
 =========================================
 
@@ -384,3 +419,12 @@ This is where we use `*args` and `**kwargs` in the function.
 This is really helpful when you are writing code which will take another
 function as input, and you don't know about parameters of that function before
 hand.  We will see more examples later in this book.
+
+
+HOWTO Write a function
+========================
+
+Watch `this talk <https://www.youtube.com/watch?v=rrBJVMyD-Gs>`_ by Jack
+Diederich at PyCon US 2018 to learn more about how to write clean Python
+functions and many other tips.
+
