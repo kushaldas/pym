@@ -280,7 +280,7 @@ In Python3.8 we can use the following style to help printing values along with t
 .format method
 ---------------
 
-In older versions of Python, we can use `format` method.
+We can also use `format` method in a string inside.
 
 ::
 
