@@ -37,10 +37,10 @@ After opening a file one should always close the opened file. We use method *clo
     <_io.TextIOWrapper name='love.txt' mode='r' encoding='UTF-8'>
     >>> fobj.close()
 
-.. important:: Important
-
+.. important::
    Always make sure you *explicitly* close each open file, once its job is done and you have no reason to keep it open.
    Because
+
    - There is an upper limit to the number of files a program can open. If you exceed that limit, there is no reliable way of recovery, so the program could crash.
    - Each open file consumes some main-memory for the data-structures associated with it, like file descriptor/handle or file locks etc. So you could essentially end-up wasting lots of memory if you have more files open that are not useful or usable.
    - Open files always stand a chance of corruption and data loss.
@@ -178,12 +178,10 @@ In this example we will copy a given text file to another file.
         print("Wrong parameter")
         print("./copyfile.py file1 file2")
         sys.exit(1)
-    f1 = open(sys.argv[1])
-    s = f1.read()
-    f1.close()
-    f2 = open(sys.argv[2], 'w')
-    f2.write(s)
-    f2.close()
+    with open(sys.argv[1]) as f1:
+        s = f1.read()
+    with open(sys.argv[2], 'w') as f2:
+        f2.write(s)
 
 .. note:: This way of reading file is not always a good idea, a file can be very large to read and fit in the memory. It is always better to read a known size of the file and write that to the new file.
 
