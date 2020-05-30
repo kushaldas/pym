@@ -73,11 +73,17 @@ In Python whitespace is an important thing. We divide different identifiers usin
     ^
     IndentationError: unexpected indent
 
-.. warning:: Warning
+.. warning::
    There is an extra space in the beginning of the second line which is causing the error, so always look for the proper indentation.
    You can even get into this indentation errors if you mix up tabs and spaces. Like if you use spaces and only use spaces for indentation, don't use tabs in that case. For you it may look same, but the code will give you error if you try to run it.
 
-So we can have few basic rules ready for spaces and indentation.
+This also introduce us to the first error. It is okay to see more errors while
+you are learning to code or learning Python for the first time. Start reading
+the errors from the end, and slowly go up (if there are many lines). We will
+learn more in the exceptions chapter of this book.
+
+
+We can have few basic rules ready for spaces and indentation.
 
 - Use 4 spaces for indentation.
 
@@ -94,6 +100,9 @@ There are more places where you should be following the same type of whitespace 
 - Spaces around assignments and comparisons (except in argument list)
 
 - No spaces just inside parentheses.
+
+
+.. note:: 99% of my programming errors I saw are due to typing mistakes. People can learn logic well, but you should be able to type well too. Learn touch typing, that one single skill will help you to become much better programmer than many other skills.
 
 Comments
 ========
