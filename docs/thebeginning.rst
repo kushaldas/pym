@@ -102,7 +102,7 @@ There are more places where you should be following the same type of whitespace 
 - No spaces just inside parentheses.
 
 
-.. note:: 99% of my programming errors I saw are due to typing mistakes. People can learn logic well, but you should be able to type well too. Learn touch typing, that one single skill will help you to become much better programmer than many other skills.
+.. note:: 99% of programming errors I saw are due to typing mistakes. People can learn logic well, but you should be able to type well too. Learn touch typing, that one single skill will help you to become much better programmer than many other skills.
 
 Comments
 ========
