@@ -69,7 +69,7 @@ We can store anything in the list, so first we are going to add another list  *b
     [45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90]]
     >>> a[-1]
     [45, 56, 90]
-    >>> a.extend(b) #To add the values of b not the b itself
+    >>> a.extend(b)  # To add the values of b not the b itself
     >>> a
     [45, 43624356, -3434, 1, 45, 23, 1, 111, [45, 56, 90], 45, 56, 90]
     >>> a[-1]
@@ -86,6 +86,9 @@ Above you can see how we used the *a.extend()* method to extend the list. To sor
     >>> a.sort()
     >>> a
     [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
+
+
+.. note:: Remember that `sort` method does not return the sorted list, instead the list itself will be sorted. This is done to keep performance of the code in mind. More details can be found `here <https://docs.python.org/3/faq/design.html?highlight=walrus#why-doesn-t-list-sort-return-the-sorted-list>`_.
 
 You can also delete an element at any particular position of the list using the del keyword.
 
@@ -506,5 +509,11 @@ changes the variable outside of the function.
     [1, 2, 4, 42]
 
 
+Create a calculator
+====================
 
+Here is a small problem for you. You will have to use list, and dictionary to
+create a tool, which will take input like `(* (+ 3 4) 2)` and return the answer
+like `14`. The four valid operators are `+`, `-`,  `/*`. Every operator will
+need two operands to work on. Another input `(* 2 3)` and the output is `6`.
 
