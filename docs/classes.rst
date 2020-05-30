@@ -439,14 +439,15 @@ Output:
 Special dunder methods in classes
 ==================================
 
-Below we will see some special dunder methods (the methods which has `__`
-before and after the name, example: `__init__`, we call it *dunder init*).
+Below, we will see some special dunder methods (the methods which have double
+underscores `__` before and after the name, example: `__init__`, we call it
+*dunder init*).
 
 __len__ method
 ---------------
 
 Dunder len is a method used by the *len* function to know the length of any
-iterator or similar objects. It should return an Integer. *len* function
+iterator or similar objects. It should return an Integer. The *len* function
 verifies if the returned value is Integer or not.
 
 ::
@@ -474,7 +475,7 @@ The output:
 __contains__ method
 --------------------
 
-This method helps us to use `in` with out objects. For example, if we want to
+This method helps us to use `in` with our objects. For example, if we want to
 match `"kushal" in studnet1` to be `True`, we implement `__contains__` method
 in our class.
 
