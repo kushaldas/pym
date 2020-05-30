@@ -7,9 +7,18 @@ Simple testing in Python
 What we should test ?
 =====================
 
-If possible everything in our codebase, each and every function. But it depends as a choice
-of the developers. You can skip it if it is not practical to write a robust test. As Nick Coghlan
-said in a guest session -- *... with a solid test suite, you can make big changes, confident that the externally visible behavior will remain the same*
+If possible everything in our codebase, each and every function. But it depends
+as a choice of the developers. You can skip it if it is not practical to write
+a robust test. As `Nick Coghlan <http://www.curiousefficiency.org>`_ said in a
+guest session -- *... with a solid test suite, you can make big changes,
+confident that the externally visible behavior will remain the same*
+
+To have effective tests, you should remember to write/split your code in
+smaller functions which can be tested separately. It is very easy to keep
+writing longer functions, which can do a lot of things at once. But, it will be
+increasingly difficult to test those functions. If you keep them short, and
+make sure that one function does one thing well, it will help to write better
+test cases.
 
 Unit testing
 =============
@@ -191,9 +200,14 @@ Full code
     if __name__ == '__main__':
         unittest.main()
 
+
+.. note:: The following example is for Linux only, you will have to modify the code so that it can find mount details in other operating systems properly.
+
 mounttab.py
 ============
+
 Here we have only one function *mount_details()* doing the parsing and printing mount details.
+
 ::
 
     import os
@@ -208,7 +222,7 @@ Here we have only one function *mount_details()* doing the parsing and printing 
             for line in fd:
                 line = line.strip()
                 words = line.split()
-                print()'%s on %s type %s' % (words[0],words[1],words[2]), end=' ')
+                print(f'{words[0]} on {words[1]} type {words[2]}', end=' ')
                 if len(words) > 5:
                     print('(%s)' % ' '.join(words[3:-2]))
                 else:
@@ -221,7 +235,9 @@ Here we have only one function *mount_details()* doing the parsing and printing 
 
 After refactoring
 =================
+
 Now we refactored the code and have one new function *parse_mounts* which we can test easily.
+
 ::
 
     import os
@@ -304,6 +320,7 @@ and the test code for the same.
 
 Test coverage
 =============
+
 Test coverage is a simple way to find untested parts of a codebase. It does not
 tell you how good your tests are.
 
@@ -311,12 +328,12 @@ In Python we already have a nice coverage tool to help us. You can install it in
 
 ::
 
-    # yum install python-coverage
+    # dnf install python3-coverage
 
 Or using `pip`.
 ::
 
-    $ pip install coverage
+    $ python3 -m pip install coverage
 
 Coverage Example
 ================
@@ -332,3 +349,4 @@ Coverage Example
     mounttest      14      0   100%
     -----------------------------------------
     TOTAL          35      7    80%
+
