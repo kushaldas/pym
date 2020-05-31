@@ -347,25 +347,6 @@ You must remember that no mutable object can be a *key*, that means you can not 
     >>> dict((('Indian','Delhi'),('Bangladesh','Dhaka')))
     {'Indian': 'Delhi', 'Bangladesh': 'Dhaka'}
 
-.. index:: items
-
-If you want to loop through a dict use *items()* method.
-
-::
-
-    >>> data
-    {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
-    >>> for x, y in data.items():
-    ...     print("%s uses %s" % (x, y))
-    ...
-    Kushal uses Fedora
-    Jace uses Mac
-    kart_ uses Debian
-    parthan uses Ubuntu
-
-For Python 3.7 dictionaries maintain the insertion order of the items. While looping over *items()* method,
-you will get the key/value combination based on the insertion order of those items.
-
 Many times it happens that we want to add more data to a value in a dictionary and if the key does not exists then we add some default value. You can do this efficiently using *dict.setdefault(key, default)*.
 ::
 
@@ -390,6 +371,45 @@ When we try to get value for a key which does not exists we get *KeyError*. We c
     KeyError: 'foo'
     >>> data.get('foo', 0)
     0
+
+
+Looping over a dictionary
+--------------------------
+
+If you just do a `for` loop over a dictionary, it will provide you all the available keys in the dictionary.
+
+::
+
+    >>> data
+    {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
+    >>> for x in data:
+    ...     print(f"Key = {x}")
+    ...
+    Kushal
+    Jace
+    kart_
+    parthan
+
+
+.. index:: items
+
+If you want to loop through a dict use *items()* method.
+
+::
+
+    >>> data
+    {'Kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
+    >>> for x, y in data.items():
+    ...     print("%s uses %s" % (x, y))
+    ...
+    Kushal uses Fedora
+    Jace uses Mac
+    kart_ uses Debian
+    parthan uses Ubuntu
+
+From Python 3.7 dictionaries maintain the insertion order of the items. While
+looping over *items()* method, you will get the key/value combination based on
+the insertion order of those items.
 
 .. index:: enumerate
 
