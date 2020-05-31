@@ -10,6 +10,7 @@ Python has a few built-in data structures. If you are wondering what a data stru
 
 Lists
 =====
+
 ::
 
     >>> a = [23, 45, 1, -3434, 43624356, 234]
@@ -80,6 +81,7 @@ We can store anything in the list, so first we are going to add another list  *b
 Above you can see how we used the *a.extend()* method to extend the list. To sort any list we have *sort()* method. The *sort()* method will only work if elements in the list are comparable. We will remove the list b from the list and then sort. 
 
 ::
+
     >>> a.remove(b)
     >>> a
     [45, 43624356, -3434, 1, 45, 23, 1, 111, 45, 56, 90]
@@ -528,6 +530,9 @@ changes the variable outside of the function.
     print(numbers)
     [1, 2, 4, 42]
 
+
+.. note:: Please go through the documentation for the mentioned data types in docs.python.org, at least have a look
+at the different methods available on them. For most of the day to day work, we use these data types in our Python code. So, it is important to understand them well. Before you move into next chapter, read the help documentation if nothing else. For example: `help(dict)` or `help(list)`.
 
 Create a calculator
 ====================
