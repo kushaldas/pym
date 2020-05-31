@@ -532,7 +532,7 @@ changes the variable outside of the function.
 
 
 .. note:: Please go through the documentation for the mentioned data types in docs.python.org, at least have a look
-at the different methods available on them. For most of the day to day work, we use these data types in our Python code. So, it is important to understand them well. Before you move into next chapter, read the help documentation if nothing else. For example: `help(dict)` or `help(list)`.
+          at the different methods available on them. For most of the day to day work, we use these data types in our Python code. So, it is important to understand them well. Before you move into next chapter, read the help documentation if nothing else. For example: `help(dict)` or `help(list)`.
 
 Create a calculator
 ====================
