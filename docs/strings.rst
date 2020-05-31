@@ -7,10 +7,10 @@ Strings are nothing but simple text. In Python we declare strings in between "" 
 
 ::
 
-    >>> s = "I am Indian"
+    >>> s = "I love Python 🐍"
     >>> s
-    'I am Indian'
-    >>> s = 'I am Indian'
+    'I love Python 🐍'
+    >>> s = 'I love Python 🐍'
     >>> s = "Here is a line \
     ... split in two lines"
     >>> s
