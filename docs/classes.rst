@@ -4,7 +4,7 @@
 Class
 =====
 
-Classes and objects are pat of programming idea also known as `Object-oriented
+Classes and objects are part of programming idea also known as `Object-oriented
 programming <https://en.wikipedia.org/wiki/Object-oriented_programming>`_. Here
 the data, and functions working on the data stays together (we call those
 functions as methods in the objects). `Simula
