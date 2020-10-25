@@ -187,8 +187,8 @@ They are not re-usable.
     ...     print(c)
     ...
 
-One way to create a reusable generator is Object based generators which does not hold any state. Any class with a *__iter__* method which yields data can be used as a object generator.
-In the following example we will recreate out counter generator.
+One way to create a reusable generator is Object based generators which do not hold any state. Any class with a *__iter__* method which yields data can be used as an object generator.
+In the following example we will recreate our counter generator.
 
 ::
 
