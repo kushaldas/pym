@@ -297,6 +297,6 @@ epub_copyright = u'2008-2017, Kushal Das'
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'python': ('http://docs.python.org/3', None)}
-latex_preamble = """
+latex_preamble = r"""
 \usepackage{upquote}
 """
