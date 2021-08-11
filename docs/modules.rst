@@ -215,8 +215,8 @@ You have also noticed that we used a new style while importing the *simplebar*
 function from inside of the *mymodule* package. Using this `.` notation is
 known as `explicit import`.
 
-- `from . import foo ` # imports ./foo.py
-- `from .bars import foo ` # imports foo from ./bars.py
+- `from . import foo` # imports ./foo.py
+- `from .bars import foo` # imports foo from ./bars.py
 - `from .. import foo` # imports ../foo.py
 - `from ..life import foo` # imports ../life/foo.py
 
