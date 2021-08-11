@@ -39,7 +39,7 @@ Using a source file
 
 As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>`_ or `gedit <https://wiki.gnome.org/Apps/Gedit>`_.
 
-Open a shell or terinal and perform these steps.
+Open a shell or terminal and perform these steps.
 
 1. Enter the following text:
 
