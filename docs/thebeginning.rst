@@ -10,7 +10,7 @@ can write the code in a file and then run the file. In this topic, we will
 first write the code using the interpreter, after starting Python in the
 command prompt (shell or terminal). If you are new to Linux command line,
 you can read about Linux commands in `this
-book <https://lym.readthedocs.io/en/latest/>`.
+book <https://lym.readthedocs.io/en/latest/>`_.
 
 
 The following is from Fedora 32 machine.
@@ -37,7 +37,7 @@ In our first code we are going to print "Hello World!" using the interpreter. To
 Using a source file
 =====================
 
-As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>` or `gedit <https://wiki.gnome.org/Apps/Gedit>`.
+As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>`_ or `gedit <https://wiki.gnome.org/Apps/Gedit>`_.
 
 Open a shell or terinal and perform these steps.
 
