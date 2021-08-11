@@ -36,7 +36,7 @@ Then we execute the file.
 Else statement
 ==============
 
-Now in the above example we want to print "Greater than" if the number is greater than 100. For that we have to use the *else* statement. This works when the *if*statement is not fulfilled.
+Now in the above example we want to print "Greater than" if the number is greater than 100. For that we have to use the *else* statement. This works when the *if* statement is not fulfilled.
 
 ::
 
