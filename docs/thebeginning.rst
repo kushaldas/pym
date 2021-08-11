@@ -101,7 +101,7 @@ There are more places where you should be following the same type of whitespace 
 
 - Add a space after "," in dicts, lists, tuples, and argument lists and after ":" in dicts.
 
-- Spaces around assignments and comparisons (except in argument list)
+- Spaces around assignments and comparisons (except in argument list).
 
 - No spaces just inside parentheses.
 
