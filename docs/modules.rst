@@ -56,7 +56,7 @@ Now we are going to see how modules work. Create a file called bars.py. Content 
         Prints a bar with -
 
         :arg num: Length of the bar
-        
+
         """
         print("-" * num)
 
@@ -136,7 +136,7 @@ a single function from the module. Look at the following updated `bars.py` examp
         Prints a bar with -
 
         :arg num: Length of the bar
-        
+
         """
         print("-" * num)
 
@@ -164,7 +164,7 @@ the module from there. All imported modules are of type `module`.
     ['ANSWER', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'hashbar', 'simplebar', 'starbar']
     >>> type(bars)
     <class 'module'>
-    >>> bars.__name__ 
+    >>> bars.__name__
     'bars'
     >>> bars.__file__
     '/home/kdas/code/pym/code/bars.py'
@@ -317,7 +317,7 @@ Using the *view_dir* example.
 ::
 
     >>> view_dir('/')
-    .readahead bin boot dev etc home junk lib lib64 lost+found media mnt opt 
+    .readahead bin boot dev etc home junk lib lib64 lost+found media mnt opt
     proc root run sbin srv sys tmp usr var
 
 
@@ -355,7 +355,7 @@ The *text* attribute holds the HTML returned by the server.
 Using this knowledge, let us write a command which can download a given file (URL) from Internet.
 
 
-.. code:: python 
+.. code:: python
 
     #!/usr/bin/env python3
     import os
@@ -383,7 +383,7 @@ Using this knowledge, let us write a command which can download a given file (UR
 
 
 Here we used something new, when the module name is *__main__*, then only
-ask for a user input and then download the given URL. This also prevents 
+ask for a user input and then download the given URL. This also prevents
 the same when some other Python code imports this file as a Python module.
 
 To learn more about requests module, go to their `wonderful documentation <http://docs.python-requests.org>`_.

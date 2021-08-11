@@ -469,7 +469,7 @@ The output:
 
 ::
 
-    $ python3 code/lenexample.py 
+    $ python3 code/lenexample.py
     Length of the f object is 5
 
 __contains__ method
@@ -587,7 +587,7 @@ Let us look at it in details in the following example.
 
         def can_sudo(self):
             return self.sudo
-    
+
     u = User("kdas", 1000, 1000, "/home/kdas", True)
     pprint(u.__dict__)
 

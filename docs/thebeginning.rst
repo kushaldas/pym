@@ -18,10 +18,10 @@ The following is from Fedora 32 machine.
 ::
 
 
-    Python 3.8.2rc1 (default, Feb 12 2020, 00:00:00) 
+    Python 3.8.2rc1 (default, Feb 12 2020, 00:00:00)
     [GCC 10.0.1 20200130 (Red Hat 10.0.1-0.7)] on linux
     Type "help", "copyright", "credits" or "license" for more information.
-    >>> 
+    >>>
 
 
 Using the Python interpreter
@@ -37,9 +37,9 @@ In our first code we are going to print "Hello World!" using the interpreter. To
 Using a source file
 =====================
 
-As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>` or `gedit <https://wiki.gnome.org/Apps/Gedit>`. 
+As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>` or `gedit <https://wiki.gnome.org/Apps/Gedit>`.
 
-Open a shell or terinal and perform these steps. 
+Open a shell or terinal and perform these steps.
 
 1. Enter the following text:
 

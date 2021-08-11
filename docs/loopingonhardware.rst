@@ -12,7 +12,7 @@ One NeoPixel at a time
 
 .. figure:: img/oneneoatatime.gif
 
-The `cpx.pixels` can be accessed by index numbers, from 0 to 9. This way, we can turn on 
+The `cpx.pixels` can be accessed by index numbers, from 0 to 9. This way, we can turn on
 one NeoPixel at a time.
 
 .. code-block:: python

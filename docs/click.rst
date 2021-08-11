@@ -71,7 +71,7 @@ is optional).
 
 ::
 
-    $ myhello 
+    $ myhello
     Hello World
     $ myhello --help
     Usage: myhello [OPTIONS]
@@ -160,7 +160,7 @@ option which will take a string as input.
     --help       Show this message and exit.
     $ myhello
     Hello World
-    Bye 
+    Bye
     $ myhello --name kushal
     Hello World
     Bye kushal
@@ -260,8 +260,8 @@ The output looks like below:
     --password TEXT
     --help           Show this message and exit.
     $ myhello
-    Password: 
-    Repeat for confirmation: 
+    Password:
+    Repeat for confirmation:
     Hello World
     We received hello as password.
 

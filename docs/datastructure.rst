@@ -78,7 +78,7 @@ We can store anything in the list, so first we are going to add another list  *b
 
 .. index:: sort
 
-Above you can see how we used the *a.extend()* method to extend the list. To sort any list we have *sort()* method. The *sort()* method will only work if elements in the list are comparable. We will remove the list b from the list and then sort. 
+Above you can see how we used the *a.extend()* method to extend the list. To sort any list we have *sort()* method. The *sort()* method will only work if elements in the list are comparable. We will remove the list b from the list and then sort.
 
 ::
 
@@ -525,7 +525,7 @@ changes the variable outside of the function.
 
     def modify(numbers):
         numbers.append(42)
-    
+
     modify(numbers)
     print(numbers)
     [1, 2, 4, 42]
