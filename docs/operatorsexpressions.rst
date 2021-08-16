@@ -195,7 +195,7 @@ At first *x* is being calculated. The steps are like this:
 
 ::
 
-    9 - 12 / 3 + 3 * 2 -1
+    9 - 12 / 3 + 3 * 2 - 1
     9 - 4 + 3 * 2 - 1
     9 - 4 + 6 - 1
     5 + 6 - 1
