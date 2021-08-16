@@ -4,7 +4,7 @@
 Operators and expressions
 =========================
 
-In Python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like *2 + 3* .
+In Python most of the lines you will write will be expressions. Expressions are made of operators and operands. An expression is like *2 + 3*.
 
 Operators
 =========
@@ -20,7 +20,7 @@ Operators are the symbols which tells the Python interpreter to do some mathemat
     >>> 22.0 / 12
     1.8333333333333333
 
-To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator
+To get floating result you need to the division using any of operand as floating number. To do modulo operation use % operator.
 
 ::
 
@@ -30,7 +30,7 @@ To get floating result you need to the division using any of operand as floating
 Example of integer arithmetic
 =============================
 
-The code
+The code:
 
 ::
 
@@ -40,7 +40,7 @@ The code
     days = days % 30
     print("Months = %d Days = %d" % (months, days))
 
-The output
+The output:
 
 ::
 
@@ -48,7 +48,7 @@ The output
     Enter days: 265
     Months = 8 Days = 25
 
-In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way
+In the first line I am taking the input of days, then getting the months and days and at last printing them. You can do it in a easy way:
 
 ::
 
@@ -56,12 +56,12 @@ In the first line I am taking the input of days, then getting the months and day
     days = int(input("Enter days: "))
     print("Months = %d Days = %d" % (divmod(days, 30)))
 
-The divmod(num1, num2) function returns two values , first is the division of num1 and num2 and in second the modulo of num1 and num2.
+The divmod(num1, num2) function returns two values, first is the division of num1 and num2 and in second the modulo of num1 and num2.
 
 Relational Operators
 ====================
 
-You can use the following operators as relational operators
+You can use the following operators as relational operators:
 
 Relational Operators
 --------------------
@@ -82,7 +82,7 @@ Relational Operators
 | !=       | Is not equal to             |
 +----------+-----------------------------+
 
-Some examples
+Some examples:
 
 ::
 
@@ -95,7 +95,7 @@ Some examples
     >>> 34 != 323
     True
 
-*//* operator gives the floor division result
+*//* operator gives the floor division result.
 
 ::
 
@@ -107,7 +107,7 @@ Some examples
 Logical Operators
 =================
 
-To do logical AND , OR we use *and* ,*or* keywords. *x and y* returns *False* if *x* is *False* else it returns evaluation of *y*. If *x* is *True*, it returns *True*.
+To do logical AND, OR we use *and*, *or* keywords. *x and y* returns *False* if *x* is *False* else it returns evaluation of *y*. If *x* is *True*, it returns *True*.
 
 ::
 
@@ -123,7 +123,7 @@ To do logical AND , OR we use *and* ,*or* keywords. *x and y* returns *False* if
 Shorthand Operator
 ==================
 
-*x op = expression* is the syntax for shorthand operators. It will be evaluated like *x = x op expression* , Few examples are
+*x op = expression* is the syntax for shorthand operators. It will be evaluated like *x = x op expression*, few examples are:
 
 ::
 
@@ -138,7 +138,7 @@ Shorthand Operator
     >>> a
     840.3333333333334
 
-shorthand.py example
+shorthand.py example:
 
 .. code-block:: python
 
@@ -149,7 +149,7 @@ shorthand.py example
         print("%d" % a)
         a *= a
 
-The output
+The output:
 
 ::
 
@@ -161,13 +161,13 @@ The output
 Expressions
 ===========
 
-Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like
+Generally while writing expressions we put spaces before and after every operator so that the code becomes clearer to read, like:
 
 ::
 
     a = 234 * (45 - 56.0 / 34)
 
-One example code used to show expressions
+One example code used to show expressions:
 
 ::
 
@@ -182,7 +182,7 @@ One example code used to show expressions
     print("Y = ", y)
     print("Z = ", z)
 
-The output
+The output:
 
 ::
 
@@ -191,7 +191,7 @@ The output
     Y =  7
     Z =  4
 
-At first *x* is being calculated. The steps are like this
+At first *x* is being calculated. The steps are like this:
 
 ::
 
@@ -207,7 +207,7 @@ Now for *y* and *z* we have parentheses, so the expressions evaluated in differe
 Type Conversions
 ================
 
-We have to do the type conversions manually. Like
+We have to do the type conversions manually. Like:
 ::
 
     float(string) -> float value
@@ -220,7 +220,7 @@ We have to do the type conversions manually. Like
 evaluateequ.py
 ==============
 
-This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n =10
+This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n = 10.
 
 .. code-block:: python
 
@@ -230,7 +230,7 @@ This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in ou
         sum += 1.0 / i
         print("%2d %6.4f" % (i , sum))
 
-The output
+The output:
 
 ::
 
@@ -251,7 +251,7 @@ In the line *sum += 1.0 / i* what is actually happening is *sum = sum + 1.0 / i*
 quadraticequation.py
 ====================
 
-This is a program to evaluate the quadratic equation
+This is a program to evaluate the quadratic equation:
 
 ::
 
@@ -288,7 +288,7 @@ In this example we are going to calculate the salary of a camera salesman. His b
     print("Commision    = %6.2f" % commision)
     print("Gross salary = %6.2f" % (basic_salary + bonus + commision))
 
-The output
+The output:
 
 ::
 
