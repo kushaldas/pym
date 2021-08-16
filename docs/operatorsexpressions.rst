@@ -107,7 +107,7 @@ Some examples:
 Logical Operators
 =================
 
-To do logical AND, OR we use *and*, *or* keywords. *x and y* returns *False* if *x* is *False* else it returns evaluation of *y*. If *x* is *True*, it returns *True*.
+To do logical AND, OR we use *and*, *or* keywords. *x and y* returns *False* if *x* is *False* else it returns evaluation of *y*. Whereas, *x or y* returns *True* if either of *x* or *y* is *True* else it returns *False*.
 
 ::
 
