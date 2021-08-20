@@ -371,13 +371,13 @@ range() is a builtin class. From the help document:
 
 ::
 
-class range(object)
- |  range(stop) -> range object
- |  range(start, stop[, step]) -> range object
- |
- |  Return a virtual sequence of numbers from start to stop by step.
- |
- |  Methods defined here:
+   class range(object)
+     |  range(stop) -> range object
+     |  range(start, stop[, step]) -> range object
+     |
+     |  Return a virtual sequence of numbers from start to stop by step.
+     |
+     |  Methods defined here:
 
 
 Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function:
