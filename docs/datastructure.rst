@@ -539,6 +539,6 @@ Create a calculator
 
 Here is a small problem for you. You will have to use list, and dictionary to
 create a tool, which will take input like `(* (+ 3 4) 2)` and return the answer
-like `14`. The four valid operators are `+`, `-`,  `/*`. Every operator will
+like `14`. The four valid operators are `+`, `-`, `/`, `*`. Every operator will
 need two operands to work on. Another input `(* 2 3)` and the output is `6`.
 
