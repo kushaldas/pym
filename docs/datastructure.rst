@@ -184,7 +184,7 @@ A few special functions related to lists
     >>> max(numbers)
     5
 
-There are two other functions related to boolean value checking, `any` and `all`. `any` tells us if any of the value in the list if `True`.
+There are two other functions related to boolean value checking, `any` and `all`. `any` tells us if any of the value in the list is `True`.
 `all` tells us if all the values in the list are `True` or not.
 
 ::
