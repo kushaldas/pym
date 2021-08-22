@@ -35,7 +35,7 @@ Now if you want to multiline strings you have to use triple single/double quotes
     write many lines
 
 
-We can have two string literals side by side, and it will behave like a single string. For example
+We can have two string literals side by side, and it will behave like a single string. For example:
 
 ::
 
@@ -95,7 +95,7 @@ Every string object is having couple of builtin methods available, we already sa
     >>> s.isalnum()
     True
 
-Because of the space in the first line *isalnum()* returned *False* , it checks for all characters are alpha numeric or not.
+Because of the space in the first line *isalnum()* returned *False*, it checks for all characters are alpha numeric or not.
 
 ::
 
@@ -123,7 +123,7 @@ Because of the space in the first line *isalnum()* returned *False* , it checks 
     >>> s.isupper() # To check if characters are in upper case or not
     True
 
-To split any string we have *split()*. It takes a string as an argument , depending on that it will split the main string and returns a list containing splitted strings.
+To split any string we have *split()*. It takes a string as an argument, depending on that it will split the main string and returns a list containing splitted strings.
 
 ::
 
@@ -198,7 +198,7 @@ Palindrome are the kind of strings which are same from left or right whichever w
     else:
         print("The string is not a palindrome")
 
-The output
+The output:
 
 ::
 
@@ -212,7 +212,7 @@ The output
 Number of words
 ===============
 
-In this example we will count the number of words in a given line
+In this example we will count the number of words in a given line:
 
 ::
 
@@ -220,7 +220,7 @@ In this example we will count the number of words in a given line
     s = input("Enter a line: ")
     print("The number of words in the line are %d" % (len(s.split(" "))))
 
-The output
+The output:
 ::
 
     $ ./countwords.py
