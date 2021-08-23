@@ -11,7 +11,7 @@ then call it where ever required. We already saw build in functions like
 Defining a function
 ===================
 
-We use *def* keyword to define a function. General syntax is like
+We use *def* keyword to define a function. General syntax is like:
 
 ::
 
@@ -28,7 +28,7 @@ the sum.
     ...     return a + b
 
 In the second line with the *return* keyword, we are sending back the value of
-*a + b* to the caller. You must call it like
+*a + b* to the caller. You must call it like:
 
 ::
 
@@ -80,7 +80,7 @@ To understand local and global variables we will go through two examples.
     print(f"After the function call {a}")
 
 
-The output
+The output:
 ::
 
     $ ./local.py
@@ -113,7 +113,7 @@ Here by using global keyword we are telling that *a* is globally defined, so
 when we are changing a's value inside the function it is actually changing for
 the *a* outside of the function also.
 
-The output
+The output:
 ::
 
     $ ./local.py
@@ -137,7 +137,7 @@ give any value for that particular variable it will be assigned automatically.
 
 In the above example we have written *b = -99* in the function parameter list.
 That means if no value for *b* is given then b's value is *-99*. This is a very
-simple example of default arguments. You can test the code by
+simple example of default arguments. You can test the code by:
 
 ::
 
@@ -151,7 +151,7 @@ simple example of default arguments. You can test the code by
    Remember that you can not have an argument without default argument if you already have one argument with default values before it. Like *f(a, b=90, c)* is illegal as *b* is having a default value but after that *c* is not having any default value.
 
 Also remember that default value is evaluated only once, so if you have any
-mutable object like list it will make a difference. See the next example
+mutable object like list it will make a difference. See the next example:
 
 ::
 
@@ -166,7 +166,7 @@ mutable object like list it will make a difference. See the next example
     >>> print(f(3))
     [1, 2, 3]
 
-To avoid this you can write more idiomatic Python, like the following
+To avoid this you can write more idiomatic Python, like the following:
 
 ::
 
@@ -200,7 +200,7 @@ Keyword arguments
 In the above example you can see we are calling the function with variable
 names, like *func(12, c = 24)*, by that we are assigning *24* to *c* and *b* is
 getting its default value. Also remember that you can not have without keyword
-based argument after a keyword based argument. like
+based argument after a keyword based argument, like:
 
 ::
 
@@ -325,7 +325,7 @@ returns another function to add 5 to the given argument.
 
 Here when we call `givemefive`, it is actually returning the function `add5`,
 and storing into `myadder`. Finally when we call the `myadder`, it adds 5 to
-the given argument, and returns it. We also printed the `type` of `myadder`
+the given argument, and returns it. We also printed the `type` of `myadder`.
 
 ::
 
