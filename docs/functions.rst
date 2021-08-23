@@ -146,7 +146,7 @@ simple example of default arguments. You can test the code by:
     >>> test(12)
     True
 
-.. important:: Important
+.. important::
 
    Remember that you can not have an argument without default argument if you already have one argument with default values before it. Like *f(a, b=90, c)* is illegal as *b* is having a default value but after that *c* is not having any default value.
 
