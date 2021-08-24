@@ -17,7 +17,7 @@ To open a file we use *open()* function. It requires two arguments, first the fi
 
 + "a" -> open in append mode.
 
-The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file:
+The default mode is read only, i.e. if you do not provide any mode it will open the file as read only. Let us open a file:
 
 ::
 
@@ -231,7 +231,7 @@ Let us try to write an application which will count the spaces, tabs, and lines 
 
         :arg path: Path of the text file to parse
 
-        :return: A tuple with count of spacaes, tabs and lines.
+        :return: A tuple with count of spaces, tabs and lines.
         """
         fd = open(path)
         i = 0
@@ -275,7 +275,7 @@ You can see that we have two functions in the program, *main* and *parse_file* w
 Let us write some real code
 ===========================
 
-Do you know how many CPU(s) are there in your processor? or what is the model name?
+Do you know how many CPU(s) are there in your processor? Or what is the model name?
 Let us write some code which can help us to know these things.
 
 If you are in Linux, then you can actually view the output of the *lscpu* command first.
