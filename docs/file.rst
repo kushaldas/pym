@@ -116,7 +116,7 @@ In real life scenarios we should try to use `with` statement. It will take care 
 
     >>> with open('setup.py') as fobj:
     ...     for line in fobj:
-    ...         print line,
+    ...         print(line, end="")
     ...
     #!/usr/bin/env python3
     """Factorial project"""
