@@ -4,20 +4,20 @@
 File handling
 =============
 
-A file is some information or data which stays in the computer storage devices. You already know about different kinds of file , like your music files, video files, text files. Python gives you easy ways to manipulate these files. Generally we divide files in two categories, text file and binary file. Text files are simple text where as the binary files contain binary data which is only readable by computer.
+A file is some information or data which stays in the computer storage devices. You already know about different kinds of file, like your music files, video files, text files. Python gives you easy ways to manipulate these files. Generally we divide files in two categories, text file and binary file. Text files are simple text where as the binary files contain binary data which is only readable by computer.
 
 File opening
 ============
 
-To open a file we use *open()* function. It requires two arguments, first the file path or file name, second which mode it should open. Modes are like
+To open a file we use *open()* function. It requires two arguments, first the file path or file name, second which mode it should open. Modes are like:
 
-+ "r" -> open read only, you can read the file but can not edit / delete anything inside
++ "r" -> open read only, you can read the file but can not edit / delete anything inside.
 
-+ "w" -> open with write power, means if the file exists then delete all content and open it to write
++ "w" -> open with write power, means if the file exists then delete all content and open it to write.
 
-+ "a" -> open in append mode
++ "a" -> open in append mode.
 
-The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file
+The default mode is read only, ie if you do not provide any mode it will open the file as read only. Let us open a file:
 
 ::
 
@@ -98,7 +98,7 @@ Let us write a program which will take the file name as the input from the user 
 
 In the last line you can see that we closed the file object with the help of close() method.
 
-The output
+The output:
 
 ::
 
@@ -152,7 +152,7 @@ We can also pass the file object to the print function call, so that it writes i
     >>> print("This is the last line.", file=fobj)
     >>> fobj.close()
 
-Now read the file we just created
+Now read the file we just created.
 
 ::
 
@@ -198,7 +198,7 @@ The first value in *sys.argv* is the name of the command itself.
     for i, x  in enumerate(sys.argv):
         print(i, x)
 
-The output
+The output:
 
 ::
 
@@ -268,7 +268,7 @@ Let us try to write an application which will count the spaces, tabs, and lines 
             sys.exit(-1)
         sys.exit(0)
 
-You can see that we have two functions in the program , *main* and *parse_file* where the second one actually parses the file and returns the result and we print the result in *main* function. By splitting up the code in smaller units (functions) helps us to organize the codebase and also it will be easier to write test cases for the functions.
+You can see that we have two functions in the program, *main* and *parse_file* where the second one actually parses the file and returns the result and we print the result in *main* function. By splitting up the code in smaller units (functions) helps us to organize the codebase and also it will be easier to write test cases for the functions.
 
 
 
