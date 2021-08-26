@@ -58,9 +58,9 @@ We use `try...except` blocks to handle any exception. The basic syntax looks lik
 
 It works in the following way:
 
-    - First all lines between `try` and `except` statements.
-    - If `ExceptionName` happens during execution of the statements then `except` clause statements execute
-    - If no exception happens then the statements inside `except` clause does not execute.
+    - First execute statement(s) between `try` and `except` keywords.
+    - If no exception happens then the statement(s) inside `except` clause does not execute.
+    - If an exception type, `ExceptionName` happens during execution of the statement(s) then rest of the `try` clause statement(s) skipped and `except` clause statement(s) get executed.
     - If the `Exception` is not handled in the `except` block then it goes out of `try` block.
 
 The following examples showcase these scenarios.
