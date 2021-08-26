@@ -45,7 +45,7 @@ is to do addition of Integers and a string.
 How to handle exceptions?
 =========================
 
-We use `try...except` blocks to handle any exception. The basic syntax looks like
+We use `try...except` blocks to handle any exception. The basic syntax looks like:
 ::
 
     try:
