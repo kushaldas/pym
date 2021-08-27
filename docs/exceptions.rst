@@ -131,8 +131,7 @@ Using finally for cleanup
 ==========================
 
 If we want to have some statements which must be executed under all circumstances,
-we can use `finally` clause, it will be always executed before finishing `try`
-statements.
+we can use `finally` clause, it will be always executed just before finishing exception handling.
 ::
 
     >>> try:
