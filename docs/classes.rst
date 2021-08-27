@@ -121,7 +121,7 @@ Unique class level variables
 All the values stored in the instance via `self.` are data inside of an
 instance. Each instance of the class can have different values for given
 attribute (anything we access via . is also known as attribute). But, when we
-define an variable in the class level, that is same accross all objects. In
+define a variable in the class level, that is same across all objects. In
 the following example, we define a class called `Point`, and we also have a
 special class level variable called `style` in it. After we create 2 objects
 of type `Point`, we can see that both has the same `class` attribute `style`
@@ -273,7 +273,7 @@ class) and when we call *get_details()* on the student1 or person1 object it
 returns based on *get_details()* method implemented in it's own class.
 
 
-When a class inherites another class, the child class is also known as the
+When a class inherits another class, the child class is also known as the
 instance of the parent class. Here is an example based on the above class.
 
 ```Python
@@ -448,7 +448,7 @@ __len__ method
 
 Dunder len is a method used by the *len* function to know the length of any
 iterator or similar objects. It should return an Integer. The *len* function
-verifies whether the returned value is Integer or not.
+verifies whether the returned value is an Integer or not.
 
 ::
 
@@ -476,7 +476,7 @@ __contains__ method
 --------------------
 
 This method helps us to use `in` with our objects. For example, if we want to
-match `"kushal" in studnet1` to be `True`, we implement `__contains__` method
+match `"kushal" in student1` to be `True`, we implement `__contains__` method
 in our class.
 
 
@@ -530,7 +530,7 @@ Do you remember the `with` statement from the `files` chapter? Where we used a
 context manager to make sure that the file is closed after we are done? The
 same style is used in many places where we want the resources to be cleaned up
 after the work is done; sometimes we want to call some extra functions when we are
-done. We can write our own context manager in our classs using `__enter__` and
+done. We can write our own context manager in our classes using `__enter__` and
 `__exit__` methods.
 
 For example, we will create a new class called `TimeLog` which in turn will
