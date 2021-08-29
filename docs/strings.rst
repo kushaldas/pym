@@ -106,7 +106,7 @@ Because of the space in the first line *isalnum()* returned *False*, it checks f
     >>> s.isalpha()
     False
 
-*isalpha()* checkes for only alphabets.
+*isalpha()* checks for only alphabets.
 
 ::
 
