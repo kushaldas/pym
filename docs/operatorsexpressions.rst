@@ -220,7 +220,7 @@ We have to do the type conversions manually. Like:
 evaluateequ.py
 ==============
 
-This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series upto n, in our case x = 1 and n = 10.
+This is a program to evaluate 1/x+1/(x+1)+1/(x+2)+ ... +1/n series up to n, in our case x = 1 and n = 10.
 
 .. code-block:: python
 
