@@ -123,7 +123,7 @@ Because of the space in the first line *isalnum()* returned *False*, it checks f
     >>> s.isupper() # To check if characters are in upper case or not
     True
 
-To split any string we have *split()*. It takes a string as an argument, depending on that it will split the main string and returns a list containing splitted strings.
+To split any string we have *split()*. It takes a string as an argument, depending on that it will split the main string and returns a list of the words in the string.
 
 ::
 
