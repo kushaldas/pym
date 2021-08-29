@@ -20,7 +20,7 @@ Python name (think about any variable name) and in lowercase.
 You can find the name of the module by accessing the *__name__* variable. It
 is a global variable.
 
-Now we are going to see how modules work. Create a file called bars.py. Content of the file is given bellow.
+Now we are going to see how modules work. Create a file called bars.py. Content of the file is given below.
 
 ::
 
@@ -93,7 +93,7 @@ There are different ways to import modules. We already saw one way to do this. Y
 .. warning:: It is suggested to avoid *from module import \** for importing from the modules.
 
 
-Remember that when we import and module, the Python interpreter executes the
+Remember that when we import a module, the Python interpreter executes the
 whole file, and then imports it as a module. This is true even when we import
 a single function from the module. Look at the following updated `bars.py` example.
 
@@ -248,7 +248,7 @@ Now your Python installation comes with different modules installed, you can use
 
 The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
 
-You can also use *help()* function in the interpeter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
+You can also use *help()* function in the interpreter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
 
 ::
 
@@ -288,7 +288,7 @@ Module os
     >>> os.uname()
     ('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')
 
-*getcwd()*returns the current working directory. *chdir(path)* changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to */tmp* and then again checking the current directory.
+*getcwd()* returns the current working directory. *chdir(path)* changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to */tmp* and then again checking the current directory.
 
 ::
 
@@ -328,7 +328,7 @@ Requests Module
 
 requests is a Python module which changed the way people used to write code for many many projects. It helps
 you to do HTTP GET or POST calls in a very simple but elegant way. This is a third party module, that means
-you have to install it from your OS distribution packages, it does not come default.
+you have to install it from your OS distribution packages, it does not come by default.
 
 ::
 
