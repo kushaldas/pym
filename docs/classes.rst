@@ -448,7 +448,7 @@ __len__ method
 
 Dunder len is a method used by the *len* function to know the length of any
 iterator or similar objects. It should return an Integer. The *len* function
-verifies if the returned value is Integer or not.
+verifies whether the returned value is Integer or not.
 
 ::
 
