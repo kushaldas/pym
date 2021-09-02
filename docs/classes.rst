@@ -366,7 +366,7 @@ Getters and setters in Python
 
 One simple answer, don't. If you are coming from other languages (like Java), you will be tempted
 to use getters or setters in all your classes. Please don't. Just use the attributes directly.
-The following shows a direct example.
+The following shows a direct example:
 ::
 
     >>> class Student(object):
@@ -528,8 +528,8 @@ Creating a new context manager
 ===============================
 
 Do you remember the `with` statement from the `files` chapter? Where we used a
-context manager to make sure that the file is closed after we are done? The
-same style is used in many places where we want the resources to be cleaned up
+context manager to make sure that the file is closed after we are done. The
+same style is used in many places, where we want the resources to be cleaned up
 after the work is done; sometimes we want to call some extra functions when we are
 done. We can write our own context manager in our classes using `__enter__` and
 `__exit__` methods.
@@ -568,13 +568,13 @@ Output in the `tmpdata.txt` file.
     Entering at 1590551277.323565
     Done at 1590551277.3238761
 
-Later in the book we will learn even simpler methods to create context managers.
+Later in the book, we will learn even simpler methods to create context managers.
 
 Deep down inside
 =================
 
 If we look inside of our class definitions, we will find a dictionary at the center.
-Let us look at it in details in the following example.
+Let us look at it in details in the following example:
 
 ::
 
@@ -669,7 +669,7 @@ which is used to set a value to any attribute.
 
     u = User("kdas", 1000, 1000, "/home/kdas", True)
 
-When we try to access any attribute of the object `u`, we can see the following.
+When we try to access any attribute of the object `u`, we can see the following:
 
 ::
 
