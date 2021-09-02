@@ -592,6 +592,8 @@ Let us look at it in details in the following example.
     u = User("kdas", 1000, 1000, "/home/kdas", True)
     pprint(u.__dict__)
 
+::
+
     {'gids': [1000],
      'home': '/home/kdas',
      'name': 'kdas',
