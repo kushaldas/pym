@@ -364,7 +364,7 @@ As we already know how to create an object, now we are going to see how to delet
 Getters and setters in Python
 ==============================
 
-One simple answer, don't. If you are coming from other languages (read Java), you will be tempted
+One simple answer, don't. If you are coming from other languages (like Java), you will be tempted
 to use getters or setters in all your classes. Please don't. Just use the attributes directly.
 The following shows a direct example.
 ::
