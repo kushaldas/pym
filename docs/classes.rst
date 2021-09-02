@@ -276,10 +276,11 @@ returns based on *get_details()* method implemented in it's own class.
 When a class inherits another class, the child class is also known as the
 instance of the parent class. Here is an example based on the above class.
 
-```Python
-isinstance(student1, Person)
-True
-```
+::
+
+    >>> isinstance(student1, Person)
+    True
+
 
 Multiple Inheritance
 ====================
