@@ -146,7 +146,7 @@ and changing in the class level also changes in the all objects.
     for p in [p1, p2]:
         print(f"Object {p} has style value= {p.style}")
 
-Output::
+The output::
 
     Object <__main__.Point object at 0x10de37210> has style value= fun
     Object <__main__.Point object at 0x10de0bb50> has style value= fun
@@ -427,7 +427,7 @@ the dollars in the account.
         print("Dollar amount:", acc.amount)
 
 
-Output:
+The output:
 ::
 
     $ python property.py
