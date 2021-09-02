@@ -339,7 +339,7 @@ You can see that we can still access the `_name` attribute. But, we are letting
 the developer know that `_name` is a private attribute. If you want to make
 sure that the attribute can not be accessed directly in the child class, you
 can use `__` in front of the attribute name. It uses something called `name
-mangling <https://docs.python.org/3/tutorial/classes.html#private-variables>_`.
+mangling <https://docs.python.org/3/tutorial/classes.html#private-variables>`_.
 
 
 
