@@ -316,9 +316,9 @@ can have a different variable with similar name in the child class.
         def __init__(self, name):
             self._name = name
 
-    def get_details(self):
-        "Returns a string containing name of the person"
-        return self._name
+        def get_details(self):
+            "Returns a string containing name of the person"
+            return self._name
 
 
     class Child(Person):
