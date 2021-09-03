@@ -9,7 +9,7 @@ While working on real life of problems we have to make decisions. Decisions like
 If statement
 ============
 
-The syntax looks like
+The syntax looks like:
 
 ::
 
@@ -36,7 +36,7 @@ Then we execute the file.
 Else statement
 ==============
 
-Now in the above example we want to print "Greater than" if the number is greater than 100. For that we have to use the *else* statement. This works when the *if*statement is not fulfilled.
+Now in the above example we want to print "Greater than" if the number is greater than 100. For that we have to use the *else* statement. This works when the *if* statement is not fulfilled.
 
 ::
 
@@ -47,7 +47,7 @@ Now in the above example we want to print "Greater than" if the number is greate
     else:
         print("The number is greater than 100")
 
-The output
+The output:
 
 ::
 
@@ -55,7 +55,7 @@ The output
     Enter a number: 345
     The number is greater than 100
 
-Another very basic example
+Another very basic example:
 
 ::
 
@@ -73,7 +73,7 @@ Another very basic example
 Truth value testing
 ===================
 
-The elegant way to test Truth values is like
+The elegant way to test Truth values is like:
 
 ::
 
