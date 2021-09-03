@@ -578,6 +578,8 @@ Let us look at it in details in the following example:
 
 ::
 
+    import pprint
+
     class User:
         def __init__(self, name, uid, gid, home, sudo):
             self.name = name
@@ -590,7 +592,7 @@ Let us look at it in details in the following example:
             return self.sudo
     
     u = User("kdas", 1000, 1000, "/home/kdas", True)
-    pprint(u.__dict__)
+    pprint.pprint(u.__dict__)
 
 ::
 
@@ -607,7 +609,7 @@ also in the `__dict__` of the class itself.
 
 ::
 
-    >>> pprint(User.__dict__)
+    >>> pprint.pprint(User.__dict__)
     mappingproxy({'__dict__': <attribute '__dict__' of 'User' objects>,
                   '__doc__': None,
                   '__init__': <function User.__init__ at 0x7fa8c6f1bd40>,
