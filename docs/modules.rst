@@ -321,7 +321,7 @@ Using the *view_dir* example.
     proc root run sbin srv sys tmp usr var
 
 
-There are many other very useful functions available in the OS module, you can read about them `here <https://docs.python.org/3/library/os.html>`_
+There are many other very useful functions available in the OS module, you can read about them `here <https://docs.python.org/3/library/os.html>`_.
 
 Requests Module
 ================
