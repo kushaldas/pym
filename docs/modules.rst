@@ -395,7 +395,11 @@ filename already exists in the current directory or not. Use :py:mod:`os.path` m
 Command line arguments
 ======================
 
-Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too .. important:: your application. Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
+Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too.
+
+.. important::
+
+   Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
 
 
 TAB completion in your Python interpreter
