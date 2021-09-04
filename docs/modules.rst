@@ -198,7 +198,7 @@ __all__ in __init__.py
 
 If `__init__.py` file contains a list called `__all__`, then only the names listed there will
 be public. If the mymodule's `__init__.py`
-file contains the following
+file contains the following:
 
 ::
 
@@ -246,9 +246,9 @@ Now your Python installation comes with different modules installed, you can use
 
     help> modules
 
-The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
+The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system. :)
 
-You can also use *help()* function in the interpreter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
+You can also use *help()* function in the interpreter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method:
 
 ::
 
@@ -281,14 +281,14 @@ Module os
     >>> os.getppid()
     14847
 
-*uname()* returns different information identifying the operating system, in Linux it returns details you can get from the *uname* command. The returned object is a tuple, *(sysname, nodename, release, version, machine)*
+*uname()* returns different information identifying the operating system, in Linux it returns details you can get from the *uname* command. The returned object is a tuple, *(sysname, nodename, release, version, machine)*.
 
 ::
 
     >>> os.uname()
     ('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')
 
-*getcwd()* returns the current working directory. *chdir(path)* changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to */tmp* and then again checking the current directory.
+*getcwd()* returns the current working directory. *chdir(path)* changes the current working directory to path. In the example, we first see the current directory which is my home directory and change the current directory to */tmp* and then again checking the current directory.
 
 ::
 
@@ -401,7 +401,7 @@ Do you remember your *ls* command, you can pass different kind of options as com
 TAB completion in your Python interpreter
 ==========================================
 
-First create a file as *~/.pythonrc* and include the following in that file
+First create a file as *~/.pythonrc* and include the following in that file:
 
 ::
 
