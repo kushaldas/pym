@@ -130,7 +130,7 @@ in a for loop.
 
 Inside the while loop when it reaches to the *yield* statement, the value of low is returned
 and the generator state is suspended. During the second *next* call the generator resumed where
-it freeze-ed before and then the value of *low* is increased by one. It continues with the
+it suspended before and then the value of *low* is increased by one. It continues with the
 while loop and comes to the *yield* statement again.
 
 When you call an generator function it returns a **generator** object. If you call **dir**
