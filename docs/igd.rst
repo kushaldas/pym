@@ -133,8 +133,8 @@ and the generator state is suspended. During the second *next* call the generato
 it freeze-ed before and then the value of *low* is increased by one. It continues with the
 while loop and comes to the *yield* statement again.
 
-When you call an generator function it returns a \*generator* object. If you call \*dir*
-on this object you will find that it contains *__iter__* and \*__next__* methods among the
+When you call an generator function it returns a **generator** object. If you call **dir**
+on this object you will find that it contains **__iter__** and **__next__** methods among the
 other methods.
 
 ::
@@ -245,7 +245,7 @@ The syntax of generator expression says that always needs to be directly inside 
     <generator object <genexpr> at 0x7fc559516b90>
 
 We can have chaining of generators or generator expressions. In the following
-example we will read the file \*/var/log/cron* and will find if any particular
+example we will read the file **/var/log/cron** and will find if any particular
 job (in the example we are searching for anacron) is running successfully or not.
 
 We can do the same using a shell command *tail -f /var/log/cron |grep anacron*
