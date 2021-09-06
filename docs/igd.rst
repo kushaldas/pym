@@ -142,10 +142,10 @@ other methods.
     >>> c = counter_generator(5,10)
     >>> dir(c)
     ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__',
- '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__',
- '__le__', '__lt__', '__name__', '__ne__', '__new__', '__next__', '__reduce__',
- '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
- 'close', 'gi_code', 'gi_frame', 'gi_running', 'send', 'throw']
+     '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__',
+     '__le__', '__lt__', '__name__', '__ne__', '__new__', '__next__', '__reduce__',
+     '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+     'close', 'gi_code', 'gi_frame', 'gi_running', 'send', 'throw']
 
 We mostly use generators for laze evaluations. This way generators become a good approach
 to work with lots of data. If you don't want to load all the data in the memory, you can use
