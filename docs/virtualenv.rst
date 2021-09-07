@@ -169,7 +169,7 @@ the following Python code in a file named *main.py*.
 ::
 
     $ pipenv shell
-    $ $ python main.py
+    (myproject-dbBcpQ4l) $ python main.py
     Your IP is 192.168.1.2
 
 Exiting from the virtualenv
