@@ -73,6 +73,7 @@ Output
 ::
 
     $ python factorial.py 5
+    120
 
 Which function to test ?
 ========================
