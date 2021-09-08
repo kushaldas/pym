@@ -122,7 +122,7 @@ but we can use this to learn about type annotations and mypy.
     std3.papers = {"english": 82, "math": 87, "science": 77}
 
     for std in [std1, std2, std3]:
-        print("Passed: {0}. The toral score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
+        print("Passed: {0}. The total score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
 
 
 You may find some errors in the code, but in case of a large codebase we can
@@ -164,7 +164,7 @@ code length, I am only showing the changed code below.
 
 You can see mypy is complaining about variable which does not have type
 annotations, and also found that in line 31, as argument 4 we are passing
-*str*, where as we were supposed to send in an Integer for the rull number.
+*str*, where as we were supposed to send in an Integer for the roll number.
 Let us fix these.
 
 ::
@@ -208,7 +208,7 @@ Let us fix these.
     std3.papers = {"english": 82, "math": 87, "science": 77}
 
     for std in [std1, std2, std3]:
-        print("Passed: {0}. The toral score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
+        print("Passed: {0}. The total score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
 
 ::
 
