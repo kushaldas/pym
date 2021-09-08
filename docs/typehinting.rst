@@ -169,7 +169,7 @@ Let us fix these.
 
 ::
 
-    from typing import Dict
+    from typing import Dict, Optional
 
     class Student:
 
@@ -178,7 +178,7 @@ Let us fix these.
             self.batch = batch
             self.branch = branch
             self.roll = roll
-            self.semester: str = None
+            self.semester: Optional[str] = None
             self.papers: Dict[str, int] = {}
 
         def is_passed(self) -> bool:
@@ -204,7 +204,7 @@ Let us fix these.
     std3: Student = Student("Anwesha", 2005, "law", 122)
 
     std1.papers = {"english": 78, "math": 82, "science": 77}
-    std2: Student.papers = {"english": 80, "math": 92, "science": 78}
+    std2.papers = {"english": 80, "math": 92, "science": 78}
     std3.papers = {"english": 82, "math": 87, "science": 77}
 
     for std in [std1, std2, std3]:
@@ -215,10 +215,12 @@ Let us fix these.
     $ mypy students2.py
 
 Now, it does not complain about any error. You can see that in line 1, we
-imported Dict from the typing module. And, then using the same we added the
-type annotation of the *self.paper* variable. We are saying that it is a
-dictionary which has string keys, and Integers as values. We also used our
-*Student* class as type of std1, std2, and std3 variables.
+imported Dict and Optional from the typing module. And, then using the same we
+added the type annotation of the *self.semester* and *self.papers* variable. We
+are saying that *self.semester* is a string whose value could be *None*,
+whereas *self.papers* is a dictionary which has string as keys, and Integers as
+values. We also used our *Student* class as type of std1, std2, and std3
+variables.
 
 Now let us say we by mistake assign a new list to the papers variable.
 
