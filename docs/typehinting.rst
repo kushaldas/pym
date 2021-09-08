@@ -131,7 +131,7 @@ not detect the similar issues unless we see the runtime errors.
 Using mypy
 -----------
 
-We can just call mypy on our source file, I named it as *students2.py*
+We can just call mypy on our source file, I named it as *students2.py*.
 
 ::
 
@@ -235,7 +235,7 @@ Or maybe assigned a wrong kind of dictionary.
 
     std2.papers = {1: "Engish", 2: "Math"}
 
-We can see what mypy says in these cases
+We can see what mypy says in these cases:
 
 ::
 
