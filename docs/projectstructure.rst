@@ -117,7 +117,7 @@ package.
 
 ::
 
-    $ pip install setuptools wheel
+    $ python3 -m pip install setuptools wheel
 
 
 setup.py
@@ -267,7 +267,7 @@ First, we will have to install **twine** using **pip** (we are using a virtualen
 
 ::
 
-    $ pip install twine
+    $ python3 -m pip install twine
     $ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
     Uploading distributions to https://test.pypi.org/legacy/
     Enter your username: kushaldas
@@ -287,7 +287,7 @@ You can use the following command to install from the test PyPI.
 
 ::
 
-    $ pip install --index-url https://test.pypi.org/simple/ pymfactorial
+    $ python3 -m pip install --index-url https://test.pypi.org/simple/ pymfactorial
 
 More readings
 ==============
