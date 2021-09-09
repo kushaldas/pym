@@ -228,6 +228,7 @@ Here we have only one function *mount_details()* doing the parsing and printing 
                     print('(%s)' % ' '.join(words[3:-2]))
                 else:
                     print('')
+            fd.close()
 
 
     if __name__ == '__main__':
@@ -258,6 +259,7 @@ Now we refactored the code and have one new function *parse_mounts* which we can
                 else:
                    res = (words[0],words[1],words[2])
                 result.append(res)
+            fd.close()
         return result
 
     def mount_details():
