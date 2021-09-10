@@ -22,7 +22,7 @@ next.
 
     $ mkdir myfact
 
-The primary code will be in a file called *fact.py*
+The primary code will be in a file called *fact.py*.
 ::
 
     "myfact module"
@@ -49,7 +49,7 @@ We also have a *__init__.py* file for the module.
     from fact import factorial
     __all__ = [factorial, ]
 
-We also added a *README.rst* file. So, the directory structure looks like
+We also added a *README.rst* file. So, the directory structure looks like:
 
 ::
 
@@ -117,7 +117,7 @@ package.
 
 ::
 
-    $ pip install setuptools wheel
+    $ python3 -m pip install setuptools wheel
 
 
 setup.py
@@ -232,7 +232,7 @@ One can see the output files under *dist* directory.
     $ ls dist/
     pymfactorial-0.1-py3-none-any.whl  pymfactorial-0.1.tar.gz
 
-.. warning:: Remember to use a virtualenv while trying to install the code :)
+.. warning:: Remember to use a virtualenv while trying to install the code. :)
 
 
 Python Package Index (PyPI)
@@ -242,7 +242,7 @@ Do you remember the **pip** command we are using still now? Ever thought from
 where those packages are coming from? The answer is `PyPI <http://pypi..org/>`_.
 It is a repository of software for the Python programming language.
 
-For our example, we will use the test server of PyPI which is `https://test.pypi.org/ <https://test.pypi.org/>`_
+For our example, we will use the test server of PyPI which is `https://test.pypi.org/ <https://test.pypi.org/>`_.
 
 Creating account
 -----------------
@@ -267,7 +267,7 @@ First, we will have to install **twine** using **pip** (we are using a virtualen
 
 ::
 
-    $ pip install twine
+    $ python3 -m pip install twine
     $ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
     Uploading distributions to https://test.pypi.org/legacy/
     Enter your username: kushaldas
@@ -287,7 +287,7 @@ You can use the following command to install from the test PyPI.
 
 ::
 
-    $ pip install --index-url https://test.pypi.org/simple/ pymfactorial
+    $ python3 -m pip install --index-url https://test.pypi.org/simple/ pymfactorial
 
 More readings
 ==============
