@@ -3,7 +3,7 @@ Simple GUI application development using PyperCard
 ===================================================
 
 In this chapter we will learn about creating very simple GUI application using
-[PyperCard](https://pypercard.readthedocs.io/en/latest/). PyperCard is a
+`PyperCard <https://pypercard.readthedocs.io/en/latest/>`_. PyperCard is a
 HyperCard inspired Pythonic GUI framework for beginner programmers.
 
 
