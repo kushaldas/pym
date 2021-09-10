@@ -27,7 +27,7 @@ This may take some time, and specially while building Kivy, which is a dependenc
 If you see any error in building *Kivy* on your distribution, you will have to install all dependencies
 on your operating system.
 
-On Debian Buster
+On Debian Buster:
 
 ::
 
@@ -88,7 +88,7 @@ Two Cards and a button
 
 
 In this code, we have two different cards. The ``first_card`` also got a button, with a text *Next*, and the *target* as the name
-of the next card to show. In this case, we are showing the card named *bye*
+of the next card to show. In this case, we are showing the card named *bye*.
 
 .. figure:: img/twocard_pyper.gif
 
