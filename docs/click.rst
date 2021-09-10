@@ -235,7 +235,7 @@ Super fast way to accept password with confirmation
 ----------------------------------------------------
 
 Click provides a *password_option()* decorator, which can be used to accept a
-password over hidden prompt and second confirmation prompt. Btw, I am printing
+password over hidden prompt and second confirmation prompt. By the way, I am printing
 the password here as an example, never print the password to stdout in any
 tool.
 
@@ -316,5 +316,5 @@ The output looks like:
 
 
 Click has many other useful features, like *yes parameter*, *file path input*.
-I am not going to write about all of those here, but you can always from the
+I am not going to write about all of those here, but you can always read it from the
 `upstream documentation <http://click.pocoo.org/>`_.
