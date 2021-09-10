@@ -88,7 +88,8 @@ magically has a *--help* command line argument (which is optional).
     Options:
     --help  Show this message and exit.
 
-### Using echo for printing text
+Using echo for printing text
+--------------------------------
 
 The click module suggests using *echo* function to print, rather than the
 standard print function. So, we will make the required change in our code.
@@ -139,7 +140,8 @@ boolean flag, and then finally added the help text.
 
 By default, any boolean flag is treated as false.
 
-### Standard options in the command line
+Standard options in the command line
+------------------------------------
 
 We can now add more options to our tool. For example, we will have a *--name*
 option which will take a string as input.
@@ -197,7 +199,8 @@ We may want to take the same option multiple times. Click has a very simple way 
 In the above example, you can see that we specified the *--name* as a multiple
 options. It also means the name parameter in the *cli* function is now a tuple.
 
-### Help text for the script
+Help text for the script
+------------------------
 
 We can add help text for the script using python docstrings. For example:
 
