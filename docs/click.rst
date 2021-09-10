@@ -65,9 +65,18 @@ below so that becomes easier others. To learn more, read this
     Hello World
 
 Now to convert the same script into a click based tool, we will make the
-following modifications. Now when we execute the command again, we see nothing
-changed visually, but it magically has a *--help* command line argument (which
-is optional).
+following modifications:
+
+::
+
+    import click
+
+    @click.command()
+    def cli():
+        print("Hello World")
+
+Now when we execute the command again, we see nothing changed visually, but it
+magically has a *--help* command line argument (which is optional).
 
 ::
 
