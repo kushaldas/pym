@@ -7,7 +7,7 @@ working on actual projects. In this chapter we will learn about **mu editor**,
 which is a very simple and beginner friendly editor for anyone starting with
 Python. It is developed by Nicholas Tollervey.
 
-If you already have an editor of your choice, you can skip this chapter. 
+If you already have an editor of your choice, you can skip this chapter.
 
 Installation
 =============

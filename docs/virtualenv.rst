@@ -53,7 +53,7 @@ So, now we will install a Python module called redis.
     (virt1)$ python3 -m pip install redis
     Collecting redis
       Downloading redis-2.10.5-py2.py3-none-any.whl (60kB)
-        100% |████████████████████████████████| 61kB 607kB/s 
+        100% |████████████████████████████████| 61kB 607kB/s
     Installing collected packages: redis
     Successfully installed redis-2.10.5
 
@@ -169,7 +169,7 @@ the following Python code in a file named *main.py*.
 ::
 
     $ pipenv shell
-    $ $ python main.py 
+    (myproject-dbBcpQ4l) $ python main.py
     Your IP is 192.168.1.2
 
 Exiting from the virtualenv

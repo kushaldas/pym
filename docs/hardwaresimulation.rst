@@ -4,7 +4,7 @@ Learning using hardware simulation
 ==================================
 
 From this section and in the future chapters, there will be examples and problems
-which is using a special device simulation in VS Code editor. 
+which is using a special device simulation in VS Code editor.
 
 We will use the simulation to have a `Circuit Playground Express device <https://adafruit.com/product/3333>`_,
 and learn to interact with the device. We will be able to turn on lights of different

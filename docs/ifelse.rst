@@ -81,9 +81,9 @@ The elegant way to test Truth values is like
         pass
 
 .. warning:: Don't do this
-    
+
     ::
-    
+
         if x == True:
             pass
 

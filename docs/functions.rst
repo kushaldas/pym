@@ -244,7 +244,7 @@ From Python3.8, we can also mark any function to have only positional arguments.
 
     >>> def add(a, b, /):
     ...   return a + b
-    ... 
+    ...
     >>> add(2, 3)
     5
     >>> add(a=2, b=3)
@@ -351,7 +351,7 @@ number, we can do it easily like this.
 
 .. note:: To know more read `this link <http://docs.python.org/3/faq/programming.html#how-do-you-make-a-higher-order-function-in-python>`_.
 
-map 
+map
 ====
 
 `map` is a very useful class in python. It takes one function
@@ -388,7 +388,7 @@ In the above example, `name` and `age` are the parameters of the `hello`, and `k
 the arguments passed to the function.
 
 
-*args and **kwargs in function definition 
+*args and **kwargs in function definition
 =========================================
 
 There are times when we don't know the number of arguments before hand. There
@@ -406,12 +406,12 @@ This is where we use `*args` and `**kwargs` in the function.
         print(f"We received {len(kwargs)} keyword arguments. And they are:")
         for k, v in kwargs.items():
             print(f"key={k} and value={v}")
-        
-        
+
+
     unknown(30, 90, "kushal", lang="python", editor="vim")
 
     We received 3 positional arguments. And they are:
-    30 90 kushal 
+    30 90 kushal
     We received 2 keyword arguments. And they are:
     key=lang and value=python
     key=editor and value=vim

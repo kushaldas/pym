@@ -237,7 +237,7 @@ You can iterate over a string using simple `for` loop.
 
     >>> for ch in "Python":
     ...     print(ch)
-    ... 
+    ...
     P
     y
     t
