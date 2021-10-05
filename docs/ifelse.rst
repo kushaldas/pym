@@ -97,6 +97,8 @@ The elegant way to test Truth values is like
             pass
 
 
+.. versionadded:: 3.10
+
 match statements
 =================
 
