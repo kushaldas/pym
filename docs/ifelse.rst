@@ -96,5 +96,46 @@ The elegant way to test Truth values is like
         if x == True:
             pass
 
-In future we we will also learn about match statement and how to use it.
+
+match statements
+=================
+
+From Python 3.10 we have `match` statements. We can use these instead of if/elif/else blocks.
+For example, in the following code, we are taking an integer as input and then matching the value with some predefined
+HTTP status codes and print the names.
+
+::
+
+    status = int(input("Give us a status code: "))
+    match status:
+        case 200:
+            print("OK")
+        case 201:
+            print("Created")
+        case 301:
+            print("Moved Permanently")
+        case 302:
+            print("Found")
+        case _:
+            print("The status is unknown to us.")
+
+The last line, we are matching against anything else, we call it *wildcard* matching.
+
+We can even match complex objects, say against tuples, or other objects.
+
+::
+
+    status = (100,500)
+    match status:
+        case (x,y):
+            print(f"X and Y are: {x}, {y}")
+        case x:
+            print(x)
+
+    status = 42
+    match status:
+        case (x,y):
+            print(f"X and Y are: {x}, {y}")
+        case x:
+            print(x)
 
