@@ -235,4 +235,5 @@ More readings
 ==============
 
 Please visit https://packaging.python.org to learn more about Python packaging.
-There are many guides and tutorials available on that site.
+There are many guides and tutorials available on that site. `PEP-621
+<https://www.python.org/dev/peps/pep-0621/>`_ is also an important read.
