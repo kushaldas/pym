@@ -13,13 +13,11 @@ you can read about Linux commands in `this
 book <https://lym.readthedocs.io/en/latest/>`.
 
 
-The following is from Fedora 32 machine.
+The following is from Fedora 34 machine running Python 3.10
 
 ::
 
-
-    Python 3.8.2rc1 (default, Feb 12 2020, 00:00:00) 
-    [GCC 10.0.1 20200130 (Red Hat 10.0.1-0.7)] on linux
+    Python 3.10.0 (default, Oct  5 2021, 14:29:07) [GCC 11.2.1 20210728 (Red Hat 11.2.1-1)] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
 
@@ -70,11 +68,9 @@ In Python whitespace is an important thing. We divide different identifiers usin
 
 ::
 
-    >>> a = 12
     >>>  a = 12
-    File "<stdin>", line 1
-    a = 12
-    ^
+      File "<stdin>", line 1
+        a = 12
     IndentationError: unexpected indent
 
 .. warning::
