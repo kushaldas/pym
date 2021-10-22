@@ -21,7 +21,7 @@ The following identifiers are used as reserved words, or keywords of the languag
     assert     else       import     pass
     break      except     in         raise
 
-In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0 abc will become of floating type. Here is a small program to add two given numbers
+In Python we don't specify what kind of data we are going to put in a variable. So you can directly write abc = 1 and abc will become an integer datatype. If you write abc = 1.0 abc will become of floating type. Here is a small program to add two given numbers:
 
 ::
 
@@ -30,7 +30,7 @@ In Python we don't specify what kind of data we are going to put in a variable. 
     >>> a + b
     36
 
-From the above example you can understand that to declare a variable in Python , what you need is just to type the name and the value. Python can also manipulate strings They can be enclosed in single quotes or double quotes like
+From the above example you can understand that to declare a variable in Python, what you need is just to type the name and the value. Python can also manipulate strings. They can be enclosed in single quotes or double quotes like:
 
 ::
 
@@ -44,7 +44,7 @@ From the above example you can understand that to declare a variable in Python ,
 Reading input from the Keyboard
 ===============================
 
-Generally the real life Python codes do not need to read input from the keyboard. In Python we use input function to do input. *input("String to show")* , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py
+Generally the real life Python codes do not need to read input from the keyboard. In Python we use input function to do input. *input("String to show")*, this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py.
 
 .. code-block:: python
 
@@ -55,7 +55,7 @@ Generally the real life Python codes do not need to read input from the keyboard
     else:
         print("Your number is greater than 100")
 
-The output
+The output:
 
 ::
 
@@ -82,7 +82,7 @@ In the next program we are going to calculate investments.
         amount = value
         year = year + 1
 
-The output
+The output:
 
 ::
 
@@ -121,7 +121,7 @@ In the next program we will do an average of N numbers.
     print("Average = %f" % average)
 
 
-The output
+The output:
 
 ::
 
@@ -142,7 +142,7 @@ The output
 Temperature conversion
 ----------------------
 
-In this program we will convert the given temperature to Celsius from Fahrenheit by using the formula C=(F-32)/1.8
+In this program we will convert the given temperature to Celsius from Fahrenheit by using the formula *C=(F-32)/1.8*.
 
 ::
 
@@ -154,7 +154,7 @@ In this program we will convert the given temperature to Celsius from Fahrenheit
         print("%5.1f %7.2f" % (fahrenheit , celsius))
         fahrenheit = fahrenheit + 25
 
-The output
+The output:
 
 ::
 
@@ -175,7 +175,7 @@ The output
 Multiple assignments in a single line
 =====================================
 
-You can even assign values to multiple variables in a single line, like
+You can even assign values to multiple variables in a single line, like:
 
 ::
 
@@ -185,7 +185,7 @@ You can even assign values to multiple variables in a single line, like
     >>> b
     54
 
-Using this swapping two numbers becomes very easy
+Using this swapping two numbers becomes very easy.
 
 ::
 
