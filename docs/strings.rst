@@ -164,6 +164,23 @@ You can particularly strip from the left hand or right hand side also using *lst
     >>> s.rstrip("cnwdi.")
     'www.foss'
 
+
+Justifying text
+===============
+
+We can use `rjust` or `ljust` methods to either right justify or left justify
+any given string. We have to provide the number of characters we want to
+justify, and the character we want use for the justification (while a
+whitespace too).
+
+::
+
+    >>> "ACAB".rjust(10, "-")
+    '------ACAB'
+    >>> "ACAB".ljust(10, "-")
+    'ACAB------'
+
+
 Finding text
 ============
 
