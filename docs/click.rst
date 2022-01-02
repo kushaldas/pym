@@ -65,9 +65,18 @@ below so that becomes easier others. To learn more, read this
     Hello World
 
 Now to convert the same script into a click based tool, we will make the
-following modifications. Now when we execute the command again, we see nothing
-changed visually, but it magically has a *--help* command line argument (which
-is optional).
+following modifications:
+
+::
+
+    import click
+
+    @click.command()
+    def cli():
+        print("Hello World")
+
+Now when we execute the command again, we see nothing changed visually, but it
+magically has a *--help* command line argument (which is optional).
 
 ::
 
@@ -79,7 +88,8 @@ is optional).
     Options:
     --help  Show this message and exit.
 
-### Using echo for printing text
+Using echo for printing text
+--------------------------------
 
 The click module suggests using *echo* function to print, rather than the
 standard print function. So, we will make the required change in our code.
@@ -130,7 +140,8 @@ boolean flag, and then finally added the help text.
 
 By default, any boolean flag is treated as false.
 
-### Standard options in the command line
+Standard options in the command line
+------------------------------------
 
 We can now add more options to our tool. For example, we will have a *--name*
 option which will take a string as input.
@@ -188,7 +199,8 @@ We may want to take the same option multiple times. Click has a very simple way 
 In the above example, you can see that we specified the *--name* as a multiple
 options. It also means the name parameter in the *cli* function is now a tuple.
 
-### Help text for the script
+Help text for the script
+------------------------
 
 We can add help text for the script using python docstrings. For example:
 
@@ -223,7 +235,7 @@ Super fast way to accept password with confirmation
 ----------------------------------------------------
 
 Click provides a *password_option()* decorator, which can be used to accept a
-password over hidden prompt and second confirmation prompt. Btw, I am printing
+password over hidden prompt and second confirmation prompt. By the way, I am printing
 the password here as an example, never print the password to stdout in any
 tool.
 
@@ -304,5 +316,5 @@ The output looks like:
 
 
 Click has many other useful features, like *yes parameter*, *file path input*.
-I am not going to write about all of those here, but you can always from the
+I am not going to write about all of those here, but you can always read it from the
 `upstream documentation <http://click.pocoo.org/>`_.
