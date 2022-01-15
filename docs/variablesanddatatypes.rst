@@ -44,16 +44,14 @@ From the above example you can understand that to declare a variable in Python ,
 Reading input from the Keyboard
 ===============================
 
-Generally the real life Python codes do not need to read input from the keyboard. In Python we use input function to do input. *input("String to show")* , this will return a string as output. Let us write a program to read a number from the keyboard and check if it is less than 100 or not. Name of the program is testhundred.py
+Generally the real life Python codes do not need to read input from the
+keyboard. In Python we use input function to do input. *input("String to show")*
+, this will return a string as output. Let us write a program to read a number
+from the keyboard and check if it is less than 100 or not. Name of the program
+is *testhundred.py*
 
-.. code-block:: python
 
-    #!/usr/bin/env python3
-    number = int(input("Enter an integer: "))
-    if number < 100:
-        print("Your number is smaller than 100")
-    else:
-        print("Your number is greater than 100")
+.. image:: img/testhundred.png
 
 The output
 
@@ -68,19 +66,7 @@ The output
 
 In the next program we are going to calculate investments.
 
-::
-
-    #!/usr/bin/env python3
-    amount = float(input("Enter amount: "))
-    inrate = float(input("Enter Interest rate: "))
-    period = int(input("Enter period: "))
-    value = 0
-    year = 1
-    while year <= period:
-        value = amount + (inrate * amount)
-        print("Year %d Rs. %.2f" % (year, value))
-        amount = value
-        year = year + 1
+.. image:: img/investment.png
 
 The output
 
@@ -106,20 +92,7 @@ Average of N numbers
 
 In the next program we will do an average of N numbers.
 
-::
-
-    #!/usr/bin/env python3
-    N = 10
-    sum = 0
-    count = 0
-    while count < N:
-        number = float(input(""))
-        sum = sum + number
-        count = count + 1
-    average = float(sum)/N
-    print("N = %d , Sum = %f" % (N, sum))
-    print("Average = %f" % average)
-
+.. image:: img/averagen.png
 
 The output
 
@@ -144,15 +117,7 @@ Temperature conversion
 
 In this program we will convert the given temperature to Celsius from Fahrenheit by using the formula C=(F-32)/1.8
 
-::
-
-    #!/usr/bin/env python3
-    fahrenheit = 0.0
-    print("Fahrenheit Celsius")
-    while fahrenheit <= 250:
-        celsius = ( fahrenheit - 32.0 ) / 1.8 # Here we calculate the Celsius value
-        print("%5.1f %7.2f" % (fahrenheit , celsius))
-        fahrenheit = fahrenheit + 25
+.. image:: img/temperature.png
 
 The output
 
