@@ -231,7 +231,7 @@ If you want to know more about how this feature came into Python, watch this
 <https://twitter.com/mariatta>`_.
 
 
-In Python3.8 we can use the following style to help printing values along with the variable name.
+From Python3.8 we can use the following style to help printing values along with the variable name.
 
 ::
 
