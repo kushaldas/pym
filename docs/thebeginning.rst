@@ -17,7 +17,7 @@ The following is from Fedora 34 machine running Python 3.10
 
 ::
 
-    Python 3.10.0 (default, Oct  5 2021, 14:29:07) [GCC 11.2.1 20210728 (Red Hat 11.2.1-1)] on linux
+    Python 3.10.1 (main, Dec  9 2021, 00:00:00) [GCC 11.2.1 20211203 (Red Hat 11.2.1-7)] on linux
     Type "help", "copyright", "credits" or "license" for more information.
     >>> 
 
@@ -35,16 +35,18 @@ In our first code we are going to print "Hello World!" using the interpreter. To
 Using a source file
 =====================
 
-As a serious programmer, you might want to write the above code into a source file. Use any text editor you like to create the file called helloworld.py. I used vi. You can even use GUI based tools like `Kate <https://kate-editor.org/get-it/>` or `gedit <https://wiki.gnome.org/Apps/Gedit>`. 
+As a serious programmer, you might want to write the above code into a source
+file. Use any text editor you like to create the file called helloworld.py. I
+used vi. You can even use GUI based tools like `Kate
+<https://kate-editor.org/get-it/>`_ or `gedit
+<https://wiki.gnome.org/Apps/Gedit>`_. In the later part of the book, I will help you to use a few different editors.
 
 Open a shell or terinal and perform these steps. 
 
 1. Enter the following text:
 
-::
+.. image:: img/helloworld.png
 
-    #!/usr/bin/env python3
-    print("Hello World!")
 
 2. Type the following command to make the file executable:
 
@@ -59,7 +61,9 @@ Open a shell or terinal and perform these steps.
     $ ./helloworld.py
     Hello World!
 
-On the first line you can *#!*, what we call it sha-bang. The sha-bang indicates that the Python interpreter should run this code. On the next line we are printing a text message. In Python we call all the lines of text "strings."
+On the first line you can *#!*, what we call it sha-bang. The sha-bang indicates
+that the Python interpreter should run this code. On the next line we are
+printing a text message. In Python we call all the lines of text "strings."
 
 Whitespaces and indentation
 ===========================
