@@ -36,6 +36,69 @@ In the second line with the *return* keyword, we are sending back the value of
     >>> res
     34453780698L
 
+What about a function to find if a given string is bigger than certain length or not?
+Yes, we can do it in one line, but also helps to learn about writing simple functions.
+
+::
+
+    def greater(data, maxsize):
+        """Return if the length of data is bigger than given maxsize.
+        """
+        return len(data) > maxsize
+
+
+Here the string just after the function definition is called `docstring`. We will learn about it more below
+in the chapter. For now we can try to use the function.
+
+::
+
+    >>> s = "I am Kushal."
+    >>> print(greater(s, 10))
+    False
+
+
+In our daily lives as programmers, we keep using various functions written by
+others in different Python modules.  We stich together those functions in our
+code and create our own functions, and then consume those functions in different
+parts of our code/project. Generally when you can see that you are repeating
+some amount of code again and again, you can start thinking about putting that
+into a function.
+
+But while consuming those functions in Python, it is difficult to know what
+exactly the function arguments are, what kind of data they expect. We read the
+documentation to find out as much as we can, and then in many case that means
+continuously switching between the code and the documentation. Modern editors
+tries to help, for example let us see what VS Code shows us when we try to use
+the above `greater` function.
+
+.. image:: img/greater_notyping.gif
+
+Here we don't know what kind of arguments we should pass in the `greater` function.
+
+We can fix this with something called `type annotation`. Which increases the
+readability of our code and also helps the developer who will use the function
+in future. Automated tools in editors like VS Code (or even in Vim/Emacs). So we
+will rewrite our function as below.
+
+::
+
+    def greater(data: str, maxsize: int) -> bool:
+        """Return if the length of data is bigger than given maxsize.
+        """
+        return len(data) > maxsize
+
+
+Here after the variable name and a colon we are mentioning what kind of data it
+is excepting and we are also mentioning the type of data returned by the
+function with the ->. This is not checked during run time like normal typed
+programming languages, but there are special separate tools to help. But, this
+increases the readability of the code instantly. Now we know that we have to
+pass a string and an integer into the function. Even VS Code will tell us so.
+
+
+.. image:: img/greater_withtyping.gif
+
+
 Remember the palindrome program we wrote in the last chapter. Let us write a
 function which will check if a given string is palindrome or not, then return
 *True* or *False*.
@@ -43,7 +106,6 @@ function which will check if a given string is palindrome or not, then return
 ::
 
     #!/usr/bin/env python3
-
 
     def palindrome(s):
         return s == s[::-1]
@@ -57,7 +119,7 @@ function which will check if a given string is palindrome or not, then return
             print("Oh no, not a palindrome")
 
 
-Now run the code :)
+Now execute the file :)
 
 Local and global variables
 ==========================
@@ -388,8 +450,8 @@ In the above example, `name` and `age` are the parameters of the `hello`, and `k
 the arguments passed to the function.
 
 
-*args and **kwargs in function definition 
-=========================================
+`*args` and `**kwargs` in function definition
+=============================================
 
 There are times when we don't know the number of arguments before hand. There
 can be any number of positional or keyword arguments passed to the function.
