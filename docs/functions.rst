@@ -99,6 +99,13 @@ pass a string and an integer into the function. Even VS Code will tell us so.
 .. image:: img/greater_withtyping.gif
 
 
+Now if we add the annotation to our `sum` function, it will look like following.
+
+::
+
+    def sum(a: int, b: int) -> int:
+        return a + b
+
 Remember the palindrome program we wrote in the last chapter. Let us write a
 function which will check if a given string is palindrome or not, then return
 *True* or *False*.
