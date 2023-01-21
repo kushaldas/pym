@@ -8,6 +8,8 @@ Welcome to Python for you and me
 
 This is a simple book to learn Python programming language, it is for the programmers who are new to Python.
 
+You can find the latest version of the book `here <https://pymbook.readthedocs.io/en/latest/>`_.
+
 If you are new to command line in Linux, you can read `lym <https://lym.readthedocs.io/>`_.
 
 Contents:
