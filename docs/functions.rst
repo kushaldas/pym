@@ -288,7 +288,7 @@ parameter.
 
 ::
 
-    >>> def hello(*, name='User'):
+    >>> def hello(*, name: str ='User'):
     ...     print("Hello %s" % name)
     ...
     >>> hello('Kushal')
@@ -311,7 +311,7 @@ From Python3.8, we can also mark any function to have only positional arguments.
 
 ::
 
-    >>> def add(a, b, /):
+    >>> def add(a: int, b: int, /):
     ...   return a + b
     ... 
     >>> add(2, 3)
@@ -338,7 +338,7 @@ the docstring for a function called *longest_side*.
     #!/usr/bin/env python3
     import math
 
-    def longest_side(a, b):
+    def longest_side(a: int, b: int):
         """
         Function to find the length of the longest side of a right triangle.
 
@@ -382,7 +382,7 @@ returns another function to add 5 to the given argument.
 ::
 
     def givemefive():
-        def add5(x):
+        def add5(x: int) -> int:
             return x + 5
         return add5
 
@@ -430,7 +430,7 @@ iterator and returns an iterator.
 Example::
 
     >>> lst = [1, 2, 3, 4, 5]
-    >>> def square(num):
+    >>> def square(num: int) -> int:
     ...     "Returns the square of a given number."
     ...     return num * num
     ...

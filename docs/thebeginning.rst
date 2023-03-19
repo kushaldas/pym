@@ -41,7 +41,7 @@ used vi. You can even use GUI based tools like `Kate
 <https://kate-editor.org/get-it/>`_ or `gedit
 <https://wiki.gnome.org/Apps/Gedit>`_. In the later part of the book, I will help you to use a few different editors.
 
-Open a shell or terinal and perform these steps. 
+Open a shell or terminal and perform these steps. 
 
 1. Enter the following text:
 
