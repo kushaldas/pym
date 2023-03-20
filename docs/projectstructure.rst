@@ -40,12 +40,13 @@ The primary code will be in a file called *fact.py*
 
         :return: The value of the the factorial or -1 in case negative value passed.
         """
-        if num >= 0:
-            if num == 0:
-                return 1
-            return num * factorial(num -1)
+        if num <= 1:
+            return 1
         else:
-            return -1
+            fact = 2
+            for n in range(num, 2, -1):
+                fact = fact * n
+            return fact
 
 
     def cli():
