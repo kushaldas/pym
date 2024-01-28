@@ -26,10 +26,6 @@ next.
 The primary code will be in a file called *fact.py*
 ::
 
-    "pymfactorial module and command line tool"
-
-    __version__ = "0.1.0"
-
     import sys
 
     def factorial(num):
@@ -58,15 +54,19 @@ We also have a *__init__.py* file for the module.
 
 ::
 
+    "pymfactorial module and command line tool"
+
+    __version__ = "0.1.0"
+
     from fact import factorial
     __all__ = [factorial, cli]
 
-We also added a *README.rst* file. So, the directory structure looks like
+We also added a *README.md* file. So, the directory structure looks like
 
 ::
 
     $ ls
-    pymfactorial  README.rst
+    pymfactorial  README.md
     $ ls pymfactorial/
     fact.py  __init__.py
 
@@ -125,8 +125,27 @@ pyproject.toml
 Finally we have to write a *pyproject.toml* which then can be used to create a source
 tarball or installing the software, or create a wheel to be uploaded to PyPI.
 
+`flit init` command will help to create the initial file for us, provide the proper input as it asks.
+
 ::
 
+    $ flit init
+    Module name [pymfactorial]: 
+    Author [Kushal Das]: 
+    Author email [kushal@sunet.se]: mail@kushaldas.in
+    Home page [https://github.com/kushaldas/pymfactorial]: https://github.com/kushaldas/pym
+    Choose a license (see http://choosealicense.com/ for more info)
+    1. MIT - simple and permissive
+    2. Apache - explicitly grants patent rights
+    3. GPL - ensures that code based on this is shared with the same terms
+    4. Skip - choose a license later
+    Enter 1-4 [4]: 1
+
+    Written pyproject.toml; edit that file to add optional extra info.
+
+This command created the `pyproject.toml` file in the same folder, we can check the conent.
+
+::
 
     [build-system]
     requires = ["flit_core >=3.2,<4"]
@@ -134,25 +153,42 @@ tarball or installing the software, or create a wheel to be uploaded to PyPI.
 
     [project]
     name = "pymfactorial"
-    authors = [
-        {name = "Kushal Das", email = "mail@kushaldas.in"},
-    ]
+    authors = [{name = "Kushal Das", email = "mail@kushaldas.in"}]
     readme = "README.md"
-    classifiers = [
-        "License :: OSI Approved :: MIT License",
-    ]
-    requires-python = ">=3.6"
+    license = {file = "LICENSE"}
+    classifiers = ["License :: OSI Approved :: MIT License"]
     dynamic = ["version", "description"]
 
     [project.urls]
-    Documentation = "https://pymbook.readthedocs.io/en/latest/"
-    Source = "https://github.com/kushaldas/pym"
+    Home = "https://github.com/kushaldas/pym"
+
+
+Next we will update the file to make sure that we include the `LICENSE` and
+`README.md` file in the source tarball. We also mark the `cli` function as
+the starting point for the command line tool.
+
+::
+
+    [build-system]
+    requires = ["flit_core >=3.2,<4"]
+    build-backend = "flit_core.buildapi"
+
+    [project]
+    name = "pymfactorial"
+    authors = [{name = "Kushal Das", email = "mail@kushaldas.in"}]
+    readme = "README.md"
+    license = {file = "LICENSE"}
+    classifiers = ["License :: OSI Approved :: MIT License"]
+    dynamic = ["version", "description"]
+
+    [project.urls]
+    Home = "https://github.com/kushaldas/pym"
 
     [project.scripts]
     myfact = "pymfactorial:cli"
 
     [tool.flit.sdist]
-    include = ["LICENSE", "README.md"]
+    include = ["LICENSE", "README.MD"]
 
 
 Please read `flit metadata documentation <https://flit.readthedocs.io/en/latest/pyproject_toml.html#new-style-metadata>`_ for details of the various keys and their values mentioned above.
