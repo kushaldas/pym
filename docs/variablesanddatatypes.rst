@@ -231,7 +231,8 @@ If you want to know more about how this feature came into Python, watch this
 <https://twitter.com/mariatta>`_.
 
 
-From Python3.8 we can use the following style to help printing values along with the variable name.
+From Python3.8 we can use the following style to help printing values along
+with the variable name. This is very useful while debugging the code.
 
 ::
 
@@ -254,3 +255,19 @@ We can also use `format` method in a string inside.
     >>> msg = "{0} loves {1}.".format(name, language)
     >>> print(msg)
     Kushal loves Python.
+
+
+Left of right aligned
+----------------------
+
+We can use `:<` or `:>` in `.format` call to print left or right aligned. In
+the following example we are printing first left aligned (10 characters) and
+right aligned.
+
+::
+
+    >>> print("{:<10}".format("Sweden"))
+    Sweden
+    >>> print("{:>10}".format("Sweden"))
+        Sweden
+
