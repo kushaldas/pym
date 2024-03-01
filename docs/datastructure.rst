@@ -48,7 +48,7 @@ If you want to remove any particular value from the list you have to use the *re
     >>> a
     [111, 1, 23, 45, 1, -3434, 43624356, 45]
 
-Now to reverse the whole list
+Now to reverse the whole list.
 
 .. index:: reverse
 
@@ -90,7 +90,7 @@ Above you can see how we used the *a.extend()* method to extend the list. To sor
     [-3434, 1, 1, 23, 45, 45, 45, 56, 90, 111, 43624356]
 
 
-.. note:: Remember that `sort` method does not return the sorted list, instead the list itself will be sorted. This is done to keep performance of the code in mind. More details can be found `here <https://docs.python.org/3/faq/design.html?highlight=walrus#why-doesn-t-list-sort-return-the-sorted-list>`_.
+.. note:: Remember that `sort` method does not return the sorted list, instead the list itself will be sorted. This is done to keep performance of the code in mind. More details can be found `here <https://docs.python.org/3/faq/design.html#why-doesn-t-list-sort-return-the-sorted-list>`_.
 
 You can also delete an element at any particular position of the list using the del keyword.
 
@@ -103,7 +103,7 @@ You can also delete an element at any particular position of the list using the 
 Using lists as stack and queue
 ==============================
 
-Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end, and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you inserted the last marble. To achieve the same in code
+Stacks are often known as LIFO (Last In First Out) structure. It means the data will enter into it at the end, and the last data will come out first. The easiest example can be of couple of marbles in an one side closed pipe. So if you want to take the marbles out of it you have to do that from the end where you inserted the last marble. To achieve the same in code:
 
 ::
 
@@ -150,7 +150,7 @@ List Comprehensions
 
 List comprehensions provide a concise way to create lists. Each list comprehension consists of an expression followed by a for clause, then zero or more for or if clauses. The result will be a list resulting from evaluating the expression in the context of the for and if clauses which follow it.
 
-For example if we want to make a list out of the square values of another list, then
+For example if we want to make a list out of the square values of another list, then:
 
 ::
 
@@ -184,7 +184,7 @@ A few special functions related to lists
     >>> max(numbers)
     5
 
-There are two other functions related to boolean value checking. `any` and `all`. `any` tells us if any of the value in the list if `True`.
+There are two other functions related to boolean value checking, `any` and `all`. `any` tells us if any of the value in the list is `True`.
 `all` tells us if all the values in the list are `True` or not.
 
 ::
@@ -216,7 +216,7 @@ Tuples are data separated by commas.
     ...
     Fedora Debian Kubuntu Pardus
 
-You can also unpack values of any tuple into variables, like
+You can also unpack values of any tuple into variables, like:
 
 ::
 
@@ -228,7 +228,7 @@ You can also unpack values of any tuple into variables, like
     >>> y
     1
 
-Tuples are immutable, meaning that you can not del/add/edit any value inside the tuple. Here is another example
+Tuples are immutable, meaning that you can not del/add/edit any value inside the tuple. Here is another example:
 
 ::
 
@@ -275,7 +275,7 @@ Sets are another type of data structure with no duplicate items. We can apply ma
     >>> a
     {'a', 'c', 'b', 'e', 'd', 'h', 'j', 't', 'w'}
 
-And some examples of the set operations
+And some examples of the set operations:
 
 ::
 
@@ -292,7 +292,7 @@ And some examples of the set operations
     >>> a ^ b                              # letters in a or b but not both
     {'r', 'd', 'b', 'm', 'z', 'l'}
 
-To add or pop values from a set
+To add or pop values from a set:
 
 ::
 
@@ -317,7 +317,7 @@ Dictionaries are unordered set of *key: value* pairs where keys are unique. We d
     >>> data['kart_']
     'Debian'
 
-We can add more data to it by simply
+We can add more data to it by simply:
 
 ::
 
@@ -325,7 +325,7 @@ We can add more data to it by simply
     >>> data
     {'kushal': 'Fedora', 'Jace': 'Mac', 'kart_': 'Debian', 'parthan': 'Ubuntu'}
 
-To delete any particular *key:value* pair
+To delete any particular *key:value* pair:
 
 ::
 
@@ -455,7 +455,7 @@ You may also need to iterate through two sequences same time, for that use *zip(
 students.py
 ===========
 
-In this example , you have to take number of students as input , then ask marks for three subjects as 'Physics', 'Maths', 'History', if the total marks for any student is less 120 then print he failed, or else say passed.
+In this example, you have to take number of students as input, then ask marks for three subjects as 'Physics', 'Maths', 'History', if the total marks for any student is less 120 then print he failed, or else say passed.
 
 ::
 
@@ -477,7 +477,7 @@ In this example , you have to take number of students as input , then ask marks 
         else:
             print("%s passed :)" % x)
 
-The output
+The output:
 
 ::
 
@@ -539,6 +539,6 @@ Create a calculator
 
 Here is a small problem for you. You will have to use list, and dictionary to
 create a tool, which will take input like `(* (+ 3 4) 2)` and return the answer
-like `14`. The four valid operators are `+`, `-`,  `/*`. Every operator will
+like `14`. The four valid operators are `+`, `-`, `/`, `*`. Every operator will
 need two operands to work on. Another input `(* 2 3)` and the output is `6`.
 
