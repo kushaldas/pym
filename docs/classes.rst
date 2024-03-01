@@ -121,7 +121,7 @@ Unique class level variables
 All the values stored in the instance via `self.` are data inside of an
 instance. Each instance of the class can have different values for given
 attribute (anything we access via . is also known as attribute). But, when we
-define an variable in the class level, that is same accross all objects. In
+define a variable in the class level, that is same across all objects. In
 the following example, we define a class called `Point`, and we also have a
 special class level variable called `style` in it. After we create 2 objects
 of type `Point`, we can see that both has the same `class` attribute `style`
@@ -146,7 +146,7 @@ and changing in the class level also changes in the all objects.
     for p in [p1, p2]:
         print(f"Object {p} has style value= {p.style}")
 
-Output::
+The output::
 
     Object <__main__.Point object at 0x10de37210> has style value= fun
     Object <__main__.Point object at 0x10de0bb50> has style value= fun
@@ -273,13 +273,14 @@ class) and when we call *get_details()* on the student1 or person1 object it
 returns based on *get_details()* method implemented in it's own class.
 
 
-When a class inherites another class, the child class is also known as the
+When a class inherits another class, the child class is also known as the
 instance of the parent class. Here is an example based on the above class.
 
-```Python
-isinstance(student1, Person)
-True
-```
+::
+
+    >>> isinstance(student1, Person)
+    True
+
 
 Multiple Inheritance
 ====================
@@ -315,9 +316,9 @@ can have a different variable with similar name in the child class.
         def __init__(self, name):
             self._name = name
 
-    def get_details(self):
-        "Returns a string containing name of the person"
-        return self._name
+        def get_details(self):
+            "Returns a string containing name of the person"
+            return self._name
 
 
     class Child(Person):
@@ -338,7 +339,7 @@ You can see that we can still access the `_name` attribute. But, we are letting
 the developer know that `_name` is a private attribute. If you want to make
 sure that the attribute can not be accessed directly in the child class, you
 can use `__` in front of the attribute name. It uses something called `name
-mangling <https://docs.python.org/3/tutorial/classes.html#private-variables>_`.
+mangling <https://docs.python.org/3/tutorial/classes.html#private-variables>`_.
 
 
 
@@ -363,9 +364,9 @@ As we already know how to create an object, now we are going to see how to delet
 Getters and setters in Python
 ==============================
 
-One simple answer, don't. If you are coming from other languages (read Java), you will be tempted
+One simple answer, don't. If you are coming from other languages (like Java), you will be tempted
 to use getters or setters in all your classes. Please don't. Just use the attributes directly.
-The following shows a direct example.
+The following shows a direct example:
 ::
 
     >>> class Student(object):
@@ -426,7 +427,7 @@ the dollars in the account.
         print("Dollar amount:", acc.amount)
 
 
-Output:
+The output:
 ::
 
     $ python property.py
@@ -448,7 +449,7 @@ __len__ method
 
 Dunder len is a method used by the *len* function to know the length of any
 iterator or similar objects. It should return an Integer. The *len* function
-verifies if the returned value is Integer or not.
+verifies whether the returned value is an Integer or not.
 
 ::
 
@@ -476,7 +477,7 @@ __contains__ method
 --------------------
 
 This method helps us to use `in` with our objects. For example, if we want to
-match `"kushal" in studnet1` to be `True`, we implement `__contains__` method
+match `"kushal" in student1` to be `True`, we implement `__contains__` method
 in our class.
 
 
@@ -527,10 +528,10 @@ Creating a new context manager
 ===============================
 
 Do you remember the `with` statement from the `files` chapter? Where we used a
-context manager to make sure that the file is closed after we are done? The
-same style is used in many places where we want the resources to be cleaned up
+context manager to make sure that the file is closed after we are done. The
+same style is used in many places, where we want the resources to be cleaned up
 after the work is done; sometimes we want to call some extra functions when we are
-done. We can write our own context manager in our classs using `__enter__` and
+done. We can write our own context manager in our classes using `__enter__` and
 `__exit__` methods.
 
 For example, we will create a new class called `TimeLog` which in turn will
@@ -567,15 +568,17 @@ Output in the `tmpdata.txt` file.
     Entering at 1590551277.323565
     Done at 1590551277.3238761
 
-Later in the book we will learn even simpler methods to create context managers.
+Later in the book, we will learn even simpler methods to create context managers.
 
 Deep down inside
 =================
 
 If we look inside of our class definitions, we will find a dictionary at the center.
-Let us look at it in details in the following example.
+Let us look at it in details in the following example:
 
 ::
+
+    import pprint
 
     class User:
         def __init__(self, name, uid, gid, home, sudo):
@@ -589,7 +592,9 @@ Let us look at it in details in the following example.
             return self.sudo
     
     u = User("kdas", 1000, 1000, "/home/kdas", True)
-    pprint(u.__dict__)
+    pprint.pprint(u.__dict__)
+
+::
 
     {'gids': [1000],
      'home': '/home/kdas',
@@ -604,7 +609,7 @@ also in the `__dict__` of the class itself.
 
 ::
 
-    >>> pprint(User.__dict__)
+    >>> pprint.pprint(User.__dict__)
     mappingproxy({'__dict__': <attribute '__dict__' of 'User' objects>,
                   '__doc__': None,
                   '__init__': <function User.__init__ at 0x7fa8c6f1bd40>,
@@ -666,7 +671,7 @@ which is used to set a value to any attribute.
 
     u = User("kdas", 1000, 1000, "/home/kdas", True)
 
-When we try to access any attribute of the object `u`, we can see the following.
+When we try to access any attribute of the object `u`, we can see the following:
 
 ::
 
