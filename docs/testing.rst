@@ -11,7 +11,7 @@ If possible everything in our codebase, each and every function. But it depends
 as a choice of the developers. You can skip it if it is not practical to write
 a robust test. As `Nick Coghlan <http://www.curiousefficiency.org>`_ said in a
 guest session -- *... with a solid test suite, you can make big changes,
-confident that the externally visible behavior will remain the same*
+confident that the externally visible behavior will remain the same*.
 
 To have effective tests, you should remember to write/split your code in
 smaller functions which can be tested separately. It is very easy to keep
@@ -23,7 +23,7 @@ test cases.
 Unit testing
 =============
 
-A method by which individual units of source code. `Wikipedia <http://en.wikipedia.org/wiki/Unit_testing>`_ says
+A method by which individual units of source code. `Wikipedia <http://en.wikipedia.org/wiki/Unit_testing>`_ says,
 *In computer programming, unit testing is a method by which individual units of source code,
 sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures, are tested to determine if they are fit for use.*
 
@@ -35,7 +35,7 @@ In Python we have ``unittest`` module to help us.
 Factorial code
 ===============
 
-In this example we will write a file `factorial.py`.
+In this example, we will write a file `factorial.py`:
 ::
 
     import sys
@@ -69,10 +69,12 @@ In this example we will write a file `factorial.py`.
             main(int(sys.argv[1]))
 
 
-Output
+Output:
+
 ::
 
     $ python factorial.py 5
+    120
 
 Which function to test ?
 ========================
@@ -126,7 +128,7 @@ which we want to test.
 
 A testcase is created by subclassing ``unittest.TestCase``.
 
-Now open the test file and change *120* to *121* and see what happens :)
+Now open the test file and change *120* to *121* and see what happens. :)
 
 
 Different assert statements
@@ -162,7 +164,7 @@ Different assert statements
 
 Testing exceptions
 ==================
-If we call ``div(0)`` in factorial.py , we can see if raises an exception.
+If we call ``div(0)`` in factorial.py, we can see if raises an exception.
 
 We can also test these exceptions, like:
 
@@ -170,7 +172,8 @@ We can also test these exceptions, like:
 
     self.assertRaises(ZeroDivisionError, div, 0)
 
-Full code
+Full code:
+
 ::
 
     import unittest
@@ -227,6 +230,7 @@ Here we have only one function *mount_details()* doing the parsing and printing 
                     print('(%s)' % ' '.join(words[3:-2]))
                 else:
                     print('')
+            fd.close()
 
 
     if __name__ == '__main__':
@@ -257,6 +261,7 @@ Now we refactored the code and have one new function *parse_mounts* which we can
                 else:
                    res = (words[0],words[1],words[2])
                 result.append(res)
+            fd.close()
         return result
 
     def mount_details():
@@ -324,7 +329,7 @@ Test coverage
 Test coverage is a simple way to find untested parts of a codebase. It does not
 tell you how good your tests are.
 
-In Python we already have a nice coverage tool to help us. You can install it in Fedora
+In Python we already have a nice coverage tool to help us. You can install it in Fedora:
 
 ::
 
