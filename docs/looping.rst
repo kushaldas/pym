@@ -4,12 +4,12 @@
 Looping
 =======
 
-In the examples we used before , sometimes it was required to do the same work couple of times. We use a counter to check how many times the code needs to be executed. This technique is known as looping. First we are going to look into while statement for looping.
+In the examples we used before, sometimes it was required to do the same work couple of times. We use a counter to check how many times the code needs to be executed. This technique is known as looping. First we are going to look into while statement for looping.
 
 While loop
 ==========
 
-The syntax for *while* statement is like
+The syntax for *while* statement is like:
 
 ::
 
@@ -17,7 +17,7 @@ The syntax for *while* statement is like
         statement1
         statement2
 
-The code we want to reuse must be indented properly under the while statement. They will be executed if the *condition* is true. Again like in *if-else* statement any non zero value is true. Let us write a simple code to print numbers 0 to 10
+The code we want to reuse must be indented properly under the while statement. They will be executed if the *condition* is true. Again like in *if-else* statement any non zero value is true. Let us write a simple code to print numbers 0 to 10.
 
 ::
 
@@ -55,7 +55,7 @@ Let us try to solve *Fibonacci* series. In this series we get the next number by
         print(b)
         a, b = b, a + b
 
-The output
+The output:
 
 ::
 
@@ -84,7 +84,7 @@ In your print function call if you pass another argument called end and pass a s
         print(b, end=' ')
         a, b = b, a + b
 
-The output
+The output:
 
 ::
 
@@ -94,7 +94,7 @@ The output
 Power Series
 ============
 
-Let us write a program to evaluate the power series. The series looks like e**x =1+x+x**2/2! +x**3/3! +....+ x**n/n! where 0 < x < 1
+Let us write a program to evaluate the power series. The series looks like e**x =1+x+x**2/2! +x**3/3! +....+ x**n/n! where 0 < x < 1.
 
 ::
 
@@ -110,7 +110,7 @@ Let us write a program to evaluate the power series. The series looks like e**x 
             break
     print("No of Times= %d and Sum= %f" % (n, sum))
 
-The output
+The output:
 ::
 
     $ ./powerseries.py
@@ -123,7 +123,7 @@ The output
     Enter the value of x: 0.5
     No of Times= 7 and Sum= 1.648720
 
-In this program we introduced a new keyword called *break*. What break does is stop the innermost loop. In this example we are using *break* under the *if* statement
+In this program we introduced a new keyword called *break*. What break does is stop the innermost loop. In this example we are using *break* under the *if* statement.
 
 ::
 
@@ -151,7 +151,7 @@ In this example we are going to print the multiplication table up to 10.
         i += 1
     print("-" * 50)
 
-The output
+The output:
 ::
 
     $ ./multiplication.py
@@ -168,13 +168,13 @@ The output
       10   20   30   40   50   60   70   80   90  100
     --------------------------------------------------
 
-Here we used one while loop inside another loop, this is known as nested looping. You can also see one interesting statement here
+Here we used one while loop inside another loop, this is known as nested looping. You can also see one interesting statement here.
 
 ::
 
     print("-" * 50)
 
-In a *print* statement if we multiply the string with an integer *n* , the string will be printed *n* many times. Some examples
+In a *print* statement if we multiply the string with an integer *n*, the string will be printed *n* many times. Some examples:
 
 ::
 
@@ -190,9 +190,9 @@ In a *print* statement if we multiply the string with an integer *n* , the strin
 Some printing * examples
 ========================
 
-Here are some examples which you can find very often in college lab reports
+Here are some examples which you can find very often in college lab reports.
 
-Design 1
+Design 1:
 ::
 
     #!/usr/bin/env python3
@@ -203,7 +203,7 @@ Design 1
         print(x)
         n -= 1
 
-The output
+The output:
 ::
 
     $ ./design1.py
@@ -214,7 +214,7 @@ The output
     **
     *
 
-Design 2
+Design 2:
 ::
 
     #!/usr/bin/env python3
@@ -224,7 +224,7 @@ Design 2
         print("*" * i)
         i += 1
 
-The output
+The output:
 ::
 
     $ ./design2.py
@@ -235,7 +235,7 @@ The output
     ****
     *****
 
-Design 3
+Design 3:
 ::
 
     #!/usr/bin/env python3
@@ -247,7 +247,7 @@ Design 3
         print(y + x)
         n -= 1
 
-The output
+The output:
 ::
 
     $ ./design3.py
@@ -284,7 +284,7 @@ Now we can access the values of each box by using the index number.
     >>> a[4]
     'Fedora'
 
-If we use a negative number as index, that means we are counting from the end of the list. Like
+If we use a negative number as index, that means we are counting from the end of the list. Like:
 
 ::
 
@@ -292,7 +292,7 @@ If we use a negative number as index, that means we are counting from the end of
     'Fedora'
 
 
-You can even slice it into different pieces, examples are given below
+You can even slice it into different pieces, examples are given below:
 ::
 
     >>> a[4]
@@ -312,7 +312,7 @@ You can even slice it into different pieces, examples are given below
 
 In the last example we used two :(s) , the last value inside the third brackets indicates step. *s[i:j:k]* means slice of *s* from *i* to *j* with step *k*.
 
-To check if any value exists within the list or not you can do
+To check if any value exists within the list or not you can do:
 ::
 
     >>> a = ['Fedora', 'is', 'cool']
@@ -327,7 +327,7 @@ That means we can use the above statement as *if* clause expression. The built-i
     >>> len(a)
     3
 
-.. note:: If you want to test if the list is empty or not, do it like this
+.. note:: If you want to test if the list is empty or not, do it like this:
 
    ::
 
@@ -339,7 +339,7 @@ That means we can use the above statement as *if* clause expression. The built-i
 For loop
 ========
 
-There is another to loop by using *for* statement. In Python the *for* statement is different from the way it works in *C*. Here for statement iterates over the items of any sequence (a list or a string). Example given below
+There is another to loop by using *for* statement. In Python the *for* statement is different from the way it works in *C*. Here for statement iterates over the items of any sequence (a list or a string). Example given below:
 
 ::
 
@@ -351,7 +351,7 @@ There is another to loop by using *for* statement. In Python the *for* statement
     is
     powerful
 
-We can also do things like
+We can also do things like:
 
 ::
 
@@ -367,20 +367,20 @@ We can also do things like
 range() function
 ================
 
-range() is a builtin class. From the help document
+range() is a builtin class. From the help document:
 
 ::
 
-class range(object)
- |  range(stop) -> range object
- |  range(start, stop[, step]) -> range object
- |
- |  Return a virtual sequence of numbers from start to stop by step.
- |
- |  Methods defined here:
+   class range(object)
+     |  range(stop) -> range object
+     |  range(start, stop[, step]) -> range object
+     |
+     |  Return a virtual sequence of numbers from start to stop by step.
+     |
+     |  Methods defined here:
 
 
-Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function
+Now if you want to see this help message on your system type *help(range)* in the Python interpreter. *help(s)* will return help message on the object *s*. Examples of *range* function:
 
 ::
 
@@ -408,7 +408,7 @@ Just like *break* we have another statement, *continue*, which skips the executi
         print("Square is ", n ** 2)
     print("Goodbye")
 
-The output
+The output:
 
 ::
 
@@ -445,7 +445,7 @@ We will see more example of *break* and *continue* later in the book.
 Game of sticks
 ==============
 
-This is a very simple game of sticks. There are 21 sticks, first the user picks number of sticks between 1-4, then the computer picks sticks(1-4). Who ever will pick the last stick will lose. Can you find out the case when the user will win ?
+This is a very simple game of sticks. There are 21 sticks, first the user picks number of sticks between 1-4, then the computer picks sticks(1-4). Who ever will pick the last stick will lose. Can you find out the case when the user will win?
 
 ::
 
