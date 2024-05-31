@@ -215,7 +215,7 @@ on the package index. The exact version details of the packages are stored in
 the *Pipfile.lock* file, it is in machine readable `JSON
 <https://en.wikipedia.org/wiki/JSON>`_ format.
 
-Remember to install any dependency for your project using **pipenv** comamnd,
+Remember to install any dependency for your project using **pipenv** command,
 that will automatically update your *Pipfile* and *Pipfile.lock* file. If you
 have any dependency which is only required for the development, you can
 install them marked as *dev-packages*. In the following example I am installing

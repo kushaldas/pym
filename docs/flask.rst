@@ -263,7 +263,7 @@ function linked to. In addition it takes care of where the application is
 deployed.
 
 For example, if you website is deployed at: ``/myapp/`` flask will automatically
-happend ``/myapp/`` to all links without the need for you to specify it.
+happened ``/myapp/`` to all links without the need for you to specify it.
 
 To create a link in a template, flask relies on the function ``url_for()``. This
 function takes as first argument the function you want to call (link to). The
