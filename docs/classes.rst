@@ -121,7 +121,7 @@ Unique class level variables
 All the values stored in the instance via `self.` are data inside of an
 instance. Each instance of the class can have different values for given
 attribute (anything we access via . is also known as attribute). But, when we
-define an variable in the class level, that is same accross all objects. In
+define an variable in the class level, that is same across all objects. In
 the following example, we define a class called `Point`, and we also have a
 special class level variable called `style` in it. After we create 2 objects
 of type `Point`, we can see that both has the same `class` attribute `style`
@@ -530,7 +530,7 @@ Do you remember the `with` statement from the `files` chapter? Where we used a
 context manager to make sure that the file is closed after we are done? The
 same style is used in many places where we want the resources to be cleaned up
 after the work is done; sometimes we want to call some extra functions when we are
-done. We can write our own context manager in our classs using `__enter__` and
+done. We can write our own context manager in our class using `__enter__` and
 `__exit__` methods.
 
 For example, we will create a new class called `TimeLog` which in turn will

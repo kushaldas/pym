@@ -248,7 +248,7 @@ Now your Python installation comes with different modules installed, you can use
 
 The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
 
-You can also use *help()* function in the interpeter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
+You can also use *help()* function in the interpreter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
 
 ::
 

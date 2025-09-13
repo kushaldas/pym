@@ -66,7 +66,7 @@ Turning on all NeoPixels on the board with Red colour
         cpx.pixels.fill(RED)
 
 On the top of the code, we are writing a line starting with **from** to get the Python module
-which can interact wtih the device, as **cpx**. Next line, we are also importing *time* module,
+which can interact with the device, as **cpx**. Next line, we are also importing *time* module,
 which we will use later.
 
 Then we defined a colour Red in the *RED* variable as a (R, G, B) tuple.
