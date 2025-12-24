@@ -122,7 +122,7 @@ but we can use this to learn about type annotations and mypy.
     std3.papers = {"english": 82, "math": 87, "science": 77}
 
     for std in [std1, std2, std3]:
-        print("Passed: {0}. The toral score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
+        print("Passed: {0}. The total score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
 
 
 You may find some errors in the code, but in case of a large codebase we can
@@ -131,7 +131,7 @@ not detect the similar issues unless we see the runtime errors.
 Using mypy
 -----------
 
-We can just call mypy on our source file, I named it as *students2.py*
+We can just call mypy on our source file, I named it as *students2.py*.
 
 ::
 
@@ -164,12 +164,12 @@ code length, I am only showing the changed code below.
 
 You can see mypy is complaining about variable which does not have type
 annotations, and also found that in line 31, as argument 4 we are passing
-*str*, where as we were supposed to send in an Integer for the rull number.
+*str*, where as we were supposed to send in an Integer for the roll number.
 Let us fix these.
 
 ::
 
-    from typing import Dict
+    from typing import Dict, Optional
 
     class Student:
 
@@ -178,7 +178,7 @@ Let us fix these.
             self.batch = batch
             self.branch = branch
             self.roll = roll
-            self.semester: str = None
+            self.semester: Optional[str] = None
             self.papers: Dict[str, int] = {}
 
         def is_passed(self) -> bool:
@@ -204,21 +204,23 @@ Let us fix these.
     std3: Student = Student("Anwesha", 2005, "law", 122)
 
     std1.papers = {"english": 78, "math": 82, "science": 77}
-    std2: Student.papers = {"english": 80, "math": 92, "science": 78}
+    std2.papers = {"english": 80, "math": 92, "science": 78}
     std3.papers = {"english": 82, "math": 87, "science": 77}
 
     for std in [std1, std2, std3]:
-        print("Passed: {0}. The toral score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
+        print("Passed: {0}. The total score of {1} is {2}".format(std.is_passed(), std.name, std.total_score()))
 
 ::
 
     $ mypy students2.py
 
 Now, it does not complain about any error. You can see that in line 1, we
-imported Dict from the typing module. And, then using the same we added the
-type annotation of the *self.paper* variable. We are saying that it is a
-dictionary which has string keys, and Integers as values. We also used our
-*Student* class as type of std1, std2, and std3 variables.
+imported Dict and Optional from the typing module. And, then using the same we
+added the type annotation of the *self.semester* and *self.papers* variable. We
+are saying that *self.semester* is a string whose value could be *None*,
+whereas *self.papers* is a dictionary which has string as keys, and Integers as
+values. We also used our *Student* class as type of std1, std2, and std3
+variables.
 
 Now let us say we by mistake assign a new list to the papers variable.
 
@@ -233,7 +235,7 @@ Or maybe assigned a wrong kind of dictionary.
 
     std2.papers = {1: "Engish", 2: "Math"}
 
-We can see what mypy says in these cases
+We can see what mypy says in these cases:
 
 ::
 
