@@ -130,11 +130,11 @@ in a for loop.
 
 Inside the while loop when it reaches to the *yield* statement, the value of low is returned
 and the generator state is suspended. During the second *next* call the generator resumed where
-it freeze-ed before and then the value of *low* is increased by one. It continues with the
+it suspended before and then the value of *low* is increased by one. It continues with the
 while loop and comes to the *yield* statement again.
 
-When you call an generator function it returns a \*generator* object. If you call \*dir*
-on this object you will find that it contains *__iter__* and \*__next__* methods among the
+When you call an generator function it returns a **generator** object. If you call **dir**
+on this object you will find that it contains **__iter__** and **__next__** methods among the
 other methods.
 
 ::
@@ -142,10 +142,10 @@ other methods.
     >>> c = counter_generator(5,10)
     >>> dir(c)
     ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__',
- '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__',
- '__le__', '__lt__', '__name__', '__ne__', '__new__', '__next__', '__reduce__',
- '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
- 'close', 'gi_code', 'gi_frame', 'gi_running', 'send', 'throw']
+     '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__iter__',
+     '__le__', '__lt__', '__name__', '__ne__', '__new__', '__next__', '__reduce__',
+     '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+     'close', 'gi_code', 'gi_frame', 'gi_running', 'send', 'throw']
 
 We mostly use generators for laze evaluations. This way generators become a good approach
 to work with lots of data. If you don't want to load all the data in the memory, you can use
@@ -245,7 +245,7 @@ The syntax of generator expression says that always needs to be directly inside 
     <generator object <genexpr> at 0x7fc559516b90>
 
 We can have chaining of generators or generator expressions. In the following
-example we will read the file \*/var/log/cron* and will find if any particular
+example we will read the file **/var/log/cron** and will find if any particular
 job (in the example we are searching for anacron) is running successfully or not.
 
 We can do the same using a shell command *tail -f /var/log/cron |grep anacron*
