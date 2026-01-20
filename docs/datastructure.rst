@@ -452,6 +452,109 @@ You may also need to iterate through two sequences same time, for that use *zip(
     Pradeepto uses OpenSUSE
     Kushal uses Fedora
 
+Sorting using sort() and sorted()
+=================================
+
+Sorting is very essential for any data-structure in any language. We already saw how to use *sort()* in lists. So that solves the sorting of lists, but how to sort other data-structures? Well there is *sorted()*.  
+
+Parameters: `sorted(iterable [, key] [, reverse])`. Where *key* and *reverse* are optional and thus in []s.
+
+Default sorting order: Ascending.
+
+Output Format: List (This is important! You need to type cast it back to its original form)
+
+Sorted() parameters are also applicable for sort() in list objects. BUT *sort()* Does not return anything. Changes are made in the list itself.
+
+Sorting Sets and Tuples are pretty straight-forward!
+
+::
+
+    >>> l = [4, 1, 3, 2]
+    >>> s = {4, 1, 3, 2}
+    >>> t = (4, 1, 3, 2)
+    >>> sorted(l)
+    [1, 2, 3, 4]
+    >>> sorted(s)
+    [1, 2, 3, 4]
+    >>> sorted(t)
+    [1, 2, 3, 4]
+
+Lets see how dictionary can be used:
+
+::
+
+    >>> d ={
+        "a": 1,
+        "c": 3,
+        "b": 2
+    }
+    >>> sorted(d) # or sorted(d.keys())
+    ['a', 'b', 'c']
+    >>> sorted(d.values())
+    [1, 2, 3]
+    >>> sorted(d.items())
+    [('a', 1), ('b', 3), ('c', 2)]
+
+The first output: Sorts the dictionary keys, in alphabetical order!
+The Second output: Sorts the dictionary values.
+The third output: Sorts the dictionary key-value pairs!
+
+Okay now lets see reverse in action.
+
+::
+
+    >>> t = (4, 1, 3, 2)
+    >>> sorted(t, reverse=True)
+    [4, 3, 2, 1]
+
+That was pretty simple. Using *key* can be very crucial. It serves as a key for the sort comparison. Most times lambda functions are used in the key field. We well see one simple and one with lambda function in the examples.
+
+::
+
+    >>> # Example: Sorting a list of Strings, using the length of tuples as the key.
+    >>> l = ['ab', 'abcd', 'a', 'abc']
+    >>> sorted(l, key=len)
+    ['a', 'ab', 'abc', 'abcd']
+
+Here the len() us operated on each String objects. Thus any function can be used, even user defined ones, which takes one parameter and returns a value. Here's an example:
+
+::
+
+    >>> # Sorting a list of tuples using the 2nd element of the tuple
+    >>> def return_2nd(elem):
+    ...     return elem[1]
+
+    >>> l1 = [(1,2), (2,1), (3,2), (1,5)]
+    >>> l2 = [(1,2), (2,1), (3,2), (1,5)]
+    >>> l1.sort(key=return_2nd)
+    >>> print(l1)
+    [(2, 1), (1, 2), (3, 2), (1, 5)]
+    >>> l2.sort(key=lambda x: x[1])
+    >>> print(l2)
+    [(2, 1), (1, 2), (3, 2), (1, 5)] # same output using lambda
+
+Two things to note here:
+
+    1. See how I used sort(), although sorted could have done the same thing. Note: Had to use print() as sort does not return anything.
+    2. See the use of lambda function. It replaces the need to write the definition and works in 1 line.
+        But keep in mind, complicated lambda functions makes your code unreadable.
+
+Okay now one last thing about sorts, this is an awesome feature - what if in the above example I want this: "If the 2nd tuple elements are equal, check for the 1st elements", then what?
+
+Well *key* can take a list for such cases to chain sorting. Format: [option1, option2, ...] where, when option1 is equal, it checks for option2 between them. Example:
+
+::
+
+    >>> l = [(3, 2), (3, 4), (1, 2), (2, 4)]
+    >>> sorted(l, key=lambda x: x[1]) # Sorting by just 2nd element
+    [(3, 2), (1, 2), (3, 4), (2, 4)]
+    >>> sorted(l, key=lambda x: [x[1], x[0]]) # Sorting by 2nd element, if equal, check 1st
+    [(1, 2), (3, 2), (2, 4), (3, 4)]
+
+Whenever two 2nd elements were equal, 1st element was checked. eg. in (3, 2), (1, 2), since 2s were equal, 1 and 3 was checked. and (1,2) came up in-front.
+
+Now lets see an example.
+
 students.py
 ===========
 
