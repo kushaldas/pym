@@ -15,7 +15,7 @@ NameError
 ==========
 
 When one starts writing code, this will be one of the most common exception
-he/she will find. This happens when someone tries to access a variable which is
+they will find. This happens when someone tries to access a variable which is
 not defined.
 ::
 
@@ -45,7 +45,7 @@ is to do addition of Integers and a string.
 How to handle exceptions?
 =========================
 
-We use `try...except` blocks to handle any exception. The basic syntax looks like
+We use `try...except` blocks to handle any exception. The basic syntax looks like:
 ::
 
     try:
@@ -58,9 +58,9 @@ We use `try...except` blocks to handle any exception. The basic syntax looks lik
 
 It works in the following way:
 
-    - First all lines between `try` and `except` statements.
-    - If `ExceptionName` happens during execution of the statements then `except` clause statements execute
-    - If no exception happens then the statements inside `except` clause does not execute.
+    - First execute statement(s) between `try` and `except` keywords.
+    - If no exception happens then the statement(s) inside `except` clause does not execute.
+    - If an exception type, `ExceptionName` happens during execution of the statement(s) then rest of the `try` clause statement(s) skipped and `except` clause statement(s) get executed.
     - If the `Exception` is not handled in the `except` block then it goes out of `try` block.
 
 The following examples showcase these scenarios.
@@ -131,8 +131,7 @@ Using finally for cleanup
 ==========================
 
 If we want to have some statements which must be executed under all circumstances,
-we can use `finally` clause, it will be always executed before finishing `try`
-statements.
+we can use `finally` clause, it will be always executed just before finishing exception handling.
 ::
 
     >>> try:
