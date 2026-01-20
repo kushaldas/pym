@@ -20,7 +20,7 @@ Python name (think about any variable name) and in lowercase.
 You can find the name of the module by accessing the *__name__* variable. It
 is a global variable.
 
-Now we are going to see how modules work. Create a file called bars.py. Content of the file is given bellow.
+Now we are going to see how modules work. Create a file called bars.py. Content of the file is given below.
 
 ::
 
@@ -93,7 +93,7 @@ There are different ways to import modules. We already saw one way to do this. Y
 .. warning:: It is suggested to avoid *from module import \** for importing from the modules.
 
 
-Remember that when we import and module, the Python interpreter executes the
+Remember that when we import a module, the Python interpreter executes the
 whole file, and then imports it as a module. This is true even when we import
 a single function from the module. Look at the following updated `bars.py` example.
 
@@ -198,7 +198,7 @@ __all__ in __init__.py
 
 If `__init__.py` file contains a list called `__all__`, then only the names listed there will
 be public. If the mymodule's `__init__.py`
-file contains the following
+file contains the following:
 
 ::
 
@@ -215,8 +215,8 @@ You have also noticed that we used a new style while importing the *simplebar*
 function from inside of the *mymodule* package. Using this `.` notation is
 known as `explicit import`.
 
-- `from . import foo ` # imports ./foo.py
-- `from .bars import foo ` # imports foo from ./bars.py
+- `from . import foo` # imports ./foo.py
+- `from .bars import foo` # imports foo from ./bars.py
 - `from .. import foo` # imports ../foo.py
 - `from ..life import foo` # imports ../life/foo.py
 
@@ -246,9 +246,9 @@ Now your Python installation comes with different modules installed, you can use
 
     help> modules
 
-The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system :)
+The above example shows how to get the list of all installed modules in your system. I am not pasting them here as it is a big list in my system. :)
 
-You can also use *help()* function in the interpeter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method
+You can also use *help()* function in the interpreter to find documentation about any module/classes. Say you want to know all available methods in strings, you can use the following method:
 
 ::
 
@@ -281,14 +281,14 @@ Module os
     >>> os.getppid()
     14847
 
-*uname()* returns different information identifying the operating system, in Linux it returns details you can get from the *uname* command. The returned object is a tuple, *(sysname, nodename, release, version, machine)*
+*uname()* returns different information identifying the operating system, in Linux it returns details you can get from the *uname* command. The returned object is a tuple, *(sysname, nodename, release, version, machine)*.
 
 ::
 
     >>> os.uname()
     ('Linux', 'd80', '2.6.34.7-56.fc13.i686.PAE', '#1 SMP Wed Sep 15 03:27:15 UTC 2010', 'i686')
 
-*getcwd()*returns the current working directory. *chdir(path)* changes the current working directory to path. In the example we first see the current directory which is my home directory and change the current directory to */tmp* and then again checking the current directory.
+*getcwd()* returns the current working directory. *chdir(path)* changes the current working directory to path. In the example, we first see the current directory which is my home directory and change the current directory to */tmp* and then again checking the current directory.
 
 ::
 
@@ -321,14 +321,14 @@ Using the *view_dir* example.
     proc root run sbin srv sys tmp usr var
 
 
-There are many other very useful functions available in the OS module, you can read about them `here <https://docs.python.org/3/library/os.html>`_
+There are many other very useful functions available in the OS module, you can read about them `here <https://docs.python.org/3/library/os.html>`_.
 
 Requests Module
 ================
 
 requests is a Python module which changed the way people used to write code for many many projects. It helps
 you to do HTTP GET or POST calls in a very simple but elegant way. This is a third party module, that means
-you have to install it from your OS distribution packages, it does not come default.
+you have to install it from your OS distribution packages, it does not come by default.
 
 ::
 
@@ -395,13 +395,17 @@ filename already exists in the current directory or not. Use :py:mod:`os.path` m
 Command line arguments
 ======================
 
-Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too .. important:: your application. Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
+Do you remember your *ls* command, you can pass different kind of options as command line arguments. You can do that too.
+
+.. important::
+
+   Read `this how-to <https://docs.python.org/3/howto/argparse.html>`_ guide to learn about it.
 
 
 TAB completion in your Python interpreter
 ==========================================
 
-First create a file as *~/.pythonrc* and include the following in that file
+First create a file as *~/.pythonrc* and include the following in that file:
 
 ::
 
